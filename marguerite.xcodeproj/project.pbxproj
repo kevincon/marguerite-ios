@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F471C3D9178B7D5F005583A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F471C3D8178B7D5F005583A4 /* UIKit.framework */; };
+		F471C3DB178B7D5F005583A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F471C3DA178B7D5F005583A4 /* Foundation.framework */; };
+		F471C3DD178B7D5F005583A4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F471C3DC178B7D5F005583A4 /* CoreGraphics.framework */; };
+		F471C3E3178B7D5F005583A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F471C3E1178B7D5F005583A4 /* InfoPlist.strings */; };
+		F471C3E5178B7D5F005583A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F471C3E4178B7D5F005583A4 /* main.m */; };
+		F471C3E9178B7D60005583A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F471C3E8178B7D60005583A4 /* AppDelegate.m */; };
+		F471C3EB178B7D60005583A4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F471C3EA178B7D60005583A4 /* Default.png */; };
+		F471C3ED178B7D60005583A4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F471C3EC178B7D60005583A4 /* Default@2x.png */; };
+		F471C3EF178B7D60005583A4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F471C3EE178B7D60005583A4 /* Default-568h@2x.png */; };
+		F471C3F2178B7D60005583A4 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F471C3F0178B7D60005583A4 /* MainStoryboard_iPhone.storyboard */; };
+		F471C3F5178B7D60005583A4 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F471C3F3178B7D60005583A4 /* MainStoryboard_iPad.storyboard */; };
+		F471C3F8178B7D60005583A4 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F471C3F7178B7D60005583A4 /* FirstViewController.m */; };
+		F471C3FA178B7D60005583A4 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = F471C3F9178B7D60005583A4 /* first.png */; };
+		F471C3FC178B7D60005583A4 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F471C3FB178B7D60005583A4 /* first@2x.png */; };
+		F471C3FF178B7D60005583A4 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F471C3FE178B7D60005583A4 /* SecondViewController.m */; };
+		F471C401178B7D60005583A4 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = F471C400178B7D60005583A4 /* second.png */; };
+		F471C403178B7D60005583A4 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F471C402178B7D60005583A4 /* second@2x.png */; };
+		F471C40B178B7D60005583A4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F471C40A178B7D60005583A4 /* SenTestingKit.framework */; };
+		F471C40C178B7D60005583A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F471C3D8178B7D5F005583A4 /* UIKit.framework */; };
+		F471C40D178B7D60005583A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F471C3DA178B7D5F005583A4 /* Foundation.framework */; };
+		F471C415178B7D60005583A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F471C413178B7D60005583A4 /* InfoPlist.strings */; };
+		F471C418178B7D60005583A4 /* margueriteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F471C417178B7D60005583A4 /* margueriteTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F471C40E178B7D60005583A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F471C3CD178B7D5F005583A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F471C3D4178B7D5F005583A4;
+			remoteInfo = marguerite;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F471C3D5178B7D5F005583A4 /* marguerite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = marguerite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F471C3D8178B7D5F005583A4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F471C3DA178B7D5F005583A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F471C3DC178B7D5F005583A4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F471C3E0178B7D5F005583A4 /* marguerite-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "marguerite-Info.plist"; sourceTree = "<group>"; };
+		F471C3E2178B7D5F005583A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F471C3E4178B7D5F005583A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F471C3E6178B7D5F005583A4 /* marguerite-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "marguerite-Prefix.pch"; sourceTree = "<group>"; };
+		F471C3E7178B7D60005583A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F471C3E8178B7D60005583A4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F471C3EA178B7D60005583A4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F471C3EC178B7D60005583A4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F471C3EE178B7D60005583A4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F471C3F1178B7D60005583A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		F471C3F4178B7D60005583A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		F471C3F6178B7D60005583A4 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		F471C3F7178B7D60005583A4 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		F471C3F9178B7D60005583A4 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		F471C3FB178B7D60005583A4 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		F471C3FD178B7D60005583A4 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		F471C3FE178B7D60005583A4 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		F471C400178B7D60005583A4 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		F471C402178B7D60005583A4 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		F471C409178B7D60005583A4 /* margueriteTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = margueriteTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F471C40A178B7D60005583A4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		F471C412178B7D60005583A4 /* margueriteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "margueriteTests-Info.plist"; sourceTree = "<group>"; };
+		F471C414178B7D60005583A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F471C416178B7D60005583A4 /* margueriteTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = margueriteTests.h; sourceTree = "<group>"; };
+		F471C417178B7D60005583A4 /* margueriteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = margueriteTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F471C3D2178B7D5F005583A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F471C3D9178B7D5F005583A4 /* UIKit.framework in Frameworks */,
+				F471C3DB178B7D5F005583A4 /* Foundation.framework in Frameworks */,
+				F471C3DD178B7D5F005583A4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F471C405178B7D60005583A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F471C40B178B7D60005583A4 /* SenTestingKit.framework in Frameworks */,
+				F471C40C178B7D60005583A4 /* UIKit.framework in Frameworks */,
+				F471C40D178B7D60005583A4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F471C3CC178B7D5F005583A4 = {
+			isa = PBXGroup;
+			children = (
+				F471C3DE178B7D5F005583A4 /* marguerite */,
+				F471C410178B7D60005583A4 /* margueriteTests */,
+				F471C3D7178B7D5F005583A4 /* Frameworks */,
+				F471C3D6178B7D5F005583A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F471C3D6178B7D5F005583A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F471C3D5178B7D5F005583A4 /* marguerite.app */,
+				F471C409178B7D60005583A4 /* margueriteTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F471C3D7178B7D5F005583A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F471C3D8178B7D5F005583A4 /* UIKit.framework */,
+				F471C3DA178B7D5F005583A4 /* Foundation.framework */,
+				F471C3DC178B7D5F005583A4 /* CoreGraphics.framework */,
+				F471C40A178B7D60005583A4 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F471C3DE178B7D5F005583A4 /* marguerite */ = {
+			isa = PBXGroup;
+			children = (
+				F471C3E7178B7D60005583A4 /* AppDelegate.h */,
+				F471C3E8178B7D60005583A4 /* AppDelegate.m */,
+				F471C3F0178B7D60005583A4 /* MainStoryboard_iPhone.storyboard */,
+				F471C3F3178B7D60005583A4 /* MainStoryboard_iPad.storyboard */,
+				F471C3F6178B7D60005583A4 /* FirstViewController.h */,
+				F471C3F7178B7D60005583A4 /* FirstViewController.m */,
+				F471C3F9178B7D60005583A4 /* first.png */,
+				F471C3FB178B7D60005583A4 /* first@2x.png */,
+				F471C3FD178B7D60005583A4 /* SecondViewController.h */,
+				F471C3FE178B7D60005583A4 /* SecondViewController.m */,
+				F471C400178B7D60005583A4 /* second.png */,
+				F471C402178B7D60005583A4 /* second@2x.png */,
+				F471C3DF178B7D5F005583A4 /* Supporting Files */,
+			);
+			path = marguerite;
+			sourceTree = "<group>";
+		};
+		F471C3DF178B7D5F005583A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F471C3E0178B7D5F005583A4 /* marguerite-Info.plist */,
+				F471C3E1178B7D5F005583A4 /* InfoPlist.strings */,
+				F471C3E4178B7D5F005583A4 /* main.m */,
+				F471C3E6178B7D5F005583A4 /* marguerite-Prefix.pch */,
+				F471C3EA178B7D60005583A4 /* Default.png */,
+				F471C3EC178B7D60005583A4 /* Default@2x.png */,
+				F471C3EE178B7D60005583A4 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F471C410178B7D60005583A4 /* margueriteTests */ = {
+			isa = PBXGroup;
+			children = (
+				F471C416178B7D60005583A4 /* margueriteTests.h */,
+				F471C417178B7D60005583A4 /* margueriteTests.m */,
+				F471C411178B7D60005583A4 /* Supporting Files */,
+			);
+			path = margueriteTests;
+			sourceTree = "<group>";
+		};
+		F471C411178B7D60005583A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F471C412178B7D60005583A4 /* margueriteTests-Info.plist */,
+				F471C413178B7D60005583A4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F471C3D4178B7D5F005583A4 /* marguerite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F471C41B178B7D60005583A4 /* Build configuration list for PBXNativeTarget "marguerite" */;
+			buildPhases = (
+				F471C3D1178B7D5F005583A4 /* Sources */,
+				F471C3D2178B7D5F005583A4 /* Frameworks */,
+				F471C3D3178B7D5F005583A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = marguerite;
+			productName = marguerite;
+			productReference = F471C3D5178B7D5F005583A4 /* marguerite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F471C408178B7D60005583A4 /* margueriteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F471C41E178B7D60005583A4 /* Build configuration list for PBXNativeTarget "margueriteTests" */;
+			buildPhases = (
+				F471C404178B7D60005583A4 /* Sources */,
+				F471C405178B7D60005583A4 /* Frameworks */,
+				F471C406178B7D60005583A4 /* Resources */,
+				F471C407178B7D60005583A4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F471C40F178B7D60005583A4 /* PBXTargetDependency */,
+			);
+			name = margueriteTests;
+			productName = margueriteTests;
+			productReference = F471C409178B7D60005583A4 /* margueriteTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F471C3CD178B7D5F005583A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Stanford Devs";
+			};
+			buildConfigurationList = F471C3D0178B7D5F005583A4 /* Build configuration list for PBXProject "marguerite" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F471C3CC178B7D5F005583A4;
+			productRefGroup = F471C3D6178B7D5F005583A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F471C3D4178B7D5F005583A4 /* marguerite */,
+				F471C408178B7D60005583A4 /* margueriteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F471C3D3178B7D5F005583A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F471C3E3178B7D5F005583A4 /* InfoPlist.strings in Resources */,
+				F471C3EB178B7D60005583A4 /* Default.png in Resources */,
+				F471C3ED178B7D60005583A4 /* Default@2x.png in Resources */,
+				F471C3EF178B7D60005583A4 /* Default-568h@2x.png in Resources */,
+				F471C3F2178B7D60005583A4 /* MainStoryboard_iPhone.storyboard in Resources */,
+				F471C3F5178B7D60005583A4 /* MainStoryboard_iPad.storyboard in Resources */,
+				F471C3FA178B7D60005583A4 /* first.png in Resources */,
+				F471C3FC178B7D60005583A4 /* first@2x.png in Resources */,
+				F471C401178B7D60005583A4 /* second.png in Resources */,
+				F471C403178B7D60005583A4 /* second@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F471C406178B7D60005583A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F471C415178B7D60005583A4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F471C407178B7D60005583A4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F471C3D1178B7D5F005583A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F471C3E5178B7D5F005583A4 /* main.m in Sources */,
+				F471C3E9178B7D60005583A4 /* AppDelegate.m in Sources */,
+				F471C3F8178B7D60005583A4 /* FirstViewController.m in Sources */,
+				F471C3FF178B7D60005583A4 /* SecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F471C404178B7D60005583A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F471C418178B7D60005583A4 /* margueriteTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F471C40F178B7D60005583A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F471C3D4178B7D5F005583A4 /* marguerite */;
+			targetProxy = F471C40E178B7D60005583A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F471C3E1178B7D5F005583A4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F471C3E2178B7D5F005583A4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F471C3F0178B7D60005583A4 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F471C3F1178B7D60005583A4 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		F471C3F3178B7D60005583A4 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F471C3F4178B7D60005583A4 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		F471C413178B7D60005583A4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F471C414178B7D60005583A4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F471C419178B7D60005583A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F471C41A178B7D60005583A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F471C41C178B7D60005583A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "marguerite/marguerite-Prefix.pch";
+				INFOPLIST_FILE = "marguerite/marguerite-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F471C41D178B7D60005583A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "marguerite/marguerite-Prefix.pch";
+				INFOPLIST_FILE = "marguerite/marguerite-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F471C41F178B7D60005583A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/marguerite.app/marguerite";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "marguerite/marguerite-Prefix.pch";
+				INFOPLIST_FILE = "margueriteTests/margueriteTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F471C420178B7D60005583A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/marguerite.app/marguerite";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "marguerite/marguerite-Prefix.pch";
+				INFOPLIST_FILE = "margueriteTests/margueriteTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F471C3D0178B7D5F005583A4 /* Build configuration list for PBXProject "marguerite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F471C419178B7D60005583A4 /* Debug */,
+				F471C41A178B7D60005583A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F471C41B178B7D60005583A4 /* Build configuration list for PBXNativeTarget "marguerite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F471C41C178B7D60005583A4 /* Debug */,
+				F471C41D178B7D60005583A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F471C41E178B7D60005583A4 /* Build configuration list for PBXNativeTarget "margueriteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F471C41F178B7D60005583A4 /* Debug */,
+				F471C420178B7D60005583A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F471C3CD178B7D5F005583A4 /* Project object */;
+}

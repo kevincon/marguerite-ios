@@ -880,6 +880,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 70CE5BB07FB64AA48B3AE676 /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -888,7 +890,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "marguerite-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/marguerite-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = Marguerite;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
@@ -899,6 +904,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 70CE5BB07FB64AA48B3AE676 /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -908,6 +915,8 @@
 				GCC_PREFIX_HEADER = "marguerite-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/marguerite-Info.plist";
 				PRODUCT_NAME = Marguerite;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;

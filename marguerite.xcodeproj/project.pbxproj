@@ -629,7 +629,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = "Stanford Devs";
+				ORGANIZATIONNAME = "Cardinal Devs";
 			};
 			buildConfigurationList = F471C3D0178B7D5F005583A4 /* Build configuration list for PBXProject "marguerite" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -890,6 +890,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/marguerite-Info.plist";
 				PRODUCT_NAME = Marguerite;
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -908,6 +909,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/marguerite-Info.plist";
 				PRODUCT_NAME = Marguerite;
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

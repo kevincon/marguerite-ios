@@ -35,7 +35,8 @@ All pull requests and feedback are welcome! Report bugs and feature requests usi
 #### Viewing the Code
 1. Clone the git repository.
 2. Open the Xcode workspace (not the project!) by double clicking on the "marguerite.xcworkspace" file.
-3. At this point you should be able to run the project in the iPhone simulator by selecting "marguerite -> iPhone 6.1 simulator" in the dropdown menu at the top left and clicking the "Run" button. However, certain features of the app will not function until you update the secrets.h file.
+3. If all of the project files appear red, completely exit Xcode and try opening the workspace file again.
+4. At this point you should be able to run the project in the iPhone simulator by selecting "marguerite -> iPhone 6.1 simulator" in the dropdown menu at the top left and clicking the "Run" button. However, certain features of the app will not function until you update the secrets.h file.
 
 #### Configure the secrets.h file
 First, run the following command on the command line to prevent git from recognizing any changes to the secrets.h file:
@@ -66,7 +67,7 @@ This app would not have been possible without the following open-source librarie
 * [ASIHTTPRequest](https://github.com/pokeb/asi-http-request) for simplifying GET and POST requests.
 * [Default Icon](http://defaulticon.com/) by [interactivemania](http://www.interactivemania.com/) for the tab bar icons.
  
-# MIT License
+# License
 The MIT License (MIT)
 
 Copyright (c) 2013 Cardinal Devs

@@ -16,7 +16,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // !!!: Use the next line only during beta (testers are uniquely identified)
-    [TestFlight setDeviceIdentifier:[[[UIDevice currentDevice] identifierForVendor] UUIDString]];
+    #pragma clang diagnostic push
+    #pragma clang diagnostic ignored "-Wdeprecated-declarations"
+    [TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];
+    #pragma clang diagnostic pop
     
     // Initiate TestFlight analytics SDK
     [TestFlight takeOff:TESTFLIGHT_APPLICATION_TOKEN];

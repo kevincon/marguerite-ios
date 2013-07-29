@@ -8,6 +8,9 @@
 
 #import "AboutViewController.h"
 
+#define FEEDBACK_SECTION_INDEX                  0
+#define FEEDBACK_BUTTON_ROW                     0
+
 #define CONTACT_MARGUERITE_SECTION_INDEX        1
 #define CONTACT_MARGUERITE_OFFICE_ROW           0
 #define CONTACT_MARGUERITE_LOST_AND_FOUND_ROW   1
@@ -27,6 +30,13 @@
 {
     [tableView cellForRowAtIndexPath:indexPath].selected = NO;
     switch (indexPath.section) {
+        case FEEDBACK_SECTION_INDEX:
+            switch (indexPath.row) {
+                case FEEDBACK_BUTTON_ROW:
+                    [TestFlight openFeedbackView];
+                    break;
+            }
+            break;
         case CONTACT_MARGUERITE_SECTION_INDEX:
             switch (indexPath.row) {
                 case CONTACT_MARGUERITE_OFFICE_ROW:

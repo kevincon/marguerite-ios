@@ -33,9 +33,9 @@ All pull requests and feedback are welcome! Report bugs and feature requests usi
 2. Install the command line tools by opening Xcode, clicking the Xcode menu -> Preferences, then click the Downloads tab, then click the Components tab below, then click "Install" next to "Command Line Tools."
 
 #### Viewing the Code
-1. Clone the git repository
+1. Clone the git repository.
 2. Open the Xcode workspace (not the project!) by double clicking on the "marguerite.xcworkspace" file.
-3. At this point you should be able to run the project in the iPhone simulator by selecting "marguerite -> iPhone 6.1 simulator in the dropdown menu at the top left" and clicking the "Run" button. However, certain features of the app will not function until you update the secrets.h file.
+3. At this point you should be able to run the project in the iPhone simulator by selecting "marguerite -> iPhone 6.1 simulator" in the dropdown menu at the top left and clicking the "Run" button. However, certain features of the app will not function until you update the secrets.h file.
 
 #### Configure the secrets.h file
 Before the app will fully function, you must complete the "secrets.h" file in the root directory of the project by filling in the following strings:

@@ -83,19 +83,19 @@
 </ol><h4>
 <a name="configure-the-secretsh-file" class="anchor" href="#configure-the-secretsh-file"><span class="octicon octicon-link"></span></a>Configure the secrets.h file</h4>
 
-<p>Before the app will fully function, you must complete the "secrets.h" file in the root directory of the project by filling in the following strings:</p>
+<p>First, run the following command on the command line to prevent git from recognizing any changes to the secrets.h file:</p>
+
+<pre><code>git update-index --assume-unchanged secrets.h
+</code></pre>
+
+<p>Then, before the app will fully function, you must complete the "secrets.h" file in the root directory of the project by filling in the following strings:</p>
 
 <ul>
 <li>MARGUERITE_REALTIME_XML_FEED: This is the URL of the real-time Marguerite shuttle bus location XML feed. Email Kevin Conley at kcon AT stanford DOT edu to ask for this value.</li>
 <li>MARGUERITE_VEHICLE_IDS_URL: This is the URL that the app sends POST requests to in order to query the mappings between Marguerite "vehicle IDs" (the numbers on the sides of the buses) and the "farebox IDs" that help identify which route a particular bus is driving on. Email Kevin Conley at kcon AT stanford DOT edu to ask for this value.</li>
 <li>GOOGLE_MAPS_API_KEY: This is the API key for the Google Maps iPhone SDK. Follow the instructions here (<a href="https://developers.google.com/maps/documentation/ios/start#obtaining_an_api_key">https://developers.google.com/maps/documentation/ios/start#obtaining_an_api_key</a>) for "Obtaining an API Key" and then update this value.</li>
 <li>TESTFLIGHT_APPLICATION_TOKEN: This is the token for the TestFlight analytics SDK. You can leave this entry as the empty string; it won't affect you being able to build and run the app.</li>
-</ul><p>After updating secrets.h, run the following command on the command line to prevent git from recognizing any changes to the secrets.h file:</p>
-
-<pre><code>git update-index --assume-unchanged secrets.h
-</code></pre>
-
-<h3>
+</ul><h3>
 <a name="best-practices" class="anchor" href="#best-practices"><span class="octicon octicon-link"></span></a>Best practices</h3>
 
 <p>These are the practicies we currently follow, but feel free to propose better methodologies!</p>

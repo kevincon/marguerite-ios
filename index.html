@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Marguerite for iOS by cardinaldevs</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Marguerite for iOS</h1>
+        <h2>An open-source iPhone app for riders of the Stanford Marguerite shuttle bus system.</h2>
+        <a href="https://github.com/cardinaldevs/marguerite-ios" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="marguerite-for-ios-" class="anchor" href="#marguerite-for-ios-"><span class="octicon octicon-link"></span></a>Marguerite for iOS <a href="https://travis-ci.org/cardinaldevs/marguerite-ios"><img src="https://travis-ci.org/cardinaldevs/marguerite-ios.png?branch=master" alt="Build Status"></a>
+</h1>
+
+<p>Note: Marguerite is currently in development and therefore the following information and screenshots are likely to change before the app is submitted to the iOS App Store.</p>
+
+<h1>
+<a name="beta-test" class="anchor" href="#beta-test"><span class="octicon octicon-link"></span></a>Beta Test</h1>
+
+<p>Want to beta test the app? First make sure your device <a href="http://en.wikipedia.org/wiki/List_of_iOS_devices#Highest_Version_of_iOS_Supported">supports iOS 6.1</a>, then <a href="http://tflig.ht/13qDQ8p">register with our TestFlight team</a>.</p>
+
+<h1>
+<a name="description" class="anchor" href="#description"><span class="octicon octicon-link"></span></a>Description</h1>
+
+<p>Marguerite is an iPhone app that makes it easier for riders to use the free <a href="http://transportation.stanford.edu/marguerite/">Stanford Marguerite shuttle bus system</a>.</p>
+
+<p>Marguerite is developed and maintained by the <a href="http://sadevs.stanford.edu/">upcoming Cardinal Devs club</a> at Stanford. Cardinal Devs is an upcoming student organization that develops, maintains, and improves open-source, student-run technology at Stanford University. Cardinal Devs will be applying to be recognized as an official Stanford organization by October 25, 2013. If you are interested in joining as a developer, designer, or leader, please email Kevin Conley at kcon AT stanford DOT edu.</p>
+
+<p>Marguerite is developed with the knowledge and gracious assistance of the <a href="http://transportation.stanford.edu/">Stanford Parking &amp; Transportation Services department</a>. We are extremely grateful for their help.</p>
+
+<h3>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h3>
+
+<ul>
+<li>See what buses are arriving next at the Marguerite stop closest to your current location.*</li>
+<li>Plan a trip using the Marguerite shuttle.</li>
+<li>View the real-time locations of all shuttles on a Google map.</li>
+<li>View the schedules for all Marguerite routes.*</li>
+</ul><p>*No Internet connection required!</p>
+
+<h3>
+<a name="screenshots" class="anchor" href="#screenshots"><span class="octicon octicon-link"></span></a>Screenshots</h3>
+
+<p><img src="http://www.static.kevintechnology.com/marguerite-ios/nextshuttle.png" alt="Alt text"><img src="http://static.kevintechnology.com/marguerite-ios/livemap.png" alt="Alt text"></p>
+
+<h1>
+<a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h1>
+
+<p>All pull requests and feedback are welcome! Report bugs and feature requests using the <a href="https://github.com/cardinaldevs/marguerite-ios/issues">Github issues system</a>.</p>
+
+<h3>
+<a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting started</h3>
+
+<h4>
+<a name="prerequisites" class="anchor" href="#prerequisites"><span class="octicon octicon-link"></span></a>Prerequisites</h4>
+
+<ol>
+<li>Download and install Xcode 4.6.3 from the Mac App Store. </li>
+<li>Install the command line tools by opening Xcode, clicking the Xcode menu -&gt; Preferences, then click the Downloads tab, then click the Components tab below, then click "Install" next to "Command Line Tools."</li>
+</ol><h4>
+<a name="viewing-the-code" class="anchor" href="#viewing-the-code"><span class="octicon octicon-link"></span></a>Viewing the Code</h4>
+
+<ol>
+<li>Clone the git repository</li>
+<li>Open the Xcode workspace (not the project!) by double clicking on the "marguerite.xcworkspace" file.</li>
+<li>At this point you should be able to run the project in the iPhone simulator by selecting "marguerite -&gt; iPhone 6.1 simulator in the dropdown menu at the top left" and clicking the "Run" button. However, certain features of the app will not function until you update the secrets.h file.</li>
+</ol><h4>
+<a name="configure-the-secretsh-file" class="anchor" href="#configure-the-secretsh-file"><span class="octicon octicon-link"></span></a>Configure the secrets.h file</h4>
+
+<p>Before the app will fully function, you must complete the "secrets.h" file in the root directory of the project by filling in the following strings:</p>
+
+<ul>
+<li>MARGUERITE_REALTIME_XML_FEED: This is the URL of the real-time Marguerite shuttle bus location XML feed. Email Kevin Conley at kcon AT stanford DOT edu to ask for this value.</li>
+<li>MARGUERITE_VEHICLE_IDS_URL: This is the URL that the app sends POST requests to in order to query the mappings between Marguerite "vehicle IDs" (the numbers on the sides of the buses) and the "farebox IDs" that help identify which route a particular bus is driving on. Email Kevin Conley at kcon AT stanford DOT edu to ask for this value.</li>
+<li>GOOGLE_MAPS_API_KEY: This is the API key for the Google Maps iPhone SDK. Follow the instructions here (<a href="https://developers.google.com/maps/documentation/ios/start#obtaining_an_api_key">https://developers.google.com/maps/documentation/ios/start#obtaining_an_api_key</a>) for "Obtaining an API Key" and then update this value.</li>
+</ul><h3>
+<a name="best-practices" class="anchor" href="#best-practices"><span class="octicon octicon-link"></span></a>Best practices</h3>
+
+<p>These are the practicies we currently follow, but feel free to propose better methodologies!</p>
+
+<h4>
+<a name="git-branching" class="anchor" href="#git-branching"><span class="octicon octicon-link"></span></a>Git branching</h4>
+
+<p>We follow the methodology for creating/pushing branches as described here: 
+<a href="http://nvie.com/posts/a-successful-git-branching-model/">http://nvie.com/posts/a-successful-git-branching-model/</a></p>
+
+<h4>
+<a name="objective-c-style" class="anchor" href="#objective-c-style"><span class="octicon octicon-link"></span></a>Objective C style</h4>
+
+<p>We follow the style guide that Adium uses, as described here: 
+<a href="https://trac.adium.im/wiki/CodingStyle">https://trac.adium.im/wiki/CodingStyle</a></p>
+
+<h1>
+<a name="attributions" class="anchor" href="#attributions"><span class="octicon octicon-link"></span></a>Attributions</h1>
+
+<p>This app would not have been possible without the following open-source libraries:</p>
+
+<ul>
+<li>
+<a href="https://github.com/jvashishtha/GTFSImporter">GTFSImporter</a> for constructing an SQLite database using GTFS txt files.</li>
+<li>
+<a href="https://github.com/71squared/TBXML">TBXML</a> for parsing the real-time Marguerite shuttle bus location XML feed.</li>
+<li>
+<a href="https://github.com/pokeb/asi-http-request">ASIHTTPRequest</a> for simplifying GET and POST requests.</li>
+<li>
+<a href="http://defaulticon.com/">Default Icon</a> by <a href="http://www.interactivemania.com/">interactivemania</a> for the tab bar icons.</li>
+</ul><h1>
+<a name="mit-license" class="anchor" href="#mit-license"><span class="octicon octicon-link"></span></a>MIT License</h1>
+
+<p>The MIT License (MIT)</p>
+
+<p>Copyright (c) 2013 Cardinal Devs</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+
+<p>A different license may apply to other software included in this package, 
+including the libraries mentioned under "Attributions" above. Please consult their 
+respective headers/websites for the terms of their individual licenses.</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/cardinaldevs/marguerite-ios/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/cardinaldevs/marguerite-ios/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/cardinaldevs/marguerite-ios"></a> is maintained by <a href="https://github.com/cardinaldevs">cardinaldevs</a>.</p>
+
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>

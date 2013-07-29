@@ -15,6 +15,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // !!!: Use the next line only during beta (testers are uniquely identified)
+    [TestFlight setDeviceIdentifier:[[[UIDevice currentDevice] identifierForVendor] UUIDString]];
+    
+    // Initiate TestFlight analytics SDK
+    [TestFlight takeOff:TESTFLIGHT_APPLICATION_TOKEN];
+    
     // Copy gfts.db file from app bundle to Caches directory if needed
     if (![GTFSDatabase exists]) {
         if (![GTFSDatabase copyToCache]) {

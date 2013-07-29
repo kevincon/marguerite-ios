@@ -122,6 +122,9 @@
 		F471C4D0178B89CE005583A4 /* stops.txt in Resources */ = {isa = PBXBuildFile; fileRef = F471C4C9178B89CE005583A4 /* stops.txt */; };
 		F471C4D1178B89CE005583A4 /* trips.txt in Resources */ = {isa = PBXBuildFile; fileRef = F471C4CA178B89CE005583A4 /* trips.txt */; };
 		F471C4DB178DF660005583A4 /* StopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F471C4DA178DF660005583A4 /* StopViewController.m */; };
+		F4A364ED17A6515E006ACFAC /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4A364E917A6515E006ACFAC /* libTestFlight.a */; };
+		F4A364EE17A6515E006ACFAC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F4A364EA17A6515E006ACFAC /* README.md */; };
+		F4A364EF17A6515E006ACFAC /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = F4A364EB17A6515E006ACFAC /* release_notes.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -280,6 +283,10 @@
 		F471C4CA178B89CE005583A4 /* trips.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = trips.txt; path = gtfs/trips.txt; sourceTree = "<group>"; };
 		F471C4D9178DF660005583A4 /* StopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StopViewController.h; path = classes/StopViewController.h; sourceTree = "<group>"; };
 		F471C4DA178DF660005583A4 /* StopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StopViewController.m; path = classes/StopViewController.m; sourceTree = "<group>"; };
+		F4A364E917A6515E006ACFAC /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		F4A364EA17A6515E006ACFAC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		F4A364EB17A6515E006ACFAC /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
+		F4A364EC17A6515E006ACFAC /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +312,7 @@
 				F471C3DD178B7D5F005583A4 /* CoreGraphics.framework in Frameworks */,
 				626EE401911147B3A58D811C /* libPods.a in Frameworks */,
 				F41938A317A3E2F40056F598 /* GoogleMaps.framework in Frameworks */,
+				F4A364ED17A6515E006ACFAC /* libTestFlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,10 +602,23 @@
 		F471C4D7178DDB6D005583A4 /* libraries */ = {
 			isa = PBXGroup;
 			children = (
+				F4A364E817A6515E006ACFAC /* TestFlightSDK1.2.6 */,
 				F419389D17A3E1E00056F598 /* GTFSImporter */,
 				F419389C17A3E1CD0056F598 /* TBXML */,
 			);
 			name = libraries;
+			sourceTree = "<group>";
+		};
+		F4A364E817A6515E006ACFAC /* TestFlightSDK1.2.6 */ = {
+			isa = PBXGroup;
+			children = (
+				F4A364E917A6515E006ACFAC /* libTestFlight.a */,
+				F4A364EA17A6515E006ACFAC /* README.md */,
+				F4A364EB17A6515E006ACFAC /* release_notes.md */,
+				F4A364EC17A6515E006ACFAC /* TestFlight.h */,
+			);
+			name = TestFlightSDK1.2.6;
+			path = libraries/TestFlightSDK1.2.6;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -715,6 +736,8 @@
 				F41938A517A3E2FB0056F598 /* GoogleMaps.bundle in Resources */,
 				F41938AB17A3E4480056F598 /* InfoPlist.strings in Resources */,
 				F41938AC17A3E4480056F598 /* MainStoryboard_iPhone.storyboard in Resources */,
+				F4A364EE17A6515E006ACFAC /* README.md in Resources */,
+				F4A364EF17A6515E006ACFAC /* release_notes.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -894,6 +917,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "marguerite-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/marguerite-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/libraries/TestFlightSDK1.2.6\"",
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = Marguerite;
 				PROVISIONING_PROFILE = "";
@@ -919,6 +946,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "marguerite-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/marguerite-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/libraries/TestFlightSDK1.2.6\"",
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = Marguerite;
 				PROVISIONING_PROFILE = "";

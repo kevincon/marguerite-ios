@@ -17,7 +17,7 @@
 		236B3417E8294CD2BEA70985 /* ASIDownloadCache.h in Headers */ = {isa = PBXBuildFile; fileRef = EDD99EB082944ECD98C098FB /* ASIDownloadCache.h */; };
 		2857FF6F85BF491CA3BC2F48 /* ASIInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AD0C34165DE49CA92E9274C /* ASIInputStream.h */; };
 		3082E51F990C44648B560E22 /* ASIS3BucketObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C05D6C663F04940A369E7EF /* ASIS3BucketObject.h */; };
-		3A7A85E0C3504E86BD67360A /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E14C79EDBC4FD39C73FB74 /* ASIFormDataRequest.m */; };
+		3A7A85E0C3504E86BD67360A /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E14C79EDBC4FD39C73FB74 /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-O0"; }; };
 		45FB24AB1802435A864C3AF0 /* ASIS3Request.m in Sources */ = {isa = PBXBuildFile; fileRef = FA953A133C624BF8A12599CA /* ASIS3Request.m */; };
 		46F8A8B378D149BFABBADF01 /* ASIS3BucketObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2D9A211CF641279D1CBD42 /* ASIS3BucketObject.m */; };
 		4901B6E17BC04DA8A1D95A8A /* ASICloudFilesContainerXMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC1FABDC3544F19B6E8E65F /* ASICloudFilesContainerXMLParserDelegate.m */; };
@@ -39,7 +39,7 @@
 		A4AAA83C27A84FAA8EED51F0 /* ASIS3BucketRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = D817A54B79D64E358ABEC836 /* ASIS3BucketRequest.h */; };
 		A4B8C79F594C4179B47694DA /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BB25F2B7A9734A6EA5A85503 /* Reachability.m */; };
 		AF628FC4A4734D738F955F58 /* ASIDataCompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ECEA9B4AFD9499D84AB34EB /* ASIDataCompressor.h */; };
-		AF6DCCE48B4E47A395533680 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 839D8A5CC6BD4797A62C7CA3 /* ASIHTTPRequest.m */; };
+		AF6DCCE48B4E47A395533680 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 839D8A5CC6BD4797A62C7CA3 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-O0"; }; };
 		B892492925254C29BF500CAA /* ASICloudFilesContainerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C12024B7E04CDAB31C7DA5 /* ASICloudFilesContainerRequest.m */; };
 		BDEEEABBB2694FEBB80BFD7A /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = CB27248C04D3479D97354B1D /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		BF2C71D60DD54DCE8850F119 /* ASIWebPageRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 82098A7CC30D4E708B85C798 /* ASIWebPageRequest.h */; };

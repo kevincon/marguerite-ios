@@ -14,5 +14,6 @@
 @property (nonatomic, strong) NSString * routeLongName;
 @property (nonatomic, strong) UIColor * routeColor;
 @property (nonatomic, strong) UIColor * routeTextColor;
+@property (nonatomic, strong) NSString * tripId;
 
 @end

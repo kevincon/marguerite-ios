@@ -88,7 +88,7 @@
     NSString *timeString = [timeFormat stringFromDate:[NSDate date]];
     
     // Note: we must manually insert the routes string into the query string; it doesn't work if you try to do it with executeQuery
-    NSString *departureTimesQuery = [NSString stringWithFormat:@"SELECT stop_times.departure_time, routes.route_long_name, routes.route_color, routes.route_text_color FROM routes, trips, calendar_dates, stop_times WHERE trips.service_id=calendar_dates.service_id AND calendar_dates.date=? AND stop_times.trip_id=trips.trip_id AND routes.route_id=trips.route_id AND stop_times.stop_id=? AND trips.route_id IN (%@) AND time(stop_times.departure_time) > time(\'%@\') ORDER BY time(stop_times.departure_time)", self.stop.routesString, timeString];
+    NSString *departureTimesQuery = [NSString stringWithFormat:@"SELECT stop_times.departure_time, routes.route_long_name, routes.route_color, routes.route_text_color, trips.trip_id FROM routes, trips, calendar_dates, stop_times WHERE trips.service_id=calendar_dates.service_id AND calendar_dates.date=? AND stop_times.trip_id=trips.trip_id AND routes.route_id=trips.route_id AND stop_times.stop_id=? AND trips.route_id IN (%@) AND time(stop_times.departure_time) > time(\'%@\') GROUP BY stop_times.departure_time, routes.route_long_name ORDER BY time(stop_times.departure_time)", self.stop.routesString, timeString];
     
     FMResultSet *departureTimesRS = [db executeQuery:departureTimesQuery withArgumentsInArray:@[todaysDate, self.stop.stopId]];
     
@@ -98,9 +98,10 @@
     while([departureTimesRS next]) {
         MStopTime *bus = [[MStopTime alloc] init];
         bus.routeLongName = [departureTimesRS objectForColumnName:@"route_long_name"];
+        bus.tripId = [departureTimesRS objectForColumnName:@"trip_id"];
         bus.routeColor = [MUtil colorFromHexString:[departureTimesRS objectForColumnName:@"route_color"]];
         bus.routeTextColor = [MUtil colorFromHexString:[departureTimesRS objectForColumnName:@"route_text_color"]];
-        
+
         NSString *departure_time = [departureTimesRS objectForColumnName:@"departure_time"];
         
         // Some departure times have 24 as the hour, so we need to change that to 00

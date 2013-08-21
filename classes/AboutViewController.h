@@ -10,4 +10,6 @@
 
 @interface AboutViewController : UITableViewController <UITableViewDelegate>
 
+@property (strong, nonatomic) UITextField *feedbackField;
+
 @end

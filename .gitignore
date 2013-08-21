@@ -1,6 +1,7 @@
 .DS_Store
 build/
-xcuserdata
+xcuserdata/
+Pods/Pods.xcodeproj/xcuserdata/
 .bundle
 vendor
 test.log

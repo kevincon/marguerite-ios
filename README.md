@@ -3,12 +3,19 @@
 Note: Marguerite is currently in development and therefore the following information and screenshots are likely to change before the app is submitted to the iOS App Store.
 
 # Beta Test
-Want to beta test the app? First make sure your device [supports iOS 6.1](http://en.wikipedia.org/wiki/List_of_iOS_devices#Highest_Version_of_iOS_Supported), then [register with our TestFlight team](http://tflig.ht/13qDQ8p).
+Want to beta test the app? First make sure your device [supports iOS 6.1](http://en.wikipedia.org/wiki/List_of_iOS_devices#Highest_Version_of_iOS_Supported), then:
+
+1. [Register with our TestFlight team](http://tflig.ht/13qDQ8p). You'll need to create a TestFlight account using your phone so we can identify your device.
+2. Wait for your membership on the Cardinal Devs TestFlight team to be approved.
+3. Visit www.testflightapp.com on your phone to download and install the latest build of the Marguerite beta app!
+4. Help us improve the app by submitting feedback on the "About" tab of the app.
 
 # Description
 Marguerite is an iPhone app that makes it easier for riders to use the free [Stanford Marguerite shuttle bus system](http://transportation.stanford.edu/marguerite/).
 
-Marguerite is developed and maintained by the [upcoming Cardinal Devs club](http://sadevs.stanford.edu/) at Stanford. Cardinal Devs is an upcoming student organization that develops, maintains, and improves open-source, student-run technology at Stanford University. Cardinal Devs will be applying to be recognized as an official Stanford organization by October 25, 2013. If you are interested in joining as a developer, designer, or leader, please email Kevin Conley at kcon AT stanford DOT edu.
+Marguerite is developed and maintained by the [upcoming Cardinal Devs club](http://sadevs.stanford.edu/) at Stanford. Cardinal Devs is an upcoming student organization that develops, maintains, and improves open-source, student-run technology at Stanford University. 
+
+If you are a Stanford undergraduate or graduate student and are interested in joining as a 2013-2014 developer, designer, or leader, please apply via our jobs page: https://stanforddevs.recruiterbox.com/. Applications are due Friday, September 27, 2013.
 
 Marguerite is developed with the knowledge and gracious assistance of the [Stanford Parking & Transportation Services department](http://transportation.stanford.edu/). We are extremely grateful for their help.
 

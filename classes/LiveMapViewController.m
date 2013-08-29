@@ -36,6 +36,7 @@
                                 }
                             }
                             andFailureCallback:^(NSError *error) {
+                                [TestFlight passCheckpoint:[NSString stringWithFormat:@"Failed to load real-time buses: %@", [error localizedDescription]]];
                                 return;
                             }];
     
@@ -56,6 +57,7 @@
     
     // Set up a timer to update the bus locations every 5 seconds
     timer = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(timerCallback) userInfo:nil repeats:YES];
+    [TestFlight passCheckpoint:@"Visited Live Map tab."];
 }
 
 - (void) timerCallback
@@ -103,6 +105,7 @@
         }
     }
     
+    [TestFlight passCheckpoint:@"Tapped a live bus marker."];
     
     // Map should then continue with its default selection behavior
     return NO;
@@ -241,6 +244,7 @@
     [_mapView animateToCameraPosition:[GMSCameraPosition cameraWithLatitude:STANFORD_LATITUDE
                                                                   longitude:STANFORD_LONGITUDE
                                                                        zoom:STANFORD_ZOOM_LEVEL]];
+    [TestFlight passCheckpoint:@"Tapped zoom to campus button."];
 }
 
 @end

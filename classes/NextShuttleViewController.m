@@ -56,7 +56,7 @@
     [self updateLocation];
     [self.tableView reloadData];
 
-    return;
+    [TestFlight passCheckpoint:@"Visited Next Shuttle tab."];
 }
 
 - (void) viewWillAppear:(BOOL)animated
@@ -79,6 +79,7 @@
                                     [formatter stringFromDate:[NSDate date]]];
     refresh.attributedTitle = [[NSAttributedString alloc] initWithString:lastUpdated];
     [refresh endRefreshing];
+    [TestFlight passCheckpoint:@"Refreshed nearest stops."];
 }
 
 #pragma mark - Table
@@ -261,9 +262,10 @@ shouldReloadTableForSearchString:(NSString *)searchString
 
 - (void)locationError:(NSError *)error {
 	NSLog(@"didFailWithError: %@", error);
-    UIAlertView *errorAlert = [[UIAlertView alloc]
-                               initWithTitle:@"Error" message:@"Failed to Get Your Location" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    [errorAlert show];
+//    UIAlertView *errorAlert = [[UIAlertView alloc]
+//                               initWithTitle:@"Error" message:@"Failed to Get Your Location" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+//    [errorAlert show];
+    [TestFlight passCheckpoint:@"Failed to get user's GPS location."];
 }
 
 @end

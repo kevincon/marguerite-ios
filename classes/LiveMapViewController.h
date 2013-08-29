@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "RealtimeBuses.h"
+#import "MRoutePolyline.h"
 #import <GoogleMaps/GoogleMaps.h>
 
 @interface LiveMapViewController : UIViewController <GMSMapViewDelegate> {
     RealtimeBuses *buses;
     NSMutableDictionary *busMarkers;
     NSTimer *timer;
+    MRoutePolyline *routePolyline;
 }
 
 @property (weak, nonatomic) GMSMapView *mapView;

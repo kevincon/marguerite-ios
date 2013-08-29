@@ -9,6 +9,7 @@
 #import "LiveMapViewController.h"
 #import "RealtimeBuses.h"
 #import "MRealtimeBus.h"
+#import "MRoutePolyline.h"
 #import <CoreLocation/CoreLocation.h>
 #import "secrets.h"
 #import "Util.h"
@@ -48,6 +49,8 @@
     // Manually insert the "Zoom to Stanford" button
     [_mapView addSubview:_stanfordButton];
     
+    routePolyline = nil;
+    
     // Update the bus locations immediately for the first time
     [buses update];
     
@@ -74,6 +77,35 @@
     marker.animated = YES;
     marker.userData = bus;
     busMarkers[bus.vehicleId] = marker;
+}
+
+- (void) mapView:(GMSMapView *)mapView didTapAtCoordinate:(CLLocationCoordinate2D)coordinate
+{
+    // Clear route polyline if one is being displayed
+    if (routePolyline != nil) {
+        routePolyline.map = nil;
+        routePolyline = nil;
+    }
+}
+
+- (BOOL) mapView:(GMSMapView *)mapView didTapMarker:(GMSMarker *)marker
+{
+    // Clear route polyline if one is being displayed
+    if (routePolyline != nil) {
+        routePolyline.map = nil;
+        routePolyline = nil;
+    }
+    if (marker.userData != nil) {
+        MRoute *route = ((MRealtimeBus *)marker.userData).route;
+        routePolyline = [[MRoutePolyline alloc] initWithRoute:route];
+        if (routePolyline != nil) {
+            routePolyline.map = _mapView;
+        }
+    }
+    
+    
+    // Map should then continue with its default selection behavior
+    return NO;
 }
 
 /*

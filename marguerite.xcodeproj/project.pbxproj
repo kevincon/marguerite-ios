@@ -46,8 +46,6 @@
 		F412321517A3CD0E00604A02 /* X.png in Resources */ = {isa = PBXBuildFile; fileRef = F41231F217A3CD0E00604A02 /* X.png */; };
 		F412321617A3CD0E00604A02 /* Y.png in Resources */ = {isa = PBXBuildFile; fileRef = F41231F317A3CD0E00604A02 /* Y.png */; };
 		F412321E17A3DB1600604A02 /* stanford_s.png in Resources */ = {isa = PBXBuildFile; fileRef = F412321D17A3DB1600604A02 /* stanford_s.png */; };
-		F41938A317A3E2F40056F598 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41938A217A3E2F40056F598 /* GoogleMaps.framework */; };
-		F41938A517A3E2FB0056F598 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F41938A417A3E2FB0056F598 /* GoogleMaps.bundle */; };
 		F41938AB17A3E4480056F598 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F41938A717A3E4480056F598 /* InfoPlist.strings */; };
 		F41938AC17A3E4480056F598 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41938A917A3E4480056F598 /* MainStoryboard_iPhone.storyboard */; };
 		F4592E541795E6E700579D6B /* TBXML+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = F4592E4D1795E6E700579D6B /* TBXML+Compression.m */; };
@@ -84,6 +82,8 @@
 		F4592F00179DE28D00579D6B /* MRealtimeBus.m in Sources */ = {isa = PBXBuildFile; fileRef = F4592EFF179DE28D00579D6B /* MRealtimeBus.m */; };
 		F4592F03179F7A5300579D6B /* MStop.m in Sources */ = {isa = PBXBuildFile; fileRef = F4592F02179F7A5200579D6B /* MStop.m */; };
 		F4592F06179FBCE200579D6B /* MStopTime.m in Sources */ = {isa = PBXBuildFile; fileRef = F4592F05179FBCDE00579D6B /* MStopTime.m */; };
+		F46BAD3F17CF1F620085C39D /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F46BAD3E17CF1F620085C39D /* GoogleMaps.framework */; };
+		F46BAD4117CF1F8F0085C39D /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F46BAD4017CF1F8F0085C39D /* GoogleMaps.bundle */; };
 		F471C3D9178B7D5F005583A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F471C3D8178B7D5F005583A4 /* UIKit.framework */; };
 		F471C3DB178B7D5F005583A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F471C3DA178B7D5F005583A4 /* Foundation.framework */; };
 		F471C3DD178B7D5F005583A4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F471C3DC178B7D5F005583A4 /* CoreGraphics.framework */; };
@@ -167,8 +167,6 @@
 		F41231F217A3CD0E00604A02 /* X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = X.png; path = images/bus/X.png; sourceTree = "<group>"; };
 		F41231F317A3CD0E00604A02 /* Y.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Y.png; path = images/bus/Y.png; sourceTree = "<group>"; };
 		F412321D17A3DB1600604A02 /* stanford_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stanford_s.png; path = images/map/stanford_s.png; sourceTree = "<group>"; };
-		F41938A217A3E2F40056F598 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = libraries/GoogleMaps.framework; sourceTree = "<group>"; };
-		F41938A417A3E2FB0056F598 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = libraries/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		F41938A817A3E4480056F598 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F41938AA17A3E4480056F598 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		F41938AD17A3E44F0056F598 /* marguerite-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "marguerite-Info.plist"; sourceTree = "<group>"; };
@@ -218,6 +216,8 @@
 		F4592F02179F7A5200579D6B /* MStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MStop.m; path = classes/MStop.m; sourceTree = "<group>"; };
 		F4592F04179FBCDD00579D6B /* MStopTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MStopTime.h; path = classes/MStopTime.h; sourceTree = "<group>"; };
 		F4592F05179FBCDE00579D6B /* MStopTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MStopTime.m; path = classes/MStopTime.m; sourceTree = "<group>"; };
+		F46BAD3E17CF1F620085C39D /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		F46BAD4017CF1F8F0085C39D /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		F471C3D5178B7D5F005583A4 /* Marguerite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marguerite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F471C3D8178B7D5F005583A4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F471C3DA178B7D5F005583A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -307,7 +307,7 @@
 				F471C3DB178B7D5F005583A4 /* Foundation.framework in Frameworks */,
 				F471C3DD178B7D5F005583A4 /* CoreGraphics.framework in Frameworks */,
 				626EE401911147B3A58D811C /* libPods.a in Frameworks */,
-				F41938A317A3E2F40056F598 /* GoogleMaps.framework in Frameworks */,
+				F46BAD3F17CF1F620085C39D /* GoogleMaps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,8 +572,8 @@
 		F471C3D7178B7D5F005583A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F41938A417A3E2FB0056F598 /* GoogleMaps.bundle */,
-				F41938A217A3E2F40056F598 /* GoogleMaps.framework */,
+				F46BAD4017CF1F8F0085C39D /* GoogleMaps.bundle */,
+				F46BAD3E17CF1F620085C39D /* GoogleMaps.framework */,
 				F4592E571795E71800579D6B /* libz.dylib */,
 				F471C4BB178B88DD005583A4 /* CoreLocation.framework */,
 				F471C4B9178B88D7005583A4 /* libsqlite3.dylib */,
@@ -717,9 +717,9 @@
 				F412321517A3CD0E00604A02 /* X.png in Resources */,
 				F412321617A3CD0E00604A02 /* Y.png in Resources */,
 				F412321E17A3DB1600604A02 /* stanford_s.png in Resources */,
-				F41938A517A3E2FB0056F598 /* GoogleMaps.bundle in Resources */,
 				F41938AB17A3E4480056F598 /* InfoPlist.strings in Resources */,
 				F41938AC17A3E4480056F598 /* MainStoryboard_iPhone.storyboard in Resources */,
+				F46BAD4117CF1F8F0085C39D /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

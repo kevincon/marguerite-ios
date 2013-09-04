@@ -10,15 +10,18 @@ PODS:
     - Reachability
   - ASIHTTPRequest/S3 (1.8.1):
     - Reachability
+  - GCDiscreetNotificationView (1.0.2)
   - Reachability (3.1.1)
   - TestFlightSDK (2.0)
 
 DEPENDENCIES:
   - ASIHTTPRequest
+  - GCDiscreetNotificationView
   - TestFlightSDK
 
 SPEC CHECKSUMS:
   ASIHTTPRequest: a411b8d0f006ed8fc24248be6a0c4ad2abc9b101
+  GCDiscreetNotificationView: ca4a876d0eb65950f166eda41525c648044f00d3
   Reachability: 2be6bc2fd2bd31d97f5db33e75e4b29c79e95883
   TestFlightSDK: 940906d4b2550cf397c6f2d2fcc4ebfdcd8ae858
 

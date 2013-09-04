@@ -13,10 +13,13 @@
 #import <CoreLocation/CoreLocation.h>
 #import "secrets.h"
 #import "Util.h"
+#import "GCDiscreetNotificationView.h"
 
-#define STANFORD_LATITUDE       37.432233
-#define STANFORD_LONGITUDE      -122.171183
-#define STANFORD_ZOOM_LEVEL     14
+#define STANFORD_LATITUDE                   37.432233
+#define STANFORD_LONGITUDE                  -122.171183
+#define STANFORD_ZOOM_LEVEL                 14
+
+#define BUS_REFRESH_INTERVAL_IN_SECONDS     5
 
 @interface LiveMapViewController ()
 
@@ -31,13 +34,32 @@
     busMarkers = [[NSMutableDictionary alloc] init];
     buses = [[RealtimeBuses alloc] initWithURL:MARGUERITE_REALTIME_XML_FEED
                             andSuccessCallback:^(NSArray *busesArray) {
-                                for (MRealtimeBus *bus in busesArray) {
-                                    [self updateMarkerWithBus:bus];
+                                if ([busesArray count] > 0) {
+                                    for (MRealtimeBus *bus in busesArray) {
+                                        [self updateMarkerWithBus:bus];
+                                    }
+                                    [self hideHUD];
+                                    noBusesRunning = NO;
+                                    busLoadError = NO;
+                                } else {
+                                    if (!noBusesRunning) {
+                                        [self showHUDWithMessage:@"No buses are reporting locations." withActivity:NO];
+                                    }
+                                    noBusesRunning = YES;
+                                    busLoadError = NO;
                                 }
+                                timer = [NSTimer timerWithTimeInterval:BUS_REFRESH_INTERVAL_IN_SECONDS target:self selector:@selector(refreshBuses:) userInfo:nil repeats:NO];
+                                [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
                             }
                             andFailureCallback:^(NSError *error) {
                                 [TestFlight passCheckpoint:[NSString stringWithFormat:@"Failed to load real-time buses: %@", [error localizedDescription]]];
-                                return;
+                                timer = [NSTimer timerWithTimeInterval:BUS_REFRESH_INTERVAL_IN_SECONDS target:self selector:@selector(refreshBuses:) userInfo:nil repeats:NO];
+                                [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+                                if (!busLoadError) {
+                                    [self showHUDWithMessage:@"Could not connect to server." withActivity:NO];
+                                }
+                                noBusesRunning = NO;
+                                busLoadError = YES;
                             }];
     
     [_mapView setCamera:[GMSCameraPosition cameraWithLatitude:STANFORD_LATITUDE longitude:STANFORD_LONGITUDE zoom:STANFORD_ZOOM_LEVEL]];
@@ -50,19 +72,37 @@
     // Manually insert the "Zoom to Stanford" button
     [_mapView addSubview:_stanfordButton];
     
+    [self showHUDWithMessage:@"Loading buses..." withActivity:YES];
+    [self refreshBuses:nil];
+    
     routePolyline = nil;
     
-    // Update the bus locations immediately for the first time
-    [buses update];
-    
-    // Set up a timer to update the bus locations every 5 seconds
-    timer = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(timerCallback) userInfo:nil repeats:YES];
     [TestFlight passCheckpoint:@"Visited Live Map tab."];
 }
 
-- (void) timerCallback
+-(void) refreshBuses:(NSTimer *)timer
 {
     [buses update];
+}
+
+- (void) showHUDWithMessage:(NSString *)message withActivity:(BOOL)activity
+{
+    if (self.HUD == nil) {
+        self.HUD = [[GCDiscreetNotificationView alloc] initWithText:message showActivity:activity inPresentationMode:GCDiscreetNotificationViewPresentationModeTop inView:self.view];
+    }
+    
+    // Setup HUD
+    [self.HUD setTextLabel:message];
+    [self.HUD setShowActivity:activity animated:YES];
+    
+    // Show the HUD
+    [self.HUD show:YES];
+}
+
+- (void) hideHUD
+{
+    [self.HUD hide:YES];
+    self.HUD = nil;
 }
 
 - (void) updateMarkerWithBus:(MRealtimeBus *)bus

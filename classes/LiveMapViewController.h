@@ -10,16 +10,20 @@
 #import "RealtimeBuses.h"
 #import "MRoutePolyline.h"
 #import <GoogleMaps/GoogleMaps.h>
+#import "GCDiscreetNotificationView.h"
 
 @interface LiveMapViewController : UIViewController <GMSMapViewDelegate> {
     RealtimeBuses *buses;
     NSMutableDictionary *busMarkers;
     NSTimer *timer;
     MRoutePolyline *routePolyline;
+    BOOL noBusesRunning;
+    BOOL busLoadError;
 }
 
 @property (weak, nonatomic) GMSMapView *mapView;
 @property (weak, nonatomic) IBOutlet UIButton *stanfordButton;
+@property (strong, nonatomic) GCDiscreetNotificationView *HUD;
 
 - (IBAction)zoomToCampus:(id)sender;
 

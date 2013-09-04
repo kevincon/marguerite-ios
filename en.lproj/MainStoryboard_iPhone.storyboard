@@ -86,15 +86,17 @@
                             <constraint firstItem="xBT-Qw-E6C" firstAttribute="top" secondItem="kcq-Ts-bc1" secondAttribute="top" type="default" id="W28-Iv-Br0"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Live Map" image="location.png" id="AAS-B9-a62"/>
+                    <navigationItem key="navigationItem" title="Live Map" id="f4f-bc-e5s"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="mapView" destination="xBT-Qw-E6C" id="wAJ-TJ-YZf"/>
                         <outlet property="stanfordButton" destination="OMO-JG-5Uv" id="pmB-lj-A6y"/>
+                        <segue destination="5t1-ze-58X" kind="push" identifier="SelectedStopSegue" id="XIA-ay-fS6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VxY-re-nvF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="693" y="1162"/>
+            <point key="canvasLocation" x="1219" y="1162"/>
         </scene>
         <!--View Controller - Schedules-->
         <scene sceneID="1pA-HN-NqL">
@@ -302,7 +304,7 @@
                     <connections>
                         <segue destination="m8U-bF-w6W" kind="relationship" relationship="viewControllers" id="EBS-YV-beY"/>
                         <segue destination="3" kind="relationship" relationship="viewControllers" id="DGp-gu-vtd"/>
-                        <segue destination="tzK-OA-L4k" kind="relationship" relationship="viewControllers" id="dhP-WZ-Org"/>
+                        <segue destination="WOD-0U-9bj" kind="relationship" relationship="viewControllers" id="dhP-WZ-Org"/>
                         <segue destination="W5v-Nb-5vC" kind="relationship" relationship="viewControllers" id="cOd-fK-fh2"/>
                         <segue destination="q2g-sg-zhw" kind="relationship" relationship="viewControllers" id="Qbe-zN-WWz"/>
                     </connections>
@@ -440,7 +442,7 @@
         <!--Stop View Controller - Stop Name-->
         <scene sceneID="wS2-ko-lbu">
             <objects>
-                <tableViewController id="5t1-ze-58X" customClass="StopViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="StopView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5t1-ze-58X" customClass="StopViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="fuC-iI-Ifn">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -491,10 +493,35 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Stop Name" id="IP9-sk-gyp"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bYG-Dk-bRk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1688" y="-161"/>
+        </scene>
+        <!--Navigation Controller - Live Map-->
+        <scene sceneID="3ne-qo-LZY">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="itC-TX-7hA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController navigationBarHidden="YES" id="WOD-0U-9bj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Live Map" image="location.png" id="AAS-B9-a62"/>
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WSu-Z2-vNX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="TZj-0q-Bnh">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="tzK-OA-L4k" kind="relationship" relationship="rootViewController" id="SdM-sv-gv3"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="693" y="1162"/>
         </scene>
     </scenes>
     <resources>
@@ -505,12 +532,36 @@
         <image name="stanford_s.png" width="370" height="479"/>
         <image name="time.png" width="32" height="32"/>
     </resources>
+    <classes>
+        <class className="AboutViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutViewController.h"/>
+        </class>
+        <class className="GMSMapView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GMSMapView.h"/>
+        </class>
+        <class className="LiveMapViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LiveMapViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="zoomToCampus:"/>
+                <relationship kind="outlet" name="stanfordButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="NextShuttleViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NextShuttleViewController.h"/>
+        </class>
+        <class className="StopViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StopViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="aDQ-WO-Wiu"/>
+        <segue reference="XIA-ay-fS6"/>
     </inferredMetricsTieBreakers>
 </document>

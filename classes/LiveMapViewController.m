@@ -7,9 +7,11 @@
 //
 
 #import "LiveMapViewController.h"
+#import "StopViewController.h"
 #import "RealtimeBuses.h"
 #import "MRealtimeBus.h"
 #import "MRoutePolyline.h"
+#import "MStop.h"
 #import <CoreLocation/CoreLocation.h>
 #import "secrets.h"
 #import "Util.h"
@@ -26,6 +28,11 @@
 @end
 
 @implementation LiveMapViewController
+
+-(void)viewWillAppear:(BOOL)animated{
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    
+}
 
 - (void) viewDidLoad
 {
@@ -56,7 +63,7 @@
                                 timer = [NSTimer timerWithTimeInterval:BUS_REFRESH_INTERVAL_IN_SECONDS target:self selector:@selector(refreshBuses:) userInfo:nil repeats:NO];
                                 [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
                                 if (!busLoadError) {
-                                    [self showHUDWithMessage:@"Could not connect to server." withActivity:NO];
+                                    [self showHUDWithMessage:@"Could not connect to bus server." withActivity:NO];
                                 }
                                 noBusesRunning = NO;
                                 busLoadError = YES;
@@ -72,6 +79,8 @@
     // Manually insert the "Zoom to Stanford" button
     [_mapView addSubview:_stanfordButton];
     
+    [self loadStops];
+    
     [self showHUDWithMessage:@"Loading buses..." withActivity:YES];
     [self refreshBuses:nil];
     
@@ -80,7 +89,26 @@
     [TestFlight passCheckpoint:@"Visited Live Map tab."];
 }
 
--(void) refreshBuses:(NSTimer *)timer
+- (void) loadStops
+{
+    NSString *imageFilePath = [[NSBundle mainBundle] pathForResource:@"busstop" ofType:@"png"];
+    UIImage *stopIcon = [UIImage imageWithContentsOfFile:imageFilePath];
+    
+    NSArray *allStops = [MStop getAllStops];
+    for (MStop *stop in allStops) {
+        GMSMarker *marker = [[GMSMarker alloc] init];
+        marker.position = [stop.location coordinate];
+        marker.icon = stopIcon;
+        marker.title = stop.stopName;
+        marker.snippet = @"Tap here to view next shuttles.";
+        marker.map = _mapView;
+        marker.animated = YES;
+        marker.userData = stop;
+        marker.zIndex = 0;
+    }
+}
+
+- (void) refreshBuses:(NSTimer *)timer
 {
     [buses update];
 }
@@ -118,6 +146,7 @@
     marker.map = _mapView;
     marker.animated = YES;
     marker.userData = bus;
+    marker.zIndex = 3;
     busMarkers[bus.vehicleId] = marker;
 }
 
@@ -130,6 +159,18 @@
     }
 }
 
+
+- (void) mapView:(GMSMapView *)mapView didTapInfoWindowOfMarker:(GMSMarker *)marker
+{
+    if (marker.userData != nil && [marker.userData isKindOfClass:[MStop class]]) {
+        MStop *stop = (MStop *) marker.userData;
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
+        StopViewController *stopViewController = (StopViewController *) [storyboard instantiateViewControllerWithIdentifier:@"StopView"];
+        stopViewController.stop = stop;
+        [self.navigationController pushViewController:stopViewController animated:YES];
+    }
+}
+
 - (BOOL) mapView:(GMSMapView *)mapView didTapMarker:(GMSMarker *)marker
 {
     // Clear route polyline if one is being displayed
@@ -137,16 +178,16 @@
         routePolyline.map = nil;
         routePolyline = nil;
     }
-    if (marker.userData != nil) {
+    
+    if (marker.userData != nil && [marker.userData isKindOfClass:[MRealtimeBus class]]) {
         MRoute *route = ((MRealtimeBus *)marker.userData).route;
         routePolyline = [[MRoutePolyline alloc] initWithRoute:route];
         if (routePolyline != nil) {
             routePolyline.map = _mapView;
         }
+        [TestFlight passCheckpoint:@"Tapped a live bus marker."];
     }
-    
-    [TestFlight passCheckpoint:@"Tapped a live bus marker."];
-    
+
     // Map should then continue with its default selection behavior
     return NO;
 }

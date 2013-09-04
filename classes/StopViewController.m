@@ -28,6 +28,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    
 	self.title = _stop.stopName;
     _nextBuses = [self getNextBuses];
     

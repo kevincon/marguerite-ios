@@ -82,8 +82,6 @@
 		F4592F00179DE28D00579D6B /* MRealtimeBus.m in Sources */ = {isa = PBXBuildFile; fileRef = F4592EFF179DE28D00579D6B /* MRealtimeBus.m */; };
 		F4592F03179F7A5300579D6B /* MStop.m in Sources */ = {isa = PBXBuildFile; fileRef = F4592F02179F7A5200579D6B /* MStop.m */; };
 		F4592F06179FBCE200579D6B /* MStopTime.m in Sources */ = {isa = PBXBuildFile; fileRef = F4592F05179FBCDE00579D6B /* MStopTime.m */; };
-		F46BAD3F17CF1F620085C39D /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F46BAD3E17CF1F620085C39D /* GoogleMaps.framework */; };
-		F46BAD4117CF1F8F0085C39D /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F46BAD4017CF1F8F0085C39D /* GoogleMaps.bundle */; };
 		F471C3D9178B7D5F005583A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F471C3D8178B7D5F005583A4 /* UIKit.framework */; };
 		F471C3DB178B7D5F005583A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F471C3DA178B7D5F005583A4 /* Foundation.framework */; };
 		F471C3DD178B7D5F005583A4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F471C3DC178B7D5F005583A4 /* CoreGraphics.framework */; };
@@ -123,6 +121,8 @@
 		F471C4D1178B89CE005583A4 /* trips.txt in Resources */ = {isa = PBXBuildFile; fileRef = F471C4CA178B89CE005583A4 /* trips.txt */; };
 		F471C4DB178DF660005583A4 /* StopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F471C4DA178DF660005583A4 /* StopViewController.m */; };
 		F48BD72B17CC6426009630BE /* MRoutePolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = F48BD72A17CC6426009630BE /* MRoutePolyline.m */; };
+		F4D2EABF17E8D04D009A1975 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D2EABE17E8D04D009A1975 /* GoogleMaps.framework */; };
+		F4D2EAC117E8D066009A1975 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F4D2EAC017E8D066009A1975 /* GoogleMaps.bundle */; };
 		F4F555D417D71BAE00301597 /* busstop.png in Resources */ = {isa = PBXBuildFile; fileRef = F4F555D317D71BAE00301597 /* busstop.png */; };
 /* End PBXBuildFile section */
 
@@ -217,8 +217,6 @@
 		F4592F02179F7A5200579D6B /* MStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MStop.m; path = classes/MStop.m; sourceTree = "<group>"; };
 		F4592F04179FBCDD00579D6B /* MStopTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MStopTime.h; path = classes/MStopTime.h; sourceTree = "<group>"; };
 		F4592F05179FBCDE00579D6B /* MStopTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MStopTime.m; path = classes/MStopTime.m; sourceTree = "<group>"; };
-		F46BAD3E17CF1F620085C39D /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
-		F46BAD4017CF1F8F0085C39D /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		F471C3D5178B7D5F005583A4 /* Marguerite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marguerite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F471C3D8178B7D5F005583A4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F471C3DA178B7D5F005583A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -284,6 +282,8 @@
 		F471C4DA178DF660005583A4 /* StopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StopViewController.m; path = classes/StopViewController.m; sourceTree = "<group>"; };
 		F48BD72917CC6426009630BE /* MRoutePolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRoutePolyline.h; path = classes/MRoutePolyline.h; sourceTree = "<group>"; };
 		F48BD72A17CC6426009630BE /* MRoutePolyline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MRoutePolyline.m; path = classes/MRoutePolyline.m; sourceTree = "<group>"; };
+		F4D2EABE17E8D04D009A1975 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = libraries/GoogleMaps.framework; sourceTree = "<group>"; };
+		F4D2EAC017E8D066009A1975 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = libraries/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		F4F555D317D71BAE00301597 /* busstop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = busstop.png; path = images/map/busstop.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -309,7 +309,7 @@
 				F471C3DB178B7D5F005583A4 /* Foundation.framework in Frameworks */,
 				F471C3DD178B7D5F005583A4 /* CoreGraphics.framework in Frameworks */,
 				626EE401911147B3A58D811C /* libPods.a in Frameworks */,
-				F46BAD3F17CF1F620085C39D /* GoogleMaps.framework in Frameworks */,
+				F4D2EABF17E8D04D009A1975 /* GoogleMaps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,8 +575,8 @@
 		F471C3D7178B7D5F005583A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F46BAD4017CF1F8F0085C39D /* GoogleMaps.bundle */,
-				F46BAD3E17CF1F620085C39D /* GoogleMaps.framework */,
+				F4D2EAC017E8D066009A1975 /* GoogleMaps.bundle */,
+				F4D2EABE17E8D04D009A1975 /* GoogleMaps.framework */,
 				F4592E571795E71800579D6B /* libz.dylib */,
 				F471C4BB178B88DD005583A4 /* CoreLocation.framework */,
 				F471C4B9178B88D7005583A4 /* libsqlite3.dylib */,
@@ -722,8 +722,8 @@
 				F412321E17A3DB1600604A02 /* stanford_s.png in Resources */,
 				F41938AB17A3E4480056F598 /* InfoPlist.strings in Resources */,
 				F41938AC17A3E4480056F598 /* MainStoryboard_iPhone.storyboard in Resources */,
-				F46BAD4117CF1F8F0085C39D /* GoogleMaps.bundle in Resources */,
 				F4F555D417D71BAE00301597 /* busstop.png in Resources */,
+				F4D2EAC117E8D066009A1975 /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

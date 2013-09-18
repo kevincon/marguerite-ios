@@ -239,7 +239,7 @@ shouldReloadTableForSearchString:(NSString *)searchString
 - (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
 {
     NSPredicate *resultPredicate = [NSPredicate
-                                    predicateWithFormat:@"stopName contains[cd] %@ OR stopId contains[cd] %@",
+                                    predicateWithFormat:@"stopName contains[cd] %@ OR stopId == %@",
                                     searchText, searchText];
     
     searchResults = [allStops filteredArrayUsingPredicate:resultPredicate];

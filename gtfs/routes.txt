@@ -1,25 +1,27 @@
 route_id,route_short_name,route_long_name,route_type,route_url,route_color,route_text_color
 2,Y,Line Y,3,http://transportation.stanford.edu/marguerite/y,ED1C24,FFFFFF
 3,X,Line X,3,http://transportation.stanford.edu/marguerite/x,ED1C24,FFFFFF
-4,C,Line C,3,http://transportation.stanford.edu/marguerite/c,6CCff6,FFFFFF
-8, ,SLAC Shuttle,3,http://transportation.stanford.edu/marguerite/slac,00A651,FFFFFF
-9,N,Line N - Evenings ONLY,3,http://transportation.stanford.edu/marguerite/n,2E3192,FFFFFF
+4,C,Line C,3,http://transportation.stanford.edu/marguerite/c,6DCFF6,FFFFFF
+8,,SLAC Shuttle,3,http://transportation.stanford.edu/marguerite/slac,00A650,FFFFFF
+9,N,Line N - Evenings ONLY,3,http://transportation.stanford.edu/marguerite/n,2E3092,FFFFFF
 15,V,Line V,3,http://transportation.stanford.edu/marguerite/v,F58220,FFFFFF
-18,SE,Shopping Express,3,http://transportation.stanford.edu/marguerite/se,F49AC1,000000
-20,P,Line P,3,http://transportation.stanford.edu/marguerite/p,89CDA0,000000
-22,MC,Medical Center Loop,3,http://transportation.stanford.edu/marguerite/mc,92278F,FFFFFF
-28,1050A,Medical Center to 1050/1070 Arastradero,3,http://transportation.stanford.edu/marguerite/1050a,954B35,FFFFFF
-33,S,Line S,3,http://transportation.stanford.edu/marguerite/s,666633,FFFFFF
-36,AWE,Ardenwood Express,3,http://transportation.stanford.edu/marguerite/ardenwood,009390,FFFFFF
-38,RP,Research Park,3,http://transportation.stanford.edu/marguerite/rp,009390,FFFFFF
-40,SMP,Stanford Menlo Park Shuttle,3,http://transportation.stanford.edu/marguerite/smp,9ACA3C,000000
+18,SE,Shopping Express,3,http://transportation.stanford.edu/marguerite/se,D174AF,FFFFFF
+20,P,Line P,3,http://transportation.stanford.edu/marguerite/p,AFDBBD,000000
+22,MC,Medical Center Loop,3,http://transportation.stanford.edu/marguerite/mc,91268f,FFFFFF
+28,1050A,Medical Center to 1050/1070 Arastradero,3,http://transportation.stanford.edu/marguerite/1050a,954A35,FFFFFF
+33,S,Line S,3,http://transportation.stanford.edu/marguerite/s,666733,FFFFFF
+36,AWE,Ardenwood Express,3,http://transportation.stanford.edu/marguerite/awe,dddddd,900000
+38,RP,Research Park,3,http://transportation.stanford.edu/marguerite/rp,008579,FFFFFF
 43,O,Line O - Evenings ONLY,3,http://transportation.stanford.edu/marguerite/o,2E3192,FFFFFF
 44,Y-Lim,Line Y - Limited Service,3,http://transportation.stanford.edu/marguerite/y,ED1C24,FFFFFF
 45,X-Lim,Line X - Limited Service,3,http://transportation.stanford.edu/marguerite/x,ED1C24,FFFFFF
-46,C-Lim,Line C Limited,3,http://transportation.stanford.edu/marguerite/c,6CCff6,FFFFFF
-47,MC-Lim,MC Limited,3,http://transportation.stanford.edu/marguerite/mc,92278F,FFFFFF
-48,MC-Dir,MC Direct,3,http://transportation.stanford.edu/marguerite/mc,92278F,FFFFFF
-50,MC-Hol,MC Holiday,3,http://transportation.stanford.edu/marguerite/mc,92278F,FFFFFF
+46,C-Lim,Line C Limited,3,http://transportation.stanford.edu/marguerite/c,6DCFF6,FFFFFF
+48,MC-Dir,MC Direct,3,http://transportation.stanford.edu/marguerite/mcd,91268f,FFFFFF
+50,MC-Hol,MC Holiday,3,http://transportation.stanford.edu/marguerite/mc,91268f,FFFFFF
 51,X Exp,Line X - Express Service,3,http://transportation.stanford.edu/marguerite/x,ED1C24,FFFFFF
 52,Y Exp,Line Y - Express Service,3,http://transportation.stanford.edu/marguerite/y,ED1C24,FFFFFF
-53,BOH,Bohannon Menlo Park Shuttle,3,http://transportation.stanford.edu/marguerite/boh,CC9933,FFFFFF
+53,BOH,Bohannon Menlo Park Shuttle,3,http://transportation.stanford.edu/marguerite/boh,cfa92a,000000
+54,TECH,SUMC - TECH Park and Ride Shuttle,3,http://transportation.stanford.edu/marguerite/tech,EEE809,000000
+55,EB EX,East Bay Express,3,http://transportation.stanford.edu/marguerite/eb/,5674b9,FFFFFF
+56,,OCA,3,http://transportation.stanford.edu/marguerite/oca/,73909f,FFFFFF
+57,H,Line H,3,http://transportation.stanford.edu/marguerite/h/,d1489a,FFFFFF

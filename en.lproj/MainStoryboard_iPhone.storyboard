@@ -147,7 +147,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
-                            <tableViewSection headerTitle="App Feedback" footerTitle="Schedules last updated on July 26." id="1WK-Ao-EDU">
+                            <tableViewSection headerTitle="App Feedback" footerTitle="Schedules last updated on Sept. 13." id="1WK-Ao-EDU">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="tWD-pn-XSj" style="IBUITableViewCellStyleDefault" id="h9W-hi-fEf">
                                         <rect key="frame" x="0.0" y="46" width="320" height="46"/>
@@ -502,7 +502,6 @@
         <!--Navigation Controller - Live Map-->
         <scene sceneID="3ne-qo-LZY">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="itC-TX-7hA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController navigationBarHidden="YES" id="WOD-0U-9bj" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Live Map" image="location.png" id="AAS-B9-a62"/>
                     <toolbarItems/>
@@ -520,6 +519,7 @@
                         <segue destination="tzK-OA-L4k" kind="relationship" relationship="rootViewController" id="SdM-sv-gv3"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="itC-TX-7hA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="693" y="1162"/>
         </scene>

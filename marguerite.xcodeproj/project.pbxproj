@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		626EE401911147B3A58D811C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C74FC6596E0D4FE98CA124BB /* libPods.a */; };
 		F41231CC17A397FB00604A02 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41231CB17A397FB00604A02 /* AboutViewController.m */; };
-		F41231CE17A39E8A00604A02 /* gtfs.db in Resources */ = {isa = PBXBuildFile; fileRef = F41231CD17A39E8A00604A02 /* gtfs.db */; };
 		F41231F417A3CD0E00604A02 /* 1050A.png in Resources */ = {isa = PBXBuildFile; fileRef = F41231D117A3CD0E00604A02 /* 1050A.png */; };
 		F41231F517A3CD0E00604A02 /* AE.png in Resources */ = {isa = PBXBuildFile; fileRef = F41231D217A3CD0E00604A02 /* AE.png */; };
 		F41231F617A3CD0E00604A02 /* BOH.png in Resources */ = {isa = PBXBuildFile; fileRef = F41231D317A3CD0E00604A02 /* BOH.png */; };
@@ -121,6 +120,7 @@
 		F471C4D1178B89CE005583A4 /* trips.txt in Resources */ = {isa = PBXBuildFile; fileRef = F471C4CA178B89CE005583A4 /* trips.txt */; };
 		F471C4DB178DF660005583A4 /* StopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F471C4DA178DF660005583A4 /* StopViewController.m */; };
 		F48BD72B17CC6426009630BE /* MRoutePolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = F48BD72A17CC6426009630BE /* MRoutePolyline.m */; };
+		F4D2EAC517EA4D42009A1975 /* gtfs.db in Resources */ = {isa = PBXBuildFile; fileRef = F4D2EAC417EA4D42009A1975 /* gtfs.db */; };
 		F4F555D417D71BAE00301597 /* busstop.png in Resources */ = {isa = PBXBuildFile; fileRef = F4F555D317D71BAE00301597 /* busstop.png */; };
 /* End PBXBuildFile section */
 
@@ -129,7 +129,6 @@
 		C74FC6596E0D4FE98CA124BB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F41231CA17A397FA00604A02 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutViewController.h; path = classes/AboutViewController.h; sourceTree = "<group>"; };
 		F41231CB17A397FB00604A02 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutViewController.m; path = classes/AboutViewController.m; sourceTree = "<group>"; };
-		F41231CD17A39E8A00604A02 /* gtfs.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = gtfs.db; path = gtfs/gtfs.db; sourceTree = "<group>"; };
 		F41231D117A3CD0E00604A02 /* 1050A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1050A.png; path = images/bus/1050A.png; sourceTree = "<group>"; };
 		F41231D217A3CD0E00604A02 /* AE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AE.png; path = images/bus/AE.png; sourceTree = "<group>"; };
 		F41231D317A3CD0E00604A02 /* BOH.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BOH.png; path = images/bus/BOH.png; sourceTree = "<group>"; };
@@ -280,6 +279,7 @@
 		F471C4DA178DF660005583A4 /* StopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StopViewController.m; path = classes/StopViewController.m; sourceTree = "<group>"; };
 		F48BD72917CC6426009630BE /* MRoutePolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRoutePolyline.h; path = classes/MRoutePolyline.h; sourceTree = "<group>"; };
 		F48BD72A17CC6426009630BE /* MRoutePolyline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MRoutePolyline.m; path = classes/MRoutePolyline.m; sourceTree = "<group>"; };
+		F4D2EAC417EA4D42009A1975 /* gtfs.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = gtfs.db; path = gtfs/gtfs.db; sourceTree = "<group>"; };
 		F4F555D317D71BAE00301597 /* busstop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = busstop.png; path = images/map/busstop.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -528,7 +528,7 @@
 		F41938A617A3E3200056F598 /* gtfs */ = {
 			isa = PBXGroup;
 			children = (
-				F41231CD17A39E8A00604A02 /* gtfs.db */,
+				F4D2EAC417EA4D42009A1975 /* gtfs.db */,
 				F471C4C4178B89CE005583A4 /* agency.txt */,
 				F471C4C5178B89CE005583A4 /* calendar_dates.txt */,
 				F471C4C6178B89CE005583A4 /* routes.txt */,
@@ -676,7 +676,6 @@
 				F4592EDA179A847E00579D6B /* info@2x.png in Resources */,
 				F4592EF1179A92DC00579D6B /* Icon.png in Resources */,
 				F4592EF3179A92E600579D6B /* Icon@2x.png in Resources */,
-				F41231CE17A39E8A00604A02 /* gtfs.db in Resources */,
 				F41231F417A3CD0E00604A02 /* 1050A.png in Resources */,
 				F41231F517A3CD0E00604A02 /* AE.png in Resources */,
 				F41231F617A3CD0E00604A02 /* BOH.png in Resources */,
@@ -716,6 +715,7 @@
 				F41938AB17A3E4480056F598 /* InfoPlist.strings in Resources */,
 				F41938AC17A3E4480056F598 /* MainStoryboard_iPhone.storyboard in Resources */,
 				F4F555D417D71BAE00301597 /* busstop.png in Resources */,
+				F4D2EAC517EA4D42009A1975 /* gtfs.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

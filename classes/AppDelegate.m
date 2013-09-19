@@ -24,11 +24,18 @@
     // Initiate TestFlight analytics SDK
     [TestFlight takeOff:TESTFLIGHT_APPLICATION_TOKEN];
     
-    // Copy gfts.db file from app bundle to Caches directory if needed
-    if (![GTFSDatabase exists]) {
-        if (![GTFSDatabase copyToCache]) {
-            [GTFSDatabase create];
+    // Copy gfts.db file from app bundle to Caches directory or create gtfs.db if needed
+    if ([GTFSDatabase existsInBundle]) {
+        if ([GTFSDatabase cacheFileIsStale]) {
+            NSLog(@"GTFS file stale in Caches.");
+            if (![GTFSDatabase copyToCache]) {
+                [GTFSDatabase create];
+            } else {
+                NSLog(@"Copied GTFS file from bundle to Caches.");
+            }
         }
+    } else {
+        [GTFSDatabase create];
     }
     
     [GMSServices provideAPIKey:GOOGLE_MAPS_API_KEY];

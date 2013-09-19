@@ -155,7 +155,6 @@
 		5E56B1DFDCCD4EC2A25E30A8 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TestFlight+ManualSessions.h"; path = "TestFlightSDK/TestFlight+ManualSessions.h"; sourceTree = SOURCE_ROOT; };
 		5EBED6519A994AF99D93B320 /* ASICloudFilesContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICloudFilesContainer.h; path = ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesContainer.h; sourceTree = SOURCE_ROOT; };
 		5F537FB0A9834D25A623ECC9 /* GMSUISettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSUISettings.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSUISettings.h"; sourceTree = SOURCE_ROOT; };
-		60F706AF47314CD3A116D5AB /* GoogleMaps.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/GoogleMaps.framework; sourceTree = DEVELOPER_DIR; };
 		61124786C12F45A5B6960FCF /* GMSPolygon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPolygon.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSPolygon.h"; sourceTree = SOURCE_ROOT; };
 		649BE07461874281AD8E30FA /* GMSGeocoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSGeocoder.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSGeocoder.h"; sourceTree = SOURCE_ROOT; };
 		64D605BD2E7948B2B1C14EBC /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = SOURCE_ROOT; };
@@ -443,7 +442,6 @@
 				C1677D112C7D4F3CA8F250CD /* CoreText.framework */,
 				207C542094F44DA0A757312B /* Foundation.framework */,
 				157E5BC51CD64CE8A3BB971B /* GLKit.framework */,
-				60F706AF47314CD3A116D5AB /* GoogleMaps.framework */,
 				0F6DD5F27E054CFC93440974 /* ImageIO.framework */,
 				02BB505E79C8410FA8598632 /* MobileCoreServices.framework */,
 				0AD9FD730DD2431585B0FFA2 /* OpenGLES.framework */,

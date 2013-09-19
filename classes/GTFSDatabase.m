@@ -34,6 +34,10 @@
  */
 + (BOOL) create
 {
+    if (![self delete]) {
+        return NO;
+    }
+    
     CSVImporter *importer = [[CSVImporter alloc] init];
     
     NSLog(@"Importing Agency...");
@@ -83,11 +87,44 @@
 }
 
 /*
+ Returns YES if gtfs.db in Caches directory was deleted (or didn't exist), NO otherwise.
+ */
++ (BOOL) delete {
+    NSError* error;
+    if ([self exists]) {
+        @try {
+            [[NSFileManager defaultManager] removeItemAtPath:[self getCachePath] error:&error];
+        }
+        @catch (NSException *exception) {
+            NSLog(@"delete - Exception: %@", [exception reason]);
+            return NO;
+        }
+        @finally {
+            if (error) {
+                NSString *messageString = [error localizedDescription];
+                messageString = [NSString stringWithFormat:@"%@", messageString];
+                NSLog(@"delete - Error: %@", messageString);
+                return NO;
+            }
+        }
+    }
+    return YES;
+}
+
+/*
  Returns YES if gtfs.db exists in Caches directory, NO otherwise.
  */
 + (BOOL) exists
 {
     return [[NSFileManager defaultManager] fileExistsAtPath:[self getCachePath]];
+}
+
+/*
+ Returns YES if gtfs.db exists in app bundle, NO otherwise.
+ */
++ (BOOL) existsInBundle
+{
+    return [[NSFileManager defaultManager] fileExistsAtPath:[self getResourcePath]];
 }
 
 /*
@@ -99,20 +136,19 @@
     NSString *dest = [self getCachePath];
     NSError* error;
     NSString* src = [self getResourcePath];
-    
-    BOOL dbFileInBundle = [[NSFileManager defaultManager] fileExistsAtPath:src];
-    
-    if (dbFileInBundle == NO) {
+
+    if (![self existsInBundle]) {
         NSLog(@"copyDatabaseToCacheIfNeeded - GTFS db not in bundle.");
         return NO;
     }
+    
+    [self delete];
     
     @try {
         [[NSFileManager defaultManager] copyItemAtPath:src toPath:dest error:&error];
     }
     @catch (NSException *exception) {
         NSLog(@"copyDatabaseToCacheIfNeeded - Exception: %@", [exception reason]);
-        return NO;
     }
     if (error) {
         NSString *messageString = [error localizedDescription];
@@ -123,6 +159,13 @@
     return YES;
 }
 
+/*
+ Returns YES if gtfs.db in Caches folder does not exist or is different from gtfs.db in bundle.
+*/
++ (BOOL) cacheFileIsStale
+{
+    return (![self exists] || !([[NSFileManager defaultManager] contentsEqualAtPath:[self getResourcePath] andPath:[self getCachePath]]));
+}
 
 /*
  Returns the path where the GTFS database will be located in the cache.

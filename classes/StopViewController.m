@@ -74,7 +74,7 @@
 }
 
 /*
- Return an array of up to 8 MStopTime's with information about the next arriving buses.
+ Return an array of MStopTime's with information about the next arriving buses for the rest of the day.
  */
 - (NSArray *) getNextBuses
 {
@@ -129,12 +129,9 @@
     }
     [departureTimesRS close];
     
-    // Return up to 8 of the next arriving buses
-    NSArray *buses = [todaysBuses subarrayWithRange:NSMakeRange(0, MIN(8, [todaysBuses count]))];
-    
     [db close];
     
-    return buses;
+    return todaysBuses;
 }
 
 #pragma mark - Table Refresh

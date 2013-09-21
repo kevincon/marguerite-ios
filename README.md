@@ -16,7 +16,7 @@ Marguerite is developed with the knowledge and gracious assistance of the [Stanf
 *No Internet connection required!
 
 ### Screenshots
-![Next Shuttle](http://www.static.kevintechnology.com/marguerite-ios/nextshuttle.png) ![Stop](http://static.kevintechnology.com/marguerite-ios/stop.png) ![Live Map](http://static.kevintechnology.com/marguerite-ios/livemap.png)
+![Next Shuttle](https://raw.github.com/cardinaldevs/marguerite-ios/develop/images/github/nextshuttle.png) ![Stop](https://raw.github.com/cardinaldevs/marguerite-ios/develop/images/github/stop.png) ![Live Map](https://raw.github.com/cardinaldevs/marguerite-ios/develop/images/github/livemap.png)
 
 # Contributing
 All pull requests and feedback are welcome! Report bugs and feature requests using the [Github issues system](https://github.com/cardinaldevs/marguerite-ios/issues).

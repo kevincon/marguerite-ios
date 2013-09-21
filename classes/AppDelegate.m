@@ -10,6 +10,7 @@
 #import "GTFSDatabase.h"
 #import <GoogleMaps/GoogleMaps.h>
 #import "secrets.h"
+#import "MUtil.h"
 
 @implementation AppDelegate
 
@@ -18,11 +19,11 @@
     [[UITabBar appearance] setSelectedImageTintColor:[UIColor whiteColor]];
     
     [Instabug KickOffWithToken:@"ffdb7cae1ed094c68a3a4a6075f7ed15" CaptureSource:InstabugCaptureSourceUIKit FeedbackEvent:InstabugFeedbackEventShake IsTrackingLocation:NO];
-    //[Instabug setShowScreenshot:NO];
     [Instabug setShowEmail:YES];
     [Instabug setShowStartAlert:YES];
-    //[Instabug setStartAlertText:@"Thanks for using Marguerite! Send us feedback on the \"About\" tab."];
     [Instabug setShowThankYouAlert:YES];
+    [Instabug setColorTheme:InstabugColorThemeRed];
+    [Instabug setHeaderColor:[MUtil colorFromHexString:@"8C1515"]];
     
     // Copy gfts.db file from app bundle to Caches directory or create gtfs.db if needed
     if ([GTFSDatabase existsInBundle]) {

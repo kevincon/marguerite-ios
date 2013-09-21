@@ -7,6 +7,7 @@
 //
 
 #import "StopViewController.h"
+#import "LiveMapViewController.h"
 #import "FMDatabase.h"
 #import "GTFSDatabase.h"
 #import "MStopTime.h"
@@ -14,10 +15,12 @@
 
 #define ADD_FAVORITE_STOP_SECTION_INDEX 0
 
-#define BUSES_SECTION_INDEX             1
-#define BUSES_SECTION_HEADER            @"Next Buses"
+#define VIEW_ON_MAP_SECTION_INDEX       1
 
-#define STOPS_NUMBER_OF_SECTIONS        2
+#define BUSES_SECTION_INDEX             2
+#define BUSES_SECTION_HEADER            @"Next Shuttles"
+
+#define STOPS_NUMBER_OF_SECTIONS        3
 
 @interface StopViewController ()
 
@@ -152,35 +155,45 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *cellIdentifier;
-    if (indexPath.section == ADD_FAVORITE_STOP_SECTION_INDEX) {
-        cellIdentifier = @"AddFavoriteStopCell";
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
-        if (self.isFavoriteStop == YES) {
-            cell.textLabel.text = @"Remove Favorite Stop";
-        } else {
-            cell.textLabel.text = @"Add Favorite Stop";
+    UITableViewCell *cell;
+    switch (indexPath.section) {
+        case ADD_FAVORITE_STOP_SECTION_INDEX: {
+            cellIdentifier = @"AddFavoriteStopCell";
+            UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+            if (self.isFavoriteStop == YES) {
+                cell.textLabel.text = @"Remove Favorite Stop";
+            } else {
+                cell.textLabel.text = @"Add Favorite Stop";
+            }
+            return cell;
         }
-        return cell;
-    } else if (indexPath.section == BUSES_SECTION_INDEX) {
-        if ([_nextBuses count] == 0) {
+        case VIEW_ON_MAP_SECTION_INDEX: {
+            cellIdentifier = @"ViewOnMapCell";
+            UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+            return cell;
+        }
+        case BUSES_SECTION_INDEX: {
+            if ([_nextBuses count] == 0) {
+                return nil;
+            }
+        
+            cellIdentifier = @"BusCell";
+            cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+        
+            NSDateFormatter *twelveHourFormat = [[NSDateFormatter alloc] init];
+            [twelveHourFormat setDateFormat:@"h:mm a"];
+        
+            MStopTime *bus = [_nextBuses objectAtIndex:indexPath.row];
+        
+            cell.textLabel.text = [twelveHourFormat stringFromDate:bus.departureTime];
+            cell.detailTextLabel.text = bus.routeLongName;
+            cell.detailTextLabel.textColor = bus.routeColor;
+        
+            return cell;
+        }
+        default: {
             return nil;
         }
-        
-        cellIdentifier = @"BusCell";
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
-        
-        NSDateFormatter *twelveHourFormat = [[NSDateFormatter alloc] init];
-        [twelveHourFormat setDateFormat:@"h:mm a"];
-        
-        MStopTime *bus = [_nextBuses objectAtIndex:indexPath.row];
-        
-        cell.textLabel.text = [twelveHourFormat stringFromDate:bus.departureTime];
-        cell.detailTextLabel.text = bus.routeLongName;
-        cell.detailTextLabel.textColor = bus.routeColor;
-        
-        return cell;
-    } else {
-        return nil;
     }
 }
 
@@ -188,6 +201,8 @@
 {
     switch (section) {
         case ADD_FAVORITE_STOP_SECTION_INDEX:
+            return 1;
+        case VIEW_ON_MAP_SECTION_INDEX:
             return 1;
         case BUSES_SECTION_INDEX:
             return [_nextBuses count];
@@ -202,8 +217,6 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     switch (section) {
-        case ADD_FAVORITE_STOP_SECTION_INDEX:
-            return nil;
         case BUSES_SECTION_INDEX:
             return BUSES_SECTION_HEADER;
         default:
@@ -235,6 +248,17 @@
             }
             [tableView cellForRowAtIndexPath:indexPath].selected = NO;
             break;
+        case VIEW_ON_MAP_SECTION_INDEX: {
+            self.tabBarController.selectedIndex = 1;
+            UIViewController *controller = [self.tabBarController.viewControllers objectAtIndex:1];
+            UINavigationController *navController = (UINavigationController*)controller;
+            [navController popToRootViewControllerAnimated:false];
+
+            LiveMapViewController *liveMap = [navController.viewControllers objectAtIndex:0];
+            liveMap.stopToZoomTo = _stop;
+            [liveMap zoomToStop:_stop];
+            break;
+        }
     }
 }
 

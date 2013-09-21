@@ -20,6 +20,7 @@
 #define STANFORD_LATITUDE                   37.432233
 #define STANFORD_LONGITUDE                  -122.171183
 #define STANFORD_ZOOM_LEVEL                 14
+#define STOP_ZOOM_LEVEL                     15
 
 #define BUS_REFRESH_INTERVAL_IN_SECONDS     5
 
@@ -28,6 +29,8 @@
 @end
 
 @implementation LiveMapViewController
+
+@synthesize stopToZoomTo;
 
 -(void)viewWillAppear:(BOOL)animated{
     [self.navigationController setNavigationBarHidden:YES animated:YES];
@@ -80,6 +83,11 @@
     
     [self loadStops];
     
+    if (stopToZoomTo != nil) {
+        [self zoomToStop:stopToZoomTo];
+        stopToZoomTo = nil;
+    }
+    
     [self showHUDWithMessage:@"Loading buses..." withActivity:YES];
     [self refreshBuses:nil];
     
@@ -92,6 +100,7 @@
     UIImage *stopIcon = [UIImage imageWithContentsOfFile:imageFilePath];
     
     NSArray *allStops = [MStop getAllStops];
+    stopMarkers = [[NSMutableDictionary alloc] init];
     for (MStop *stop in allStops) {
         GMSMarker *marker = [[GMSMarker alloc] init];
         marker.position = [stop.location coordinate];
@@ -102,6 +111,7 @@
         marker.animated = YES;
         marker.userData = stop;
         marker.zIndex = 0;
+        [stopMarkers setObject:marker forKey:stop.stopId];
     }
 }
 
@@ -321,6 +331,17 @@
     [_mapView animateToCameraPosition:[GMSCameraPosition cameraWithLatitude:STANFORD_LATITUDE
                                                                   longitude:STANFORD_LONGITUDE
                                                                        zoom:STANFORD_ZOOM_LEVEL]];
+}
+
+- (void)zoomToStop:(MStop *)stop {
+    GMSMarker *marker = [stopMarkers objectForKey:stop.stopId];
+    if (marker == nil) {
+        return;
+    }
+    _mapView.selectedMarker = marker;
+    [_mapView animateToCameraPosition:[GMSCameraPosition cameraWithLatitude:marker.position.latitude
+                                                                  longitude:marker.position.longitude
+                                                                       zoom:STOP_ZOOM_LEVEL]];
 }
 
 @end

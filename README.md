@@ -1,16 +1,5 @@
 # Marguerite for iOS [![Build Status](https://travis-ci.org/cardinaldevs/marguerite-ios.png?branch=master)](https://travis-ci.org/cardinaldevs/marguerite-ios)
 
-Note: Marguerite is currently in development and therefore the following information and screenshots are likely to change before the app is submitted to the iOS App Store.
-
-# Beta Test
-Want to beta test the app? First make sure your device [supports iOS 6.1](http://en.wikipedia.org/wiki/List_of_iOS_devices#Highest_Version_of_iOS_Supported), then:
-
-1. [Register with our TestFlight team](http://tflig.ht/13qDQ8p). You'll need to create a TestFlight account using your phone so we can identify your device.
-2. Wait for your membership on the Cardinal Devs TestFlight team to be approved.
-3. Visit www.testflightapp.com on your phone to download and install the latest build of the Marguerite beta app!
-4. Help us improve the app by submitting feedback on the "About" tab of the app.
-
-# Description
 Marguerite is an iPhone app that makes it easier for riders to use the free [Stanford Marguerite shuttle bus system](http://transportation.stanford.edu/marguerite/).
 
 Marguerite is developed and maintained by the [upcoming Cardinal Devs club](http://sadevs.stanford.edu/) at Stanford. Cardinal Devs is an upcoming student organization that develops, maintains, and improves open-source, student-run technology at Stanford University. 
@@ -21,7 +10,6 @@ Marguerite is developed with the knowledge and gracious assistance of the [Stanf
 
 ### Features
 * See what buses are arriving next at the Marguerite stop closest to your current location.*
-* Plan a trip using the Marguerite shuttle.
 * View the real-time locations of all shuttles on a Google map.
 * View the schedules for all Marguerite routes.*
 
@@ -54,7 +42,6 @@ Then, before the app will fully function, you must complete the "secrets.h" file
 * MARGUERITE_REALTIME_XML_FEED: This is the URL of the real-time Marguerite shuttle bus location XML feed. Email Kevin Conley at kcon AT stanford DOT edu to ask for this value.
 * MARGUERITE_VEHICLE_IDS_URL: This is the URL that the app sends POST requests to in order to query the mappings between Marguerite "vehicle IDs" (the numbers on the sides of the buses) and the "farebox IDs" that help identify which route a particular bus is driving on. Email Kevin Conley at kcon AT stanford DOT edu to ask for this value.
 * GOOGLE_MAPS_API_KEY: This is the API key for the Google Maps iPhone SDK. Follow the instructions here ([https://developers.google.com/maps/documentation/ios/start#obtaining_an_api_key](https://developers.google.com/maps/documentation/ios/start#obtaining_an_api_key)) for "Obtaining an API Key" and then update this value.
-* TESTFLIGHT_APPLICATION_TOKEN: This is the token for the TestFlight analytics SDK. You can leave this entry as the empty string; it won't affect you being able to build and run the app.
 
 ### Best practices
 These are the practicies we currently follow, but feel free to propose better methodologies!

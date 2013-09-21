@@ -7,7 +7,6 @@
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -16,35 +15,22 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1 class="header">Marguerite for iOS</h1>
-        <p class="header">An open-source iPhone app for riders of the Stanford Marguerite shuttle bus system.</p>
+        <h1>Marguerite for iOS</h1>
+        <p>An open-source iPhone app for riders of the Stanford Marguerite shuttle bus system.</p>
+
+        <p class="view"><a href="https://github.com/cardinaldevs/marguerite-ios">View the Project on GitHub <small>cardinaldevs/marguerite-ios</small></a></p>
+
 
         <ul>
-          <li class="download"><a class="buttons" href="https://github.com/cardinaldevs/marguerite-ios/zipball/master">Download ZIP</a></li>
-          <li class="download"><a class="buttons" href="https://github.com/cardinaldevs/marguerite-ios/tarball/master">Download TAR</a></li>
-          <li><a class="buttons github" href="https://github.com/cardinaldevs/marguerite-ios">View On GitHub</a></li>
+          <li><a href="https://github.com/cardinaldevs/marguerite-ios/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/cardinaldevs/marguerite-ios/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/cardinaldevs/marguerite-ios">View On <strong>GitHub</strong></a></li>
         </ul>
-
-        <p class="header">This project is maintained by <a class="header name" href="https://github.com/cardinaldevs">cardinaldevs</a></p>
-
-
       </header>
       <section>
-        <p>Note: Marguerite is currently in development and therefore the following information and screenshots are likely to change before the app is submitted to the iOS App Store.</p>
-
-<h1>
-<a name="beta-test" class="anchor" href="#beta-test"><span class="octicon octicon-link"></span></a>Beta Test</h1>
-
-<p>Want to beta test the app? First make sure your device <a href="http://en.wikipedia.org/wiki/List_of_iOS_devices#Highest_Version_of_iOS_Supported">supports iOS 6.1</a>, then:</p>
-
-<ol>
-<li>
-<a href="http://tflig.ht/13qDQ8p">Register with our TestFlight team</a>. You'll need to create a TestFlight account using your phone so we can identify your device.</li>
-<li>Wait for your membership on the Cardinal Devs TestFlight team to be approved.</li>
-<li>Visit <a href="http://www.testflightapp.com">www.testflightapp.com</a> on your phone to download and install the latest build of the Marguerite beta app!</li>
-<li>Help us improve the app by submitting feedback on the "About" tab of the app.</li>
-</ol><h1>
-<a name="description" class="anchor" href="#description"><span class="octicon octicon-link"></span></a>Description</h1>
+        <h1>
+<a name="marguerite-for-ios-" class="anchor" href="#marguerite-for-ios-"><span class="octicon octicon-link"></span></a>Marguerite for iOS <a href="https://travis-ci.org/cardinaldevs/marguerite-ios"><img src="https://travis-ci.org/cardinaldevs/marguerite-ios.png?branch=master" alt="Build Status"></a>
+</h1>
 
 <p>Marguerite is an iPhone app that makes it easier for riders to use the free <a href="http://transportation.stanford.edu/marguerite/">Stanford Marguerite shuttle bus system</a>.</p>
 
@@ -59,7 +45,6 @@
 
 <ul>
 <li>See what buses are arriving next at the Marguerite stop closest to your current location.*</li>
-<li>Plan a trip using the Marguerite shuttle.</li>
 <li>View the real-time locations of all shuttles on a Google map.</li>
 <li>View the schedules for all Marguerite routes.*</li>
 </ul><p>*No Internet connection required!</p>
@@ -105,7 +90,6 @@
 <li>MARGUERITE_REALTIME_XML_FEED: This is the URL of the real-time Marguerite shuttle bus location XML feed. Email Kevin Conley at kcon AT stanford DOT edu to ask for this value.</li>
 <li>MARGUERITE_VEHICLE_IDS_URL: This is the URL that the app sends POST requests to in order to query the mappings between Marguerite "vehicle IDs" (the numbers on the sides of the buses) and the "farebox IDs" that help identify which route a particular bus is driving on. Email Kevin Conley at kcon AT stanford DOT edu to ask for this value.</li>
 <li>GOOGLE_MAPS_API_KEY: This is the API key for the Google Maps iPhone SDK. Follow the instructions here (<a href="https://developers.google.com/maps/documentation/ios/start#obtaining_an_api_key">https://developers.google.com/maps/documentation/ios/start#obtaining_an_api_key</a>) for "Obtaining an API Key" and then update this value.</li>
-<li>TESTFLIGHT_APPLICATION_TOKEN: This is the token for the TestFlight analytics SDK. You can leave this entry as the empty string; it won't affect you being able to build and run the app.</li>
 </ul><h3>
 <a name="best-practices" class="anchor" href="#best-practices"><span class="octicon octicon-link"></span></a>Best practices</h3>
 
@@ -166,11 +150,12 @@ including the libraries mentioned under "Attributions" above. Please consult the
 respective headers/websites for the terms of their individual licenses.</p>
       </section>
       <footer>
-        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+        <p>This project is maintained by <a href="https://github.com/cardinaldevs">cardinaldevs</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-		          <script type="text/javascript">
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>

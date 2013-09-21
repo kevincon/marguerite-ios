@@ -9,6 +9,7 @@
 #import "NextShuttleViewController.h"
 #import "StopViewController.h"
 #import "MStop.h"
+#import "MUtil.h"
 
 #define FEET_IN_MILES 5280
 
@@ -32,6 +33,8 @@
 {
     [super viewDidLoad];
 
+    [[UITableViewHeaderFooterView appearance] setTintColor:[MUtil colorFromHexString:@"8C1515"]];
+    
     CLController = [[CoreLocationController alloc] init];
 	CLController.delegate = self;
 

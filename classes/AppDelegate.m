@@ -15,6 +15,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[UITabBar appearance] setSelectedImageTintColor:[UIColor whiteColor]];
+    
     [Instabug KickOffWithToken:@"ffdb7cae1ed094c68a3a4a6075f7ed15" CaptureSource:InstabugCaptureSourceUIKit FeedbackEvent:InstabugFeedbackEventShake IsTrackingLocation:NO];
     //[Instabug setShowScreenshot:NO];
     [Instabug setShowEmail:YES];

@@ -259,7 +259,7 @@ shouldReloadTableForSearchString:(NSString *)searchString
 }
 
 - (void)locationError:(NSError *)error {
-	NSLog(@"didFailWithError: %@", error);
+	NSLog(@"locationError: %@", error);
 //    UIAlertView *errorAlert = [[UIAlertView alloc]
 //                               initWithTitle:@"Error" message:@"Failed to Get Your Location" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
 //    [errorAlert show];

@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		626EE401911147B3A58D811C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C74FC6596E0D4FE98CA124BB /* libPods.a */; };
+		F410C5FC17EE1638005F0BB3 /* Instabug.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F410C5FA17EE1638005F0BB3 /* Instabug.bundle */; };
+		F410C5FD17EE1638005F0BB3 /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F410C5FB17EE1638005F0BB3 /* Instabug.framework */; };
+		F410C5FF17EE1657005F0BB3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F410C5FE17EE1657005F0BB3 /* CoreFoundation.framework */; };
+		F410C60117EE167F005F0BB3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F410C60017EE167F005F0BB3 /* AudioToolbox.framework */; };
+		F410C60317EE1684005F0BB3 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F410C60217EE1684005F0BB3 /* CoreTelephony.framework */; };
 		F41231CC17A397FB00604A02 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41231CB17A397FB00604A02 /* AboutViewController.m */; };
 		F41231F417A3CD0E00604A02 /* 1050A.png in Resources */ = {isa = PBXBuildFile; fileRef = F41231D117A3CD0E00604A02 /* 1050A.png */; };
 		F41231F517A3CD0E00604A02 /* AE.png in Resources */ = {isa = PBXBuildFile; fileRef = F41231D217A3CD0E00604A02 /* AE.png */; };
@@ -127,6 +132,11 @@
 /* Begin PBXFileReference section */
 		70CE5BB07FB64AA48B3AE676 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		C74FC6596E0D4FE98CA124BB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F410C5FA17EE1638005F0BB3 /* Instabug.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Instabug.bundle; path = libraries/Instabug.bundle; sourceTree = "<group>"; };
+		F410C5FB17EE1638005F0BB3 /* Instabug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Instabug.framework; path = libraries/Instabug.framework; sourceTree = "<group>"; };
+		F410C5FE17EE1657005F0BB3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		F410C60017EE167F005F0BB3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F410C60217EE1684005F0BB3 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		F41231CA17A397FA00604A02 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutViewController.h; path = classes/AboutViewController.h; sourceTree = "<group>"; };
 		F41231CB17A397FB00604A02 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutViewController.m; path = classes/AboutViewController.m; sourceTree = "<group>"; };
 		F41231D117A3CD0E00604A02 /* 1050A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1050A.png; path = images/bus/1050A.png; sourceTree = "<group>"; };
@@ -288,6 +298,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F410C60317EE1684005F0BB3 /* CoreTelephony.framework in Frameworks */,
+				F410C60117EE167F005F0BB3 /* AudioToolbox.framework in Frameworks */,
+				F410C5FF17EE1657005F0BB3 /* CoreFoundation.framework in Frameworks */,
 				F4592E79179749C400579D6B /* SystemConfiguration.framework in Frameworks */,
 				F4592E77179749BC00579D6B /* QuartzCore.framework in Frameworks */,
 				F4592E75179749B200579D6B /* OpenGLES.framework in Frameworks */,
@@ -305,6 +318,7 @@
 				F471C3DB178B7D5F005583A4 /* Foundation.framework in Frameworks */,
 				F471C3DD178B7D5F005583A4 /* CoreGraphics.framework in Frameworks */,
 				626EE401911147B3A58D811C /* libPods.a in Frameworks */,
+				F410C5FD17EE1638005F0BB3 /* Instabug.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,6 +584,11 @@
 		F471C3D7178B7D5F005583A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F410C60217EE1684005F0BB3 /* CoreTelephony.framework */,
+				F410C60017EE167F005F0BB3 /* AudioToolbox.framework */,
+				F410C5FE17EE1657005F0BB3 /* CoreFoundation.framework */,
+				F410C5FA17EE1638005F0BB3 /* Instabug.bundle */,
+				F410C5FB17EE1638005F0BB3 /* Instabug.framework */,
 				F4592E571795E71800579D6B /* libz.dylib */,
 				F471C4BB178B88DD005583A4 /* CoreLocation.framework */,
 				F471C4B9178B88D7005583A4 /* libsqlite3.dylib */,
@@ -716,6 +735,7 @@
 				F41938AC17A3E4480056F598 /* MainStoryboard_iPhone.storyboard in Resources */,
 				F4F555D417D71BAE00301597 /* busstop.png in Resources */,
 				F4D2EACD17EA7639009A1975 /* gtfs.db in Resources */,
+				F410C5FC17EE1638005F0BB3 /* Instabug.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

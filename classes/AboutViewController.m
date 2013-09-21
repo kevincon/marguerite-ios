@@ -60,26 +60,7 @@
 }
 
 - (void) openFeedbackView {
-    UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Submit Feedback" message:@"Thanks for helping us out!\n\n\n" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Submit", nil];
-    _feedbackField = [[UITextField alloc] init];
-    [_feedbackField setBackgroundColor:[UIColor whiteColor]];
-    _feedbackField.borderStyle = UITextBorderStyleLine;
-    _feedbackField.frame = CGRectMake(15, 75, 255, 30);
-    _feedbackField.font = [UIFont fontWithName:@"ArialMT" size:20];
-    _feedbackField.keyboardAppearance = UIKeyboardAppearanceAlert;
-    [_feedbackField becomeFirstResponder];
-    [alert addSubview:_feedbackField];
-    [alert show];
-}
-
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-    NSString* feedbackString = _feedbackField.text;
-    if ([feedbackString length] <= 0 || buttonIndex == 0){
-        return;
-    } else if (buttonIndex == 1) {
-        //[TestFlight submitFeedback:feedbackString];
-        return;
-    }
+    [Instabug ShowFeedbackFormWithScreenshot:NO];
 }
 
 - (void) openURL:(NSString *)url

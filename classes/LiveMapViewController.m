@@ -59,7 +59,6 @@
                                 [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
                             }
                             andFailureCallback:^(NSError *error) {
-                                [TestFlight passCheckpoint:[NSString stringWithFormat:@"Failed to load real-time buses: %@", [error localizedDescription]]];
                                 timer = [NSTimer timerWithTimeInterval:BUS_REFRESH_INTERVAL_IN_SECONDS target:self selector:@selector(refreshBuses:) userInfo:nil repeats:NO];
                                 [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
                                 if (!busLoadError) {
@@ -85,8 +84,6 @@
     [self refreshBuses:nil];
     
     routePolyline = nil;
-    
-    [TestFlight passCheckpoint:@"Visited Live Map tab."];
 }
 
 - (void) loadStops
@@ -185,7 +182,6 @@
         if (routePolyline != nil) {
             routePolyline.map = _mapView;
         }
-        [TestFlight passCheckpoint:@"Tapped a live bus marker."];
     }
 
     // Map should then continue with its default selection behavior
@@ -325,7 +321,6 @@
     [_mapView animateToCameraPosition:[GMSCameraPosition cameraWithLatitude:STANFORD_LATITUDE
                                                                   longitude:STANFORD_LONGITUDE
                                                                        zoom:STANFORD_ZOOM_LEVEL]];
-    [TestFlight passCheckpoint:@"Tapped zoom to campus button."];
 }
 
 @end

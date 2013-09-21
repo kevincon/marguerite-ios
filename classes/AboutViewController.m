@@ -26,11 +26,6 @@
 
 @implementation AboutViewController
 
-- (void) viewDidLoad
-{
-    [TestFlight passCheckpoint:@"Visited About tab."];
-}
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView cellForRowAtIndexPath:indexPath].selected = NO;
@@ -39,7 +34,6 @@
             switch (indexPath.row) {
                 case FEEDBACK_BUTTON_ROW:
                     [self openFeedbackView];
-                    [TestFlight passCheckpoint:@"Opened feedback submission window."];
                     break;
             }
             break;
@@ -47,25 +41,20 @@
             switch (indexPath.row) {
                 case CONTACT_MARGUERITE_OFFICE_ROW:
                     [self openURL:@"tel://650-724-9339"];
-                    [TestFlight passCheckpoint:@"Called Marguerite office."];
                     break;
                 case CONTACT_MARGUERITE_LOST_AND_FOUND_ROW:
                     [self openURL:@"tel://650-724-4309"];
-                    [TestFlight passCheckpoint:@"Called Marguerite lost & found."];
                     break;
                 case CONTACT_MARGUERITE_WEBSITE_ROW:
                     [self openURL:@"http://transportation.stanford.edu/marguerite/"];
-                    [TestFlight passCheckpoint:@"Visited Marguerite website."];
                     break;
             }
             break;
         case APP_SECTION_INDEX:
             [self openURL:@"https://github.com/cardinaldevs/marguerite-ios"];
-            [TestFlight passCheckpoint:@"Visited Github page."];
             break;
         case CLUB_SECTION_INDEX:
             [self openURL:@"http://sadevs.stanford.edu"];
-            [TestFlight passCheckpoint:@"Visited Cardinal Devs website."];
             break;
     }
 }
@@ -88,7 +77,7 @@
     if ([feedbackString length] <= 0 || buttonIndex == 0){
         return;
     } else if (buttonIndex == 1) {
-        [TestFlight submitFeedback:feedbackString];
+        //[TestFlight submitFeedback:feedbackString];
         return;
     }
 }

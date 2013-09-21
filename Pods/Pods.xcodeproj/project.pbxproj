@@ -7,471 +7,456 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0868F53CDB734D74965082B2 /* ASICloudFilesContainerXMLParserDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 04C6B7F4A8EF47D0AF0471A3 /* ASICloudFilesContainerXMLParserDelegate.h */; };
-		0B2C0AA8F05C401EB7F7FB83 /* GMSIndoorLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = 386D5DD2F40F4DB3A765FA0C /* GMSIndoorLevel.h */; };
-		0CD33895EFF94E0A9C94D639 /* ASIS3ObjectRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 172788117A8148A88FD96ECA /* ASIS3ObjectRequest.h */; };
-		14B54B04E733454E943D640A /* ASIS3Request.h in Headers */ = {isa = PBXBuildFile; fileRef = 10EFAA89018B4F58BB044E2F /* ASIS3Request.h */; };
-		152003C86ADF4E1B9F1F7942 /* GMSProjection.h in Headers */ = {isa = PBXBuildFile; fileRef = 75096F3209314169BE3049D0 /* GMSProjection.h */; };
-		1834295F126046BA90A195DF /* GMSMapView+Animation.h in Headers */ = {isa = PBXBuildFile; fileRef = D953E2E4E9CA4515BF9F5709 /* GMSMapView+Animation.h */; };
-		1899DA46363F49C78D73853D /* GMSPanorama.h in Headers */ = {isa = PBXBuildFile; fileRef = 23337F60C3F441C2A9E82272 /* GMSPanorama.h */; };
-		1A490A686A984D16BE2BE776 /* ASICloudFilesObject.h in Headers */ = {isa = PBXBuildFile; fileRef = C96C54F629CA402CBA514466 /* ASICloudFilesObject.h */; };
-		1ACA7F39A119431F81E121CD /* GMSTileLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D285F847D2748F6BAC3E31D /* GMSTileLayer.h */; };
-		20DD5253BC1B4BBD9F7C6E7B /* GMSPanoramaService.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C5F5833B24F45038BF62443 /* GMSPanoramaService.h */; };
-		2153D1AD8617418EBD208459 /* GMSGeometryUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DDBDBBFE62A41ED980360DB /* GMSGeometryUtils.h */; };
-		2A4C0CC71C2742788CF6A627 /* GMSSyncTileLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2149855E8B428DB0A697B0 /* GMSSyncTileLayer.h */; };
-		2B05B689393F4EDF89F99DA7 /* GMSIndoorDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = C50E025C9E744A7DA80613EA /* GMSIndoorDisplay.h */; };
-		2B3A49D23F714B42B8193A40 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 6942151BD509435BB625E399 /* Reachability.h */; };
-		2D028818787C4A56B61AB223 /* ASIHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B979F7E724547578297E1DA /* ASIHTTPRequest.h */; };
-		34D8903334624A03A52BDB1D /* ASINetworkQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = E8FB1332066E402CB8842504 /* ASINetworkQueue.h */; };
-		371D53766EF0437ABA389641 /* ASIS3Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAD922B8F9E44019FC17897 /* ASIS3Request.m */; };
-		380F6BD825D3403392E7D9ED /* ASICloudFilesContainerXMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FF9D6633AE48188174E9C7 /* ASICloudFilesContainerXMLParserDelegate.m */; };
-		3B429DB0FE4643D5811E6AED /* ASIDataDecompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ED19FCCED6C4262BD53352A /* ASIDataDecompressor.h */; };
-		3C71163A16954EAF877CAACC /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 043E8E24D7634B119B56E253 /* ASIDataDecompressor.m */; };
-		3EC13E54A3964248BE2DE4AE /* ASIS3ObjectRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDAF0AF09CB4F5DA2905A6E /* ASIS3ObjectRequest.m */; };
-		4065FE064B9D4543920866DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 207C542094F44DA0A757312B /* Foundation.framework */; };
-		52E1BFCBAB454D418C6179EE /* ASICloudFilesObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 57495A79B0A9489DBBC23C19 /* ASICloudFilesObject.m */; };
-		54F0589DF9434EFF966FEA5D /* ASIS3ServiceRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C0552A968024E538DA6CB39 /* ASIS3ServiceRequest.h */; };
-		55D3EC65D3934008BF1BE295 /* GMSCameraUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = 006D86D85B894574AA041723 /* GMSCameraUpdate.h */; };
-		58F799AA75BA46EDBF2A0DAD /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 784F07B88E7A4B3CA66E9D82 /* Pods-dummy.m */; };
-		5ECE0DF45F8F494FB1447053 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D668ACFBEE246CA80D3839B /* Reachability.m */; };
-		5FEE0B5D48BB498593F3B336 /* GMSPanoramaLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 062A7CB7712B4A849E6DFFBA /* GMSPanoramaLayer.h */; };
-		63EF07F0A2194D9D80B002D1 /* ASIFormDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = C7A06C0F2AC04D01B41B8437 /* ASIFormDataRequest.h */; };
-		6546B1F980A84DA8AC76E8A5 /* GMSReverseGeocodeOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = D8CC99A5EE8840789299CC90 /* GMSReverseGeocodeOutput.h */; };
-		68CCA823A6734D2AA55EC7A0 /* GMSIndoorBuilding.h in Headers */ = {isa = PBXBuildFile; fileRef = D9FB7EE29492447B84E2E7D4 /* GMSIndoorBuilding.h */; };
-		6CCB6FCF321B45989B9F3F9E /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DCE055F00B4414900BD461 /* ASIDataCompressor.m */; };
-		6EC5B79AFF0D44EEBE50F296 /* GMSURLTileLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A1D031916FE442AB027315D /* GMSURLTileLayer.h */; };
-		6F52ED85ABA44526A4419E99 /* GMSPanoramaCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F82E5D6CDFF4AF499897A99 /* GMSPanoramaCamera.h */; };
-		77ABCD4C4569493486EF06AE /* GMSMapLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = EED3EDFB23AA4C8BBC83367C /* GMSMapLayer.h */; };
-		7825E12855614E58A0942F54 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A66B0074B481D8ACD01CE /* ASIDownloadCache.m */; };
-		799DB6492AB44ECA96F032F5 /* ASIHTTPRequestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 04535D023F454A659A05D02A /* ASIHTTPRequestDelegate.h */; };
-		7A1E8DEA6407485ABB473B28 /* GMSOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = 7207AFBFD46A474F85058575 /* GMSOverlay.h */; };
-		7A981A65441D400185C7C6FA /* ASICloudFilesContainerRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = EDE240C65D0948369A7679EB /* ASICloudFilesContainerRequest.h */; };
-		7BAA8AAE4E6E4EB4AF071D37 /* ASIS3BucketObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 203F2159DFAA4F71B714384B /* ASIS3BucketObject.h */; };
-		7BFC87B206554E73B1642521 /* TestFlight+ManualSessions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E56B1DFDCCD4EC2A25E30A8 /* TestFlight+ManualSessions.h */; };
-		7DBBCDBFBD6846F38C8861A8 /* ASIHTTPRequestConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = AFD0A4C4C660456D8568E638 /* ASIHTTPRequestConfig.h */; };
-		7FAB8C99A533436388C23A76 /* GMSMapView.h in Headers */ = {isa = PBXBuildFile; fileRef = 50BA7FE7D5714892B74448DE /* GMSMapView.h */; };
-		81C56607664E4289973A3228 /* GCDiscreetNotificationView.h in Headers */ = {isa = PBXBuildFile; fileRef = E1625A9898EA498A97BFDE64 /* GCDiscreetNotificationView.h */; };
-		83042C1D5D6E4372BD1C25B8 /* ASIS3BucketRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 68AA7CD2302F47EDB74F9BC7 /* ASIS3BucketRequest.h */; };
-		835CF6C61E614C099CA62591 /* ASINSXMLParserCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 144FE946CEC54F1DB153A4F2 /* ASINSXMLParserCompat.h */; };
-		86CE5C2A43C545198D1F0162 /* TestFlight+AsyncLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = D95D7F0957414EE1AE356077 /* TestFlight+AsyncLogging.h */; };
-		893223EC5F88463D9AA3C96B /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A704A713072945C9AA23C0BB /* ASINetworkQueue.m */; };
-		8A8276E907E94E069D2F1921 /* GMSOrientation.h in Headers */ = {isa = PBXBuildFile; fileRef = C80794EC565F4722A6D8E60F /* GMSOrientation.h */; };
-		8AFF44EC7F154BF7B04B4D33 /* GMSGroundOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B099AD7303E47C8A8C9C293 /* GMSGroundOverlay.h */; };
-		8D655D6D206A41859E5FE27A /* TestFlight.h in Headers */ = {isa = PBXBuildFile; fileRef = DFD9B01CCF5B488D900C2DC4 /* TestFlight.h */; };
-		932741FA1C0143F4A6F54309 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 913079449CE24780B21D75D2 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-O0"; }; };
-		96D42DD297FD4FD29138241A /* ASIDownloadCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 31B18106C9E84F57AFFB89CB /* ASIDownloadCache.h */; };
-		973E6B90E7E44A52ABFCB587 /* GMSGeocoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 649BE07461874281AD8E30FA /* GMSGeocoder.h */; };
-		98AF0AE47E4A4D12BE348C99 /* GMSMapView+Overlays.h in Headers */ = {isa = PBXBuildFile; fileRef = E5EB84E346EC4364B6A08837 /* GMSMapView+Overlays.h */; };
-		98DCC10D50594009844D8126 /* GMSMutablePath.h in Headers */ = {isa = PBXBuildFile; fileRef = 570BD7FB03D64DA99C9FD3C2 /* GMSMutablePath.h */; };
-		9B7D0C3BFC584B739768C27F /* ASIWebPageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C40E295822BF48BCB3A33E20 /* ASIWebPageRequest.m */; };
-		9C261DCA072A41388E8451BA /* GMSPolyline.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DDFA27B4B634F25892C66BB /* GMSPolyline.h */; };
-		A0304EF9A80C4C3FB3129002 /* ASICloudFilesObjectRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D0581558A5413091E1AC3F /* ASICloudFilesObjectRequest.m */; };
-		A07E5DCDA2A5432EB66555EC /* GMSCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = 393006F270D74CABA64D1EFA /* GMSCircle.h */; };
-		A37CD479207B4266A132ACDD /* ASIS3BucketRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC77B877E9434E5C86430753 /* ASIS3BucketRequest.m */; };
-		A3A81926955843FBAA58119B /* GMSServices.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F0FC392B25545B19E1A4F3D /* GMSServices.h */; };
-		A43B264CC93C465B876F943C /* ASICacheDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D1DAFF2B60A44A259CA8D743 /* ASICacheDelegate.h */; };
-		A645C639E5E542538F7F27EE /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = CF099594698E47FB8CCEBAEC /* ASIAuthenticationDialog.m */; };
-		A861AF8B3E3E421D8F0395BC /* GoogleMaps.h in Headers */ = {isa = PBXBuildFile; fileRef = 56C11E0649964A7589595C60 /* GoogleMaps.h */; };
-		A9ECA236B6B04EC0BCC31DD6 /* ASIWebPageRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B912C73328AB45199AA582BF /* ASIWebPageRequest.h */; };
-		AFFCE1A1BB00478189EFF5BC /* ASIS3Bucket.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E158B216E6249B08ADB4A1F /* ASIS3Bucket.h */; };
-		B57610A4CC1C4A3CAB28386D /* ASICloudFilesContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = C78C72B60F514AC29B209611 /* ASICloudFilesContainer.m */; };
-		B741F339D8D8413E9C469135 /* GMSCameraPosition.h in Headers */ = {isa = PBXBuildFile; fileRef = 7307CC1C4D7A4994854E0B14 /* GMSCameraPosition.h */; };
-		BC0681B2FF2C4BF49A9DD5F8 /* ASICloudFilesContainerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D29E6C68E49F4652A91F29DE /* ASICloudFilesContainerRequest.m */; };
-		BEB1DF67177F47D5AD30C0B8 /* ASIS3Bucket.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BADCF3EF54D4728BF69F996 /* ASIS3Bucket.m */; };
-		BEBA07902EF54650B4F02CB2 /* GMSPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = 61124786C12F45A5B6960FCF /* GMSPolygon.h */; };
-		BED5E6C3D58549CC870F8FAB /* ASIAuthenticationDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 310FF8FD0EC74CC0994130E7 /* ASIAuthenticationDialog.h */; };
-		BEDC725CA11343EDAF5DA52E /* ASICloudFilesRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A1E0CB10C84F4C6FA0BA3466 /* ASICloudFilesRequest.h */; };
-		C50ADAE8EA9841C2876E6418 /* GMSCoordinateBounds.h in Headers */ = {isa = PBXBuildFile; fileRef = A23591830F4C408E8127028E /* GMSCoordinateBounds.h */; };
-		C7175AA39BFE4F1CAF0A5619 /* ASIS3BucketObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF3ACF645C34DCFBCCCD2B6 /* ASIS3BucketObject.m */; };
-		CB3E6AA0B8C44953B5AB78E5 /* GMSUISettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F537FB0A9834D25A623ECC9 /* GMSUISettings.h */; };
-		CF861DD8D138474FAE7B0B5D /* ASIDataCompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = A0E8885ADE9145C1B4652DE2 /* ASIDataCompressor.h */; };
-		D17ACC5DC3604219BE4D448A /* GMSPanoramaLink.h in Headers */ = {isa = PBXBuildFile; fileRef = CBA90635BDDF442D8516D5BE /* GMSPanoramaLink.h */; };
-		D29C4FB1E4EF4B2F9578B262 /* ASIInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = ECB74B4D93514182AFF04C3E /* ASIInputStream.h */; };
-		D3A9A0BC906F43E29F4AA112 /* GCDiscreetNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD68D0E1BB74CFFB287C6CF /* GCDiscreetNotificationView.m */; };
-		DFF8AD05FFC34C35B9C6B564 /* ASICloudFilesContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EBED6519A994AF99D93B320 /* ASICloudFilesContainer.h */; };
-		E18FE95A04AD45C1926FFF29 /* GMSPanoramaCameraUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = A0D99B0B7AD848A8A2963B2E /* GMSPanoramaCameraUpdate.h */; };
-		E19F117631EC45D6A48DCC92 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7133C76D0D154094BC244F14 /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-O0"; }; };
-		E4675F2E4F5F42D483A67EEC /* ASIS3ServiceRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B494EC5C8D7434B945D80E8 /* ASIS3ServiceRequest.m */; };
-		EB78B167DE194DF0A9CDB3BF /* GMSPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 556AE888907C45009D217877 /* GMSPath.h */; };
-		EC44AF74851B46E09C5F8116 /* GMSMarker.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D506AC610834CD9A5E0960C /* GMSMarker.h */; };
-		ED1D7ED25D904D639ACBF821 /* ASIProgressDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 3809C19FA2D6413AA9819804 /* ASIProgressDelegate.h */; };
-		ED3BA34F993348DD982B71AA /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = C94180112B09437AB09F6DEC /* ASIInputStream.m */; };
-		EDDAE64CFC2F4F6389E6334C /* ASICloudFilesCDNRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D50BE50017A94D7FAFFCEF8F /* ASICloudFilesCDNRequest.m */; };
-		F1F20B09BCD94718A10E85D5 /* ASICloudFilesObjectRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 990F33470D854635B292593A /* ASICloudFilesObjectRequest.h */; };
-		F3AC089DEA714CD3A0DAC3F4 /* GMSPanoramaView.h in Headers */ = {isa = PBXBuildFile; fileRef = 52FE1FCDA07D424B9FFE7F8B /* GMSPanoramaView.h */; };
-		F4CE1CE00BA3438B81B211BA /* ASICloudFilesCDNRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F2C70C4850D4F41800614AC /* ASICloudFilesCDNRequest.h */; };
-		F8F3F91491944D05BCE8CA77 /* ASICloudFilesRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BECC45D058554EBE8A8624C1 /* ASICloudFilesRequest.m */; };
+		00FF202234854635AAA65E77 /* ASICloudFilesObject.h in Headers */ = {isa = PBXBuildFile; fileRef = CBD87C416042467DB3FC86E5 /* ASICloudFilesObject.h */; };
+		01052E3BEF7E47C18A3D1754 /* GMSIndoorBuilding.h in Headers */ = {isa = PBXBuildFile; fileRef = 39555566BCF44C2388034E4B /* GMSIndoorBuilding.h */; };
+		02DC9C73C446454EAFC705FD /* ASICloudFilesContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D7C6C730FC44DBB4525DC6 /* ASICloudFilesContainer.m */; };
+		049FB011082E4EC1A4CFE55B /* GCDiscreetNotificationView.h in Headers */ = {isa = PBXBuildFile; fileRef = B52DCFA6DD52433EB650C2A9 /* GCDiscreetNotificationView.h */; };
+		08BD775F73FE45279EAD8DE9 /* GMSUISettings.h in Headers */ = {isa = PBXBuildFile; fileRef = E5870CAFE7A54970A46AC79A /* GMSUISettings.h */; };
+		0D2A94520AAC41F8B1BE7F9E /* GMSPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = 898FE048FB254C288F52A51B /* GMSPolygon.h */; };
+		10C36CE926274CB3B566BAA5 /* ASIS3Request.h in Headers */ = {isa = PBXBuildFile; fileRef = 681BD15FA03A40F39F93139F /* ASIS3Request.h */; };
+		147360929DDB40DA9D74BF85 /* GMSCameraPosition.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DB9AC8E742141CDA74648E9 /* GMSCameraPosition.h */; };
+		166A3199AD224B729595BF56 /* GMSOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = AF3322D34A33464597B4FCE5 /* GMSOverlay.h */; };
+		18386EB1A8F846D6BBC34A9C /* ASIHTTPRequestConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = C5C598E5FD414625BE8D0763 /* ASIHTTPRequestConfig.h */; };
+		18B9C9CD4DA94B6B9E673B98 /* ASICloudFilesCDNRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = DFEB7EF9E7664E3DB491C552 /* ASICloudFilesCDNRequest.h */; };
+		19BFA29BEBDC459B9A405102 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 353C7B69AF4E4F12A0C54155 /* ASINetworkQueue.m */; };
+		1D041483ECF84B8CA8D7E86B /* ASINetworkQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = AF349E0DD4344125AFF10AE1 /* ASINetworkQueue.h */; };
+		21DC7DFD66AA47DCA599767C /* GMSPanoramaLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 55A0C463AF024B54B7B42F85 /* GMSPanoramaLayer.h */; };
+		27021835417341A0910D4FD7 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = F06065C3E33C4B1DA55596B5 /* ASIInputStream.m */; };
+		2A494FA3AFFB46269D6963DB /* ASIS3BucketObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E7B72057734EB3B4D57A35 /* ASIS3BucketObject.m */; };
+		2C020BBD89454C18BBEB93E0 /* ASIInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B122314D5B14734B88C86BA /* ASIInputStream.h */; };
+		2DC1E3710D664D88A60BCC05 /* GMSPanorama.h in Headers */ = {isa = PBXBuildFile; fileRef = E2507B30115D4D428188FD50 /* GMSPanorama.h */; };
+		2E9D54C7B86343768720D39A /* ASICacheDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 49F74A26FF2D43238947FF0C /* ASICacheDelegate.h */; };
+		2F048C4B194246AA814AC9BA /* GMSIndoorLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = 72163B2788054C42BCD1671C /* GMSIndoorLevel.h */; };
+		391392C912844D1CA4D3729F /* ASIHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DD7845B04F24CFAB9F1D27B /* ASIHTTPRequest.h */; };
+		3C44A64740554DF6BD2F1B94 /* GMSTileLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0765C3AE59874287A9F44C70 /* GMSTileLayer.h */; };
+		40863930602D4ED2AFBB11A8 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9DCDA396FF4619A1D04F71 /* ASIDataCompressor.m */; };
+		40A6586A3E2E4FC4B6961290 /* ASIS3BucketRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 208A1A99E1354D57A103D9B8 /* ASIS3BucketRequest.h */; };
+		422A59A50FC94071A2B5C057 /* ASIS3BucketRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B99186CB8747819285F335 /* ASIS3BucketRequest.m */; };
+		46873A1779E34311964057A7 /* ASIS3ObjectRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = C48A9A39F70C48B28F996BF7 /* ASIS3ObjectRequest.h */; };
+		4D2B7FCF5C9147EA88427F02 /* GMSMapLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = BF031E6FC3014D908597D8DA /* GMSMapLayer.h */; };
+		4FA06D421F22464B989D7DBE /* GMSMapView+Animation.h in Headers */ = {isa = PBXBuildFile; fileRef = 022B37C1F4BD410A8A3383D7 /* GMSMapView+Animation.h */; };
+		4FFA1A0A70954F5FA60DE3B0 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E05B9F3F3BCE4A93BDAE4CD5 /* Pods-dummy.m */; };
+		505B403E57724DADB45ED386 /* ASIS3Bucket.m in Sources */ = {isa = PBXBuildFile; fileRef = D787F4C370854E2DB1BB0E5A /* ASIS3Bucket.m */; };
+		553790BED1E14977A244516E /* GMSSyncTileLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = E073C16912B94BBE8C8B18EF /* GMSSyncTileLayer.h */; };
+		56E8925355A14AF084CDBD95 /* GMSMarker.h in Headers */ = {isa = PBXBuildFile; fileRef = FDE9944A5ADB45E78EBAC59B /* GMSMarker.h */; };
+		5795A61369354ABAB02BB03C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C9C3F0C4732484CAD2098B9 /* Foundation.framework */; };
+		5E5F30C45DD44EC899244063 /* ASIDataDecompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = B777D33BC51E40EC85A60BBB /* ASIDataDecompressor.h */; };
+		5EADEC22E0A844EF87AA3E1C /* ASIWebPageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F787108AA64C2C82D7A7D1 /* ASIWebPageRequest.m */; };
+		5F559AE9452144299DFE7F79 /* ASIS3ServiceRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4236A987CF44A9BCCAA848 /* ASIS3ServiceRequest.m */; };
+		62EE18B111E9478A92F19F7A /* GMSPanoramaView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A055E182E514F02B9943B97 /* GMSPanoramaView.h */; };
+		6445C0317ECD450698E53EFF /* ASICloudFilesCDNRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA864F24AA74918A1599E30 /* ASICloudFilesCDNRequest.m */; };
+		67568E062F0148F8A35F4161 /* GMSGeometryUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 01FE2B734138484EB285D56E /* GMSGeometryUtils.h */; };
+		6A5C77F88A30495B9F309ABC /* ASIS3ServiceRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 528CB94C29CF4C54A6B5BEC6 /* ASIS3ServiceRequest.h */; };
+		6F6DD52B4BB3411E98461F33 /* GMSServices.h in Headers */ = {isa = PBXBuildFile; fileRef = FF850BE3C95247459310B237 /* GMSServices.h */; };
+		74F3B42AB1B3419680A0C545 /* ASICloudFilesContainerXMLParserDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A994CD3C20F448D85FD74AD /* ASICloudFilesContainerXMLParserDelegate.h */; };
+		768518C94BD64816A7AF475D /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2C8318FDD14F04923AF94F /* ASIDataDecompressor.m */; };
+		7D2B91AC71EB4935AEB6BB60 /* GMSCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = 55DD4199DA8B49FE9995B348 /* GMSCircle.h */; };
+		801EB213D20546E1945C8A0D /* GMSMapView.h in Headers */ = {isa = PBXBuildFile; fileRef = 14AE6FD810FD4603B37B268C /* GMSMapView.h */; };
+		82A200A4AF414BE28E462CDA /* ASIDownloadCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DBB38FEBFC24C398F8007F2 /* ASIDownloadCache.h */; };
+		83F6E7F26E194540B73D75CD /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = C310B5A25B3D466DAB8F181E /* ASIAuthenticationDialog.m */; };
+		852DAEE8B3A84BB894E579E7 /* GMSProjection.h in Headers */ = {isa = PBXBuildFile; fileRef = 4582366B43A44EB89835417A /* GMSProjection.h */; };
+		86C723BAC67C46FE8704DAF3 /* GMSReverseGeocodeOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 47538D4BAEED4790882B31D3 /* GMSReverseGeocodeOutput.h */; };
+		86DBA69A18134191996E04F0 /* GCDiscreetNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40FE45C4BC7746FD9F291E8A /* GCDiscreetNotificationView.m */; };
+		870BAFB888CA4957AB7FBEF6 /* ASIS3Bucket.h in Headers */ = {isa = PBXBuildFile; fileRef = 183AE041C6E94238BDB1E313 /* ASIS3Bucket.h */; };
+		87DB7F703A2946A691B963CB /* GMSPanoramaCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = A3C04F61EFDD4DB78EC54B82 /* GMSPanoramaCamera.h */; };
+		89ED616882D7446C8E69F86D /* ASIWebPageRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = C94B7CA258B2462E96A6ED46 /* ASIWebPageRequest.h */; };
+		8CF2130F20004CA8BBC48A60 /* ASIHTTPRequestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4752FCB0F0489E9FAF9C87 /* ASIHTTPRequestDelegate.h */; };
+		8E147D3588D24AAD9885B9C9 /* GMSGeocoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 04E29092333C41F4B894CC75 /* GMSGeocoder.h */; };
+		8ED55616610F4950A09D9710 /* ASICloudFilesObjectRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DEF411887DA426A802ADE26 /* ASICloudFilesObjectRequest.h */; };
+		9053DF7DE412499FA8A5750C /* GMSURLTileLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 40E7D859E52444BBA0C80309 /* GMSURLTileLayer.h */; };
+		90EF9F6CD4084FD0A37B2666 /* ASIProgressDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6128081A96794AE1A642551A /* ASIProgressDelegate.h */; };
+		95B51A5BD07B499698E4DB63 /* GMSCameraUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F2AA8A119744DC2BE3FEED2 /* GMSCameraUpdate.h */; };
+		9A7C807488DC4FDC8476BCA2 /* ASICloudFilesObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5B376D5E4F4C249173307F /* ASICloudFilesObject.m */; };
+		9EC22C21F19C468F80AD46EE /* ASIAuthenticationDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E3F4C28F7784F55B5E63A0C /* ASIAuthenticationDialog.h */; };
+		9FA72B992F0D4D93A7E82166 /* GMSGroundOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = C426F728005544918F26EB8C /* GMSGroundOverlay.h */; };
+		9FA91707068E4A0682B8667B /* ASICloudFilesRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = FDBC56B2DE494F189A64D5CE /* ASICloudFilesRequest.h */; };
+		A6A0723ED6814797B812A7BB /* ASIFormDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA087BB0D6245979654F7BC /* ASIFormDataRequest.h */; };
+		A6F833F3B3464F31AE05427E /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E00F5A5FBC04701BFF40A9E /* ASIDownloadCache.m */; };
+		A8A67A40026B430CA0274BCA /* GMSPolyline.h in Headers */ = {isa = PBXBuildFile; fileRef = DAEE099B1A4B4E5FB5096A5E /* GMSPolyline.h */; };
+		AA12D51C530947068B86F558 /* GMSIndoorDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = 937ACEF381464981B058B871 /* GMSIndoorDisplay.h */; };
+		B100F8D04FDC457E8E14E295 /* ASINSXMLParserCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 82BE58CE0F4E4F35ACD0DE9C /* ASINSXMLParserCompat.h */; };
+		B1A9D7BF23CB439EA7DB7218 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 454A5019B19645409F2A7EB1 /* Reachability.h */; };
+		B1E586B5BACA44AE9B6B9E88 /* ASICloudFilesContainerRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 422AE63A70A34973B983D6E4 /* ASICloudFilesContainerRequest.h */; };
+		B2B478A002604F97A7FF0237 /* GMSOrientation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DAD8777B8A4407CBA115A1D /* GMSOrientation.h */; };
+		B8B66704AE3343139001FD07 /* GMSCoordinateBounds.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D6040F920A14DA99A71C333 /* GMSCoordinateBounds.h */; };
+		B9C95EB052044D96847C828E /* ASICloudFilesRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6F17D93C414333879A826A /* ASICloudFilesRequest.m */; };
+		C1A54812DAD64EFBBCABBBEB /* GMSPanoramaService.h in Headers */ = {isa = PBXBuildFile; fileRef = A05D1FD61D92452FBD1778A7 /* GMSPanoramaService.h */; };
+		C44723500B2D4A9F840194FD /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 51135465709847B495E03D34 /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-O0"; }; };
+		CCCF6981C80845E6AFA0CC1D /* GMSPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 09204FA8DFC64589BDC5C020 /* GMSPath.h */; };
+		CD33FF22222B476D9D4B0831 /* ASIS3ObjectRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7592D9C4E7DD487AB7B630EE /* ASIS3ObjectRequest.m */; };
+		CDFC34ABC62D4E8796984776 /* GMSMutablePath.h in Headers */ = {isa = PBXBuildFile; fileRef = 278DC2BDE54D4A0591597E65 /* GMSMutablePath.h */; };
+		D1DA0373F80D4E59926C64FB /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE26B56F34542EC8BD97310 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-O0"; }; };
+		D71E3C1B2B144B458371F603 /* ASICloudFilesObjectRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 717B1659EA5E41C4A4245E9C /* ASICloudFilesObjectRequest.m */; };
+		E33CAB52447E4CC78D3E98BB /* GMSPanoramaCameraUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = B3F9B4A2F2C84844A7973C46 /* GMSPanoramaCameraUpdate.h */; };
+		E361EEE6A96643C0A6EBF2CA /* GoogleMaps.h in Headers */ = {isa = PBXBuildFile; fileRef = FF35008B368E406DA3E4784C /* GoogleMaps.h */; };
+		E7A354D05ED548028E1CB1A3 /* ASICloudFilesContainerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 882E3A43DF8F4A35AA76ABE4 /* ASICloudFilesContainerRequest.m */; };
+		E9C76C8B392D48A59D6FE476 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B2D3DF8C0342F4A6DA5613 /* Reachability.m */; };
+		EA64E926CFED4FA3BFB9C180 /* ASICloudFilesContainerXMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 978D97ECCE7E4C3292F86366 /* ASICloudFilesContainerXMLParserDelegate.m */; };
+		F031DB94866E46CFB8889957 /* GMSMapView+Overlays.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EDD84118865494683D899D9 /* GMSMapView+Overlays.h */; };
+		F1F00794EFB545B29ED2796E /* ASIDataCompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = 14B1F1097F454B0E91AD86AD /* ASIDataCompressor.h */; };
+		F421DAC7675A494DB7BD000E /* ASICloudFilesContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 407713055EF64F9A9FE7BBDB /* ASICloudFilesContainer.h */; };
+		FA5091F5629A4197BEC736DF /* ASIS3Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 23CA964FA5C748FAB4EAEE20 /* ASIS3Request.m */; };
+		FDE500697FB543349DDAEAA9 /* GMSPanoramaLink.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D7D8DFB76EA4AC9B3B0A5CE /* GMSPanoramaLink.h */; };
+		FE57F70B314E47A78861D659 /* ASIS3BucketObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 89F266DA9DB34613AAEDE680 /* ASIS3BucketObject.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		006D86D85B894574AA041723 /* GMSCameraUpdate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSCameraUpdate.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSCameraUpdate.h"; sourceTree = SOURCE_ROOT; };
-		0174FB2EFD904303997A9D54 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.xcconfig; sourceTree = SOURCE_ROOT; };
-		02BB505E79C8410FA8598632 /* MobileCoreServices.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
-		02D0581558A5413091E1AC3F /* ASICloudFilesObjectRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASICloudFilesObjectRequest.m; path = ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesObjectRequest.m; sourceTree = SOURCE_ROOT; };
-		0313D35119FE45C5B80C5BAB /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		043E8E24D7634B119B56E253 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIDataDecompressor.m; path = ASIHTTPRequest/Classes/ASIDataDecompressor.m; sourceTree = SOURCE_ROOT; };
-		04535D023F454A659A05D02A /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestDelegate.h; path = ASIHTTPRequest/Classes/ASIHTTPRequestDelegate.h; sourceTree = SOURCE_ROOT; };
-		04C6B7F4A8EF47D0AF0471A3 /* ASICloudFilesContainerXMLParserDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICloudFilesContainerXMLParserDelegate.h; path = ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesContainerXMLParserDelegate.h; sourceTree = SOURCE_ROOT; };
-		062A7CB7712B4A849E6DFFBA /* GMSPanoramaLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPanoramaLayer.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSPanoramaLayer.h"; sourceTree = SOURCE_ROOT; };
-		06DCE055F00B4414900BD461 /* ASIDataCompressor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIDataCompressor.m; path = ASIHTTPRequest/Classes/ASIDataCompressor.m; sourceTree = SOURCE_ROOT; };
-		0AD9FD730DD2431585B0FFA2 /* OpenGLES.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
-		0B099AD7303E47C8A8C9C293 /* GMSGroundOverlay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSGroundOverlay.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSGroundOverlay.h"; sourceTree = SOURCE_ROOT; };
-		0F2C70C4850D4F41800614AC /* ASICloudFilesCDNRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICloudFilesCDNRequest.h; path = ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesCDNRequest.h; sourceTree = SOURCE_ROOT; };
-		0F6DD5F27E054CFC93440974 /* ImageIO.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
-		10EFAA89018B4F58BB044E2F /* ASIS3Request.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIS3Request.h; path = ASIHTTPRequest/Classes/S3/ASIS3Request.h; sourceTree = SOURCE_ROOT; };
-		144FE946CEC54F1DB153A4F2 /* ASINSXMLParserCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASINSXMLParserCompat.h; path = ASIHTTPRequest/Classes/S3/ASINSXMLParserCompat.h; sourceTree = SOURCE_ROOT; };
-		157E5BC51CD64CE8A3BB971B /* GLKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/GLKit.framework; sourceTree = DEVELOPER_DIR; };
-		172788117A8148A88FD96ECA /* ASIS3ObjectRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIS3ObjectRequest.h; path = ASIHTTPRequest/Classes/S3/ASIS3ObjectRequest.h; sourceTree = SOURCE_ROOT; };
-		1C2149855E8B428DB0A697B0 /* GMSSyncTileLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSSyncTileLayer.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSSyncTileLayer.h"; sourceTree = SOURCE_ROOT; };
-		203F2159DFAA4F71B714384B /* ASIS3BucketObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIS3BucketObject.h; path = ASIHTTPRequest/Classes/S3/ASIS3BucketObject.h; sourceTree = SOURCE_ROOT; };
-		207C542094F44DA0A757312B /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		23337F60C3F441C2A9E82272 /* GMSPanorama.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPanorama.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSPanorama.h"; sourceTree = SOURCE_ROOT; };
-		2370D6250EC84B1DB52D900A /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle"; sourceTree = SOURCE_ROOT; };
-		2AAD922B8F9E44019FC17897 /* ASIS3Request.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIS3Request.m; path = ASIHTTPRequest/Classes/S3/ASIS3Request.m; sourceTree = SOURCE_ROOT; };
-		2B494EC5C8D7434B945D80E8 /* ASIS3ServiceRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIS3ServiceRequest.m; path = ASIHTTPRequest/Classes/S3/ASIS3ServiceRequest.m; sourceTree = SOURCE_ROOT; };
-		2D506AC610834CD9A5E0960C /* GMSMarker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSMarker.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSMarker.h"; sourceTree = SOURCE_ROOT; };
-		2DDFA27B4B634F25892C66BB /* GMSPolyline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPolyline.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSPolyline.h"; sourceTree = SOURCE_ROOT; };
-		2DF3ACF645C34DCFBCCCD2B6 /* ASIS3BucketObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIS3BucketObject.m; path = ASIHTTPRequest/Classes/S3/ASIS3BucketObject.m; sourceTree = SOURCE_ROOT; };
-		310FF8FD0EC74CC0994130E7 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIAuthenticationDialog.h; path = ASIHTTPRequest/Classes/ASIAuthenticationDialog.h; sourceTree = SOURCE_ROOT; };
-		31B18106C9E84F57AFFB89CB /* ASIDownloadCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIDownloadCache.h; path = ASIHTTPRequest/Classes/ASIDownloadCache.h; sourceTree = SOURCE_ROOT; };
-		34936169036047478682A6D0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3809C19FA2D6413AA9819804 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIProgressDelegate.h; path = ASIHTTPRequest/Classes/ASIProgressDelegate.h; sourceTree = SOURCE_ROOT; };
-		386D5DD2F40F4DB3A765FA0C /* GMSIndoorLevel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSIndoorLevel.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSIndoorLevel.h"; sourceTree = SOURCE_ROOT; };
-		393006F270D74CABA64D1EFA /* GMSCircle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSCircle.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSCircle.h"; sourceTree = SOURCE_ROOT; };
-		3B5A66B0074B481D8ACD01CE /* ASIDownloadCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIDownloadCache.m; path = ASIHTTPRequest/Classes/ASIDownloadCache.m; sourceTree = SOURCE_ROOT; };
-		3C5F5833B24F45038BF62443 /* GMSPanoramaService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPanoramaService.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSPanoramaService.h"; sourceTree = SOURCE_ROOT; };
-		3ED19FCCED6C4262BD53352A /* ASIDataDecompressor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIDataDecompressor.h; path = ASIHTTPRequest/Classes/ASIDataDecompressor.h; sourceTree = SOURCE_ROOT; };
-		4D285F847D2748F6BAC3E31D /* GMSTileLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSTileLayer.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSTileLayer.h"; sourceTree = SOURCE_ROOT; };
-		4F633A3F80C1435CABEF15C1 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		500063E6F6E44B20989ADE69 /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		50BA7FE7D5714892B74448DE /* GMSMapView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSMapView.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSMapView.h"; sourceTree = SOURCE_ROOT; };
-		52FE1FCDA07D424B9FFE7F8B /* GMSPanoramaView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPanoramaView.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSPanoramaView.h"; sourceTree = SOURCE_ROOT; };
-		556AE888907C45009D217877 /* GMSPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPath.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSPath.h"; sourceTree = SOURCE_ROOT; };
-		56C11E0649964A7589595C60 /* GoogleMaps.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GoogleMaps.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GoogleMaps.h"; sourceTree = SOURCE_ROOT; };
-		570BD7FB03D64DA99C9FD3C2 /* GMSMutablePath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSMutablePath.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSMutablePath.h"; sourceTree = SOURCE_ROOT; };
-		57495A79B0A9489DBBC23C19 /* ASICloudFilesObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASICloudFilesObject.m; path = ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesObject.m; sourceTree = SOURCE_ROOT; };
-		5BADCF3EF54D4728BF69F996 /* ASIS3Bucket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIS3Bucket.m; path = ASIHTTPRequest/Classes/S3/ASIS3Bucket.m; sourceTree = SOURCE_ROOT; };
-		5D668ACFBEE246CA80D3839B /* Reachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Reachability/Reachability.m; sourceTree = SOURCE_ROOT; };
-		5E56B1DFDCCD4EC2A25E30A8 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TestFlight+ManualSessions.h"; path = "TestFlightSDK/TestFlight+ManualSessions.h"; sourceTree = SOURCE_ROOT; };
-		5EBED6519A994AF99D93B320 /* ASICloudFilesContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICloudFilesContainer.h; path = ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesContainer.h; sourceTree = SOURCE_ROOT; };
-		5F537FB0A9834D25A623ECC9 /* GMSUISettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSUISettings.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSUISettings.h"; sourceTree = SOURCE_ROOT; };
-		61124786C12F45A5B6960FCF /* GMSPolygon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPolygon.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSPolygon.h"; sourceTree = SOURCE_ROOT; };
-		649BE07461874281AD8E30FA /* GMSGeocoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSGeocoder.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSGeocoder.h"; sourceTree = SOURCE_ROOT; };
-		64D605BD2E7948B2B1C14EBC /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = SOURCE_ROOT; };
-		6760CCF0445D485E864D9B72 /* SystemConfiguration.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		68AA7CD2302F47EDB74F9BC7 /* ASIS3BucketRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIS3BucketRequest.h; path = ASIHTTPRequest/Classes/S3/ASIS3BucketRequest.h; sourceTree = SOURCE_ROOT; };
-		6942151BD509435BB625E399 /* Reachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Reachability/Reachability.h; sourceTree = SOURCE_ROOT; };
-		6AD68D0E1BB74CFFB287C6CF /* GCDiscreetNotificationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDiscreetNotificationView.m; path = GCDiscreetNotificationView/GCDiscreetNotificationView/GCDiscreetNotificationView.m; sourceTree = SOURCE_ROOT; };
-		6F0FC392B25545B19E1A4F3D /* GMSServices.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSServices.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSServices.h"; sourceTree = SOURCE_ROOT; };
-		7133C76D0D154094BC244F14 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIFormDataRequest.m; path = ASIHTTPRequest/Classes/ASIFormDataRequest.m; sourceTree = SOURCE_ROOT; };
-		7207AFBFD46A474F85058575 /* GMSOverlay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSOverlay.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSOverlay.h"; sourceTree = SOURCE_ROOT; };
-		7307CC1C4D7A4994854E0B14 /* GMSCameraPosition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSCameraPosition.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSCameraPosition.h"; sourceTree = SOURCE_ROOT; };
-		75096F3209314169BE3049D0 /* GMSProjection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSProjection.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSProjection.h"; sourceTree = SOURCE_ROOT; };
-		784F07B88E7A4B3CA66E9D82 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = SOURCE_ROOT; };
-		78C57F67E92D41F4B9456A8A /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = SOURCE_ROOT; };
-		7A1D031916FE442AB027315D /* GMSURLTileLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSURLTileLayer.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSURLTileLayer.h"; sourceTree = SOURCE_ROOT; };
-		7AF5A0C151CE485BA029A8F1 /* CoreLocation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
-		7C0552A968024E538DA6CB39 /* ASIS3ServiceRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIS3ServiceRequest.h; path = ASIHTTPRequest/Classes/S3/ASIS3ServiceRequest.h; sourceTree = SOURCE_ROOT; };
-		7F82E5D6CDFF4AF499897A99 /* GMSPanoramaCamera.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPanoramaCamera.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSPanoramaCamera.h"; sourceTree = SOURCE_ROOT; };
-		8DDBDBBFE62A41ED980360DB /* GMSGeometryUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSGeometryUtils.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSGeometryUtils.h"; sourceTree = SOURCE_ROOT; };
-		9054390660FC4FEBBED1DFDA /* Pods-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-prefix.pch"; sourceTree = SOURCE_ROOT; };
-		913079449CE24780B21D75D2 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIHTTPRequest.m; path = ASIHTTPRequest/Classes/ASIHTTPRequest.m; sourceTree = SOURCE_ROOT; };
-		990F33470D854635B292593A /* ASICloudFilesObjectRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICloudFilesObjectRequest.h; path = ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesObjectRequest.h; sourceTree = SOURCE_ROOT; };
-		9AEF3F959BCA458FB961356B /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = SOURCE_ROOT; };
-		9B4DC430F8294251AD748535 /* CFNetwork.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		9B979F7E724547578297E1DA /* ASIHTTPRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequest.h; path = ASIHTTPRequest/Classes/ASIHTTPRequest.h; sourceTree = SOURCE_ROOT; };
-		9E158B216E6249B08ADB4A1F /* ASIS3Bucket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIS3Bucket.h; path = ASIHTTPRequest/Classes/S3/ASIS3Bucket.h; sourceTree = SOURCE_ROOT; };
-		A0D99B0B7AD848A8A2963B2E /* GMSPanoramaCameraUpdate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPanoramaCameraUpdate.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSPanoramaCameraUpdate.h"; sourceTree = SOURCE_ROOT; };
-		A0E8885ADE9145C1B4652DE2 /* ASIDataCompressor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIDataCompressor.h; path = ASIHTTPRequest/Classes/ASIDataCompressor.h; sourceTree = SOURCE_ROOT; };
-		A1E0CB10C84F4C6FA0BA3466 /* ASICloudFilesRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICloudFilesRequest.h; path = ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesRequest.h; sourceTree = SOURCE_ROOT; };
-		A23591830F4C408E8127028E /* GMSCoordinateBounds.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSCoordinateBounds.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSCoordinateBounds.h"; sourceTree = SOURCE_ROOT; };
-		A5FF9D6633AE48188174E9C7 /* ASICloudFilesContainerXMLParserDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASICloudFilesContainerXMLParserDelegate.m; path = ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesContainerXMLParserDelegate.m; sourceTree = SOURCE_ROOT; };
-		A704A713072945C9AA23C0BB /* ASINetworkQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASINetworkQueue.m; path = ASIHTTPRequest/Classes/ASINetworkQueue.m; sourceTree = SOURCE_ROOT; };
-		AFD0A4C4C660456D8568E638 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestConfig.h; path = ASIHTTPRequest/Classes/ASIHTTPRequestConfig.h; sourceTree = SOURCE_ROOT; };
-		B912C73328AB45199AA582BF /* ASIWebPageRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIWebPageRequest.h; path = ASIHTTPRequest/Classes/ASIWebPageRequest/ASIWebPageRequest.h; sourceTree = SOURCE_ROOT; };
-		BECC45D058554EBE8A8624C1 /* ASICloudFilesRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASICloudFilesRequest.m; path = ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesRequest.m; sourceTree = SOURCE_ROOT; };
-		C1677D112C7D4F3CA8F250CD /* CoreText.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
-		C40E295822BF48BCB3A33E20 /* ASIWebPageRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIWebPageRequest.m; path = ASIHTTPRequest/Classes/ASIWebPageRequest/ASIWebPageRequest.m; sourceTree = SOURCE_ROOT; };
-		C50E025C9E744A7DA80613EA /* GMSIndoorDisplay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSIndoorDisplay.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSIndoorDisplay.h"; sourceTree = SOURCE_ROOT; };
-		C78C72B60F514AC29B209611 /* ASICloudFilesContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASICloudFilesContainer.m; path = ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesContainer.m; sourceTree = SOURCE_ROOT; };
-		C7A06C0F2AC04D01B41B8437 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIFormDataRequest.h; path = ASIHTTPRequest/Classes/ASIFormDataRequest.h; sourceTree = SOURCE_ROOT; };
-		C80794EC565F4722A6D8E60F /* GMSOrientation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSOrientation.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSOrientation.h"; sourceTree = SOURCE_ROOT; };
-		C94180112B09437AB09F6DEC /* ASIInputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIInputStream.m; path = ASIHTTPRequest/Classes/ASIInputStream.m; sourceTree = SOURCE_ROOT; };
-		C96C54F629CA402CBA514466 /* ASICloudFilesObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICloudFilesObject.h; path = ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesObject.h; sourceTree = SOURCE_ROOT; };
-		CBA90635BDDF442D8516D5BE /* GMSPanoramaLink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPanoramaLink.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSPanoramaLink.h"; sourceTree = SOURCE_ROOT; };
-		CF099594698E47FB8CCEBAEC /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIAuthenticationDialog.m; path = ASIHTTPRequest/Classes/ASIAuthenticationDialog.m; sourceTree = SOURCE_ROOT; };
-		D1DAFF2B60A44A259CA8D743 /* ASICacheDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICacheDelegate.h; path = ASIHTTPRequest/Classes/ASICacheDelegate.h; sourceTree = SOURCE_ROOT; };
-		D29E6C68E49F4652A91F29DE /* ASICloudFilesContainerRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASICloudFilesContainerRequest.m; path = ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesContainerRequest.m; sourceTree = SOURCE_ROOT; };
-		D50BE50017A94D7FAFFCEF8F /* ASICloudFilesCDNRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASICloudFilesCDNRequest.m; path = ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesCDNRequest.m; sourceTree = SOURCE_ROOT; };
-		D8CC99A5EE8840789299CC90 /* GMSReverseGeocodeOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSReverseGeocodeOutput.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSReverseGeocodeOutput.h"; sourceTree = SOURCE_ROOT; };
-		D953E2E4E9CA4515BF9F5709 /* GMSMapView+Animation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GMSMapView+Animation.h"; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSMapView+Animation.h"; sourceTree = SOURCE_ROOT; };
-		D95D7F0957414EE1AE356077 /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TestFlight+AsyncLogging.h"; path = "TestFlightSDK/TestFlight+AsyncLogging.h"; sourceTree = SOURCE_ROOT; };
-		D9FB7EE29492447B84E2E7D4 /* GMSIndoorBuilding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSIndoorBuilding.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSIndoorBuilding.h"; sourceTree = SOURCE_ROOT; };
-		DC77B877E9434E5C86430753 /* ASIS3BucketRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIS3BucketRequest.m; path = ASIHTTPRequest/Classes/S3/ASIS3BucketRequest.m; sourceTree = SOURCE_ROOT; };
-		DFD9B01CCF5B488D900C2DC4 /* TestFlight.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TestFlight.h; path = TestFlightSDK/TestFlight.h; sourceTree = SOURCE_ROOT; };
-		E0BAFC11328443D99B92EF4D /* QuartzCore.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		E1625A9898EA498A97BFDE64 /* GCDiscreetNotificationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDiscreetNotificationView.h; path = GCDiscreetNotificationView/GCDiscreetNotificationView/GCDiscreetNotificationView.h; sourceTree = SOURCE_ROOT; };
-		E5EB84E346EC4364B6A08837 /* GMSMapView+Overlays.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GMSMapView+Overlays.h"; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSMapView+Overlays.h"; sourceTree = SOURCE_ROOT; };
-		E8FB1332066E402CB8842504 /* ASINetworkQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASINetworkQueue.h; path = ASIHTTPRequest/Classes/ASINetworkQueue.h; sourceTree = SOURCE_ROOT; };
-		ECB74B4D93514182AFF04C3E /* ASIInputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIInputStream.h; path = ASIHTTPRequest/Classes/ASIInputStream.h; sourceTree = SOURCE_ROOT; };
-		ED24CA50EA564460A0D4D633 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = SOURCE_ROOT; };
-		EDE240C65D0948369A7679EB /* ASICloudFilesContainerRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICloudFilesContainerRequest.h; path = ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesContainerRequest.h; sourceTree = SOURCE_ROOT; };
-		EEB4E79EAF7E4959A6386A24 /* AVFoundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		EED3EDFB23AA4C8BBC83367C /* GMSMapLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSMapLayer.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSMapLayer.h"; sourceTree = SOURCE_ROOT; };
-		FAB036A102FB434D96F94814 /* CoreData.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
-		FFDAF0AF09CB4F5DA2905A6E /* ASIS3ObjectRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIS3ObjectRequest.m; path = ASIHTTPRequest/Classes/S3/ASIS3ObjectRequest.m; sourceTree = SOURCE_ROOT; };
+		01FE2B734138484EB285D56E /* GMSGeometryUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSGeometryUtils.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSGeometryUtils.h"; sourceTree = SOURCE_ROOT; };
+		022B37C1F4BD410A8A3383D7 /* GMSMapView+Animation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GMSMapView+Animation.h"; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSMapView+Animation.h"; sourceTree = SOURCE_ROOT; };
+		04E29092333C41F4B894CC75 /* GMSGeocoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSGeocoder.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSGeocoder.h"; sourceTree = SOURCE_ROOT; };
+		0765C3AE59874287A9F44C70 /* GMSTileLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSTileLayer.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSTileLayer.h"; sourceTree = SOURCE_ROOT; };
+		09204FA8DFC64589BDC5C020 /* GMSPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPath.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSPath.h"; sourceTree = SOURCE_ROOT; };
+		14AE6FD810FD4603B37B268C /* GMSMapView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSMapView.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSMapView.h"; sourceTree = SOURCE_ROOT; };
+		14B1F1097F454B0E91AD86AD /* ASIDataCompressor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIDataCompressor.h; path = ASIHTTPRequest/Classes/ASIDataCompressor.h; sourceTree = SOURCE_ROOT; };
+		1812B5016126428A9C7DEBC4 /* CoreLocation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		183AE041C6E94238BDB1E313 /* ASIS3Bucket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIS3Bucket.h; path = ASIHTTPRequest/Classes/S3/ASIS3Bucket.h; sourceTree = SOURCE_ROOT; };
+		1AE32394B0924CA3B11BC316 /* QuartzCore.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		1DCD26532C2D4C6683CD44CF /* SystemConfiguration.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		1DD7845B04F24CFAB9F1D27B /* ASIHTTPRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequest.h; path = ASIHTTPRequest/Classes/ASIHTTPRequest.h; sourceTree = SOURCE_ROOT; };
+		208A1A99E1354D57A103D9B8 /* ASIS3BucketRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIS3BucketRequest.h; path = ASIHTTPRequest/Classes/S3/ASIS3BucketRequest.h; sourceTree = SOURCE_ROOT; };
+		21FE5D0E1F784950BBA7F9C0 /* AVFoundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		23CA964FA5C748FAB4EAEE20 /* ASIS3Request.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIS3Request.m; path = ASIHTTPRequest/Classes/S3/ASIS3Request.m; sourceTree = SOURCE_ROOT; };
+		278DC2BDE54D4A0591597E65 /* GMSMutablePath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSMutablePath.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSMutablePath.h"; sourceTree = SOURCE_ROOT; };
+		353C7B69AF4E4F12A0C54155 /* ASINetworkQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASINetworkQueue.m; path = ASIHTTPRequest/Classes/ASINetworkQueue.m; sourceTree = SOURCE_ROOT; };
+		39555566BCF44C2388034E4B /* GMSIndoorBuilding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSIndoorBuilding.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSIndoorBuilding.h"; sourceTree = SOURCE_ROOT; };
+		3A055E182E514F02B9943B97 /* GMSPanoramaView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPanoramaView.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSPanoramaView.h"; sourceTree = SOURCE_ROOT; };
+		3DB9AC8E742141CDA74648E9 /* GMSCameraPosition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSCameraPosition.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSCameraPosition.h"; sourceTree = SOURCE_ROOT; };
+		3F6F17D93C414333879A826A /* ASICloudFilesRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASICloudFilesRequest.m; path = ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesRequest.m; sourceTree = SOURCE_ROOT; };
+		407713055EF64F9A9FE7BBDB /* ASICloudFilesContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICloudFilesContainer.h; path = ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesContainer.h; sourceTree = SOURCE_ROOT; };
+		40E7D859E52444BBA0C80309 /* GMSURLTileLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSURLTileLayer.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSURLTileLayer.h"; sourceTree = SOURCE_ROOT; };
+		40FE45C4BC7746FD9F291E8A /* GCDiscreetNotificationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDiscreetNotificationView.m; path = GCDiscreetNotificationView/GCDiscreetNotificationView/GCDiscreetNotificationView.m; sourceTree = SOURCE_ROOT; };
+		422AE63A70A34973B983D6E4 /* ASICloudFilesContainerRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICloudFilesContainerRequest.h; path = ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesContainerRequest.h; sourceTree = SOURCE_ROOT; };
+		454A5019B19645409F2A7EB1 /* Reachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Reachability/Reachability.h; sourceTree = SOURCE_ROOT; };
+		4582366B43A44EB89835417A /* GMSProjection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSProjection.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSProjection.h"; sourceTree = SOURCE_ROOT; };
+		467B103122D540A599B70156 /* Pods-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-prefix.pch"; sourceTree = SOURCE_ROOT; };
+		47538D4BAEED4790882B31D3 /* GMSReverseGeocodeOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSReverseGeocodeOutput.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSReverseGeocodeOutput.h"; sourceTree = SOURCE_ROOT; };
+		49D7C6C730FC44DBB4525DC6 /* ASICloudFilesContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASICloudFilesContainer.m; path = ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesContainer.m; sourceTree = SOURCE_ROOT; };
+		49F74A26FF2D43238947FF0C /* ASICacheDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICacheDelegate.h; path = ASIHTTPRequest/Classes/ASICacheDelegate.h; sourceTree = SOURCE_ROOT; };
+		4AA087BB0D6245979654F7BC /* ASIFormDataRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIFormDataRequest.h; path = ASIHTTPRequest/Classes/ASIFormDataRequest.h; sourceTree = SOURCE_ROOT; };
+		4B122314D5B14734B88C86BA /* ASIInputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIInputStream.h; path = ASIHTTPRequest/Classes/ASIInputStream.h; sourceTree = SOURCE_ROOT; };
+		4DAD8777B8A4407CBA115A1D /* GMSOrientation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSOrientation.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSOrientation.h"; sourceTree = SOURCE_ROOT; };
+		4E3F4C28F7784F55B5E63A0C /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIAuthenticationDialog.h; path = ASIHTTPRequest/Classes/ASIAuthenticationDialog.h; sourceTree = SOURCE_ROOT; };
+		51135465709847B495E03D34 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIFormDataRequest.m; path = ASIHTTPRequest/Classes/ASIFormDataRequest.m; sourceTree = SOURCE_ROOT; };
+		528CB94C29CF4C54A6B5BEC6 /* ASIS3ServiceRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIS3ServiceRequest.h; path = ASIHTTPRequest/Classes/S3/ASIS3ServiceRequest.h; sourceTree = SOURCE_ROOT; };
+		55A0C463AF024B54B7B42F85 /* GMSPanoramaLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPanoramaLayer.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSPanoramaLayer.h"; sourceTree = SOURCE_ROOT; };
+		55DD4199DA8B49FE9995B348 /* GMSCircle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSCircle.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSCircle.h"; sourceTree = SOURCE_ROOT; };
+		5BD1F54499AC44F2922645E9 /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		5DBB38FEBFC24C398F8007F2 /* ASIDownloadCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIDownloadCache.h; path = ASIHTTPRequest/Classes/ASIDownloadCache.h; sourceTree = SOURCE_ROOT; };
+		5DEF411887DA426A802ADE26 /* ASICloudFilesObjectRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICloudFilesObjectRequest.h; path = ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesObjectRequest.h; sourceTree = SOURCE_ROOT; };
+		6128081A96794AE1A642551A /* ASIProgressDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIProgressDelegate.h; path = ASIHTTPRequest/Classes/ASIProgressDelegate.h; sourceTree = SOURCE_ROOT; };
+		6207493174AC4AB4B99A8234 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = SOURCE_ROOT; };
+		681BD15FA03A40F39F93139F /* ASIS3Request.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIS3Request.h; path = ASIHTTPRequest/Classes/S3/ASIS3Request.h; sourceTree = SOURCE_ROOT; };
+		6C9C3F0C4732484CAD2098B9 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		70F4D51E8AD94105897B924B /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle"; sourceTree = SOURCE_ROOT; };
+		717B1659EA5E41C4A4245E9C /* ASICloudFilesObjectRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASICloudFilesObjectRequest.m; path = ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesObjectRequest.m; sourceTree = SOURCE_ROOT; };
+		72163B2788054C42BCD1671C /* GMSIndoorLevel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSIndoorLevel.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSIndoorLevel.h"; sourceTree = SOURCE_ROOT; };
+		7592D9C4E7DD487AB7B630EE /* ASIS3ObjectRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIS3ObjectRequest.m; path = ASIHTTPRequest/Classes/S3/ASIS3ObjectRequest.m; sourceTree = SOURCE_ROOT; };
+		7D2C8318FDD14F04923AF94F /* ASIDataDecompressor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIDataDecompressor.m; path = ASIHTTPRequest/Classes/ASIDataDecompressor.m; sourceTree = SOURCE_ROOT; };
+		7D6040F920A14DA99A71C333 /* GMSCoordinateBounds.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSCoordinateBounds.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSCoordinateBounds.h"; sourceTree = SOURCE_ROOT; };
+		82BE58CE0F4E4F35ACD0DE9C /* ASINSXMLParserCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASINSXMLParserCompat.h; path = ASIHTTPRequest/Classes/S3/ASINSXMLParserCompat.h; sourceTree = SOURCE_ROOT; };
+		83F787108AA64C2C82D7A7D1 /* ASIWebPageRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIWebPageRequest.m; path = ASIHTTPRequest/Classes/ASIWebPageRequest/ASIWebPageRequest.m; sourceTree = SOURCE_ROOT; };
+		87DA2C1563934D8F904D4723 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = SOURCE_ROOT; };
+		882E3A43DF8F4A35AA76ABE4 /* ASICloudFilesContainerRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASICloudFilesContainerRequest.m; path = ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesContainerRequest.m; sourceTree = SOURCE_ROOT; };
+		898FE048FB254C288F52A51B /* GMSPolygon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPolygon.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSPolygon.h"; sourceTree = SOURCE_ROOT; };
+		89F266DA9DB34613AAEDE680 /* ASIS3BucketObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIS3BucketObject.h; path = ASIHTTPRequest/Classes/S3/ASIS3BucketObject.h; sourceTree = SOURCE_ROOT; };
+		8C5A492EC30E441ABC7D4B6F /* GoogleMaps.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/GoogleMaps.framework; sourceTree = DEVELOPER_DIR; };
+		8D7D8DFB76EA4AC9B3B0A5CE /* GMSPanoramaLink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPanoramaLink.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSPanoramaLink.h"; sourceTree = SOURCE_ROOT; };
+		8DEC87B4817440BA99E79E51 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8E00F5A5FBC04701BFF40A9E /* ASIDownloadCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIDownloadCache.m; path = ASIHTTPRequest/Classes/ASIDownloadCache.m; sourceTree = SOURCE_ROOT; };
+		8EDD84118865494683D899D9 /* GMSMapView+Overlays.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GMSMapView+Overlays.h"; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSMapView+Overlays.h"; sourceTree = SOURCE_ROOT; };
+		8F2AA8A119744DC2BE3FEED2 /* GMSCameraUpdate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSCameraUpdate.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSCameraUpdate.h"; sourceTree = SOURCE_ROOT; };
+		92B2D3DF8C0342F4A6DA5613 /* Reachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Reachability/Reachability.m; sourceTree = SOURCE_ROOT; };
+		937ACEF381464981B058B871 /* GMSIndoorDisplay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSIndoorDisplay.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSIndoorDisplay.h"; sourceTree = SOURCE_ROOT; };
+		978D97ECCE7E4C3292F86366 /* ASICloudFilesContainerXMLParserDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASICloudFilesContainerXMLParserDelegate.m; path = ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesContainerXMLParserDelegate.m; sourceTree = SOURCE_ROOT; };
+		9A994CD3C20F448D85FD74AD /* ASICloudFilesContainerXMLParserDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICloudFilesContainerXMLParserDelegate.h; path = ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesContainerXMLParserDelegate.h; sourceTree = SOURCE_ROOT; };
+		9FDBB9E9147C4ACF8695F0F6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		A05D1FD61D92452FBD1778A7 /* GMSPanoramaService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPanoramaService.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSPanoramaService.h"; sourceTree = SOURCE_ROOT; };
+		A138CB9F8AC645AE934EB02D /* OpenGLES.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
+		A1F5E7E517D14E1DA7C9A941 /* CFNetwork.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		A36067E30F6F41DCA8F9A8E4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		A3C04F61EFDD4DB78EC54B82 /* GMSPanoramaCamera.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPanoramaCamera.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSPanoramaCamera.h"; sourceTree = SOURCE_ROOT; };
+		A8B99186CB8747819285F335 /* ASIS3BucketRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIS3BucketRequest.m; path = ASIHTTPRequest/Classes/S3/ASIS3BucketRequest.m; sourceTree = SOURCE_ROOT; };
+		AF3322D34A33464597B4FCE5 /* GMSOverlay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSOverlay.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSOverlay.h"; sourceTree = SOURCE_ROOT; };
+		AF349E0DD4344125AFF10AE1 /* ASINetworkQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASINetworkQueue.h; path = ASIHTTPRequest/Classes/ASINetworkQueue.h; sourceTree = SOURCE_ROOT; };
+		B3F9B4A2F2C84844A7973C46 /* GMSPanoramaCameraUpdate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPanoramaCameraUpdate.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSPanoramaCameraUpdate.h"; sourceTree = SOURCE_ROOT; };
+		B52DCFA6DD52433EB650C2A9 /* GCDiscreetNotificationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDiscreetNotificationView.h; path = GCDiscreetNotificationView/GCDiscreetNotificationView/GCDiscreetNotificationView.h; sourceTree = SOURCE_ROOT; };
+		B777D33BC51E40EC85A60BBB /* ASIDataDecompressor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIDataDecompressor.h; path = ASIHTTPRequest/Classes/ASIDataDecompressor.h; sourceTree = SOURCE_ROOT; };
+		BBE26B56F34542EC8BD97310 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIHTTPRequest.m; path = ASIHTTPRequest/Classes/ASIHTTPRequest.m; sourceTree = SOURCE_ROOT; };
+		BF031E6FC3014D908597D8DA /* GMSMapLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSMapLayer.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSMapLayer.h"; sourceTree = SOURCE_ROOT; };
+		C310B5A25B3D466DAB8F181E /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIAuthenticationDialog.m; path = ASIHTTPRequest/Classes/ASIAuthenticationDialog.m; sourceTree = SOURCE_ROOT; };
+		C426F728005544918F26EB8C /* GMSGroundOverlay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSGroundOverlay.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSGroundOverlay.h"; sourceTree = SOURCE_ROOT; };
+		C48A9A39F70C48B28F996BF7 /* ASIS3ObjectRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIS3ObjectRequest.h; path = ASIHTTPRequest/Classes/S3/ASIS3ObjectRequest.h; sourceTree = SOURCE_ROOT; };
+		C4965A70F2A94117BFEB72F2 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C5C598E5FD414625BE8D0763 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestConfig.h; path = ASIHTTPRequest/Classes/ASIHTTPRequestConfig.h; sourceTree = SOURCE_ROOT; };
+		C5E7B72057734EB3B4D57A35 /* ASIS3BucketObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIS3BucketObject.m; path = ASIHTTPRequest/Classes/S3/ASIS3BucketObject.m; sourceTree = SOURCE_ROOT; };
+		C94B7CA258B2462E96A6ED46 /* ASIWebPageRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIWebPageRequest.h; path = ASIHTTPRequest/Classes/ASIWebPageRequest/ASIWebPageRequest.h; sourceTree = SOURCE_ROOT; };
+		CA30D27629534BACA7ED026D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBD87C416042467DB3FC86E5 /* ASICloudFilesObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICloudFilesObject.h; path = ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesObject.h; sourceTree = SOURCE_ROOT; };
+		CE9DCDA396FF4619A1D04F71 /* ASIDataCompressor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIDataCompressor.m; path = ASIHTTPRequest/Classes/ASIDataCompressor.m; sourceTree = SOURCE_ROOT; };
+		CFFF9DA7FFA841C9A05BF2D7 /* GLKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/GLKit.framework; sourceTree = DEVELOPER_DIR; };
+		D496C1E3734B43C79D6F197E /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = SOURCE_ROOT; };
+		D787F4C370854E2DB1BB0E5A /* ASIS3Bucket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIS3Bucket.m; path = ASIHTTPRequest/Classes/S3/ASIS3Bucket.m; sourceTree = SOURCE_ROOT; };
+		DA5B376D5E4F4C249173307F /* ASICloudFilesObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASICloudFilesObject.m; path = ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesObject.m; sourceTree = SOURCE_ROOT; };
+		DAEE099B1A4B4E5FB5096A5E /* GMSPolyline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPolyline.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSPolyline.h"; sourceTree = SOURCE_ROOT; };
+		DD4236A987CF44A9BCCAA848 /* ASIS3ServiceRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIS3ServiceRequest.m; path = ASIHTTPRequest/Classes/S3/ASIS3ServiceRequest.m; sourceTree = SOURCE_ROOT; };
+		DFA864F24AA74918A1599E30 /* ASICloudFilesCDNRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASICloudFilesCDNRequest.m; path = ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesCDNRequest.m; sourceTree = SOURCE_ROOT; };
+		DFEB7EF9E7664E3DB491C552 /* ASICloudFilesCDNRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICloudFilesCDNRequest.h; path = ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesCDNRequest.h; sourceTree = SOURCE_ROOT; };
+		E05B9F3F3BCE4A93BDAE4CD5 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = SOURCE_ROOT; };
+		E069D17F6E704DF6BBF489C6 /* CoreData.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		E073C16912B94BBE8C8B18EF /* GMSSyncTileLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSSyncTileLayer.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSSyncTileLayer.h"; sourceTree = SOURCE_ROOT; };
+		E2507B30115D4D428188FD50 /* GMSPanorama.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPanorama.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSPanorama.h"; sourceTree = SOURCE_ROOT; };
+		E5870CAFE7A54970A46AC79A /* GMSUISettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSUISettings.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSUISettings.h"; sourceTree = SOURCE_ROOT; };
+		E5BA0F8166EE4D938FC51240 /* CoreText.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		EE4752FCB0F0489E9FAF9C87 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestDelegate.h; path = ASIHTTPRequest/Classes/ASIHTTPRequestDelegate.h; sourceTree = SOURCE_ROOT; };
+		F06065C3E33C4B1DA55596B5 /* ASIInputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIInputStream.m; path = ASIHTTPRequest/Classes/ASIInputStream.m; sourceTree = SOURCE_ROOT; };
+		F1B6A062ECD1413684DA635A /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = SOURCE_ROOT; };
+		F8B1FBED00804FC0B166F30B /* ImageIO.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		FDBC56B2DE494F189A64D5CE /* ASICloudFilesRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICloudFilesRequest.h; path = ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesRequest.h; sourceTree = SOURCE_ROOT; };
+		FDE9944A5ADB45E78EBAC59B /* GMSMarker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSMarker.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSMarker.h"; sourceTree = SOURCE_ROOT; };
+		FF35008B368E406DA3E4784C /* GoogleMaps.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GoogleMaps.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GoogleMaps.h"; sourceTree = SOURCE_ROOT; };
+		FF850BE3C95247459310B237 /* GMSServices.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSServices.h; path = "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Headers/GMSServices.h"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3D1743D7E2C84F9AA2545615 /* Frameworks */ = {
+		4DD8619807334D4AA407A8A4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4065FE064B9D4543920866DB /* Foundation.framework in Frameworks */,
+				5795A61369354ABAB02BB03C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1DC77A7A9C404B49BF55717B /* CloudFiles */ = {
+		078DB4579C6848D4B46431E4 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0F2C70C4850D4F41800614AC /* ASICloudFilesCDNRequest.h */,
-				D50BE50017A94D7FAFFCEF8F /* ASICloudFilesCDNRequest.m */,
-				5EBED6519A994AF99D93B320 /* ASICloudFilesContainer.h */,
-				C78C72B60F514AC29B209611 /* ASICloudFilesContainer.m */,
-				EDE240C65D0948369A7679EB /* ASICloudFilesContainerRequest.h */,
-				D29E6C68E49F4652A91F29DE /* ASICloudFilesContainerRequest.m */,
-				04C6B7F4A8EF47D0AF0471A3 /* ASICloudFilesContainerXMLParserDelegate.h */,
-				A5FF9D6633AE48188174E9C7 /* ASICloudFilesContainerXMLParserDelegate.m */,
-				C96C54F629CA402CBA514466 /* ASICloudFilesObject.h */,
-				57495A79B0A9489DBBC23C19 /* ASICloudFilesObject.m */,
-				990F33470D854635B292593A /* ASICloudFilesObjectRequest.h */,
-				02D0581558A5413091E1AC3F /* ASICloudFilesObjectRequest.m */,
-				A1E0CB10C84F4C6FA0BA3466 /* ASICloudFilesRequest.h */,
-				BECC45D058554EBE8A8624C1 /* ASICloudFilesRequest.m */,
-			);
-			name = CloudFiles;
-			sourceTree = "<group>";
-		};
-		2AB31528FA404FD98621B4A5 /* TestFlightSDK */ = {
-			isa = PBXGroup;
-			children = (
-				D95D7F0957414EE1AE356077 /* TestFlight+AsyncLogging.h */,
-				5E56B1DFDCCD4EC2A25E30A8 /* TestFlight+ManualSessions.h */,
-				DFD9B01CCF5B488D900C2DC4 /* TestFlight.h */,
-			);
-			name = TestFlightSDK;
-			sourceTree = "<group>";
-		};
-		3ACAD1EC5D8240A98C6E356C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0174FB2EFD904303997A9D54 /* Pods.xcconfig */,
-				ED24CA50EA564460A0D4D633 /* Pods-environment.h */,
-				9054390660FC4FEBBED1DFDA /* Pods-prefix.pch */,
-				64D605BD2E7948B2B1C14EBC /* Pods-resources.sh */,
-				78C57F67E92D41F4B9456A8A /* Pods-acknowledgements.plist */,
-				9AEF3F959BCA458FB961356B /* Pods-acknowledgements.markdown */,
-				784F07B88E7A4B3CA66E9D82 /* Pods-dummy.m */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		5417A7929B194B71AF419AED /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3ACAD1EC5D8240A98C6E356C /* Pods */,
+				4809F742CB5C49C48CAE18A0 /* Pods */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		552526CE39604FEBBE2E9A22 /* ASIWebPageRequest */ = {
+		3C7645A2BCC74B66A831531F /* ASIHTTPRequest */ = {
 			isa = PBXGroup;
 			children = (
-				B912C73328AB45199AA582BF /* ASIWebPageRequest.h */,
-				C40E295822BF48BCB3A33E20 /* ASIWebPageRequest.m */,
-			);
-			name = ASIWebPageRequest;
-			sourceTree = "<group>";
-		};
-		5627C74DBEBE4AC0BFE3F042 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				34936169036047478682A6D0 /* libPods.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		68D24CF1E2C144D8AA52A087 /* Reachability */ = {
-			isa = PBXGroup;
-			children = (
-				6942151BD509435BB625E399 /* Reachability.h */,
-				5D668ACFBEE246CA80D3839B /* Reachability.m */,
-			);
-			name = Reachability;
-			sourceTree = "<group>";
-		};
-		8B3BB2C7CC56405F874D6A74 /* Google-Maps-iOS-SDK */ = {
-			isa = PBXGroup;
-			children = (
-				2370D6250EC84B1DB52D900A /* GoogleMaps.bundle */,
-			);
-			name = "Google-Maps-iOS-SDK";
-			sourceTree = "<group>";
-		};
-		8B939FB3647A4DA89E1B43F1 /* S3 */ = {
-			isa = PBXGroup;
-			children = (
-				144FE946CEC54F1DB153A4F2 /* ASINSXMLParserCompat.h */,
-				9E158B216E6249B08ADB4A1F /* ASIS3Bucket.h */,
-				5BADCF3EF54D4728BF69F996 /* ASIS3Bucket.m */,
-				203F2159DFAA4F71B714384B /* ASIS3BucketObject.h */,
-				2DF3ACF645C34DCFBCCCD2B6 /* ASIS3BucketObject.m */,
-				68AA7CD2302F47EDB74F9BC7 /* ASIS3BucketRequest.h */,
-				DC77B877E9434E5C86430753 /* ASIS3BucketRequest.m */,
-				172788117A8148A88FD96ECA /* ASIS3ObjectRequest.h */,
-				FFDAF0AF09CB4F5DA2905A6E /* ASIS3ObjectRequest.m */,
-				10EFAA89018B4F58BB044E2F /* ASIS3Request.h */,
-				2AAD922B8F9E44019FC17897 /* ASIS3Request.m */,
-				7C0552A968024E538DA6CB39 /* ASIS3ServiceRequest.h */,
-				2B494EC5C8D7434B945D80E8 /* ASIS3ServiceRequest.m */,
-			);
-			name = S3;
-			sourceTree = "<group>";
-		};
-		9DC8021E772A4D7EB6DE1DF6 /* Google-Maps-iOS-SDK */ = {
-			isa = PBXGroup;
-			children = (
-				7307CC1C4D7A4994854E0B14 /* GMSCameraPosition.h */,
-				006D86D85B894574AA041723 /* GMSCameraUpdate.h */,
-				393006F270D74CABA64D1EFA /* GMSCircle.h */,
-				A23591830F4C408E8127028E /* GMSCoordinateBounds.h */,
-				649BE07461874281AD8E30FA /* GMSGeocoder.h */,
-				8DDBDBBFE62A41ED980360DB /* GMSGeometryUtils.h */,
-				0B099AD7303E47C8A8C9C293 /* GMSGroundOverlay.h */,
-				D9FB7EE29492447B84E2E7D4 /* GMSIndoorBuilding.h */,
-				C50E025C9E744A7DA80613EA /* GMSIndoorDisplay.h */,
-				386D5DD2F40F4DB3A765FA0C /* GMSIndoorLevel.h */,
-				EED3EDFB23AA4C8BBC83367C /* GMSMapLayer.h */,
-				D953E2E4E9CA4515BF9F5709 /* GMSMapView+Animation.h */,
-				E5EB84E346EC4364B6A08837 /* GMSMapView+Overlays.h */,
-				50BA7FE7D5714892B74448DE /* GMSMapView.h */,
-				2D506AC610834CD9A5E0960C /* GMSMarker.h */,
-				570BD7FB03D64DA99C9FD3C2 /* GMSMutablePath.h */,
-				C80794EC565F4722A6D8E60F /* GMSOrientation.h */,
-				7207AFBFD46A474F85058575 /* GMSOverlay.h */,
-				23337F60C3F441C2A9E82272 /* GMSPanorama.h */,
-				7F82E5D6CDFF4AF499897A99 /* GMSPanoramaCamera.h */,
-				A0D99B0B7AD848A8A2963B2E /* GMSPanoramaCameraUpdate.h */,
-				062A7CB7712B4A849E6DFFBA /* GMSPanoramaLayer.h */,
-				CBA90635BDDF442D8516D5BE /* GMSPanoramaLink.h */,
-				3C5F5833B24F45038BF62443 /* GMSPanoramaService.h */,
-				52FE1FCDA07D424B9FFE7F8B /* GMSPanoramaView.h */,
-				556AE888907C45009D217877 /* GMSPath.h */,
-				61124786C12F45A5B6960FCF /* GMSPolygon.h */,
-				2DDFA27B4B634F25892C66BB /* GMSPolyline.h */,
-				75096F3209314169BE3049D0 /* GMSProjection.h */,
-				D8CC99A5EE8840789299CC90 /* GMSReverseGeocodeOutput.h */,
-				6F0FC392B25545B19E1A4F3D /* GMSServices.h */,
-				1C2149855E8B428DB0A697B0 /* GMSSyncTileLayer.h */,
-				4D285F847D2748F6BAC3E31D /* GMSTileLayer.h */,
-				5F537FB0A9834D25A623ECC9 /* GMSUISettings.h */,
-				7A1D031916FE442AB027315D /* GMSURLTileLayer.h */,
-				56C11E0649964A7589595C60 /* GoogleMaps.h */,
-			);
-			name = "Google-Maps-iOS-SDK";
-			sourceTree = "<group>";
-		};
-		AFBE15DD33FE47C7AA8FBA49 /* ASIHTTPRequest */ = {
-			isa = PBXGroup;
-			children = (
-				310FF8FD0EC74CC0994130E7 /* ASIAuthenticationDialog.h */,
-				CF099594698E47FB8CCEBAEC /* ASIAuthenticationDialog.m */,
-				D1DAFF2B60A44A259CA8D743 /* ASICacheDelegate.h */,
-				A0E8885ADE9145C1B4652DE2 /* ASIDataCompressor.h */,
-				06DCE055F00B4414900BD461 /* ASIDataCompressor.m */,
-				3ED19FCCED6C4262BD53352A /* ASIDataDecompressor.h */,
-				043E8E24D7634B119B56E253 /* ASIDataDecompressor.m */,
-				31B18106C9E84F57AFFB89CB /* ASIDownloadCache.h */,
-				3B5A66B0074B481D8ACD01CE /* ASIDownloadCache.m */,
-				C7A06C0F2AC04D01B41B8437 /* ASIFormDataRequest.h */,
-				7133C76D0D154094BC244F14 /* ASIFormDataRequest.m */,
-				9B979F7E724547578297E1DA /* ASIHTTPRequest.h */,
-				913079449CE24780B21D75D2 /* ASIHTTPRequest.m */,
-				AFD0A4C4C660456D8568E638 /* ASIHTTPRequestConfig.h */,
-				04535D023F454A659A05D02A /* ASIHTTPRequestDelegate.h */,
-				ECB74B4D93514182AFF04C3E /* ASIInputStream.h */,
-				C94180112B09437AB09F6DEC /* ASIInputStream.m */,
-				E8FB1332066E402CB8842504 /* ASINetworkQueue.h */,
-				A704A713072945C9AA23C0BB /* ASINetworkQueue.m */,
-				3809C19FA2D6413AA9819804 /* ASIProgressDelegate.h */,
-				552526CE39604FEBBE2E9A22 /* ASIWebPageRequest */,
-				1DC77A7A9C404B49BF55717B /* CloudFiles */,
-				8B939FB3647A4DA89E1B43F1 /* S3 */,
+				4E3F4C28F7784F55B5E63A0C /* ASIAuthenticationDialog.h */,
+				C310B5A25B3D466DAB8F181E /* ASIAuthenticationDialog.m */,
+				49F74A26FF2D43238947FF0C /* ASICacheDelegate.h */,
+				14B1F1097F454B0E91AD86AD /* ASIDataCompressor.h */,
+				CE9DCDA396FF4619A1D04F71 /* ASIDataCompressor.m */,
+				B777D33BC51E40EC85A60BBB /* ASIDataDecompressor.h */,
+				7D2C8318FDD14F04923AF94F /* ASIDataDecompressor.m */,
+				5DBB38FEBFC24C398F8007F2 /* ASIDownloadCache.h */,
+				8E00F5A5FBC04701BFF40A9E /* ASIDownloadCache.m */,
+				4AA087BB0D6245979654F7BC /* ASIFormDataRequest.h */,
+				51135465709847B495E03D34 /* ASIFormDataRequest.m */,
+				1DD7845B04F24CFAB9F1D27B /* ASIHTTPRequest.h */,
+				BBE26B56F34542EC8BD97310 /* ASIHTTPRequest.m */,
+				C5C598E5FD414625BE8D0763 /* ASIHTTPRequestConfig.h */,
+				EE4752FCB0F0489E9FAF9C87 /* ASIHTTPRequestDelegate.h */,
+				4B122314D5B14734B88C86BA /* ASIInputStream.h */,
+				F06065C3E33C4B1DA55596B5 /* ASIInputStream.m */,
+				AF349E0DD4344125AFF10AE1 /* ASINetworkQueue.h */,
+				353C7B69AF4E4F12A0C54155 /* ASINetworkQueue.m */,
+				6128081A96794AE1A642551A /* ASIProgressDelegate.h */,
+				831C8B44FCDC486A845D9D1B /* ASIWebPageRequest */,
+				98459B1A1D8A48D9B5050571 /* CloudFiles */,
+				92ED609665AC4AFFBBD633D4 /* S3 */,
 			);
 			name = ASIHTTPRequest;
 			sourceTree = "<group>";
 		};
-		BE8AFC1B896A42A4828D19DB /* GCDiscreetNotificationView */ = {
+		3D3AA6E39D1A484FBC52D617 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E1625A9898EA498A97BFDE64 /* GCDiscreetNotificationView.h */,
-				6AD68D0E1BB74CFFB287C6CF /* GCDiscreetNotificationView.m */,
-			);
-			name = GCDiscreetNotificationView;
-			sourceTree = "<group>";
-		};
-		D19D1B5EC6C14D338465C6B5 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				8B3BB2C7CC56405F874D6A74 /* Google-Maps-iOS-SDK */,
+				5B7D2BD469AD4408948E1A04 /* Google-Maps-iOS-SDK */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		F6805D1480C840C2A10B6E3C /* Frameworks */ = {
+		4809F742CB5C49C48CAE18A0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EEB4E79EAF7E4959A6386A24 /* AVFoundation.framework */,
-				9B4DC430F8294251AD748535 /* CFNetwork.framework */,
-				FAB036A102FB434D96F94814 /* CoreData.framework */,
-				500063E6F6E44B20989ADE69 /* CoreGraphics.framework */,
-				7AF5A0C151CE485BA029A8F1 /* CoreLocation.framework */,
-				C1677D112C7D4F3CA8F250CD /* CoreText.framework */,
-				207C542094F44DA0A757312B /* Foundation.framework */,
-				157E5BC51CD64CE8A3BB971B /* GLKit.framework */,
-				0F6DD5F27E054CFC93440974 /* ImageIO.framework */,
-				02BB505E79C8410FA8598632 /* MobileCoreServices.framework */,
-				0AD9FD730DD2431585B0FFA2 /* OpenGLES.framework */,
-				E0BAFC11328443D99B92EF4D /* QuartzCore.framework */,
-				6760CCF0445D485E864D9B72 /* SystemConfiguration.framework */,
-				4F633A3F80C1435CABEF15C1 /* UIKit.framework */,
+				A36067E30F6F41DCA8F9A8E4 /* Pods.xcconfig */,
+				F1B6A062ECD1413684DA635A /* Pods-environment.h */,
+				467B103122D540A599B70156 /* Pods-prefix.pch */,
+				D496C1E3734B43C79D6F197E /* Pods-resources.sh */,
+				6207493174AC4AB4B99A8234 /* Pods-acknowledgements.plist */,
+				87DA2C1563934D8F904D4723 /* Pods-acknowledgements.markdown */,
+				E05B9F3F3BCE4A93BDAE4CD5 /* Pods-dummy.m */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5B7D2BD469AD4408948E1A04 /* Google-Maps-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				70F4D51E8AD94105897B924B /* GoogleMaps.bundle */,
+			);
+			name = "Google-Maps-iOS-SDK";
+			sourceTree = "<group>";
+		};
+		7B0A315AD0F8433F87458AAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA30D27629534BACA7ED026D /* libPods.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E9D9E2F561E4F4A96A92119 = {
+			isa = PBXGroup;
+			children = (
+				9665EA6EE1804FE990D4482F /* Frameworks */,
+				FB44498821574C71A4D5A31A /* Pods */,
+				7B0A315AD0F8433F87458AAA /* Products */,
+				3D3AA6E39D1A484FBC52D617 /* Resources */,
+				078DB4579C6848D4B46431E4 /* Targets Support Files */,
+				8DEC87B4817440BA99E79E51 /* Podfile */,
+			);
+			sourceTree = "<group>";
+		};
+		831C8B44FCDC486A845D9D1B /* ASIWebPageRequest */ = {
+			isa = PBXGroup;
+			children = (
+				C94B7CA258B2462E96A6ED46 /* ASIWebPageRequest.h */,
+				83F787108AA64C2C82D7A7D1 /* ASIWebPageRequest.m */,
+			);
+			name = ASIWebPageRequest;
+			sourceTree = "<group>";
+		};
+		92ED609665AC4AFFBBD633D4 /* S3 */ = {
+			isa = PBXGroup;
+			children = (
+				82BE58CE0F4E4F35ACD0DE9C /* ASINSXMLParserCompat.h */,
+				183AE041C6E94238BDB1E313 /* ASIS3Bucket.h */,
+				D787F4C370854E2DB1BB0E5A /* ASIS3Bucket.m */,
+				89F266DA9DB34613AAEDE680 /* ASIS3BucketObject.h */,
+				C5E7B72057734EB3B4D57A35 /* ASIS3BucketObject.m */,
+				208A1A99E1354D57A103D9B8 /* ASIS3BucketRequest.h */,
+				A8B99186CB8747819285F335 /* ASIS3BucketRequest.m */,
+				C48A9A39F70C48B28F996BF7 /* ASIS3ObjectRequest.h */,
+				7592D9C4E7DD487AB7B630EE /* ASIS3ObjectRequest.m */,
+				681BD15FA03A40F39F93139F /* ASIS3Request.h */,
+				23CA964FA5C748FAB4EAEE20 /* ASIS3Request.m */,
+				528CB94C29CF4C54A6B5BEC6 /* ASIS3ServiceRequest.h */,
+				DD4236A987CF44A9BCCAA848 /* ASIS3ServiceRequest.m */,
+			);
+			name = S3;
+			sourceTree = "<group>";
+		};
+		9665EA6EE1804FE990D4482F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21FE5D0E1F784950BBA7F9C0 /* AVFoundation.framework */,
+				A1F5E7E517D14E1DA7C9A941 /* CFNetwork.framework */,
+				E069D17F6E704DF6BBF489C6 /* CoreData.framework */,
+				5BD1F54499AC44F2922645E9 /* CoreGraphics.framework */,
+				1812B5016126428A9C7DEBC4 /* CoreLocation.framework */,
+				E5BA0F8166EE4D938FC51240 /* CoreText.framework */,
+				6C9C3F0C4732484CAD2098B9 /* Foundation.framework */,
+				CFFF9DA7FFA841C9A05BF2D7 /* GLKit.framework */,
+				8C5A492EC30E441ABC7D4B6F /* GoogleMaps.framework */,
+				F8B1FBED00804FC0B166F30B /* ImageIO.framework */,
+				9FDBB9E9147C4ACF8695F0F6 /* MobileCoreServices.framework */,
+				A138CB9F8AC645AE934EB02D /* OpenGLES.framework */,
+				1AE32394B0924CA3B11BC316 /* QuartzCore.framework */,
+				1DCD26532C2D4C6683CD44CF /* SystemConfiguration.framework */,
+				C4965A70F2A94117BFEB72F2 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F9A5DC08AA4948CBABD0C662 = {
+		98459B1A1D8A48D9B5050571 /* CloudFiles */ = {
 			isa = PBXGroup;
 			children = (
-				F6805D1480C840C2A10B6E3C /* Frameworks */,
-				FD56ADBB7E814940BF7C739C /* Pods */,
-				5627C74DBEBE4AC0BFE3F042 /* Products */,
-				D19D1B5EC6C14D338465C6B5 /* Resources */,
-				5417A7929B194B71AF419AED /* Targets Support Files */,
-				0313D35119FE45C5B80C5BAB /* Podfile */,
+				DFEB7EF9E7664E3DB491C552 /* ASICloudFilesCDNRequest.h */,
+				DFA864F24AA74918A1599E30 /* ASICloudFilesCDNRequest.m */,
+				407713055EF64F9A9FE7BBDB /* ASICloudFilesContainer.h */,
+				49D7C6C730FC44DBB4525DC6 /* ASICloudFilesContainer.m */,
+				422AE63A70A34973B983D6E4 /* ASICloudFilesContainerRequest.h */,
+				882E3A43DF8F4A35AA76ABE4 /* ASICloudFilesContainerRequest.m */,
+				9A994CD3C20F448D85FD74AD /* ASICloudFilesContainerXMLParserDelegate.h */,
+				978D97ECCE7E4C3292F86366 /* ASICloudFilesContainerXMLParserDelegate.m */,
+				CBD87C416042467DB3FC86E5 /* ASICloudFilesObject.h */,
+				DA5B376D5E4F4C249173307F /* ASICloudFilesObject.m */,
+				5DEF411887DA426A802ADE26 /* ASICloudFilesObjectRequest.h */,
+				717B1659EA5E41C4A4245E9C /* ASICloudFilesObjectRequest.m */,
+				FDBC56B2DE494F189A64D5CE /* ASICloudFilesRequest.h */,
+				3F6F17D93C414333879A826A /* ASICloudFilesRequest.m */,
 			);
+			name = CloudFiles;
 			sourceTree = "<group>";
 		};
-		FD56ADBB7E814940BF7C739C /* Pods */ = {
+		C682620943774607BD85DCB2 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
-				AFBE15DD33FE47C7AA8FBA49 /* ASIHTTPRequest */,
-				BE8AFC1B896A42A4828D19DB /* GCDiscreetNotificationView */,
-				9DC8021E772A4D7EB6DE1DF6 /* Google-Maps-iOS-SDK */,
-				68D24CF1E2C144D8AA52A087 /* Reachability */,
-				2AB31528FA404FD98621B4A5 /* TestFlightSDK */,
+				454A5019B19645409F2A7EB1 /* Reachability.h */,
+				92B2D3DF8C0342F4A6DA5613 /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		DBDC4D08A3184DE5BD7E55C5 /* GCDiscreetNotificationView */ = {
+			isa = PBXGroup;
+			children = (
+				B52DCFA6DD52433EB650C2A9 /* GCDiscreetNotificationView.h */,
+				40FE45C4BC7746FD9F291E8A /* GCDiscreetNotificationView.m */,
+			);
+			name = GCDiscreetNotificationView;
+			sourceTree = "<group>";
+		};
+		FB17A9C2CD0B48BBA93FF5EA /* Google-Maps-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				3DB9AC8E742141CDA74648E9 /* GMSCameraPosition.h */,
+				8F2AA8A119744DC2BE3FEED2 /* GMSCameraUpdate.h */,
+				55DD4199DA8B49FE9995B348 /* GMSCircle.h */,
+				7D6040F920A14DA99A71C333 /* GMSCoordinateBounds.h */,
+				04E29092333C41F4B894CC75 /* GMSGeocoder.h */,
+				01FE2B734138484EB285D56E /* GMSGeometryUtils.h */,
+				C426F728005544918F26EB8C /* GMSGroundOverlay.h */,
+				39555566BCF44C2388034E4B /* GMSIndoorBuilding.h */,
+				937ACEF381464981B058B871 /* GMSIndoorDisplay.h */,
+				72163B2788054C42BCD1671C /* GMSIndoorLevel.h */,
+				BF031E6FC3014D908597D8DA /* GMSMapLayer.h */,
+				022B37C1F4BD410A8A3383D7 /* GMSMapView+Animation.h */,
+				8EDD84118865494683D899D9 /* GMSMapView+Overlays.h */,
+				14AE6FD810FD4603B37B268C /* GMSMapView.h */,
+				FDE9944A5ADB45E78EBAC59B /* GMSMarker.h */,
+				278DC2BDE54D4A0591597E65 /* GMSMutablePath.h */,
+				4DAD8777B8A4407CBA115A1D /* GMSOrientation.h */,
+				AF3322D34A33464597B4FCE5 /* GMSOverlay.h */,
+				E2507B30115D4D428188FD50 /* GMSPanorama.h */,
+				A3C04F61EFDD4DB78EC54B82 /* GMSPanoramaCamera.h */,
+				B3F9B4A2F2C84844A7973C46 /* GMSPanoramaCameraUpdate.h */,
+				55A0C463AF024B54B7B42F85 /* GMSPanoramaLayer.h */,
+				8D7D8DFB76EA4AC9B3B0A5CE /* GMSPanoramaLink.h */,
+				A05D1FD61D92452FBD1778A7 /* GMSPanoramaService.h */,
+				3A055E182E514F02B9943B97 /* GMSPanoramaView.h */,
+				09204FA8DFC64589BDC5C020 /* GMSPath.h */,
+				898FE048FB254C288F52A51B /* GMSPolygon.h */,
+				DAEE099B1A4B4E5FB5096A5E /* GMSPolyline.h */,
+				4582366B43A44EB89835417A /* GMSProjection.h */,
+				47538D4BAEED4790882B31D3 /* GMSReverseGeocodeOutput.h */,
+				FF850BE3C95247459310B237 /* GMSServices.h */,
+				E073C16912B94BBE8C8B18EF /* GMSSyncTileLayer.h */,
+				0765C3AE59874287A9F44C70 /* GMSTileLayer.h */,
+				E5870CAFE7A54970A46AC79A /* GMSUISettings.h */,
+				40E7D859E52444BBA0C80309 /* GMSURLTileLayer.h */,
+				FF35008B368E406DA3E4784C /* GoogleMaps.h */,
+			);
+			name = "Google-Maps-iOS-SDK";
+			sourceTree = "<group>";
+		};
+		FB44498821574C71A4D5A31A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C7645A2BCC74B66A831531F /* ASIHTTPRequest */,
+				DBDC4D08A3184DE5BD7E55C5 /* GCDiscreetNotificationView */,
+				FB17A9C2CD0B48BBA93FF5EA /* Google-Maps-iOS-SDK */,
+				C682620943774607BD85DCB2 /* Reachability */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -479,91 +464,88 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		40F5E0CD9ADA43B4A91597C9 /* Headers */ = {
+		FFFC3E7426DF4ED2A518B81C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BED5E6C3D58549CC870F8FAB /* ASIAuthenticationDialog.h in Headers */,
-				A43B264CC93C465B876F943C /* ASICacheDelegate.h in Headers */,
-				CF861DD8D138474FAE7B0B5D /* ASIDataCompressor.h in Headers */,
-				3B429DB0FE4643D5811E6AED /* ASIDataDecompressor.h in Headers */,
-				96D42DD297FD4FD29138241A /* ASIDownloadCache.h in Headers */,
-				63EF07F0A2194D9D80B002D1 /* ASIFormDataRequest.h in Headers */,
-				2D028818787C4A56B61AB223 /* ASIHTTPRequest.h in Headers */,
-				7DBBCDBFBD6846F38C8861A8 /* ASIHTTPRequestConfig.h in Headers */,
-				799DB6492AB44ECA96F032F5 /* ASIHTTPRequestDelegate.h in Headers */,
-				D29C4FB1E4EF4B2F9578B262 /* ASIInputStream.h in Headers */,
-				34D8903334624A03A52BDB1D /* ASINetworkQueue.h in Headers */,
-				ED1D7ED25D904D639ACBF821 /* ASIProgressDelegate.h in Headers */,
-				A9ECA236B6B04EC0BCC31DD6 /* ASIWebPageRequest.h in Headers */,
-				F4CE1CE00BA3438B81B211BA /* ASICloudFilesCDNRequest.h in Headers */,
-				DFF8AD05FFC34C35B9C6B564 /* ASICloudFilesContainer.h in Headers */,
-				7A981A65441D400185C7C6FA /* ASICloudFilesContainerRequest.h in Headers */,
-				0868F53CDB734D74965082B2 /* ASICloudFilesContainerXMLParserDelegate.h in Headers */,
-				1A490A686A984D16BE2BE776 /* ASICloudFilesObject.h in Headers */,
-				F1F20B09BCD94718A10E85D5 /* ASICloudFilesObjectRequest.h in Headers */,
-				BEDC725CA11343EDAF5DA52E /* ASICloudFilesRequest.h in Headers */,
-				835CF6C61E614C099CA62591 /* ASINSXMLParserCompat.h in Headers */,
-				AFFCE1A1BB00478189EFF5BC /* ASIS3Bucket.h in Headers */,
-				7BAA8AAE4E6E4EB4AF071D37 /* ASIS3BucketObject.h in Headers */,
-				83042C1D5D6E4372BD1C25B8 /* ASIS3BucketRequest.h in Headers */,
-				0CD33895EFF94E0A9C94D639 /* ASIS3ObjectRequest.h in Headers */,
-				14B54B04E733454E943D640A /* ASIS3Request.h in Headers */,
-				54F0589DF9434EFF966FEA5D /* ASIS3ServiceRequest.h in Headers */,
-				81C56607664E4289973A3228 /* GCDiscreetNotificationView.h in Headers */,
-				B741F339D8D8413E9C469135 /* GMSCameraPosition.h in Headers */,
-				55D3EC65D3934008BF1BE295 /* GMSCameraUpdate.h in Headers */,
-				A07E5DCDA2A5432EB66555EC /* GMSCircle.h in Headers */,
-				C50ADAE8EA9841C2876E6418 /* GMSCoordinateBounds.h in Headers */,
-				973E6B90E7E44A52ABFCB587 /* GMSGeocoder.h in Headers */,
-				2153D1AD8617418EBD208459 /* GMSGeometryUtils.h in Headers */,
-				8AFF44EC7F154BF7B04B4D33 /* GMSGroundOverlay.h in Headers */,
-				68CCA823A6734D2AA55EC7A0 /* GMSIndoorBuilding.h in Headers */,
-				2B05B689393F4EDF89F99DA7 /* GMSIndoorDisplay.h in Headers */,
-				0B2C0AA8F05C401EB7F7FB83 /* GMSIndoorLevel.h in Headers */,
-				77ABCD4C4569493486EF06AE /* GMSMapLayer.h in Headers */,
-				1834295F126046BA90A195DF /* GMSMapView+Animation.h in Headers */,
-				98AF0AE47E4A4D12BE348C99 /* GMSMapView+Overlays.h in Headers */,
-				7FAB8C99A533436388C23A76 /* GMSMapView.h in Headers */,
-				EC44AF74851B46E09C5F8116 /* GMSMarker.h in Headers */,
-				98DCC10D50594009844D8126 /* GMSMutablePath.h in Headers */,
-				8A8276E907E94E069D2F1921 /* GMSOrientation.h in Headers */,
-				7A1E8DEA6407485ABB473B28 /* GMSOverlay.h in Headers */,
-				1899DA46363F49C78D73853D /* GMSPanorama.h in Headers */,
-				6F52ED85ABA44526A4419E99 /* GMSPanoramaCamera.h in Headers */,
-				E18FE95A04AD45C1926FFF29 /* GMSPanoramaCameraUpdate.h in Headers */,
-				5FEE0B5D48BB498593F3B336 /* GMSPanoramaLayer.h in Headers */,
-				D17ACC5DC3604219BE4D448A /* GMSPanoramaLink.h in Headers */,
-				20DD5253BC1B4BBD9F7C6E7B /* GMSPanoramaService.h in Headers */,
-				F3AC089DEA714CD3A0DAC3F4 /* GMSPanoramaView.h in Headers */,
-				EB78B167DE194DF0A9CDB3BF /* GMSPath.h in Headers */,
-				BEBA07902EF54650B4F02CB2 /* GMSPolygon.h in Headers */,
-				9C261DCA072A41388E8451BA /* GMSPolyline.h in Headers */,
-				152003C86ADF4E1B9F1F7942 /* GMSProjection.h in Headers */,
-				6546B1F980A84DA8AC76E8A5 /* GMSReverseGeocodeOutput.h in Headers */,
-				A3A81926955843FBAA58119B /* GMSServices.h in Headers */,
-				2A4C0CC71C2742788CF6A627 /* GMSSyncTileLayer.h in Headers */,
-				1ACA7F39A119431F81E121CD /* GMSTileLayer.h in Headers */,
-				CB3E6AA0B8C44953B5AB78E5 /* GMSUISettings.h in Headers */,
-				6EC5B79AFF0D44EEBE50F296 /* GMSURLTileLayer.h in Headers */,
-				A861AF8B3E3E421D8F0395BC /* GoogleMaps.h in Headers */,
-				2B3A49D23F714B42B8193A40 /* Reachability.h in Headers */,
-				86CE5C2A43C545198D1F0162 /* TestFlight+AsyncLogging.h in Headers */,
-				7BFC87B206554E73B1642521 /* TestFlight+ManualSessions.h in Headers */,
-				8D655D6D206A41859E5FE27A /* TestFlight.h in Headers */,
+				9EC22C21F19C468F80AD46EE /* ASIAuthenticationDialog.h in Headers */,
+				2E9D54C7B86343768720D39A /* ASICacheDelegate.h in Headers */,
+				F1F00794EFB545B29ED2796E /* ASIDataCompressor.h in Headers */,
+				5E5F30C45DD44EC899244063 /* ASIDataDecompressor.h in Headers */,
+				82A200A4AF414BE28E462CDA /* ASIDownloadCache.h in Headers */,
+				A6A0723ED6814797B812A7BB /* ASIFormDataRequest.h in Headers */,
+				391392C912844D1CA4D3729F /* ASIHTTPRequest.h in Headers */,
+				18386EB1A8F846D6BBC34A9C /* ASIHTTPRequestConfig.h in Headers */,
+				8CF2130F20004CA8BBC48A60 /* ASIHTTPRequestDelegate.h in Headers */,
+				2C020BBD89454C18BBEB93E0 /* ASIInputStream.h in Headers */,
+				1D041483ECF84B8CA8D7E86B /* ASINetworkQueue.h in Headers */,
+				90EF9F6CD4084FD0A37B2666 /* ASIProgressDelegate.h in Headers */,
+				89ED616882D7446C8E69F86D /* ASIWebPageRequest.h in Headers */,
+				18B9C9CD4DA94B6B9E673B98 /* ASICloudFilesCDNRequest.h in Headers */,
+				F421DAC7675A494DB7BD000E /* ASICloudFilesContainer.h in Headers */,
+				B1E586B5BACA44AE9B6B9E88 /* ASICloudFilesContainerRequest.h in Headers */,
+				74F3B42AB1B3419680A0C545 /* ASICloudFilesContainerXMLParserDelegate.h in Headers */,
+				00FF202234854635AAA65E77 /* ASICloudFilesObject.h in Headers */,
+				8ED55616610F4950A09D9710 /* ASICloudFilesObjectRequest.h in Headers */,
+				9FA91707068E4A0682B8667B /* ASICloudFilesRequest.h in Headers */,
+				B100F8D04FDC457E8E14E295 /* ASINSXMLParserCompat.h in Headers */,
+				870BAFB888CA4957AB7FBEF6 /* ASIS3Bucket.h in Headers */,
+				FE57F70B314E47A78861D659 /* ASIS3BucketObject.h in Headers */,
+				40A6586A3E2E4FC4B6961290 /* ASIS3BucketRequest.h in Headers */,
+				46873A1779E34311964057A7 /* ASIS3ObjectRequest.h in Headers */,
+				10C36CE926274CB3B566BAA5 /* ASIS3Request.h in Headers */,
+				6A5C77F88A30495B9F309ABC /* ASIS3ServiceRequest.h in Headers */,
+				049FB011082E4EC1A4CFE55B /* GCDiscreetNotificationView.h in Headers */,
+				147360929DDB40DA9D74BF85 /* GMSCameraPosition.h in Headers */,
+				95B51A5BD07B499698E4DB63 /* GMSCameraUpdate.h in Headers */,
+				7D2B91AC71EB4935AEB6BB60 /* GMSCircle.h in Headers */,
+				B8B66704AE3343139001FD07 /* GMSCoordinateBounds.h in Headers */,
+				8E147D3588D24AAD9885B9C9 /* GMSGeocoder.h in Headers */,
+				67568E062F0148F8A35F4161 /* GMSGeometryUtils.h in Headers */,
+				9FA72B992F0D4D93A7E82166 /* GMSGroundOverlay.h in Headers */,
+				01052E3BEF7E47C18A3D1754 /* GMSIndoorBuilding.h in Headers */,
+				AA12D51C530947068B86F558 /* GMSIndoorDisplay.h in Headers */,
+				2F048C4B194246AA814AC9BA /* GMSIndoorLevel.h in Headers */,
+				4D2B7FCF5C9147EA88427F02 /* GMSMapLayer.h in Headers */,
+				4FA06D421F22464B989D7DBE /* GMSMapView+Animation.h in Headers */,
+				F031DB94866E46CFB8889957 /* GMSMapView+Overlays.h in Headers */,
+				801EB213D20546E1945C8A0D /* GMSMapView.h in Headers */,
+				56E8925355A14AF084CDBD95 /* GMSMarker.h in Headers */,
+				CDFC34ABC62D4E8796984776 /* GMSMutablePath.h in Headers */,
+				B2B478A002604F97A7FF0237 /* GMSOrientation.h in Headers */,
+				166A3199AD224B729595BF56 /* GMSOverlay.h in Headers */,
+				2DC1E3710D664D88A60BCC05 /* GMSPanorama.h in Headers */,
+				87DB7F703A2946A691B963CB /* GMSPanoramaCamera.h in Headers */,
+				E33CAB52447E4CC78D3E98BB /* GMSPanoramaCameraUpdate.h in Headers */,
+				21DC7DFD66AA47DCA599767C /* GMSPanoramaLayer.h in Headers */,
+				FDE500697FB543349DDAEAA9 /* GMSPanoramaLink.h in Headers */,
+				C1A54812DAD64EFBBCABBBEB /* GMSPanoramaService.h in Headers */,
+				62EE18B111E9478A92F19F7A /* GMSPanoramaView.h in Headers */,
+				CCCF6981C80845E6AFA0CC1D /* GMSPath.h in Headers */,
+				0D2A94520AAC41F8B1BE7F9E /* GMSPolygon.h in Headers */,
+				A8A67A40026B430CA0274BCA /* GMSPolyline.h in Headers */,
+				852DAEE8B3A84BB894E579E7 /* GMSProjection.h in Headers */,
+				86C723BAC67C46FE8704DAF3 /* GMSReverseGeocodeOutput.h in Headers */,
+				6F6DD52B4BB3411E98461F33 /* GMSServices.h in Headers */,
+				553790BED1E14977A244516E /* GMSSyncTileLayer.h in Headers */,
+				3C44A64740554DF6BD2F1B94 /* GMSTileLayer.h in Headers */,
+				08BD775F73FE45279EAD8DE9 /* GMSUISettings.h in Headers */,
+				9053DF7DE412499FA8A5750C /* GMSURLTileLayer.h in Headers */,
+				E361EEE6A96643C0A6EBF2CA /* GoogleMaps.h in Headers */,
+				B1A9D7BF23CB439EA7DB7218 /* Reachability.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2ADBA35161094A3E88293C4D /* Pods */ = {
+		793D38AC258D4B5EA0F4E88B /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A6924DF4C67C4B61B18E2138 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 55798EA8708B43169E3C18F9 /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				6A8B3B3556754D618AAF125F /* Sources */,
-				3D1743D7E2C84F9AA2545615 /* Frameworks */,
-				40F5E0CD9ADA43B4A91597C9 /* Headers */,
+				9BE026DC50524BC5A8E4E9CB /* Sources */,
+				4DD8619807334D4AA407A8A4 /* Frameworks */,
+				FFFC3E7426DF4ED2A518B81C /* Headers */,
 			);
 			buildRules = (
 			);
@@ -571,80 +553,118 @@
 			);
 			name = Pods;
 			productName = Pods;
-			productReference = 34936169036047478682A6D0 /* libPods.a */;
+			productReference = CA30D27629534BACA7ED026D /* libPods.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AB01EB3D600D4A3E8EB64A57 /* Project object */ = {
+		5F6EB8D241C44F3B9545F6DB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0450;
 			};
-			buildConfigurationList = 1D9E39F696EB4DDDB592F208 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 496AAF71EE22498DA3D65B89 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = F9A5DC08AA4948CBABD0C662;
-			productRefGroup = 5627C74DBEBE4AC0BFE3F042 /* Products */;
+			mainGroup = 7E9D9E2F561E4F4A96A92119;
+			productRefGroup = 7B0A315AD0F8433F87458AAA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2ADBA35161094A3E88293C4D /* Pods */,
+				793D38AC258D4B5EA0F4E88B /* Pods */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6A8B3B3556754D618AAF125F /* Sources */ = {
+		9BE026DC50524BC5A8E4E9CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A645C639E5E542538F7F27EE /* ASIAuthenticationDialog.m in Sources */,
-				6CCB6FCF321B45989B9F3F9E /* ASIDataCompressor.m in Sources */,
-				3C71163A16954EAF877CAACC /* ASIDataDecompressor.m in Sources */,
-				7825E12855614E58A0942F54 /* ASIDownloadCache.m in Sources */,
-				E19F117631EC45D6A48DCC92 /* ASIFormDataRequest.m in Sources */,
-				932741FA1C0143F4A6F54309 /* ASIHTTPRequest.m in Sources */,
-				ED3BA34F993348DD982B71AA /* ASIInputStream.m in Sources */,
-				893223EC5F88463D9AA3C96B /* ASINetworkQueue.m in Sources */,
-				9B7D0C3BFC584B739768C27F /* ASIWebPageRequest.m in Sources */,
-				EDDAE64CFC2F4F6389E6334C /* ASICloudFilesCDNRequest.m in Sources */,
-				B57610A4CC1C4A3CAB28386D /* ASICloudFilesContainer.m in Sources */,
-				BC0681B2FF2C4BF49A9DD5F8 /* ASICloudFilesContainerRequest.m in Sources */,
-				380F6BD825D3403392E7D9ED /* ASICloudFilesContainerXMLParserDelegate.m in Sources */,
-				52E1BFCBAB454D418C6179EE /* ASICloudFilesObject.m in Sources */,
-				A0304EF9A80C4C3FB3129002 /* ASICloudFilesObjectRequest.m in Sources */,
-				F8F3F91491944D05BCE8CA77 /* ASICloudFilesRequest.m in Sources */,
-				BEB1DF67177F47D5AD30C0B8 /* ASIS3Bucket.m in Sources */,
-				C7175AA39BFE4F1CAF0A5619 /* ASIS3BucketObject.m in Sources */,
-				A37CD479207B4266A132ACDD /* ASIS3BucketRequest.m in Sources */,
-				3EC13E54A3964248BE2DE4AE /* ASIS3ObjectRequest.m in Sources */,
-				371D53766EF0437ABA389641 /* ASIS3Request.m in Sources */,
-				E4675F2E4F5F42D483A67EEC /* ASIS3ServiceRequest.m in Sources */,
-				D3A9A0BC906F43E29F4AA112 /* GCDiscreetNotificationView.m in Sources */,
-				5ECE0DF45F8F494FB1447053 /* Reachability.m in Sources */,
-				58F799AA75BA46EDBF2A0DAD /* Pods-dummy.m in Sources */,
+				83F6E7F26E194540B73D75CD /* ASIAuthenticationDialog.m in Sources */,
+				40863930602D4ED2AFBB11A8 /* ASIDataCompressor.m in Sources */,
+				768518C94BD64816A7AF475D /* ASIDataDecompressor.m in Sources */,
+				A6F833F3B3464F31AE05427E /* ASIDownloadCache.m in Sources */,
+				C44723500B2D4A9F840194FD /* ASIFormDataRequest.m in Sources */,
+				D1DA0373F80D4E59926C64FB /* ASIHTTPRequest.m in Sources */,
+				27021835417341A0910D4FD7 /* ASIInputStream.m in Sources */,
+				19BFA29BEBDC459B9A405102 /* ASINetworkQueue.m in Sources */,
+				5EADEC22E0A844EF87AA3E1C /* ASIWebPageRequest.m in Sources */,
+				6445C0317ECD450698E53EFF /* ASICloudFilesCDNRequest.m in Sources */,
+				02DC9C73C446454EAFC705FD /* ASICloudFilesContainer.m in Sources */,
+				E7A354D05ED548028E1CB1A3 /* ASICloudFilesContainerRequest.m in Sources */,
+				EA64E926CFED4FA3BFB9C180 /* ASICloudFilesContainerXMLParserDelegate.m in Sources */,
+				9A7C807488DC4FDC8476BCA2 /* ASICloudFilesObject.m in Sources */,
+				D71E3C1B2B144B458371F603 /* ASICloudFilesObjectRequest.m in Sources */,
+				B9C95EB052044D96847C828E /* ASICloudFilesRequest.m in Sources */,
+				505B403E57724DADB45ED386 /* ASIS3Bucket.m in Sources */,
+				2A494FA3AFFB46269D6963DB /* ASIS3BucketObject.m in Sources */,
+				422A59A50FC94071A2B5C057 /* ASIS3BucketRequest.m in Sources */,
+				CD33FF22222B476D9D4B0831 /* ASIS3ObjectRequest.m in Sources */,
+				FA5091F5629A4197BEC736DF /* ASIS3Request.m in Sources */,
+				5F559AE9452144299DFE7F79 /* ASIS3ServiceRequest.m in Sources */,
+				86DBA69A18134191996E04F0 /* GCDiscreetNotificationView.m in Sources */,
+				E9C76C8B392D48A59D6FE476 /* Reachability.m in Sources */,
+				4FFA1A0A70954F5FA60DE3B0 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		1904CBCCF6CD4070A83F9D07 /* Release */ = {
+		42411C80B9184027968BBD84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		489550D016304C2BABDA06D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A36067E30F6F41DCA8F9A8E4 /* Pods.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "";
+				PODS_HEADERS_SEARCH_PATHS = "${PODS_BUILD_HEADERS_SEARCH_PATHS}";
+				PODS_ROOT = "${SRCROOT}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4ECB387C67D74C78BB5466C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 			};
 			name = Release;
 		};
-		33FD864A4BC5424882F6EAB7 /* Release */ = {
+		CCC25E6F865D4BC6B2211270 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0174FB2EFD904303997A9D54 /* Pods.xcconfig */;
+			baseConfigurationReference = A36067E30F6F41DCA8F9A8E4 /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
@@ -675,66 +695,28 @@
 			};
 			name = Release;
 		};
-		7F4575595ABD47FE99CDD918 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0174FB2EFD904303997A9D54 /* Pods.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				OTHER_LDFLAGS = "";
-				PODS_HEADERS_SEARCH_PATHS = "${PODS_BUILD_HEADERS_SEARCH_PATHS}";
-				PODS_ROOT = "${SRCROOT}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		B008D2FEC2F3443CA9FF3AEB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D9E39F696EB4DDDB592F208 /* Build configuration list for PBXProject "Pods" */ = {
+		496AAF71EE22498DA3D65B89 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1904CBCCF6CD4070A83F9D07 /* Release */,
-				B008D2FEC2F3443CA9FF3AEB /* Debug */,
+				4ECB387C67D74C78BB5466C0 /* Release */,
+				42411C80B9184027968BBD84 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A6924DF4C67C4B61B18E2138 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		55798EA8708B43169E3C18F9 /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				33FD864A4BC5424882F6EAB7 /* Release */,
-				7F4575595ABD47FE99CDD918 /* Debug */,
+				CCC25E6F865D4BC6B2211270 /* Release */,
+				489550D016304C2BABDA06D5 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = AB01EB3D600D4A3E8EB64A57 /* Project object */;
+	rootObject = 5F6EB8D241C44F3B9545F6DB /* Project object */;
 }

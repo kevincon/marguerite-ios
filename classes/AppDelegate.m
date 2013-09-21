@@ -15,15 +15,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // !!!: Use the next line only during beta (testers are uniquely identified)
-    #pragma clang diagnostic push
-    #pragma clang diagnostic ignored "-Wdeprecated-declarations"
-    [TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];
-    #pragma clang diagnostic pop
-    
-    // Initiate TestFlight analytics SDK
-    [TestFlight takeOff:TESTFLIGHT_APPLICATION_TOKEN];
-    
     // Copy gfts.db file from app bundle to Caches directory or create gtfs.db if needed
     if ([GTFSDatabase existsInBundle]) {
         if ([GTFSDatabase cacheFileIsStale]) {

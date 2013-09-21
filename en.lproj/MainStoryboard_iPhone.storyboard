@@ -1,47 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Second-->
-        <scene sceneID="13">
-            <objects>
-                <viewController title="Second" id="3" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="17">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Trip Planner" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="22">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Coming soon!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="23">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="cQR-IW-sY8"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="22" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="0q6-IA-e8m"/>
-                            <constraint firstAttribute="trailing" secondItem="23" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="fR4-wH-Ih7"/>
-                            <constraint firstItem="23" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="fzb-YA-SeR"/>
-                            <constraint firstAttribute="centerY" secondItem="23" secondAttribute="centerY" type="user" id="llH-eD-iPS"/>
-                            <constraint firstAttribute="trailing" secondItem="22" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="pc3-9Y-W42"/>
-                            <constraint firstItem="23" firstAttribute="top" secondItem="22" secondAttribute="bottom" constant="40" type="user" id="yUx-Ee-KEk"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Trip Planner" image="directions-alt.png" id="6"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="685" y="506"/>
-        </scene>
         <!--Live Map View Controller - Live Map-->
         <scene sceneID="T8Z-y4-oHE">
             <objects>
@@ -97,46 +59,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VxY-re-nvF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1219" y="1162"/>
-        </scene>
-        <!--View Controller - Schedules-->
-        <scene sceneID="1pA-HN-NqL">
-            <objects>
-                <viewController id="W5v-Nb-5vC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0G8-7M-j7Y">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Schedules" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="wdb-F3-0fX">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="280" id="CcN-34-Bid"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Coming soon!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eUi-6y-5af">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="I9G-gS-PMd"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="wdb-F3-0fX" firstAttribute="trailing" secondItem="eUi-6y-5af" secondAttribute="trailing" type="default" id="4Zw-i6-AoM"/>
-                            <constraint firstItem="eUi-6y-5af" firstAttribute="top" secondItem="wdb-F3-0fX" secondAttribute="bottom" constant="40" type="user" id="AL8-yo-rLU"/>
-                            <constraint firstItem="wdb-F3-0fX" firstAttribute="leading" secondItem="0G8-7M-j7Y" secondAttribute="leading" constant="25" id="PPe-MS-mQU"/>
-                            <constraint firstItem="wdb-F3-0fX" firstAttribute="top" secondItem="0G8-7M-j7Y" secondAttribute="top" constant="159" id="fFc-bY-MSF"/>
-                            <constraint firstItem="wdb-F3-0fX" firstAttribute="leading" secondItem="eUi-6y-5af" secondAttribute="leading" type="default" id="nfa-qB-6nh"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Schedules" image="map.png" id="KC1-Nu-ADp"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mmN-2Q-S0S" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="685" y="1840"/>
         </scene>
         <!--About View Controller - About-->
         <scene sceneID="P7h-dL-Ugu">
@@ -289,7 +211,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZJj-Ez-7M2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="685" y="2520"/>
+            <point key="canvasLocation" x="693" y="1836"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="15">
@@ -303,9 +225,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="m8U-bF-w6W" kind="relationship" relationship="viewControllers" id="EBS-YV-beY"/>
-                        <segue destination="3" kind="relationship" relationship="viewControllers" id="DGp-gu-vtd"/>
                         <segue destination="WOD-0U-9bj" kind="relationship" relationship="viewControllers" id="dhP-WZ-Org"/>
-                        <segue destination="W5v-Nb-5vC" kind="relationship" relationship="viewControllers" id="cOd-fK-fh2"/>
                         <segue destination="q2g-sg-zhw" kind="relationship" relationship="viewControllers" id="Qbe-zN-WWz"/>
                     </connections>
                 </tabBarController>
@@ -331,7 +251,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wXF-WH-N7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="685" y="-161"/>
+            <point key="canvasLocation" x="701" y="495"/>
         </scene>
         <!--Next Shuttle View Controller - Next Shuttle-->
         <scene sceneID="SVB-lg-k08">
@@ -437,7 +357,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1145" y="-161"/>
+            <point key="canvasLocation" x="1161" y="495"/>
         </scene>
         <!--Stop View Controller - Stop Name-->
         <scene sceneID="wS2-ko-lbu">
@@ -497,7 +417,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bYG-Dk-bRk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1688" y="-161"/>
+            <point key="canvasLocation" x="1704" y="495"/>
         </scene>
         <!--Navigation Controller - Live Map-->
         <scene sceneID="3ne-qo-LZY">
@@ -525,10 +445,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="directions-alt.png" width="32" height="32"/>
         <image name="info.png" width="32" height="32"/>
         <image name="location.png" width="32" height="32"/>
-        <image name="map.png" width="32" height="32"/>
         <image name="stanford_s.png" width="370" height="479"/>
         <image name="time.png" width="32" height="32"/>
     </resources>
@@ -562,6 +480,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="XIA-ay-fS6"/>
+        <segue reference="WLj-YQ-GAv"/>
     </inferredMetricsTieBreakers>
 </document>

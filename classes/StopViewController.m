@@ -43,7 +43,6 @@
     self.refreshControl = refresh;
     
     [self.tableView reloadData];
-    [TestFlight passCheckpoint:[NSString stringWithFormat:@"Viewed next shuttles for stop %@.", self.stop.stopName]];
 }
 
 - (void) addStopToFavorites
@@ -54,7 +53,6 @@
     
     self.isFavoriteStop = YES;
     [self.tableView reloadData];
-    [TestFlight passCheckpoint:[NSString stringWithFormat:@"Added favorite stop %@.", self.stop.stopName]];
 }
 
 - (void) removeStopFromFavorites
@@ -70,7 +68,6 @@
     
     self.isFavoriteStop = NO;
     [self.tableView reloadData];
-    [TestFlight passCheckpoint:[NSString stringWithFormat:@"Removed favorite stop %@.", self.stop.stopName]];
 }
 
 /*
@@ -148,7 +145,6 @@
                              [formatter stringFromDate:[NSDate date]]];
     refresh.attributedTitle = [[NSAttributedString alloc] initWithString:lastUpdated];
     [refresh endRefreshing];
-    [TestFlight passCheckpoint:@"Refreshed buses for a stop."];
 }
 
 #pragma mark - Table

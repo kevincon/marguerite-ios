@@ -42,6 +42,12 @@
 #define COCOAPODS_VERSION_MINOR_Google_Maps_iOS_SDK 4
 #define COCOAPODS_VERSION_PATCH_Google_Maps_iOS_SDK 3
 
+// MDSpreadView
+#define COCOAPODS_POD_AVAILABLE_MDSpreadView
+#define COCOAPODS_VERSION_MAJOR_MDSpreadView 0
+#define COCOAPODS_VERSION_MINOR_MDSpreadView 7
+#define COCOAPODS_VERSION_PATCH_MDSpreadView 0
+
 // Reachability
 #define COCOAPODS_POD_AVAILABLE_Reachability
 #define COCOAPODS_VERSION_MAJOR_Reachability 3

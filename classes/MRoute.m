@@ -66,4 +66,29 @@
     self.routeTextColor = [MUtil colorFromHexString:hexString];
 }
 
+/*
+ Return an array of MRoute objects representing all Marguerite routes.
+ */
++ (NSArray *) getAllRoutes
+{
+    GTFSDatabase *db = nil;
+    if ((db = [GTFSDatabase open]) == nil) {
+        return nil;
+    }
+    
+    NSString *query = @"select route_id FROM routes";
+    
+    FMResultSet *rs = [db executeQuery:query];
+    
+    NSMutableArray *routes = [[NSMutableArray alloc] init];
+    while ([rs next]) {
+        MRoute *route = [[MRoute alloc] initWithRouteIdString:[rs objectForColumnName:@"route_id"]];
+        [routes addObject:route];
+    }
+    
+    [rs close];
+    [db close];
+    return routes;
+}
+
 @end

@@ -21,4 +21,6 @@
 - (void) setColorUsingHexString:(NSString *) hexString;
 - (void) setTextColorUsingHexString:(NSString *) hexString;
 
++ (NSArray *) getAllRoutes;
+
 @end

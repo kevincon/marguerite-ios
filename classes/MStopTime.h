@@ -15,5 +15,7 @@
 @property (nonatomic, strong) UIColor * routeColor;
 @property (nonatomic, strong) UIColor * routeTextColor;
 @property (nonatomic, strong) NSString * tripId;
+@property (nonatomic, strong) NSString * stopId;
+@property (nonatomic, strong) NSNumber * stopSequence;
 
 @end

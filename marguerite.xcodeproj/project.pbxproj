@@ -86,6 +86,10 @@
 		F4592F00179DE28D00579D6B /* MRealtimeBus.m in Sources */ = {isa = PBXBuildFile; fileRef = F4592EFF179DE28D00579D6B /* MRealtimeBus.m */; };
 		F4592F03179F7A5300579D6B /* MStop.m in Sources */ = {isa = PBXBuildFile; fileRef = F4592F02179F7A5200579D6B /* MStop.m */; };
 		F4592F06179FBCE200579D6B /* MStopTime.m in Sources */ = {isa = PBXBuildFile; fileRef = F4592F05179FBCDE00579D6B /* MStopTime.m */; };
+		F45A210117EECA6F00A30FD9 /* MSchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = F45A210017EECA6F00A30FD9 /* MSchedule.m */; };
+		F45A210417EECAFE00A30FD9 /* MTrip.m in Sources */ = {isa = PBXBuildFile; fileRef = F45A210317EECAFE00A30FD9 /* MTrip.m */; };
+		F45A210717EECB4C00A30FD9 /* RoutesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F45A210617EECB4C00A30FD9 /* RoutesViewController.m */; };
+		F45A210A17EECBAC00A30FD9 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F45A210917EECBAC00A30FD9 /* ScheduleViewController.m */; };
 		F471C3D9178B7D5F005583A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F471C3D8178B7D5F005583A4 /* UIKit.framework */; };
 		F471C3DB178B7D5F005583A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F471C3DA178B7D5F005583A4 /* Foundation.framework */; };
 		F471C3DD178B7D5F005583A4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F471C3DC178B7D5F005583A4 /* CoreGraphics.framework */; };
@@ -224,6 +228,14 @@
 		F4592F02179F7A5200579D6B /* MStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MStop.m; path = classes/MStop.m; sourceTree = "<group>"; };
 		F4592F04179FBCDD00579D6B /* MStopTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MStopTime.h; path = classes/MStopTime.h; sourceTree = "<group>"; };
 		F4592F05179FBCDE00579D6B /* MStopTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MStopTime.m; path = classes/MStopTime.m; sourceTree = "<group>"; };
+		F45A20FF17EECA6F00A30FD9 /* MSchedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSchedule.h; path = classes/MSchedule.h; sourceTree = "<group>"; };
+		F45A210017EECA6F00A30FD9 /* MSchedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSchedule.m; path = classes/MSchedule.m; sourceTree = "<group>"; };
+		F45A210217EECAFE00A30FD9 /* MTrip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTrip.h; path = classes/MTrip.h; sourceTree = "<group>"; };
+		F45A210317EECAFE00A30FD9 /* MTrip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTrip.m; path = classes/MTrip.m; sourceTree = "<group>"; };
+		F45A210517EECB4C00A30FD9 /* RoutesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoutesViewController.h; path = classes/RoutesViewController.h; sourceTree = "<group>"; };
+		F45A210617EECB4C00A30FD9 /* RoutesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoutesViewController.m; path = classes/RoutesViewController.m; sourceTree = "<group>"; };
+		F45A210817EECBAC00A30FD9 /* ScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScheduleViewController.h; path = classes/ScheduleViewController.h; sourceTree = "<group>"; };
+		F45A210917EECBAC00A30FD9 /* ScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScheduleViewController.m; path = classes/ScheduleViewController.m; sourceTree = "<group>"; };
 		F471C3D5178B7D5F005583A4 /* Marguerite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marguerite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F471C3D8178B7D5F005583A4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F471C3DA178B7D5F005583A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -438,6 +450,14 @@
 				F471C4B0178B81C8005583A4 /* CoreLocationController.m */,
 				F48BD72917CC6426009630BE /* MRoutePolyline.h */,
 				F48BD72A17CC6426009630BE /* MRoutePolyline.m */,
+				F45A20FF17EECA6F00A30FD9 /* MSchedule.h */,
+				F45A210017EECA6F00A30FD9 /* MSchedule.m */,
+				F45A210217EECAFE00A30FD9 /* MTrip.h */,
+				F45A210317EECAFE00A30FD9 /* MTrip.m */,
+				F45A210517EECB4C00A30FD9 /* RoutesViewController.h */,
+				F45A210617EECB4C00A30FD9 /* RoutesViewController.m */,
+				F45A210817EECBAC00A30FD9 /* ScheduleViewController.h */,
+				F45A210917EECBAC00A30FD9 /* ScheduleViewController.m */,
 			);
 			name = classes;
 			sourceTree = "<group>";
@@ -813,6 +833,10 @@
 				F4592F06179FBCE200579D6B /* MStopTime.m in Sources */,
 				F41231CC17A397FB00604A02 /* AboutViewController.m in Sources */,
 				F48BD72B17CC6426009630BE /* MRoutePolyline.m in Sources */,
+				F45A210117EECA6F00A30FD9 /* MSchedule.m in Sources */,
+				F45A210417EECAFE00A30FD9 /* MTrip.m in Sources */,
+				F45A210717EECB4C00A30FD9 /* RoutesViewController.m in Sources */,
+				F45A210A17EECBAC00A30FD9 /* ScheduleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

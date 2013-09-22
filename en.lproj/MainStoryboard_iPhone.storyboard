@@ -60,6 +60,79 @@
             </objects>
             <point key="canvasLocation" x="1219" y="1162"/>
         </scene>
+        <!--Routes View Controller - Schedules-->
+        <scene sceneID="Oln-Le-c8K">
+            <objects>
+                <tableViewController id="54x-D5-bNY" customClass="RoutesViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="2Qa-Wg-scu">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AllRoutesCell" textLabel="8Hx-Hm-CAf" style="IBUITableViewCellStyleDefault" id="inW-28-ke0">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Route" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Hx-Hm-CAf">
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="KCf-3K-PZK" kind="push" id="eLi-47-1Ft"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="54x-D5-bNY" id="uo2-Fc-abM"/>
+                            <outlet property="delegate" destination="54x-D5-bNY" id="rcL-K6-Sci"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Schedules" id="lfX-l4-ojA"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mli-Qb-FBr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1219" y="1840"/>
+        </scene>
+        <!--Schedule View Controller-->
+        <scene sceneID="V1i-dg-edz">
+            <objects>
+                <viewController id="KCf-3K-PZK" customClass="ScheduleViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SFG-Ma-zw3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ds-Rv-Bl5" customClass="MDSpreadView">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="KCf-3K-PZK" id="Oyb-fg-Vsc"/>
+                                    <outlet property="delegate" destination="KCf-3K-PZK" id="irR-8Q-AzG"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2ds-Rv-Bl5" firstAttribute="bottom" secondItem="SFG-Ma-zw3" secondAttribute="bottom" type="default" id="DRC-U2-cJc"/>
+                            <constraint firstItem="2ds-Rv-Bl5" firstAttribute="trailing" secondItem="SFG-Ma-zw3" secondAttribute="trailing" type="default" id="UMx-S4-ZI7"/>
+                            <constraint firstItem="2ds-Rv-Bl5" firstAttribute="leading" secondItem="SFG-Ma-zw3" secondAttribute="leading" type="default" id="VFb-Fp-6hU"/>
+                            <constraint firstItem="2ds-Rv-Bl5" firstAttribute="top" secondItem="SFG-Ma-zw3" secondAttribute="top" type="default" id="jqp-3I-Hax"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KbH-aJ-DkJ"/>
+                    <connections>
+                        <outlet property="spreadView" destination="2ds-Rv-Bl5" id="0rj-ua-1bd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CPC-gh-ylT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1684" y="1840"/>
+        </scene>
         <!--About View Controller - About-->
         <scene sceneID="P7h-dL-Ugu">
             <objects>
@@ -211,7 +284,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZJj-Ez-7M2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="693" y="1836"/>
+            <point key="canvasLocation" x="701" y="2510"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="15">
@@ -226,7 +299,8 @@
                     <connections>
                         <segue destination="m8U-bF-w6W" kind="relationship" relationship="viewControllers" id="EBS-YV-beY"/>
                         <segue destination="WOD-0U-9bj" kind="relationship" relationship="viewControllers" id="dhP-WZ-Org"/>
-                        <segue destination="q2g-sg-zhw" kind="relationship" relationship="viewControllers" id="Qbe-zN-WWz"/>
+                        <segue destination="645-HU-ntb" kind="relationship" relationship="viewControllers" id="cxx-Zr-BxC"/>
+                        <segue destination="q2g-sg-zhw" kind="relationship" relationship="viewControllers" id="cAZ-s7-Yxp"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
@@ -461,10 +535,30 @@
             </objects>
             <point key="canvasLocation" x="693" y="1162"/>
         </scene>
+        <!--Navigation Controller - Schedules-->
+        <scene sceneID="nWb-nR-qzz">
+            <objects>
+                <navigationController id="645-HU-ntb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Schedules" image="map.png" id="UxB-PC-U54"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zji-h5-CwG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="54x-D5-bNY" kind="relationship" relationship="rootViewController" id="9u5-id-m2X"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SSE-mo-db7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="693" y="1840"/>
+        </scene>
     </scenes>
     <resources>
         <image name="info.png" width="32" height="32"/>
         <image name="location.png" width="32" height="32"/>
+        <image name="map.png" width="32" height="32"/>
         <image name="stanford_s.png" width="370" height="479"/>
         <image name="time.png" width="32" height="32"/>
     </resources>
@@ -482,11 +576,27 @@
                 <relationship kind="outlet" name="stanfordButton" candidateClass="UIButton"/>
             </relationships>
         </class>
+        <class className="MDSpreadView" superclassName="UIScrollView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MDSpreadView.h"/>
+            <relationships>
+                <relationship kind="outlet" name="dataSource"/>
+                <relationship kind="outlet" name="delegate"/>
+            </relationships>
+        </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
         <class className="NextShuttleViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NextShuttleViewController.h"/>
+        </class>
+        <class className="RoutesViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RoutesViewController.h"/>
+        </class>
+        <class className="ScheduleViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ScheduleViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="spreadView" candidateClass="MDSpreadView"/>
+            </relationships>
         </class>
         <class className="StopViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/StopViewController.h"/>

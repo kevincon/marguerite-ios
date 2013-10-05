@@ -29,7 +29,7 @@
 		2F048C4B194246AA814AC9BA /* GMSIndoorLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = 72163B2788054C42BCD1671C /* GMSIndoorLevel.h */; };
 		391392C912844D1CA4D3729F /* ASIHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DD7845B04F24CFAB9F1D27B /* ASIHTTPRequest.h */; };
 		3C44A64740554DF6BD2F1B94 /* GMSTileLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0765C3AE59874287A9F44C70 /* GMSTileLayer.h */; };
-		40863930602D4ED2AFBB11A8 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9DCDA396FF4619A1D04F71 /* ASIDataCompressor.m */; };
+		40863930602D4ED2AFBB11A8 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9DCDA396FF4619A1D04F71 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		40A6586A3E2E4FC4B6961290 /* ASIS3BucketRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 208A1A99E1354D57A103D9B8 /* ASIS3BucketRequest.h */; };
 		422A59A50FC94071A2B5C057 /* ASIS3BucketRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B99186CB8747819285F335 /* ASIS3BucketRequest.m */; };
 		46873A1779E34311964057A7 /* ASIS3ObjectRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = C48A9A39F70C48B28F996BF7 /* ASIS3ObjectRequest.h */; };
@@ -49,7 +49,7 @@
 		6A5C77F88A30495B9F309ABC /* ASIS3ServiceRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 528CB94C29CF4C54A6B5BEC6 /* ASIS3ServiceRequest.h */; };
 		6F6DD52B4BB3411E98461F33 /* GMSServices.h in Headers */ = {isa = PBXBuildFile; fileRef = FF850BE3C95247459310B237 /* GMSServices.h */; };
 		74F3B42AB1B3419680A0C545 /* ASICloudFilesContainerXMLParserDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A994CD3C20F448D85FD74AD /* ASICloudFilesContainerXMLParserDelegate.h */; };
-		768518C94BD64816A7AF475D /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2C8318FDD14F04923AF94F /* ASIDataDecompressor.m */; };
+		768518C94BD64816A7AF475D /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2C8318FDD14F04923AF94F /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		7D2B91AC71EB4935AEB6BB60 /* GMSCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = 55DD4199DA8B49FE9995B348 /* GMSCircle.h */; };
 		801EB213D20546E1945C8A0D /* GMSMapView.h in Headers */ = {isa = PBXBuildFile; fileRef = 14AE6FD810FD4603B37B268C /* GMSMapView.h */; };
 		82A200A4AF414BE28E462CDA /* ASIDownloadCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DBB38FEBFC24C398F8007F2 /* ASIDownloadCache.h */; };
@@ -71,7 +71,7 @@
 		9FA72B992F0D4D93A7E82166 /* GMSGroundOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = C426F728005544918F26EB8C /* GMSGroundOverlay.h */; };
 		9FA91707068E4A0682B8667B /* ASICloudFilesRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = FDBC56B2DE494F189A64D5CE /* ASICloudFilesRequest.h */; };
 		A6A0723ED6814797B812A7BB /* ASIFormDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA087BB0D6245979654F7BC /* ASIFormDataRequest.h */; };
-		A6F833F3B3464F31AE05427E /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E00F5A5FBC04701BFF40A9E /* ASIDownloadCache.m */; };
+		A6F833F3B3464F31AE05427E /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E00F5A5FBC04701BFF40A9E /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		A8A67A40026B430CA0274BCA /* GMSPolyline.h in Headers */ = {isa = PBXBuildFile; fileRef = DAEE099B1A4B4E5FB5096A5E /* GMSPolyline.h */; };
 		AA12D51C530947068B86F558 /* GMSIndoorDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = 937ACEF381464981B058B871 /* GMSIndoorDisplay.h */; };
 		B100F8D04FDC457E8E14E295 /* ASINSXMLParserCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 82BE58CE0F4E4F35ACD0DE9C /* ASINSXMLParserCompat.h */; };
@@ -562,7 +562,7 @@
 		5F6EB8D241C44F3B9545F6DB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0500;
 			};
 			buildConfigurationList = 496AAF71EE22498DA3D65B89 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -621,6 +621,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
@@ -629,7 +630,6 @@
 			baseConfigurationReference = A36067E30F6F41DCA8F9A8E4 /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -650,7 +650,7 @@
 				PODS_ROOT = "${SRCROOT}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos6.1;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -667,7 +667,6 @@
 			baseConfigurationReference = A36067E30F6F41DCA8F9A8E4 /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -689,7 +688,7 @@
 				PODS_ROOT = "${SRCROOT}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos6.1;
 				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
 			};

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9702D4E1-2BAD-422F-B771-4C96935F53B8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>marguerite</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>15CF1515-DB37-4C3A-AEF1-1BAC994BF4D8</key>
+		<string>ssh://github.com/cardinaldevs/marguerite-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>marguerite.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>15CF1515-DB37-4C3A-AEF1-1BAC994BF4D8</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/cardinaldevs/marguerite-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>15CF1515-DB37-4C3A-AEF1-1BAC994BF4D8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>15CF1515-DB37-4C3A-AEF1-1BAC994BF4D8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>marguerite-ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>

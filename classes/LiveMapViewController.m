@@ -96,7 +96,7 @@
 
 - (void) loadStops
 {
-    NSString *imageFilePath = [[NSBundle mainBundle] pathForResource:@"busstop" ofType:@"png"];
+    NSString *imageFilePath = [[NSBundle mainBundle] pathForResource:@"Stop" ofType:@"png"];
     UIImage *stopIcon = [UIImage imageWithContentsOfFile:imageFilePath];
     
     NSArray *allStops = [MStop getAllStops];
@@ -258,45 +258,37 @@
             //RP
             imageFileName = @"RP";
             break;
-        case 40:
-            //SMP
-            imageFileName = @"SMP";
-            break;
         case 43:
             //O
             imageFileName = @"O";
             break;
         case 44:
             //Y-lim
-            imageFileName = @"Y";
+            imageFileName = @"Y-LIM";
             break;
         case 45:
             //X-lim
-            imageFileName = @"X";
+            imageFileName = @"X-LIM";
             break;
         case 46:
             //C-lim
             imageFileName = @"C";
             break;
-        case 47:
-            //MC-lim
-            imageFileName = @"MC";
-            break;
         case 48:
             //MC-direct
-            imageFileName = @"MC";
+            imageFileName = @"MC-DIR";
             break;
         case 50:
             //MC-holiday
-            imageFileName = @"MC";
+            imageFileName = @"MC-HOL";
             break;
         case 51:
             //Line x express
-            imageFileName = @"X";
+            imageFileName = @"X-EXP";
             break;
         case 52:
             //line y express
-            imageFileName = @"Y";
+            imageFileName = @"Y-EXP";
             break;
         case 53:
             //BOH
@@ -308,11 +300,15 @@
             break;
         case 55:
             //East Bay Express
-            imageFileName = @"EB";
+            imageFileName = @"EB-EX";
             break;
         case 56:
             //OCA
             imageFileName = @"OCA";
+            break;
+        case 57:
+            //H
+            imageFileName = @"H";
             break;
         default:
             imageFileName = nil;

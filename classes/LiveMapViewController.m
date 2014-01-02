@@ -108,7 +108,7 @@
         marker.title = stop.stopName;
         marker.snippet = @"Tap here to view next shuttles.";
         marker.map = _mapView;
-        marker.animated = YES;
+        marker.appearAnimation = kGMSMarkerAnimationPop;
         marker.userData = stop;
         marker.zIndex = 0;
         [stopMarkers setObject:marker forKey:stop.stopId];
@@ -151,7 +151,7 @@
     marker.title = bus.route.routeShortName;
     marker.snippet = bus.route.routeLongName;
     marker.map = _mapView;
-    marker.animated = YES;
+    marker.appearAnimation = kGMSMarkerAnimationPop;
     marker.userData = bus;
     marker.zIndex = 3;
     busMarkers[bus.vehicleId] = marker;

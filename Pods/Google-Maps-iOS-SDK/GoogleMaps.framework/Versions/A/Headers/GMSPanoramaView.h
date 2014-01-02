@@ -192,6 +192,13 @@
 - (void)moveNearCoordinate:(CLLocationCoordinate2D)coordinate;
 
 /**
+ * Similar to moveNearCoordinate: but allows specifying a search radius (meters)
+ * around |coordinate|.
+ */
+- (void)moveNearCoordinate:(CLLocationCoordinate2D)coordinate
+                    radius:(NSUInteger)radius;
+
+/**
  * Requests a panorama with |panoramaID|.
  * Upon successful completion panoramaView:didMoveToPanorama: will be sent to
  * GMSPanoramaViewDelegate.
@@ -199,6 +206,7 @@
  * Repeated calls to moveToPanoramaID: result in the previous pending
  * (incomplete) transitions being cancelled -- only the most recent of
  * moveNearCoordinate: and moveToPanoramaId: will proceed and generate events.
+ * Only panoramaIDs obtained from the Google Maps SDK for iOS are supported.
  */
 - (void)moveToPanoramaID:(NSString *)panoramaID;
 
@@ -227,5 +235,14 @@
  */
 + (instancetype)panoramaWithFrame:(CGRect)frame
                    nearCoordinate:(CLLocationCoordinate2D)coordinate;
+
+/**
+ * Similar to panoramaWithFrame:nearCoordinate: but allows specifying a
+ * search radius (meters) around |coordinate|.
+ */
++ (instancetype)panoramaWithFrame:(CGRect)frame
+                   nearCoordinate:(CLLocationCoordinate2D)coordinate
+                           radius:(NSUInteger)radius;
+
 
 @end

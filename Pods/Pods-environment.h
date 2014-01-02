@@ -6,6 +6,18 @@
 // project.
 
 
+// AFHTTPFileUpdateOperation
+#define COCOAPODS_POD_AVAILABLE_AFHTTPFileUpdateOperation
+#define COCOAPODS_VERSION_MAJOR_AFHTTPFileUpdateOperation 0
+#define COCOAPODS_VERSION_MINOR_AFHTTPFileUpdateOperation 0
+#define COCOAPODS_VERSION_PATCH_AFHTTPFileUpdateOperation 1
+
+// AFNetworking
+#define COCOAPODS_POD_AVAILABLE_AFNetworking
+#define COCOAPODS_VERSION_MAJOR_AFNetworking 1
+#define COCOAPODS_VERSION_MINOR_AFNetworking 3
+#define COCOAPODS_VERSION_PATCH_AFNetworking 3
+
 // ASIHTTPRequest
 #define COCOAPODS_POD_AVAILABLE_ASIHTTPRequest
 #define COCOAPODS_VERSION_MAJOR_ASIHTTPRequest 1
@@ -39,12 +51,24 @@
 // Google-Maps-iOS-SDK
 #define COCOAPODS_POD_AVAILABLE_Google_Maps_iOS_SDK
 #define COCOAPODS_VERSION_MAJOR_Google_Maps_iOS_SDK 1
-#define COCOAPODS_VERSION_MINOR_Google_Maps_iOS_SDK 4
-#define COCOAPODS_VERSION_PATCH_Google_Maps_iOS_SDK 3
+#define COCOAPODS_VERSION_MINOR_Google_Maps_iOS_SDK 6
+#define COCOAPODS_VERSION_PATCH_Google_Maps_iOS_SDK 1
 
 // Reachability
 #define COCOAPODS_POD_AVAILABLE_Reachability
 #define COCOAPODS_VERSION_MAJOR_Reachability 3
 #define COCOAPODS_VERSION_MINOR_Reachability 1
 #define COCOAPODS_VERSION_PATCH_Reachability 1
+
+// SAMWeak
+#define COCOAPODS_POD_AVAILABLE_SAMWeak
+#define COCOAPODS_VERSION_MAJOR_SAMWeak 0
+#define COCOAPODS_VERSION_MINOR_SAMWeak 0
+#define COCOAPODS_VERSION_PATCH_SAMWeak 1
+
+// SSZipArchive
+#define COCOAPODS_POD_AVAILABLE_SSZipArchive
+#define COCOAPODS_VERSION_MAJOR_SSZipArchive 0
+#define COCOAPODS_VERSION_MINOR_SSZipArchive 3
+#define COCOAPODS_VERSION_PATCH_SSZipArchive 1
 

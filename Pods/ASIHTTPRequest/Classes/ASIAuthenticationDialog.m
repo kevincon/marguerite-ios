@@ -216,7 +216,7 @@ static const NSUInteger kDomainSection = 1;
 
 + (void)dismiss
 {
-	[[sharedDialog parentViewController] dismissViewControllerAnimated:YES completion:nil];
+	[[sharedDialog parentViewController] dismissModalViewControllerAnimated:YES];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
@@ -233,7 +233,7 @@ static const NSUInteger kDomainSection = 1;
 	if (self == sharedDialog) {
 		[[self class] dismiss];
 	} else {
-		[[self parentViewController] dismissViewControllerAnimated:YES completion:nil];
+		[[self parentViewController] dismissModalViewControllerAnimated:YES];
 	}
 }
 
@@ -309,7 +309,7 @@ static const NSUInteger kDomainSection = 1;
 	}
 #endif
 
-    [self presentViewController:[self presentingController] animated:YES completion:nil];
+	[[self presentingController] presentModalViewController:self animated:YES];
 }
 
 #pragma mark button callbacks

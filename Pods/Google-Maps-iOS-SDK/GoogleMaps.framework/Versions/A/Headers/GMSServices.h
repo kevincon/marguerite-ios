@@ -13,17 +13,19 @@
 
 /**
  * Provides the shared instance of GMSServices for the Google Maps SDK for iOS,
- * creating it if nessecary. Classes such as GMSMapView and GMSPanoramaView will
+ * creating it if necessary. Classes such as GMSMapView and GMSPanoramaView will
  * hold this instance to provide their connection to Google.
  *
  * This is an opaque object. If your application often creates and destroys view
  * or service classes provided by the Google Maps SDK for iOS, it may be useful
  * to hold onto this object directly, as otherwise your connection to Google
- * may be restarted on a regular basis.
+ * may be restarted on a regular basis. It also may be useful to take this
+ * object in advance of the first map creation, to reduce initial map creation
+ * performance cost.
  *
  * This method will throw an exception if provideAPIKey: has not been called.
  */
-+ (GMSServices *)sharedServices;
++ (id<NSObject>)sharedServices;
 
 /**
  * Provides your API key to the Google Maps SDK for iOS.  This key is generated

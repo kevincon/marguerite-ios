@@ -10,6 +10,7 @@
 
 #define FEEDBACK_SECTION_INDEX                  0
 #define FEEDBACK_BUTTON_ROW                     0
+#define FEEDBACK_TWITTER_BUTTON_ROW             1
 
 #define CONTACT_MARGUERITE_SECTION_INDEX        1
 #define CONTACT_MARGUERITE_OFFICE_ROW           0
@@ -35,6 +36,8 @@
                 case FEEDBACK_BUTTON_ROW:
                     [self openFeedbackView];
                     break;
+                case FEEDBACK_TWITTER_BUTTON_ROW:
+                    [self openURL:@"http://twitter.com/MargueriteApp"];
             }
             break;
         case CONTACT_MARGUERITE_SECTION_INDEX:

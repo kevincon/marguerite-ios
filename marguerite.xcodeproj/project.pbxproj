@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		626EE401911147B3A58D811C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C74FC6596E0D4FE98CA124BB /* libPods.a */; };
-		F410C5FC17EE1638005F0BB3 /* Instabug.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F410C5FA17EE1638005F0BB3 /* Instabug.bundle */; };
-		F410C5FD17EE1638005F0BB3 /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F410C5FB17EE1638005F0BB3 /* Instabug.framework */; };
 		F410C5FF17EE1657005F0BB3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F410C5FE17EE1657005F0BB3 /* CoreFoundation.framework */; };
 		F410C60117EE167F005F0BB3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F410C60017EE167F005F0BB3 /* AudioToolbox.framework */; };
 		F410C60317EE1684005F0BB3 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F410C60217EE1684005F0BB3 /* CoreTelephony.framework */; };
@@ -142,6 +140,8 @@
 		F471C4D1178B89CE005583A4 /* trips.txt in Resources */ = {isa = PBXBuildFile; fileRef = F471C4CA178B89CE005583A4 /* trips.txt */; };
 		F471C4DB178DF660005583A4 /* StopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F471C4DA178DF660005583A4 /* StopViewController.m */; };
 		F48BD72B17CC6426009630BE /* MRoutePolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = F48BD72A17CC6426009630BE /* MRoutePolyline.m */; };
+		F4BD10E7187D126B001509D9 /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BD10E6187D126B001509D9 /* Instabug.framework */; };
+		F4BD10E9187D127A001509D9 /* Instabug.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F4BD10E8187D127A001509D9 /* Instabug.bundle */; };
 		F4D2EACD17EA7639009A1975 /* gtfs.db in Resources */ = {isa = PBXBuildFile; fileRef = F4D2EACC17EA7639009A1975 /* gtfs.db */; };
 		F4F555D417D71BAE00301597 /* busstop.png in Resources */ = {isa = PBXBuildFile; fileRef = F4F555D317D71BAE00301597 /* busstop.png */; };
 /* End PBXBuildFile section */
@@ -149,8 +149,6 @@
 /* Begin PBXFileReference section */
 		70CE5BB07FB64AA48B3AE676 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		C74FC6596E0D4FE98CA124BB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		F410C5FA17EE1638005F0BB3 /* Instabug.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Instabug.bundle; path = libraries/Instabug.bundle; sourceTree = "<group>"; };
-		F410C5FB17EE1638005F0BB3 /* Instabug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Instabug.framework; path = libraries/Instabug.framework; sourceTree = "<group>"; };
 		F410C5FE17EE1657005F0BB3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		F410C60017EE167F005F0BB3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		F410C60217EE1684005F0BB3 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -323,6 +321,8 @@
 		F471C4DA178DF660005583A4 /* StopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StopViewController.m; path = classes/StopViewController.m; sourceTree = "<group>"; };
 		F48BD72917CC6426009630BE /* MRoutePolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRoutePolyline.h; path = classes/MRoutePolyline.h; sourceTree = "<group>"; };
 		F48BD72A17CC6426009630BE /* MRoutePolyline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MRoutePolyline.m; path = classes/MRoutePolyline.m; sourceTree = "<group>"; };
+		F4BD10E6187D126B001509D9 /* Instabug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Instabug.framework; path = libraries/Instabug.framework; sourceTree = "<group>"; };
+		F4BD10E8187D127A001509D9 /* Instabug.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Instabug.bundle; path = libraries/Instabug.bundle; sourceTree = "<group>"; };
 		F4D2EACC17EA7639009A1975 /* gtfs.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = gtfs.db; path = gtfs/gtfs.db; sourceTree = "<group>"; };
 		F4F555D317D71BAE00301597 /* busstop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = busstop.png; path = images/map/busstop.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -333,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F410C60317EE1684005F0BB3 /* CoreTelephony.framework in Frameworks */,
+				F4BD10E7187D126B001509D9 /* Instabug.framework in Frameworks */,
 				F410C60117EE167F005F0BB3 /* AudioToolbox.framework in Frameworks */,
 				F410C5FF17EE1657005F0BB3 /* CoreFoundation.framework in Frameworks */,
 				F4592E79179749C400579D6B /* SystemConfiguration.framework in Frameworks */,
@@ -352,7 +353,6 @@
 				F471C3DB178B7D5F005583A4 /* Foundation.framework in Frameworks */,
 				F471C3DD178B7D5F005583A4 /* CoreGraphics.framework in Frameworks */,
 				626EE401911147B3A58D811C /* libPods.a in Frameworks */,
-				F410C5FD17EE1638005F0BB3 /* Instabug.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,11 +635,11 @@
 		F471C3D7178B7D5F005583A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F4BD10E8187D127A001509D9 /* Instabug.bundle */,
+				F4BD10E6187D126B001509D9 /* Instabug.framework */,
 				F410C60217EE1684005F0BB3 /* CoreTelephony.framework */,
 				F410C60017EE167F005F0BB3 /* AudioToolbox.framework */,
 				F410C5FE17EE1657005F0BB3 /* CoreFoundation.framework */,
-				F410C5FA17EE1638005F0BB3 /* Instabug.bundle */,
-				F410C5FB17EE1638005F0BB3 /* Instabug.framework */,
 				F4592E571795E71800579D6B /* libz.dylib */,
 				F471C4BB178B88DD005583A4 /* CoreLocation.framework */,
 				F471C4B9178B88D7005583A4 /* libsqlite3.dylib */,
@@ -792,12 +792,12 @@
 				F451460018387363000D6E7F /* V.png in Resources */,
 				F4514629183878E3000D6E7F /* MC@2x.png in Resources */,
 				F451462E183878E3000D6E7F /* RP@2x.png in Resources */,
+				F4BD10E9187D127A001509D9 /* Instabug.bundle in Resources */,
 				F41938AC17A3E4480056F598 /* MainStoryboard_iPhone.storyboard in Resources */,
 				F4F555D417D71BAE00301597 /* busstop.png in Resources */,
 				F45145F918387363000D6E7F /* P.png in Resources */,
 				F4D2EACD17EA7639009A1975 /* gtfs.db in Resources */,
 				F45145F218387363000D6E7F /* H.png in Resources */,
-				F410C5FC17EE1638005F0BB3 /* Instabug.bundle in Resources */,
 				F4514637183878E3000D6E7F /* Y-EXP@2x.png in Resources */,
 				F45145F818387363000D6E7F /* OCA.png in Resources */,
 				F45145F718387363000D6E7F /* O.png in Resources */,
@@ -981,8 +981,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Kevin Conley (34A688L22V)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/libraries\"",
+					"$(SRCROOT)",
+					"/Users/kcon/Desktop/marguerite-ios",
+					"/Users/kcon/Desktop/marguerite-ios/libraries",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "marguerite-Prefix.pch";
@@ -1008,8 +1009,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Stanford University";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/libraries\"",
+					"$(SRCROOT)",
+					"/Users/kcon/Desktop/marguerite-ios",
+					"/Users/kcon/Desktop/marguerite-ios/libraries",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "marguerite-Prefix.pch";

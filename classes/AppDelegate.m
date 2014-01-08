@@ -22,6 +22,8 @@
     [Instabug setShowEmail:YES];
     [Instabug setShowStartAlert:YES];
     [Instabug setShowThankYouAlert:YES];
+    [Instabug setEmailIsRequired:YES];
+    [Instabug setCommentIsRequired:YES];
     [Instabug setColorTheme:InstabugColorThemeRed];
     [Instabug setHeaderColor:[MUtil colorFromHexString:@"8C1515"]];
     

@@ -21,6 +21,7 @@
 		F4135310187D20E20070DD45 /* stops.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4135309187D20E20070DD45 /* stops.txt */; };
 		F4135311187D20E20070DD45 /* trips.txt in Resources */ = {isa = PBXBuildFile; fileRef = F413530A187D20E20070DD45 /* trips.txt */; };
 		F4135313187D22460070DD45 /* gtfs.db in Resources */ = {isa = PBXBuildFile; fileRef = F4135312187D22460070DD45 /* gtfs.db */; };
+		F4135315187D2C660070DD45 /* Icon@2x-120.png in Resources */ = {isa = PBXBuildFile; fileRef = F4135314187D2C660070DD45 /* Icon@2x-120.png */; };
 		F41938AB17A3E4480056F598 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F41938A717A3E4480056F598 /* InfoPlist.strings */; };
 		F41938AC17A3E4480056F598 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41938A917A3E4480056F598 /* MainStoryboard_iPhone.storyboard */; };
 		F45145EC18387363000D6E7F /* 1050A.png in Resources */ = {isa = PBXBuildFile; fileRef = F45145D218387363000D6E7F /* 1050A.png */; };
@@ -163,6 +164,7 @@
 		F4135309187D20E20070DD45 /* stops.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = stops.txt; path = gtfs/stops.txt; sourceTree = "<group>"; };
 		F413530A187D20E20070DD45 /* trips.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = trips.txt; path = gtfs/trips.txt; sourceTree = "<group>"; };
 		F4135312187D22460070DD45 /* gtfs.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = gtfs.db; path = gtfs/gtfs.db; sourceTree = "<group>"; };
+		F4135314187D2C660070DD45 /* Icon@2x-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x-120.png"; path = "images/icon/Icon@2x-120.png"; sourceTree = "<group>"; };
 		F41938A817A3E4480056F598 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F41938AA17A3E4480056F598 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		F41938AD17A3E44F0056F598 /* marguerite-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "marguerite-Info.plist"; sourceTree = "<group>"; };
@@ -496,6 +498,7 @@
 		F412321C17A3D94D00604A02 /* icon */ = {
 			isa = PBXGroup;
 			children = (
+				F4135314187D2C660070DD45 /* Icon@2x-120.png */,
 				F4592EF2179A92E600579D6B /* Icon@2x.png */,
 				F4592EF0179A92DC00579D6B /* Icon.png */,
 			);
@@ -726,6 +729,7 @@
 			files = (
 				F4514638183878E3000D6E7F /* Y-LIM@2x.png in Resources */,
 				F45145F018387363000D6E7F /* C.png in Resources */,
+				F4135315187D2C660070DD45 /* Icon@2x-120.png in Resources */,
 				F471C3EB178B7D60005583A4 /* Default.png in Resources */,
 				F4514627183878E3000D6E7F /* MC-DIR@2x.png in Resources */,
 				F471C3ED178B7D60005583A4 /* Default@2x.png in Resources */,

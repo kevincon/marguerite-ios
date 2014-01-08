@@ -73,7 +73,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
-                            <tableViewSection headerTitle="App Feedback" footerTitle="Schedules last updated on Sept. 13." id="1WK-Ao-EDU">
+                            <tableViewSection headerTitle="App Feedback" footerTitle="Schedules last updated on January 7." id="1WK-Ao-EDU">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="tWD-pn-XSj" style="IBUITableViewCellStyleDefault" id="h9W-hi-fEf">
                                         <rect key="frame" x="0.0" y="46" width="320" height="46"/>

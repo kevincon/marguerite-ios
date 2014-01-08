@@ -24,7 +24,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,stop_url
 26,26,Campus Drive @ Mayfield Ave South,37.42152,-122.168144,http://mybus.stanford.edu/stops/stopDepartures.cfm?stopid=26
 27,27,Tresidder Student Union Westbound,37.42374038,-122.1705856,http://mybus.stanford.edu/stops/stopDepartures.cfm?stopid=27
 28,28,Tresidder Student Union Eastbound,37.423601,-122.170571,http://mybus.stanford.edu/stops/stopDepartures.cfm?stopid=28
-29,29,Santa Teresa St @ Lomita Dr,37.425372,-122.173425,http://mybus.stanford.edu/stops/stopDepartures.cfm?stopid=29
+29,29,Santa Teresa St @ Lomita Dr,37.425342,-122.173242,http://mybus.stanford.edu/stops/stopDepartures.cfm?stopid=29
 30,30,Santa Teresa @ New Guinea Garden,37.425259,-122.173494,http://mybus.stanford.edu/stops/stopDepartures.cfm?stopid=30
 31,31,Samuel Morris Wy @ Panama St,37.426324,-122.174085,http://mybus.stanford.edu/stops/stopDepartures.cfm?stopid=31
 32,32,Panama St @ Roble Gym,37.42647,-122.174228,http://mybus.stanford.edu/stops/stopDepartures.cfm?stopid=32

@@ -19,8 +19,6 @@
 
 #define APP_SECTION_INDEX                       3
 
-#define CLUB_SECTION_INDEX                      5
-
 @interface AboutViewController ()
 
 @end
@@ -55,9 +53,6 @@
             break;
         case APP_SECTION_INDEX:
             [self openURL:@"https://github.com/cardinaldevs/marguerite-ios"];
-            break;
-        case CLUB_SECTION_INDEX:
-            [self openURL:@"http://sadevs.stanford.edu"];
             break;
     }
 }

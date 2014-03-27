@@ -701,6 +701,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Cardinal Devs";
+				TargetAttributes = {
+					F471C3D4178B7D5F005583A4 = {
+						DevelopmentTeam = CQRZ4E7K9U;
+					};
+				};
 			};
 			buildConfigurationList = F471C3D0178B7D5F005583A4 /* Build configuration list for PBXProject "marguerite" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -978,7 +983,7 @@
 			baseConfigurationReference = 70CE5BB07FB64AA48B3AE676 /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Kevin Conley (34A688L22V)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -1006,7 +1011,7 @@
 			baseConfigurationReference = 70CE5BB07FB64AA48B3AE676 /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Stanford University";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Stanford University";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

@@ -13,14 +13,6 @@
 		F410C60317EE1684005F0BB3 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F410C60217EE1684005F0BB3 /* CoreTelephony.framework */; };
 		F41231CC17A397FB00604A02 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41231CB17A397FB00604A02 /* AboutViewController.m */; };
 		F412321E17A3DB1600604A02 /* stanford_s.png in Resources */ = {isa = PBXBuildFile; fileRef = F412321D17A3DB1600604A02 /* stanford_s.png */; };
-		F413530B187D20E20070DD45 /* agency.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4135304187D20E20070DD45 /* agency.txt */; };
-		F413530C187D20E20070DD45 /* calendar_dates.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4135305187D20E20070DD45 /* calendar_dates.txt */; };
-		F413530D187D20E20070DD45 /* routes.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4135306187D20E20070DD45 /* routes.txt */; };
-		F413530E187D20E20070DD45 /* shapes.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4135307187D20E20070DD45 /* shapes.txt */; };
-		F413530F187D20E20070DD45 /* stop_times.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4135308187D20E20070DD45 /* stop_times.txt */; };
-		F4135310187D20E20070DD45 /* stops.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4135309187D20E20070DD45 /* stops.txt */; };
-		F4135311187D20E20070DD45 /* trips.txt in Resources */ = {isa = PBXBuildFile; fileRef = F413530A187D20E20070DD45 /* trips.txt */; };
-		F4135313187D22460070DD45 /* gtfs.db in Resources */ = {isa = PBXBuildFile; fileRef = F4135312187D22460070DD45 /* gtfs.db */; };
 		F4135315187D2C660070DD45 /* Icon@2x-120.png in Resources */ = {isa = PBXBuildFile; fileRef = F4135314187D2C660070DD45 /* Icon@2x-120.png */; };
 		F4135318187D331E0070DD45 /* Instabug.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F4135316187D331E0070DD45 /* Instabug.bundle */; };
 		F4135319187D331E0070DD45 /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4135317187D331E0070DD45 /* Instabug.framework */; };
@@ -144,6 +136,13 @@
 		F471C4C2178B89B3005583A4 /* NextShuttleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F471C4C1178B89B3005583A4 /* NextShuttleViewController.m */; };
 		F471C4DB178DF660005583A4 /* StopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F471C4DA178DF660005583A4 /* StopViewController.m */; };
 		F48BD72B17CC6426009630BE /* MRoutePolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = F48BD72A17CC6426009630BE /* MRoutePolyline.m */; };
+		F4A0F97918E3D889001F1F63 /* agency.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4A0F97318E3D889001F1F63 /* agency.txt */; };
+		F4A0F97A18E3D889001F1F63 /* calendar_dates.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4A0F97418E3D889001F1F63 /* calendar_dates.txt */; };
+		F4A0F97B18E3D889001F1F63 /* routes.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4A0F97518E3D889001F1F63 /* routes.txt */; };
+		F4A0F97C18E3D889001F1F63 /* stop_times.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4A0F97618E3D889001F1F63 /* stop_times.txt */; };
+		F4A0F97D18E3D889001F1F63 /* stops.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4A0F97718E3D889001F1F63 /* stops.txt */; };
+		F4A0F97E18E3D889001F1F63 /* trips.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4A0F97818E3D889001F1F63 /* trips.txt */; };
+		F4A0F98018E3D9D9001F1F63 /* gtfs.db in Resources */ = {isa = PBXBuildFile; fileRef = F4A0F97F18E3D9D9001F1F63 /* gtfs.db */; };
 		F4F555D417D71BAE00301597 /* busstop.png in Resources */ = {isa = PBXBuildFile; fileRef = F4F555D317D71BAE00301597 /* busstop.png */; };
 /* End PBXBuildFile section */
 
@@ -156,14 +155,6 @@
 		F41231CA17A397FA00604A02 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutViewController.h; path = classes/AboutViewController.h; sourceTree = "<group>"; };
 		F41231CB17A397FB00604A02 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutViewController.m; path = classes/AboutViewController.m; sourceTree = "<group>"; };
 		F412321D17A3DB1600604A02 /* stanford_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stanford_s.png; path = images/map/stanford_s.png; sourceTree = "<group>"; };
-		F4135304187D20E20070DD45 /* agency.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = agency.txt; path = gtfs/agency.txt; sourceTree = "<group>"; };
-		F4135305187D20E20070DD45 /* calendar_dates.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = calendar_dates.txt; path = gtfs/calendar_dates.txt; sourceTree = "<group>"; };
-		F4135306187D20E20070DD45 /* routes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = routes.txt; path = gtfs/routes.txt; sourceTree = "<group>"; };
-		F4135307187D20E20070DD45 /* shapes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shapes.txt; path = gtfs/shapes.txt; sourceTree = "<group>"; };
-		F4135308187D20E20070DD45 /* stop_times.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = stop_times.txt; path = gtfs/stop_times.txt; sourceTree = "<group>"; };
-		F4135309187D20E20070DD45 /* stops.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = stops.txt; path = gtfs/stops.txt; sourceTree = "<group>"; };
-		F413530A187D20E20070DD45 /* trips.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = trips.txt; path = gtfs/trips.txt; sourceTree = "<group>"; };
-		F4135312187D22460070DD45 /* gtfs.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = gtfs.db; path = gtfs/gtfs.db; sourceTree = "<group>"; };
 		F4135314187D2C660070DD45 /* Icon@2x-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x-120.png"; path = "images/icon/Icon@2x-120.png"; sourceTree = "<group>"; };
 		F4135316187D331E0070DD45 /* Instabug.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Instabug.bundle; path = libraries/Instabug.bundle; sourceTree = "<group>"; };
 		F4135317187D331E0070DD45 /* Instabug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Instabug.framework; path = libraries/Instabug.framework; sourceTree = "<group>"; };
@@ -326,6 +317,13 @@
 		F471C4DA178DF660005583A4 /* StopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StopViewController.m; path = classes/StopViewController.m; sourceTree = "<group>"; };
 		F48BD72917CC6426009630BE /* MRoutePolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRoutePolyline.h; path = classes/MRoutePolyline.h; sourceTree = "<group>"; };
 		F48BD72A17CC6426009630BE /* MRoutePolyline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MRoutePolyline.m; path = classes/MRoutePolyline.m; sourceTree = "<group>"; };
+		F4A0F97318E3D889001F1F63 /* agency.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = agency.txt; path = gtfs/agency.txt; sourceTree = "<group>"; };
+		F4A0F97418E3D889001F1F63 /* calendar_dates.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = calendar_dates.txt; path = gtfs/calendar_dates.txt; sourceTree = "<group>"; };
+		F4A0F97518E3D889001F1F63 /* routes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = routes.txt; path = gtfs/routes.txt; sourceTree = "<group>"; };
+		F4A0F97618E3D889001F1F63 /* stop_times.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = stop_times.txt; path = gtfs/stop_times.txt; sourceTree = "<group>"; };
+		F4A0F97718E3D889001F1F63 /* stops.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = stops.txt; path = gtfs/stops.txt; sourceTree = "<group>"; };
+		F4A0F97818E3D889001F1F63 /* trips.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = trips.txt; path = gtfs/trips.txt; sourceTree = "<group>"; };
+		F4A0F97F18E3D9D9001F1F63 /* gtfs.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = gtfs.db; path = gtfs/gtfs.db; sourceTree = "<group>"; };
 		F4F555D317D71BAE00301597 /* busstop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = busstop.png; path = images/map/busstop.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -596,14 +594,13 @@
 		F41938A617A3E3200056F598 /* gtfs */ = {
 			isa = PBXGroup;
 			children = (
-				F4135312187D22460070DD45 /* gtfs.db */,
-				F4135304187D20E20070DD45 /* agency.txt */,
-				F4135305187D20E20070DD45 /* calendar_dates.txt */,
-				F4135306187D20E20070DD45 /* routes.txt */,
-				F4135307187D20E20070DD45 /* shapes.txt */,
-				F4135308187D20E20070DD45 /* stop_times.txt */,
-				F4135309187D20E20070DD45 /* stops.txt */,
-				F413530A187D20E20070DD45 /* trips.txt */,
+				F4A0F97F18E3D9D9001F1F63 /* gtfs.db */,
+				F4A0F97318E3D889001F1F63 /* agency.txt */,
+				F4A0F97418E3D889001F1F63 /* calendar_dates.txt */,
+				F4A0F97518E3D889001F1F63 /* routes.txt */,
+				F4A0F97618E3D889001F1F63 /* stop_times.txt */,
+				F4A0F97718E3D889001F1F63 /* stops.txt */,
+				F4A0F97818E3D889001F1F63 /* trips.txt */,
 			);
 			name = gtfs;
 			sourceTree = "<group>";
@@ -733,30 +730,28 @@
 				F471C3EB178B7D60005583A4 /* Default.png in Resources */,
 				F4514627183878E3000D6E7F /* MC-DIR@2x.png in Resources */,
 				F471C3ED178B7D60005583A4 /* Default@2x.png in Resources */,
+				F4A0F97B18E3D889001F1F63 /* routes.txt in Resources */,
 				F4514636183878E3000D6E7F /* X@2x.png in Resources */,
 				F45145F618387363000D6E7F /* N.png in Resources */,
 				F471C3EF178B7D60005583A4 /* Default-568h@2x.png in Resources */,
+				F4A0F97D18E3D889001F1F63 /* stops.txt in Resources */,
 				F45145FA18387363000D6E7F /* RP.png in Resources */,
 				F451460218387363000D6E7F /* X.png in Resources */,
-				F4135310187D20E20070DD45 /* stops.txt in Resources */,
 				F45145ED18387363000D6E7F /* AWE.png in Resources */,
 				F45145F518387363000D6E7F /* MC.png in Resources */,
 				F451460418387363000D6E7F /* Y-LIM.png in Resources */,
 				F4514626183878E3000D6E7F /* H@2x.png in Resources */,
 				F4514625183878E3000D6E7F /* EB-EX@2x.png in Resources */,
 				F4514628183878E3000D6E7F /* MC-HOL@2x.png in Resources */,
-				F413530E187D20E20070DD45 /* shapes.txt in Resources */,
 				F45145FB18387363000D6E7F /* S.png in Resources */,
 				F45145EE18387363000D6E7F /* BOH.png in Resources */,
 				F4514633183878E3000D6E7F /* TECH@2x.png in Resources */,
 				F45145FF18387363000D6E7F /* TECH.png in Resources */,
-				F413530D187D20E20070DD45 /* routes.txt in Resources */,
 				F451462A183878E3000D6E7F /* N@2x.png in Resources */,
 				F4514624183878E3000D6E7F /* C@2x.png in Resources */,
 				F4135318187D331E0070DD45 /* Instabug.bundle in Resources */,
 				F45145FE18387363000D6E7F /* Stop.png in Resources */,
 				F4514620183878E3000D6E7F /* 1050A@2x.png in Resources */,
-				F413530C187D20E20070DD45 /* calendar_dates.txt in Resources */,
 				F45145F418387363000D6E7F /* MC-HOL.png in Resources */,
 				F4592EC8179A83ED00579D6B /* time.png in Resources */,
 				F4592ECA179A83FB00579D6B /* directions-alt.png in Resources */,
@@ -767,7 +762,7 @@
 				F4514631183878E3000D6E7F /* SLAC@2x.png in Resources */,
 				F4514632183878E3000D6E7F /* Stop@2x.png in Resources */,
 				F4592ECE179A841100579D6B /* map.png in Resources */,
-				F413530F187D20E20070DD45 /* stop_times.txt in Resources */,
+				F4A0F97C18E3D889001F1F63 /* stop_times.txt in Resources */,
 				F4592ED0179A841800579D6B /* info.png in Resources */,
 				F4592ED2179A844700579D6B /* time@2x.png in Resources */,
 				F45145F318387363000D6E7F /* MC-DIR.png in Resources */,
@@ -776,7 +771,7 @@
 				F451462C183878E3000D6E7F /* OCA@2x.png in Resources */,
 				F451460518387363000D6E7F /* Y.png in Resources */,
 				F451462B183878E3000D6E7F /* O@2x.png in Resources */,
-				F4135313187D22460070DD45 /* gtfs.db in Resources */,
+				F4A0F98018E3D9D9001F1F63 /* gtfs.db in Resources */,
 				F4592ED6179A846200579D6B /* location@2x.png in Resources */,
 				F451460118387363000D6E7F /* X-EXP.png in Resources */,
 				F45145F118387363000D6E7F /* EB-EX.png in Resources */,
@@ -788,16 +783,17 @@
 				F451462F183878E3000D6E7F /* S@2x.png in Resources */,
 				F4592EF3179A92E600579D6B /* Icon@2x.png in Resources */,
 				F451462D183878E3000D6E7F /* P@2x.png in Resources */,
+				F4A0F97918E3D889001F1F63 /* agency.txt in Resources */,
 				F412321E17A3DB1600604A02 /* stanford_s.png in Resources */,
 				F4514635183878E3000D6E7F /* X-EXP@2x.png in Resources */,
 				F4514639183878E3000D6E7F /* Y@2x.png in Resources */,
 				F4514621183878E3000D6E7F /* AWE@2x.png in Resources */,
 				F41938AB17A3E4480056F598 /* InfoPlist.strings in Resources */,
+				F4A0F97A18E3D889001F1F63 /* calendar_dates.txt in Resources */,
 				F451460018387363000D6E7F /* V.png in Resources */,
-				F413530B187D20E20070DD45 /* agency.txt in Resources */,
 				F4514629183878E3000D6E7F /* MC@2x.png in Resources */,
+				F4A0F97E18E3D889001F1F63 /* trips.txt in Resources */,
 				F451462E183878E3000D6E7F /* RP@2x.png in Resources */,
-				F4135311187D20E20070DD45 /* trips.txt in Resources */,
 				F41938AC17A3E4480056F598 /* MainStoryboard_iPhone.storyboard in Resources */,
 				F4F555D417D71BAE00301597 /* busstop.png in Resources */,
 				F45145F918387363000D6E7F /* P.png in Resources */,

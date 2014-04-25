@@ -20,6 +20,13 @@
 #import "Trip.h"
 #import "StopTime.h"
 #import "Util.h"
+#import "GTFSDatabase.h"
+#import "GTFSUnarchiver.h"
+
+@interface CSVImporter()
+
+
+@end
 
 @implementation CSVImporter
 
@@ -36,7 +43,10 @@
 - (NSString *)parseForFile:(NSString *)file
 {
     NSError *error = nil;
-    NSString *inputPath = [[NSBundle mainBundle] pathForResource:file ofType:@"txt"];
+    NSString* unzippedDirPath = [GTFSUnarchiver fullPathToDownloadedTransitUnzipDir];
+//    NSString *inputPath = [[NSBundle mainBundle] pathForResource:file ofType:@"txt"];
+    NSString *inputPath = [unzippedDirPath stringByAppendingPathComponent:file];
+    inputPath = [inputPath stringByAppendingPathExtension:@"txt"];
 	NSString *csvString = [NSString stringWithContentsOfFile:inputPath encoding:NSUTF8StringEncoding error:&error];
     
 	if (!csvString)
@@ -50,7 +60,7 @@
 {
 	NSDate *startDate = [NSDate date];
     
-    FMDatabase *db = [FMDatabase databaseWithPath:[Util getDatabaseCachePath]];
+    FMDatabase *db = [FMDatabase databaseWithPath:[GTFSDatabase getNewAutoUpdateDatabaseBuildPath]];
     [db setShouldCacheStatements:YES];
     if (![db open]) {
         NSLog(@"Could not open db.");
@@ -87,7 +97,7 @@
 {
 	NSDate *startDate = [NSDate date];
     
-    FMDatabase *db = [FMDatabase databaseWithPath:[Util getDatabaseCachePath]];
+    FMDatabase *db = [FMDatabase databaseWithPath:[GTFSDatabase getNewAutoUpdateDatabaseBuildPath]];
     [db setShouldCacheStatements:YES];
     if (![db open]) {
         NSLog(@"Could not open db.");
@@ -125,7 +135,7 @@
 {	
 	NSDate *startDate = [NSDate date];
     
-    FMDatabase *db = [FMDatabase databaseWithPath:[Util getDatabaseCachePath]];
+    FMDatabase *db = [FMDatabase databaseWithPath:[GTFSDatabase getNewAutoUpdateDatabaseBuildPath]];
     
     [db setShouldCacheStatements:YES];
     if (![db open]) {
@@ -163,7 +173,7 @@
 {	
 	NSDate *startDate = [NSDate date];
     
-    FMDatabase *db = [FMDatabase databaseWithPath:[Util getDatabaseCachePath]];
+    FMDatabase *db = [FMDatabase databaseWithPath:[GTFSDatabase getNewAutoUpdateDatabaseBuildPath]];
 
     [db setShouldCacheStatements:YES];
     if (![db open]) {
@@ -200,7 +210,7 @@
 {	
 	NSDate *startDate = [NSDate date];
     
-    FMDatabase *db = [FMDatabase databaseWithPath:[Util getDatabaseCachePath]];
+    FMDatabase *db = [FMDatabase databaseWithPath:[GTFSDatabase getNewAutoUpdateDatabaseBuildPath]];
 
     [db setShouldCacheStatements:YES];
     if (![db open]) {
@@ -238,7 +248,7 @@
 {	
 	NSDate *startDate = [NSDate date];
     
-    FMDatabase *db = [FMDatabase databaseWithPath:[Util getDatabaseCachePath]];
+    FMDatabase *db = [FMDatabase databaseWithPath:[GTFSDatabase getNewAutoUpdateDatabaseBuildPath]];
 
     [db setShouldCacheStatements:YES];
     if (![db open]) {
@@ -276,7 +286,7 @@
 {
 	NSDate *startDate = [NSDate date];
     
-    FMDatabase *db = [FMDatabase databaseWithPath:[Util getDatabaseCachePath]];
+    FMDatabase *db = [FMDatabase databaseWithPath:[GTFSDatabase getNewAutoUpdateDatabaseBuildPath]];
     
     [db setShouldCacheStatements:YES];
     if (![db open]) {
@@ -314,7 +324,7 @@
 {	
 	NSDate *startDate = [NSDate date];
     
-    FMDatabase *db = [FMDatabase databaseWithPath:[Util getDatabaseCachePath]];
+    FMDatabase *db = [FMDatabase databaseWithPath:[GTFSDatabase getNewAutoUpdateDatabaseBuildPath]];
 
     [db setShouldCacheStatements:YES];
     if (![db open]) {
@@ -352,7 +362,7 @@
 {
 	NSDate *startDate = [NSDate date];
     
-    FMDatabase *db = [FMDatabase databaseWithPath:[Util getDatabaseCachePath]];
+    FMDatabase *db = [FMDatabase databaseWithPath:[GTFSDatabase getNewAutoUpdateDatabaseBuildPath]];
     
     [db setShouldCacheStatements:YES];
     if (![db open]) {
@@ -378,7 +388,7 @@
 {
 	NSDate *startDate = [NSDate date];
     
-    FMDatabase *db = [FMDatabase databaseWithPath:[Util getDatabaseCachePath]];
+    FMDatabase *db = [FMDatabase databaseWithPath:[GTFSDatabase getNewAutoUpdateDatabaseBuildPath]];
 
     [db setShouldCacheStatements:YES];
     if (![db open]) {
@@ -416,7 +426,7 @@
 {
 	NSDate *startDate = [NSDate date];
     
-    FMDatabase *db = [FMDatabase databaseWithPath:[Util getDatabaseCachePath]];
+    FMDatabase *db = [FMDatabase databaseWithPath:[GTFSDatabase getNewAutoUpdateDatabaseBuildPath]];
 
     [db setShouldCacheStatements:YES];
     if (![db open]) {
@@ -454,7 +464,7 @@
 {
 	NSDate *startDate = [NSDate date];
     
-    FMDatabase *db = [FMDatabase databaseWithPath:[Util getDatabaseCachePath]];
+    FMDatabase *db = [FMDatabase databaseWithPath:[GTFSDatabase getNewAutoUpdateDatabaseBuildPath]];
     
     [db setShouldCacheStatements:YES];
     if (![db open]) {
@@ -481,7 +491,7 @@
 {
 	NSDate *startDate = [NSDate date];
     
-    FMDatabase *db = [FMDatabase databaseWithPath:[Util getDatabaseCachePath]];
+    FMDatabase *db = [FMDatabase databaseWithPath:[GTFSDatabase getNewAutoUpdateDatabaseBuildPath]];
     
     [db setShouldCacheStatements:YES];
     if (![db open]) {

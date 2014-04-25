@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
     <dependencies>
-        <deployment defaultVersion="1552" identifier="iOS"/>
+        <deployment defaultVersion="1536" identifier="iOS"/>
         <development version="4600" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--Live Map View Controller - Live Map-->
@@ -217,7 +217,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Cardinal Devs Website" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jO8-MB-kMz">
-                                                    <rect key="frame" x="-16" y="15" width="178" height="21"/>
+                                                    <rect key="frame" x="10" y="0.0" width="260" height="43"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -254,11 +254,86 @@
                         <segue destination="m8U-bF-w6W" kind="relationship" relationship="viewControllers" id="EBS-YV-beY"/>
                         <segue destination="WOD-0U-9bj" kind="relationship" relationship="viewControllers" id="dhP-WZ-Org"/>
                         <segue destination="q2g-sg-zhw" kind="relationship" relationship="viewControllers" id="Qbe-zN-WWz"/>
+                        <segue destination="KaK-cE-AXE" kind="modal" identifier="ShowAutoUpdateSplash" customClass="BlurryModalSegue" animates="NO" id="ryX-e1-KI4"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="40" y="1162"/>
+        </scene>
+        <!--Auto Update Splash Controller-->
+        <scene sceneID="bMi-P8-jkM">
+            <objects>
+                <viewController storyboardIdentifier="AutoUpdateSplash" id="KaK-cE-AXE" customClass="AutoUpdateSplashController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SCI-c9-1rY">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default-Blurred.png" translatesAutoresizingMaskIntoConstraints="NO" id="3Kp-g4-HJd">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="302" translatesAutoresizingMaskIntoConstraints="NO" id="LZW-FR-cmg">
+                                <rect key="frame" x="8" y="110" width="302" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="302" id="8hu-0q-yla"/>
+                                    <constraint firstAttribute="height" constant="44" id="sv8-kG-epe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="LgX-V3-ul7">
+                                <rect key="frame" x="142" y="222" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8qv-nl-Mcj">
+                                <rect key="frame" x="50" y="195" width="220" height="9"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="8K4-me-CAs"/>
+                                </constraints>
+                                <color key="progressTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="trackTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </progressView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Updating Shuttle Data..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="188" translatesAutoresizingMaskIntoConstraints="NO" id="y42-d8-4oD">
+                                <rect key="frame" x="65" y="26" width="188" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="188" id="bnT-HZ-tdN"/>
+                                    <constraint firstAttribute="height" constant="90" id="lAJ-al-gaZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="26"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="3Kp-g4-HJd" firstAttribute="leading" secondItem="SCI-c9-1rY" secondAttribute="leading" type="default" id="4MT-CL-2rX"/>
+                            <constraint firstItem="LZW-FR-cmg" firstAttribute="top" secondItem="SCI-c9-1rY" secondAttribute="top" constant="110" id="AZy-iq-eFS"/>
+                            <constraint firstItem="LZW-FR-cmg" firstAttribute="leading" secondItem="SCI-c9-1rY" secondAttribute="leading" constant="8" id="Hgf-A0-xz5"/>
+                            <constraint firstItem="y42-d8-4oD" firstAttribute="centerX" secondItem="LZW-FR-cmg" secondAttribute="centerX" type="default" id="LZF-Ej-8kL"/>
+                            <constraint firstAttribute="bottom" secondItem="3Kp-g4-HJd" secondAttribute="bottom" type="default" id="OOo-Ed-pZc"/>
+                            <constraint firstItem="3Kp-g4-HJd" firstAttribute="centerX" secondItem="8qv-nl-Mcj" secondAttribute="centerX" type="default" id="TPM-Dr-CFd"/>
+                            <constraint firstItem="3Kp-g4-HJd" firstAttribute="top" secondItem="SCI-c9-1rY" secondAttribute="top" type="default" id="apV-Pd-9cT"/>
+                            <constraint firstItem="LgX-V3-ul7" firstAttribute="top" secondItem="SCI-c9-1rY" secondAttribute="top" constant="222" id="dHQ-qa-xwo"/>
+                            <constraint firstItem="y42-d8-4oD" firstAttribute="top" secondItem="SCI-c9-1rY" secondAttribute="top" constant="26" id="szr-Kz-5wR"/>
+                            <constraint firstItem="8qv-nl-Mcj" firstAttribute="centerX" secondItem="LgX-V3-ul7" secondAttribute="centerX" type="default" id="tgi-LB-8KJ"/>
+                            <constraint firstItem="8qv-nl-Mcj" firstAttribute="top" secondItem="SCI-c9-1rY" secondAttribute="top" constant="195" id="zqE-7g-leN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressView" destination="8qv-nl-Mcj" id="EBa-Rb-E5K"/>
+                        <outlet property="spinner" destination="LgX-V3-ul7" id="SGw-fI-pJb"/>
+                        <outlet property="statusLabel" destination="LZW-FR-cmg" id="Rj7-Cq-nPR"/>
+                        <outlet property="view" destination="SCI-c9-1rY" id="5cZ-VP-cFL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OxO-sn-ZEZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46" y="1836"/>
         </scene>
         <!--Navigation Controller - Next Shuttle-->
         <scene sceneID="MLo-Gr-ook">
@@ -308,13 +383,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Stop" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9a-M3-vPR">
-                                            <rect key="frame" x="23" y="96" width="32" height="17"/>
+                                            <rect key="frame" x="10" y="5" width="32" height="17"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Distance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaQ-ZY-8EP">
-                                            <rect key="frame" x="-71" y="-47" width="57" height="17"/>
+                                            <rect key="frame" x="10" y="22" width="57" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -354,7 +429,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9r-Yf-Sr0">
-                                            <rect key="frame" x="-29" y="-87" width="29" height="17"/>
+                                            <rect key="frame" x="10" y="0.0" width="280" height="43"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -408,7 +483,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Add Favorite Stop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pC0-sn-hku">
-                                            <rect key="frame" x="82" y="4" width="143" height="21"/>
+                                            <rect key="frame" x="10" y="0.0" width="280" height="43"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -425,7 +500,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="View on Map" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="409-b8-HBW">
-                                            <rect key="frame" x="-1" y="26" width="102" height="21"/>
+                                            <rect key="frame" x="10" y="0.0" width="280" height="43"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -442,13 +517,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8EQ-zJ-z5Z">
-                                            <rect key="frame" x="73" y="96" width="40" height="20"/>
+                                            <rect key="frame" x="10" y="12" width="40" height="20"/>
                                             <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Line" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JsY-5E-HI8">
-                                            <rect key="frame" x="-35" y="-71" width="32" height="20"/>
+                                            <rect key="frame" x="258" y="12" width="32" height="20"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                             <color key="textColor" red="0.2196078431372549" green="0.32941176470588235" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -498,6 +573,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Default-Blurred.png" width="320" height="480"/>
         <image name="info.png" width="32" height="32"/>
         <image name="location.png" width="32" height="32"/>
         <image name="stanford_s.png" width="370" height="479"/>

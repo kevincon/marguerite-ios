@@ -7,10 +7,16 @@
 //
 
 #import "AppDelegate.h"
-#import "GTFSDatabase.h"
 #import <GoogleMaps/GoogleMaps.h>
 #import "secrets.h"
 #import "MUtil.h"
+#import "AutoUpdateSplashController.h"
+
+@interface AppDelegate()
+
+@property (nonatomic, strong) AutoUpdateSplashController* updateSplashController;
+
+@end
 
 @implementation AppDelegate
 
@@ -26,23 +32,7 @@
     [Instabug setCommentIsRequired:YES];
     [Instabug setColorTheme:InstabugColorThemeRed];
     [Instabug setHeaderColor:[MUtil colorFromHexString:@"8C1515"]];
-    
-    // Copy gfts.db file from app bundle to Caches directory or create gtfs.db if needed
-    if ([GTFSDatabase existsInBundle]) {
-        if ([GTFSDatabase cacheFileIsStale]) {
-            NSLog(@"GTFS file stale in Caches.");
-            if (![GTFSDatabase copyToCache]) {
-                [GTFSDatabase create];
-            } else {
-                NSLog(@"Copied GTFS file from bundle to Caches.");
-            }
-        }
-    } else {
-        [GTFSDatabase create];
-    }
-    
     [GMSServices provideAPIKey:GOOGLE_MAPS_API_KEY];
-    
     return YES;
 }
 
@@ -66,6 +56,13 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    if (!_autoUpdateInProgress) {
+        _autoUpdateInProgress = YES;
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
+        _updateSplashController = [sb instantiateViewControllerWithIdentifier:@"AutoUpdateSplash"];
+        _updateSplashController.modalPresentationStyle = UIModalPresentationFullScreen;
+        [_window.rootViewController presentViewController:_updateSplashController animated:NO completion:nil];
+    }
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

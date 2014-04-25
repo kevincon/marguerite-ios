@@ -11,7 +11,7 @@
 #import "CSVParser.h"
 #import "Route.h"
 #import "StopTime.h"
-#import "Util.h"
+#import "GTFSDatabase.h"
 
 @interface Stop ()
 {
@@ -35,7 +35,7 @@
 - (void)addStop:(Stop *)stop
 {
     if (db==nil) {
-        db = [FMDatabase databaseWithPath:[Util getDatabaseCachePath]];
+        db = [FMDatabase databaseWithPath:[GTFSDatabase getNewAutoUpdateDatabaseBuildPath]];
         if (![db open]) {
             NSLog(@"Could not open db.");
             return;
@@ -60,7 +60,7 @@
 - (void)cleanupAndCreate
 {
     if (db==nil) {
-        db = [FMDatabase databaseWithPath:[Util getDatabaseCachePath]];
+        db = [FMDatabase databaseWithPath:[GTFSDatabase getNewAutoUpdateDatabaseBuildPath]];
         if (![db open]) {
             NSLog(@"Could not open db.");
             return;
@@ -108,7 +108,7 @@
 - (void)updateStopWithRoutes:(NSArray *)route withStopId:(NSString *)stopId
 {
     if (db==nil) {
-        db = [FMDatabase databaseWithPath:[Util getDatabaseCachePath]];
+        db = [FMDatabase databaseWithPath:[GTFSDatabase getNewAutoUpdateDatabaseBuildPath]];
         if (![db open]) {
             NSLog(@"Could not open db.");
             return;
@@ -163,7 +163,7 @@
     
     NSMutableArray *stops = [[NSMutableArray alloc] init];
     
-    FMDatabase *localdb = [FMDatabase databaseWithPath:[Util getDatabaseCachePath]];
+    FMDatabase *localdb = [FMDatabase databaseWithPath:[GTFSDatabase getNewAutoUpdateDatabaseBuildPath]];
     
     [localdb setShouldCacheStatements:YES];
     if (![localdb open]) {

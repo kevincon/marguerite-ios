@@ -145,6 +145,12 @@
 		F471C4DB178DF660005583A4 /* StopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F471C4DA178DF660005583A4 /* StopViewController.m */; };
 		F48BD72B17CC6426009630BE /* MRoutePolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = F48BD72A17CC6426009630BE /* MRoutePolyline.m */; };
 		F4F555D417D71BAE00301597 /* busstop.png in Resources */ = {isa = PBXBuildFile; fileRef = F4F555D317D71BAE00301597 /* busstop.png */; };
+		F8FADC68190B07A5009BCAA3 /* Default-Blurred-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8FADC65190B07A5009BCAA3 /* Default-Blurred-568h@2x.png */; };
+		F8FADC69190B07A5009BCAA3 /* Default-Blurred.png in Resources */ = {isa = PBXBuildFile; fileRef = F8FADC66190B07A5009BCAA3 /* Default-Blurred.png */; };
+		F8FADC6A190B07A5009BCAA3 /* Default-Blurred@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8FADC67190B07A5009BCAA3 /* Default-Blurred@2x.png */; };
+		F8FADC71190B07CA009BCAA3 /* AutoUpdateSplashController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FADC6C190B07CA009BCAA3 /* AutoUpdateSplashController.m */; };
+		F8FADC72190B07CA009BCAA3 /* DataDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FADC6E190B07CA009BCAA3 /* DataDownloader.m */; };
+		F8FADC73190B07CA009BCAA3 /* GTFSUnarchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FADC70190B07CA009BCAA3 /* GTFSUnarchiver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -327,6 +333,15 @@
 		F48BD72917CC6426009630BE /* MRoutePolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRoutePolyline.h; path = classes/MRoutePolyline.h; sourceTree = "<group>"; };
 		F48BD72A17CC6426009630BE /* MRoutePolyline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MRoutePolyline.m; path = classes/MRoutePolyline.m; sourceTree = "<group>"; };
 		F4F555D317D71BAE00301597 /* busstop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = busstop.png; path = images/map/busstop.png; sourceTree = "<group>"; };
+		F8FADC65190B07A5009BCAA3 /* Default-Blurred-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Blurred-568h@2x.png"; path = "images/Default-Blurred-568h@2x.png"; sourceTree = "<group>"; };
+		F8FADC66190B07A5009BCAA3 /* Default-Blurred.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Blurred.png"; path = "images/Default-Blurred.png"; sourceTree = "<group>"; };
+		F8FADC67190B07A5009BCAA3 /* Default-Blurred@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Blurred@2x.png"; path = "images/Default-Blurred@2x.png"; sourceTree = "<group>"; };
+		F8FADC6B190B07CA009BCAA3 /* AutoUpdateSplashController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoUpdateSplashController.h; path = classes/AutoUpdateSplashController.h; sourceTree = "<group>"; };
+		F8FADC6C190B07CA009BCAA3 /* AutoUpdateSplashController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AutoUpdateSplashController.m; path = classes/AutoUpdateSplashController.m; sourceTree = "<group>"; };
+		F8FADC6D190B07CA009BCAA3 /* DataDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataDownloader.h; path = classes/DataDownloader.h; sourceTree = "<group>"; };
+		F8FADC6E190B07CA009BCAA3 /* DataDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataDownloader.m; path = classes/DataDownloader.m; sourceTree = "<group>"; };
+		F8FADC6F190B07CA009BCAA3 /* GTFSUnarchiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTFSUnarchiver.h; path = classes/GTFSUnarchiver.h; sourceTree = "<group>"; };
+		F8FADC70190B07CA009BCAA3 /* GTFSUnarchiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTFSUnarchiver.m; path = classes/GTFSUnarchiver.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -364,6 +379,9 @@
 		F41231CF17A3CCF300604A02 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				F8FADC65190B07A5009BCAA3 /* Default-Blurred-568h@2x.png */,
+				F8FADC66190B07A5009BCAA3 /* Default-Blurred.png */,
+				F8FADC67190B07A5009BCAA3 /* Default-Blurred@2x.png */,
 				F471C3EA178B7D60005583A4 /* Default.png */,
 				F471C3EC178B7D60005583A4 /* Default@2x.png */,
 				F471C3EE178B7D60005583A4 /* Default-568h@2x.png */,
@@ -463,34 +481,11 @@
 		F412321917A3CE7700604A02 /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				F8B98C3E190B12FD000F6302 /* Controllers */,
+				F8B98C3F190B1313000F6302 /* Utils */,
+				F8B98C3D190B12F1000F6302 /* Model */,
 				F471C3E7178B7D60005583A4 /* AppDelegate.h */,
 				F471C3E8178B7D60005583A4 /* AppDelegate.m */,
-				F4592EF4179B866A00579D6B /* MRoute.h */,
-				F4592EF5179B866A00579D6B /* MRoute.m */,
-				F4592EFB179CA60900579D6B /* GTFSDatabase.h */,
-				F4592EFC179CA60900579D6B /* GTFSDatabase.m */,
-				F4592EFE179DE28D00579D6B /* MRealtimeBus.h */,
-				F4592EFF179DE28D00579D6B /* MRealtimeBus.m */,
-				F4592F01179F7A5200579D6B /* MStop.h */,
-				F4592F02179F7A5200579D6B /* MStop.m */,
-				F4592F04179FBCDD00579D6B /* MStopTime.h */,
-				F4592F05179FBCDE00579D6B /* MStopTime.m */,
-				F4592E591795E79B00579D6B /* LiveMapViewController.h */,
-				F4592E5A1795E79C00579D6B /* LiveMapViewController.m */,
-				F41231CA17A397FA00604A02 /* AboutViewController.h */,
-				F41231CB17A397FB00604A02 /* AboutViewController.m */,
-				F471C4C0178B89B3005583A4 /* NextShuttleViewController.h */,
-				F471C4C1178B89B3005583A4 /* NextShuttleViewController.m */,
-				F471C4D9178DF660005583A4 /* StopViewController.h */,
-				F471C4DA178DF660005583A4 /* StopViewController.m */,
-				F471C4AF178B81C8005583A4 /* CoreLocationController.h */,
-				F4592E5C1795E7C300579D6B /* RealtimeBuses.h */,
-				F4592E5D1795E7C300579D6B /* RealtimeBuses.m */,
-				F4592EF8179CA3C700579D6B /* MUtil.h */,
-				F4592EF9179CA3C700579D6B /* MUtil.m */,
-				F471C4B0178B81C8005583A4 /* CoreLocationController.m */,
-				F48BD72917CC6426009630BE /* MRoutePolyline.h */,
-				F48BD72A17CC6426009630BE /* MRoutePolyline.m */,
 			);
 			name = classes;
 			sourceTree = "<group>";
@@ -674,6 +669,59 @@
 			name = libraries;
 			sourceTree = "<group>";
 		};
+		F8B98C3D190B12F1000F6302 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4592EF4179B866A00579D6B /* MRoute.h */,
+				F4592EF5179B866A00579D6B /* MRoute.m */,
+				F4592EFE179DE28D00579D6B /* MRealtimeBus.h */,
+				F4592EFF179DE28D00579D6B /* MRealtimeBus.m */,
+				F4592F01179F7A5200579D6B /* MStop.h */,
+				F4592F02179F7A5200579D6B /* MStop.m */,
+				F4592F04179FBCDD00579D6B /* MStopTime.h */,
+				F4592F05179FBCDE00579D6B /* MStopTime.m */,
+				F4592E5C1795E7C300579D6B /* RealtimeBuses.h */,
+				F4592E5D1795E7C300579D6B /* RealtimeBuses.m */,
+				F4592EF8179CA3C700579D6B /* MUtil.h */,
+				F4592EF9179CA3C700579D6B /* MUtil.m */,
+				F48BD72917CC6426009630BE /* MRoutePolyline.h */,
+				F48BD72A17CC6426009630BE /* MRoutePolyline.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F8B98C3E190B12FD000F6302 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F8FADC6B190B07CA009BCAA3 /* AutoUpdateSplashController.h */,
+				F8FADC6C190B07CA009BCAA3 /* AutoUpdateSplashController.m */,
+				F4592E591795E79B00579D6B /* LiveMapViewController.h */,
+				F4592E5A1795E79C00579D6B /* LiveMapViewController.m */,
+				F41231CA17A397FA00604A02 /* AboutViewController.h */,
+				F41231CB17A397FB00604A02 /* AboutViewController.m */,
+				F471C4C0178B89B3005583A4 /* NextShuttleViewController.h */,
+				F471C4C1178B89B3005583A4 /* NextShuttleViewController.m */,
+				F471C4D9178DF660005583A4 /* StopViewController.h */,
+				F471C4DA178DF660005583A4 /* StopViewController.m */,
+				F471C4AF178B81C8005583A4 /* CoreLocationController.h */,
+				F471C4B0178B81C8005583A4 /* CoreLocationController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F8B98C3F190B1313000F6302 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F8FADC6D190B07CA009BCAA3 /* DataDownloader.h */,
+				F8FADC6E190B07CA009BCAA3 /* DataDownloader.m */,
+				F8FADC6F190B07CA009BCAA3 /* GTFSUnarchiver.h */,
+				F8FADC70190B07CA009BCAA3 /* GTFSUnarchiver.m */,
+				F4592EFB179CA60900579D6B /* GTFSDatabase.h */,
+				F4592EFC179CA60900579D6B /* GTFSDatabase.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -704,6 +752,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Cardinal Devs";
+				TargetAttributes = {
+					F471C3D4178B7D5F005583A4 = {
+						DevelopmentTeam = EH6NZJB7YP;
+					};
+				};
 			};
 			buildConfigurationList = F471C3D0178B7D5F005583A4 /* Build configuration list for PBXProject "marguerite" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -737,6 +790,7 @@
 				F45145F618387363000D6E7F /* N.png in Resources */,
 				F471C3EF178B7D60005583A4 /* Default-568h@2x.png in Resources */,
 				F45145FA18387363000D6E7F /* RP.png in Resources */,
+				F8FADC68190B07A5009BCAA3 /* Default-Blurred-568h@2x.png in Resources */,
 				F451460218387363000D6E7F /* X.png in Resources */,
 				F4135310187D20E20070DD45 /* stops.txt in Resources */,
 				F45145ED18387363000D6E7F /* AWE.png in Resources */,
@@ -761,6 +815,7 @@
 				F4592EC8179A83ED00579D6B /* time.png in Resources */,
 				F4592ECA179A83FB00579D6B /* directions-alt.png in Resources */,
 				F45145EF18387363000D6E7F /* C-LIM.png in Resources */,
+				F8FADC69190B07A5009BCAA3 /* Default-Blurred.png in Resources */,
 				F4592ECC179A840800579D6B /* location.png in Resources */,
 				F45145FD18387363000D6E7F /* SLAC.png in Resources */,
 				F45145EC18387363000D6E7F /* 1050A.png in Resources */,
@@ -778,6 +833,7 @@
 				F451462B183878E3000D6E7F /* O@2x.png in Resources */,
 				F4135313187D22460070DD45 /* gtfs.db in Resources */,
 				F4592ED6179A846200579D6B /* location@2x.png in Resources */,
+				F8FADC6A190B07A5009BCAA3 /* Default-Blurred@2x.png in Resources */,
 				F451460118387363000D6E7F /* X-EXP.png in Resources */,
 				F45145F118387363000D6E7F /* EB-EX.png in Resources */,
 				F4514623183878E3000D6E7F /* C-LIM@2x.png in Resources */,
@@ -849,10 +905,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8FADC73190B07CA009BCAA3 /* GTFSUnarchiver.m in Sources */,
 				F471C3E5178B7D5F005583A4 /* main.m in Sources */,
 				F471C3E9178B7D60005583A4 /* AppDelegate.m in Sources */,
 				F471C48E178B800C005583A4 /* CSVImporter.m in Sources */,
 				F471C490178B800C005583A4 /* CSVParser.m in Sources */,
+				F8FADC72190B07CA009BCAA3 /* DataDownloader.m in Sources */,
 				F471C491178B800C005583A4 /* FMDatabase.m in Sources */,
 				F471C492178B800C005583A4 /* FMDatabaseAdditions.m in Sources */,
 				F471C493178B800C005583A4 /* FMDatabasePool.m in Sources */,
@@ -866,6 +924,7 @@
 				F471C49B178B800C005583A4 /* Route.m in Sources */,
 				F471C49C178B800C005583A4 /* Shape.m in Sources */,
 				F471C49D178B800C005583A4 /* Stop.m in Sources */,
+				F8FADC71190B07CA009BCAA3 /* AutoUpdateSplashController.m in Sources */,
 				F471C49E178B800C005583A4 /* StopTime.m in Sources */,
 				F471C49F178B800C005583A4 /* Trip.m in Sources */,
 				F471C4A0178B800C005583A4 /* Util.m in Sources */,
@@ -922,8 +981,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Stanford University";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Stanford University";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sandeep Nain (MNDAY7BEV6)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -937,12 +996,12 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = NO;
-				PROVISIONING_PROFILE = "6E9DF81D-DC56-4C28-BE8D-6EC878814FFD";
-				SDKROOT = iphoneos6.1;
+				PROVISIONING_PROFILE = "96CD7B95-A7D4-4D72-8F0C-F357A7FC5AA6";
+				SDKROOT = iphoneos7.1;
 				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = "armv7 armv7s i386";
+				VALID_ARCHS = "armv7 armv7s i386 arm64";
 			};
 			name = Debug;
 		};
@@ -958,22 +1017,22 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Stanford University";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Stanford University";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sandeep Nain (MNDAY7BEV6)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREFIX_HEADER = "marguerite-Prefix.pch";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "6E9DF81D-DC56-4C28-BE8D-6EC878814FFD";
-				SDKROOT = iphoneos6.1;
+				PROVISIONING_PROFILE = "96CD7B95-A7D4-4D72-8F0C-F357A7FC5AA6";
+				SDKROOT = iphoneos7.1;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "armv7 armv7s i386";
+				VALID_ARCHS = "armv7 armv7s i386 arm64";
 			};
 			name = Release;
 		};
@@ -981,8 +1040,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 70CE5BB07FB64AA48B3AE676 /* Pods.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Kevin Conley (34A688L22V)";
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sandeep Nain (MNDAY7BEV6)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -993,14 +1053,15 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "marguerite-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/marguerite-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = Marguerite;
-				PROVISIONING_PROFILE = "6E9DF81D-DC56-4C28-BE8D-6EC878814FFD";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6E9DF81D-DC56-4C28-BE8D-6EC878814FFD";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "96CD7B95-A7D4-4D72-8F0C-F357A7FC5AA6";
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = "armv7 i386";
+				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1009,9 +1070,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 70CE5BB07FB64AA48B3AE676 /* Pods.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Stanford University";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Stanford University";
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sandeep Nain (MNDAY7BEV6)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -1022,14 +1083,15 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "marguerite-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/marguerite-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = Marguerite;
-				PROVISIONING_PROFILE = "7B1F942E-E30E-4F58-806F-1ACBE8931102";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7B1F942E-E30E-4F58-806F-1ACBE8931102";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "96CD7B95-A7D4-4D72-8F0C-F357A7FC5AA6";
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = "armv7 i386";
+				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

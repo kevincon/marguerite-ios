@@ -29,6 +29,8 @@
 
 @implementation NextShuttleViewController
 
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -46,19 +48,7 @@
                 forControlEvents:UIControlEventValueChanged];
     self.refreshControl = refresh;
     
-    allStops = [MStop getAllStops];
-    
-    // Sort the stops alphabetically by name
-    allStops = [allStops sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
-        MStop *firstStop = (MStop *) a;
-        MStop *secondStop = (MStop *) b;
-        
-        return [firstStop.stopName caseInsensitiveCompare:secondStop.stopName];
-    }];
-    
-    [self updateLocation];
-    [self.tableView reloadData];
-
+    [self loadAndSortAllStops];
 }
 
 - (void) viewWillAppear:(BOOL)animated
@@ -73,6 +63,9 @@
 -(void)refreshView:(UIRefreshControl *)refresh {
     refresh.attributedTitle = [[NSAttributedString alloc] initWithString:@"Refreshing data..."];
 
+    [self loadAndSortAllStops];
+    [self.tableView reloadData];
+    
     [self updateLocation];
 
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
@@ -268,4 +261,18 @@ shouldReloadTableForSearchString:(NSString *)searchString
 //    [errorAlert show];
 }
 
+#pragma mark - private methods
+
+- (void)loadAndSortAllStops
+{
+    allStops = [MStop getAllStops];
+    
+    // Sort the stops alphabetically by name
+    allStops = [allStops sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
+        MStop *firstStop = (MStop *) a;
+        MStop *secondStop = (MStop *) b;
+        
+        return [firstStop.stopName caseInsensitiveCompare:secondStop.stopName];
+    }];
+}
 @end

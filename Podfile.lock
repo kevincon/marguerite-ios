@@ -1,40 +1,33 @@
 PODS:
-  - AFHTTPFileUpdateOperation (0.0.1):
-    - AFNetworking (~> 1.0)
-    - SAMWeak
-  - AFNetworking (1.3.3)
   - ASIHTTPRequest (1.8.1):
     - ASIHTTPRequest/ASIWebPageRequest
     - ASIHTTPRequest/CloudFiles
+    - ASIHTTPRequest/Core
     - ASIHTTPRequest/S3
-    - Reachability
   - ASIHTTPRequest/ASIWebPageRequest (1.8.1):
-    - Reachability
+    - ASIHTTPRequest/Core
   - ASIHTTPRequest/CloudFiles (1.8.1):
+    - ASIHTTPRequest/Core
+  - ASIHTTPRequest/Core (1.8.1):
     - Reachability
   - ASIHTTPRequest/S3 (1.8.1):
-    - Reachability
+    - ASIHTTPRequest/Core
   - GCDiscreetNotificationView (1.0.2)
   - Google-Maps-iOS-SDK (1.6.1)
   - Reachability (3.1.1)
-  - SAMWeak (0.0.1)
   - SSZipArchive (0.3.1)
 
 DEPENDENCIES:
-  - AFHTTPFileUpdateOperation
   - ASIHTTPRequest
   - GCDiscreetNotificationView
   - Google-Maps-iOS-SDK
   - SSZipArchive
 
 SPEC CHECKSUMS:
-  AFHTTPFileUpdateOperation: c6c0103012d12de4e917b43b99c2bdd257127de7
-  AFNetworking: 61fdd49e2ffe6380378df37b3b6e70630bb9dd66
-  ASIHTTPRequest: 162783e0cd71bdd3ff1ceed0cd5fa9505e0116a8
-  GCDiscreetNotificationView: ca4a876d0eb65950f166eda41525c648044f00d3
-  Google-Maps-iOS-SDK: 29876f757dd2c9b61236a0940e629005ad3ad811
+  ASIHTTPRequest: c5df4900c0dcfcf02226fd96b202f4b6caf989d4
+  GCDiscreetNotificationView: fafa2d892778fc56fde381af15468c42b86b63f2
+  Google-Maps-iOS-SDK: 1817a491916cfbb94217859730a0904a3cfdb93f
   Reachability: be4883bb93f31e38266ae3365e5600a317aae735
-  SAMWeak: 745e9ac6de95f3d133e7556cbd458d8a4bee4225
-  SSZipArchive: 47d0589a15452311749a4eeecb97e12800d127de
+  SSZipArchive: 5479ec96c412904a987a3ae3180d65234aa46b6e
 
-COCOAPODS: 0.29.0
+COCOAPODS: 0.32.1

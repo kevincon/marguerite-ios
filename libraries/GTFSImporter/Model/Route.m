@@ -9,7 +9,7 @@
 #import "Route.h"
 #import "CSVParser.h"
 #import "FMDatabase.h"
-#import "Util.h"
+#import "GTFSDatabase.h"
 
 @interface Route ()
 {
@@ -33,7 +33,7 @@
 - (void)addRoute:(Route *)route
 {
     if (db==nil) {
-        db = [FMDatabase databaseWithPath:[Util getDatabaseCachePath]];
+        db = [FMDatabase databaseWithPath:[GTFSDatabase getNewAutoUpdateDatabaseBuildPath]];
         if (![db open]) {
             NSLog(@"Could not open db.");
             return;
@@ -59,7 +59,7 @@
 - (void)cleanupAndCreate
 {
     if (db==nil) {
-        db = [FMDatabase databaseWithPath:[Util getDatabaseCachePath]];
+        db = [FMDatabase databaseWithPath:[GTFSDatabase getNewAutoUpdateDatabaseBuildPath]];
         if (![db open]) {
             NSLog(@"Could not open db.");
             return;
@@ -107,7 +107,7 @@
     
     NSMutableArray *routes = [[NSMutableArray alloc] init];
     
-    FMDatabase *localdb = [FMDatabase databaseWithPath:[Util getDatabaseCachePath]];
+    FMDatabase *localdb = [FMDatabase databaseWithPath:[GTFSDatabase getNewAutoUpdateDatabaseBuildPath]];
     
     [localdb setShouldCacheStatements:YES];
     if (![localdb open]) {

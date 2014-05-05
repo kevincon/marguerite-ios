@@ -14,11 +14,6 @@
 
 @implementation Util
 
-+ (NSString *) getDatabaseCachePath
-{
-    return [GTFSDatabase getCachePath];
-}
-
 /*
  Convert meters to miles.
  */

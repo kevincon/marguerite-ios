@@ -7,7 +7,7 @@
 #import "Shape.h"
 #import "CSVParser.h"
 #import "FMDatabase.h"
-#import "Util.h"
+#import "GTFSDatabase.h"
 
 @interface Shape ()
 {
@@ -31,7 +31,7 @@
 - (void)addShape:(Shape *)shape
 {
     if (db==nil) {
-        db = [FMDatabase databaseWithPath:[Util getDatabaseCachePath]];
+        db = [FMDatabase databaseWithPath:[GTFSDatabase getNewAutoUpdateDatabaseBuildPath]];
         if (![db open]) {
             NSLog(@"Could not open db.");
             return;
@@ -55,7 +55,7 @@
 - (void)cleanupAndCreate
 {
     if (db==nil) {
-        db = [FMDatabase databaseWithPath:[Util getDatabaseCachePath]];
+        db = [FMDatabase databaseWithPath:[GTFSDatabase getNewAutoUpdateDatabaseBuildPath]];
         if (![db open]) {
             NSLog(@"Could not open db.");
             return;

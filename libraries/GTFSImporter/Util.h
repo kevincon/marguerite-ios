@@ -11,7 +11,6 @@
 
 @interface Util : NSObject
 
-+ (NSString *) getDatabaseCachePath;
 + (double) ApproximateDistanceWithLat1:(double)lat1 withLon1:(double)lon1 withLat2:(double)lat2 withLon2:(double)lon2;
 + (double) ApproximateDistanceBetweenStop1:(CLLocation *)stop1 stop2:(CLLocation *)stop2;
 + (NSNumber *) TimeToSecondsSinceMidnight:(NSString *)time;

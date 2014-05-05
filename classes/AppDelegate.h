@@ -10,6 +10,7 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
+@property (assign, nonatomic) BOOL autoUpdateInProgress;
 @property (strong, nonatomic) UIWindow *window;
 
 @end

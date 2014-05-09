@@ -10,7 +10,8 @@
 
 @interface AutoUpdateSplashController : UIViewController
 
-@property (nonatomic, strong) IBOutlet UILabel* statusLabel;
+@property (nonatomic, strong) IBOutlet UILabel* mainStatusLabel;
+@property (nonatomic, strong) IBOutlet UILabel* currentActionLabel;
 @property (nonatomic, strong) IBOutlet UIActivityIndicatorView* spinner;
 @property (nonatomic, strong) IBOutlet UIProgressView* progressView;
 

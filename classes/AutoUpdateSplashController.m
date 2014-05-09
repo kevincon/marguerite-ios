@@ -12,6 +12,7 @@
 #import "GTFSDatabase.h"
 #import "AppDelegate.h"
 #import "DataDownloader.h"
+#import "Constants.h"
 
 @interface AutoUpdateSplashController ()<GTFSDatabaseCreationProgressDelegate, DataDownloadDone>
 
@@ -54,13 +55,15 @@
 
 - (void) dataDownloadDone:(NSData*)data {
     NSLog(@"updatedData downloaded");
-    self.statusLabel.text = @"Updating GTFS database";
+    _currentActionLabel.text = @"Updating GTFS database";
+    _mainStatusLabel.text = @"Updating schedule data...";
     dispatch_queue_t dbUpdateQ = dispatch_queue_create("GTFS DB UPDATE", NULL);
     dispatch_async(dbUpdateQ, ^ {
         BOOL updateSuccess = [gtfsUpdater unzipTransitZipFile] && [GTFSDatabase create:self];
         BOOL activateSuccess = [GTFSDatabase activateNewAutoUpdateBuildIfAvailable];
         dispatch_async(dispatch_get_main_queue(), ^ {
             if (updateSuccess && activateSuccess) {
+                [[NSUserDefaults standardUserDefaults] setObject:[NSDate date] forKey:GTFS_DB_LAST_UPDATE_DATE_KEY];
                 [self finishedAutoUpdate];
             } else {
                 [self showErrorAlert:@"Error updating and activating data. Will retry next launch."];
@@ -89,7 +92,7 @@
 
 - (void) updatingStepNumber:(NSInteger)currentStep outOfTotalSteps:(NSInteger)totalSteps currentStepLabel:(NSString*)stepDesc {
     dispatch_async(dispatch_get_main_queue(), ^ {
-        self.statusLabel.text = stepDesc;
+        self.currentActionLabel.text = stepDesc;
         self.progressView.progress = (float)currentStep / (float)totalSteps;
         if (currentStep==totalSteps) {
             [self.spinner stopAnimating];

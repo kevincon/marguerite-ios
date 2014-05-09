@@ -67,13 +67,14 @@
         <!--About View Controller - About-->
         <scene sceneID="P7h-dL-Ugu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZJj-Ez-7M2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="q2g-sg-zhw" customClass="AboutViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="2I1-19-HQi">
                         <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
-                            <tableViewSection headerTitle="App Feedback/Status" footerTitle="Schedules last updated on January 7." id="1WK-Ao-EDU">
+                            <tableViewSection headerTitle="App Feedback/Status" id="1WK-Ao-EDU">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="tWD-pn-XSj" style="IBUITableViewCellStyleDefault" id="h9W-hi-fEf">
                                         <rect key="frame" x="0.0" y="46" width="320" height="45"/>
@@ -111,10 +112,10 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Contact Marguerite" footerTitle="Unclaimed items donated after 30 days." id="r30-JY-vt6">
+                            <tableViewSection headerTitle="Contact Marguerite" id="r30-JY-vt6">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="gGU-TT-219" detailTextLabel="S7I-WI-ibR" style="IBUITableViewCellStyleValue1" id="ndZ-ah-gsC">
-                                        <rect key="frame" x="0.0" y="212" width="320" height="45"/>
+                                        <rect key="frame" x="0.0" y="182" width="320" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="1" width="280" height="43"/>
@@ -137,7 +138,7 @@
                                         </view>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="fYS-fl-WVC" detailTextLabel="wh3-Hv-a3m" style="IBUITableViewCellStyleValue1" id="3Xt-QD-m1Z">
-                                        <rect key="frame" x="0.0" y="257" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="227" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="0.0" width="280" height="43"/>
@@ -160,7 +161,7 @@
                                         </view>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="gEu-lU-gpJ" style="IBUITableViewCellStyleDefault" id="He3-hh-rGR">
-                                        <rect key="frame" x="0.0" y="301" width="320" height="45"/>
+                                        <rect key="frame" x="0.0" y="271" width="320" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="0.0" width="280" height="43"/>
@@ -178,13 +179,13 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Marguerite for iPhone" footerTitle="This app is open-source. All of the code is available on Github, and anyone can contribute to improving the app." id="AHO-R3-S8z">
+                            <tableViewSection headerTitle="Marguerite for iPhone" id="AHO-R3-S8z">
                                 <cells/>
                             </tableViewSection>
                             <tableViewSection id="2HF-Ac-6zS">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Kb6-WN-EM2" style="IBUITableViewCellStyleDefault" id="lOv-eA-925">
-                                        <rect key="frame" x="0.0" y="508" width="320" height="46"/>
+                                        <rect key="frame" x="0.0" y="382" width="320" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="1" width="280" height="43"/>
@@ -204,13 +205,12 @@
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="Created by Cardinal Devs" id="2aG-SP-KgZ">
-                                <string key="footerTitle">Cardinal Devs is an upcoming student organization that develops, maintains, and improves open-source, student-run technology at Stanford University. Applications for new members are accepted at the start of each quarter.</string>
                                 <cells/>
                             </tableViewSection>
                             <tableViewSection id="myU-Uu-S63">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="jO8-MB-kMz" style="IBUITableViewCellStyleDefault" id="xJX-Fh-UqK">
-                                        <rect key="frame" x="0.0" y="740" width="320" height="46"/>
+                                        <rect key="frame" x="0.0" y="494" width="320" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="1" width="280" height="43"/>
@@ -236,7 +236,6 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="About" image="info.png" id="bfv-gW-x9c"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZJj-Ez-7M2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="693" y="1836"/>
         </scene>
@@ -298,7 +297,7 @@
                                 <color key="progressTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="trackTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </progressView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Updating Shuttle Data..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="188" translatesAutoresizingMaskIntoConstraints="NO" id="y42-d8-4oD">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checking for schedule updates..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="188" translatesAutoresizingMaskIntoConstraints="NO" id="y42-d8-4oD">
                                 <rect key="frame" x="65" y="26" width="188" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
@@ -325,9 +324,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="currentActionLabel" destination="LZW-FR-cmg" id="Q8S-Os-Yol"/>
+                        <outlet property="mainStatusLabel" destination="y42-d8-4oD" id="08v-9I-oUh"/>
                         <outlet property="progressView" destination="8qv-nl-Mcj" id="EBa-Rb-E5K"/>
                         <outlet property="spinner" destination="LgX-V3-ul7" id="SGw-fI-pJb"/>
-                        <outlet property="statusLabel" destination="LZW-FR-cmg" id="Rj7-Cq-nPR"/>
                         <outlet property="view" destination="SCI-c9-1rY" id="5cZ-VP-cFL"/>
                     </connections>
                 </viewController>

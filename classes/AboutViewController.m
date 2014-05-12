@@ -70,10 +70,6 @@
         return @"Unclaimed items donated after 30 days.";
     } else if (section==2) {
         return @"This app is open-source. All of the code is available on Github, and anyone can contribute to improving the app.";
-    } else if (section==3) {
-        return @"This app is open-source. All of the code is available on Github, and anyone can contribute to improving the app.";
-    } else if (section==4) {
-        return @"Cardinal Devs is an upcoming student organization that develops, maintains, and improves open-source, student-run technology at Stanford University. Applications for new members are accepted at the start of each quarter.";
     }
     return @"";
 }

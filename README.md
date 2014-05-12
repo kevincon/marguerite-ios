@@ -1,4 +1,4 @@
-# Marguerite for iOS [![Build Status](https://travis-ci.org/cardinaldevs/marguerite-ios.png?branch=master)](https://travis-ci.org/cardinaldevs/marguerite-ios)
+# Marguerite for iOS [![Build Status](https://travis-ci.org/cardinaldevs/marguerite-ios.png?branch=develop)](https://travis-ci.org/cardinaldevs/marguerite-ios)
 
 Marguerite is an iPhone app that makes it easier for riders to use the free [Stanford Marguerite shuttle bus system](http://transportation.stanford.edu/marguerite/).
 

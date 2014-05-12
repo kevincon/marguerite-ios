@@ -63,7 +63,7 @@
         NSDate* lastUpdateDate = [[NSUserDefaults standardUserDefaults] objectForKey:GTFS_DB_LAST_UPDATE_DATE_KEY];
         if (lastUpdateDate!=nil) {
             NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
-            [dateFormatter setDateFormat:@"MMMM dd yyyy"];
+            [dateFormatter setDateFormat:@"MMMM dd, yyyy"];
             return [NSString stringWithFormat:@"Schedules last updated on %@",[dateFormatter stringFromDate:lastUpdateDate]];
         }
     } else if (section==1) {

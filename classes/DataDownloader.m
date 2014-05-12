@@ -20,6 +20,7 @@
 @property(nonatomic, strong, readonly) NSString * localPath;
 @property(nonatomic, strong) NSHTTPURLResponse* httpURLResponse;
 @property(nonatomic, weak) NSObject<DataDownloadDone>* dataDownloadDelegate;
+@property(nonatomic, strong) NSDate * lastModified;
 
 @end
 
@@ -33,6 +34,7 @@
 @synthesize connection;
 @synthesize notifiedDelegate;
 @synthesize localPath;
+@synthesize lastModified;
 
 - (NSDateFormatter*)dateFormatter {
     static dispatch_once_t onceToken;
@@ -94,11 +96,26 @@
     self.activeDownloadDataBuffer = nil;
 }
 
+- (NSDate *) getFileModifiedDate
+{
+    return self.lastModified;
+}
+
+
 #pragma mark -
 #pragma mark Download support (NSURLConnectionDelegate)
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
     self.httpURLResponse = (NSHTTPURLResponse*)response;
+    if (response) {
+        NSDictionary * headers = [self.httpURLResponse allHeaderFields];
+        NSString * last_modified = [NSString stringWithFormat:@"%@",
+                                    [headers objectForKey:@"Last-Modified"]];
+        if (last_modified) {
+            NSLog(@"GTFS zip file Last-Modified on server: %@", last_modified);
+            self.lastModified = [self dateFromStr:last_modified];
+        }
+    }
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data

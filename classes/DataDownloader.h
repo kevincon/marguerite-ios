@@ -23,5 +23,6 @@
 - (id) initWithURL:(NSURL*)url localPath:(NSString *)path downloadDelegate:(NSObject<DataDownloadDone>*)delegate;
 - (void) startDownload;
 - (void) cancelDownload;
+- (NSDate *) getFileModifiedDate;
 
 @end

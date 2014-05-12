@@ -63,7 +63,8 @@
         BOOL activateSuccess = [GTFSDatabase activateNewAutoUpdateBuildIfAvailable];
         dispatch_async(dispatch_get_main_queue(), ^ {
             if (updateSuccess && activateSuccess) {
-                [[NSUserDefaults standardUserDefaults] setObject:[NSDate date] forKey:GTFS_DB_LAST_UPDATE_DATE_KEY];
+                NSDate * date = [dataDownloader getFileModifiedDate];
+                [[NSUserDefaults standardUserDefaults] setObject:date forKey:GTFS_DB_LAST_UPDATE_DATE_KEY];
                 [self finishedAutoUpdate];
             } else {
                 [self showErrorAlert:@"Error updating and activating data. Will retry next launch."];

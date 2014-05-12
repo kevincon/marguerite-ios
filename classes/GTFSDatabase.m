@@ -94,7 +94,7 @@ BOOL static __isNewAutoUpdateTempDatabaseBuildInProgress;
     [importer addStopTime];
     
     NSLog(@"Vacumming...");
-    [creationProgressDelegate updatingStepNumber:8 outOfTotalSteps:12 currentStepLabel:@"Vacumming..."];
+    [creationProgressDelegate updatingStepNumber:8 outOfTotalSteps:12 currentStepLabel:@"Vacuuming..."];
     [importer vacuum];
     
     NSLog(@"Reindexing...");
@@ -107,7 +107,7 @@ BOOL static __isNewAutoUpdateTempDatabaseBuildInProgress;
     [importer addStopRoutes];
     
     NSLog(@"Vacumming...");
-    [creationProgressDelegate updatingStepNumber:11 outOfTotalSteps:12 currentStepLabel:@"Vacumming..."];
+    [creationProgressDelegate updatingStepNumber:11 outOfTotalSteps:12 currentStepLabel:@"Vacuuming..."];
     [importer vacuum];
     
     NSLog(@"Reindexing...");

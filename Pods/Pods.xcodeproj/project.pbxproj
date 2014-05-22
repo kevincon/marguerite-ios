@@ -7,949 +7,898 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04B948C69F434A069B8D54B1 /* ASICloudFilesContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = C22B45C65A8F408DA6DD36CF /* ASICloudFilesContainer.m */; };
-		055F49C8F2F74610B9454C20 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04DF6AA735D4F0CAD27EB02 /* GoogleMaps.framework */; };
-		086903721AC34EE5BA48D74A /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 794D8CEF8DBB440E9858E8AC /* zip.h */; };
-		0B3714F8D9FD473A99394FA3 /* Pods-SSZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F43D0B3F1F4E2A8F5D46F0 /* Pods-SSZipArchive-dummy.m */; };
-		0C8E699BFBC34258AF08477B /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C70EB1F1E79947EABFDE6E2C /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-O0"; }; };
-		0CBE841F354144A191FC3A2F /* ASICloudFilesContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 00ED03D9E1BC4711B4654B8B /* ASICloudFilesContainer.h */; };
-		0D0CDC050D524068A585E750 /* ASICacheDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 20BC2F81C42C4DBE86E0D269 /* ASICacheDelegate.h */; };
-		0F8EDE8DC01F4396A05DAEDC /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CD078C306F4061861B56F4 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		0FA4E71E00E5412186BF7F55 /* ASINetworkQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 6638F8168D6F412C9AF4E133 /* ASINetworkQueue.h */; };
-		1105909DF2BF43FCB19C782C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC273CFF93534881A20CA95F /* Foundation.framework */; };
-		13C4627FC122449DBA57252A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC273CFF93534881A20CA95F /* Foundation.framework */; };
-		15D36E642BF449B3963F7D2E /* GMSMutablePath.h in Headers */ = {isa = PBXBuildFile; fileRef = 7683FDC65E494BB196F0147D /* GMSMutablePath.h */; };
-		160AD22ED4F54E4AA14B4D22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC273CFF93534881A20CA95F /* Foundation.framework */; };
-		16C6A8FA041144E5A3226F11 /* Pods-Reachability-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A85113DFDFA94BE48773C62C /* Pods-Reachability-dummy.m */; };
-		1BB29E5627B6405F93A0C839 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 6A9BC242312049328B28AF42 /* unzip.c */; };
-		1D83D6B467FD4FB49E939DD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC273CFF93534881A20CA95F /* Foundation.framework */; };
-		1F2DFC0C32C7460EB58BC47A /* ASIDataCompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = 04F50DA4F4FA46A98BD59A41 /* ASIDataCompressor.h */; };
-		238270FF4F894AC3AE12D3F2 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7CAEE539D746469C2AB011 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		23A3560CF7874CBBA29A7017 /* ASIProgressDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 940251562E7C492C95AED581 /* ASIProgressDelegate.h */; };
-		272465381FCB4A2F8A1418F4 /* ASIS3BucketObject.h in Headers */ = {isa = PBXBuildFile; fileRef = F89F642275EA4453B7872584 /* ASIS3BucketObject.h */; };
-		27826D54AA794BD5ADBD0547 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CAD2B92EFC4656B2553E07 /* UIKit.framework */; };
-		28085A548FB2416094AD5EC4 /* GMSPanorama.h in Headers */ = {isa = PBXBuildFile; fileRef = 605977CC28D34EFEBDD347BF /* GMSPanorama.h */; };
-		2A19534163A84D69A4336DC7 /* ASIS3ObjectRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFA726D1ED144BB81C5C3AE /* ASIS3ObjectRequest.m */; };
-		3042503091E240259E2DDA59 /* ASIS3Request.h in Headers */ = {isa = PBXBuildFile; fileRef = 86B3E889BF074B16BCE8F783 /* ASIS3Request.h */; };
-		333338ACCE684940BA2646F5 /* ASICloudFilesObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C7CF64A3B564222BEB2E927 /* ASICloudFilesObject.h */; };
-		34E6772608AC4462AA111F4B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7AD437F7BB4858AAB87183 /* SystemConfiguration.framework */; };
-		3CD0D12A150D42F59A0F22DE /* GCDiscreetNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4093811B7484DE793193339 /* GCDiscreetNotificationView.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		3FED964A1AEC4A05858D19D3 /* GMSMarkerLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 15D2820AE9B849B488679CB4 /* GMSMarkerLayer.h */; };
-		402ACD0044FC4068BAF8719F /* GMSMarker.h in Headers */ = {isa = PBXBuildFile; fileRef = 75CD760566FC4ED6A2526A96 /* GMSMarker.h */; };
-		4068C185EF81432BA7203E8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC273CFF93534881A20CA95F /* Foundation.framework */; };
-		42551C885FDC4EA5962FDC0C /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D4D9703B5B43ECBAA44A34 /* ASIInputStream.m */; };
-		43AE45BA0DB64A6BB96B9AA1 /* ASIHTTPRequestConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = F51DF544D6004D5E8BF1D921 /* ASIHTTPRequestConfig.h */; };
-		455055E94A2947E3A4F82DF1 /* GMSURLTileLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8555DF4DC6F6417CB420A04E /* GMSURLTileLayer.h */; };
-		47EA5327C77248A6A6C41FBC /* ASINSXMLParserCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 373C173DDE8D4506B8B4C6D9 /* ASINSXMLParserCompat.h */; };
-		4CA274BA890A4B0C8B1D197D /* GMSCameraUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = E99A853910674CDC98A64289 /* GMSCameraUpdate.h */; };
-		4F6A49C28300495286AC57DA /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 181CA47A5E9048068D608F42 /* ImageIO.framework */; };
-		54E608C74DE34AE9ACD1425C /* ASICloudFilesCDNRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = C88980ADF41C4C609088A820 /* ASICloudFilesCDNRequest.h */; };
-		555BFD57607A46218596870C /* ASICloudFilesRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4133A83309B9457486057687 /* ASICloudFilesRequest.h */; };
-		55C610D64B5247C685550A3F /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B878A17AFE42BFAD5BA7A4 /* Pods-dummy.m */; };
-		5725F9AC99EF4B7FB383C3DB /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 1985488EA52B4199843A2797 /* SSZipArchive.h */; };
-		58E10A72E6184163B7ECDADD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 994607121E5949408A53909D /* CoreGraphics.framework */; };
-		5EB0E9D0CC184C04B988C37C /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = C68976A66AE1498D9E62CE32 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		5EB68A3F9E7C44AB8181EEBB /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = C932024F8492432E9CB05488 /* ioapi.h */; };
-		5EC49A0E35174FD69300D58E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 994607121E5949408A53909D /* CoreGraphics.framework */; };
-		6174DAF6B21F4FBD9A8552E5 /* ASIS3Request.m in Sources */ = {isa = PBXBuildFile; fileRef = CD30125824824478A634D047 /* ASIS3Request.m */; };
-		61DD58ADBD5D41118BF1BB72 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A87F6BC277B4CD4923DBF3F /* crypt.h */; };
-		66C5FE15BBB34BE885958146 /* ASIDownloadCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 3941CF32DA3F4CA8A8CA21A0 /* ASIDownloadCache.h */; };
-		696BEE23CE144768A1E69EB8 /* GMSGeometryUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = B03AD9110C164EB4A1B43D89 /* GMSGeometryUtils.h */; };
-		6AB764297EE94F35A4D5C29E /* libPods-Reachability.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A290B77BA940F69CAAE5FD /* libPods-Reachability.a */; };
-		6B96F0F546FE44CE97B7D80D /* ASICloudFilesObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D08D936B2DFE44FAAC3C098F /* ASICloudFilesObject.m */; };
-		6D1A9356F5E149979F66EB83 /* GMSPanoramaCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B852153E783454F9B0F19DE /* GMSPanoramaCamera.h */; };
-		6E8DBE61963A40B5BC1E8924 /* GMSMapView+Overlays.h in Headers */ = {isa = PBXBuildFile; fileRef = 422718F8A539462BAA1FAE19 /* GMSMapView+Overlays.h */; };
-		6EC80D689DD345888DC156E8 /* GMSPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EC3A76543F44D4D89B4C850 /* GMSPolygon.h */; };
-		6EEDD8612043455DAD27A4C1 /* ASIS3ServiceRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 58D1A34AAE3340AB8B6D55AE /* ASIS3ServiceRequest.h */; };
-		71D7E6F069504008B795B60B /* GMSCoordinateBounds.h in Headers */ = {isa = PBXBuildFile; fileRef = 95F1C1AF177F48DBA2169897 /* GMSCoordinateBounds.h */; };
-		77EA4C2F3A22420DBCF5E27D /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B31F9DC94B5C497C91BFD4C2 /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		794E82EA6C15483393F4A467 /* GMSIndoorLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EE112C48261463BBF545338 /* GMSIndoorLevel.h */; };
-		7FEAEDE9477E42F89E433A06 /* ASIS3BucketRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F0494D4F62CF4D6D857EE159 /* ASIS3BucketRequest.h */; };
-		7FEF0D5546A4499D930F0E77 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB792605E954E00AE0EEB7D /* MobileCoreServices.framework */; };
-		80BEB069D21E44A0B1F334B7 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE96705477940FB8C83F5E4 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		83E549B9A60249829A58AFA5 /* ASIAuthenticationDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 2204612C8F054F68810D8B3E /* ASIAuthenticationDialog.h */; };
-		85986FE20C8A4C5192A1A69E /* GMSOrientation.h in Headers */ = {isa = PBXBuildFile; fileRef = 918AC76BAFA447D4BA94AC7A /* GMSOrientation.h */; };
-		861D1B17BDFF46EFB83F934F /* GCDiscreetNotificationView.h in Headers */ = {isa = PBXBuildFile; fileRef = F27BB1B83CAA4021B0DE8C5C /* GCDiscreetNotificationView.h */; };
-		86B078E4A7BF46E7BCFA2C8B /* GMSCameraPosition.h in Headers */ = {isa = PBXBuildFile; fileRef = A7654E906FF540A2A7019EBF /* GMSCameraPosition.h */; };
-		8ABBCD4AC1C8410A8EF4B739 /* GMSProjection.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B3EEFB95EE4417EB8F269A8 /* GMSProjection.h */; };
-		8AFCBC82027A4A7AABCB08D7 /* libPods-ASIHTTPRequest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96466E9C5E324AF79AF91351 /* libPods-ASIHTTPRequest.a */; };
-		8C18CA3B78E14667A892667A /* GMSPanoramaView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9F918B0C064083A50BC692 /* GMSPanoramaView.h */; };
-		8C70249B6B6A4070BEE1CE49 /* GMSIndoorBuilding.h in Headers */ = {isa = PBXBuildFile; fileRef = 2877488A23524F14B809F623 /* GMSIndoorBuilding.h */; };
-		8D67024BBD3E46699BE38B9B /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 2379AD94EB19407E8CAAC784 /* mztools.c */; };
-		8E3BF607D2C74B0E8D5C8E6C /* GMSPath.h in Headers */ = {isa = PBXBuildFile; fileRef = C3269A02685C4346A52A5FFC /* GMSPath.h */; };
-		8E6EC3929FBB412788C56B96 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7AD437F7BB4858AAB87183 /* SystemConfiguration.framework */; };
-		90CF21EBBC8046B1BAA7947D /* GMSMapLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 95D0B647A37046D097437A99 /* GMSMapLayer.h */; };
-		91F927AD832A4456A5D50967 /* Pods-ASIHTTPRequest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D46D5741928146648A63C9C5 /* Pods-ASIHTTPRequest-dummy.m */; };
-		93143312130F4187B718CE18 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A03990B3DB349F2A5B434BC /* zip.c */; };
-		976F05903F4D4751A1BF5BF3 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D19FACB2AB74EA8A7D9739B /* CoreText.framework */; };
-		9782675CC31D4B2FA8A521B0 /* ASICloudFilesContainerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0872D0C5CD498F9C94B74F /* ASICloudFilesContainerRequest.m */; };
-		9A038986D3754A1899C6CEC6 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 154A1A0A00384E35AD16903C /* OpenGLES.framework */; };
-		9AAD7D322D9343CFA5C505AF /* ASIFormDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D6FB2C25B724C0F842BE9B3 /* ASIFormDataRequest.h */; };
-		9F9D59FFF2E744E3B93BDEBC /* GMSTileLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF1CBEA01124661A9A5C29F /* GMSTileLayer.h */; };
-		A1CEBCBD81834CE6B0B20CDA /* GMSPanoramaService.h in Headers */ = {isa = PBXBuildFile; fileRef = 33B9E3DFF5A943BDB5B8B3A9 /* GMSPanoramaService.h */; };
-		A25D852E04A24DCD8BBBF3FC /* ASIWebPageRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F8E24460CCC4FEDAA6FC5D8 /* ASIWebPageRequest.h */; };
-		A3428021AD5B4C26BE6A03C9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4F9DEDA632430A9FF5F22D /* CoreLocation.framework */; };
-		A51C16CE45B248ED8ECBC187 /* GMSPolyline.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DEFCB3EEE774786A451E287 /* GMSPolyline.h */; };
-		A53D7C3438274703B2E865D1 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 7C900E98A7314C9FB7525FD5 /* ioapi.c */; settings = {COMPILER_FLAGS = "-w"; }; };
-		AAC9D468EF8149A58888F279 /* ASINSXMLParserCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 373C173DDE8D4506B8B4C6D9 /* ASINSXMLParserCompat.h */; };
-		AD66ECB1D0EC479E9D580267 /* GMSPanoramaCameraUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = 32AEEC3D30E348768B2873BA /* GMSPanoramaCameraUpdate.h */; };
-		AF345E4886F34BA991E8B687 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 946E339708DB41E2A21FD0FD /* SSZipArchive.m */; };
-		AF6F43B2A59E45F6B30648A0 /* GMSPanoramaLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = B2BDDBE17F3A49DDA5F5EBF5 /* GMSPanoramaLayer.h */; };
-		B27F5FEE94294F36A5E66E5C /* ASICloudFilesObjectRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 177738B1EA4F4C728A9C5374 /* ASICloudFilesObjectRequest.h */; };
-		B6C4B35AB5B54C1BBC87BC2B /* ASIS3BucketObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DE88297D579D4B56811D1EF3 /* ASIS3BucketObject.m */; };
-		B8771663E5944334836944CF /* GMSMapView.h in Headers */ = {isa = PBXBuildFile; fileRef = F9C87FC269884E7FA8D46975 /* GMSMapView.h */; };
-		BA1B2500E7A54BA4BD943B05 /* GMSIndoorDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = B291397E86AA49EA8DD0D9B3 /* GMSIndoorDisplay.h */; };
-		BAA849693591423F943C4DD6 /* GoogleMaps.h in Headers */ = {isa = PBXBuildFile; fileRef = D4B8881FC7E34CB3B546CB34 /* GoogleMaps.h */; };
-		BB027C1BB350457DB455090B /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BB071F5DC9F45EFB8BCE41B /* unzip.h */; };
-		BB1BAB4C1F0C455084DABEAC /* GMSGroundOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = 258B48B08AA8455E99140F22 /* GMSGroundOverlay.h */; };
-		BB59B25A727F404B9B300C2E /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = E16C1AB4EC944F5BADB95CEE /* mztools.h */; };
-		BCAB80C684EA4698A7803C77 /* ASIS3ServiceRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A47FCE371F7947EF9ECCA8CE /* ASIS3ServiceRequest.m */; };
-		BD242E6B395A44DDB81F63B6 /* ASIInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 54A685F8BADA47B1949550DD /* ASIInputStream.h */; };
-		C1B651C139624DC88BC54D89 /* ASIHTTPRequestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 473C61B813FA41779902605F /* ASIHTTPRequestDelegate.h */; };
-		C5D4D6338FE34FF1811DFB92 /* ASICloudFilesContainerXMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 907C77AA8E8C4276B67B22DE /* ASICloudFilesContainerXMLParserDelegate.m */; };
-		C6DFA875A922475E9F079BD9 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9879484624F84450B6A5403C /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-O0"; }; };
-		C7E963341E8346A1B5ACE32D /* ASICloudFilesContainerXMLParserDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E9BA6BE72B4A454A883206A9 /* ASICloudFilesContainerXMLParserDelegate.h */; };
-		C81442D3F044400893EBBA7E /* GMSCALayer.h in Headers */ = {isa = PBXBuildFile; fileRef = C39873CADFF946EAB63CF44C /* GMSCALayer.h */; };
-		C84EB0C522A4451A81FF064B /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC4390E775F4A1881831DE8 /* ASINetworkQueue.m */; };
-		CC49264B04714FDCBA681DA5 /* ASIS3ObjectRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BCC413F2D074E7194621567 /* ASIS3ObjectRequest.h */; };
-		CC83339D62564A44B992CE31 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = FA00ACA9702844E091CEADE5 /* Reachability.h */; };
-		CEFFEEEFD1194C79AD0FEA44 /* libPods-SSZipArchive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6995DA4D554488EAF276FC1 /* libPods-SSZipArchive.a */; };
-		D041CA8A57634D3CBB5527B1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17C60035B8045B485A831EE /* QuartzCore.framework */; };
-		D0864DCFA07C4A559842D1D1 /* Pods-Google-Maps-iOS-SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 689A0251867F4F3BAD54CB5D /* Pods-Google-Maps-iOS-SDK-dummy.m */; };
-		D112D5CD6A754E7EB9D4619E /* GMSUISettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 6680AFED18DA494AA4C26C37 /* GMSUISettings.h */; };
-		D11BAAA9AE3D4AF4A5583C4C /* GMSMapView+Animation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6733CDC45E5B4DAD9C390395 /* GMSMapView+Animation.h */; };
-		D1832F3CCDE744E6A2822AEB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18319146C7624E229C35B342 /* CFNetwork.framework */; };
-		D1983D5F45B54472BD00DDA3 /* Pods-GCDiscreetNotificationView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4158B82CEE341AE825CCD3C /* Pods-GCDiscreetNotificationView-dummy.m */; };
-		D277211139DB4876978BE270 /* GMSOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = 19366593DB064D3689379C1A /* GMSOverlay.h */; };
-		D28F429A072648B9AB8E3172 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC273CFF93534881A20CA95F /* Foundation.framework */; };
-		D3D3EAD843804321A5DD8BB9 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA296D4B64342AD9252FDA3 /* GLKit.framework */; };
-		D61299614E3D491AAC042F34 /* ASIDataDecompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = 897C3DDB1C9F4DEA80E1B1D7 /* ASIDataDecompressor.h */; };
-		D6D42802A8584B86B74C34D0 /* ASICloudFilesObjectRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDD709B918141F392444664 /* ASICloudFilesObjectRequest.m */; };
-		D875D10217714A5D8870F617 /* ASIHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = BB67B8764A4A451580A5C715 /* ASIHTTPRequest.h */; };
-		DCD947D856104A18A3A7ABC3 /* ASIS3BucketRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 507E2AE440264E39AA49CF82 /* ASIS3BucketRequest.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		E08BEB5EE7FD46ACACCE8B44 /* ASICloudFilesRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF0DED97E234389BD0698E3 /* ASICloudFilesRequest.m */; };
-		E14BF2B4781E4E2DA9AE3F38 /* ASIS3Bucket.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A691D2AA59B42049B37C1A4 /* ASIS3Bucket.h */; };
-		E341725FAE0349CE9357D484 /* libPods-GCDiscreetNotificationView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D4230361B04E378C7087ED /* libPods-GCDiscreetNotificationView.a */; };
-		E48324A007214BEBB397D1BF /* ASICloudFilesContainerRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = BB285B93D5E847D3B3D99314 /* ASICloudFilesContainerRequest.h */; };
-		E48E61E4938B44CF885C820F /* ASIS3Bucket.m in Sources */ = {isa = PBXBuildFile; fileRef = C3AEB4A4EFAB408CBCCB6DDD /* ASIS3Bucket.m */; };
-		E59D5506A397440FBED80B27 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8180C9050896419995B12CC0 /* AVFoundation.framework */; };
-		E6916DF922D74840BDFA693E /* libPods-Google-Maps-iOS-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 939FB410E9964A4092E3BCEB /* libPods-Google-Maps-iOS-SDK.a */; };
-		E82660AA385146F38BBACFE7 /* GMSGeocoder.h in Headers */ = {isa = PBXBuildFile; fileRef = BE722D97AC9B48858F8A330C /* GMSGeocoder.h */; };
-		E845861AA3B34655A824B44F /* GMSServices.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DF84CA7CBB442E4A3345DAA /* GMSServices.h */; };
-		EF8404DCF8124F7285A7358B /* GMSCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = 16422BE0F4BA473186069D65 /* GMSCircle.h */; };
-		F507C3BD63684D84A7DDD852 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3911D132ABE74F2F9099716D /* CoreData.framework */; };
-		F81381F69A5F44BC89C600BB /* GMSPanoramaLink.h in Headers */ = {isa = PBXBuildFile; fileRef = A26851575E514017B25E7DCB /* GMSPanoramaLink.h */; };
-		FABF4F8E0FE14BAA994C9BB1 /* ASIWebPageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 312C423154FF4D4C80D36DE9 /* ASIWebPageRequest.m */; };
-		FE75DDF0720B43BEAE97F3C2 /* ASICloudFilesCDNRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C827ED3590984940A2F40169 /* ASICloudFilesCDNRequest.m */; };
-		FFE90249CBED486BA2F07D5D /* GMSSyncTileLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = F90A6489CC834C5DA60ECC1F /* GMSSyncTileLayer.h */; };
+		03D03558E7EC472BB46537E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828D557666F04B999C0A5DB5 /* CoreGraphics.framework */; };
+		051710C49C324735B3CEC7C8 /* ASICloudFilesRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D48B97167334C55BC4580FD /* ASICloudFilesRequest.m */; };
+		054CBB4C802A4D9DA999710F /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FDD74783B5846F7AD7D7F44 /* unzip.h */; };
+		075683BD8DC540F0B54131BB /* GMSPanoramaLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B65C2D836FC458BA44859FE /* GMSPanoramaLayer.h */; };
+		09C494B64A784C28BF8991C6 /* GMSIndoorBuilding.h in Headers */ = {isa = PBXBuildFile; fileRef = C55724EC8EC64FCAB115D8B7 /* GMSIndoorBuilding.h */; };
+		0A7A926454BB4D7690B75C14 /* GMSIndoorDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DCC8BD9417C4EE7BF5E65DE /* GMSIndoorDisplay.h */; };
+		0AC296D472F246E0B850EBBD /* GMSServices.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EF70131C504005AE1E13F0 /* GMSServices.h */; };
+		0D312293382F4C77893F18DB /* ASIS3BucketRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F6787B0D710E4DEE820997E4 /* ASIS3BucketRequest.h */; };
+		0DE532C2BC434CCFB9F039B7 /* Pods-GCDiscreetNotificationView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8992078181B74FC3AF53EED2 /* Pods-GCDiscreetNotificationView-dummy.m */; };
+		0DE6A8F869C8414F8DEBF0F2 /* ASICloudFilesContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = F15DD2B344944F9AA2974308 /* ASICloudFilesContainer.m */; };
+		136BAD1CA2A644D4A5AD5FF4 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A829A5F555444AD9AC136457 /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-O0"; }; };
+		13FF1C19215540FE8D3B4A28 /* GMSOrientation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3890434F2406475A8E372E4F /* GMSOrientation.h */; };
+		17326A6C152246129A5ED732 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 39D5B6C9A0D9443AA02A87C0 /* unzip.c */; };
+		18988640AB904450A904AA3C /* GCDiscreetNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = D534C7C938EB401EBA6D880F /* GCDiscreetNotificationView.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		1AF622C42C074AF7A169549E /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C073EEA07648528106ECDD /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		1D9F3884447648D4BF39B989 /* ASICloudFilesCDNRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F20E84ADDE644F9595AD657B /* ASICloudFilesCDNRequest.h */; };
+		21A53DA522654FF4A681193B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A97E99753144B994E5D447 /* SystemConfiguration.framework */; };
+		26395A1618B74EB09F08DC8C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B994151658A4E4598BE087C /* OpenGLES.framework */; };
+		2A22249B7F0945589A9A538E /* GMSMarker.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B040F5192E4E9381C54BF5 /* GMSMarker.h */; };
+		2CE15D4BD3D74D118D51DFA8 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D868D8482264AB894E95F85 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		2F4F39D8473B4E799889ABB4 /* Pods-Google-Maps-iOS-SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CBBF1A437248E0B74BD6A6 /* Pods-Google-Maps-iOS-SDK-dummy.m */; };
+		30D5E516A3354303A0311099 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2643F174262D4BA0A3BF2D5D /* GLKit.framework */; };
+		3229AC49901547D2ACED2976 /* ASIS3Request.h in Headers */ = {isa = PBXBuildFile; fileRef = DB06C9C8612D4C40A86A3924 /* ASIS3Request.h */; };
+		3241FC3B737F4F71807E6E4B /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DF3C6110D54F1E820BF54D /* Pods-dummy.m */; };
+		329ED979739A48ACADADF11C /* GMSCameraPosition.h in Headers */ = {isa = PBXBuildFile; fileRef = 38F84AB254F54704AA85003C /* GMSCameraPosition.h */; };
+		37753EFDAC06433BB09899BA /* ASICloudFilesContainerXMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC2B68016B04221BB74B0A3 /* ASICloudFilesContainerXMLParserDelegate.m */; };
+		3F4EA16AB73C4B2E91E05B50 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EF3748018D744099F86950A /* AVFoundation.framework */; };
+		426CBDFB60BE475889D50BAA /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 99329A5FF6E345FD8CF58CBA /* zip.h */; };
+		43C0E08F7D6F4A11BEA8DDCC /* ASIHTTPRequestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 282707E9D7364D548B73FAEE /* ASIHTTPRequestDelegate.h */; };
+		449E0AC5126F47179C15ED5E /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 5232022682564457A5D2DF2A /* SSZipArchive.h */; };
+		45C301C40CE74FF0AA9FF9AA /* GCDiscreetNotificationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 062587C0A9FF4506BB4B00BA /* GCDiscreetNotificationView.h */; };
+		4E2BD03415B3451DB165E94F /* ASINSXMLParserCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 42660161950B44848278A688 /* ASINSXMLParserCompat.h */; };
+		4EBC4307D95F475982D3924C /* ASICloudFilesContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = C4CEDF1566D74C3CA27E129E /* ASICloudFilesContainer.h */; };
+		51E656E730D84444BF1FA55A /* GMSPanoramaCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = 424B0451D1124FD383EF5CEA /* GMSPanoramaCamera.h */; };
+		52923D62FA4040888E4E8D05 /* GMSGeometryUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 9555536694D444FEAF75A47A /* GMSGeometryUtils.h */; };
+		54A4FFFF72E241949550B52D /* GMSUISettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 69A131FCE64B47BAAFF2497E /* GMSUISettings.h */; };
+		582EA857419443328A9523CA /* GMSMapView+Overlays.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B9E918A1D4446AC8573F84A /* GMSMapView+Overlays.h */; };
+		5A08F23E5B1F430E9E22A2C4 /* GMSURLTileLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 889D9B5DC594434EB6933E52 /* GMSURLTileLayer.h */; };
+		5B45206A16D1465081092DE8 /* GMSMutablePath.h in Headers */ = {isa = PBXBuildFile; fileRef = DF8CA6FB374C4A88A7801D8C /* GMSMutablePath.h */; };
+		5BBDC93D85EE430B84C4E812 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB796B5230142C18C4DB2AF /* QuartzCore.framework */; };
+		5CC39D0628664328B1DECD34 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77FBE2ED925E4DA1B67E850B /* CoreData.framework */; };
+		5D7B181819CE4ACF8F1FB9FB /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3FA91952454B278679B339 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		5E0F2AE22B134BCE85148A59 /* GMSGeocoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B5F6DA1BB134AF6BE313F46 /* GMSGeocoder.h */; };
+		5E7DFAA37F4A4D88A3CFF63A /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE89824EFEC4A8E8C1D14DA /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-O0"; }; };
+		5F9EE63791A9446693F96848 /* ASICloudFilesContainerRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B0F71E711A4248BFF8A52C /* ASICloudFilesContainerRequest.h */; };
+		61D4F7D2D6FB474F995AAF16 /* ASICloudFilesContainerXMLParserDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = A370FA87518747B5991EB42B /* ASICloudFilesContainerXMLParserDelegate.h */; };
+		622FFF962B2247B3A430E76E /* GMSPolyline.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DDFE1BC89DD46E2ADDC255C /* GMSPolyline.h */; };
+		628779E64BEB473EA488CE76 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0037FD613F4E7BA531F332 /* ASIInputStream.m */; };
+		629A8D3E74A64D51A82C45EB /* ASIInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = C09CE7DC0A524935B0C3D2B3 /* ASIInputStream.h */; };
+		64E3061E256046838BB89C12 /* ASIS3BucketRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F76386AE20E40DA8C0A82B0 /* ASIS3BucketRequest.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		6527E7A1202143A28E5B65B3 /* ASIS3BucketObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D07EBADB6FC41AD93902D10 /* ASIS3BucketObject.m */; };
+		6925A4072F8F45098A170171 /* ASIWebPageRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F4CD634C918F4471945FB9CA /* ASIWebPageRequest.h */; };
+		6D2DE07F14114321BE12205D /* GMSSyncTileLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = AC185D9D5DD24019A47C12E1 /* GMSSyncTileLayer.h */; };
+		6F57D57A796C4E2D9373E2EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4894B57988401ABADAAF61 /* Foundation.framework */; };
+		701C8A65BB1B497C86D1046B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4894B57988401ABADAAF61 /* Foundation.framework */; };
+		70519A7DC62B40F0ADBEA799 /* libPods-GCDiscreetNotificationView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F67162089425474B889CE904 /* libPods-GCDiscreetNotificationView.a */; };
+		71A18C9A03D6451AB205682B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20612C89E7D9453782624FD6 /* CFNetwork.framework */; };
+		73F0B4BF2B9444F9928556A6 /* GMSMarkerLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = AB59511934A8467C943D585E /* GMSMarkerLayer.h */; };
+		7505A3DF723443B4AFA1FC44 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 850F49293741423D99FBFFE9 /* GoogleMaps.framework */; };
+		7A027A3EC7AA40A1A71EBEF5 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD86F0432634B19903E0069 /* ASIDownloadCache.m */; };
+		7AF906B9B3484B46B9D851F0 /* ASIDataDecompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = 74B0866234E7473496827010 /* ASIDataDecompressor.h */; };
+		7DCBD9620D05483CAB87D6F0 /* Pods-SSZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 443A64AD8E214EBCBC5A6FE8 /* Pods-SSZipArchive-dummy.m */; };
+		812D8E823DB44082AF77F623 /* GMSPanoramaView.h in Headers */ = {isa = PBXBuildFile; fileRef = 606762E9D6CA42399FF99CC5 /* GMSPanoramaView.h */; };
+		83623914914D4F73AD23BBBF /* GMSMapView+Animation.h in Headers */ = {isa = PBXBuildFile; fileRef = AD0898E1C78D4417BB4B16C2 /* GMSMapView+Animation.h */; };
+		84A31385BD4644BDABDCDBBC /* GMSPanorama.h in Headers */ = {isa = PBXBuildFile; fileRef = E7B066946F8949F3BD809765 /* GMSPanorama.h */; };
+		87FB4499E89247C69DE87EC2 /* GMSTileLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = BA54BC093A7541F898DAD6B4 /* GMSTileLayer.h */; };
+		8924F9003DEA4189993AB9EA /* ASICloudFilesContainerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B27477345A496187DA34D7 /* ASICloudFilesContainerRequest.m */; };
+		8B0305FF432A4BF9A971D751 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A97E99753144B994E5D447 /* SystemConfiguration.framework */; };
+		8B8FC0AEAB944C8983BD2DED /* ASICacheDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = A18055AE157F468A9261B9FE /* ASICacheDelegate.h */; };
+		8D28777842354AE68AE14784 /* GMSPanoramaService.h in Headers */ = {isa = PBXBuildFile; fileRef = B2CD9CAD22A640FEB2DDEE93 /* GMSPanoramaService.h */; };
+		916755E4B0D2401AAC0E609B /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 8388C20A03C848568011DE77 /* ioapi.h */; };
+		91705FEFD05A4AAFA11957F0 /* Pods-Reachability-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77524824E0F741668BAC555A /* Pods-Reachability-dummy.m */; };
+		91C48158F4B241F49E8ED2E4 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = A4FF0CDFFCED428C848544E9 /* mztools.h */; };
+		921FF6BD617C43C68BE92FAD /* ASIS3ServiceRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B518F9C447646C3AF0438ED /* ASIS3ServiceRequest.m */; };
+		93155A1A65CC4781A76BFC0C /* ASIDownloadCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 15413EDCBBE942EB8F797BBE /* ASIDownloadCache.h */; };
+		93D208A9AB9E4F7D8AA6FE0E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94B4223BA6FD4A7981E65645 /* MobileCoreServices.framework */; };
+		94534D530E834CCDBF873B40 /* ASIHTTPRequestConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EE250A90A8C43769E967FB3 /* ASIHTTPRequestConfig.h */; };
+		96F57AA94F4B4EA18AF4132A /* libPods-SSZipArchive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 979DE72668DD420F9C769ADE /* libPods-SSZipArchive.a */; };
+		978CDBC7178546919F48A712 /* GMSPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 48985E8E36404B089C135C05 /* GMSPath.h */; };
+		98147509D20E4C32B5A829F5 /* GMSCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = 96C567901CF242C5BFA448A5 /* GMSCircle.h */; };
+		994C33090F5E4826B3D00544 /* GMSPanoramaCameraUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DCB77300EA64404B6DE2677 /* GMSPanoramaCameraUpdate.h */; };
+		A0E6B7D637964A87B12499E0 /* ASIS3ObjectRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E21DEC20C4401CA90D10CC /* ASIS3ObjectRequest.m */; };
+		A35AD1A967204F8796BFDF8A /* Pods-ASIHTTPRequest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 425883D3074C40D5BCB61C23 /* Pods-ASIHTTPRequest-dummy.m */; };
+		A3970E5987544ACBAA3F78FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D0E5CF27A24F80A930ECBE /* UIKit.framework */; };
+		A9870054AB1B44D29A1649B1 /* GMSPanoramaLink.h in Headers */ = {isa = PBXBuildFile; fileRef = C00B7A67795B4572BC8E2D8E /* GMSPanoramaLink.h */; };
+		AB2C563BEB0A4289BC1C6A89 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828D557666F04B999C0A5DB5 /* CoreGraphics.framework */; };
+		ACDE5A8FEF6C4EA580966223 /* ASIS3Bucket.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1B5A547056433781B0FAC7 /* ASIS3Bucket.m */; };
+		AE5CA01120E5492E896ACA99 /* libPods-Google-Maps-iOS-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12AC9AAF84834BF4B207E63E /* libPods-Google-Maps-iOS-SDK.a */; };
+		AFDBE61C74BA4185A726093A /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = BF088CCFB65C4698B05FFFAD /* Reachability.h */; };
+		B2AEEDB08A874142B176F836 /* ASIS3Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E476394853F4227A990B4AD /* ASIS3Request.m */; };
+		B4DEB09CDCF3433D94498947 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4894B57988401ABADAAF61 /* Foundation.framework */; };
+		B9010EAEC24248A4A2088805 /* GoogleMaps.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E030FC8B11443D7842156C8 /* GoogleMaps.h */; };
+		BC62A5B2A53E4FECA0E10AE4 /* ASIAuthenticationDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = CB99A9ED0AC1434BBFE5E1AB /* ASIAuthenticationDialog.h */; };
+		BDC5054B8CDF4B9B80984C85 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FCEC78A9AD4171BD2BF14F /* ImageIO.framework */; };
+		BFD8017677FF41B6ABFF721C /* GMSOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FCCF1F9345A472DAEDADBD8 /* GMSOverlay.h */; };
+		C02982FE16DD44ABA8B5A743 /* GMSCoordinateBounds.h in Headers */ = {isa = PBXBuildFile; fileRef = FE46E878EC4741F595346337 /* GMSCoordinateBounds.h */; };
+		C0C7C0EBF82341EC9AF01B6E /* ASIWebPageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 441875CEFDB2403EBCC62CEC /* ASIWebPageRequest.m */; };
+		C2BA938FD5EC459B93F27A8E /* ASICloudFilesObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D61DA48761640BC82DB5C01 /* ASICloudFilesObject.h */; };
+		C34213CB1A014C978558CB23 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = A732CCC0BF52419887D0CF43 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		C4AB5004EB584BBE9AE70D68 /* GMSProjection.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A520C619A4F402ABC2B5B24 /* GMSProjection.h */; };
+		C7F394C1348E4375B73F4C8B /* ASICloudFilesCDNRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D35E5140FA14FB3908151BE /* ASICloudFilesCDNRequest.m */; };
+		C8C8612D471848FCAFCA3DAE /* ASIDataCompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = 391CCD52F81A4C2CB6FBECBB /* ASIDataCompressor.h */; };
+		C9F496B3A9AD4C12A93462B1 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EFF5CECBF5439084AB94E5 /* ASINetworkQueue.m */; };
+		CB3A94A0B758427AA45563CE /* ASICloudFilesObjectRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 005FBD131FEB48D99655E3BE /* ASICloudFilesObjectRequest.m */; };
+		CC6E8475774E4D599B0C52AB /* ASIS3ServiceRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = BCDFA684D2684AA8B2C9BEC4 /* ASIS3ServiceRequest.h */; };
+		CFBB9A46B69341508995BD2C /* ASIS3ObjectRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 469F809E25F448289BF9FC7D /* ASIS3ObjectRequest.h */; };
+		D0342A58DC154D1DB1EFB864 /* ASIS3BucketObject.h in Headers */ = {isa = PBXBuildFile; fileRef = B908ED7825DE41698CA841B3 /* ASIS3BucketObject.h */; };
+		D0386FD0230A4B71A0319A59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4894B57988401ABADAAF61 /* Foundation.framework */; };
+		D195B0DB1A60412DB527698C /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 141F590347D647758939A987 /* zip.c */; };
+		D1D51786D201488EA64E5D10 /* ASIS3Bucket.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E0EDA98DD6D4BABB0922507 /* ASIS3Bucket.h */; };
+		D1F0FD2F5ECF4B988F71D251 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 7133CF665EF24EF5BA049616 /* crypt.h */; };
+		D52474E72DC843079963ED0D /* ASICloudFilesRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 62AFA6382C384A8A82BCB42F /* ASICloudFilesRequest.h */; };
+		D6418CD9495446E095AEF1C0 /* GMSMapLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E6E91F81CE242C6A7B4EB5F /* GMSMapLayer.h */; };
+		D725FCD91AC943E384F9C9C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4894B57988401ABADAAF61 /* Foundation.framework */; };
+		DDC6E4ABA7DA49B2AC1031CA /* GMSCameraUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = 167D7A92C46E40DB8E04E733 /* GMSCameraUpdate.h */; };
+		DF0E23E035D441A893D677D8 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DAB05AA5F041ABAE87C647 /* CoreText.framework */; };
+		E1D7818312D44391825E6FB6 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 747EBD7B31D548E39E0B6C8E /* ioapi.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		E2673016956B47058F8C7FB5 /* ASINetworkQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = B0D5568AE37C4936AC83CDC8 /* ASINetworkQueue.h */; };
+		E32C5FB561D649B980E3A99A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9546354FDBB4E5880B687D2 /* CoreLocation.framework */; };
+		E421A5DCF41449BA90ECB1B8 /* ASIProgressDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CC53FE147FB4ED097DBF30D /* ASIProgressDelegate.h */; };
+		E55D3D9852574710A294F5BA /* ASICloudFilesObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCC3FF7D27145F4A4BA0223 /* ASICloudFilesObject.m */; };
+		E6BB00C083604431978856DD /* ASIFormDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 451475F5C02D4CE8B26D75A4 /* ASIFormDataRequest.h */; };
+		E7C3A97EC67D4570A9E95141 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = A83EB0CD815D4AF59B672E85 /* mztools.c */; };
+		ED6C4A0EDF0A4572B35D457B /* ASINSXMLParserCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 42660161950B44848278A688 /* ASINSXMLParserCompat.h */; };
+		EE3550CF0BFE441BA1036F33 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 626091FCB4EA4B13BFB0AFC4 /* SSZipArchive.m */; };
+		EEE2250B9A204AD7978BA102 /* libPods-ASIHTTPRequest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD26B9962D742AFA3123265 /* libPods-ASIHTTPRequest.a */; };
+		EF1707978646481294BD7C75 /* libPods-Reachability.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 341FCC18B1DC45ECBF71FCF5 /* libPods-Reachability.a */; };
+		EF6FC3F16EC94AE9B32098DD /* GMSCALayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AAFD90D158C4E1696BAE179 /* GMSCALayer.h */; };
+		F01376C113BB4485B97E9173 /* GMSGroundOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = D404E195CF7A4B458425538D /* GMSGroundOverlay.h */; };
+		F1E781E7E3EA4055A474F555 /* ASIHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E0C0582467E8414B88126CB2 /* ASIHTTPRequest.h */; };
+		F26D8AF785714136B8837041 /* GMSMapView.h in Headers */ = {isa = PBXBuildFile; fileRef = 04245563BF6E4FF2B1D7ECA1 /* GMSMapView.h */; };
+		F534F144C10B416689A12206 /* ASICloudFilesObjectRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 9684B60D33A74770AFCAD600 /* ASICloudFilesObjectRequest.h */; };
+		F5F528DA3D1A453586108D0E /* GMSIndoorLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CDF39A65AD54F9F811CF254 /* GMSIndoorLevel.h */; };
+		FBB8B1E9C940442BAE8D0AA8 /* GMSPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = 74EB3330E6784A54AC48EB7A /* GMSPolygon.h */; };
+		FCE9DADE2B4C4402A20C6A76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4894B57988401ABADAAF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		391C0C2E48974BE989EC7653 /* PBXContainerItemProxy */ = {
+		011BD07F0A7C40E4A1404852 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 419757010215477A83B24C19 /* Project object */;
+			containerPortal = CAE4AD61BAB8407F80678FC7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 59352F79610F4D3FBCCB885B;
-			remoteInfo = "Pods-ASIHTTPRequest";
-		};
-		5878D46345D9449985D20637 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 419757010215477A83B24C19 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E2E429CA59974243B58B4017;
-			remoteInfo = "Pods-SSZipArchive";
-		};
-		63FA4F1753424698B8239DDC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 419757010215477A83B24C19 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7CC81B736ACA4FD9B836388B;
+			remoteGlobalIDString = F4CE3D8B2210436194819C27;
 			remoteInfo = "Pods-Reachability";
 		};
-		6877085EEFEB4899A0D566D4 /* PBXContainerItemProxy */ = {
+		0B8764D442B24DAEA195B010 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 419757010215477A83B24C19 /* Project object */;
+			containerPortal = CAE4AD61BAB8407F80678FC7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9D142FC5AA1E4BD6B6868839;
-			remoteInfo = "Pods-GCDiscreetNotificationView";
+			remoteGlobalIDString = F4CE3D8B2210436194819C27;
+			remoteInfo = "Pods-Reachability";
 		};
-		9D727C3ABA8445FFB89BCFEF /* PBXContainerItemProxy */ = {
+		99B33204100A4E669AC6C58F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 419757010215477A83B24C19 /* Project object */;
+			containerPortal = CAE4AD61BAB8407F80678FC7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3E67CE506F0440F38A55C6F5;
+			remoteGlobalIDString = C1CE590AE47A4A3680899914;
 			remoteInfo = "Pods-Google-Maps-iOS-SDK";
 		};
-		FE9D0B92DC674022B556DD08 /* PBXContainerItemProxy */ = {
+		B6C469DBC0B04D84AC9807C6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 419757010215477A83B24C19 /* Project object */;
+			containerPortal = CAE4AD61BAB8407F80678FC7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7CC81B736ACA4FD9B836388B;
-			remoteInfo = "Pods-Reachability";
+			remoteGlobalIDString = CC3910C9C5814FD585D4C770;
+			remoteInfo = "Pods-GCDiscreetNotificationView";
+		};
+		D9BB8378B54648789E986B8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAE4AD61BAB8407F80678FC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FDBA98665D64A0AB46CCEE6;
+			remoteInfo = "Pods-ASIHTTPRequest";
+		};
+		E918F9AC4EA54F499B72CB25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAE4AD61BAB8407F80678FC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 539125DCE568466B9E21F53B;
+			remoteInfo = "Pods-SSZipArchive";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00ED03D9E1BC4711B4654B8B /* ASICloudFilesContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICloudFilesContainer.h; path = Classes/CloudFiles/ASICloudFilesContainer.h; sourceTree = "<group>"; };
-		0177716EB48E439DB398B2F0 /* Pods-Reachability.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reachability.xcconfig"; sourceTree = "<group>"; };
-		04F50DA4F4FA46A98BD59A41 /* ASIDataCompressor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIDataCompressor.h; path = Classes/ASIDataCompressor.h; sourceTree = "<group>"; };
-		05220A939D9347119283E93A /* Pods-ASIHTTPRequest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ASIHTTPRequest.xcconfig"; sourceTree = "<group>"; };
-		06119D647F324695BBA27DB8 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		0D6FB2C25B724C0F842BE9B3 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIFormDataRequest.h; path = Classes/ASIFormDataRequest.h; sourceTree = "<group>"; };
-		154A1A0A00384E35AD16903C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
-		15D2820AE9B849B488679CB4 /* GMSMarkerLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSMarkerLayer.h; path = GoogleMaps.framework/Versions/A/Headers/GMSMarkerLayer.h; sourceTree = "<group>"; };
-		15F43D0B3F1F4E2A8F5D46F0 /* Pods-SSZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SSZipArchive-dummy.m"; sourceTree = "<group>"; };
-		16422BE0F4BA473186069D65 /* GMSCircle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSCircle.h; path = GoogleMaps.framework/Versions/A/Headers/GMSCircle.h; sourceTree = "<group>"; };
-		177738B1EA4F4C728A9C5374 /* ASICloudFilesObjectRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICloudFilesObjectRequest.h; path = Classes/CloudFiles/ASICloudFilesObjectRequest.h; sourceTree = "<group>"; };
-		181CA47A5E9048068D608F42 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
-		18319146C7624E229C35B342 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		18CAD2B92EFC4656B2553E07 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		19366593DB064D3689379C1A /* GMSOverlay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSOverlay.h; path = GoogleMaps.framework/Versions/A/Headers/GMSOverlay.h; sourceTree = "<group>"; };
-		1985488EA52B4199843A2797 /* SSZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipArchive.h; path = SSZipArchive/SSZipArchive.h; sourceTree = "<group>"; };
-		19C17FB160F44E4C979CEFEC /* Pods-SSZipArchive-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSZipArchive-Private.xcconfig"; sourceTree = "<group>"; };
-		1BCC413F2D074E7194621567 /* ASIS3ObjectRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIS3ObjectRequest.h; path = Classes/S3/ASIS3ObjectRequest.h; sourceTree = "<group>"; };
-		1C9F918B0C064083A50BC692 /* GMSPanoramaView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPanoramaView.h; path = GoogleMaps.framework/Versions/A/Headers/GMSPanoramaView.h; sourceTree = "<group>"; };
-		1F1947E9C8924FD39BEEA95A /* Pods-GCDiscreetNotificationView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GCDiscreetNotificationView-prefix.pch"; sourceTree = "<group>"; };
-		1F8E24460CCC4FEDAA6FC5D8 /* ASIWebPageRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIWebPageRequest.h; path = Classes/ASIWebPageRequest/ASIWebPageRequest.h; sourceTree = "<group>"; };
-		20BC2F81C42C4DBE86E0D269 /* ASICacheDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICacheDelegate.h; path = Classes/ASICacheDelegate.h; sourceTree = "<group>"; };
-		2204612C8F054F68810D8B3E /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIAuthenticationDialog.h; path = Classes/ASIAuthenticationDialog.h; sourceTree = "<group>"; };
-		2379AD94EB19407E8CAAC784 /* mztools.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mztools.c; path = minizip/mztools.c; sourceTree = "<group>"; };
-		258B48B08AA8455E99140F22 /* GMSGroundOverlay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSGroundOverlay.h; path = GoogleMaps.framework/Versions/A/Headers/GMSGroundOverlay.h; sourceTree = "<group>"; };
-		27CD078C306F4061861B56F4 /* ASIDataCompressor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIDataCompressor.m; path = Classes/ASIDataCompressor.m; sourceTree = "<group>"; };
-		2877488A23524F14B809F623 /* GMSIndoorBuilding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSIndoorBuilding.h; path = GoogleMaps.framework/Versions/A/Headers/GMSIndoorBuilding.h; sourceTree = "<group>"; };
-		2C4406EB6FA6427DA1FAB41C /* Pods-Google-Maps-iOS-SDK-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Google-Maps-iOS-SDK-Private.xcconfig"; sourceTree = "<group>"; };
-		312C423154FF4D4C80D36DE9 /* ASIWebPageRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIWebPageRequest.m; path = Classes/ASIWebPageRequest/ASIWebPageRequest.m; sourceTree = "<group>"; };
-		32AEEC3D30E348768B2873BA /* GMSPanoramaCameraUpdate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPanoramaCameraUpdate.h; path = GoogleMaps.framework/Versions/A/Headers/GMSPanoramaCameraUpdate.h; sourceTree = "<group>"; };
-		32D4230361B04E378C7087ED /* libPods-GCDiscreetNotificationView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GCDiscreetNotificationView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		33B9E3DFF5A943BDB5B8B3A9 /* GMSPanoramaService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPanoramaService.h; path = GoogleMaps.framework/Versions/A/Headers/GMSPanoramaService.h; sourceTree = "<group>"; };
-		373C173DDE8D4506B8B4C6D9 /* ASINSXMLParserCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASINSXMLParserCompat.h; path = Classes/S3/ASINSXMLParserCompat.h; sourceTree = "<group>"; };
-		3911D132ABE74F2F9099716D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
-		3941CF32DA3F4CA8A8CA21A0 /* ASIDownloadCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIDownloadCache.h; path = Classes/ASIDownloadCache.h; sourceTree = "<group>"; };
-		3B2BD304DD11479A8FCD15A5 /* Pods-GCDiscreetNotificationView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GCDiscreetNotificationView.xcconfig"; sourceTree = "<group>"; };
-		3EE112C48261463BBF545338 /* GMSIndoorLevel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSIndoorLevel.h; path = GoogleMaps.framework/Versions/A/Headers/GMSIndoorLevel.h; sourceTree = "<group>"; };
-		4133A83309B9457486057687 /* ASICloudFilesRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICloudFilesRequest.h; path = Classes/CloudFiles/ASICloudFilesRequest.h; sourceTree = "<group>"; };
-		422718F8A539462BAA1FAE19 /* GMSMapView+Overlays.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GMSMapView+Overlays.h"; path = "GoogleMaps.framework/Versions/A/Headers/GMSMapView+Overlays.h"; sourceTree = "<group>"; };
-		43B240118AC844A29B9C0AD9 /* Pods-ASIHTTPRequest-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ASIHTTPRequest-prefix.pch"; sourceTree = "<group>"; };
-		473C61B813FA41779902605F /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestDelegate.h; path = Classes/ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
-		4B852153E783454F9B0F19DE /* GMSPanoramaCamera.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPanoramaCamera.h; path = GoogleMaps.framework/Versions/A/Headers/GMSPanoramaCamera.h; sourceTree = "<group>"; };
-		4CA296D4B64342AD9252FDA3 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/GLKit.framework; sourceTree = DEVELOPER_DIR; };
-		4DEFCB3EEE774786A451E287 /* GMSPolyline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPolyline.h; path = GoogleMaps.framework/Versions/A/Headers/GMSPolyline.h; sourceTree = "<group>"; };
-		4EDD709B918141F392444664 /* ASICloudFilesObjectRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASICloudFilesObjectRequest.m; path = Classes/CloudFiles/ASICloudFilesObjectRequest.m; sourceTree = "<group>"; };
-		4FE96705477940FB8C83F5E4 /* Reachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		507E2AE440264E39AA49CF82 /* ASIS3BucketRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIS3BucketRequest.m; path = Classes/S3/ASIS3BucketRequest.m; sourceTree = "<group>"; };
-		526DAFD26C514B1685A2E646 /* Pods-Google-Maps-iOS-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Google-Maps-iOS-SDK.xcconfig"; sourceTree = "<group>"; };
-		54A685F8BADA47B1949550DD /* ASIInputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIInputStream.h; path = Classes/ASIInputStream.h; sourceTree = "<group>"; };
-		58D1A34AAE3340AB8B6D55AE /* ASIS3ServiceRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIS3ServiceRequest.h; path = Classes/S3/ASIS3ServiceRequest.h; sourceTree = "<group>"; };
-		5A87F6BC277B4CD4923DBF3F /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = minizip/crypt.h; sourceTree = "<group>"; };
-		5BC4390E775F4A1881831DE8 /* ASINetworkQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASINetworkQueue.m; path = Classes/ASINetworkQueue.m; sourceTree = "<group>"; };
-		5DF1CBEA01124661A9A5C29F /* GMSTileLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSTileLayer.h; path = GoogleMaps.framework/Versions/A/Headers/GMSTileLayer.h; sourceTree = "<group>"; };
-		5EC3A76543F44D4D89B4C850 /* GMSPolygon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPolygon.h; path = GoogleMaps.framework/Versions/A/Headers/GMSPolygon.h; sourceTree = "<group>"; };
-		5F7CAEE539D746469C2AB011 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIDataDecompressor.m; path = Classes/ASIDataDecompressor.m; sourceTree = "<group>"; };
-		5FB792605E954E00AE0EEB7D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
-		605977CC28D34EFEBDD347BF /* GMSPanorama.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPanorama.h; path = GoogleMaps.framework/Versions/A/Headers/GMSPanorama.h; sourceTree = "<group>"; };
-		64B763B96DC64D37A0BD7871 /* Pods-SSZipArchive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSZipArchive.xcconfig"; sourceTree = "<group>"; };
-		6638F8168D6F412C9AF4E133 /* ASINetworkQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASINetworkQueue.h; path = Classes/ASINetworkQueue.h; sourceTree = "<group>"; };
-		6680AFED18DA494AA4C26C37 /* GMSUISettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSUISettings.h; path = GoogleMaps.framework/Versions/A/Headers/GMSUISettings.h; sourceTree = "<group>"; };
-		6733CDC45E5B4DAD9C390395 /* GMSMapView+Animation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GMSMapView+Animation.h"; path = "GoogleMaps.framework/Versions/A/Headers/GMSMapView+Animation.h"; sourceTree = "<group>"; };
-		689A0251867F4F3BAD54CB5D /* Pods-Google-Maps-iOS-SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Google-Maps-iOS-SDK-dummy.m"; sourceTree = "<group>"; };
-		6A9BC242312049328B28AF42 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = unzip.c; path = minizip/unzip.c; sourceTree = "<group>"; };
-		6B3EEFB95EE4417EB8F269A8 /* GMSProjection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSProjection.h; path = GoogleMaps.framework/Versions/A/Headers/GMSProjection.h; sourceTree = "<group>"; };
-		6C4BB59D7E8F4070996A3804 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6D19FACB2AB74EA8A7D9739B /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
-		75CD760566FC4ED6A2526A96 /* GMSMarker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSMarker.h; path = GoogleMaps.framework/Versions/A/Headers/GMSMarker.h; sourceTree = "<group>"; };
-		7683FDC65E494BB196F0147D /* GMSMutablePath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSMutablePath.h; path = GoogleMaps.framework/Versions/A/Headers/GMSMutablePath.h; sourceTree = "<group>"; };
-		77C25C2225454852A6DAAC49 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		794D8CEF8DBB440E9858E8AC /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = minizip/zip.h; sourceTree = "<group>"; };
-		7C900E98A7314C9FB7525FD5 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = minizip/ioapi.c; sourceTree = "<group>"; };
-		7DEB2722037346E4BD114098 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		7DF84CA7CBB442E4A3345DAA /* GMSServices.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSServices.h; path = GoogleMaps.framework/Versions/A/Headers/GMSServices.h; sourceTree = "<group>"; };
-		7ED0D31F443E4E75B757434A /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		8180C9050896419995B12CC0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		826ACCD6329C4E6B98490809 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		84D4D9703B5B43ECBAA44A34 /* ASIInputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIInputStream.m; path = Classes/ASIInputStream.m; sourceTree = "<group>"; };
-		8555DF4DC6F6417CB420A04E /* GMSURLTileLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSURLTileLayer.h; path = GoogleMaps.framework/Versions/A/Headers/GMSURLTileLayer.h; sourceTree = "<group>"; };
-		86B3E889BF074B16BCE8F783 /* ASIS3Request.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIS3Request.h; path = Classes/S3/ASIS3Request.h; sourceTree = "<group>"; };
-		897C3DDB1C9F4DEA80E1B1D7 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIDataDecompressor.h; path = Classes/ASIDataDecompressor.h; sourceTree = "<group>"; };
-		89E574858B02446486B2F940 /* Pods-SSZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SSZipArchive-prefix.pch"; sourceTree = "<group>"; };
-		8A03990B3DB349F2A5B434BC /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = zip.c; path = minizip/zip.c; sourceTree = "<group>"; };
-		8A691D2AA59B42049B37C1A4 /* ASIS3Bucket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIS3Bucket.h; path = Classes/S3/ASIS3Bucket.h; sourceTree = "<group>"; };
-		8B4F9DEDA632430A9FF5F22D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
-		8BB071F5DC9F45EFB8BCE41B /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = minizip/unzip.h; sourceTree = "<group>"; };
-		8DFA726D1ED144BB81C5C3AE /* ASIS3ObjectRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIS3ObjectRequest.m; path = Classes/S3/ASIS3ObjectRequest.m; sourceTree = "<group>"; };
-		907C77AA8E8C4276B67B22DE /* ASICloudFilesContainerXMLParserDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASICloudFilesContainerXMLParserDelegate.m; path = Classes/CloudFiles/ASICloudFilesContainerXMLParserDelegate.m; sourceTree = "<group>"; };
-		918AC76BAFA447D4BA94AC7A /* GMSOrientation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSOrientation.h; path = GoogleMaps.framework/Versions/A/Headers/GMSOrientation.h; sourceTree = "<group>"; };
-		939FB410E9964A4092E3BCEB /* libPods-Google-Maps-iOS-SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Google-Maps-iOS-SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		940251562E7C492C95AED581 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIProgressDelegate.h; path = Classes/ASIProgressDelegate.h; sourceTree = "<group>"; };
-		946E339708DB41E2A21FD0FD /* SSZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSZipArchive.m; path = SSZipArchive/SSZipArchive.m; sourceTree = "<group>"; };
-		94B878A17AFE42BFAD5BA7A4 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		95D0B647A37046D097437A99 /* GMSMapLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSMapLayer.h; path = GoogleMaps.framework/Versions/A/Headers/GMSMapLayer.h; sourceTree = "<group>"; };
-		95F1C1AF177F48DBA2169897 /* GMSCoordinateBounds.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSCoordinateBounds.h; path = GoogleMaps.framework/Versions/A/Headers/GMSCoordinateBounds.h; sourceTree = "<group>"; };
-		96466E9C5E324AF79AF91351 /* libPods-ASIHTTPRequest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ASIHTTPRequest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9879484624F84450B6A5403C /* ASIFormDataRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIFormDataRequest.m; path = Classes/ASIFormDataRequest.m; sourceTree = "<group>"; };
-		994607121E5949408A53909D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		9C7CF64A3B564222BEB2E927 /* ASICloudFilesObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICloudFilesObject.h; path = Classes/CloudFiles/ASICloudFilesObject.h; sourceTree = "<group>"; };
-		9E2CFAE0A5C14647B50E31B7 /* Pods-Reachability-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Reachability-prefix.pch"; sourceTree = "<group>"; };
-		A26851575E514017B25E7DCB /* GMSPanoramaLink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPanoramaLink.h; path = GoogleMaps.framework/Versions/A/Headers/GMSPanoramaLink.h; sourceTree = "<group>"; };
-		A47FCE371F7947EF9ECCA8CE /* ASIS3ServiceRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIS3ServiceRequest.m; path = Classes/S3/ASIS3ServiceRequest.m; sourceTree = "<group>"; };
-		A4A290B77BA940F69CAAE5FD /* libPods-Reachability.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reachability.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A74C206A368B4E9E91F1C5A5 /* Pods-ASIHTTPRequest-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ASIHTTPRequest-Private.xcconfig"; sourceTree = "<group>"; };
-		A7654E906FF540A2A7019EBF /* GMSCameraPosition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSCameraPosition.h; path = GoogleMaps.framework/Versions/A/Headers/GMSCameraPosition.h; sourceTree = "<group>"; };
-		A85113DFDFA94BE48773C62C /* Pods-Reachability-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Reachability-dummy.m"; sourceTree = "<group>"; };
-		AC273CFF93534881A20CA95F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		B03AD9110C164EB4A1B43D89 /* GMSGeometryUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSGeometryUtils.h; path = GoogleMaps.framework/Versions/A/Headers/GMSGeometryUtils.h; sourceTree = "<group>"; };
-		B17C60035B8045B485A831EE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		B291397E86AA49EA8DD0D9B3 /* GMSIndoorDisplay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSIndoorDisplay.h; path = GoogleMaps.framework/Versions/A/Headers/GMSIndoorDisplay.h; sourceTree = "<group>"; };
-		B2BDDBE17F3A49DDA5F5EBF5 /* GMSPanoramaLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPanoramaLayer.h; path = GoogleMaps.framework/Versions/A/Headers/GMSPanoramaLayer.h; sourceTree = "<group>"; };
-		B31F9DC94B5C497C91BFD4C2 /* ASIDownloadCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIDownloadCache.m; path = Classes/ASIDownloadCache.m; sourceTree = "<group>"; };
-		B4158B82CEE341AE825CCD3C /* Pods-GCDiscreetNotificationView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GCDiscreetNotificationView-dummy.m"; sourceTree = "<group>"; };
-		B6995DA4D554488EAF276FC1 /* libPods-SSZipArchive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SSZipArchive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7AC2444ABD84D55AA210AC5 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.xcconfig; sourceTree = "<group>"; };
-		BB285B93D5E847D3B3D99314 /* ASICloudFilesContainerRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICloudFilesContainerRequest.h; path = Classes/CloudFiles/ASICloudFilesContainerRequest.h; sourceTree = "<group>"; };
-		BB67B8764A4A451580A5C715 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequest.h; path = Classes/ASIHTTPRequest.h; sourceTree = "<group>"; };
-		BDF0DED97E234389BD0698E3 /* ASICloudFilesRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASICloudFilesRequest.m; path = Classes/CloudFiles/ASICloudFilesRequest.m; sourceTree = "<group>"; };
-		BE722D97AC9B48858F8A330C /* GMSGeocoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSGeocoder.h; path = GoogleMaps.framework/Versions/A/Headers/GMSGeocoder.h; sourceTree = "<group>"; };
-		C22B45C65A8F408DA6DD36CF /* ASICloudFilesContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASICloudFilesContainer.m; path = Classes/CloudFiles/ASICloudFilesContainer.m; sourceTree = "<group>"; };
-		C3269A02685C4346A52A5FFC /* GMSPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPath.h; path = GoogleMaps.framework/Versions/A/Headers/GMSPath.h; sourceTree = "<group>"; };
-		C39873CADFF946EAB63CF44C /* GMSCALayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSCALayer.h; path = GoogleMaps.framework/Versions/A/Headers/GMSCALayer.h; sourceTree = "<group>"; };
-		C3AEB4A4EFAB408CBCCB6DDD /* ASIS3Bucket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIS3Bucket.m; path = Classes/S3/ASIS3Bucket.m; sourceTree = "<group>"; };
-		C68976A66AE1498D9E62CE32 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIAuthenticationDialog.m; path = Classes/ASIAuthenticationDialog.m; sourceTree = "<group>"; };
-		C70EB1F1E79947EABFDE6E2C /* ASIHTTPRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIHTTPRequest.m; path = Classes/ASIHTTPRequest.m; sourceTree = "<group>"; };
-		C827ED3590984940A2F40169 /* ASICloudFilesCDNRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASICloudFilesCDNRequest.m; path = Classes/CloudFiles/ASICloudFilesCDNRequest.m; sourceTree = "<group>"; };
-		C88980ADF41C4C609088A820 /* ASICloudFilesCDNRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICloudFilesCDNRequest.h; path = Classes/CloudFiles/ASICloudFilesCDNRequest.h; sourceTree = "<group>"; };
-		C932024F8492432E9CB05488 /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = minizip/ioapi.h; sourceTree = "<group>"; };
-		C992E6A7C7F34C56B8A584AD /* Pods-GCDiscreetNotificationView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GCDiscreetNotificationView-Private.xcconfig"; sourceTree = "<group>"; };
-		CD30125824824478A634D047 /* ASIS3Request.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIS3Request.m; path = Classes/S3/ASIS3Request.m; sourceTree = "<group>"; };
-		CF73428B11EE414A8A1DEA44 /* Pods-Google-Maps-iOS-SDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Google-Maps-iOS-SDK-prefix.pch"; sourceTree = "<group>"; };
-		D04DF6AA735D4F0CAD27EB02 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/GoogleMaps.framework; sourceTree = DEVELOPER_DIR; };
-		D08D936B2DFE44FAAC3C098F /* ASICloudFilesObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASICloudFilesObject.m; path = Classes/CloudFiles/ASICloudFilesObject.m; sourceTree = "<group>"; };
-		D16B5316DDE94D709AF94769 /* Pods-Reachability-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reachability-Private.xcconfig"; sourceTree = "<group>"; };
-		D46D5741928146648A63C9C5 /* Pods-ASIHTTPRequest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ASIHTTPRequest-dummy.m"; sourceTree = "<group>"; };
-		D4B8881FC7E34CB3B546CB34 /* GoogleMaps.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GoogleMaps.h; path = GoogleMaps.framework/Versions/A/Headers/GoogleMaps.h; sourceTree = "<group>"; };
-		DE88297D579D4B56811D1EF3 /* ASIS3BucketObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIS3BucketObject.m; path = Classes/S3/ASIS3BucketObject.m; sourceTree = "<group>"; };
-		E159188ADDF3467296CEE35B /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
-		E16C1AB4EC944F5BADB95CEE /* mztools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = minizip/mztools.h; sourceTree = "<group>"; };
-		E4093811B7484DE793193339 /* GCDiscreetNotificationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDiscreetNotificationView.m; path = GCDiscreetNotificationView/GCDiscreetNotificationView.m; sourceTree = "<group>"; };
-		E99A853910674CDC98A64289 /* GMSCameraUpdate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSCameraUpdate.h; path = GoogleMaps.framework/Versions/A/Headers/GMSCameraUpdate.h; sourceTree = "<group>"; };
-		E9BA6BE72B4A454A883206A9 /* ASICloudFilesContainerXMLParserDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICloudFilesContainerXMLParserDelegate.h; path = Classes/CloudFiles/ASICloudFilesContainerXMLParserDelegate.h; sourceTree = "<group>"; };
-		EF0872D0C5CD498F9C94B74F /* ASICloudFilesContainerRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASICloudFilesContainerRequest.m; path = Classes/CloudFiles/ASICloudFilesContainerRequest.m; sourceTree = "<group>"; };
-		EF7AD437F7BB4858AAB87183 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		F0494D4F62CF4D6D857EE159 /* ASIS3BucketRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIS3BucketRequest.h; path = Classes/S3/ASIS3BucketRequest.h; sourceTree = "<group>"; };
-		F27BB1B83CAA4021B0DE8C5C /* GCDiscreetNotificationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDiscreetNotificationView.h; path = GCDiscreetNotificationView/GCDiscreetNotificationView.h; sourceTree = "<group>"; };
-		F51DF544D6004D5E8BF1D921 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestConfig.h; path = Classes/ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
-		F89F642275EA4453B7872584 /* ASIS3BucketObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIS3BucketObject.h; path = Classes/S3/ASIS3BucketObject.h; sourceTree = "<group>"; };
-		F90A6489CC834C5DA60ECC1F /* GMSSyncTileLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSSyncTileLayer.h; path = GoogleMaps.framework/Versions/A/Headers/GMSSyncTileLayer.h; sourceTree = "<group>"; };
-		F9C87FC269884E7FA8D46975 /* GMSMapView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSMapView.h; path = GoogleMaps.framework/Versions/A/Headers/GMSMapView.h; sourceTree = "<group>"; };
-		FA00ACA9702844E091CEADE5 /* Reachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		005FBD131FEB48D99655E3BE /* ASICloudFilesObjectRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASICloudFilesObjectRequest.m; path = Classes/CloudFiles/ASICloudFilesObjectRequest.m; sourceTree = "<group>"; };
+		0079AA4BDE784FBDADF860CB /* Pods-GCDiscreetNotificationView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GCDiscreetNotificationView-prefix.pch"; sourceTree = "<group>"; };
+		04245563BF6E4FF2B1D7ECA1 /* GMSMapView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSMapView.h; path = GoogleMaps.framework/Versions/A/Headers/GMSMapView.h; sourceTree = "<group>"; };
+		062587C0A9FF4506BB4B00BA /* GCDiscreetNotificationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDiscreetNotificationView.h; path = GCDiscreetNotificationView/GCDiscreetNotificationView.h; sourceTree = "<group>"; };
+		0F34F21B60FB4D4691940003 /* Pods-Google-Maps-iOS-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Google-Maps-iOS-SDK.xcconfig"; sourceTree = "<group>"; };
+		12AC9AAF84834BF4B207E63E /* libPods-Google-Maps-iOS-SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Google-Maps-iOS-SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		141F590347D647758939A987 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = zip.c; path = minizip/zip.c; sourceTree = "<group>"; };
+		15413EDCBBE942EB8F797BBE /* ASIDownloadCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIDownloadCache.h; path = Classes/ASIDownloadCache.h; sourceTree = "<group>"; };
+		167D7A92C46E40DB8E04E733 /* GMSCameraUpdate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSCameraUpdate.h; path = GoogleMaps.framework/Versions/A/Headers/GMSCameraUpdate.h; sourceTree = "<group>"; };
+		1B518F9C447646C3AF0438ED /* ASIS3ServiceRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIS3ServiceRequest.m; path = Classes/S3/ASIS3ServiceRequest.m; sourceTree = "<group>"; };
+		1CC53FE147FB4ED097DBF30D /* ASIProgressDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIProgressDelegate.h; path = Classes/ASIProgressDelegate.h; sourceTree = "<group>"; };
+		1CDF39A65AD54F9F811CF254 /* GMSIndoorLevel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSIndoorLevel.h; path = GoogleMaps.framework/Versions/A/Headers/GMSIndoorLevel.h; sourceTree = "<group>"; };
+		1E0EDA98DD6D4BABB0922507 /* ASIS3Bucket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIS3Bucket.h; path = Classes/S3/ASIS3Bucket.h; sourceTree = "<group>"; };
+		20612C89E7D9453782624FD6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		21826D6D219A4FF6AF345381 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		25651FE556A64D02A97F7149 /* Pods-SSZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SSZipArchive-prefix.pch"; sourceTree = "<group>"; };
+		2643F174262D4BA0A3BF2D5D /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/GLKit.framework; sourceTree = DEVELOPER_DIR; };
+		282707E9D7364D548B73FAEE /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestDelegate.h; path = Classes/ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		28EFF5CECBF5439084AB94E5 /* ASINetworkQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASINetworkQueue.m; path = Classes/ASINetworkQueue.m; sourceTree = "<group>"; };
+		2CB796B5230142C18C4DB2AF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		2CD86F0432634B19903E0069 /* ASIDownloadCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIDownloadCache.m; path = Classes/ASIDownloadCache.m; sourceTree = "<group>"; };
+		2D35E5140FA14FB3908151BE /* ASICloudFilesCDNRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASICloudFilesCDNRequest.m; path = Classes/CloudFiles/ASICloudFilesCDNRequest.m; sourceTree = "<group>"; };
+		2D61DA48761640BC82DB5C01 /* ASICloudFilesObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICloudFilesObject.h; path = Classes/CloudFiles/ASICloudFilesObject.h; sourceTree = "<group>"; };
+		305E684FD82A4D0DA13EC766 /* Pods-Google-Maps-iOS-SDK-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Google-Maps-iOS-SDK-Private.xcconfig"; sourceTree = "<group>"; };
+		341FCC18B1DC45ECBF71FCF5 /* libPods-Reachability.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reachability.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3890434F2406475A8E372E4F /* GMSOrientation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSOrientation.h; path = GoogleMaps.framework/Versions/A/Headers/GMSOrientation.h; sourceTree = "<group>"; };
+		38F84AB254F54704AA85003C /* GMSCameraPosition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSCameraPosition.h; path = GoogleMaps.framework/Versions/A/Headers/GMSCameraPosition.h; sourceTree = "<group>"; };
+		391CCD52F81A4C2CB6FBECBB /* ASIDataCompressor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIDataCompressor.h; path = Classes/ASIDataCompressor.h; sourceTree = "<group>"; };
+		39D5B6C9A0D9443AA02A87C0 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = unzip.c; path = minizip/unzip.c; sourceTree = "<group>"; };
+		3B65C2D836FC458BA44859FE /* GMSPanoramaLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPanoramaLayer.h; path = GoogleMaps.framework/Versions/A/Headers/GMSPanoramaLayer.h; sourceTree = "<group>"; };
+		3E6E91F81CE242C6A7B4EB5F /* GMSMapLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSMapLayer.h; path = GoogleMaps.framework/Versions/A/Headers/GMSMapLayer.h; sourceTree = "<group>"; };
+		424B0451D1124FD383EF5CEA /* GMSPanoramaCamera.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPanoramaCamera.h; path = GoogleMaps.framework/Versions/A/Headers/GMSPanoramaCamera.h; sourceTree = "<group>"; };
+		425883D3074C40D5BCB61C23 /* Pods-ASIHTTPRequest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ASIHTTPRequest-dummy.m"; sourceTree = "<group>"; };
+		42660161950B44848278A688 /* ASINSXMLParserCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASINSXMLParserCompat.h; path = Classes/S3/ASINSXMLParserCompat.h; sourceTree = "<group>"; };
+		441875CEFDB2403EBCC62CEC /* ASIWebPageRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIWebPageRequest.m; path = Classes/ASIWebPageRequest/ASIWebPageRequest.m; sourceTree = "<group>"; };
+		443A64AD8E214EBCBC5A6FE8 /* Pods-SSZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SSZipArchive-dummy.m"; sourceTree = "<group>"; };
+		451475F5C02D4CE8B26D75A4 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIFormDataRequest.h; path = Classes/ASIFormDataRequest.h; sourceTree = "<group>"; };
+		469F809E25F448289BF9FC7D /* ASIS3ObjectRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIS3ObjectRequest.h; path = Classes/S3/ASIS3ObjectRequest.h; sourceTree = "<group>"; };
+		46EF70131C504005AE1E13F0 /* GMSServices.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSServices.h; path = GoogleMaps.framework/Versions/A/Headers/GMSServices.h; sourceTree = "<group>"; };
+		48985E8E36404B089C135C05 /* GMSPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPath.h; path = GoogleMaps.framework/Versions/A/Headers/GMSPath.h; sourceTree = "<group>"; };
+		4E0037FD613F4E7BA531F332 /* ASIInputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIInputStream.m; path = Classes/ASIInputStream.m; sourceTree = "<group>"; };
+		5232022682564457A5D2DF2A /* SSZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipArchive.h; path = SSZipArchive/SSZipArchive.h; sourceTree = "<group>"; };
+		530604E040514B38A33E4061 /* Pods-Reachability.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reachability.xcconfig"; sourceTree = "<group>"; };
+		5488FF19AF554F21960783F6 /* Pods-GCDiscreetNotificationView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GCDiscreetNotificationView-Private.xcconfig"; sourceTree = "<group>"; };
+		5AB5D732B291444B8FE32D72 /* Pods-SSZipArchive-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSZipArchive-Private.xcconfig"; sourceTree = "<group>"; };
+		5DCB77300EA64404B6DE2677 /* GMSPanoramaCameraUpdate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPanoramaCameraUpdate.h; path = GoogleMaps.framework/Versions/A/Headers/GMSPanoramaCameraUpdate.h; sourceTree = "<group>"; };
+		5EE89824EFEC4A8E8C1D14DA /* ASIHTTPRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIHTTPRequest.m; path = Classes/ASIHTTPRequest.m; sourceTree = "<group>"; };
+		5FCCF1F9345A472DAEDADBD8 /* GMSOverlay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSOverlay.h; path = GoogleMaps.framework/Versions/A/Headers/GMSOverlay.h; sourceTree = "<group>"; };
+		606762E9D6CA42399FF99CC5 /* GMSPanoramaView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPanoramaView.h; path = GoogleMaps.framework/Versions/A/Headers/GMSPanoramaView.h; sourceTree = "<group>"; };
+		616677D05D784070804DB089 /* Pods-Reachability-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reachability-Private.xcconfig"; sourceTree = "<group>"; };
+		626091FCB4EA4B13BFB0AFC4 /* SSZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSZipArchive.m; path = SSZipArchive/SSZipArchive.m; sourceTree = "<group>"; };
+		62AFA6382C384A8A82BCB42F /* ASICloudFilesRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICloudFilesRequest.h; path = Classes/CloudFiles/ASICloudFilesRequest.h; sourceTree = "<group>"; };
+		68DF3C6110D54F1E820BF54D /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		69A131FCE64B47BAAFF2497E /* GMSUISettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSUISettings.h; path = GoogleMaps.framework/Versions/A/Headers/GMSUISettings.h; sourceTree = "<group>"; };
+		6CC2B68016B04221BB74B0A3 /* ASICloudFilesContainerXMLParserDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASICloudFilesContainerXMLParserDelegate.m; path = Classes/CloudFiles/ASICloudFilesContainerXMLParserDelegate.m; sourceTree = "<group>"; };
+		6D868D8482264AB894E95F85 /* Reachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		6E150C2BBCB4425693EABBCD /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		6F76386AE20E40DA8C0A82B0 /* ASIS3BucketRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIS3BucketRequest.m; path = Classes/S3/ASIS3BucketRequest.m; sourceTree = "<group>"; };
+		6F7F28E8721E4A3F8DBC7A18 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6FDD74783B5846F7AD7D7F44 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = minizip/unzip.h; sourceTree = "<group>"; };
+		700EDC2C661E49C686FFB454 /* Pods-ASIHTTPRequest-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ASIHTTPRequest-Private.xcconfig"; sourceTree = "<group>"; };
+		7133CF665EF24EF5BA049616 /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = minizip/crypt.h; sourceTree = "<group>"; };
+		747EBD7B31D548E39E0B6C8E /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = minizip/ioapi.c; sourceTree = "<group>"; };
+		74B0866234E7473496827010 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIDataDecompressor.h; path = Classes/ASIDataDecompressor.h; sourceTree = "<group>"; };
+		74EB3330E6784A54AC48EB7A /* GMSPolygon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPolygon.h; path = GoogleMaps.framework/Versions/A/Headers/GMSPolygon.h; sourceTree = "<group>"; };
+		76DAB05AA5F041ABAE87C647 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		77524824E0F741668BAC555A /* Pods-Reachability-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Reachability-dummy.m"; sourceTree = "<group>"; };
+		77FBE2ED925E4DA1B67E850B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		7A520C619A4F402ABC2B5B24 /* GMSProjection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSProjection.h; path = GoogleMaps.framework/Versions/A/Headers/GMSProjection.h; sourceTree = "<group>"; };
+		7B5F6DA1BB134AF6BE313F46 /* GMSGeocoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSGeocoder.h; path = GoogleMaps.framework/Versions/A/Headers/GMSGeocoder.h; sourceTree = "<group>"; };
+		7D48B97167334C55BC4580FD /* ASICloudFilesRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASICloudFilesRequest.m; path = Classes/CloudFiles/ASICloudFilesRequest.m; sourceTree = "<group>"; };
+		7DDFE1BC89DD46E2ADDC255C /* GMSPolyline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPolyline.h; path = GoogleMaps.framework/Versions/A/Headers/GMSPolyline.h; sourceTree = "<group>"; };
+		7E030FC8B11443D7842156C8 /* GoogleMaps.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GoogleMaps.h; path = GoogleMaps.framework/Versions/A/Headers/GoogleMaps.h; sourceTree = "<group>"; };
+		7EB51281636646D998555175 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.xcconfig; sourceTree = "<group>"; };
+		7EF3748018D744099F86950A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		809E07CB083844E5A0219DF7 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		828D557666F04B999C0A5DB5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		8388C20A03C848568011DE77 /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = minizip/ioapi.h; sourceTree = "<group>"; };
+		849FDA5FF66E40A3900DCDA7 /* Pods-Reachability-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Reachability-prefix.pch"; sourceTree = "<group>"; };
+		850F49293741423D99FBFFE9 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/GoogleMaps.framework; sourceTree = DEVELOPER_DIR; };
+		889D9B5DC594434EB6933E52 /* GMSURLTileLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSURLTileLayer.h; path = GoogleMaps.framework/Versions/A/Headers/GMSURLTileLayer.h; sourceTree = "<group>"; };
+		8992078181B74FC3AF53EED2 /* Pods-GCDiscreetNotificationView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GCDiscreetNotificationView-dummy.m"; sourceTree = "<group>"; };
+		89B040F5192E4E9381C54BF5 /* GMSMarker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSMarker.h; path = GoogleMaps.framework/Versions/A/Headers/GMSMarker.h; sourceTree = "<group>"; };
+		8AAFD90D158C4E1696BAE179 /* GMSCALayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSCALayer.h; path = GoogleMaps.framework/Versions/A/Headers/GMSCALayer.h; sourceTree = "<group>"; };
+		8B3FA91952454B278679B339 /* ASIDataCompressor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIDataCompressor.m; path = Classes/ASIDataCompressor.m; sourceTree = "<group>"; };
+		8B994151658A4E4598BE087C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
+		8B9E918A1D4446AC8573F84A /* GMSMapView+Overlays.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GMSMapView+Overlays.h"; path = "GoogleMaps.framework/Versions/A/Headers/GMSMapView+Overlays.h"; sourceTree = "<group>"; };
+		8D07EBADB6FC41AD93902D10 /* ASIS3BucketObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIS3BucketObject.m; path = Classes/S3/ASIS3BucketObject.m; sourceTree = "<group>"; };
+		8DCC8BD9417C4EE7BF5E65DE /* GMSIndoorDisplay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSIndoorDisplay.h; path = GoogleMaps.framework/Versions/A/Headers/GMSIndoorDisplay.h; sourceTree = "<group>"; };
+		8FD26B9962D742AFA3123265 /* libPods-ASIHTTPRequest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ASIHTTPRequest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94B4223BA6FD4A7981E65645 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		9555536694D444FEAF75A47A /* GMSGeometryUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSGeometryUtils.h; path = GoogleMaps.framework/Versions/A/Headers/GMSGeometryUtils.h; sourceTree = "<group>"; };
+		9684B60D33A74770AFCAD600 /* ASICloudFilesObjectRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICloudFilesObjectRequest.h; path = Classes/CloudFiles/ASICloudFilesObjectRequest.h; sourceTree = "<group>"; };
+		96C567901CF242C5BFA448A5 /* GMSCircle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSCircle.h; path = GoogleMaps.framework/Versions/A/Headers/GMSCircle.h; sourceTree = "<group>"; };
+		979DE72668DD420F9C769ADE /* libPods-SSZipArchive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SSZipArchive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99329A5FF6E345FD8CF58CBA /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = minizip/zip.h; sourceTree = "<group>"; };
+		9A1CB0FFC11446B397773E0B /* Pods-ASIHTTPRequest-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ASIHTTPRequest-prefix.pch"; sourceTree = "<group>"; };
+		9BCC3FF7D27145F4A4BA0223 /* ASICloudFilesObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASICloudFilesObject.m; path = Classes/CloudFiles/ASICloudFilesObject.m; sourceTree = "<group>"; };
+		9C4894B57988401ABADAAF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9E476394853F4227A990B4AD /* ASIS3Request.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIS3Request.m; path = Classes/S3/ASIS3Request.m; sourceTree = "<group>"; };
+		9EE250A90A8C43769E967FB3 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestConfig.h; path = Classes/ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		A18055AE157F468A9261B9FE /* ASICacheDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICacheDelegate.h; path = Classes/ASICacheDelegate.h; sourceTree = "<group>"; };
+		A1CBBF1A437248E0B74BD6A6 /* Pods-Google-Maps-iOS-SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Google-Maps-iOS-SDK-dummy.m"; sourceTree = "<group>"; };
+		A370FA87518747B5991EB42B /* ASICloudFilesContainerXMLParserDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICloudFilesContainerXMLParserDelegate.h; path = Classes/CloudFiles/ASICloudFilesContainerXMLParserDelegate.h; sourceTree = "<group>"; };
+		A4FF0CDFFCED428C848544E9 /* mztools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = minizip/mztools.h; sourceTree = "<group>"; };
+		A6B27477345A496187DA34D7 /* ASICloudFilesContainerRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASICloudFilesContainerRequest.m; path = Classes/CloudFiles/ASICloudFilesContainerRequest.m; sourceTree = "<group>"; };
+		A732CCC0BF52419887D0CF43 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIDataDecompressor.m; path = Classes/ASIDataDecompressor.m; sourceTree = "<group>"; };
+		A829A5F555444AD9AC136457 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIFormDataRequest.m; path = Classes/ASIFormDataRequest.m; sourceTree = "<group>"; };
+		A83EB0CD815D4AF59B672E85 /* mztools.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mztools.c; path = minizip/mztools.c; sourceTree = "<group>"; };
+		AB31E9F9BD9549C8A9720951 /* Pods-GCDiscreetNotificationView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GCDiscreetNotificationView.xcconfig"; sourceTree = "<group>"; };
+		AB59511934A8467C943D585E /* GMSMarkerLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSMarkerLayer.h; path = GoogleMaps.framework/Versions/A/Headers/GMSMarkerLayer.h; sourceTree = "<group>"; };
+		AC185D9D5DD24019A47C12E1 /* GMSSyncTileLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSSyncTileLayer.h; path = GoogleMaps.framework/Versions/A/Headers/GMSSyncTileLayer.h; sourceTree = "<group>"; };
+		AD0898E1C78D4417BB4B16C2 /* GMSMapView+Animation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GMSMapView+Animation.h"; path = "GoogleMaps.framework/Versions/A/Headers/GMSMapView+Animation.h"; sourceTree = "<group>"; };
+		B0D5568AE37C4936AC83CDC8 /* ASINetworkQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASINetworkQueue.h; path = Classes/ASINetworkQueue.h; sourceTree = "<group>"; };
+		B2CD9CAD22A640FEB2DDEE93 /* GMSPanoramaService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPanoramaService.h; path = GoogleMaps.framework/Versions/A/Headers/GMSPanoramaService.h; sourceTree = "<group>"; };
+		B908ED7825DE41698CA841B3 /* ASIS3BucketObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIS3BucketObject.h; path = Classes/S3/ASIS3BucketObject.h; sourceTree = "<group>"; };
+		BA54BC093A7541F898DAD6B4 /* GMSTileLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSTileLayer.h; path = GoogleMaps.framework/Versions/A/Headers/GMSTileLayer.h; sourceTree = "<group>"; };
+		BCDFA684D2684AA8B2C9BEC4 /* ASIS3ServiceRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIS3ServiceRequest.h; path = Classes/S3/ASIS3ServiceRequest.h; sourceTree = "<group>"; };
+		BF088CCFB65C4698B05FFFAD /* Reachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		C00B7A67795B4572BC8E2D8E /* GMSPanoramaLink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPanoramaLink.h; path = GoogleMaps.framework/Versions/A/Headers/GMSPanoramaLink.h; sourceTree = "<group>"; };
+		C09CE7DC0A524935B0C3D2B3 /* ASIInputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIInputStream.h; path = Classes/ASIInputStream.h; sourceTree = "<group>"; };
+		C15CC7869C394F24A274D806 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		C3FCEC78A9AD4171BD2BF14F /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		C4CEDF1566D74C3CA27E129E /* ASICloudFilesContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICloudFilesContainer.h; path = Classes/CloudFiles/ASICloudFilesContainer.h; sourceTree = "<group>"; };
+		C55724EC8EC64FCAB115D8B7 /* GMSIndoorBuilding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSIndoorBuilding.h; path = GoogleMaps.framework/Versions/A/Headers/GMSIndoorBuilding.h; sourceTree = "<group>"; };
+		CB99A9ED0AC1434BBFE5E1AB /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIAuthenticationDialog.h; path = Classes/ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		D0C073EEA07648528106ECDD /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIAuthenticationDialog.m; path = Classes/ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		D139B13F4864491AB6CB0BB7 /* Pods-Google-Maps-iOS-SDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Google-Maps-iOS-SDK-prefix.pch"; sourceTree = "<group>"; };
+		D404E195CF7A4B458425538D /* GMSGroundOverlay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSGroundOverlay.h; path = GoogleMaps.framework/Versions/A/Headers/GMSGroundOverlay.h; sourceTree = "<group>"; };
+		D534C7C938EB401EBA6D880F /* GCDiscreetNotificationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDiscreetNotificationView.m; path = GCDiscreetNotificationView/GCDiscreetNotificationView.m; sourceTree = "<group>"; };
+		D5A646F41CB34F5DAA83C938 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D8A97E99753144B994E5D447 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		D8B0F71E711A4248BFF8A52C /* ASICloudFilesContainerRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICloudFilesContainerRequest.h; path = Classes/CloudFiles/ASICloudFilesContainerRequest.h; sourceTree = "<group>"; };
+		D9546354FDBB4E5880B687D2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		D9E21DEC20C4401CA90D10CC /* ASIS3ObjectRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIS3ObjectRequest.m; path = Classes/S3/ASIS3ObjectRequest.m; sourceTree = "<group>"; };
+		DB06C9C8612D4C40A86A3924 /* ASIS3Request.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIS3Request.h; path = Classes/S3/ASIS3Request.h; sourceTree = "<group>"; };
+		DB1B5A547056433781B0FAC7 /* ASIS3Bucket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASIS3Bucket.m; path = Classes/S3/ASIS3Bucket.m; sourceTree = "<group>"; };
+		DF8CA6FB374C4A88A7801D8C /* GMSMutablePath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSMutablePath.h; path = GoogleMaps.framework/Versions/A/Headers/GMSMutablePath.h; sourceTree = "<group>"; };
+		E0C0582467E8414B88126CB2 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequest.h; path = Classes/ASIHTTPRequest.h; sourceTree = "<group>"; };
+		E7B066946F8949F3BD809765 /* GMSPanorama.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSPanorama.h; path = GoogleMaps.framework/Versions/A/Headers/GMSPanorama.h; sourceTree = "<group>"; };
+		E99138EC8CF34F69901BA71F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1021696FE0F4E9E900E5244 /* Pods-SSZipArchive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSZipArchive.xcconfig"; sourceTree = "<group>"; };
+		F15DD2B344944F9AA2974308 /* ASICloudFilesContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASICloudFilesContainer.m; path = Classes/CloudFiles/ASICloudFilesContainer.m; sourceTree = "<group>"; };
+		F20E84ADDE644F9595AD657B /* ASICloudFilesCDNRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASICloudFilesCDNRequest.h; path = Classes/CloudFiles/ASICloudFilesCDNRequest.h; sourceTree = "<group>"; };
+		F2D0E5CF27A24F80A930ECBE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F4CD634C918F4471945FB9CA /* ASIWebPageRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIWebPageRequest.h; path = Classes/ASIWebPageRequest/ASIWebPageRequest.h; sourceTree = "<group>"; };
+		F67162089425474B889CE904 /* libPods-GCDiscreetNotificationView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GCDiscreetNotificationView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6787B0D710E4DEE820997E4 /* ASIS3BucketRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASIS3BucketRequest.h; path = Classes/S3/ASIS3BucketRequest.h; sourceTree = "<group>"; };
+		FB1D7DF8F1B44D808F57F75A /* Pods-ASIHTTPRequest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ASIHTTPRequest.xcconfig"; sourceTree = "<group>"; };
+		FE46E878EC4741F595346337 /* GMSCoordinateBounds.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSCoordinateBounds.h; path = GoogleMaps.framework/Versions/A/Headers/GMSCoordinateBounds.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		215B9A38F90B416C960D6BAF /* Frameworks */ = {
+		025720654F8A49C7B7CAD8FB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D28F429A072648B9AB8E3172 /* Foundation.framework in Frameworks */,
-				34E6772608AC4462AA111F4B /* SystemConfiguration.framework in Frameworks */,
+				D0386FD0230A4B71A0319A59 /* Foundation.framework in Frameworks */,
+				EEE2250B9A204AD7978BA102 /* libPods-ASIHTTPRequest.a in Frameworks */,
+				70519A7DC62B40F0ADBEA799 /* libPods-GCDiscreetNotificationView.a in Frameworks */,
+				AE5CA01120E5492E896ACA99 /* libPods-Google-Maps-iOS-SDK.a in Frameworks */,
+				EF1707978646481294BD7C75 /* libPods-Reachability.a in Frameworks */,
+				96F57AA94F4B4EA18AF4132A /* libPods-SSZipArchive.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		429606AD5F9E488988686E9D /* Frameworks */ = {
+		1C128FB82E724254BFB87830 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1832F3CCDE744E6A2822AEB /* CFNetwork.framework in Frameworks */,
-				5EC49A0E35174FD69300D58E /* CoreGraphics.framework in Frameworks */,
-				4068C185EF81432BA7203E8C /* Foundation.framework in Frameworks */,
-				7FEF0D5546A4499D930F0E77 /* MobileCoreServices.framework in Frameworks */,
+				3F4EA16AB73C4B2E91E05B50 /* AVFoundation.framework in Frameworks */,
+				5CC39D0628664328B1DECD34 /* CoreData.framework in Frameworks */,
+				AB2C563BEB0A4289BC1C6A89 /* CoreGraphics.framework in Frameworks */,
+				E32C5FB561D649B980E3A99A /* CoreLocation.framework in Frameworks */,
+				DF0E23E035D441A893D677D8 /* CoreText.framework in Frameworks */,
+				6F57D57A796C4E2D9373E2EC /* Foundation.framework in Frameworks */,
+				30D5E516A3354303A0311099 /* GLKit.framework in Frameworks */,
+				7505A3DF723443B4AFA1FC44 /* GoogleMaps.framework in Frameworks */,
+				BDC5054B8CDF4B9B80984C85 /* ImageIO.framework in Frameworks */,
+				26395A1618B74EB09F08DC8C /* OpenGLES.framework in Frameworks */,
+				5BBDC93D85EE430B84C4E812 /* QuartzCore.framework in Frameworks */,
+				8B0305FF432A4BF9A971D751 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		62DF5041BBB14191897ED37F /* Frameworks */ = {
+		3004A57234634A33B4EE08FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E59D5506A397440FBED80B27 /* AVFoundation.framework in Frameworks */,
-				F507C3BD63684D84A7DDD852 /* CoreData.framework in Frameworks */,
-				58E10A72E6184163B7ECDADD /* CoreGraphics.framework in Frameworks */,
-				A3428021AD5B4C26BE6A03C9 /* CoreLocation.framework in Frameworks */,
-				976F05903F4D4751A1BF5BF3 /* CoreText.framework in Frameworks */,
-				1D83D6B467FD4FB49E939DD6 /* Foundation.framework in Frameworks */,
-				D3D3EAD843804321A5DD8BB9 /* GLKit.framework in Frameworks */,
-				055F49C8F2F74610B9454C20 /* GoogleMaps.framework in Frameworks */,
-				4F6A49C28300495286AC57DA /* ImageIO.framework in Frameworks */,
-				9A038986D3754A1899C6CEC6 /* OpenGLES.framework in Frameworks */,
-				D041CA8A57634D3CBB5527B1 /* QuartzCore.framework in Frameworks */,
-				8E6EC3929FBB412788C56B96 /* SystemConfiguration.framework in Frameworks */,
+				71A18C9A03D6451AB205682B /* CFNetwork.framework in Frameworks */,
+				03D03558E7EC472BB46537E3 /* CoreGraphics.framework in Frameworks */,
+				D725FCD91AC943E384F9C9C0 /* Foundation.framework in Frameworks */,
+				93D208A9AB9E4F7D8AA6FE0E /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8AFFD0BE9A04442CB88E9590 /* Frameworks */ = {
+		5752DCF407C145CC817F5D72 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13C4627FC122449DBA57252A /* Foundation.framework in Frameworks */,
-				8AFCBC82027A4A7AABCB08D7 /* libPods-ASIHTTPRequest.a in Frameworks */,
-				E341725FAE0349CE9357D484 /* libPods-GCDiscreetNotificationView.a in Frameworks */,
-				E6916DF922D74840BDFA693E /* libPods-Google-Maps-iOS-SDK.a in Frameworks */,
-				6AB764297EE94F35A4D5C29E /* libPods-Reachability.a in Frameworks */,
-				CEFFEEEFD1194C79AD0FEA44 /* libPods-SSZipArchive.a in Frameworks */,
+				701C8A65BB1B497C86D1046B /* Foundation.framework in Frameworks */,
+				21A53DA522654FF4A681193B /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C856F9B90A1240529E256A76 /* Frameworks */ = {
+		9766427853D646D7A5E72335 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1105909DF2BF43FCB19C782C /* Foundation.framework in Frameworks */,
+				FCE9DADE2B4C4402A20C6A76 /* Foundation.framework in Frameworks */,
+				A3970E5987544ACBAA3F78FD /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D9A69C1A8DEF4BF98466432E /* Frameworks */ = {
+		B01384ADF7D845D7B921E7D1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				160AD22ED4F54E4AA14B4D22 /* Foundation.framework in Frameworks */,
-				27826D54AA794BD5ADBD0547 /* UIKit.framework in Frameworks */,
+				B4DEB09CDCF3433D94498947 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		10EAE6869F94454FA4CFBE82 /* Reachability */ = {
+		01C797B24208472D8DA38184 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				FA00ACA9702844E091CEADE5 /* Reachability.h */,
-				4FE96705477940FB8C83F5E4 /* Reachability.m */,
-				B87A7CA13D0F4574B95C8159 /* Support Files */,
-			);
-			path = Reachability;
-			sourceTree = "<group>";
-		};
-		18CF92E0928E4CF2AA78B1E7 /* CloudFiles */ = {
-			isa = PBXGroup;
-			children = (
-				C88980ADF41C4C609088A820 /* ASICloudFilesCDNRequest.h */,
-				C827ED3590984940A2F40169 /* ASICloudFilesCDNRequest.m */,
-				00ED03D9E1BC4711B4654B8B /* ASICloudFilesContainer.h */,
-				C22B45C65A8F408DA6DD36CF /* ASICloudFilesContainer.m */,
-				BB285B93D5E847D3B3D99314 /* ASICloudFilesContainerRequest.h */,
-				EF0872D0C5CD498F9C94B74F /* ASICloudFilesContainerRequest.m */,
-				E9BA6BE72B4A454A883206A9 /* ASICloudFilesContainerXMLParserDelegate.h */,
-				907C77AA8E8C4276B67B22DE /* ASICloudFilesContainerXMLParserDelegate.m */,
-				9C7CF64A3B564222BEB2E927 /* ASICloudFilesObject.h */,
-				D08D936B2DFE44FAAC3C098F /* ASICloudFilesObject.m */,
-				177738B1EA4F4C728A9C5374 /* ASICloudFilesObjectRequest.h */,
-				4EDD709B918141F392444664 /* ASICloudFilesObjectRequest.m */,
-				4133A83309B9457486057687 /* ASICloudFilesRequest.h */,
-				BDF0DED97E234389BD0698E3 /* ASICloudFilesRequest.m */,
-				373C173DDE8D4506B8B4C6D9 /* ASINSXMLParserCompat.h */,
-			);
-			name = CloudFiles;
-			sourceTree = "<group>";
-		};
-		21F90516FF1F47449EC42BC6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				526DAFD26C514B1685A2E646 /* Pods-Google-Maps-iOS-SDK.xcconfig */,
-				2C4406EB6FA6427DA1FAB41C /* Pods-Google-Maps-iOS-SDK-Private.xcconfig */,
-				689A0251867F4F3BAD54CB5D /* Pods-Google-Maps-iOS-SDK-dummy.m */,
-				CF73428B11EE414A8A1DEA44 /* Pods-Google-Maps-iOS-SDK-prefix.pch */,
-			);
-			name = "Support Files";
-			sourceTree = SOURCE_ROOT;
-		};
-		3DA825798A074747BA1D0B4C /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				2204612C8F054F68810D8B3E /* ASIAuthenticationDialog.h */,
-				C68976A66AE1498D9E62CE32 /* ASIAuthenticationDialog.m */,
-				20BC2F81C42C4DBE86E0D269 /* ASICacheDelegate.h */,
-				04F50DA4F4FA46A98BD59A41 /* ASIDataCompressor.h */,
-				27CD078C306F4061861B56F4 /* ASIDataCompressor.m */,
-				897C3DDB1C9F4DEA80E1B1D7 /* ASIDataDecompressor.h */,
-				5F7CAEE539D746469C2AB011 /* ASIDataDecompressor.m */,
-				3941CF32DA3F4CA8A8CA21A0 /* ASIDownloadCache.h */,
-				B31F9DC94B5C497C91BFD4C2 /* ASIDownloadCache.m */,
-				0D6FB2C25B724C0F842BE9B3 /* ASIFormDataRequest.h */,
-				9879484624F84450B6A5403C /* ASIFormDataRequest.m */,
-				BB67B8764A4A451580A5C715 /* ASIHTTPRequest.h */,
-				C70EB1F1E79947EABFDE6E2C /* ASIHTTPRequest.m */,
-				F51DF544D6004D5E8BF1D921 /* ASIHTTPRequestConfig.h */,
-				473C61B813FA41779902605F /* ASIHTTPRequestDelegate.h */,
-				54A685F8BADA47B1949550DD /* ASIInputStream.h */,
-				84D4D9703B5B43ECBAA44A34 /* ASIInputStream.m */,
-				6638F8168D6F412C9AF4E133 /* ASINetworkQueue.h */,
-				5BC4390E775F4A1881831DE8 /* ASINetworkQueue.m */,
-				940251562E7C492C95AED581 /* ASIProgressDelegate.h */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		4300D945D7944E458FFDD807 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B184F492BA034A349DAE3A32 /* ASIHTTPRequest */,
-				D10423751476403BA0CCF546 /* GCDiscreetNotificationView */,
-				91B68E30F7924B6E8EBA4B8C /* Google-Maps-iOS-SDK */,
-				10EAE6869F94454FA4CFBE82 /* Reachability */,
-				6016ED57E5404EEFA906D6E0 /* SSZipArchive */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		48741DFE98AA4548B6535844 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				8180C9050896419995B12CC0 /* AVFoundation.framework */,
-				18319146C7624E229C35B342 /* CFNetwork.framework */,
-				3911D132ABE74F2F9099716D /* CoreData.framework */,
-				994607121E5949408A53909D /* CoreGraphics.framework */,
-				8B4F9DEDA632430A9FF5F22D /* CoreLocation.framework */,
-				6D19FACB2AB74EA8A7D9739B /* CoreText.framework */,
-				AC273CFF93534881A20CA95F /* Foundation.framework */,
-				4CA296D4B64342AD9252FDA3 /* GLKit.framework */,
-				D04DF6AA735D4F0CAD27EB02 /* GoogleMaps.framework */,
-				181CA47A5E9048068D608F42 /* ImageIO.framework */,
-				5FB792605E954E00AE0EEB7D /* MobileCoreServices.framework */,
-				154A1A0A00384E35AD16903C /* OpenGLES.framework */,
-				B17C60035B8045B485A831EE /* QuartzCore.framework */,
-				EF7AD437F7BB4858AAB87183 /* SystemConfiguration.framework */,
-				18CAD2B92EFC4656B2553E07 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		6016ED57E5404EEFA906D6E0 /* SSZipArchive */ = {
-			isa = PBXGroup;
-			children = (
-				1985488EA52B4199843A2797 /* SSZipArchive.h */,
-				946E339708DB41E2A21FD0FD /* SSZipArchive.m */,
-				5A87F6BC277B4CD4923DBF3F /* crypt.h */,
-				7C900E98A7314C9FB7525FD5 /* ioapi.c */,
-				C932024F8492432E9CB05488 /* ioapi.h */,
-				2379AD94EB19407E8CAAC784 /* mztools.c */,
-				E16C1AB4EC944F5BADB95CEE /* mztools.h */,
-				6A9BC242312049328B28AF42 /* unzip.c */,
-				8BB071F5DC9F45EFB8BCE41B /* unzip.h */,
-				8A03990B3DB349F2A5B434BC /* zip.c */,
-				794D8CEF8DBB440E9858E8AC /* zip.h */,
-				80F5DB4F14F84D559696DFB8 /* Support Files */,
-			);
-			path = SSZipArchive;
-			sourceTree = "<group>";
-		};
-		666659F4C2C5445DA6943565 /* S3 */ = {
-			isa = PBXGroup;
-			children = (
-				8A691D2AA59B42049B37C1A4 /* ASIS3Bucket.h */,
-				C3AEB4A4EFAB408CBCCB6DDD /* ASIS3Bucket.m */,
-				F89F642275EA4453B7872584 /* ASIS3BucketObject.h */,
-				DE88297D579D4B56811D1EF3 /* ASIS3BucketObject.m */,
-				F0494D4F62CF4D6D857EE159 /* ASIS3BucketRequest.h */,
-				507E2AE440264E39AA49CF82 /* ASIS3BucketRequest.m */,
-				1BCC413F2D074E7194621567 /* ASIS3ObjectRequest.h */,
-				8DFA726D1ED144BB81C5C3AE /* ASIS3ObjectRequest.m */,
-				86B3E889BF074B16BCE8F783 /* ASIS3Request.h */,
-				CD30125824824478A634D047 /* ASIS3Request.m */,
-				58D1A34AAE3340AB8B6D55AE /* ASIS3ServiceRequest.h */,
-				A47FCE371F7947EF9ECCA8CE /* ASIS3ServiceRequest.m */,
-			);
-			name = S3;
-			sourceTree = "<group>";
-		};
-		6D27DEC500E64F77A86AFF0F = {
-			isa = PBXGroup;
-			children = (
-				7DEB2722037346E4BD114098 /* Podfile */,
-				BB52B674B13A464CB243A71D /* Frameworks */,
-				4300D945D7944E458FFDD807 /* Pods */,
-				E85BA687E4814DC88F0E9BDB /* Products */,
-				AE3FB9D9F0094F94BC6F5CC7 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		6E00B98D0D454E1493608774 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				05220A939D9347119283E93A /* Pods-ASIHTTPRequest.xcconfig */,
-				A74C206A368B4E9E91F1C5A5 /* Pods-ASIHTTPRequest-Private.xcconfig */,
-				D46D5741928146648A63C9C5 /* Pods-ASIHTTPRequest-dummy.m */,
-				43B240118AC844A29B9C0AD9 /* Pods-ASIHTTPRequest-prefix.pch */,
-			);
-			name = "Support Files";
-			sourceTree = SOURCE_ROOT;
-		};
-		80F5DB4F14F84D559696DFB8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				64B763B96DC64D37A0BD7871 /* Pods-SSZipArchive.xcconfig */,
-				19C17FB160F44E4C979CEFEC /* Pods-SSZipArchive-Private.xcconfig */,
-				15F43D0B3F1F4E2A8F5D46F0 /* Pods-SSZipArchive-dummy.m */,
-				89E574858B02446486B2F940 /* Pods-SSZipArchive-prefix.pch */,
-			);
-			name = "Support Files";
-			sourceTree = SOURCE_ROOT;
-		};
-		91B68E30F7924B6E8EBA4B8C /* Google-Maps-iOS-SDK */ = {
-			isa = PBXGroup;
-			children = (
-				C39873CADFF946EAB63CF44C /* GMSCALayer.h */,
-				A7654E906FF540A2A7019EBF /* GMSCameraPosition.h */,
-				E99A853910674CDC98A64289 /* GMSCameraUpdate.h */,
-				16422BE0F4BA473186069D65 /* GMSCircle.h */,
-				95F1C1AF177F48DBA2169897 /* GMSCoordinateBounds.h */,
-				BE722D97AC9B48858F8A330C /* GMSGeocoder.h */,
-				B03AD9110C164EB4A1B43D89 /* GMSGeometryUtils.h */,
-				258B48B08AA8455E99140F22 /* GMSGroundOverlay.h */,
-				2877488A23524F14B809F623 /* GMSIndoorBuilding.h */,
-				B291397E86AA49EA8DD0D9B3 /* GMSIndoorDisplay.h */,
-				3EE112C48261463BBF545338 /* GMSIndoorLevel.h */,
-				95D0B647A37046D097437A99 /* GMSMapLayer.h */,
-				F9C87FC269884E7FA8D46975 /* GMSMapView.h */,
-				6733CDC45E5B4DAD9C390395 /* GMSMapView+Animation.h */,
-				422718F8A539462BAA1FAE19 /* GMSMapView+Overlays.h */,
-				75CD760566FC4ED6A2526A96 /* GMSMarker.h */,
-				15D2820AE9B849B488679CB4 /* GMSMarkerLayer.h */,
-				7683FDC65E494BB196F0147D /* GMSMutablePath.h */,
-				918AC76BAFA447D4BA94AC7A /* GMSOrientation.h */,
-				19366593DB064D3689379C1A /* GMSOverlay.h */,
-				605977CC28D34EFEBDD347BF /* GMSPanorama.h */,
-				4B852153E783454F9B0F19DE /* GMSPanoramaCamera.h */,
-				32AEEC3D30E348768B2873BA /* GMSPanoramaCameraUpdate.h */,
-				B2BDDBE17F3A49DDA5F5EBF5 /* GMSPanoramaLayer.h */,
-				A26851575E514017B25E7DCB /* GMSPanoramaLink.h */,
-				33B9E3DFF5A943BDB5B8B3A9 /* GMSPanoramaService.h */,
-				1C9F918B0C064083A50BC692 /* GMSPanoramaView.h */,
-				C3269A02685C4346A52A5FFC /* GMSPath.h */,
-				5EC3A76543F44D4D89B4C850 /* GMSPolygon.h */,
-				4DEFCB3EEE774786A451E287 /* GMSPolyline.h */,
-				6B3EEFB95EE4417EB8F269A8 /* GMSProjection.h */,
-				7DF84CA7CBB442E4A3345DAA /* GMSServices.h */,
-				F90A6489CC834C5DA60ECC1F /* GMSSyncTileLayer.h */,
-				5DF1CBEA01124661A9A5C29F /* GMSTileLayer.h */,
-				6680AFED18DA494AA4C26C37 /* GMSUISettings.h */,
-				8555DF4DC6F6417CB420A04E /* GMSURLTileLayer.h */,
-				D4B8881FC7E34CB3B546CB34 /* GoogleMaps.h */,
-				CDD31BD04A694DF689D6DD64 /* Resources */,
-				21F90516FF1F47449EC42BC6 /* Support Files */,
-			);
-			path = "Google-Maps-iOS-SDK";
-			sourceTree = "<group>";
-		};
-		A1166650BF664D02A4E5486A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3B2BD304DD11479A8FCD15A5 /* Pods-GCDiscreetNotificationView.xcconfig */,
-				C992E6A7C7F34C56B8A584AD /* Pods-GCDiscreetNotificationView-Private.xcconfig */,
-				B4158B82CEE341AE825CCD3C /* Pods-GCDiscreetNotificationView-dummy.m */,
-				1F1947E9C8924FD39BEEA95A /* Pods-GCDiscreetNotificationView-prefix.pch */,
-			);
-			name = "Support Files";
-			sourceTree = SOURCE_ROOT;
-		};
-		AE3FB9D9F0094F94BC6F5CC7 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E2516D23DA1F46AB9BC35C48 /* Pods */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		B184F492BA034A349DAE3A32 /* ASIHTTPRequest */ = {
-			isa = PBXGroup;
-			children = (
-				D9DB25E07A8A42C0B37D29AC /* ASIWebPageRequest */,
-				18CF92E0928E4CF2AA78B1E7 /* CloudFiles */,
-				3DA825798A074747BA1D0B4C /* Core */,
-				666659F4C2C5445DA6943565 /* S3 */,
-				6E00B98D0D454E1493608774 /* Support Files */,
-			);
-			path = ASIHTTPRequest;
-			sourceTree = "<group>";
-		};
-		B87A7CA13D0F4574B95C8159 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0177716EB48E439DB398B2F0 /* Pods-Reachability.xcconfig */,
-				D16B5316DDE94D709AF94769 /* Pods-Reachability-Private.xcconfig */,
-				A85113DFDFA94BE48773C62C /* Pods-Reachability-dummy.m */,
-				9E2CFAE0A5C14647B50E31B7 /* Pods-Reachability-prefix.pch */,
-			);
-			name = "Support Files";
-			sourceTree = SOURCE_ROOT;
-		};
-		BB52B674B13A464CB243A71D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				48741DFE98AA4548B6535844 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CDD31BD04A694DF689D6DD64 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				E159188ADDF3467296CEE35B /* GoogleMaps.bundle */,
+				C15CC7869C394F24A274D806 /* GoogleMaps.bundle */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		D10423751476403BA0CCF546 /* GCDiscreetNotificationView */ = {
+		07303907646D42A180A9BEB1 /* GCDiscreetNotificationView */ = {
 			isa = PBXGroup;
 			children = (
-				F27BB1B83CAA4021B0DE8C5C /* GCDiscreetNotificationView.h */,
-				E4093811B7484DE793193339 /* GCDiscreetNotificationView.m */,
-				A1166650BF664D02A4E5486A /* Support Files */,
+				062587C0A9FF4506BB4B00BA /* GCDiscreetNotificationView.h */,
+				D534C7C938EB401EBA6D880F /* GCDiscreetNotificationView.m */,
+				F1677ACA3CC14993BC59FD2A /* Support Files */,
 			);
 			path = GCDiscreetNotificationView;
 			sourceTree = "<group>";
 		};
-		D9DB25E07A8A42C0B37D29AC /* ASIWebPageRequest */ = {
+		0B05523CB5304FF5B254C970 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1F8E24460CCC4FEDAA6FC5D8 /* ASIWebPageRequest.h */,
-				312C423154FF4D4C80D36DE9 /* ASIWebPageRequest.m */,
+				E99138EC8CF34F69901BA71F /* libPods.a */,
+				8FD26B9962D742AFA3123265 /* libPods-ASIHTTPRequest.a */,
+				F67162089425474B889CE904 /* libPods-GCDiscreetNotificationView.a */,
+				12AC9AAF84834BF4B207E63E /* libPods-Google-Maps-iOS-SDK.a */,
+				341FCC18B1DC45ECBF71FCF5 /* libPods-Reachability.a */,
+				979DE72668DD420F9C769ADE /* libPods-SSZipArchive.a */,
 			);
-			name = ASIWebPageRequest;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		E2516D23DA1F46AB9BC35C48 /* Pods */ = {
+		156C812B70F64A64BA7E5D3F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B7AC2444ABD84D55AA210AC5 /* Pods.xcconfig */,
-				6C4BB59D7E8F4070996A3804 /* Pods-acknowledgements.markdown */,
-				7ED0D31F443E4E75B757434A /* Pods-acknowledgements.plist */,
-				94B878A17AFE42BFAD5BA7A4 /* Pods-dummy.m */,
-				06119D647F324695BBA27DB8 /* Pods-environment.h */,
-				77C25C2225454852A6DAAC49 /* Pods-resources.sh */,
+				E2B18CA460AB474595AB0C45 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F5F414A5E544DC183B9221C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB1D7DF8F1B44D808F57F75A /* Pods-ASIHTTPRequest.xcconfig */,
+				700EDC2C661E49C686FFB454 /* Pods-ASIHTTPRequest-Private.xcconfig */,
+				425883D3074C40D5BCB61C23 /* Pods-ASIHTTPRequest-dummy.m */,
+				9A1CB0FFC11446B397773E0B /* Pods-ASIHTTPRequest-prefix.pch */,
+			);
+			name = "Support Files";
+			sourceTree = SOURCE_ROOT;
+		};
+		236A3314E74C4107B28EF122 /* S3 */ = {
+			isa = PBXGroup;
+			children = (
+				1E0EDA98DD6D4BABB0922507 /* ASIS3Bucket.h */,
+				DB1B5A547056433781B0FAC7 /* ASIS3Bucket.m */,
+				B908ED7825DE41698CA841B3 /* ASIS3BucketObject.h */,
+				8D07EBADB6FC41AD93902D10 /* ASIS3BucketObject.m */,
+				F6787B0D710E4DEE820997E4 /* ASIS3BucketRequest.h */,
+				6F76386AE20E40DA8C0A82B0 /* ASIS3BucketRequest.m */,
+				469F809E25F448289BF9FC7D /* ASIS3ObjectRequest.h */,
+				D9E21DEC20C4401CA90D10CC /* ASIS3ObjectRequest.m */,
+				DB06C9C8612D4C40A86A3924 /* ASIS3Request.h */,
+				9E476394853F4227A990B4AD /* ASIS3Request.m */,
+				BCDFA684D2684AA8B2C9BEC4 /* ASIS3ServiceRequest.h */,
+				1B518F9C447646C3AF0438ED /* ASIS3ServiceRequest.m */,
+			);
+			name = S3;
+			sourceTree = "<group>";
+		};
+		29A7A80E3CFC4378B2459997 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				530604E040514B38A33E4061 /* Pods-Reachability.xcconfig */,
+				616677D05D784070804DB089 /* Pods-Reachability-Private.xcconfig */,
+				77524824E0F741668BAC555A /* Pods-Reachability-dummy.m */,
+				849FDA5FF66E40A3900DCDA7 /* Pods-Reachability-prefix.pch */,
+			);
+			name = "Support Files";
+			sourceTree = SOURCE_ROOT;
+		};
+		31B9FE46A1314E7E8A16B323 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7EB51281636646D998555175 /* Pods.xcconfig */,
+				D5A646F41CB34F5DAA83C938 /* Pods-acknowledgements.markdown */,
+				809E07CB083844E5A0219DF7 /* Pods-acknowledgements.plist */,
+				68DF3C6110D54F1E820BF54D /* Pods-dummy.m */,
+				6E150C2BBCB4425693EABBCD /* Pods-environment.h */,
+				21826D6D219A4FF6AF345381 /* Pods-resources.sh */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		E85BA687E4814DC88F0E9BDB /* Products */ = {
+		31CF35BED9A84759A2329DC6 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				826ACCD6329C4E6B98490809 /* libPods.a */,
-				96466E9C5E324AF79AF91351 /* libPods-ASIHTTPRequest.a */,
-				32D4230361B04E378C7087ED /* libPods-GCDiscreetNotificationView.a */,
-				939FB410E9964A4092E3BCEB /* libPods-Google-Maps-iOS-SDK.a */,
-				A4A290B77BA940F69CAAE5FD /* libPods-Reachability.a */,
-				B6995DA4D554488EAF276FC1 /* libPods-SSZipArchive.a */,
+				31B9FE46A1314E7E8A16B323 /* Pods */,
 			);
-			name = Products;
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		624F68C726734B3CA0B1FE13 /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				5232022682564457A5D2DF2A /* SSZipArchive.h */,
+				626091FCB4EA4B13BFB0AFC4 /* SSZipArchive.m */,
+				7133CF665EF24EF5BA049616 /* crypt.h */,
+				747EBD7B31D548E39E0B6C8E /* ioapi.c */,
+				8388C20A03C848568011DE77 /* ioapi.h */,
+				A83EB0CD815D4AF59B672E85 /* mztools.c */,
+				A4FF0CDFFCED428C848544E9 /* mztools.h */,
+				39D5B6C9A0D9443AA02A87C0 /* unzip.c */,
+				6FDD74783B5846F7AD7D7F44 /* unzip.h */,
+				141F590347D647758939A987 /* zip.c */,
+				99329A5FF6E345FD8CF58CBA /* zip.h */,
+				A5E05577FF58496FB7012190 /* Support Files */,
+			);
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		9245681F072F445DB8064B5A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F34F21B60FB4D4691940003 /* Pods-Google-Maps-iOS-SDK.xcconfig */,
+				305E684FD82A4D0DA13EC766 /* Pods-Google-Maps-iOS-SDK-Private.xcconfig */,
+				A1CBBF1A437248E0B74BD6A6 /* Pods-Google-Maps-iOS-SDK-dummy.m */,
+				D139B13F4864491AB6CB0BB7 /* Pods-Google-Maps-iOS-SDK-prefix.pch */,
+			);
+			name = "Support Files";
+			sourceTree = SOURCE_ROOT;
+		};
+		A5E05577FF58496FB7012190 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1021696FE0F4E9E900E5244 /* Pods-SSZipArchive.xcconfig */,
+				5AB5D732B291444B8FE32D72 /* Pods-SSZipArchive-Private.xcconfig */,
+				443A64AD8E214EBCBC5A6FE8 /* Pods-SSZipArchive-dummy.m */,
+				25651FE556A64D02A97F7149 /* Pods-SSZipArchive-prefix.pch */,
+			);
+			name = "Support Files";
+			sourceTree = SOURCE_ROOT;
+		};
+		A9844CF10EF6401A995EC985 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E98626622145486AA72B4875 /* ASIHTTPRequest */,
+				07303907646D42A180A9BEB1 /* GCDiscreetNotificationView */,
+				B9CD2AACCEEF4CA780B36F2C /* Google-Maps-iOS-SDK */,
+				F7EF38E936164694BB24F154 /* Reachability */,
+				624F68C726734B3CA0B1FE13 /* SSZipArchive */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B9CD2AACCEEF4CA780B36F2C /* Google-Maps-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				8AAFD90D158C4E1696BAE179 /* GMSCALayer.h */,
+				38F84AB254F54704AA85003C /* GMSCameraPosition.h */,
+				167D7A92C46E40DB8E04E733 /* GMSCameraUpdate.h */,
+				96C567901CF242C5BFA448A5 /* GMSCircle.h */,
+				FE46E878EC4741F595346337 /* GMSCoordinateBounds.h */,
+				7B5F6DA1BB134AF6BE313F46 /* GMSGeocoder.h */,
+				9555536694D444FEAF75A47A /* GMSGeometryUtils.h */,
+				D404E195CF7A4B458425538D /* GMSGroundOverlay.h */,
+				C55724EC8EC64FCAB115D8B7 /* GMSIndoorBuilding.h */,
+				8DCC8BD9417C4EE7BF5E65DE /* GMSIndoorDisplay.h */,
+				1CDF39A65AD54F9F811CF254 /* GMSIndoorLevel.h */,
+				3E6E91F81CE242C6A7B4EB5F /* GMSMapLayer.h */,
+				04245563BF6E4FF2B1D7ECA1 /* GMSMapView.h */,
+				AD0898E1C78D4417BB4B16C2 /* GMSMapView+Animation.h */,
+				8B9E918A1D4446AC8573F84A /* GMSMapView+Overlays.h */,
+				89B040F5192E4E9381C54BF5 /* GMSMarker.h */,
+				AB59511934A8467C943D585E /* GMSMarkerLayer.h */,
+				DF8CA6FB374C4A88A7801D8C /* GMSMutablePath.h */,
+				3890434F2406475A8E372E4F /* GMSOrientation.h */,
+				5FCCF1F9345A472DAEDADBD8 /* GMSOverlay.h */,
+				E7B066946F8949F3BD809765 /* GMSPanorama.h */,
+				424B0451D1124FD383EF5CEA /* GMSPanoramaCamera.h */,
+				5DCB77300EA64404B6DE2677 /* GMSPanoramaCameraUpdate.h */,
+				3B65C2D836FC458BA44859FE /* GMSPanoramaLayer.h */,
+				C00B7A67795B4572BC8E2D8E /* GMSPanoramaLink.h */,
+				B2CD9CAD22A640FEB2DDEE93 /* GMSPanoramaService.h */,
+				606762E9D6CA42399FF99CC5 /* GMSPanoramaView.h */,
+				48985E8E36404B089C135C05 /* GMSPath.h */,
+				74EB3330E6784A54AC48EB7A /* GMSPolygon.h */,
+				7DDFE1BC89DD46E2ADDC255C /* GMSPolyline.h */,
+				7A520C619A4F402ABC2B5B24 /* GMSProjection.h */,
+				46EF70131C504005AE1E13F0 /* GMSServices.h */,
+				AC185D9D5DD24019A47C12E1 /* GMSSyncTileLayer.h */,
+				BA54BC093A7541F898DAD6B4 /* GMSTileLayer.h */,
+				69A131FCE64B47BAAFF2497E /* GMSUISettings.h */,
+				889D9B5DC594434EB6933E52 /* GMSURLTileLayer.h */,
+				7E030FC8B11443D7842156C8 /* GoogleMaps.h */,
+				01C797B24208472D8DA38184 /* Resources */,
+				9245681F072F445DB8064B5A /* Support Files */,
+			);
+			path = "Google-Maps-iOS-SDK";
+			sourceTree = "<group>";
+		};
+		C73C6AE306CD4D42A7B26CEA = {
+			isa = PBXGroup;
+			children = (
+				6F7F28E8721E4A3F8DBC7A18 /* Podfile */,
+				156C812B70F64A64BA7E5D3F /* Frameworks */,
+				A9844CF10EF6401A995EC985 /* Pods */,
+				0B05523CB5304FF5B254C970 /* Products */,
+				31CF35BED9A84759A2329DC6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D8B9227AE5274EB19B1DD0C7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CB99A9ED0AC1434BBFE5E1AB /* ASIAuthenticationDialog.h */,
+				D0C073EEA07648528106ECDD /* ASIAuthenticationDialog.m */,
+				A18055AE157F468A9261B9FE /* ASICacheDelegate.h */,
+				391CCD52F81A4C2CB6FBECBB /* ASIDataCompressor.h */,
+				8B3FA91952454B278679B339 /* ASIDataCompressor.m */,
+				74B0866234E7473496827010 /* ASIDataDecompressor.h */,
+				A732CCC0BF52419887D0CF43 /* ASIDataDecompressor.m */,
+				15413EDCBBE942EB8F797BBE /* ASIDownloadCache.h */,
+				2CD86F0432634B19903E0069 /* ASIDownloadCache.m */,
+				451475F5C02D4CE8B26D75A4 /* ASIFormDataRequest.h */,
+				A829A5F555444AD9AC136457 /* ASIFormDataRequest.m */,
+				E0C0582467E8414B88126CB2 /* ASIHTTPRequest.h */,
+				5EE89824EFEC4A8E8C1D14DA /* ASIHTTPRequest.m */,
+				9EE250A90A8C43769E967FB3 /* ASIHTTPRequestConfig.h */,
+				282707E9D7364D548B73FAEE /* ASIHTTPRequestDelegate.h */,
+				C09CE7DC0A524935B0C3D2B3 /* ASIInputStream.h */,
+				4E0037FD613F4E7BA531F332 /* ASIInputStream.m */,
+				B0D5568AE37C4936AC83CDC8 /* ASINetworkQueue.h */,
+				28EFF5CECBF5439084AB94E5 /* ASINetworkQueue.m */,
+				1CC53FE147FB4ED097DBF30D /* ASIProgressDelegate.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		E2B18CA460AB474595AB0C45 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7EF3748018D744099F86950A /* AVFoundation.framework */,
+				20612C89E7D9453782624FD6 /* CFNetwork.framework */,
+				77FBE2ED925E4DA1B67E850B /* CoreData.framework */,
+				828D557666F04B999C0A5DB5 /* CoreGraphics.framework */,
+				D9546354FDBB4E5880B687D2 /* CoreLocation.framework */,
+				76DAB05AA5F041ABAE87C647 /* CoreText.framework */,
+				9C4894B57988401ABADAAF61 /* Foundation.framework */,
+				2643F174262D4BA0A3BF2D5D /* GLKit.framework */,
+				850F49293741423D99FBFFE9 /* GoogleMaps.framework */,
+				C3FCEC78A9AD4171BD2BF14F /* ImageIO.framework */,
+				94B4223BA6FD4A7981E65645 /* MobileCoreServices.framework */,
+				8B994151658A4E4598BE087C /* OpenGLES.framework */,
+				2CB796B5230142C18C4DB2AF /* QuartzCore.framework */,
+				D8A97E99753144B994E5D447 /* SystemConfiguration.framework */,
+				F2D0E5CF27A24F80A930ECBE /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E98626622145486AA72B4875 /* ASIHTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				F61156321A5A4E91B5C2A1E5 /* ASIWebPageRequest */,
+				FBB2D738C10F452F89C12485 /* CloudFiles */,
+				D8B9227AE5274EB19B1DD0C7 /* Core */,
+				236A3314E74C4107B28EF122 /* S3 */,
+				1F5F414A5E544DC183B9221C /* Support Files */,
+			);
+			path = ASIHTTPRequest;
+			sourceTree = "<group>";
+		};
+		F1677ACA3CC14993BC59FD2A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB31E9F9BD9549C8A9720951 /* Pods-GCDiscreetNotificationView.xcconfig */,
+				5488FF19AF554F21960783F6 /* Pods-GCDiscreetNotificationView-Private.xcconfig */,
+				8992078181B74FC3AF53EED2 /* Pods-GCDiscreetNotificationView-dummy.m */,
+				0079AA4BDE784FBDADF860CB /* Pods-GCDiscreetNotificationView-prefix.pch */,
+			);
+			name = "Support Files";
+			sourceTree = SOURCE_ROOT;
+		};
+		F61156321A5A4E91B5C2A1E5 /* ASIWebPageRequest */ = {
+			isa = PBXGroup;
+			children = (
+				F4CD634C918F4471945FB9CA /* ASIWebPageRequest.h */,
+				441875CEFDB2403EBCC62CEC /* ASIWebPageRequest.m */,
+			);
+			name = ASIWebPageRequest;
+			sourceTree = "<group>";
+		};
+		F7EF38E936164694BB24F154 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				BF088CCFB65C4698B05FFFAD /* Reachability.h */,
+				6D868D8482264AB894E95F85 /* Reachability.m */,
+				29A7A80E3CFC4378B2459997 /* Support Files */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		FBB2D738C10F452F89C12485 /* CloudFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F20E84ADDE644F9595AD657B /* ASICloudFilesCDNRequest.h */,
+				2D35E5140FA14FB3908151BE /* ASICloudFilesCDNRequest.m */,
+				C4CEDF1566D74C3CA27E129E /* ASICloudFilesContainer.h */,
+				F15DD2B344944F9AA2974308 /* ASICloudFilesContainer.m */,
+				D8B0F71E711A4248BFF8A52C /* ASICloudFilesContainerRequest.h */,
+				A6B27477345A496187DA34D7 /* ASICloudFilesContainerRequest.m */,
+				A370FA87518747B5991EB42B /* ASICloudFilesContainerXMLParserDelegate.h */,
+				6CC2B68016B04221BB74B0A3 /* ASICloudFilesContainerXMLParserDelegate.m */,
+				2D61DA48761640BC82DB5C01 /* ASICloudFilesObject.h */,
+				9BCC3FF7D27145F4A4BA0223 /* ASICloudFilesObject.m */,
+				9684B60D33A74770AFCAD600 /* ASICloudFilesObjectRequest.h */,
+				005FBD131FEB48D99655E3BE /* ASICloudFilesObjectRequest.m */,
+				62AFA6382C384A8A82BCB42F /* ASICloudFilesRequest.h */,
+				7D48B97167334C55BC4580FD /* ASICloudFilesRequest.m */,
+				42660161950B44848278A688 /* ASINSXMLParserCompat.h */,
+			);
+			name = CloudFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		20793D138FC0455E98BDEF35 /* Headers */ = {
+		3F3DCA908DFD4ECD839AA772 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83E549B9A60249829A58AFA5 /* ASIAuthenticationDialog.h in Headers */,
-				0D0CDC050D524068A585E750 /* ASICacheDelegate.h in Headers */,
-				54E608C74DE34AE9ACD1425C /* ASICloudFilesCDNRequest.h in Headers */,
-				0CBE841F354144A191FC3A2F /* ASICloudFilesContainer.h in Headers */,
-				E48324A007214BEBB397D1BF /* ASICloudFilesContainerRequest.h in Headers */,
-				C7E963341E8346A1B5ACE32D /* ASICloudFilesContainerXMLParserDelegate.h in Headers */,
-				333338ACCE684940BA2646F5 /* ASICloudFilesObject.h in Headers */,
-				B27F5FEE94294F36A5E66E5C /* ASICloudFilesObjectRequest.h in Headers */,
-				555BFD57607A46218596870C /* ASICloudFilesRequest.h in Headers */,
-				1F2DFC0C32C7460EB58BC47A /* ASIDataCompressor.h in Headers */,
-				D61299614E3D491AAC042F34 /* ASIDataDecompressor.h in Headers */,
-				66C5FE15BBB34BE885958146 /* ASIDownloadCache.h in Headers */,
-				9AAD7D322D9343CFA5C505AF /* ASIFormDataRequest.h in Headers */,
-				D875D10217714A5D8870F617 /* ASIHTTPRequest.h in Headers */,
-				43AE45BA0DB64A6BB96B9AA1 /* ASIHTTPRequestConfig.h in Headers */,
-				C1B651C139624DC88BC54D89 /* ASIHTTPRequestDelegate.h in Headers */,
-				BD242E6B395A44DDB81F63B6 /* ASIInputStream.h in Headers */,
-				AAC9D468EF8149A58888F279 /* ASINSXMLParserCompat.h in Headers */,
-				47EA5327C77248A6A6C41FBC /* ASINSXMLParserCompat.h in Headers */,
-				0FA4E71E00E5412186BF7F55 /* ASINetworkQueue.h in Headers */,
-				23A3560CF7874CBBA29A7017 /* ASIProgressDelegate.h in Headers */,
-				E14BF2B4781E4E2DA9AE3F38 /* ASIS3Bucket.h in Headers */,
-				272465381FCB4A2F8A1418F4 /* ASIS3BucketObject.h in Headers */,
-				7FEAEDE9477E42F89E433A06 /* ASIS3BucketRequest.h in Headers */,
-				CC49264B04714FDCBA681DA5 /* ASIS3ObjectRequest.h in Headers */,
-				3042503091E240259E2DDA59 /* ASIS3Request.h in Headers */,
-				6EEDD8612043455DAD27A4C1 /* ASIS3ServiceRequest.h in Headers */,
-				A25D852E04A24DCD8BBBF3FC /* ASIWebPageRequest.h in Headers */,
+				BC62A5B2A53E4FECA0E10AE4 /* ASIAuthenticationDialog.h in Headers */,
+				8B8FC0AEAB944C8983BD2DED /* ASICacheDelegate.h in Headers */,
+				1D9F3884447648D4BF39B989 /* ASICloudFilesCDNRequest.h in Headers */,
+				4EBC4307D95F475982D3924C /* ASICloudFilesContainer.h in Headers */,
+				5F9EE63791A9446693F96848 /* ASICloudFilesContainerRequest.h in Headers */,
+				61D4F7D2D6FB474F995AAF16 /* ASICloudFilesContainerXMLParserDelegate.h in Headers */,
+				C2BA938FD5EC459B93F27A8E /* ASICloudFilesObject.h in Headers */,
+				F534F144C10B416689A12206 /* ASICloudFilesObjectRequest.h in Headers */,
+				D52474E72DC843079963ED0D /* ASICloudFilesRequest.h in Headers */,
+				C8C8612D471848FCAFCA3DAE /* ASIDataCompressor.h in Headers */,
+				7AF906B9B3484B46B9D851F0 /* ASIDataDecompressor.h in Headers */,
+				93155A1A65CC4781A76BFC0C /* ASIDownloadCache.h in Headers */,
+				E6BB00C083604431978856DD /* ASIFormDataRequest.h in Headers */,
+				F1E781E7E3EA4055A474F555 /* ASIHTTPRequest.h in Headers */,
+				94534D530E834CCDBF873B40 /* ASIHTTPRequestConfig.h in Headers */,
+				43C0E08F7D6F4A11BEA8DDCC /* ASIHTTPRequestDelegate.h in Headers */,
+				629A8D3E74A64D51A82C45EB /* ASIInputStream.h in Headers */,
+				4E2BD03415B3451DB165E94F /* ASINSXMLParserCompat.h in Headers */,
+				ED6C4A0EDF0A4572B35D457B /* ASINSXMLParserCompat.h in Headers */,
+				E2673016956B47058F8C7FB5 /* ASINetworkQueue.h in Headers */,
+				E421A5DCF41449BA90ECB1B8 /* ASIProgressDelegate.h in Headers */,
+				D1D51786D201488EA64E5D10 /* ASIS3Bucket.h in Headers */,
+				D0342A58DC154D1DB1EFB864 /* ASIS3BucketObject.h in Headers */,
+				0D312293382F4C77893F18DB /* ASIS3BucketRequest.h in Headers */,
+				CFBB9A46B69341508995BD2C /* ASIS3ObjectRequest.h in Headers */,
+				3229AC49901547D2ACED2976 /* ASIS3Request.h in Headers */,
+				CC6E8475774E4D599B0C52AB /* ASIS3ServiceRequest.h in Headers */,
+				6925A4072F8F45098A170171 /* ASIWebPageRequest.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		37A595821CB346FABDB69D34 /* Headers */ = {
+		4D95A3634CB3456CAC63D367 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				861D1B17BDFF46EFB83F934F /* GCDiscreetNotificationView.h in Headers */,
+				449E0AC5126F47179C15ED5E /* SSZipArchive.h in Headers */,
+				D1F0FD2F5ECF4B988F71D251 /* crypt.h in Headers */,
+				916755E4B0D2401AAC0E609B /* ioapi.h in Headers */,
+				91C48158F4B241F49E8ED2E4 /* mztools.h in Headers */,
+				054CBB4C802A4D9DA999710F /* unzip.h in Headers */,
+				426CBDFB60BE475889D50BAA /* zip.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4D79E591DD794E39A192F6BA /* Headers */ = {
+		7503BAF63A9C44298D7E195D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC83339D62564A44B992CE31 /* Reachability.h in Headers */,
+				AFDBE61C74BA4185A726093A /* Reachability.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		773F243953AE4FA48E7F01F4 /* Headers */ = {
+		8669FC05CD78401EBCF2B500 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C81442D3F044400893EBBA7E /* GMSCALayer.h in Headers */,
-				86B078E4A7BF46E7BCFA2C8B /* GMSCameraPosition.h in Headers */,
-				4CA274BA890A4B0C8B1D197D /* GMSCameraUpdate.h in Headers */,
-				EF8404DCF8124F7285A7358B /* GMSCircle.h in Headers */,
-				71D7E6F069504008B795B60B /* GMSCoordinateBounds.h in Headers */,
-				E82660AA385146F38BBACFE7 /* GMSGeocoder.h in Headers */,
-				696BEE23CE144768A1E69EB8 /* GMSGeometryUtils.h in Headers */,
-				BB1BAB4C1F0C455084DABEAC /* GMSGroundOverlay.h in Headers */,
-				8C70249B6B6A4070BEE1CE49 /* GMSIndoorBuilding.h in Headers */,
-				BA1B2500E7A54BA4BD943B05 /* GMSIndoorDisplay.h in Headers */,
-				794E82EA6C15483393F4A467 /* GMSIndoorLevel.h in Headers */,
-				90CF21EBBC8046B1BAA7947D /* GMSMapLayer.h in Headers */,
-				D11BAAA9AE3D4AF4A5583C4C /* GMSMapView+Animation.h in Headers */,
-				6E8DBE61963A40B5BC1E8924 /* GMSMapView+Overlays.h in Headers */,
-				B8771663E5944334836944CF /* GMSMapView.h in Headers */,
-				402ACD0044FC4068BAF8719F /* GMSMarker.h in Headers */,
-				3FED964A1AEC4A05858D19D3 /* GMSMarkerLayer.h in Headers */,
-				15D36E642BF449B3963F7D2E /* GMSMutablePath.h in Headers */,
-				85986FE20C8A4C5192A1A69E /* GMSOrientation.h in Headers */,
-				D277211139DB4876978BE270 /* GMSOverlay.h in Headers */,
-				28085A548FB2416094AD5EC4 /* GMSPanorama.h in Headers */,
-				6D1A9356F5E149979F66EB83 /* GMSPanoramaCamera.h in Headers */,
-				AD66ECB1D0EC479E9D580267 /* GMSPanoramaCameraUpdate.h in Headers */,
-				AF6F43B2A59E45F6B30648A0 /* GMSPanoramaLayer.h in Headers */,
-				F81381F69A5F44BC89C600BB /* GMSPanoramaLink.h in Headers */,
-				A1CEBCBD81834CE6B0B20CDA /* GMSPanoramaService.h in Headers */,
-				8C18CA3B78E14667A892667A /* GMSPanoramaView.h in Headers */,
-				8E3BF607D2C74B0E8D5C8E6C /* GMSPath.h in Headers */,
-				6EC80D689DD345888DC156E8 /* GMSPolygon.h in Headers */,
-				A51C16CE45B248ED8ECBC187 /* GMSPolyline.h in Headers */,
-				8ABBCD4AC1C8410A8EF4B739 /* GMSProjection.h in Headers */,
-				E845861AA3B34655A824B44F /* GMSServices.h in Headers */,
-				FFE90249CBED486BA2F07D5D /* GMSSyncTileLayer.h in Headers */,
-				9F9D59FFF2E744E3B93BDEBC /* GMSTileLayer.h in Headers */,
-				D112D5CD6A754E7EB9D4619E /* GMSUISettings.h in Headers */,
-				455055E94A2947E3A4F82DF1 /* GMSURLTileLayer.h in Headers */,
-				BAA849693591423F943C4DD6 /* GoogleMaps.h in Headers */,
+				45C301C40CE74FF0AA9FF9AA /* GCDiscreetNotificationView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A30A1908339B4387B66364FA /* Headers */ = {
+		E21D02687437454B902A4309 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5725F9AC99EF4B7FB383C3DB /* SSZipArchive.h in Headers */,
-				61DD58ADBD5D41118BF1BB72 /* crypt.h in Headers */,
-				5EB68A3F9E7C44AB8181EEBB /* ioapi.h in Headers */,
-				BB59B25A727F404B9B300C2E /* mztools.h in Headers */,
-				BB027C1BB350457DB455090B /* unzip.h in Headers */,
-				086903721AC34EE5BA48D74A /* zip.h in Headers */,
+				EF6FC3F16EC94AE9B32098DD /* GMSCALayer.h in Headers */,
+				329ED979739A48ACADADF11C /* GMSCameraPosition.h in Headers */,
+				DDC6E4ABA7DA49B2AC1031CA /* GMSCameraUpdate.h in Headers */,
+				98147509D20E4C32B5A829F5 /* GMSCircle.h in Headers */,
+				C02982FE16DD44ABA8B5A743 /* GMSCoordinateBounds.h in Headers */,
+				5E0F2AE22B134BCE85148A59 /* GMSGeocoder.h in Headers */,
+				52923D62FA4040888E4E8D05 /* GMSGeometryUtils.h in Headers */,
+				F01376C113BB4485B97E9173 /* GMSGroundOverlay.h in Headers */,
+				09C494B64A784C28BF8991C6 /* GMSIndoorBuilding.h in Headers */,
+				0A7A926454BB4D7690B75C14 /* GMSIndoorDisplay.h in Headers */,
+				F5F528DA3D1A453586108D0E /* GMSIndoorLevel.h in Headers */,
+				D6418CD9495446E095AEF1C0 /* GMSMapLayer.h in Headers */,
+				83623914914D4F73AD23BBBF /* GMSMapView+Animation.h in Headers */,
+				582EA857419443328A9523CA /* GMSMapView+Overlays.h in Headers */,
+				F26D8AF785714136B8837041 /* GMSMapView.h in Headers */,
+				2A22249B7F0945589A9A538E /* GMSMarker.h in Headers */,
+				73F0B4BF2B9444F9928556A6 /* GMSMarkerLayer.h in Headers */,
+				5B45206A16D1465081092DE8 /* GMSMutablePath.h in Headers */,
+				13FF1C19215540FE8D3B4A28 /* GMSOrientation.h in Headers */,
+				BFD8017677FF41B6ABFF721C /* GMSOverlay.h in Headers */,
+				84A31385BD4644BDABDCDBBC /* GMSPanorama.h in Headers */,
+				51E656E730D84444BF1FA55A /* GMSPanoramaCamera.h in Headers */,
+				994C33090F5E4826B3D00544 /* GMSPanoramaCameraUpdate.h in Headers */,
+				075683BD8DC540F0B54131BB /* GMSPanoramaLayer.h in Headers */,
+				A9870054AB1B44D29A1649B1 /* GMSPanoramaLink.h in Headers */,
+				8D28777842354AE68AE14784 /* GMSPanoramaService.h in Headers */,
+				812D8E823DB44082AF77F623 /* GMSPanoramaView.h in Headers */,
+				978CDBC7178546919F48A712 /* GMSPath.h in Headers */,
+				FBB8B1E9C940442BAE8D0AA8 /* GMSPolygon.h in Headers */,
+				622FFF962B2247B3A430E76E /* GMSPolyline.h in Headers */,
+				C4AB5004EB584BBE9AE70D68 /* GMSProjection.h in Headers */,
+				0AC296D472F246E0B850EBBD /* GMSServices.h in Headers */,
+				6D2DE07F14114321BE12205D /* GMSSyncTileLayer.h in Headers */,
+				87FB4499E89247C69DE87EC2 /* GMSTileLayer.h in Headers */,
+				54A4FFFF72E241949550B52D /* GMSUISettings.h in Headers */,
+				5A08F23E5B1F430E9E22A2C4 /* GMSURLTileLayer.h in Headers */,
+				B9010EAEC24248A4A2088805 /* GoogleMaps.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3E67CE506F0440F38A55C6F5 /* Pods-Google-Maps-iOS-SDK */ = {
+		09EE02B29E9541EFBA907C0B /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C2B7C719B36E425B884CC562 /* Build configuration list for PBXNativeTarget "Pods-Google-Maps-iOS-SDK" */;
+			buildConfigurationList = 2A3BB28E6EEC4CFBAB4F1835 /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				9CAE23FFED5D4FACBD57D280 /* Sources */,
-				62DF5041BBB14191897ED37F /* Frameworks */,
-				773F243953AE4FA48E7F01F4 /* Headers */,
+				10E12F9FB7DB418484428C8B /* Sources */,
+				025720654F8A49C7B7CAD8FB /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = "Pods-Google-Maps-iOS-SDK";
-			productName = "Pods-Google-Maps-iOS-SDK";
-			productReference = 939FB410E9964A4092E3BCEB /* libPods-Google-Maps-iOS-SDK.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		59352F79610F4D3FBCCB885B /* Pods-ASIHTTPRequest */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1BEE168E15BF4B83BB21F3B6 /* Build configuration list for PBXNativeTarget "Pods-ASIHTTPRequest" */;
-			buildPhases = (
-				DE749AC845404826A781DFE2 /* Sources */,
-				429606AD5F9E488988686E9D /* Frameworks */,
-				20793D138FC0455E98BDEF35 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A7CB11DBC0C242ADAC891C22 /* PBXTargetDependency */,
-			);
-			name = "Pods-ASIHTTPRequest";
-			productName = "Pods-ASIHTTPRequest";
-			productReference = 96466E9C5E324AF79AF91351 /* libPods-ASIHTTPRequest.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		7CC81B736ACA4FD9B836388B /* Pods-Reachability */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BF452A6FAD8F42E9BC4F6AB7 /* Build configuration list for PBXNativeTarget "Pods-Reachability" */;
-			buildPhases = (
-				97F7995C188942A5AF51B056 /* Sources */,
-				215B9A38F90B416C960D6BAF /* Frameworks */,
-				4D79E591DD794E39A192F6BA /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-Reachability";
-			productName = "Pods-Reachability";
-			productReference = A4A290B77BA940F69CAAE5FD /* libPods-Reachability.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		9D142FC5AA1E4BD6B6868839 /* Pods-GCDiscreetNotificationView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EA49694F61E4405D80F306E4 /* Build configuration list for PBXNativeTarget "Pods-GCDiscreetNotificationView" */;
-			buildPhases = (
-				8737718D29044BA5BC960A34 /* Sources */,
-				D9A69C1A8DEF4BF98466432E /* Frameworks */,
-				37A595821CB346FABDB69D34 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-GCDiscreetNotificationView";
-			productName = "Pods-GCDiscreetNotificationView";
-			productReference = 32D4230361B04E378C7087ED /* libPods-GCDiscreetNotificationView.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		DC6016A3F5184C97ABCB6E40 /* Pods */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8D2BBC196E8E40DB9C61FDA0 /* Build configuration list for PBXNativeTarget "Pods" */;
-			buildPhases = (
-				7CBB867269EB438EA3DA3948 /* Sources */,
-				8AFFD0BE9A04442CB88E9590 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				879D0986082B48C095D9809C /* PBXTargetDependency */,
-				85AFD50C25AF48F082918AAA /* PBXTargetDependency */,
-				900846A4BEF14BB197DF9410 /* PBXTargetDependency */,
-				E6CA529E4BCB48EFA3B92750 /* PBXTargetDependency */,
-				AD2647EFF4244331B90C662E /* PBXTargetDependency */,
+				4E335280F97746E7BD56D5BB /* PBXTargetDependency */,
+				8547FE607CAB45F9876EBFC2 /* PBXTargetDependency */,
+				38CCBE1135F14183B5BB6DB1 /* PBXTargetDependency */,
+				3FFFA94AE20344DBABED1D8A /* PBXTargetDependency */,
+				5D7BFCBAAF0F4D99B825A5DC /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
-			productReference = 826ACCD6329C4E6B98490809 /* libPods.a */;
+			productReference = E99138EC8CF34F69901BA71F /* libPods.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		E2E429CA59974243B58B4017 /* Pods-SSZipArchive */ = {
+		1FDBA98665D64A0AB46CCEE6 /* Pods-ASIHTTPRequest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB7726F1228D451989FB6D41 /* Build configuration list for PBXNativeTarget "Pods-SSZipArchive" */;
+			buildConfigurationList = 869F86AB436B4646825B59B0 /* Build configuration list for PBXNativeTarget "Pods-ASIHTTPRequest" */;
 			buildPhases = (
-				5B585A05DCBB4C69BFEC683B /* Sources */,
-				C856F9B90A1240529E256A76 /* Frameworks */,
-				A30A1908339B4387B66364FA /* Headers */,
+				32F05DA1887A4DA5BA6DFD0E /* Sources */,
+				3004A57234634A33B4EE08FD /* Frameworks */,
+				3F3DCA908DFD4ECD839AA772 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7483429497184C1F890D38F3 /* PBXTargetDependency */,
+			);
+			name = "Pods-ASIHTTPRequest";
+			productName = "Pods-ASIHTTPRequest";
+			productReference = 8FD26B9962D742AFA3123265 /* libPods-ASIHTTPRequest.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		539125DCE568466B9E21F53B /* Pods-SSZipArchive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0523115B52E24BDEAC01AFB4 /* Build configuration list for PBXNativeTarget "Pods-SSZipArchive" */;
+			buildPhases = (
+				7195AEA1ADD34B938438A563 /* Sources */,
+				B01384ADF7D845D7B921E7D1 /* Frameworks */,
+				4D95A3634CB3456CAC63D367 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -957,188 +906,210 @@
 			);
 			name = "Pods-SSZipArchive";
 			productName = "Pods-SSZipArchive";
-			productReference = B6995DA4D554488EAF276FC1 /* libPods-SSZipArchive.a */;
+			productReference = 979DE72668DD420F9C769ADE /* libPods-SSZipArchive.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C1CE590AE47A4A3680899914 /* Pods-Google-Maps-iOS-SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30D1D3FD6AB84C449DB92D1C /* Build configuration list for PBXNativeTarget "Pods-Google-Maps-iOS-SDK" */;
+			buildPhases = (
+				54C1EE8653674D9FB50C9DA8 /* Sources */,
+				1C128FB82E724254BFB87830 /* Frameworks */,
+				E21D02687437454B902A4309 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Google-Maps-iOS-SDK";
+			productName = "Pods-Google-Maps-iOS-SDK";
+			productReference = 12AC9AAF84834BF4B207E63E /* libPods-Google-Maps-iOS-SDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CC3910C9C5814FD585D4C770 /* Pods-GCDiscreetNotificationView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2B099FBE2DC4A7C87C95BDF /* Build configuration list for PBXNativeTarget "Pods-GCDiscreetNotificationView" */;
+			buildPhases = (
+				8D9D5342DBDB4E399BB3D2F2 /* Sources */,
+				9766427853D646D7A5E72335 /* Frameworks */,
+				8669FC05CD78401EBCF2B500 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GCDiscreetNotificationView";
+			productName = "Pods-GCDiscreetNotificationView";
+			productReference = F67162089425474B889CE904 /* libPods-GCDiscreetNotificationView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F4CE3D8B2210436194819C27 /* Pods-Reachability */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F92BBB62872248528D3B476B /* Build configuration list for PBXNativeTarget "Pods-Reachability" */;
+			buildPhases = (
+				901E9DDF41894980B59973A1 /* Sources */,
+				5752DCF407C145CC817F5D72 /* Frameworks */,
+				7503BAF63A9C44298D7E195D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Reachability";
+			productName = "Pods-Reachability";
+			productReference = 341FCC18B1DC45ECBF71FCF5 /* libPods-Reachability.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		419757010215477A83B24C19 /* Project object */ = {
+		CAE4AD61BAB8407F80678FC7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = 5253CA85944540C8A55EAC56 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = B1FC1066AEC54F999A6112D1 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 6D27DEC500E64F77A86AFF0F;
-			productRefGroup = E85BA687E4814DC88F0E9BDB /* Products */;
+			mainGroup = C73C6AE306CD4D42A7B26CEA;
+			productRefGroup = 0B05523CB5304FF5B254C970 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DC6016A3F5184C97ABCB6E40 /* Pods */,
-				59352F79610F4D3FBCCB885B /* Pods-ASIHTTPRequest */,
-				9D142FC5AA1E4BD6B6868839 /* Pods-GCDiscreetNotificationView */,
-				3E67CE506F0440F38A55C6F5 /* Pods-Google-Maps-iOS-SDK */,
-				7CC81B736ACA4FD9B836388B /* Pods-Reachability */,
-				E2E429CA59974243B58B4017 /* Pods-SSZipArchive */,
+				09EE02B29E9541EFBA907C0B /* Pods */,
+				1FDBA98665D64A0AB46CCEE6 /* Pods-ASIHTTPRequest */,
+				CC3910C9C5814FD585D4C770 /* Pods-GCDiscreetNotificationView */,
+				C1CE590AE47A4A3680899914 /* Pods-Google-Maps-iOS-SDK */,
+				F4CE3D8B2210436194819C27 /* Pods-Reachability */,
+				539125DCE568466B9E21F53B /* Pods-SSZipArchive */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5B585A05DCBB4C69BFEC683B /* Sources */ = {
+		10E12F9FB7DB418484428C8B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B3714F8D9FD473A99394FA3 /* Pods-SSZipArchive-dummy.m in Sources */,
-				AF345E4886F34BA991E8B687 /* SSZipArchive.m in Sources */,
-				A53D7C3438274703B2E865D1 /* ioapi.c in Sources */,
-				8D67024BBD3E46699BE38B9B /* mztools.c in Sources */,
-				1BB29E5627B6405F93A0C839 /* unzip.c in Sources */,
-				93143312130F4187B718CE18 /* zip.c in Sources */,
+				3241FC3B737F4F71807E6E4B /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7CBB867269EB438EA3DA3948 /* Sources */ = {
+		32F05DA1887A4DA5BA6DFD0E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55C610D64B5247C685550A3F /* Pods-dummy.m in Sources */,
+				1AF622C42C074AF7A169549E /* ASIAuthenticationDialog.m in Sources */,
+				C7F394C1348E4375B73F4C8B /* ASICloudFilesCDNRequest.m in Sources */,
+				0DE6A8F869C8414F8DEBF0F2 /* ASICloudFilesContainer.m in Sources */,
+				8924F9003DEA4189993AB9EA /* ASICloudFilesContainerRequest.m in Sources */,
+				37753EFDAC06433BB09899BA /* ASICloudFilesContainerXMLParserDelegate.m in Sources */,
+				E55D3D9852574710A294F5BA /* ASICloudFilesObject.m in Sources */,
+				CB3A94A0B758427AA45563CE /* ASICloudFilesObjectRequest.m in Sources */,
+				051710C49C324735B3CEC7C8 /* ASICloudFilesRequest.m in Sources */,
+				5D7B181819CE4ACF8F1FB9FB /* ASIDataCompressor.m in Sources */,
+				C34213CB1A014C978558CB23 /* ASIDataDecompressor.m in Sources */,
+				7A027A3EC7AA40A1A71EBEF5 /* ASIDownloadCache.m in Sources */,
+				136BAD1CA2A644D4A5AD5FF4 /* ASIFormDataRequest.m in Sources */,
+				5E7DFAA37F4A4D88A3CFF63A /* ASIHTTPRequest.m in Sources */,
+				628779E64BEB473EA488CE76 /* ASIInputStream.m in Sources */,
+				C9F496B3A9AD4C12A93462B1 /* ASINetworkQueue.m in Sources */,
+				ACDE5A8FEF6C4EA580966223 /* ASIS3Bucket.m in Sources */,
+				6527E7A1202143A28E5B65B3 /* ASIS3BucketObject.m in Sources */,
+				64E3061E256046838BB89C12 /* ASIS3BucketRequest.m in Sources */,
+				A0E6B7D637964A87B12499E0 /* ASIS3ObjectRequest.m in Sources */,
+				B2AEEDB08A874142B176F836 /* ASIS3Request.m in Sources */,
+				921FF6BD617C43C68BE92FAD /* ASIS3ServiceRequest.m in Sources */,
+				C0C7C0EBF82341EC9AF01B6E /* ASIWebPageRequest.m in Sources */,
+				A35AD1A967204F8796BFDF8A /* Pods-ASIHTTPRequest-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8737718D29044BA5BC960A34 /* Sources */ = {
+		54C1EE8653674D9FB50C9DA8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CD0D12A150D42F59A0F22DE /* GCDiscreetNotificationView.m in Sources */,
-				D1983D5F45B54472BD00DDA3 /* Pods-GCDiscreetNotificationView-dummy.m in Sources */,
+				2F4F39D8473B4E799889ABB4 /* Pods-Google-Maps-iOS-SDK-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		97F7995C188942A5AF51B056 /* Sources */ = {
+		7195AEA1ADD34B938438A563 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16C6A8FA041144E5A3226F11 /* Pods-Reachability-dummy.m in Sources */,
-				80BEB069D21E44A0B1F334B7 /* Reachability.m in Sources */,
+				7DCBD9620D05483CAB87D6F0 /* Pods-SSZipArchive-dummy.m in Sources */,
+				EE3550CF0BFE441BA1036F33 /* SSZipArchive.m in Sources */,
+				E1D7818312D44391825E6FB6 /* ioapi.c in Sources */,
+				E7C3A97EC67D4570A9E95141 /* mztools.c in Sources */,
+				17326A6C152246129A5ED732 /* unzip.c in Sources */,
+				D195B0DB1A60412DB527698C /* zip.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9CAE23FFED5D4FACBD57D280 /* Sources */ = {
+		8D9D5342DBDB4E399BB3D2F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0864DCFA07C4A559842D1D1 /* Pods-Google-Maps-iOS-SDK-dummy.m in Sources */,
+				18988640AB904450A904AA3C /* GCDiscreetNotificationView.m in Sources */,
+				0DE532C2BC434CCFB9F039B7 /* Pods-GCDiscreetNotificationView-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE749AC845404826A781DFE2 /* Sources */ = {
+		901E9DDF41894980B59973A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EB0E9D0CC184C04B988C37C /* ASIAuthenticationDialog.m in Sources */,
-				FE75DDF0720B43BEAE97F3C2 /* ASICloudFilesCDNRequest.m in Sources */,
-				04B948C69F434A069B8D54B1 /* ASICloudFilesContainer.m in Sources */,
-				9782675CC31D4B2FA8A521B0 /* ASICloudFilesContainerRequest.m in Sources */,
-				C5D4D6338FE34FF1811DFB92 /* ASICloudFilesContainerXMLParserDelegate.m in Sources */,
-				6B96F0F546FE44CE97B7D80D /* ASICloudFilesObject.m in Sources */,
-				D6D42802A8584B86B74C34D0 /* ASICloudFilesObjectRequest.m in Sources */,
-				E08BEB5EE7FD46ACACCE8B44 /* ASICloudFilesRequest.m in Sources */,
-				0F8EDE8DC01F4396A05DAEDC /* ASIDataCompressor.m in Sources */,
-				238270FF4F894AC3AE12D3F2 /* ASIDataDecompressor.m in Sources */,
-				77EA4C2F3A22420DBCF5E27D /* ASIDownloadCache.m in Sources */,
-				C6DFA875A922475E9F079BD9 /* ASIFormDataRequest.m in Sources */,
-				0C8E699BFBC34258AF08477B /* ASIHTTPRequest.m in Sources */,
-				42551C885FDC4EA5962FDC0C /* ASIInputStream.m in Sources */,
-				C84EB0C522A4451A81FF064B /* ASINetworkQueue.m in Sources */,
-				E48E61E4938B44CF885C820F /* ASIS3Bucket.m in Sources */,
-				B6C4B35AB5B54C1BBC87BC2B /* ASIS3BucketObject.m in Sources */,
-				DCD947D856104A18A3A7ABC3 /* ASIS3BucketRequest.m in Sources */,
-				2A19534163A84D69A4336DC7 /* ASIS3ObjectRequest.m in Sources */,
-				6174DAF6B21F4FBD9A8552E5 /* ASIS3Request.m in Sources */,
-				BCAB80C684EA4698A7803C77 /* ASIS3ServiceRequest.m in Sources */,
-				FABF4F8E0FE14BAA994C9BB1 /* ASIWebPageRequest.m in Sources */,
-				91F927AD832A4456A5D50967 /* Pods-ASIHTTPRequest-dummy.m in Sources */,
+				91705FEFD05A4AAFA11957F0 /* Pods-Reachability-dummy.m in Sources */,
+				2CE15D4BD3D74D118D51DFA8 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		85AFD50C25AF48F082918AAA /* PBXTargetDependency */ = {
+		38CCBE1135F14183B5BB6DB1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9D142FC5AA1E4BD6B6868839 /* Pods-GCDiscreetNotificationView */;
-			targetProxy = 6877085EEFEB4899A0D566D4 /* PBXContainerItemProxy */;
+			target = C1CE590AE47A4A3680899914 /* Pods-Google-Maps-iOS-SDK */;
+			targetProxy = 99B33204100A4E669AC6C58F /* PBXContainerItemProxy */;
 		};
-		879D0986082B48C095D9809C /* PBXTargetDependency */ = {
+		3FFFA94AE20344DBABED1D8A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 59352F79610F4D3FBCCB885B /* Pods-ASIHTTPRequest */;
-			targetProxy = 391C0C2E48974BE989EC7653 /* PBXContainerItemProxy */;
+			target = F4CE3D8B2210436194819C27 /* Pods-Reachability */;
+			targetProxy = 0B8764D442B24DAEA195B010 /* PBXContainerItemProxy */;
 		};
-		900846A4BEF14BB197DF9410 /* PBXTargetDependency */ = {
+		4E335280F97746E7BD56D5BB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3E67CE506F0440F38A55C6F5 /* Pods-Google-Maps-iOS-SDK */;
-			targetProxy = 9D727C3ABA8445FFB89BCFEF /* PBXContainerItemProxy */;
+			target = 1FDBA98665D64A0AB46CCEE6 /* Pods-ASIHTTPRequest */;
+			targetProxy = D9BB8378B54648789E986B8E /* PBXContainerItemProxy */;
 		};
-		A7CB11DBC0C242ADAC891C22 /* PBXTargetDependency */ = {
+		5D7BFCBAAF0F4D99B825A5DC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7CC81B736ACA4FD9B836388B /* Pods-Reachability */;
-			targetProxy = 63FA4F1753424698B8239DDC /* PBXContainerItemProxy */;
+			target = 539125DCE568466B9E21F53B /* Pods-SSZipArchive */;
+			targetProxy = E918F9AC4EA54F499B72CB25 /* PBXContainerItemProxy */;
 		};
-		AD2647EFF4244331B90C662E /* PBXTargetDependency */ = {
+		7483429497184C1F890D38F3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E2E429CA59974243B58B4017 /* Pods-SSZipArchive */;
-			targetProxy = 5878D46345D9449985D20637 /* PBXContainerItemProxy */;
+			target = F4CE3D8B2210436194819C27 /* Pods-Reachability */;
+			targetProxy = 011BD07F0A7C40E4A1404852 /* PBXContainerItemProxy */;
 		};
-		E6CA529E4BCB48EFA3B92750 /* PBXTargetDependency */ = {
+		8547FE607CAB45F9876EBFC2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7CC81B736ACA4FD9B836388B /* Pods-Reachability */;
-			targetProxy = FE9D0B92DC674022B556DD08 /* PBXContainerItemProxy */;
+			target = CC3910C9C5814FD585D4C770 /* Pods-GCDiscreetNotificationView */;
+			targetProxy = B6C469DBC0B04D84AC9807C6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		028ED8D2B1654A7D9ADD867B /* Debug */ = {
+		0EE2761C6C1D4B96B6A05F1F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19C17FB160F44E4C979CEFEC /* Pods-SSZipArchive-Private.xcconfig */;
+			baseConfigurationReference = 5AB5D732B291444B8FE32D72 /* Pods-SSZipArchive-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-SSZipArchive-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		1E1E21D941854B20AA3F4C5E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19C17FB160F44E4C979CEFEC /* Pods-SSZipArchive-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1164,12 +1135,12 @@
 			};
 			name = Release;
 		};
-		328557B2048846C581D88B16 /* Debug */ = {
+		18778E8D85304FC2BAF27DDD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D16B5316DDE94D709AF94769 /* Pods-Reachability-Private.xcconfig */;
+			baseConfigurationReference = 616677D05D784070804DB089 /* Pods-Reachability-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1193,48 +1164,46 @@
 			};
 			name = Debug;
 		};
-		3494A0486CF14F76A2D7CC51 /* Release */ = {
+		3781EF70C964426A84421761 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C4406EB6FA6427DA1FAB41C /* Pods-Google-Maps-iOS-SDK-Private.xcconfig */;
+			baseConfigurationReference = 305E684FD82A4D0DA13EC766 /* Pods-Google-Maps-iOS-SDK-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
-				COPY_PHASE_STRIP = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pods-Google-Maps-iOS-SDK-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
-		361EE0F11AE641BEA8529BF5 /* Release */ = {
+		5B9BCC4800CD4343BFF26597 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A74C206A368B4E9E91F1C5A5 /* Pods-ASIHTTPRequest-Private.xcconfig */;
+			baseConfigurationReference = 616677D05D784070804DB089 /* Pods-Reachability-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-ASIHTTPRequest-prefix.pch";
+				GCC_PREFIX_HEADER = "Pods-Reachability-prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
@@ -1255,7 +1224,7 @@
 			};
 			name = Release;
 		};
-		36A11CB994A44DD48211AFE9 /* Release */ = {
+		5D31EF3ABA604B8B8E5FE5B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1280,17 +1249,18 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = NO;
 				STRIP_INSTALLED_PRODUCT = NO;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		50C0BE6D12944BE285F9405D /* Release */ = {
+		863EB1D83D3D479FA51EC8A1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7AC2444ABD84D55AA210AC5 /* Pods.xcconfig */;
+			baseConfigurationReference = 7EB51281636646D998555175 /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1315,12 +1285,12 @@
 			};
 			name = Release;
 		};
-		517F976DEA5A4C02AA5933CE /* Release */ = {
+		8B2925D79F43467E88558EC7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C992E6A7C7F34C56B8A584AD /* Pods-GCDiscreetNotificationView-Private.xcconfig */;
+			baseConfigurationReference = 5488FF19AF554F21960783F6 /* Pods-GCDiscreetNotificationView-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1346,35 +1316,7 @@
 			};
 			name = Release;
 		};
-		69F029078533438A9643467D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7AC2444ABD84D55AA210AC5 /* Pods.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		7A0401DAE03849299BAEE3C8 /* Debug */ = {
+		9538D96FE1B441719A5A5AE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1405,75 +1347,17 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Debug;
 		};
-		8478BF64236C4B138F3DA1D7 /* Debug */ = {
+		A64E5B7C933845FC84CE6F8E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C992E6A7C7F34C56B8A584AD /* Pods-GCDiscreetNotificationView-Private.xcconfig */;
+			baseConfigurationReference = 700EDC2C661E49C686FFB454 /* Pods-ASIHTTPRequest-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-GCDiscreetNotificationView-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		87C4D74F526E4E5FBC0DA746 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C4406EB6FA6427DA1FAB41C /* Pods-Google-Maps-iOS-SDK-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-Google-Maps-iOS-SDK-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		E0A5D419BA844CE59AD18282 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A74C206A368B4E9E91F1C5A5 /* Pods-ASIHTTPRequest-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1497,17 +1381,17 @@
 			};
 			name = Debug;
 		};
-		E4CBF99D32EC40A6A69B9BF7 /* Release */ = {
+		B0CCE14245EC43299053105C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D16B5316DDE94D709AF94769 /* Pods-Reachability-Private.xcconfig */;
+			baseConfigurationReference = 305E684FD82A4D0DA13EC766 /* Pods-Google-Maps-iOS-SDK-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-Reachability-prefix.pch";
+				GCC_PREFIX_HEADER = "Pods-Google-Maps-iOS-SDK-prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
@@ -1528,73 +1412,190 @@
 			};
 			name = Release;
 		};
+		C72D4692A3784CD5933306F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 700EDC2C661E49C686FFB454 /* Pods-ASIHTTPRequest-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-ASIHTTPRequest-prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDDFF9946E024C1F9F3CE017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AB5D732B291444B8FE32D72 /* Pods-SSZipArchive-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-SSZipArchive-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F35E03E9767C4A88A1780395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5488FF19AF554F21960783F6 /* Pods-GCDiscreetNotificationView-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-GCDiscreetNotificationView-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F626CEC01DAB46309D098B9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EB51281636646D998555175 /* Pods.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1BEE168E15BF4B83BB21F3B6 /* Build configuration list for PBXNativeTarget "Pods-ASIHTTPRequest" */ = {
+		0523115B52E24BDEAC01AFB4 /* Build configuration list for PBXNativeTarget "Pods-SSZipArchive" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E0A5D419BA844CE59AD18282 /* Debug */,
-				361EE0F11AE641BEA8529BF5 /* Release */,
+				CDDFF9946E024C1F9F3CE017 /* Debug */,
+				0EE2761C6C1D4B96B6A05F1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5253CA85944540C8A55EAC56 /* Build configuration list for PBXProject "Pods" */ = {
+		2A3BB28E6EEC4CFBAB4F1835 /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7A0401DAE03849299BAEE3C8 /* Debug */,
-				36A11CB994A44DD48211AFE9 /* Release */,
+				F626CEC01DAB46309D098B9E /* Debug */,
+				863EB1D83D3D479FA51EC8A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8D2BBC196E8E40DB9C61FDA0 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		30D1D3FD6AB84C449DB92D1C /* Build configuration list for PBXNativeTarget "Pods-Google-Maps-iOS-SDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				69F029078533438A9643467D /* Debug */,
-				50C0BE6D12944BE285F9405D /* Release */,
+				3781EF70C964426A84421761 /* Debug */,
+				B0CCE14245EC43299053105C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BF452A6FAD8F42E9BC4F6AB7 /* Build configuration list for PBXNativeTarget "Pods-Reachability" */ = {
+		869F86AB436B4646825B59B0 /* Build configuration list for PBXNativeTarget "Pods-ASIHTTPRequest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				328557B2048846C581D88B16 /* Debug */,
-				E4CBF99D32EC40A6A69B9BF7 /* Release */,
+				A64E5B7C933845FC84CE6F8E /* Debug */,
+				C72D4692A3784CD5933306F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C2B7C719B36E425B884CC562 /* Build configuration list for PBXNativeTarget "Pods-Google-Maps-iOS-SDK" */ = {
+		B1FC1066AEC54F999A6112D1 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				87C4D74F526E4E5FBC0DA746 /* Debug */,
-				3494A0486CF14F76A2D7CC51 /* Release */,
+				9538D96FE1B441719A5A5AE1 /* Debug */,
+				5D31EF3ABA604B8B8E5FE5B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB7726F1228D451989FB6D41 /* Build configuration list for PBXNativeTarget "Pods-SSZipArchive" */ = {
+		B2B099FBE2DC4A7C87C95BDF /* Build configuration list for PBXNativeTarget "Pods-GCDiscreetNotificationView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				028ED8D2B1654A7D9ADD867B /* Debug */,
-				1E1E21D941854B20AA3F4C5E /* Release */,
+				F35E03E9767C4A88A1780395 /* Debug */,
+				8B2925D79F43467E88558EC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EA49694F61E4405D80F306E4 /* Build configuration list for PBXNativeTarget "Pods-GCDiscreetNotificationView" */ = {
+		F92BBB62872248528D3B476B /* Build configuration list for PBXNativeTarget "Pods-Reachability" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8478BF64236C4B138F3DA1D7 /* Debug */,
-				517F976DEA5A4C02AA5933CE /* Release */,
+				18778E8D85304FC2BAF27DDD /* Debug */,
+				5B9BCC4800CD4343BFF26597 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 419757010215477A83B24C19 /* Project object */;
+	rootObject = CAE4AD61BAB8407F80678FC7 /* Project object */;
 }

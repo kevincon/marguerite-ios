@@ -1023,8 +1023,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Stanford University (CQRZ4E7K9U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Stanford University (CQRZ4E7K9U)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREFIX_HEADER = "marguerite-Prefix.pch";
@@ -1034,7 +1034,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "2BD36E0D-F220-4265-B2E4-84FA911E0AFF";
+				PROVISIONING_PROFILE = "2C473C7D-0C61-4BC4-95F1-49A3EFE4EFCB";
 				SDKROOT = iphoneos6.1;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
@@ -1077,8 +1077,8 @@
 			baseConfigurationReference = 70CE5BB07FB64AA48B3AE676 /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Registrar's Office Stanford University (89Q7Q6SUQZ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Registrar's Office Stanford University (89Q7Q6SUQZ)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Stanford University (CQRZ4E7K9U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Stanford University (CQRZ4E7K9U)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -1093,8 +1093,8 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = Marguerite;
-				PROVISIONING_PROFILE = "2BD36E0D-F220-4265-B2E4-84FA911E0AFF";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2BD36E0D-F220-4265-B2E4-84FA911E0AFF";
+				PROVISIONING_PROFILE = "2C473C7D-0C61-4BC4-95F1-49A3EFE4EFCB";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2C473C7D-0C61-4BC4-95F1-49A3EFE4EFCB";
 				SDKROOT = iphoneos6.1;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s arm64";

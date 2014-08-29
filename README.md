@@ -2,16 +2,11 @@
 
 Marguerite is an iPhone app that makes it easier for riders to use the free [Stanford Marguerite shuttle bus system](http://transportation.stanford.edu/marguerite/).
 
-Marguerite is developed and maintained by the [upcoming Cardinal Devs club](http://sadevs.stanford.edu/) at Stanford. Cardinal Devs is an upcoming student organization that develops, maintains, and improves open-source, student-run technology at Stanford University. 
-
-If you are a Stanford undergraduate or graduate student and are interested in joining as a 2013-2014 developer, designer, or leader, please apply via our jobs page: https://stanforddevs.recruiterbox.com/. Applications are due Friday, September 27, 2013.
-
-Marguerite is developed with the knowledge and gracious assistance of the [Stanford Parking & Transportation Services department](http://transportation.stanford.edu/). We are extremely grateful for their help.
+This app is maintained by [Kevin Conley](https://github.com/kevincon), independent of the Stanford Parking & Transportation Services department. If you have any non-app-related issues or feedback regarding the Marguerite shuttle buses, please contact the [Marguerite department](http://transportation.stanford.edu/marguerite/).
 
 ### Features
 * See what buses are arriving next at the Marguerite stop closest to your current location.*
 * View the real-time locations of all shuttles on a Google map.
-* View the schedules for all Marguerite routes.*
 
 *No Internet connection required!
 

@@ -1,5 +1,5 @@
 language: objective-c
-rvm: 1.9.3
-before_install: gem install cocoapods -v '0.32.1'
-before_script: travis/before_script.sh
-script: travis/script.sh
+xcode_workspace: marguerite.xcworkspace
+xcode_sdk: iphonesimulator
+xcode_scheme: marguerite
+

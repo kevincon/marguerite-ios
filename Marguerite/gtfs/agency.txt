@@ -1,0 +1,2 @@
+agency_name,agency_url,agency_timezone,agency_lang,agency_phone
+Stanford Marguerite Shuttle,http://marguerite.stanford.edu,America/Los_Angeles,en,650-723-9362

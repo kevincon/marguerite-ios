@@ -10,10 +10,20 @@
 		DAFA4465FC1F6A7992D43A03 /* libPods-Marguerite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D8696DDAE08EDF584D86EC /* libPods-Marguerite.a */; };
 		F4F61E1A1AA41498009377CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E191AA41498009377CE /* AppDelegate.swift */; };
 		F4F61E1D1AA41498009377CE /* Marguerite.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E1B1AA41498009377CE /* Marguerite.xcdatamodeld */; };
-		F4F61E1F1AA41498009377CE /* NextShuttleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E1E1AA41498009377CE /* NextShuttleViewController.swift */; };
 		F4F61E221AA41498009377CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F61E201AA41498009377CE /* Main.storyboard */; };
 		F4F61E241AA41498009377CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4F61E231AA41498009377CE /* Images.xcassets */; };
 		F4F61E271AA41498009377CE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4F61E251AA41498009377CE /* LaunchScreen.xib */; };
+		F4F61E441AA41C21009377CE /* NextShuttleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E431AA41C21009377CE /* NextShuttleTableViewController.swift */; };
+		F4F61E481AA420C9009377CE /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E471AA420C9009377CE /* Stop.swift */; };
+		F4F61E4A1AA42CA0009377CE /* GTFSDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E491AA42CA0009377CE /* GTFSDatabase.swift */; };
+		F4F61E541AA44C1C009377CE /* agency.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4F61E4C1AA44C1C009377CE /* agency.txt */; };
+		F4F61E551AA44C1C009377CE /* calendar_dates.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4F61E4D1AA44C1C009377CE /* calendar_dates.txt */; };
+		F4F61E561AA44C1C009377CE /* gtfs.db in Resources */ = {isa = PBXBuildFile; fileRef = F4F61E4E1AA44C1C009377CE /* gtfs.db */; };
+		F4F61E571AA44C1C009377CE /* routes.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4F61E4F1AA44C1C009377CE /* routes.txt */; };
+		F4F61E581AA44C1C009377CE /* shapes.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4F61E501AA44C1C009377CE /* shapes.txt */; };
+		F4F61E591AA44C1C009377CE /* stop_times.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4F61E511AA44C1C009377CE /* stop_times.txt */; };
+		F4F61E5A1AA44C1C009377CE /* stops.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4F61E521AA44C1C009377CE /* stops.txt */; };
+		F4F61E5B1AA44C1C009377CE /* trips.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4F61E531AA44C1C009377CE /* trips.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,12 +34,22 @@
 		F4F61E181AA41498009377CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4F61E191AA41498009377CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4F61E1C1AA41498009377CE /* Marguerite.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Marguerite.xcdatamodel; sourceTree = "<group>"; };
-		F4F61E1E1AA41498009377CE /* NextShuttleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextShuttleViewController.swift; sourceTree = "<group>"; };
 		F4F61E211AA41498009377CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4F61E231AA41498009377CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F4F61E261AA41498009377CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F4F61E3E1AA41834009377CE /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		F4F61E401AA41A61009377CE /* Marguerite-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Marguerite-Bridging-Header.h"; sourceTree = "<group>"; };
+		F4F61E431AA41C21009377CE /* NextShuttleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextShuttleTableViewController.swift; sourceTree = "<group>"; };
+		F4F61E471AA420C9009377CE /* Stop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
+		F4F61E491AA42CA0009377CE /* GTFSDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTFSDatabase.swift; sourceTree = "<group>"; };
+		F4F61E4C1AA44C1C009377CE /* agency.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = agency.txt; sourceTree = "<group>"; };
+		F4F61E4D1AA44C1C009377CE /* calendar_dates.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = calendar_dates.txt; sourceTree = "<group>"; };
+		F4F61E4E1AA44C1C009377CE /* gtfs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = gtfs.db; sourceTree = "<group>"; };
+		F4F61E4F1AA44C1C009377CE /* routes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = routes.txt; sourceTree = "<group>"; };
+		F4F61E501AA44C1C009377CE /* shapes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shapes.txt; sourceTree = "<group>"; };
+		F4F61E511AA44C1C009377CE /* stop_times.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stop_times.txt; sourceTree = "<group>"; };
+		F4F61E521AA44C1C009377CE /* stops.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stops.txt; sourceTree = "<group>"; };
+		F4F61E531AA44C1C009377CE /* trips.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = trips.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +102,11 @@
 		F4F61E161AA41498009377CE /* Marguerite */ = {
 			isa = PBXGroup;
 			children = (
-				F4F61E1E1AA41498009377CE /* NextShuttleViewController.swift */,
+				F4F61E431AA41C21009377CE /* NextShuttleTableViewController.swift */,
+				F4F61E471AA420C9009377CE /* Stop.swift */,
+				F4F61E491AA42CA0009377CE /* GTFSDatabase.swift */,
 				F4F61E201AA41498009377CE /* Main.storyboard */,
+				F4F61E4B1AA44C1C009377CE /* gtfs */,
 				F4F61E171AA41498009377CE /* Supporting Files */,
 			);
 			path = Marguerite;
@@ -101,6 +124,21 @@
 				F4F61E401AA41A61009377CE /* Marguerite-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F4F61E4B1AA44C1C009377CE /* gtfs */ = {
+			isa = PBXGroup;
+			children = (
+				F4F61E4C1AA44C1C009377CE /* agency.txt */,
+				F4F61E4D1AA44C1C009377CE /* calendar_dates.txt */,
+				F4F61E4E1AA44C1C009377CE /* gtfs.db */,
+				F4F61E4F1AA44C1C009377CE /* routes.txt */,
+				F4F61E501AA44C1C009377CE /* shapes.txt */,
+				F4F61E511AA44C1C009377CE /* stop_times.txt */,
+				F4F61E521AA44C1C009377CE /* stops.txt */,
+				F4F61E531AA44C1C009377CE /* trips.txt */,
+			);
+			path = gtfs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,8 +201,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4F61E221AA41498009377CE /* Main.storyboard in Resources */,
+				F4F61E551AA44C1C009377CE /* calendar_dates.txt in Resources */,
+				F4F61E571AA44C1C009377CE /* routes.txt in Resources */,
 				F4F61E271AA41498009377CE /* LaunchScreen.xib in Resources */,
+				F4F61E5B1AA44C1C009377CE /* trips.txt in Resources */,
+				F4F61E581AA44C1C009377CE /* shapes.txt in Resources */,
+				F4F61E561AA44C1C009377CE /* gtfs.db in Resources */,
+				F4F61E5A1AA44C1C009377CE /* stops.txt in Resources */,
 				F4F61E241AA41498009377CE /* Images.xcassets in Resources */,
+				F4F61E541AA44C1C009377CE /* agency.txt in Resources */,
+				F4F61E591AA44C1C009377CE /* stop_times.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,9 +254,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4F61E1F1AA41498009377CE /* NextShuttleViewController.swift in Sources */,
+				F4F61E441AA41C21009377CE /* NextShuttleTableViewController.swift in Sources */,
 				F4F61E1D1AA41498009377CE /* Marguerite.xcdatamodeld in Sources */,
+				F4F61E4A1AA42CA0009377CE /* GTFSDatabase.swift in Sources */,
 				F4F61E1A1AA41498009377CE /* AppDelegate.swift in Sources */,
+				F4F61E481AA420C9009377CE /* Stop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

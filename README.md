@@ -28,15 +28,13 @@ All pull requests and feedback are welcome! Report bugs and feature requests usi
 3. If all of the project files appear red, completely exit Xcode and try opening the workspace file again.
 4. At this point you should be able to run the project in the iPhone simulator by selecting "marguerite -> iPhone 6.1 simulator" in the dropdown menu at the top left and clicking the "Run" button. However, certain features of the app will not function until you update the secrets.h file.
 
-#### Configure the secrets.h file
-First, run the following command on the command line to prevent git from recognizing any changes to the secrets.h file:
-
-    git update-index --assume-unchanged secrets.h
-    
-Then, before the app will fully function, you must complete the "secrets.h" file in the root directory of the project by filling in the following strings:
+#### Configure the Secrets.xcconfig file
+Before the app will fully function, you must copy the "Secrets.example.xcconfig" file as "Secrets.xcconfig" and fill in the following values:
 * MARGUERITE_REALTIME_XML_FEED: This is the URL of the real-time Marguerite shuttle bus location XML feed. Email Kevin Conley at kcon AT stanford DOT edu to ask for this value.
 * MARGUERITE_VEHICLE_IDS_URL: This is the URL that the app sends POST requests to in order to query the mappings between Marguerite "vehicle IDs" (the numbers on the sides of the buses) and the "farebox IDs" that help identify which route a particular bus is driving on. Email Kevin Conley at kcon AT stanford DOT edu to ask for this value.
 * GOOGLE_MAPS_API_KEY: This is the API key for the Google Maps iPhone SDK. Follow the instructions here ([https://developers.google.com/maps/documentation/ios/start#obtaining_an_api_key](https://developers.google.com/maps/documentation/ios/start#obtaining_an_api_key)) for "Obtaining an API Key" and then update this value.
+
+"Secrets.xcconfig" is in the repo's .gitignore file, so there's no risk of these values being included in the repo accidentally.
 
 ### Best practices
 These are the practicies we currently follow, but feel free to propose better methodologies!

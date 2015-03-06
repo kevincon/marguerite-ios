@@ -291,12 +291,14 @@
                                     <constraints>
                                         <constraint firstItem="RX1-eC-6m9" firstAttribute="trailing" secondItem="b0M-ZX-2Ku" secondAttribute="trailingMargin" id="2DP-9O-gWo"/>
                                         <constraint firstItem="RX1-eC-6m9" firstAttribute="baseline" secondItem="KuM-BY-LY6" secondAttribute="baseline" id="2tc-pE-Y6H"/>
+                                        <constraint firstItem="RX1-eC-6m9" firstAttribute="top" secondItem="b0M-ZX-2Ku" secondAttribute="topMargin" constant="3" id="36D-J3-pTd"/>
                                         <constraint firstItem="RX1-eC-6m9" firstAttribute="centerY" secondItem="b0M-ZX-2Ku" secondAttribute="centerY" id="DLG-JH-gO7"/>
                                         <constraint firstItem="RX1-eC-6m9" firstAttribute="top" secondItem="b0M-ZX-2Ku" secondAttribute="topMargin" id="INF-Jp-aVS"/>
                                         <constraint firstItem="KuM-BY-LY6" firstAttribute="leading" secondItem="b0M-ZX-2Ku" secondAttribute="leadingMargin" id="Okf-1w-aSE"/>
                                         <constraint firstAttribute="centerY" secondItem="KuM-BY-LY6" secondAttribute="centerY" id="VtE-Wc-pw5"/>
                                         <constraint firstItem="KuM-BY-LY6" firstAttribute="baseline" secondItem="RX1-eC-6m9" secondAttribute="baseline" id="cHD-v7-Kqe"/>
                                         <constraint firstItem="KuM-BY-LY6" firstAttribute="baseline" secondItem="RX1-eC-6m9" secondAttribute="baseline" id="hY7-eh-hgu"/>
+                                        <constraint firstItem="KuM-BY-LY6" firstAttribute="top" secondItem="b0M-ZX-2Ku" secondAttribute="topMargin" constant="3" id="qsj-uv-L0j"/>
                                     </constraints>
                                     <variation key="default">
                                         <mask key="constraints">

@@ -61,10 +61,12 @@ class NextShuttleTableViewController: UITableViewController, CoreLocationControl
         
         tableView.sectionIndexBackgroundColor = UIColor.groupTableViewBackgroundColor()
         tableView.sectionIndexTrackingBackgroundColor = UIColor.lightGrayColor()
+        
+        self.refreshControl?.addTarget(self, action: "refreshNearbyStops:", forControlEvents: UIControlEvents.ValueChanged)
     }
     
     override func viewWillAppear(animated: Bool) {
-        locationController.refreshLocation()
+        refreshNearbyStops(self)
     }
 
     // MARK: - Table view data source
@@ -256,11 +258,18 @@ class NextShuttleTableViewController: UITableViewController, CoreLocationControl
         if !self.searchDisplayController!.active {
             tableView.reloadData()
         }
+        if self.refreshControl!.refreshing {
+            self.refreshControl?.endRefreshing()
+        }
     }
     
     func locationError(error: NSError) {
         // TODO better handling of location error
         print("GPS location error: \(error)")
+    }
+    
+    func refreshNearbyStops(sender: AnyObject) {
+        locationController.refreshLocation()
     }
     
     // MARK: - Refresh delegate

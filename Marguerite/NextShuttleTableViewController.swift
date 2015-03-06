@@ -63,6 +63,8 @@ class NextShuttleTableViewController: UITableViewController, CoreLocationControl
         tableView.sectionIndexTrackingBackgroundColor = UIColor.lightGrayColor()
         
         self.refreshControl?.addTarget(self, action: "refreshNearbyStops:", forControlEvents: UIControlEvents.ValueChanged)
+        
+        tabBarController?.tabBar.tintColor = Utility.colorFromHexString("8C1515")
     }
     
     override func viewWillAppear(animated: Bool) {

@@ -10,10 +10,12 @@ import UIKit
 
 class TableSection: NSObject {
     let header: String?
+    let indexHeader: String?
     
-    init(header: String?) {
+    init(header: String?, indexHeader: String?) {
         super.init()
         self.header = header
+        self.indexHeader = indexHeader
     }
     
     override init() {

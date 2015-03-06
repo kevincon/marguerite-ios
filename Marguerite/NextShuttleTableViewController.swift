@@ -19,18 +19,29 @@ class NextShuttleTableViewController: UITableViewController, CoreLocationControl
         static let allStopsCellIdentifier = "AllStopsCell"
     }
     
-    let nearbyStopsSection = TableSection(header: "Nearby Stops")
-    let favoriteStopsSection = TableSection(header: "Favorite Stops")
-    let allStopsSection = TableSection(header: "All Stops")
+    let nearbyStopsSection = TableSection(header: "Nearby Stops", indexHeader: "◎")
+    let favoriteStopsSection = TableSection(header: "Favorite Stops", indexHeader: "♥︎")
     
     // MARK: - Data
     
-    var tableSections = NSMutableOrderedSet()
+    var specialTableSections = NSMutableOrderedSet()
+    
+    let collation = UILocalizedIndexedCollation.currentCollation() as UILocalizedIndexedCollation
     
     var closestStops = [Stop]()
     var favoriteStops = Stop.favoriteStops
-    var allStops: [Stop] = Stop.getAllStops().sorted { (firstStop, secondStop) -> Bool in
-        firstStop.stopName < secondStop.stopName
+    var allStopsSections: [[Stop]] = []
+    var allStops: [Stop] = [] {
+        didSet {
+            let selector: Selector = "stopName"
+            allStopsSections = [[Stop]](count: collation.sectionTitles.count, repeatedValue: [])
+            
+            let sortedStops = collation.sortedArrayFromArray(allStops, collationStringSelector: selector) as [Stop]
+            for stop in sortedStops {
+                let sectionNumber = collation.sectionForObject(stop, collationStringSelector: selector)
+                allStopsSections[sectionNumber].append(stop)
+            }
+        }
     }
     //var searchResults = [Stop]()
     
@@ -42,10 +53,13 @@ class NextShuttleTableViewController: UITableViewController, CoreLocationControl
         locationController.delegate = self
         
         if favoriteStops.count > 0 {
-            tableSections.addObject(favoriteStopsSection)
+            specialTableSections.addObject(favoriteStopsSection)
         }
         
-        tableSections.addObject(allStopsSection)
+        allStops = Stop.getAllStops()
+        
+        tableView.sectionIndexBackgroundColor = UIColor(red: 247/255.0, green: 247/255.0, blue: 247/255.0, alpha: 1.0)
+        tableView.sectionIndexTrackingBackgroundColor = UIColor.lightGrayColor()
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -55,57 +69,80 @@ class NextShuttleTableViewController: UITableViewController, CoreLocationControl
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return tableSections.count
+        // Our sections are (optionally) nearby stops, (optionally) favorite
+        // stops, and then the number of "all stops" index sections
+        return specialTableSections.count + allStopsSections.count
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch tableSections[section] as TableSection {
+        if section < specialTableSections.count {
+            switch specialTableSections[section] as TableSection {
             case nearbyStopsSection:
                 return closestStops.count
             case favoriteStopsSection:
                 return favoriteStops.count
-            case allStopsSection:
-                return allStops.count
             default:
                 return 0
+            }
+        } else {
+            let allStopsSectionIndex = section - specialTableSections.count
+            return allStopsSections[allStopsSectionIndex].count
         }
     }
 
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let tableSection = tableSections[section] as TableSection
-        return tableSection.header
+        if section < specialTableSections.count {
+            let tableSection = specialTableSections[section] as TableSection
+            return tableSection.header
+        } else {
+            let allStopsSectionIndex = section - specialTableSections.count
+            return collation.sectionTitles[allStopsSectionIndex] as? String
+        }
+    }
+    
+    override func sectionIndexTitlesForTableView(tableView: UITableView) -> [AnyObject]! {
+        var specialSectionIndexTitles = [String]()
+        for specialTableSection in specialTableSections.array as [TableSection] {
+            specialSectionIndexTitles.append(specialTableSection.indexHeader!)
+        }
+        return specialSectionIndexTitles + (collation.sectionIndexTitles as [String])
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         var cell: UITableViewCell!
-        
-        switch tableSections[indexPath.section] as TableSection {
-        case nearbyStopsSection:
-            cell = tableView.dequeueReusableCellWithIdentifier(Storyboard.nearbyStopCellIdentifier, forIndexPath: indexPath) as UITableViewCell
-            let stop = closestStops[indexPath.row]
-            cell.textLabel?.text = stop.stopName
-            
-            let distanceInFeet = stop.milesAway! * self.FEET_IN_MILES
-            var distanceString: String
-            if (stop.milesAway < 1.0) {
-                distanceString = String(format: "%d feet", distanceInFeet)
-            } else {
-                distanceString = String(format: "%.2f miles", stop.milesAway!)
+        let section = indexPath.section
+        if section < specialTableSections.count {
+            switch specialTableSections[section] as TableSection {
+            case nearbyStopsSection:
+                cell = tableView.dequeueReusableCellWithIdentifier(Storyboard.nearbyStopCellIdentifier, forIndexPath: indexPath) as UITableViewCell
+                let stop = closestStops[indexPath.row]
+                cell.textLabel?.text = stop.stopName
+                
+                let distanceInFeet = stop.milesAway! * self.FEET_IN_MILES
+                var distanceString: String
+                if (stop.milesAway < 1.0) {
+                    distanceString = String(format: "%d feet", distanceInFeet)
+                } else {
+                    distanceString = String(format: "%.2f miles", stop.milesAway!)
+                }
+                
+                cell.detailTextLabel?.text = distanceString
+            case favoriteStopsSection:
+                cell = tableView.dequeueReusableCellWithIdentifier(Storyboard.favoriteStopCellIdentifier, forIndexPath: indexPath) as UITableViewCell
+                let stop = favoriteStops[indexPath.row]
+                cell.textLabel?.text = stop.stopName
+            default:
+                break
             }
-            
-            cell.detailTextLabel?.text = distanceString
-        case favoriteStopsSection:
-            cell = tableView.dequeueReusableCellWithIdentifier(Storyboard.favoriteStopCellIdentifier, forIndexPath: indexPath) as UITableViewCell
-            let stop = favoriteStops[indexPath.row]
-            cell.textLabel?.text = stop.stopName
-        case allStopsSection:
+        } else {
+            let allStopsSectionIndex = section - specialTableSections.count
+            let stop = allStopsSections[allStopsSectionIndex][indexPath.row]
             cell = tableView.dequeueReusableCellWithIdentifier(Storyboard.allStopsCellIdentifier, forIndexPath: indexPath) as UITableViewCell
-            let stop = allStops[indexPath.row]
+            
             cell.textLabel?.text = stop.stopName
-        default:
-            break
         }
+    
         return cell
     }
 
@@ -116,21 +153,24 @@ class NextShuttleTableViewController: UITableViewController, CoreLocationControl
 
         var stop: Stop
         
-        switch tableSections[indexPath.section] as TableSection {
-        case nearbyStopsSection:
-            stop = closestStops[indexPath.row]
-        case favoriteStopsSection:
-            stop = favoriteStops[indexPath.row]
-        case allStopsSection:
-            stop = allStops[indexPath.row]
-        default:
-            return
+        let section = indexPath.section
+        if section < specialTableSections.count {
+            switch specialTableSections[section] as TableSection {
+            case nearbyStopsSection:
+                stop = closestStops[indexPath.row]
+            case favoriteStopsSection:
+                stop = favoriteStops[indexPath.row]
+            default:
+                return
+            }
+        } else {
+            let allStopsSectionIndex = section - specialTableSections.count
+            stop = allStopsSections[allStopsSectionIndex][indexPath.row]
         }
         
         stvc.stop = stop
         stvc.refreshDelegate = self
         showDetailViewController(stvc, sender: self)
-        
     }
     
     // MARK: - GPS Location
@@ -140,7 +180,7 @@ class NextShuttleTableViewController: UITableViewController, CoreLocationControl
     func locationUpdate(location: CLLocation) {
         closestStops = Stop.getClosestStops(3, location: location)
         if closestStops.count > 0 {
-            tableSections.insertObject(nearbyStopsSection, atIndex: 0)
+            specialTableSections.insertObject(nearbyStopsSection, atIndex: 0)
         }
         tableView.reloadData()
     }
@@ -157,12 +197,11 @@ class NextShuttleTableViewController: UITableViewController, CoreLocationControl
         // Remove or add the Favorite Stops table section based on whether or
         // not there are any favorite stops and if Nearby Stops is being shown
         if favoriteStops.count == 0 {
-            tableSections.removeObject(favoriteStopsSection)
-        } else if tableSections.count == 1 {
-            tableSections.insertObject(favoriteStopsSection, atIndex: 0)
-        } else if tableSections.count == 2 {
-            tableSections.insertObject(favoriteStopsSection, atIndex: 1)
+            specialTableSections.removeObject(favoriteStopsSection)
+        } else {
+            specialTableSections.addObject(favoriteStopsSection)
         }
+        
         tableView.reloadData()
     }
 }

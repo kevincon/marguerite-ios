@@ -96,7 +96,7 @@ class StopTableViewController: UITableViewController {
     
     let toggleFavoriteStopSection = TableSection()
     let viewOnMapSection = TableSection()
-    let busesSection = TableSection(header: "Next Shuttles")
+    let busesSection = TableSection(header: "Next Shuttles", indexHeader: nil)
 
     var tableSections = [TableSection]()
     
@@ -165,6 +165,19 @@ class StopTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let tableSection = tableSections[section]
         return tableSection.header
+    }
+    
+    override func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        switch tableSections[section] {
+        case busesSection:
+            if nextBuses.count == 0 {
+                return "Today's service complete."
+            }
+        default:
+            break
+        }
+        
+        return nil
     }
     
 

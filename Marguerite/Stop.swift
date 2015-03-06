@@ -25,21 +25,22 @@ class Stop: NSObject, NSCoding {
     
     // MARK: - Static Functions
     
-    class func getFavoriteStops() -> [Stop]? {
-        if let data = NSUserDefaults.standardUserDefaults().objectForKey(UserDefaults.favoriteStopsKey) as? NSData {
-            return NSKeyedUnarchiver.unarchiveObjectWithData(data) as? [Stop]
-        } else {
-            return nil
+    class var favoriteStops: [Stop] {
+        get {
+            if let data = NSUserDefaults.standardUserDefaults().objectForKey(UserDefaults.favoriteStopsKey) as? NSData {
+                return NSKeyedUnarchiver.unarchiveObjectWithData(data) as [Stop]
+            } else {
+                return []
+            }
+        }
+        set {
+            let defaults = NSUserDefaults.standardUserDefaults()
+            let data = NSKeyedArchiver.archivedDataWithRootObject(newValue)
+            defaults.setObject(data, forKey: UserDefaults.favoriteStopsKey)
+            defaults.synchronize()
         }
     }
-    
-    class func setFavoriteStops(stops: [Stop]) {
-        let defaults = NSUserDefaults.standardUserDefaults()
-        let data = NSKeyedArchiver.archivedDataWithRootObject(stops)
-        defaults.setObject(data, forKey: UserDefaults.favoriteStopsKey)
-        defaults.synchronize()
-    }
-    
+
     class func getAllStops() -> [Stop] {
         var stops = [Stop]()
         if let db = GTFSDatabase.open() {
@@ -71,7 +72,7 @@ class Stop: NSObject, NSCoding {
         
         let n = min(numStops, allStops.count)
         
-        var stopsSortedByDistance = allStops.sorted { (first, second) -> Bool in
+        var stopsSortedByDistance: [Stop] = allStops.sorted { (first, second) -> Bool in
             if let firstLocation = first.location?.distanceFromLocation(location) {
                 first.milesAway = firstLocation * Conversions.METERS_IN_A_MILE
             }
@@ -82,34 +83,24 @@ class Stop: NSObject, NSCoding {
             return first.milesAway < second.milesAway
         }
         
-        stopsSortedByDistance.removeRange(Range<Int>(start: 0, end: n))
-        return stopsSortedByDistance
+        return [Stop](stopsSortedByDistance[0...n-1])
     }
     
     // MARK: - Fields
     
-    var location: CLLocation? = nil
-    var stopId: String? = nil
-    var stopName: String? = nil
-    var routesString: String? = nil
-    var milesAway: Double? = nil
+    var location: CLLocation?
+    var stopId: String?
+    var stopName: String?
+    var routesString: String?
+    var milesAway: Double?
     
     // MARK: - Initializers
     
     override init() {
         super.init()
     }
-    
-    func initWithStopId(stopId: String?) -> Stop? {
-        if stopId != nil {
-            return Stop(sId: stopId!)
-        } else {
-            return nil
-        }
-    }
-    
-    private init?(sId: String) {
-        super.init()
+
+    private func setFieldsUsingStopId(sId: String) {
         if let db = GTFSDatabase.open() {
             let query = "select stop_id, stop_name, stop_lat, stop_lon, routes FROM stops WHERE stop_id=?"
             let rs = db.executeQuery(query, withArgumentsInArray: [sId])
@@ -125,26 +116,18 @@ class Stop: NSObject, NSCoding {
             } else {
                 rs.close()
                 db.close()
-                return nil
             }
             rs.close()
             db.close()
-        } else {
-            return nil
         }
     }
 
     // MARK: - Favorite stop
     
-    func isFavoriteStop() -> Bool {
-        if let favoriteStops = Stop.getFavoriteStops() {
-            for stop in favoriteStops {
-                if stop.stopId == stopId {
-                    return true
-                }
-            }
-        }
-        return false
+    var isFavoriteStop: Bool {
+        return Stop.favoriteStops.filter({(stop: Stop) -> Bool in
+            return stop.stopId == self.stopId
+        }).count > 0
     }
     
     // MARK: - NSCoding
@@ -155,6 +138,6 @@ class Stop: NSObject, NSCoding {
     
     required init(coder aDecoder: NSCoder) {
         super.init()
-        initWithStopId(aDecoder.decodeObjectForKey(NSCodingKeys.stopIdKey) as? String)
+        setFieldsUsingStopId(aDecoder.decodeObjectForKey(NSCodingKeys.stopIdKey) as String)
     }
 }

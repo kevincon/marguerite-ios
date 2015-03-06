@@ -8,6 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		DAFA4465FC1F6A7992D43A03 /* libPods-Marguerite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D8696DDAE08EDF584D86EC /* libPods-Marguerite.a */; };
+		F41C7FB11AA8273A009B2A23 /* GTFSImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C7F8A1AA8273A009B2A23 /* GTFSImporter.m */; };
+		F41C7FB21AA8273A009B2A23 /* CSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C7F8E1AA8273A009B2A23 /* CSVParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F41C7FB81AA8273A009B2A23 /* GTFSAgency.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C7F9C1AA8273A009B2A23 /* GTFSAgency.m */; };
+		F41C7FB91AA8273A009B2A23 /* GTFSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C7F9E1AA8273A009B2A23 /* GTFSCalendar.m */; };
+		F41C7FBA1AA8273A009B2A23 /* GTFSCalendarDate.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C7FA01AA8273A009B2A23 /* GTFSCalendarDate.m */; };
+		F41C7FBB1AA8273A009B2A23 /* GTFSFareAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C7FA21AA8273A009B2A23 /* GTFSFareAttributes.m */; };
+		F41C7FBC1AA8273A009B2A23 /* GTFSFareRules.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C7FA41AA8273A009B2A23 /* GTFSFareRules.m */; };
+		F41C7FBD1AA8273A009B2A23 /* GTFSRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C7FA61AA8273A009B2A23 /* GTFSRoute.m */; };
+		F41C7FBE1AA8273A009B2A23 /* GTFSShape.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C7FA81AA8273A009B2A23 /* GTFSShape.m */; };
+		F41C7FBF1AA8273A009B2A23 /* GTFSStop.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C7FAA1AA8273A009B2A23 /* GTFSStop.m */; };
+		F41C7FC01AA8273A009B2A23 /* GTFSStopTime.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C7FAC1AA8273A009B2A23 /* GTFSStopTime.m */; };
+		F41C7FC11AA8273A009B2A23 /* GTFSTrip.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C7FAE1AA8273A009B2A23 /* GTFSTrip.m */; };
+		F41C7FC51AA82C19009B2A23 /* GTFSUnarchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C7FC41AA82C19009B2A23 /* GTFSUnarchiver.m */; };
+		F48A7B4C1AA77C85001623EF /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A7B4B1AA77C85001623EF /* Util.swift */; };
+		F4CF5A071AA8413200F92BE2 /* agency.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4CF5A001AA8413200F92BE2 /* agency.txt */; };
+		F4CF5A081AA8413200F92BE2 /* calendar_dates.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4CF5A011AA8413200F92BE2 /* calendar_dates.txt */; };
+		F4CF5A091AA8413200F92BE2 /* routes.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4CF5A021AA8413200F92BE2 /* routes.txt */; };
+		F4CF5A0A1AA8413200F92BE2 /* shapes.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4CF5A031AA8413200F92BE2 /* shapes.txt */; };
+		F4CF5A0B1AA8413200F92BE2 /* stop_times.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4CF5A041AA8413200F92BE2 /* stop_times.txt */; };
+		F4CF5A0C1AA8413200F92BE2 /* stops.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4CF5A051AA8413200F92BE2 /* stops.txt */; };
+		F4CF5A0D1AA8413200F92BE2 /* trips.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4CF5A061AA8413200F92BE2 /* trips.txt */; };
+		F4CF5A121AA842D500F92BE2 /* gtfs.db in Resources */ = {isa = PBXBuildFile; fileRef = F4CF5A111AA842D500F92BE2 /* gtfs.db */; };
+		F4CF5A141AA8ECA700F92BE2 /* StopTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CF5A131AA8ECA700F92BE2 /* StopTimeTableViewCell.swift */; };
 		F4F61E1A1AA41498009377CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E191AA41498009377CE /* AppDelegate.swift */; };
 		F4F61E1D1AA41498009377CE /* Marguerite.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E1B1AA41498009377CE /* Marguerite.xcdatamodeld */; };
 		F4F61E221AA41498009377CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F61E201AA41498009377CE /* Main.storyboard */; };
@@ -16,20 +39,55 @@
 		F4F61E441AA41C21009377CE /* NextShuttleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E431AA41C21009377CE /* NextShuttleTableViewController.swift */; };
 		F4F61E481AA420C9009377CE /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E471AA420C9009377CE /* Stop.swift */; };
 		F4F61E4A1AA42CA0009377CE /* GTFSDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E491AA42CA0009377CE /* GTFSDatabase.swift */; };
-		F4F61E541AA44C1C009377CE /* agency.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4F61E4C1AA44C1C009377CE /* agency.txt */; };
-		F4F61E551AA44C1C009377CE /* calendar_dates.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4F61E4D1AA44C1C009377CE /* calendar_dates.txt */; };
-		F4F61E561AA44C1C009377CE /* gtfs.db in Resources */ = {isa = PBXBuildFile; fileRef = F4F61E4E1AA44C1C009377CE /* gtfs.db */; };
-		F4F61E571AA44C1C009377CE /* routes.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4F61E4F1AA44C1C009377CE /* routes.txt */; };
-		F4F61E581AA44C1C009377CE /* shapes.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4F61E501AA44C1C009377CE /* shapes.txt */; };
-		F4F61E591AA44C1C009377CE /* stop_times.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4F61E511AA44C1C009377CE /* stop_times.txt */; };
-		F4F61E5A1AA44C1C009377CE /* stops.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4F61E521AA44C1C009377CE /* stops.txt */; };
-		F4F61E5B1AA44C1C009377CE /* trips.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4F61E531AA44C1C009377CE /* trips.txt */; };
+		F4F61E5D1AA515D7009377CE /* CoreLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E5C1AA515D7009377CE /* CoreLocationController.swift */; };
+		F4F61E5F1AA53FDB009377CE /* NextShuttleSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E5E1AA53FDB009377CE /* NextShuttleSplitViewController.swift */; };
+		F4F61E611AA6E615009377CE /* LiveMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E601AA6E615009377CE /* LiveMapViewController.swift */; };
+		F4F61E631AA6E768009377CE /* LiveMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E621AA6E768009377CE /* LiveMapView.swift */; };
+		F4F61E671AA6F89A009377CE /* StopTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E661AA6F89A009377CE /* StopTime.swift */; };
+		F4F61E691AA6FA4A009377CE /* TableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E681AA6FA4A009377CE /* TableSection.swift */; };
+		F4F61E6A1AA76F86009377CE /* StopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E641AA6F501009377CE /* StopTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8B5D0249E03FE918B9CB0026 /* Pods-Marguerite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marguerite.release.xcconfig"; path = "Pods/Target Support Files/Pods-Marguerite/Pods-Marguerite.release.xcconfig"; sourceTree = "<group>"; };
 		C6D8696DDAE08EDF584D86EC /* libPods-Marguerite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Marguerite.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9CE9FDC8DA518A8547B179 /* Pods-Marguerite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marguerite.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Marguerite/Pods-Marguerite.debug.xcconfig"; sourceTree = "<group>"; };
+		F41C7F891AA8273A009B2A23 /* GTFSImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTFSImporter.h; sourceTree = "<group>"; };
+		F41C7F8A1AA8273A009B2A23 /* GTFSImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTFSImporter.m; sourceTree = "<group>"; };
+		F41C7F8D1AA8273A009B2A23 /* CSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVParser.h; sourceTree = "<group>"; };
+		F41C7F8E1AA8273A009B2A23 /* CSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVParser.m; sourceTree = "<group>"; };
+		F41C7F9B1AA8273A009B2A23 /* GTFSAgency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTFSAgency.h; sourceTree = "<group>"; };
+		F41C7F9C1AA8273A009B2A23 /* GTFSAgency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTFSAgency.m; sourceTree = "<group>"; };
+		F41C7F9D1AA8273A009B2A23 /* GTFSCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTFSCalendar.h; sourceTree = "<group>"; };
+		F41C7F9E1AA8273A009B2A23 /* GTFSCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTFSCalendar.m; sourceTree = "<group>"; };
+		F41C7F9F1AA8273A009B2A23 /* GTFSCalendarDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTFSCalendarDate.h; sourceTree = "<group>"; };
+		F41C7FA01AA8273A009B2A23 /* GTFSCalendarDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTFSCalendarDate.m; sourceTree = "<group>"; };
+		F41C7FA11AA8273A009B2A23 /* GTFSFareAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTFSFareAttributes.h; sourceTree = "<group>"; };
+		F41C7FA21AA8273A009B2A23 /* GTFSFareAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTFSFareAttributes.m; sourceTree = "<group>"; };
+		F41C7FA31AA8273A009B2A23 /* GTFSFareRules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTFSFareRules.h; sourceTree = "<group>"; };
+		F41C7FA41AA8273A009B2A23 /* GTFSFareRules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTFSFareRules.m; sourceTree = "<group>"; };
+		F41C7FA51AA8273A009B2A23 /* GTFSRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTFSRoute.h; sourceTree = "<group>"; };
+		F41C7FA61AA8273A009B2A23 /* GTFSRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTFSRoute.m; sourceTree = "<group>"; };
+		F41C7FA71AA8273A009B2A23 /* GTFSShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTFSShape.h; sourceTree = "<group>"; };
+		F41C7FA81AA8273A009B2A23 /* GTFSShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTFSShape.m; sourceTree = "<group>"; };
+		F41C7FA91AA8273A009B2A23 /* GTFSStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTFSStop.h; sourceTree = "<group>"; };
+		F41C7FAA1AA8273A009B2A23 /* GTFSStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTFSStop.m; sourceTree = "<group>"; };
+		F41C7FAB1AA8273A009B2A23 /* GTFSStopTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTFSStopTime.h; sourceTree = "<group>"; };
+		F41C7FAC1AA8273A009B2A23 /* GTFSStopTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTFSStopTime.m; sourceTree = "<group>"; };
+		F41C7FAD1AA8273A009B2A23 /* GTFSTrip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTFSTrip.h; sourceTree = "<group>"; };
+		F41C7FAE1AA8273A009B2A23 /* GTFSTrip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTFSTrip.m; sourceTree = "<group>"; };
+		F41C7FC31AA82C19009B2A23 /* GTFSUnarchiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTFSUnarchiver.h; sourceTree = "<group>"; };
+		F41C7FC41AA82C19009B2A23 /* GTFSUnarchiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTFSUnarchiver.m; sourceTree = "<group>"; };
+		F48A7B4B1AA77C85001623EF /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		F4CF5A001AA8413200F92BE2 /* agency.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = agency.txt; path = gtfs/agency.txt; sourceTree = SOURCE_ROOT; };
+		F4CF5A011AA8413200F92BE2 /* calendar_dates.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = calendar_dates.txt; path = gtfs/calendar_dates.txt; sourceTree = SOURCE_ROOT; };
+		F4CF5A021AA8413200F92BE2 /* routes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = routes.txt; path = gtfs/routes.txt; sourceTree = SOURCE_ROOT; };
+		F4CF5A031AA8413200F92BE2 /* shapes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shapes.txt; path = gtfs/shapes.txt; sourceTree = SOURCE_ROOT; };
+		F4CF5A041AA8413200F92BE2 /* stop_times.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = stop_times.txt; path = gtfs/stop_times.txt; sourceTree = SOURCE_ROOT; };
+		F4CF5A051AA8413200F92BE2 /* stops.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = stops.txt; path = gtfs/stops.txt; sourceTree = SOURCE_ROOT; };
+		F4CF5A061AA8413200F92BE2 /* trips.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = trips.txt; path = gtfs/trips.txt; sourceTree = SOURCE_ROOT; };
+		F4CF5A111AA842D500F92BE2 /* gtfs.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = gtfs.db; path = gtfs/gtfs.db; sourceTree = SOURCE_ROOT; };
+		F4CF5A131AA8ECA700F92BE2 /* StopTimeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopTimeTableViewCell.swift; sourceTree = "<group>"; };
 		F4F61E141AA41498009377CE /* Marguerite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marguerite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F61E181AA41498009377CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4F61E191AA41498009377CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,14 +100,13 @@
 		F4F61E431AA41C21009377CE /* NextShuttleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextShuttleTableViewController.swift; sourceTree = "<group>"; };
 		F4F61E471AA420C9009377CE /* Stop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
 		F4F61E491AA42CA0009377CE /* GTFSDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTFSDatabase.swift; sourceTree = "<group>"; };
-		F4F61E4C1AA44C1C009377CE /* agency.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = agency.txt; sourceTree = "<group>"; };
-		F4F61E4D1AA44C1C009377CE /* calendar_dates.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = calendar_dates.txt; sourceTree = "<group>"; };
-		F4F61E4E1AA44C1C009377CE /* gtfs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = gtfs.db; sourceTree = "<group>"; };
-		F4F61E4F1AA44C1C009377CE /* routes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = routes.txt; sourceTree = "<group>"; };
-		F4F61E501AA44C1C009377CE /* shapes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shapes.txt; sourceTree = "<group>"; };
-		F4F61E511AA44C1C009377CE /* stop_times.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stop_times.txt; sourceTree = "<group>"; };
-		F4F61E521AA44C1C009377CE /* stops.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stops.txt; sourceTree = "<group>"; };
-		F4F61E531AA44C1C009377CE /* trips.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = trips.txt; sourceTree = "<group>"; };
+		F4F61E5C1AA515D7009377CE /* CoreLocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreLocationController.swift; sourceTree = "<group>"; };
+		F4F61E5E1AA53FDB009377CE /* NextShuttleSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextShuttleSplitViewController.swift; sourceTree = "<group>"; };
+		F4F61E601AA6E615009377CE /* LiveMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveMapViewController.swift; sourceTree = "<group>"; };
+		F4F61E621AA6E768009377CE /* LiveMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveMapView.swift; sourceTree = "<group>"; };
+		F4F61E641AA6F501009377CE /* StopTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopTableViewController.swift; sourceTree = "<group>"; };
+		F4F61E661AA6F89A009377CE /* StopTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopTime.swift; sourceTree = "<group>"; };
+		F4F61E681AA6FA4A009377CE /* TableSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +138,65 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F41C7F871AA8273A009B2A23 /* libraries */ = {
+			isa = PBXGroup;
+			children = (
+				F41C7F881AA8273A009B2A23 /* GTFSImporter */,
+			);
+			name = libraries;
+			path = ../libraries;
+			sourceTree = "<group>";
+		};
+		F41C7F881AA8273A009B2A23 /* GTFSImporter */ = {
+			isa = PBXGroup;
+			children = (
+				F41C7FC31AA82C19009B2A23 /* GTFSUnarchiver.h */,
+				F41C7FC41AA82C19009B2A23 /* GTFSUnarchiver.m */,
+				F41C7F891AA8273A009B2A23 /* GTFSImporter.h */,
+				F41C7F8A1AA8273A009B2A23 /* GTFSImporter.m */,
+				F41C7F8C1AA8273A009B2A23 /* CSVParser */,
+				F41C7F9A1AA8273A009B2A23 /* Model */,
+			);
+			path = GTFSImporter;
+			sourceTree = "<group>";
+		};
+		F41C7F8C1AA8273A009B2A23 /* CSVParser */ = {
+			isa = PBXGroup;
+			children = (
+				F41C7F8D1AA8273A009B2A23 /* CSVParser.h */,
+				F41C7F8E1AA8273A009B2A23 /* CSVParser.m */,
+			);
+			name = CSVParser;
+			path = Libraries/CSVParser;
+			sourceTree = "<group>";
+		};
+		F41C7F9A1AA8273A009B2A23 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F41C7F9B1AA8273A009B2A23 /* GTFSAgency.h */,
+				F41C7F9C1AA8273A009B2A23 /* GTFSAgency.m */,
+				F41C7F9D1AA8273A009B2A23 /* GTFSCalendar.h */,
+				F41C7F9E1AA8273A009B2A23 /* GTFSCalendar.m */,
+				F41C7F9F1AA8273A009B2A23 /* GTFSCalendarDate.h */,
+				F41C7FA01AA8273A009B2A23 /* GTFSCalendarDate.m */,
+				F41C7FA11AA8273A009B2A23 /* GTFSFareAttributes.h */,
+				F41C7FA21AA8273A009B2A23 /* GTFSFareAttributes.m */,
+				F41C7FA31AA8273A009B2A23 /* GTFSFareRules.h */,
+				F41C7FA41AA8273A009B2A23 /* GTFSFareRules.m */,
+				F41C7FA51AA8273A009B2A23 /* GTFSRoute.h */,
+				F41C7FA61AA8273A009B2A23 /* GTFSRoute.m */,
+				F41C7FA71AA8273A009B2A23 /* GTFSShape.h */,
+				F41C7FA81AA8273A009B2A23 /* GTFSShape.m */,
+				F41C7FA91AA8273A009B2A23 /* GTFSStop.h */,
+				F41C7FAA1AA8273A009B2A23 /* GTFSStop.m */,
+				F41C7FAB1AA8273A009B2A23 /* GTFSStopTime.h */,
+				F41C7FAC1AA8273A009B2A23 /* GTFSStopTime.m */,
+				F41C7FAD1AA8273A009B2A23 /* GTFSTrip.h */,
+				F41C7FAE1AA8273A009B2A23 /* GTFSTrip.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F4F61E0B1AA41498009377CE = {
 			isa = PBXGroup;
 			children = (
@@ -102,11 +218,21 @@
 		F4F61E161AA41498009377CE /* Marguerite */ = {
 			isa = PBXGroup;
 			children = (
+				F4F61E681AA6FA4A009377CE /* TableSection.swift */,
+				F4F61E5E1AA53FDB009377CE /* NextShuttleSplitViewController.swift */,
 				F4F61E431AA41C21009377CE /* NextShuttleTableViewController.swift */,
+				F4F61E5C1AA515D7009377CE /* CoreLocationController.swift */,
+				F4F61E641AA6F501009377CE /* StopTableViewController.swift */,
+				F4CF5A131AA8ECA700F92BE2 /* StopTimeTableViewCell.swift */,
 				F4F61E471AA420C9009377CE /* Stop.swift */,
+				F4F61E661AA6F89A009377CE /* StopTime.swift */,
+				F4F61E601AA6E615009377CE /* LiveMapViewController.swift */,
+				F4F61E621AA6E768009377CE /* LiveMapView.swift */,
 				F4F61E491AA42CA0009377CE /* GTFSDatabase.swift */,
+				F48A7B4B1AA77C85001623EF /* Util.swift */,
 				F4F61E201AA41498009377CE /* Main.storyboard */,
 				F4F61E4B1AA44C1C009377CE /* gtfs */,
+				F41C7F871AA8273A009B2A23 /* libraries */,
 				F4F61E171AA41498009377CE /* Supporting Files */,
 			);
 			path = Marguerite;
@@ -129,14 +255,14 @@
 		F4F61E4B1AA44C1C009377CE /* gtfs */ = {
 			isa = PBXGroup;
 			children = (
-				F4F61E4C1AA44C1C009377CE /* agency.txt */,
-				F4F61E4D1AA44C1C009377CE /* calendar_dates.txt */,
-				F4F61E4E1AA44C1C009377CE /* gtfs.db */,
-				F4F61E4F1AA44C1C009377CE /* routes.txt */,
-				F4F61E501AA44C1C009377CE /* shapes.txt */,
-				F4F61E511AA44C1C009377CE /* stop_times.txt */,
-				F4F61E521AA44C1C009377CE /* stops.txt */,
-				F4F61E531AA44C1C009377CE /* trips.txt */,
+				F4CF5A111AA842D500F92BE2 /* gtfs.db */,
+				F4CF5A001AA8413200F92BE2 /* agency.txt */,
+				F4CF5A011AA8413200F92BE2 /* calendar_dates.txt */,
+				F4CF5A021AA8413200F92BE2 /* routes.txt */,
+				F4CF5A031AA8413200F92BE2 /* shapes.txt */,
+				F4CF5A041AA8413200F92BE2 /* stop_times.txt */,
+				F4CF5A051AA8413200F92BE2 /* stops.txt */,
+				F4CF5A061AA8413200F92BE2 /* trips.txt */,
 			);
 			path = gtfs;
 			sourceTree = "<group>";
@@ -201,16 +327,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4F61E221AA41498009377CE /* Main.storyboard in Resources */,
-				F4F61E551AA44C1C009377CE /* calendar_dates.txt in Resources */,
-				F4F61E571AA44C1C009377CE /* routes.txt in Resources */,
+				F4CF5A0C1AA8413200F92BE2 /* stops.txt in Resources */,
+				F4CF5A081AA8413200F92BE2 /* calendar_dates.txt in Resources */,
+				F4CF5A0D1AA8413200F92BE2 /* trips.txt in Resources */,
+				F4CF5A091AA8413200F92BE2 /* routes.txt in Resources */,
+				F4CF5A0B1AA8413200F92BE2 /* stop_times.txt in Resources */,
 				F4F61E271AA41498009377CE /* LaunchScreen.xib in Resources */,
-				F4F61E5B1AA44C1C009377CE /* trips.txt in Resources */,
-				F4F61E581AA44C1C009377CE /* shapes.txt in Resources */,
-				F4F61E561AA44C1C009377CE /* gtfs.db in Resources */,
-				F4F61E5A1AA44C1C009377CE /* stops.txt in Resources */,
 				F4F61E241AA41498009377CE /* Images.xcassets in Resources */,
-				F4F61E541AA44C1C009377CE /* agency.txt in Resources */,
-				F4F61E591AA44C1C009377CE /* stop_times.txt in Resources */,
+				F4CF5A0A1AA8413200F92BE2 /* shapes.txt in Resources */,
+				F4CF5A071AA8413200F92BE2 /* agency.txt in Resources */,
+				F4CF5A121AA842D500F92BE2 /* gtfs.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,11 +380,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4F61E631AA6E768009377CE /* LiveMapView.swift in Sources */,
+				F4F61E691AA6FA4A009377CE /* TableSection.swift in Sources */,
+				F41C7FB11AA8273A009B2A23 /* GTFSImporter.m in Sources */,
+				F41C7FC51AA82C19009B2A23 /* GTFSUnarchiver.m in Sources */,
+				F41C7FBC1AA8273A009B2A23 /* GTFSFareRules.m in Sources */,
+				F41C7FBA1AA8273A009B2A23 /* GTFSCalendarDate.m in Sources */,
 				F4F61E441AA41C21009377CE /* NextShuttleTableViewController.swift in Sources */,
+				F41C7FBD1AA8273A009B2A23 /* GTFSRoute.m in Sources */,
+				F41C7FB91AA8273A009B2A23 /* GTFSCalendar.m in Sources */,
 				F4F61E1D1AA41498009377CE /* Marguerite.xcdatamodeld in Sources */,
 				F4F61E4A1AA42CA0009377CE /* GTFSDatabase.swift in Sources */,
+				F4F61E6A1AA76F86009377CE /* StopTableViewController.swift in Sources */,
+				F41C7FB21AA8273A009B2A23 /* CSVParser.m in Sources */,
+				F41C7FB81AA8273A009B2A23 /* GTFSAgency.m in Sources */,
+				F41C7FBE1AA8273A009B2A23 /* GTFSShape.m in Sources */,
+				F4F61E671AA6F89A009377CE /* StopTime.swift in Sources */,
+				F48A7B4C1AA77C85001623EF /* Util.swift in Sources */,
+				F4CF5A141AA8ECA700F92BE2 /* StopTimeTableViewCell.swift in Sources */,
+				F4F61E611AA6E615009377CE /* LiveMapViewController.swift in Sources */,
+				F41C7FBB1AA8273A009B2A23 /* GTFSFareAttributes.m in Sources */,
+				F41C7FC11AA8273A009B2A23 /* GTFSTrip.m in Sources */,
+				F4F61E5F1AA53FDB009377CE /* NextShuttleSplitViewController.swift in Sources */,
+				F4F61E5D1AA515D7009377CE /* CoreLocationController.swift in Sources */,
 				F4F61E1A1AA41498009377CE /* AppDelegate.swift in Sources */,
+				F41C7FC01AA8273A009B2A23 /* GTFSStopTime.m in Sources */,
 				F4F61E481AA420C9009377CE /* Stop.swift in Sources */,
+				F41C7FBF1AA8273A009B2A23 /* GTFSStop.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +452,8 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -349,6 +499,8 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;

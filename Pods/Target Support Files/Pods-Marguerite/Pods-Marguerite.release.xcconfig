@@ -1,6 +1,6 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/FMDB"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/FMDB"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-Marguerite-FMDB" -l"sqlite3"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/FMDB" "${PODS_ROOT}/Headers/Public/SSZipArchive" "${PODS_ROOT}/Headers/Public/SwiftTryCatch"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/FMDB" -isystem "${PODS_ROOT}/Headers/Public/SSZipArchive" -isystem "${PODS_ROOT}/Headers/Public/SwiftTryCatch"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-Marguerite-FMDB" -l"Pods-Marguerite-SSZipArchive" -l"Pods-Marguerite-SwiftTryCatch" -l"sqlite3" -l"z"
 OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
 PODS_ROOT = ${SRCROOT}/Pods

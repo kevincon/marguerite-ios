@@ -24,3 +24,15 @@
 #define COCOAPODS_VERSION_MINOR_FMDB_standard 5
 #define COCOAPODS_VERSION_PATCH_FMDB_standard 0
 
+// SSZipArchive
+#define COCOAPODS_POD_AVAILABLE_SSZipArchive
+#define COCOAPODS_VERSION_MAJOR_SSZipArchive 0
+#define COCOAPODS_VERSION_MINOR_SSZipArchive 3
+#define COCOAPODS_VERSION_PATCH_SSZipArchive 2
+
+// SwiftTryCatch
+#define COCOAPODS_POD_AVAILABLE_SwiftTryCatch
+#define COCOAPODS_VERSION_MAJOR_SwiftTryCatch 0
+#define COCOAPODS_VERSION_MINOR_SwiftTryCatch 0
+#define COCOAPODS_VERSION_PATCH_SwiftTryCatch 1
+

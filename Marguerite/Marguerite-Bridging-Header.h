@@ -10,5 +10,7 @@
 #define Marguerite_Marguerite_Bridging_Header_h
 
 #import <FMDB.h>
+#import <SwiftTryCatch.h>
+#import "GTFSImporter.h"
 
 #endif

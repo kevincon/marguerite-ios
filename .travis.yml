@@ -2,4 +2,5 @@ language: objective-c
 xcode_workspace: Marguerite.xcworkspace
 xcode_sdk: iphonesimulator
 xcode_scheme: Marguerite
+osx_image: xcode611 
 

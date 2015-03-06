@@ -270,40 +270,40 @@
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BusCell" id="8MA-u6-8RS" customClass="StopTimeTableViewCell" customModule="Marguerite" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BusCell" id="8MA-u6-8RS" customClass="StopTimeTableViewCell" customModule="Marguerite" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8MA-u6-8RS" id="b0M-ZX-2Ku">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arrival Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RX1-eC-6m9">
-                                            <rect key="frame" x="8" y="11" width="91" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shuttle Route" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KuM-BY-LY6">
+                                            <rect key="frame" x="8" y="11" width="105" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shuttle Route" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KuM-BY-LY6">
-                                            <rect key="frame" x="487" y="11" width="105" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arrival Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RX1-eC-6m9">
+                                            <rect key="frame" x="501" y="11" width="91" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="KuM-BY-LY6" firstAttribute="trailing" secondItem="b0M-ZX-2Ku" secondAttribute="trailingMargin" id="926-yB-VcC"/>
-                                        <constraint firstItem="KuM-BY-LY6" firstAttribute="centerY" secondItem="b0M-ZX-2Ku" secondAttribute="centerY" id="9FD-Lv-J0D"/>
-                                        <constraint firstItem="KuM-BY-LY6" firstAttribute="top" secondItem="b0M-ZX-2Ku" secondAttribute="topMargin" constant="3" id="HoO-c2-5Y7"/>
+                                        <constraint firstItem="RX1-eC-6m9" firstAttribute="trailing" secondItem="b0M-ZX-2Ku" secondAttribute="trailingMargin" id="2DP-9O-gWo"/>
+                                        <constraint firstItem="RX1-eC-6m9" firstAttribute="baseline" secondItem="KuM-BY-LY6" secondAttribute="baseline" id="2tc-pE-Y6H"/>
+                                        <constraint firstItem="RX1-eC-6m9" firstAttribute="centerY" secondItem="b0M-ZX-2Ku" secondAttribute="centerY" id="DLG-JH-gO7"/>
                                         <constraint firstItem="RX1-eC-6m9" firstAttribute="top" secondItem="b0M-ZX-2Ku" secondAttribute="topMargin" id="INF-Jp-aVS"/>
+                                        <constraint firstItem="KuM-BY-LY6" firstAttribute="leading" secondItem="b0M-ZX-2Ku" secondAttribute="leadingMargin" id="Okf-1w-aSE"/>
+                                        <constraint firstAttribute="centerY" secondItem="KuM-BY-LY6" secondAttribute="centerY" id="VtE-Wc-pw5"/>
                                         <constraint firstItem="KuM-BY-LY6" firstAttribute="baseline" secondItem="RX1-eC-6m9" secondAttribute="baseline" id="cHD-v7-Kqe"/>
                                         <constraint firstItem="KuM-BY-LY6" firstAttribute="baseline" secondItem="RX1-eC-6m9" secondAttribute="baseline" id="hY7-eh-hgu"/>
-                                        <constraint firstAttribute="centerY" secondItem="RX1-eC-6m9" secondAttribute="centerY" id="saD-9J-Gqc"/>
-                                        <constraint firstItem="RX1-eC-6m9" firstAttribute="leading" secondItem="b0M-ZX-2Ku" secondAttribute="leadingMargin" id="u9j-Q6-JYL"/>
-                                        <constraint firstItem="RX1-eC-6m9" firstAttribute="top" secondItem="b0M-ZX-2Ku" secondAttribute="topMargin" constant="3" id="w4h-fN-pMx"/>
                                     </constraints>
                                     <variation key="default">
                                         <mask key="constraints">
-                                            <exclude reference="INF-Jp-aVS"/>
                                             <exclude reference="cHD-v7-Kqe"/>
                                             <exclude reference="hY7-eh-hgu"/>
+                                            <exclude reference="2tc-pE-Y6H"/>
+                                            <exclude reference="INF-Jp-aVS"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>

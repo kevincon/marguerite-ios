@@ -36,7 +36,7 @@
 		F4F61E221AA41498009377CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F61E201AA41498009377CE /* Main.storyboard */; };
 		F4F61E241AA41498009377CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4F61E231AA41498009377CE /* Images.xcassets */; };
 		F4F61E271AA41498009377CE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4F61E251AA41498009377CE /* LaunchScreen.xib */; };
-		F4F61E441AA41C21009377CE /* NextShuttleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E431AA41C21009377CE /* NextShuttleTableViewController.swift */; };
+		F4F61E441AA41C21009377CE /* NextShuttleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E431AA41C21009377CE /* NextShuttleViewController.swift */; };
 		F4F61E481AA420C9009377CE /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E471AA420C9009377CE /* Stop.swift */; };
 		F4F61E4A1AA42CA0009377CE /* GTFSDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E491AA42CA0009377CE /* GTFSDatabase.swift */; };
 		F4F61E5D1AA515D7009377CE /* CoreLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E5C1AA515D7009377CE /* CoreLocationController.swift */; };
@@ -97,7 +97,7 @@
 		F4F61E261AA41498009377CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F4F61E3E1AA41834009377CE /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		F4F61E401AA41A61009377CE /* Marguerite-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Marguerite-Bridging-Header.h"; sourceTree = "<group>"; };
-		F4F61E431AA41C21009377CE /* NextShuttleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextShuttleTableViewController.swift; sourceTree = "<group>"; };
+		F4F61E431AA41C21009377CE /* NextShuttleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextShuttleViewController.swift; sourceTree = "<group>"; };
 		F4F61E471AA420C9009377CE /* Stop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
 		F4F61E491AA42CA0009377CE /* GTFSDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTFSDatabase.swift; sourceTree = "<group>"; };
 		F4F61E5C1AA515D7009377CE /* CoreLocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreLocationController.swift; sourceTree = "<group>"; };
@@ -220,7 +220,7 @@
 			children = (
 				F4F61E681AA6FA4A009377CE /* TableSection.swift */,
 				F4F61E5E1AA53FDB009377CE /* NextShuttleSplitViewController.swift */,
-				F4F61E431AA41C21009377CE /* NextShuttleTableViewController.swift */,
+				F4F61E431AA41C21009377CE /* NextShuttleViewController.swift */,
 				F4F61E5C1AA515D7009377CE /* CoreLocationController.swift */,
 				F4F61E641AA6F501009377CE /* StopTableViewController.swift */,
 				F4CF5A131AA8ECA700F92BE2 /* StopTimeTableViewCell.swift */,
@@ -386,7 +386,7 @@
 				F41C7FC51AA82C19009B2A23 /* GTFSUnarchiver.m in Sources */,
 				F41C7FBC1AA8273A009B2A23 /* GTFSFareRules.m in Sources */,
 				F41C7FBA1AA8273A009B2A23 /* GTFSCalendarDate.m in Sources */,
-				F4F61E441AA41C21009377CE /* NextShuttleTableViewController.swift in Sources */,
+				F4F61E441AA41C21009377CE /* NextShuttleViewController.swift in Sources */,
 				F41C7FBD1AA8273A009B2A23 /* GTFSRoute.m in Sources */,
 				F41C7FB91AA8273A009B2A23 /* GTFSCalendar.m in Sources */,
 				F4F61E1D1AA41498009377CE /* Marguerite.xcdatamodeld in Sources */,

@@ -9,8 +9,11 @@
 import UIKit
 import CoreLocation
 
-class NextShuttleTableViewController: UITableViewController, CoreLocationControllerDelegate, UISearchBarDelegate, UISearchDisplayDelegate, NextShuttleTableViewRefreshDelegate {
+class NextShuttleViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, CoreLocationControllerDelegate, UISearchBarDelegate, UISearchDisplayDelegate, NextShuttleTableViewRefreshDelegate {
 
+    @IBOutlet weak var tableView: UITableView!
+    var refreshControl = UIRefreshControl()
+    
     let FEET_IN_MILES = 5280.0
     
     struct Storyboard {
@@ -58,13 +61,11 @@ class NextShuttleTableViewController: UITableViewController, CoreLocationControl
         }
         
         allStops = Stop.getAllStops()
+
+        refreshControl.addTarget(self, action: "refreshNearbyStops:", forControlEvents: UIControlEvents.ValueChanged)
+        tableView.addSubview(refreshControl)
         
-        tableView.sectionIndexBackgroundColor = UIColor.groupTableViewBackgroundColor()
-        tableView.sectionIndexTrackingBackgroundColor = UIColor.lightGrayColor()
-        
-        self.refreshControl?.addTarget(self, action: "refreshNearbyStops:", forControlEvents: UIControlEvents.ValueChanged)
-        
-        tabBarController?.tabBar.tintColor = Utility.colorFromHexString("8C1515")
+        tabBarController?.tabBar.tintColor = UIColor.whiteColor()
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -73,7 +74,7 @@ class NextShuttleTableViewController: UITableViewController, CoreLocationControl
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // If we're searching, there's only one section
         if tableView == self.searchDisplayController!.searchResultsTableView {
             return 1
@@ -84,7 +85,7 @@ class NextShuttleTableViewController: UITableViewController, CoreLocationControl
         }
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // If we're searching, use the search results
         if tableView == self.searchDisplayController!.searchResultsTableView {
             return searchResults.count
@@ -105,7 +106,7 @@ class NextShuttleTableViewController: UITableViewController, CoreLocationControl
         }
     }
 
-    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         // If we're searching, there shouldn't be a title
         if tableView == self.searchDisplayController!.searchResultsTableView {
             return nil
@@ -121,7 +122,7 @@ class NextShuttleTableViewController: UITableViewController, CoreLocationControl
         
     }
     
-    override func sectionIndexTitlesForTableView(tableView: UITableView) -> [AnyObject]! {
+    func sectionIndexTitlesForTableView(tableView: UITableView) -> [AnyObject]! {
         // If we're searching, there shouldn't be any section index titles
         if tableView == self.searchDisplayController!.searchResultsTableView {
             return nil
@@ -135,7 +136,7 @@ class NextShuttleTableViewController: UITableViewController, CoreLocationControl
         }
     }
     
-    override func tableView(tableView: UITableView, sectionForSectionIndexTitle title: String, atIndex index: Int) -> Int {
+    func tableView(tableView: UITableView, sectionForSectionIndexTitle title: String, atIndex index: Int) -> Int {
         // Scrolling to top taken from http://stackoverflow.com/a/19093169
         if index == 0 {
             tableView.setContentOffset(CGPointMake(0.0, -tableView.contentInset.top), animated:false)
@@ -146,7 +147,7 @@ class NextShuttleTableViewController: UITableViewController, CoreLocationControl
         return index - 1;
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         var cell: UITableViewCell!
         let section = indexPath.section
@@ -193,7 +194,7 @@ class NextShuttleTableViewController: UITableViewController, CoreLocationControl
         return cell
     }
 
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         // To get the navigation controller bar at the top, we will show a
         // navigation controller that already exists in the storyboard and is
@@ -260,14 +261,18 @@ class NextShuttleTableViewController: UITableViewController, CoreLocationControl
         if !self.searchDisplayController!.active {
             tableView.reloadData()
         }
-        if self.refreshControl!.refreshing {
-            self.refreshControl?.endRefreshing()
+        if refreshControl.refreshing {
+            self.refreshControl.endRefreshing()
         }
     }
     
     func locationError(error: NSError) {
         // TODO better handling of location error
         print("GPS location error: \(error)")
+        
+        if refreshControl.refreshing {
+            self.refreshControl.endRefreshing()
+        }
     }
     
     func refreshNearbyStops(sender: AnyObject) {

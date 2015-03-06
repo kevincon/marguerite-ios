@@ -14,6 +14,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.54901960780000003" green="0.08235294118" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="Cds-oW-yai" kind="relationship" relationship="viewControllers" id="Y1x-1w-sC0"/>
@@ -58,7 +59,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.54901960780000003" green="0.08235294118" blue="0.08235294118" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="tjv-FX-xM4" firstAttribute="top" secondItem="fEP-ym-Rhs" secondAttribute="bottom" constant="8" id="2dd-zf-Tmq"/>
                             <constraint firstItem="fEP-ym-Rhs" firstAttribute="leading" secondItem="sYA-JA-91b" secondAttribute="trailing" constant="8" id="Kpy-zk-lcU"/>
@@ -87,10 +88,10 @@
             </objects>
             <point key="canvasLocation" x="782" y="756"/>
         </scene>
-        <!--Next Shuttle-->
+        <!--Next Shuttle Split View Controller-->
         <scene sceneID="tWV-rY-J8f">
             <objects>
-                <splitViewController id="Cds-oW-yai" customClass="NextShuttleSplitViewController" customModule="Marguerite" customModuleProvider="target" sceneMemberID="viewController">
+                <splitViewController id="Cds-oW-yai" userLabel="Next Shuttle Split View Controller" customClass="NextShuttleSplitViewController" customModule="Marguerite" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Next Shuttle" image="time" id="tUX-ev-hJ8"/>
                     <connections>
                         <segue destination="6CD-WM-Tq4" kind="relationship" relationship="masterViewController" id="8aR-sH-acb"/>
@@ -101,117 +102,129 @@
             </objects>
             <point key="canvasLocation" x="782" y="-490"/>
         </scene>
-        <!--Next Shuttle-->
-        <scene sceneID="wqL-6V-BPm">
+        <!--Stops-->
+        <scene sceneID="WyJ-it-sy8">
             <objects>
-                <tableViewController title="Next Shuttle" id="jl6-3y-bIH" customClass="NextShuttleTableViewController" customModule="Marguerite" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="M3A-Kj-BaX">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                <viewController id="ZPR-g9-DOo" customClass="NextShuttleViewController" customModule="Marguerite" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0fi-mE-zav"/>
+                        <viewControllerLayoutGuide type="bottom" id="eoN-N6-EjS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tJA-qi-c9o">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="minimal" placeholder="Stop Name or Number" id="Sxc-ei-NWR">
-                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <textInputTraits key="textInputTraits"/>
-                            <connections>
-                                <outlet property="delegate" destination="jl6-3y-bIH" id="rLL-jv-kBO"/>
-                            </connections>
-                        </searchBar>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="NearbyStopCell" textLabel="62L-mC-Now" detailTextLabel="3ct-gy-kO5" rowHeight="71" style="IBUITableViewCellStyleSubtitle" id="8B6-CF-6oB">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8B6-CF-6oB" id="Plr-Bk-fsA">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Stop Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="62L-mC-Now">
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Miles Away" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3ct-gy-kO5">
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FavoriteStopCell" id="qRP-vG-Kci">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qRP-vG-Kci" id="pPH-9B-VER">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AllStopsCell" id="iKx-vz-R7e">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iKx-vz-R7e" id="YFt-Ql-pNh">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="jl6-3y-bIH" id="Rjd-3W-suG"/>
-                            <outlet property="delegate" destination="jl6-3y-bIH" id="tR8-FL-JI8"/>
-                        </connections>
-                    </tableView>
-                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
-                    <navigationItem key="navigationItem" title="Stops" id="vCx-5R-Uck"/>
-                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="kaB-u4-shJ">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <attributedString key="attributedTitle">
-                            <fragment content="Pull to refresh nearby stops.">
-                                <attributes>
-                                    <font key="NSFont" metaFont="smallSystem"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                </attributes>
-                            </fragment>
-                        </attributedString>
-                    </refreshControl>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Stop Name or Number" translatesAutoresizingMaskIntoConstraints="NO" id="U3h-kt-1Pl">
+                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ZPR-g9-DOo" id="i6f-Kt-3G1"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="M3A-Kj-BaX">
+                                <rect key="frame" x="0.0" y="108" width="600" height="492"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="sectionIndexTrackingBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="NearbyStopCell" textLabel="62L-mC-Now" detailTextLabel="3ct-gy-kO5" rowHeight="71" style="IBUITableViewCellStyleSubtitle" id="8B6-CF-6oB">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8B6-CF-6oB" id="Plr-Bk-fsA">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Stop Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="62L-mC-Now">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Miles Away" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3ct-gy-kO5">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FavoriteStopCell" id="qRP-vG-Kci">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qRP-vG-Kci" id="pPH-9B-VER">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AllStopsCell" id="iKx-vz-R7e">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iKx-vz-R7e" id="YFt-Ql-pNh">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ZPR-g9-DOo" id="8JF-5r-kBH"/>
+                                    <outlet property="delegate" destination="ZPR-g9-DOo" id="AGW-Ks-xb9"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="U3h-kt-1Pl" firstAttribute="top" secondItem="0fi-mE-zav" secondAttribute="bottom" id="7HI-si-FBw"/>
+                            <constraint firstItem="M3A-Kj-BaX" firstAttribute="top" secondItem="U3h-kt-1Pl" secondAttribute="bottom" id="Itc-or-5oY"/>
+                            <constraint firstAttribute="bottom" secondItem="M3A-Kj-BaX" secondAttribute="bottom" id="Ktt-9b-OoM"/>
+                            <constraint firstItem="U3h-kt-1Pl" firstAttribute="leading" secondItem="M3A-Kj-BaX" secondAttribute="leading" id="PkG-6K-9CI"/>
+                            <constraint firstItem="U3h-kt-1Pl" firstAttribute="leading" secondItem="tJA-qi-c9o" secondAttribute="leading" id="Yp3-Xe-YDF"/>
+                            <constraint firstItem="U3h-kt-1Pl" firstAttribute="trailing" secondItem="M3A-Kj-BaX" secondAttribute="trailing" id="nRu-Aw-qgD"/>
+                            <constraint firstAttribute="trailing" secondItem="U3h-kt-1Pl" secondAttribute="trailing" id="rsT-7x-JRM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Stops" id="NZW-Gs-txc"/>
                     <connections>
-                        <outlet property="searchDisplayController" destination="hzr-Xa-gJO" id="zrf-NJ-DZc"/>
+                        <outlet property="searchDisplayController" destination="E8E-0Z-XTI" id="WWP-b1-rrK"/>
+                        <outlet property="tableView" destination="M3A-Kj-BaX" id="MPC-DA-NMr"/>
                     </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DzG-Vj-n0G" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="hzr-Xa-gJO">
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="peW-bj-vSb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="E8E-0Z-XTI">
                     <connections>
-                        <outlet property="delegate" destination="jl6-3y-bIH" id="4HW-ZU-dQl"/>
-                        <outlet property="searchBar" destination="Sxc-ei-NWR" id="6e6-P8-H1k"/>
-                        <outlet property="searchContentsController" destination="jl6-3y-bIH" id="NtG-tG-854"/>
-                        <outlet property="searchResultsDataSource" destination="jl6-3y-bIH" id="QLd-kd-9Na"/>
-                        <outlet property="searchResultsDelegate" destination="jl6-3y-bIH" id="Lfl-xN-A4d"/>
+                        <outlet property="delegate" destination="ZPR-g9-DOo" id="iVy-sE-ocZ"/>
+                        <outlet property="searchBar" destination="U3h-kt-1Pl" id="xKa-R3-pZM"/>
+                        <outlet property="searchContentsController" destination="ZPR-g9-DOo" id="qRB-Y7-Nac"/>
+                        <outlet property="searchResultsDataSource" destination="ZPR-g9-DOo" id="PMQ-9n-Vhe"/>
+                        <outlet property="searchResultsDelegate" destination="ZPR-g9-DOo" id="rWh-JU-BCd"/>
                     </connections>
                 </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="2344" y="-894"/>
         </scene>
-        <!--Next Shuttle-->
+        <!--Next Shuttle Navigation Controller-->
         <scene sceneID="ChS-s3-RI6">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6CD-WM-Tq4" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6CD-WM-Tq4" userLabel="Next Shuttle Navigation Controller" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Next Shuttle" id="9zT-0K-gMq"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dK6-kT-CFz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.54901960780000003" green="0.08235294118" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="riP-u0-FYm">
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
-                        <segue destination="jl6-3y-bIH" kind="relationship" relationship="rootViewController" id="nxe-Yb-C71"/>
+                        <segue destination="ZPR-g9-DOo" kind="relationship" relationship="rootViewController" id="6Ae-Kz-8xl"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sTh-WM-U7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1532" y="-894"/>
         </scene>
-        <!--View Controller-->
+        <!--Stop Placeholder-->
         <scene sceneID="QeB-Tz-60D">
             <objects>
-                <viewController id="ET1-q5-kJH" sceneMemberID="viewController">
+                <viewController id="ET1-q5-kJH" userLabel="Stop Placeholder" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Sia-VJ-cnx"/>
                         <viewControllerLayoutGuide type="bottom" id="aLu-kh-DDf"/>
@@ -339,14 +352,18 @@
             </objects>
             <point key="canvasLocation" x="3156" y="-199"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Stop Navigation Controller-->
         <scene sceneID="7yB-r0-gxW">
             <objects>
-                <navigationController storyboardIdentifier="StopNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="rUA-rb-EYy" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="StopNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="rUA-rb-EYy" userLabel="Stop Navigation Controller" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="l6Z-QU-3oZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.5490196078431373" green="0.082352941176470587" blue="0.082352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

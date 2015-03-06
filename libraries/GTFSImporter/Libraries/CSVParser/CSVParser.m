@@ -23,6 +23,13 @@
 
 #import "CSVParser.h"
 
+#if __LP64__
+#define NSI "ld"
+#define NSU "lu"
+#else
+#define NSI "d"
+#define NSU "u"
+#endif
 
 @implementation CSVParser
 
@@ -264,7 +271,7 @@
 		}
 		else
 		{
-			fieldName = [NSString stringWithFormat:@"FIELD_%ld", fieldCount + 1];
+			fieldName = [NSString stringWithFormat:@"FIELD_%"NSI, fieldCount + 1];
 			[fieldNames addObject:fieldName];
 			fieldNamesCount++;
 		}

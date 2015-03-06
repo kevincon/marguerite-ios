@@ -1,5 +1,5 @@
 language: objective-c
-xcode_workspace: marguerite.xcworkspace
+xcode_workspace: Marguerite.xcworkspace
 xcode_sdk: iphonesimulator
-xcode_scheme: marguerite
+xcode_scheme: Marguerite
 

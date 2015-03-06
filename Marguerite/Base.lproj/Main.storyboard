@@ -78,7 +78,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Live Map" id="Zfu-d7-CZo"/>
+                    <tabBarItem key="tabBarItem" title="Live Map" image="location" id="Zfu-d7-CZo"/>
                     <connections>
                         <outlet property="liveMapView" destination="FkU-c2-fT4" id="9Kt-sO-T2J"/>
                     </connections>
@@ -91,7 +91,7 @@
         <scene sceneID="tWV-rY-J8f">
             <objects>
                 <splitViewController id="Cds-oW-yai" customClass="NextShuttleSplitViewController" customModule="Marguerite" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Next Shuttle" id="tUX-ev-hJ8"/>
+                    <tabBarItem key="tabBarItem" title="Next Shuttle" image="time" id="tUX-ev-hJ8"/>
                     <connections>
                         <segue destination="6CD-WM-Tq4" kind="relationship" relationship="masterViewController" id="8aR-sH-acb"/>
                         <segue destination="ET1-q5-kJH" kind="relationship" relationship="detailViewController" id="I0v-Cf-ff2"/>
@@ -358,5 +358,9 @@
             <point key="canvasLocation" x="2344" y="-199"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="location" width="32" height="32"/>
+        <image name="time" width="32" height="32"/>
+    </resources>
     <color key="tintColor" red="0.5490196078431373" green="0.082352941176470587" blue="0.082352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

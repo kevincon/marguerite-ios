@@ -17,6 +17,7 @@ class NextShuttleTableViewController: UITableViewController, CoreLocationControl
         static let nearbyStopCellIdentifier = "NearbyStopCell"
         static let favoriteStopCellIdentifier = "FavoriteStopCell"
         static let allStopsCellIdentifier = "AllStopsCell"
+        static let stopNavigationControllerIdentifier = "StopNavigationController"
     }
     
     let nearbyStopsSection = TableSection(header: "Nearby Stops", indexHeader: "◎")
@@ -190,8 +191,13 @@ class NextShuttleTableViewController: UITableViewController, CoreLocationControl
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        
-        let stvc: StopTableViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("StopTableViewController") as StopTableViewController
+        // To get the navigation controller bar at the top, we will show a
+        // navigation controller that already exists in the storyboard and is
+        // already connected to a stop table view controller, so all we have
+        // to do is access the first view controller in the navigation
+        // controller's list of view controllers
+        let nc: UINavigationController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier(Storyboard.stopNavigationControllerIdentifier) as UINavigationController
+        let stvc = nc.viewControllers.first as StopTableViewController
 
         var stop: Stop
         
@@ -217,7 +223,7 @@ class NextShuttleTableViewController: UITableViewController, CoreLocationControl
         
         stvc.stop = stop
         stvc.refreshDelegate = self
-        showDetailViewController(stvc, sender: self)
+        showDetailViewController(nc, sender: self)
     }
     
     // MARK: - Searching

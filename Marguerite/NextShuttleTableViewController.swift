@@ -9,7 +9,7 @@
 import UIKit
 import CoreLocation
 
-class NextShuttleTableViewController: UITableViewController, CoreLocationControllerDelegate, NextShuttleTableViewRefreshDelegate {
+class NextShuttleTableViewController: UITableViewController, CoreLocationControllerDelegate, UISearchBarDelegate, UISearchDisplayDelegate, NextShuttleTableViewRefreshDelegate {
 
     let FEET_IN_MILES = 5280.0
     
@@ -43,7 +43,7 @@ class NextShuttleTableViewController: UITableViewController, CoreLocationControl
             }
         }
     }
-    //var searchResults = [Stop]()
+    var searchResults = [Stop]()
     
     // MARK: - View Controller Lifecycle
     
@@ -58,7 +58,7 @@ class NextShuttleTableViewController: UITableViewController, CoreLocationControl
         
         allStops = Stop.getAllStops()
         
-        tableView.sectionIndexBackgroundColor = UIColor(red: 247/255.0, green: 247/255.0, blue: 247/255.0, alpha: 1.0)
+        tableView.sectionIndexBackgroundColor = UIColor.groupTableViewBackgroundColor()
         tableView.sectionIndexTrackingBackgroundColor = UIColor.lightGrayColor()
     }
     
@@ -69,49 +69,91 @@ class NextShuttleTableViewController: UITableViewController, CoreLocationControl
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // Our sections are (optionally) nearby stops, (optionally) favorite
-        // stops, and then the number of "all stops" index sections
-        return specialTableSections.count + allStopsSections.count
+        // If we're searching, there's only one section
+        if tableView == self.searchDisplayController!.searchResultsTableView {
+            return 1
+        } else {
+            // Our sections are (optionally) nearby stops, (optionally) favorite
+            // stops, and then the number of "all stops" index sections
+            return specialTableSections.count + allStopsSections.count
+        }
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section < specialTableSections.count {
-            switch specialTableSections[section] as TableSection {
-            case nearbyStopsSection:
-                return closestStops.count
-            case favoriteStopsSection:
-                return favoriteStops.count
-            default:
-                return 0
-            }
+        // If we're searching, use the search results
+        if tableView == self.searchDisplayController!.searchResultsTableView {
+            return searchResults.count
         } else {
-            let allStopsSectionIndex = section - specialTableSections.count
-            return allStopsSections[allStopsSectionIndex].count
+            if section < specialTableSections.count {
+                switch specialTableSections[section] as TableSection {
+                case nearbyStopsSection:
+                    return closestStops.count
+                case favoriteStopsSection:
+                    return favoriteStops.count
+                default:
+                    return 0
+                }
+            } else {
+                let allStopsSectionIndex = section - specialTableSections.count
+                return allStopsSections[allStopsSectionIndex].count
+            }
         }
     }
 
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if section < specialTableSections.count {
-            let tableSection = specialTableSections[section] as TableSection
-            return tableSection.header
+        // If we're searching, there shouldn't be a title
+        if tableView == self.searchDisplayController!.searchResultsTableView {
+            return nil
         } else {
-            let allStopsSectionIndex = section - specialTableSections.count
-            return collation.sectionTitles[allStopsSectionIndex] as? String
+            if section < specialTableSections.count {
+                let tableSection = specialTableSections[section] as TableSection
+                return tableSection.header
+            } else {
+                let allStopsSectionIndex = section - specialTableSections.count
+                return collation.sectionTitles[allStopsSectionIndex] as? String
+            }
         }
+        
     }
     
     override func sectionIndexTitlesForTableView(tableView: UITableView) -> [AnyObject]! {
-        var specialSectionIndexTitles = [String]()
-        for specialTableSection in specialTableSections.array as [TableSection] {
-            specialSectionIndexTitles.append(specialTableSection.indexHeader!)
+        // If we're searching, there shouldn't be any section index titles
+        if tableView == self.searchDisplayController!.searchResultsTableView {
+            return nil
+        } else {
+            var specialSectionIndexTitles = [String]()
+            specialSectionIndexTitles.append(UITableViewIndexSearch)
+            for specialTableSection in specialTableSections.array as [TableSection] {
+                specialSectionIndexTitles.append(specialTableSection.indexHeader!)
+            }
+            return specialSectionIndexTitles + (collation.sectionIndexTitles as [String])
         }
-        return specialSectionIndexTitles + (collation.sectionIndexTitles as [String])
+    }
+    
+    override func tableView(tableView: UITableView, sectionForSectionIndexTitle title: String, atIndex index: Int) -> Int {
+        // Scrolling to top taken from http://stackoverflow.com/a/19093169
+        if index == 0 {
+            tableView.setContentOffset(CGPointMake(0.0, -tableView.contentInset.top), animated:false)
+            return NSNotFound;
+        }
+        // Search icon isn't actually a section, but it still offsets 
+        // everything, so we need to subtract one from the index
+        return index - 1;
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         var cell: UITableViewCell!
         let section = indexPath.section
+        
+        // If this is a search, only show search results (no nearby stops or favorites)
+        if tableView == self.searchDisplayController!.searchResultsTableView {
+            cell = self.tableView.dequeueReusableCellWithIdentifier(Storyboard.allStopsCellIdentifier) as UITableViewCell
+            let stop = searchResults[indexPath.row]
+            cell.textLabel?.text = stop.stopName
+            return cell
+        }
+        
         if section < specialTableSections.count {
             switch specialTableSections[section] as TableSection {
             case nearbyStopsSection:
@@ -153,24 +195,47 @@ class NextShuttleTableViewController: UITableViewController, CoreLocationControl
 
         var stop: Stop
         
-        let section = indexPath.section
-        if section < specialTableSections.count {
-            switch specialTableSections[section] as TableSection {
-            case nearbyStopsSection:
-                stop = closestStops[indexPath.row]
-            case favoriteStopsSection:
-                stop = favoriteStops[indexPath.row]
-            default:
-                return
-            }
+        // If this is a search, look for the stop in the search results
+        if tableView == self.searchDisplayController!.searchResultsTableView {
+            stop = searchResults[indexPath.row]
         } else {
-            let allStopsSectionIndex = section - specialTableSections.count
-            stop = allStopsSections[allStopsSectionIndex][indexPath.row]
+            let section = indexPath.section
+            if section < specialTableSections.count {
+                switch specialTableSections[section] as TableSection {
+                case nearbyStopsSection:
+                    stop = closestStops[indexPath.row]
+                case favoriteStopsSection:
+                    stop = favoriteStops[indexPath.row]
+                default:
+                    return
+                }
+            } else {
+                let allStopsSectionIndex = section - specialTableSections.count
+                stop = allStopsSections[allStopsSectionIndex][indexPath.row]
+            }
         }
         
         stvc.stop = stop
         stvc.refreshDelegate = self
         showDetailViewController(stvc, sender: self)
+    }
+    
+    // MARK: - Searching
+    
+    func searchDisplayController(controller: UISearchDisplayController!, shouldReloadTableForSearchString searchString: String!) -> Bool {
+        filterStopsForSearchText(searchString)
+        return true
+    }
+    
+    func searchDisplayController(controller: UISearchDisplayController, didHideSearchResultsTableView tableView: UITableView) {
+        refreshFavoriteStops()
+    }
+
+    func filterStopsForSearchText(searchText: String) {
+        let resultPredicate = NSPredicate(format: "stopName contains[cd] %@ OR stopId == %@", argumentArray: [searchText, searchText])
+        searchResults = allStops.filter({ (stop: Stop) -> Bool in
+            resultPredicate.evaluateWithObject(stop)
+        })
     }
     
     // MARK: - GPS Location
@@ -182,7 +247,9 @@ class NextShuttleTableViewController: UITableViewController, CoreLocationControl
         if closestStops.count > 0 {
             specialTableSections.insertObject(nearbyStopsSection, atIndex: 0)
         }
-        tableView.reloadData()
+        if !self.searchDisplayController!.active {
+            tableView.reloadData()
+        }
     }
     
     func locationError(error: NSError) {
@@ -202,6 +269,8 @@ class NextShuttleTableViewController: UITableViewController, CoreLocationControl
             specialTableSections.addObject(favoriteStopsSection)
         }
         
-        tableView.reloadData()
+        if !self.searchDisplayController!.active {
+            tableView.reloadData()
+        }
     }
 }

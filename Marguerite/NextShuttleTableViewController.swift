@@ -164,7 +164,7 @@ class NextShuttleTableViewController: UITableViewController, CoreLocationControl
                 let stop = closestStops[indexPath.row]
                 cell.textLabel?.text = stop.stopName
                 
-                let distanceInFeet = stop.milesAway! * self.FEET_IN_MILES
+                let distanceInFeet = Int(stop.milesAway! * self.FEET_IN_MILES)
                 var distanceString: String
                 if (stop.milesAway < 1.0) {
                     distanceString = String(format: "%d feet", distanceInFeet)

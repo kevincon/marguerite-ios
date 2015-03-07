@@ -45,7 +45,7 @@
 		F4F61E631AA6E768009377CE /* LiveMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E621AA6E768009377CE /* LiveMapView.swift */; };
 		F4F61E671AA6F89A009377CE /* StopTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E661AA6F89A009377CE /* StopTime.swift */; };
 		F4F61E691AA6FA4A009377CE /* TableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E681AA6FA4A009377CE /* TableSection.swift */; };
-		F4F61E6A1AA76F86009377CE /* StopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E641AA6F501009377CE /* StopTableViewController.swift */; };
+		F4F61E6A1AA76F86009377CE /* StopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E641AA6F501009377CE /* StopViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,7 +104,7 @@
 		F4F61E5E1AA53FDB009377CE /* NextShuttleSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextShuttleSplitViewController.swift; sourceTree = "<group>"; };
 		F4F61E601AA6E615009377CE /* LiveMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveMapViewController.swift; sourceTree = "<group>"; };
 		F4F61E621AA6E768009377CE /* LiveMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveMapView.swift; sourceTree = "<group>"; };
-		F4F61E641AA6F501009377CE /* StopTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopTableViewController.swift; sourceTree = "<group>"; };
+		F4F61E641AA6F501009377CE /* StopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopViewController.swift; sourceTree = "<group>"; };
 		F4F61E661AA6F89A009377CE /* StopTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopTime.swift; sourceTree = "<group>"; };
 		F4F61E681AA6FA4A009377CE /* TableSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -222,7 +222,7 @@
 				F4F61E5E1AA53FDB009377CE /* NextShuttleSplitViewController.swift */,
 				F4F61E431AA41C21009377CE /* NextShuttleViewController.swift */,
 				F4F61E5C1AA515D7009377CE /* CoreLocationController.swift */,
-				F4F61E641AA6F501009377CE /* StopTableViewController.swift */,
+				F4F61E641AA6F501009377CE /* StopViewController.swift */,
 				F4CF5A131AA8ECA700F92BE2 /* StopTimeTableViewCell.swift */,
 				F4F61E471AA420C9009377CE /* Stop.swift */,
 				F4F61E661AA6F89A009377CE /* StopTime.swift */,
@@ -391,7 +391,7 @@
 				F41C7FB91AA8273A009B2A23 /* GTFSCalendar.m in Sources */,
 				F4F61E1D1AA41498009377CE /* Marguerite.xcdatamodeld in Sources */,
 				F4F61E4A1AA42CA0009377CE /* GTFSDatabase.swift in Sources */,
-				F4F61E6A1AA76F86009377CE /* StopTableViewController.swift in Sources */,
+				F4F61E6A1AA76F86009377CE /* StopViewController.swift in Sources */,
 				F41C7FB21AA8273A009B2A23 /* CSVParser.m in Sources */,
 				F41C7FB81AA8273A009B2A23 /* GTFSAgency.m in Sources */,
 				F41C7FBE1AA8273A009B2A23 /* GTFSShape.m in Sources */,

@@ -12,9 +12,11 @@ protocol NextShuttleTableViewRefreshDelegate: class {
     func refreshFavoriteStops()
 }
 
-class StopTableViewController: UITableViewController {
+class StopViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     weak var refreshDelegate: NextShuttleTableViewRefreshDelegate?
+    
+    @IBOutlet weak var tableView: UITableView!
     
     // MARK: - View Controller Lifecycle
     
@@ -116,7 +118,6 @@ class StopTableViewController: UITableViewController {
             } else {
                 toggleFavoriteStopText = "Add Favorite Stop"
             }
-            tableView.reloadData()
         }
     }
     
@@ -131,6 +132,7 @@ class StopTableViewController: UITableViewController {
         favoriteStops.append(stop!)
         Stop.favoriteStops = favoriteStops
         isFavoriteStop = true
+        tableView.reloadData()
         refreshDelegate?.refreshFavoriteStops()
     }
         
@@ -140,16 +142,17 @@ class StopTableViewController: UITableViewController {
         })
         Stop.favoriteStops = newFavoriteStops
         isFavoriteStop = false
+        tableView.reloadData()
         refreshDelegate?.refreshFavoriteStops()
     }
     
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return tableSections.count
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch tableSections[section] {
         case toggleFavoriteStopSection:
             return 1
@@ -162,12 +165,12 @@ class StopTableViewController: UITableViewController {
         }
     }
 
-    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let tableSection = tableSections[section]
         return tableSection.header
     }
     
-    override func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+    func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
         switch tableSections[section] {
         case busesSection:
             if nextBuses.count == 0 {
@@ -181,7 +184,7 @@ class StopTableViewController: UITableViewController {
     }
     
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         var cell: UITableViewCell!
         
@@ -211,7 +214,7 @@ class StopTableViewController: UITableViewController {
         return cell
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         switch tableSections[indexPath.section] {
         case toggleFavoriteStopSection:
             if isFavoriteStop {

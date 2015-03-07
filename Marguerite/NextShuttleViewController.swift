@@ -61,11 +61,14 @@ class NextShuttleViewController: UIViewController, UITableViewDelegate, UITableV
         }
         
         allStops = Stop.getAllStops()
-
+        
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh nearby stops.")
         refreshControl.addTarget(self, action: "refreshNearbyStops:", forControlEvents: UIControlEvents.ValueChanged)
         tableView.addSubview(refreshControl)
         
         tabBarController?.tabBar.tintColor = UIColor.whiteColor()
+        
+        navigationController?.navigationBar.tintColor = UIColor.whiteColor()
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -201,9 +204,11 @@ class NextShuttleViewController: UIViewController, UITableViewDelegate, UITableV
         // already connected to a stop table view controller, so all we have
         // to do is access the first view controller in the navigation
         // controller's list of view controllers
-        let nc: UINavigationController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier(Storyboard.stopNavigationControllerIdentifier) as UINavigationController
-        let stvc = nc.viewControllers.first as StopTableViewController
-
+        
+        let nc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier(Storyboard.stopNavigationControllerIdentifier) as UINavigationController
+        
+        let stvc = nc.viewControllers.first as StopViewController
+        
         var stop: Stop
         
         // If this is a search, look for the stop in the search results

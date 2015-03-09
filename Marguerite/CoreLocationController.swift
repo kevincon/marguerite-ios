@@ -44,6 +44,7 @@ class CoreLocationController: NSObject, CLLocationManagerDelegate {
     
     func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
         delegate?.locationError(error)
+        locationManager.stopUpdatingLocation()
     }
     
     func locationManager(manager: CLLocationManager!,

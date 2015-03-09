@@ -20,5 +20,4 @@ class NextShuttleSplitViewController: UISplitViewController, UISplitViewControll
     func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController: UIViewController!, ontoPrimaryViewController primaryViewController: UIViewController!) -> Bool {
         return true
     }
-    
 }

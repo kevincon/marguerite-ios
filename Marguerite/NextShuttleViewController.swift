@@ -20,7 +20,7 @@ class NextShuttleViewController: UIViewController, UITableViewDelegate, UITableV
         static let nearbyStopCellIdentifier = "NearbyStopCell"
         static let favoriteStopCellIdentifier = "FavoriteStopCell"
         static let allStopsCellIdentifier = "AllStopsCell"
-        static let stopNavigationControllerIdentifier = "StopNavigationController"
+        static let stopViewControllerIdentifier = "StopViewController"
     }
     
     let nearbyStopsSection = TableSection(header: "Nearby Stops", indexHeader: "◎")
@@ -131,23 +131,11 @@ class NextShuttleViewController: UIViewController, UITableViewDelegate, UITableV
             return nil
         } else {
             var specialSectionIndexTitles = [String]()
-            specialSectionIndexTitles.append(UITableViewIndexSearch)
             for specialTableSection in specialTableSections.array as [TableSection] {
                 specialSectionIndexTitles.append(specialTableSection.indexHeader!)
             }
             return specialSectionIndexTitles + (collation.sectionIndexTitles as [String])
         }
-    }
-    
-    func tableView(tableView: UITableView, sectionForSectionIndexTitle title: String, atIndex index: Int) -> Int {
-        // Scrolling to top taken from http://stackoverflow.com/a/19093169
-        if index == 0 {
-            tableView.setContentOffset(CGPointMake(0.0, -tableView.contentInset.top), animated:false)
-            return NSNotFound;
-        }
-        // Search icon isn't actually a section, but it still offsets 
-        // everything, so we need to subtract one from the index
-        return index - 1;
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -198,23 +186,17 @@ class NextShuttleViewController: UIViewController, UITableViewDelegate, UITableV
     }
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
-        // To get the navigation controller bar at the top, we will show a
-        // navigation controller that already exists in the storyboard and is
-        // already connected to a stop table view controller, so all we have
-        // to do is access the first view controller in the navigation
-        // controller's list of view controllers
-        
-        let nc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier(Storyboard.stopNavigationControllerIdentifier) as UINavigationController
-        
-        let stvc = nc.viewControllers.first as StopViewController
-        
-        var stop: Stop
-        
-        // If this is a search, look for the stop in the search results
-        if tableView == self.searchDisplayController!.searchResultsTableView {
-            stop = searchResults[indexPath.row]
-        } else {
+        let svc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier(Storyboard.stopViewControllerIdentifier) as StopViewController
+    
+        var stop: Stop?
+            
+        if searchDisplayController!.active {
+            if let indexPath = searchDisplayController?.searchResultsTableView.indexPathForSelectedRow() {
+                
+                // If this is a search, look for the stop in the search results
+                stop = searchResults[indexPath.row]
+            }
+        } else if let indexPath = tableView.indexPathForSelectedRow() {
             let section = indexPath.section
             if section < specialTableSections.count {
                 switch specialTableSections[section] as TableSection {
@@ -231,9 +213,18 @@ class NextShuttleViewController: UIViewController, UITableViewDelegate, UITableV
             }
         }
         
-        stvc.stop = stop
-        stvc.refreshDelegate = self
-        showDetailViewController(nc, sender: self)
+        if let s = stop {
+            svc.stop = stop
+            svc.refreshDelegate = self
+            
+            let nc = UINavigationController(rootViewController: svc)
+            
+            // This is crucial so that a gray bar does not appear at the bottom
+            nc.extendedLayoutIncludesOpaqueBars = true
+            
+            showDetailViewController(nc, sender: self)
+
+        }
     }
     
     // MARK: - Searching

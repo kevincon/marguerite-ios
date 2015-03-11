@@ -11,6 +11,7 @@
 
 #import <FMDB.h>
 #import <SwiftTryCatch.h>
+#import <GCDiscreetNotificationView.h>
 #import "GTFSImporter.h"
 
 #endif

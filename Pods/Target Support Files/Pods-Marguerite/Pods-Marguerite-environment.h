@@ -24,6 +24,12 @@
 #define COCOAPODS_VERSION_MINOR_FMDB_standard 5
 #define COCOAPODS_VERSION_PATCH_FMDB_standard 0
 
+// GCDiscreetNotificationView
+#define COCOAPODS_POD_AVAILABLE_GCDiscreetNotificationView
+#define COCOAPODS_VERSION_MAJOR_GCDiscreetNotificationView 1
+#define COCOAPODS_VERSION_MINOR_GCDiscreetNotificationView 0
+#define COCOAPODS_VERSION_PATCH_GCDiscreetNotificationView 2
+
 // SSZipArchive
 #define COCOAPODS_POD_AVAILABLE_SSZipArchive
 #define COCOAPODS_VERSION_MAJOR_SSZipArchive 0

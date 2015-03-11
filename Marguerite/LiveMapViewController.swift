@@ -15,8 +15,10 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
     
     private var busMarkers = [String: RealtimeBusAnnotation]()
     private var timer = NSTimer()
-    private let busRefreshInterval = 5.0
+    private let busRefreshInterval = 3.0
     private var timerShouldRepeat = true
+    private var noBusesRunning = false
+    private var busLoadError = false
     
     // MARK: - Outlets
     
@@ -32,6 +34,7 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
     }
     
     override func viewWillAppear(animated: Bool) {
+        showHUDWithMessage("Loading buses...", withActivity: true)
         timerShouldRepeat = true
         refreshBuses()
     }
@@ -56,7 +59,7 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
             
             let markerView = liveMapView.viewForAnnotation(existingMarker)
             if let busView = markerView as? RealtimeBusAnnotationView {
-                UIView.animateWithDuration(1.0, animations: { () -> Void in
+                UIView.animateWithDuration(0.8, animations: { () -> Void in
                     busView.updateArrowImageRotation()
                     existingMarker.coordinate = bus.location
                 })
@@ -92,10 +95,20 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
     
     func busUpdateSuccess(buses: [RealtimeBus]) {
         dispatch_async(dispatch_get_main_queue(), { () -> Void in
-            for bus in buses {
-                self.updateMarkerWithBus(bus)
+            if buses.count > 0 {
+                for bus in buses {
+                    self.updateMarkerWithBus(bus)
+                }
+                self.hideHUD()
+                self.noBusesRunning = false
+                self.busLoadError = false
+            } else {
+                if !self.noBusesRunning {
+                    self.showHUDWithMessage("No buses are reporting locations.", withActivity: false)
+                }
+                self.noBusesRunning = true;
+                self.busLoadError = false
             }
-            
             if self.timerShouldRepeat {
                 self.timer = NSTimer(timeInterval: self.busRefreshInterval, target: self, selector: Selector("refreshBuses"), userInfo: nil, repeats: false)
                 NSRunLoop.mainRunLoop().addTimer(self.timer, forMode: NSRunLoopCommonModes)
@@ -105,8 +118,17 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
     
     func busUpdateFailure(error: NSError) {
         println(error)
+        if !busLoadError {
+            self.showHUDWithMessage("Could not connect to bus server.", withActivity: false)
+        }
+        noBusesRunning = false
+        busLoadError = true
+        if self.timerShouldRepeat {
+            self.timer = NSTimer(timeInterval: self.busRefreshInterval, target: self, selector: Selector("refreshBuses"), userInfo: nil, repeats: false)
+            NSRunLoop.mainRunLoop().addTimer(self.timer, forMode: NSRunLoopCommonModes)
+        }
     }
-    
+
     // MARK: - Map zooming
     
     let STANFORD_LATITUDE = 37.432233
@@ -123,4 +145,22 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
         let stanfordRegion = MKCoordinateRegionMake(stanfordCenter, stanfordSpan)
         liveMapView.setRegion(stanfordRegion, animated: true)
     }
+
+    // MARK: - HUD
+    private var HUD: GCDiscreetNotificationView!
+
+    private func showHUDWithMessage(message: String, withActivity: Bool) {
+        if HUD == nil {
+            HUD = GCDiscreetNotificationView(text: message, showActivity: withActivity, inPresentationMode: GCDiscreetNotificationViewPresentationModeTop, inView: self.liveMapView)
+        }
+
+        HUD.textLabel = message
+        HUD.showActivity = withActivity
+        HUD.show(true)
+    }
+
+    private func hideHUD() {
+        HUD.hide(true)
+    }
+
 }

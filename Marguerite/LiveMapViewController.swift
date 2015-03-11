@@ -40,6 +40,7 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
     }
     
     override func viewWillDisappear(animated: Bool) {
+        hideHUD()
         timer.invalidate()
         timerShouldRepeat = false
     }

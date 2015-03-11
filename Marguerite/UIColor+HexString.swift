@@ -8,12 +8,12 @@
 
 import UIKit
 
-struct Utility {
-    static func colorFromHexString(hexString: String) -> UIColor {
+extension UIColor {
+    class func colorFromHexString(hexString: String) -> UIColor {
         var rgbValue: UInt32 = 0
         let scanner = NSScanner(string: hexString)
         scanner.scanHexInt(&rgbValue)
-
+        
         let red = CGFloat(((rgbValue & 0xFF0000) >> 16)) / 255.0
         let green = CGFloat(((rgbValue & 0xFF00) >> 8)) / 255.0
         let blue = CGFloat(rgbValue & 0xFF) / 255.0

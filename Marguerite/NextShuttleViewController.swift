@@ -264,7 +264,7 @@ class NextShuttleViewController: UIViewController, UITableViewDelegate, UITableV
     
     func locationError(error: NSError) {
         // TODO better handling of location error
-        print("GPS location error: \(error)")
+        println("GPS location error: \(error)")
         
         if refreshControl.refreshing {
             self.refreshControl.endRefreshing()

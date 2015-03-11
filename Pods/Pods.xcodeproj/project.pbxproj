@@ -7,362 +7,381 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0AE9AB533321C882358C9A75 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 41E22773A2192A2BBD23D2E0 /* FMDatabase.h */; };
-		0B299FB0DD8640AC454A55AD /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D86F75021EDEC7A320FD07 /* mztools.h */; };
-		15E364B4C4EF152B230ADC12 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C053EA8386D83C4A7A5F0B1 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		242142A878EAE31FB26C47CF /* SwiftTryCatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 506AB2F13F6A93815D5A9E09 /* SwiftTryCatch.h */; };
-		2ED98489F775136DF9C7D68D /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = A8D75211951D7329AF35A190 /* ioapi.h */; };
-		3E8F9D64ADA77B40E8FD2775 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E564111DE18AC8506D728898 /* Foundation.framework */; };
-		4A70F263D13F91CE7F686F2A /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE2C8816FC59FF82B48CA39 /* SSZipArchive.h */; };
-		6845CC7606AF4A3B0946DEDB /* Pods-Marguerite-FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DD0E7401FC1DACF7D2A723 /* Pods-Marguerite-FMDB-dummy.m */; };
-		69729CD858A25097E56B359B /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = F57E58DB49BAA4A891323CD3 /* FMResultSet.h */; };
-		6D288E8BFAB08DF8D1282593 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 3252C1096C96CE9262AD3662 /* unzip.h */; };
-		712D6B65DF7623ED1EF02061 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3675489D2F31B6FB38F752EF /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		72172385B8EA79921F7E84DE /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = FCAFED9886D0CE3B3F7F5A14 /* unzip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		77BD767313E38C4E71EA964F /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F593158833741132F4F4A49 /* FMDatabaseQueue.h */; };
-		7F9115943865650DD837FE00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E564111DE18AC8506D728898 /* Foundation.framework */; };
-		8038F830226F641CCC63963B /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C77DBAC7CEF208D1D428125 /* SSZipArchive.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		8188468D7814AC77A141E67F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E564111DE18AC8506D728898 /* Foundation.framework */; };
-		856D1EF14AC7C34AC699CEA2 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = CD354CF60E49B8AC7049E32F /* ioapi.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		870E35B4159F6A573158F8DE /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0F36387FA2C8C613AFB3A5 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		8A64FB9293323A97E4FA7BA3 /* Pods-Marguerite-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A7ACD2FFFBDDD5128C6055 /* Pods-Marguerite-dummy.m */; };
-		91B4B8CA4128B879E56A7595 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = D87F12A4AB36712E133985D4 /* zip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		9D8B798ADE2EE13DAEBBE4AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E564111DE18AC8506D728898 /* Foundation.framework */; };
-		BDD2A22104243286320A7498 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = D1FF6C878EFAB9307DFE71F3 /* crypt.h */; };
-		C380367356F9F87AD923E4C9 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 06634883D5FB9CA41ABAB4D6 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		CA88F91E735ED1BCD88ACD20 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 2029F54F16D190A3CA6BDC6A /* zip.h */; };
-		D05992C993D9CE23746A89F5 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 4D14335DCB3395CC6601FCE8 /* mztools.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		D3792BDB0EE155C76019C16D /* SwiftTryCatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E499F6E55300F93D14ABD4E /* SwiftTryCatch.m */; };
-		D6DA7D71F2D375DB6EE846DC /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A45D71C77BDAA28134E27E6 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		DDCB658393C401BCD159562A /* Pods-Marguerite-SwiftTryCatch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EE251413A69B921114D4F /* Pods-Marguerite-SwiftTryCatch-dummy.m */; };
-		E5939AFF2BF068CB74F6F375 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4873BA14CFB591D0AECBE730 /* FMDatabaseAdditions.h */; };
-		E7C951E6265554EDFAE4F14A /* Pods-Marguerite-SSZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB04CC0B2BA0BE5F98BA8E2 /* Pods-Marguerite-SSZipArchive-dummy.m */; };
-		F93F6420ACC7FE194DB4EF04 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = B3528AEB1151BD04E8B68B47 /* FMDatabasePool.h */; };
-		FBA162D7E395449D8E5A3C0B /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 764F83991C3D54766343BBD5 /* FMDB.h */; };
+		0AF3FF091D6A029106D69833 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE8069E9C849DD46124EE65 /* Foundation.framework */; };
+		0B9CE0462DA8EB612EA080D9 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CC9C3754FA28D356940B986 /* FMResultSet.h */; };
+		0D66A093CB6B27C29A4E9060 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = D16747172A232CB9157EDDD3 /* zip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		15DECF41FB28F34ACD080CB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE8069E9C849DD46124EE65 /* Foundation.framework */; };
+		193EE6B6EA878ABA04CBB5DE /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 629E51D7260EB0E6C8C28FAE /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		320F5829A3B1779763FD3392 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 60043E45E9C948318602E5CD /* unzip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		413A210336C4BD98DF1963E0 /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FEE3BF98304CAFDA775859C /* SSZipArchive.h */; };
+		445D5237F87CC023A46523C9 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = BA8E0AB229F05A337CADB22A /* crypt.h */; };
+		464D1317241064FD5668EA9E /* Pods-Marguerite-SwiftTryCatch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E01C8EC268DC3A9AD63E69 /* Pods-Marguerite-SwiftTryCatch-dummy.m */; };
+		4B623CD6D286941411893C01 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = B9347E0231EBAF0492273998 /* FMDatabaseQueue.h */; };
+		4C58A4A051750195C9E4DFCC /* SwiftTryCatch.m in Sources */ = {isa = PBXBuildFile; fileRef = C1BF7DB3045A7496877AE4DD /* SwiftTryCatch.m */; };
+		4CDC8FAD119B75FA3A84DB5A /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = DCB9C199E3CAF1A20530FE0C /* ioapi.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		56B3822BE2E584E558B38F0F /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = BDCA039CF9D35081895F8FD7 /* SSZipArchive.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		5E4B30A43557633C579B338A /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = D0F4A84CB92218FACE758C9A /* unzip.h */; };
+		6B389D66561058BAA4F0D879 /* Pods-Marguerite-FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F63F497715A22A6A1DF3E03C /* Pods-Marguerite-FMDB-dummy.m */; };
+		6CAB1CB723C992F6FD319CAA /* Pods-Marguerite-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B8C20B471F3B40F04F3709 /* Pods-Marguerite-dummy.m */; };
+		6D492FF160B24AA3A4BE45CA /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6307EED46DE5C37D39B400 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7DF75ACE9545E232F9464218 /* Pods-Marguerite-SSZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE4495084357A444AEB9BF7 /* Pods-Marguerite-SSZipArchive-dummy.m */; };
+		852C1AD0F86C863B6401AA0B /* SwiftTryCatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C0AF5558C0E0E5BE4F9C49C /* SwiftTryCatch.h */; };
+		986F092AD4309FD5E291EA0E /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9B588E3C4BAEC784C4E30E /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9BAB5C0DBD75BBE3FEAF2F80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE8069E9C849DD46124EE65 /* Foundation.framework */; };
+		9EECD838905924C4C2A960A5 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = FCFDEAF4726B466A361BC53C /* zip.h */; };
+		A4B05A527B74422802EADE59 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A60BC945A5D56E713C3D2895 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B7FE24E03EF8A44F44C5EAD4 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A00F22FE1D5D2D2E8676D6 /* FMDatabasePool.h */; };
+		BA7A2494C28BB2D869CB395E /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CD77AD0B952D9C563346A89 /* FMDatabase.h */; };
+		BC5E31B6D1EC2DE48B7EEE87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE8069E9C849DD46124EE65 /* Foundation.framework */; };
+		D3F160B1067199C3938CAEAA /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 244B927EB16BBC4B6E8EA3F8 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E9EE9550C7B46DDA91192FBE /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A4D46E98D03D80CE01B0919 /* FMDB.h */; };
+		EB247637FAC17DF06F25BDF8 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EC85D45A5D60DF11648D5BA /* ioapi.h */; };
+		ED4AB942F51C4A9DAAFE1913 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = B69D8E74C93A5B2C511EEB22 /* mztools.h */; };
+		F01600E2CCB053D472795FDC /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B75218E2F286174CF6BCA206 /* FMDatabaseAdditions.h */; };
+		F68C7744B8F338C7B241D50D /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 24CA284168425913622010D8 /* mztools.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		00D13E34A68CD34DC212C89E /* PBXContainerItemProxy */ = {
+		1659F22002730F6A16B689D3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0ED0B0E8DD61F6D2E72E7D00 /* Project object */;
+			containerPortal = 2DE05E09A193385A581FEEAB /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5D26EE38F5C72065599077E1;
-			remoteInfo = "Pods-Marguerite-SwiftTryCatch";
-		};
-		0BCA4F84CCEAEAC008A5107B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0ED0B0E8DD61F6D2E72E7D00 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 292378C40A8F0E0EF71F7457;
+			remoteGlobalIDString = 4842730A432B78D76784ED3A;
 			remoteInfo = "Pods-Marguerite-FMDB";
 		};
-		A32906DBD657A717CE9EF5E6 /* PBXContainerItemProxy */ = {
+		94FC5591A728E8883FD2B7BD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0ED0B0E8DD61F6D2E72E7D00 /* Project object */;
+			containerPortal = 2DE05E09A193385A581FEEAB /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2F81F4DC3256AF1AD771A464;
+			remoteGlobalIDString = EA117E608740154C761F97B8;
+			remoteInfo = "Pods-Marguerite-SwiftTryCatch";
+		};
+		DDD286D44786A29046D7A210 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DE05E09A193385A581FEEAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6819B7EE1B3EFDD7549EBA28;
 			remoteInfo = "Pods-Marguerite-SSZipArchive";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		012EE251413A69B921114D4F /* Pods-Marguerite-SwiftTryCatch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Marguerite-SwiftTryCatch-dummy.m"; sourceTree = "<group>"; };
-		06634883D5FB9CA41ABAB4D6 /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
-		080D41DD2E39B36297BCE394 /* libPods-Marguerite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Marguerite.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2029F54F16D190A3CA6BDC6A /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = SSZipArchive/minizip/zip.h; sourceTree = "<group>"; };
-		2C12CA67D365B2F76E161814 /* libPods-Marguerite-SwiftTryCatch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Marguerite-SwiftTryCatch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F8AD2F8776AE7A9EAED5510 /* Pods-Marguerite-SwiftTryCatch.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite-SwiftTryCatch.xcconfig"; sourceTree = "<group>"; };
-		303A85059ECA0B08ABB71D2B /* Pods-Marguerite-SwiftTryCatch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Marguerite-SwiftTryCatch-prefix.pch"; sourceTree = "<group>"; };
-		3252C1096C96CE9262AD3662 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = SSZipArchive/minizip/unzip.h; sourceTree = "<group>"; };
-		3597E4A350BB3C91825D90A5 /* Pods-Marguerite-SSZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Marguerite-SSZipArchive-prefix.pch"; sourceTree = "<group>"; };
-		3675489D2F31B6FB38F752EF /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
-		385C59AAEAA9639818422007 /* Pods-Marguerite-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Marguerite-resources.sh"; sourceTree = "<group>"; };
-		41E22773A2192A2BBD23D2E0 /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
-		45A7ACD2FFFBDDD5128C6055 /* Pods-Marguerite-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Marguerite-dummy.m"; sourceTree = "<group>"; };
-		469CECDF7A1C9A49258870A2 /* Pods-Marguerite-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Marguerite-environment.h"; sourceTree = "<group>"; };
-		4873BA14CFB591D0AECBE730 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		4C67B2CD86490E9BB97DDB89 /* Pods-Marguerite-FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite-FMDB.xcconfig"; sourceTree = "<group>"; };
-		4D14335DCB3395CC6601FCE8 /* mztools.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mztools.c; path = SSZipArchive/minizip/mztools.c; sourceTree = "<group>"; };
-		4F593158833741132F4F4A49 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
-		506AB2F13F6A93815D5A9E09 /* SwiftTryCatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SwiftTryCatch.h; sourceTree = "<group>"; };
-		5C02E0BE9ED574FEC0C65A6C /* Pods-Marguerite-SSZipArchive-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite-SSZipArchive-Private.xcconfig"; sourceTree = "<group>"; };
-		5DB04CC0B2BA0BE5F98BA8E2 /* Pods-Marguerite-SSZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Marguerite-SSZipArchive-dummy.m"; sourceTree = "<group>"; };
-		5FB7C2643619647E2F73BB73 /* Pods-Marguerite-FMDB-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite-FMDB-Private.xcconfig"; sourceTree = "<group>"; };
-		60DD0E7401FC1DACF7D2A723 /* Pods-Marguerite-FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Marguerite-FMDB-dummy.m"; sourceTree = "<group>"; };
-		622ED1C82993E9882C1D7760 /* Pods-Marguerite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite.debug.xcconfig"; sourceTree = "<group>"; };
-		6E018F3AF678C2EEAF9F0E9B /* Pods-Marguerite-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Marguerite-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7300A1C96B218B4088797567 /* libPods-Marguerite-FMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Marguerite-FMDB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		764F83991C3D54766343BBD5 /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
-		7AD4A9B919158CCE5F7D8773 /* libPods-Marguerite-SSZipArchive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Marguerite-SSZipArchive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		824E3FC391867BFB6FB652C6 /* Pods-Marguerite-SwiftTryCatch-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite-SwiftTryCatch-Private.xcconfig"; sourceTree = "<group>"; };
-		8A45D71C77BDAA28134E27E6 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		8C77DBAC7CEF208D1D428125 /* SSZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSZipArchive.m; path = SSZipArchive/SSZipArchive.m; sourceTree = "<group>"; };
-		8FF4A4D9328539BCDFC079EC /* Pods-Marguerite-SSZipArchive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite-SSZipArchive.xcconfig"; sourceTree = "<group>"; };
-		9501B02720759CD06204082C /* Pods-Marguerite-FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Marguerite-FMDB-prefix.pch"; sourceTree = "<group>"; };
-		9C053EA8386D83C4A7A5F0B1 /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
-		9E499F6E55300F93D14ABD4E /* SwiftTryCatch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SwiftTryCatch.m; sourceTree = "<group>"; };
-		A8D75211951D7329AF35A190 /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = SSZipArchive/minizip/ioapi.h; sourceTree = "<group>"; };
-		ABE2C8816FC59FF82B48CA39 /* SSZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipArchive.h; path = SSZipArchive/SSZipArchive.h; sourceTree = "<group>"; };
-		B3528AEB1151BD04E8B68B47 /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
-		C2D86F75021EDEC7A320FD07 /* mztools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = SSZipArchive/minizip/mztools.h; sourceTree = "<group>"; };
-		CD354CF60E49B8AC7049E32F /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = SSZipArchive/minizip/ioapi.c; sourceTree = "<group>"; };
-		D1FF6C878EFAB9307DFE71F3 /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = SSZipArchive/minizip/crypt.h; sourceTree = "<group>"; };
-		D87F12A4AB36712E133985D4 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = zip.c; path = SSZipArchive/minizip/zip.c; sourceTree = "<group>"; };
-		DAA53D3054D6268F21DD5906 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		E564111DE18AC8506D728898 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E868D8F9857794D5AAF6CEE4 /* Pods-Marguerite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite.release.xcconfig"; sourceTree = "<group>"; };
-		EC7A58D057972312A722AA23 /* Pods-Marguerite-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Marguerite-acknowledgements.plist"; sourceTree = "<group>"; };
-		EE0F36387FA2C8C613AFB3A5 /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
-		F57E58DB49BAA4A891323CD3 /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
-		FCAFED9886D0CE3B3F7F5A14 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = unzip.c; path = SSZipArchive/minizip/unzip.c; sourceTree = "<group>"; };
+		08E01C8EC268DC3A9AD63E69 /* Pods-Marguerite-SwiftTryCatch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Marguerite-SwiftTryCatch-dummy.m"; sourceTree = "<group>"; };
+		0EC85D45A5D60DF11648D5BA /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = SSZipArchive/minizip/ioapi.h; sourceTree = "<group>"; };
+		1CD77AD0B952D9C563346A89 /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
+		244B927EB16BBC4B6E8EA3F8 /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
+		24B8C20B471F3B40F04F3709 /* Pods-Marguerite-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Marguerite-dummy.m"; sourceTree = "<group>"; };
+		24CA284168425913622010D8 /* mztools.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mztools.c; path = SSZipArchive/minizip/mztools.c; sourceTree = "<group>"; };
+		2577111E5D219FE6379EC9FC /* Pods-Marguerite-SwiftTryCatch.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite-SwiftTryCatch.xcconfig"; sourceTree = "<group>"; };
+		2CE4495084357A444AEB9BF7 /* Pods-Marguerite-SSZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Marguerite-SSZipArchive-dummy.m"; sourceTree = "<group>"; };
+		30A0323D9AB006522B8B0332 /* Pods-Marguerite-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Marguerite-environment.h"; sourceTree = "<group>"; };
+		367B39CA8E31428A89EDE7B7 /* Pods-Marguerite-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Marguerite-acknowledgements.plist"; sourceTree = "<group>"; };
+		373BA016AEF21EA489B10645 /* Pods-Marguerite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite.release.xcconfig"; sourceTree = "<group>"; };
+		3B0BB7E2C6D61D0BB1E054EC /* libPods-Marguerite-FMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Marguerite-FMDB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42A00F22FE1D5D2D2E8676D6 /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
+		4805A505F944E8A3A66A4265 /* Pods-Marguerite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite.debug.xcconfig"; sourceTree = "<group>"; };
+		4A6A5CDDDE650170F0BC6B29 /* Pods-Marguerite-SwiftTryCatch-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite-SwiftTryCatch-Private.xcconfig"; sourceTree = "<group>"; };
+		4CC9C3754FA28D356940B986 /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
+		5506D88E1DBBED85E64AFC2C /* Pods-Marguerite-SSZipArchive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite-SSZipArchive.xcconfig"; sourceTree = "<group>"; };
+		5D17BFA534BD854BEABAF823 /* libPods-Marguerite-SwiftTryCatch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Marguerite-SwiftTryCatch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60043E45E9C948318602E5CD /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = unzip.c; path = SSZipArchive/minizip/unzip.c; sourceTree = "<group>"; };
+		629E51D7260EB0E6C8C28FAE /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		6BFF7FE0DF7C50A0AED8D2DE /* Pods-Marguerite-FMDB-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite-FMDB-Private.xcconfig"; sourceTree = "<group>"; };
+		6F171F4BEFEA09624C978958 /* libPods-Marguerite-SSZipArchive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Marguerite-SSZipArchive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEE3BF98304CAFDA775859C /* SSZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipArchive.h; path = SSZipArchive/SSZipArchive.h; sourceTree = "<group>"; };
+		7A4D46E98D03D80CE01B0919 /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
+		7C0AF5558C0E0E5BE4F9C49C /* SwiftTryCatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SwiftTryCatch.h; sourceTree = "<group>"; };
+		807E32806D3C4C9D4D359818 /* Pods-Marguerite-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Marguerite-acknowledgements.markdown"; sourceTree = "<group>"; };
+		97F7956319D845003C802309 /* Pods-Marguerite-FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite-FMDB.xcconfig"; sourceTree = "<group>"; };
+		99A8B4F7DC9432663FC6C28D /* Pods-Marguerite-SwiftTryCatch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Marguerite-SwiftTryCatch-prefix.pch"; sourceTree = "<group>"; };
+		A60BC945A5D56E713C3D2895 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
+		A896F279CC34D9D0A663F259 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AA6307EED46DE5C37D39B400 /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
+		AA9B588E3C4BAEC784C4E30E /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
+		B69D8E74C93A5B2C511EEB22 /* mztools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = SSZipArchive/minizip/mztools.h; sourceTree = "<group>"; };
+		B75218E2F286174CF6BCA206 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		B7D0E767BCBF28F4AE47BCA8 /* libPods-Marguerite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Marguerite.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9347E0231EBAF0492273998 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		BA8E0AB229F05A337CADB22A /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = SSZipArchive/minizip/crypt.h; sourceTree = "<group>"; };
+		BB833DFA61C77F749D96BEA7 /* Pods-Marguerite-SSZipArchive-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite-SSZipArchive-Private.xcconfig"; sourceTree = "<group>"; };
+		BDCA039CF9D35081895F8FD7 /* SSZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSZipArchive.m; path = SSZipArchive/SSZipArchive.m; sourceTree = "<group>"; };
+		C1BF7DB3045A7496877AE4DD /* SwiftTryCatch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SwiftTryCatch.m; sourceTree = "<group>"; };
+		D0F4A84CB92218FACE758C9A /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = SSZipArchive/minizip/unzip.h; sourceTree = "<group>"; };
+		D16747172A232CB9157EDDD3 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = zip.c; path = SSZipArchive/minizip/zip.c; sourceTree = "<group>"; };
+		D5E1E7B3DE59C1242A6E2849 /* Pods-Marguerite-SSZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Marguerite-SSZipArchive-prefix.pch"; sourceTree = "<group>"; };
+		DCB9C199E3CAF1A20530FE0C /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = SSZipArchive/minizip/ioapi.c; sourceTree = "<group>"; };
+		E81AB4B9CC0CB0810E4366E5 /* Pods-Marguerite-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Marguerite-resources.sh"; sourceTree = "<group>"; };
+		EBE8069E9C849DD46124EE65 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F5A1989B8C73C93551DC54A1 /* Pods-Marguerite-FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Marguerite-FMDB-prefix.pch"; sourceTree = "<group>"; };
+		F63F497715A22A6A1DF3E03C /* Pods-Marguerite-FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Marguerite-FMDB-dummy.m"; sourceTree = "<group>"; };
+		FCFDEAF4726B466A361BC53C /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = SSZipArchive/minizip/zip.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		11C768F985493E1F46977C82 /* Frameworks */ = {
+		6A124999555B0466910024F3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F9115943865650DD837FE00 /* Foundation.framework in Frameworks */,
+				BC5E31B6D1EC2DE48B7EEE87 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		27A6272C37BB4002778FB2A8 /* Frameworks */ = {
+		90A3C032260634C12FCE5FBE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8188468D7814AC77A141E67F /* Foundation.framework in Frameworks */,
+				9BAB5C0DBD75BBE3FEAF2F80 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3BA733FAD915958C89EFA96F /* Frameworks */ = {
+		B7804D778891A1CC2113650C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D8B798ADE2EE13DAEBBE4AE /* Foundation.framework in Frameworks */,
+				15DECF41FB28F34ACD080CB3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		72F45C816403C4B7087E3BC3 /* Frameworks */ = {
+		B834F4608B008E21B5E857E0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E8F9D64ADA77B40E8FD2775 /* Foundation.framework in Frameworks */,
+				0AF3FF091D6A029106D69833 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03C273FF369A13A232E05667 = {
+		074EF748C3D5B1C3F3288731 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DAA53D3054D6268F21DD5906 /* Podfile */,
-				AC5E367F1ECABDBDD1C92DB6 /* Frameworks */,
-				C5BF87D2C9ABB9030DA6F582 /* Pods */,
-				BD5E6EBF28EC2C19617AD0C0 /* Products */,
-				439640C58EC00BD02AE57A86 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		247A107861F2E70245E42A7E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2F8AD2F8776AE7A9EAED5510 /* Pods-Marguerite-SwiftTryCatch.xcconfig */,
-				824E3FC391867BFB6FB652C6 /* Pods-Marguerite-SwiftTryCatch-Private.xcconfig */,
-				012EE251413A69B921114D4F /* Pods-Marguerite-SwiftTryCatch-dummy.m */,
-				303A85059ECA0B08ABB71D2B /* Pods-Marguerite-SwiftTryCatch-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-Marguerite-SwiftTryCatch";
-			sourceTree = "<group>";
-		};
-		39B3E2E82F8C5DF635D10205 /* common */ = {
-			isa = PBXGroup;
-			children = (
-				764F83991C3D54766343BBD5 /* FMDB.h */,
-				41E22773A2192A2BBD23D2E0 /* FMDatabase.h */,
-				EE0F36387FA2C8C613AFB3A5 /* FMDatabase.m */,
-				4873BA14CFB591D0AECBE730 /* FMDatabaseAdditions.h */,
-				8A45D71C77BDAA28134E27E6 /* FMDatabaseAdditions.m */,
-				B3528AEB1151BD04E8B68B47 /* FMDatabasePool.h */,
-				9C053EA8386D83C4A7A5F0B1 /* FMDatabasePool.m */,
-				4F593158833741132F4F4A49 /* FMDatabaseQueue.h */,
-				3675489D2F31B6FB38F752EF /* FMDatabaseQueue.m */,
-				F57E58DB49BAA4A891323CD3 /* FMResultSet.h */,
-				06634883D5FB9CA41ABAB4D6 /* FMResultSet.m */,
-			);
-			name = common;
-			sourceTree = "<group>";
-		};
-		439640C58EC00BD02AE57A86 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CBC4E38E90571504AB3E34F0 /* Pods-Marguerite */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		4891D890E1D0EBE05A48A298 /* FMDB */ = {
-			isa = PBXGroup;
-			children = (
-				5F7395FD2360D7FCBFE22984 /* Support Files */,
-				39B3E2E82F8C5DF635D10205 /* common */,
-			);
-			path = FMDB;
-			sourceTree = "<group>";
-		};
-		5F7395FD2360D7FCBFE22984 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4C67B2CD86490E9BB97DDB89 /* Pods-Marguerite-FMDB.xcconfig */,
-				5FB7C2643619647E2F73BB73 /* Pods-Marguerite-FMDB-Private.xcconfig */,
-				60DD0E7401FC1DACF7D2A723 /* Pods-Marguerite-FMDB-dummy.m */,
-				9501B02720759CD06204082C /* Pods-Marguerite-FMDB-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-Marguerite-FMDB";
-			sourceTree = "<group>";
-		};
-		6106F77AB6633FEBE9D6E4E9 /* SSZipArchive */ = {
-			isa = PBXGroup;
-			children = (
-				ABE2C8816FC59FF82B48CA39 /* SSZipArchive.h */,
-				8C77DBAC7CEF208D1D428125 /* SSZipArchive.m */,
-				D1FF6C878EFAB9307DFE71F3 /* crypt.h */,
-				CD354CF60E49B8AC7049E32F /* ioapi.c */,
-				A8D75211951D7329AF35A190 /* ioapi.h */,
-				4D14335DCB3395CC6601FCE8 /* mztools.c */,
-				C2D86F75021EDEC7A320FD07 /* mztools.h */,
-				FCAFED9886D0CE3B3F7F5A14 /* unzip.c */,
-				3252C1096C96CE9262AD3662 /* unzip.h */,
-				D87F12A4AB36712E133985D4 /* zip.c */,
-				2029F54F16D190A3CA6BDC6A /* zip.h */,
-				63CE91504C3007A720942E4A /* Support Files */,
-			);
-			path = SSZipArchive;
-			sourceTree = "<group>";
-		};
-		63CE91504C3007A720942E4A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8FF4A4D9328539BCDFC079EC /* Pods-Marguerite-SSZipArchive.xcconfig */,
-				5C02E0BE9ED574FEC0C65A6C /* Pods-Marguerite-SSZipArchive-Private.xcconfig */,
-				5DB04CC0B2BA0BE5F98BA8E2 /* Pods-Marguerite-SSZipArchive-dummy.m */,
-				3597E4A350BB3C91825D90A5 /* Pods-Marguerite-SSZipArchive-prefix.pch */,
+				5506D88E1DBBED85E64AFC2C /* Pods-Marguerite-SSZipArchive.xcconfig */,
+				BB833DFA61C77F749D96BEA7 /* Pods-Marguerite-SSZipArchive-Private.xcconfig */,
+				2CE4495084357A444AEB9BF7 /* Pods-Marguerite-SSZipArchive-dummy.m */,
+				D5E1E7B3DE59C1242A6E2849 /* Pods-Marguerite-SSZipArchive-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-Marguerite-SSZipArchive";
 			sourceTree = "<group>";
 		};
-		A04C460584F5E0947FFE7750 /* iOS */ = {
+		0D75FF776FB0F4010475EB9D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E564111DE18AC8506D728898 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		AC5E367F1ECABDBDD1C92DB6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A04C460584F5E0947FFE7750 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BD5E6EBF28EC2C19617AD0C0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				080D41DD2E39B36297BCE394 /* libPods-Marguerite.a */,
-				7300A1C96B218B4088797567 /* libPods-Marguerite-FMDB.a */,
-				7AD4A9B919158CCE5F7D8773 /* libPods-Marguerite-SSZipArchive.a */,
-				2C12CA67D365B2F76E161814 /* libPods-Marguerite-SwiftTryCatch.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C5BF87D2C9ABB9030DA6F582 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4891D890E1D0EBE05A48A298 /* FMDB */,
-				6106F77AB6633FEBE9D6E4E9 /* SSZipArchive */,
-				CE143646DFD9EA6463EA458D /* SwiftTryCatch */,
+				9EC380B7533AE677123F5BC9 /* FMDB */,
+				FB75415E1823256D50719587 /* SSZipArchive */,
+				70323B4FEDBB16B2C6FB425F /* SwiftTryCatch */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		CBC4E38E90571504AB3E34F0 /* Pods-Marguerite */ = {
+		1A20E329D0A6927E8767771D /* common */ = {
 			isa = PBXGroup;
 			children = (
-				6E018F3AF678C2EEAF9F0E9B /* Pods-Marguerite-acknowledgements.markdown */,
-				EC7A58D057972312A722AA23 /* Pods-Marguerite-acknowledgements.plist */,
-				45A7ACD2FFFBDDD5128C6055 /* Pods-Marguerite-dummy.m */,
-				469CECDF7A1C9A49258870A2 /* Pods-Marguerite-environment.h */,
-				385C59AAEAA9639818422007 /* Pods-Marguerite-resources.sh */,
-				622ED1C82993E9882C1D7760 /* Pods-Marguerite.debug.xcconfig */,
-				E868D8F9857794D5AAF6CEE4 /* Pods-Marguerite.release.xcconfig */,
+				7A4D46E98D03D80CE01B0919 /* FMDB.h */,
+				1CD77AD0B952D9C563346A89 /* FMDatabase.h */,
+				244B927EB16BBC4B6E8EA3F8 /* FMDatabase.m */,
+				B75218E2F286174CF6BCA206 /* FMDatabaseAdditions.h */,
+				629E51D7260EB0E6C8C28FAE /* FMDatabaseAdditions.m */,
+				42A00F22FE1D5D2D2E8676D6 /* FMDatabasePool.h */,
+				AA6307EED46DE5C37D39B400 /* FMDatabasePool.m */,
+				B9347E0231EBAF0492273998 /* FMDatabaseQueue.h */,
+				A60BC945A5D56E713C3D2895 /* FMDatabaseQueue.m */,
+				4CC9C3754FA28D356940B986 /* FMResultSet.h */,
+				AA9B588E3C4BAEC784C4E30E /* FMResultSet.m */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		4F9546CF6DC25FD7DA691847 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E83641AFECD2472FD2A09E82 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60600518592F0642FF86230A /* Pods-Marguerite */ = {
+			isa = PBXGroup;
+			children = (
+				807E32806D3C4C9D4D359818 /* Pods-Marguerite-acknowledgements.markdown */,
+				367B39CA8E31428A89EDE7B7 /* Pods-Marguerite-acknowledgements.plist */,
+				24B8C20B471F3B40F04F3709 /* Pods-Marguerite-dummy.m */,
+				30A0323D9AB006522B8B0332 /* Pods-Marguerite-environment.h */,
+				E81AB4B9CC0CB0810E4366E5 /* Pods-Marguerite-resources.sh */,
+				4805A505F944E8A3A66A4265 /* Pods-Marguerite.debug.xcconfig */,
+				373BA016AEF21EA489B10645 /* Pods-Marguerite.release.xcconfig */,
 			);
 			name = "Pods-Marguerite";
 			path = "Target Support Files/Pods-Marguerite";
 			sourceTree = "<group>";
 		};
-		CE143646DFD9EA6463EA458D /* SwiftTryCatch */ = {
+		70323B4FEDBB16B2C6FB425F /* SwiftTryCatch */ = {
 			isa = PBXGroup;
 			children = (
-				506AB2F13F6A93815D5A9E09 /* SwiftTryCatch.h */,
-				9E499F6E55300F93D14ABD4E /* SwiftTryCatch.m */,
-				247A107861F2E70245E42A7E /* Support Files */,
+				7C0AF5558C0E0E5BE4F9C49C /* SwiftTryCatch.h */,
+				C1BF7DB3045A7496877AE4DD /* SwiftTryCatch.m */,
+				EBCA29EB73C8A4D82ED04C11 /* Support Files */,
 			);
 			path = SwiftTryCatch;
+			sourceTree = "<group>";
+		};
+		9EC380B7533AE677123F5BC9 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				D613EC39C1F1A2F2E320F9FE /* Support Files */,
+				1A20E329D0A6927E8767771D /* common */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		A4110BD010EE4A512702F593 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7D0E767BCBF28F4AE47BCA8 /* libPods-Marguerite.a */,
+				3B0BB7E2C6D61D0BB1E054EC /* libPods-Marguerite-FMDB.a */,
+				6F171F4BEFEA09624C978958 /* libPods-Marguerite-SSZipArchive.a */,
+				5D17BFA534BD854BEABAF823 /* libPods-Marguerite-SwiftTryCatch.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5DE9175A77BE1E8E3A5499A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				60600518592F0642FF86230A /* Pods-Marguerite */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AC03E85684CEE6E2565068DD = {
+			isa = PBXGroup;
+			children = (
+				A896F279CC34D9D0A663F259 /* Podfile */,
+				4F9546CF6DC25FD7DA691847 /* Frameworks */,
+				0D75FF776FB0F4010475EB9D /* Pods */,
+				A4110BD010EE4A512702F593 /* Products */,
+				A5DE9175A77BE1E8E3A5499A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D613EC39C1F1A2F2E320F9FE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				97F7956319D845003C802309 /* Pods-Marguerite-FMDB.xcconfig */,
+				6BFF7FE0DF7C50A0AED8D2DE /* Pods-Marguerite-FMDB-Private.xcconfig */,
+				F63F497715A22A6A1DF3E03C /* Pods-Marguerite-FMDB-dummy.m */,
+				F5A1989B8C73C93551DC54A1 /* Pods-Marguerite-FMDB-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Marguerite-FMDB";
+			sourceTree = "<group>";
+		};
+		E83641AFECD2472FD2A09E82 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EBE8069E9C849DD46124EE65 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EBCA29EB73C8A4D82ED04C11 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2577111E5D219FE6379EC9FC /* Pods-Marguerite-SwiftTryCatch.xcconfig */,
+				4A6A5CDDDE650170F0BC6B29 /* Pods-Marguerite-SwiftTryCatch-Private.xcconfig */,
+				08E01C8EC268DC3A9AD63E69 /* Pods-Marguerite-SwiftTryCatch-dummy.m */,
+				99A8B4F7DC9432663FC6C28D /* Pods-Marguerite-SwiftTryCatch-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Marguerite-SwiftTryCatch";
+			sourceTree = "<group>";
+		};
+		FB75415E1823256D50719587 /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				6FEE3BF98304CAFDA775859C /* SSZipArchive.h */,
+				BDCA039CF9D35081895F8FD7 /* SSZipArchive.m */,
+				BA8E0AB229F05A337CADB22A /* crypt.h */,
+				DCB9C199E3CAF1A20530FE0C /* ioapi.c */,
+				0EC85D45A5D60DF11648D5BA /* ioapi.h */,
+				24CA284168425913622010D8 /* mztools.c */,
+				B69D8E74C93A5B2C511EEB22 /* mztools.h */,
+				60043E45E9C948318602E5CD /* unzip.c */,
+				D0F4A84CB92218FACE758C9A /* unzip.h */,
+				D16747172A232CB9157EDDD3 /* zip.c */,
+				FCFDEAF4726B466A361BC53C /* zip.h */,
+				074EF748C3D5B1C3F3288731 /* Support Files */,
+			);
+			path = SSZipArchive;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1F1027D39ACD3AB2D51AE796 /* Headers */ = {
+		208DE97C340547691052D8B2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A70F263D13F91CE7F686F2A /* SSZipArchive.h in Headers */,
-				BDD2A22104243286320A7498 /* crypt.h in Headers */,
-				2ED98489F775136DF9C7D68D /* ioapi.h in Headers */,
-				0B299FB0DD8640AC454A55AD /* mztools.h in Headers */,
-				6D288E8BFAB08DF8D1282593 /* unzip.h in Headers */,
-				CA88F91E735ED1BCD88ACD20 /* zip.h in Headers */,
+				413A210336C4BD98DF1963E0 /* SSZipArchive.h in Headers */,
+				445D5237F87CC023A46523C9 /* crypt.h in Headers */,
+				EB247637FAC17DF06F25BDF8 /* ioapi.h in Headers */,
+				ED4AB942F51C4A9DAAFE1913 /* mztools.h in Headers */,
+				5E4B30A43557633C579B338A /* unzip.h in Headers */,
+				9EECD838905924C4C2A960A5 /* zip.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		61FF4E9766D211D63A8B02DD /* Headers */ = {
+		8FC4A539DFABE79E4A398CF9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBA162D7E395449D8E5A3C0B /* FMDB.h in Headers */,
-				0AE9AB533321C882358C9A75 /* FMDatabase.h in Headers */,
-				E5939AFF2BF068CB74F6F375 /* FMDatabaseAdditions.h in Headers */,
-				F93F6420ACC7FE194DB4EF04 /* FMDatabasePool.h in Headers */,
-				77BD767313E38C4E71EA964F /* FMDatabaseQueue.h in Headers */,
-				69729CD858A25097E56B359B /* FMResultSet.h in Headers */,
+				852C1AD0F86C863B6401AA0B /* SwiftTryCatch.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9EB4B5A0FC1CCC77649E08DE /* Headers */ = {
+		A4A83F591CF82A306A9A385D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				242142A878EAE31FB26C47CF /* SwiftTryCatch.h in Headers */,
+				E9EE9550C7B46DDA91192FBE /* FMDB.h in Headers */,
+				BA7A2494C28BB2D869CB395E /* FMDatabase.h in Headers */,
+				F01600E2CCB053D472795FDC /* FMDatabaseAdditions.h in Headers */,
+				B7FE24E03EF8A44F44C5EAD4 /* FMDatabasePool.h in Headers */,
+				4B623CD6D286941411893C01 /* FMDatabaseQueue.h in Headers */,
+				0B9CE0462DA8EB612EA080D9 /* FMResultSet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		292378C40A8F0E0EF71F7457 /* Pods-Marguerite-FMDB */ = {
+		34127A47F7E0B543B1BA9EC0 /* Pods-Marguerite */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3D2C17ECDF914A133154930E /* Build configuration list for PBXNativeTarget "Pods-Marguerite-FMDB" */;
+			buildConfigurationList = 025B01FD231A167466164713 /* Build configuration list for PBXNativeTarget "Pods-Marguerite" */;
 			buildPhases = (
-				C6A65606132AC73FE578BEDF /* Sources */,
-				27A6272C37BB4002778FB2A8 /* Frameworks */,
-				61FF4E9766D211D63A8B02DD /* Headers */,
+				1CD4FFA18F9A8865B12EA498 /* Sources */,
+				B834F4608B008E21B5E857E0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB4155E862555EB8F06F4C8D /* PBXTargetDependency */,
+				490093236EF431DE7BFFEE3B /* PBXTargetDependency */,
+				2869E025B5E6934B3B3911F9 /* PBXTargetDependency */,
+			);
+			name = "Pods-Marguerite";
+			productName = "Pods-Marguerite";
+			productReference = B7D0E767BCBF28F4AE47BCA8 /* libPods-Marguerite.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4842730A432B78D76784ED3A /* Pods-Marguerite-FMDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C8D2DBFB37EFB0FF7CAEC25 /* Build configuration list for PBXNativeTarget "Pods-Marguerite-FMDB" */;
+			buildPhases = (
+				CA1C2E92AB7A5678B1AB4C1C /* Sources */,
+				90A3C032260634C12FCE5FBE /* Frameworks */,
+				A4A83F591CF82A306A9A385D /* Headers */,
 			);
 			buildRules = (
 			);
@@ -370,16 +389,16 @@
 			);
 			name = "Pods-Marguerite-FMDB";
 			productName = "Pods-Marguerite-FMDB";
-			productReference = 7300A1C96B218B4088797567 /* libPods-Marguerite-FMDB.a */;
+			productReference = 3B0BB7E2C6D61D0BB1E054EC /* libPods-Marguerite-FMDB.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		2F81F4DC3256AF1AD771A464 /* Pods-Marguerite-SSZipArchive */ = {
+		6819B7EE1B3EFDD7549EBA28 /* Pods-Marguerite-SSZipArchive */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 97191981BA1EF9FFC3E94FDC /* Build configuration list for PBXNativeTarget "Pods-Marguerite-SSZipArchive" */;
+			buildConfigurationList = 712472A59F46E7AF8FC97097 /* Build configuration list for PBXNativeTarget "Pods-Marguerite-SSZipArchive" */;
 			buildPhases = (
-				C68D205C300C26E477FA92F5 /* Sources */,
-				11C768F985493E1F46977C82 /* Frameworks */,
-				1F1027D39ACD3AB2D51AE796 /* Headers */,
+				8A3877806720EAD5ACEA0A11 /* Sources */,
+				B7804D778891A1CC2113650C /* Frameworks */,
+				208DE97C340547691052D8B2 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -387,16 +406,16 @@
 			);
 			name = "Pods-Marguerite-SSZipArchive";
 			productName = "Pods-Marguerite-SSZipArchive";
-			productReference = 7AD4A9B919158CCE5F7D8773 /* libPods-Marguerite-SSZipArchive.a */;
+			productReference = 6F171F4BEFEA09624C978958 /* libPods-Marguerite-SSZipArchive.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		5D26EE38F5C72065599077E1 /* Pods-Marguerite-SwiftTryCatch */ = {
+		EA117E608740154C761F97B8 /* Pods-Marguerite-SwiftTryCatch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8B89D963FBA9FCD0C30E6BDC /* Build configuration list for PBXNativeTarget "Pods-Marguerite-SwiftTryCatch" */;
+			buildConfigurationList = AEE766635CD7C3BD94D4D9B2 /* Build configuration list for PBXNativeTarget "Pods-Marguerite-SwiftTryCatch" */;
 			buildPhases = (
-				FD93A8EFC6D29214613DFE5F /* Sources */,
-				3BA733FAD915958C89EFA96F /* Frameworks */,
-				9EB4B5A0FC1CCC77649E08DE /* Headers */,
+				8E066F673790FD3AC3CA0B89 /* Sources */,
+				6A124999555B0466910024F3 /* Frameworks */,
+				8FC4A539DFABE79E4A398CF9 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -404,125 +423,138 @@
 			);
 			name = "Pods-Marguerite-SwiftTryCatch";
 			productName = "Pods-Marguerite-SwiftTryCatch";
-			productReference = 2C12CA67D365B2F76E161814 /* libPods-Marguerite-SwiftTryCatch.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		7715F7E9B04CEA59AAFBFCD1 /* Pods-Marguerite */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 82EAFAB9FB0AD460310D7AD7 /* Build configuration list for PBXNativeTarget "Pods-Marguerite" */;
-			buildPhases = (
-				BC23D2197EA6CA0DA9EC343F /* Sources */,
-				72F45C816403C4B7087E3BC3 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				18763E445F2C3AE47A7871D0 /* PBXTargetDependency */,
-				74C11709294F4858233F369F /* PBXTargetDependency */,
-				54989040352F97C6E85DE230 /* PBXTargetDependency */,
-			);
-			name = "Pods-Marguerite";
-			productName = "Pods-Marguerite";
-			productReference = 080D41DD2E39B36297BCE394 /* libPods-Marguerite.a */;
+			productReference = 5D17BFA534BD854BEABAF823 /* libPods-Marguerite-SwiftTryCatch.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0ED0B0E8DD61F6D2E72E7D00 /* Project object */ = {
+		2DE05E09A193385A581FEEAB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = C142B9AA642E20AEBAEBB79F /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = B3FB1B0B2412429B097E7870 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 03C273FF369A13A232E05667;
-			productRefGroup = BD5E6EBF28EC2C19617AD0C0 /* Products */;
+			mainGroup = AC03E85684CEE6E2565068DD;
+			productRefGroup = A4110BD010EE4A512702F593 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7715F7E9B04CEA59AAFBFCD1 /* Pods-Marguerite */,
-				292378C40A8F0E0EF71F7457 /* Pods-Marguerite-FMDB */,
-				2F81F4DC3256AF1AD771A464 /* Pods-Marguerite-SSZipArchive */,
-				5D26EE38F5C72065599077E1 /* Pods-Marguerite-SwiftTryCatch */,
+				34127A47F7E0B543B1BA9EC0 /* Pods-Marguerite */,
+				4842730A432B78D76784ED3A /* Pods-Marguerite-FMDB */,
+				6819B7EE1B3EFDD7549EBA28 /* Pods-Marguerite-SSZipArchive */,
+				EA117E608740154C761F97B8 /* Pods-Marguerite-SwiftTryCatch */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BC23D2197EA6CA0DA9EC343F /* Sources */ = {
+		1CD4FFA18F9A8865B12EA498 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A64FB9293323A97E4FA7BA3 /* Pods-Marguerite-dummy.m in Sources */,
+				6CAB1CB723C992F6FD319CAA /* Pods-Marguerite-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C68D205C300C26E477FA92F5 /* Sources */ = {
+		8A3877806720EAD5ACEA0A11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7C951E6265554EDFAE4F14A /* Pods-Marguerite-SSZipArchive-dummy.m in Sources */,
-				8038F830226F641CCC63963B /* SSZipArchive.m in Sources */,
-				856D1EF14AC7C34AC699CEA2 /* ioapi.c in Sources */,
-				D05992C993D9CE23746A89F5 /* mztools.c in Sources */,
-				72172385B8EA79921F7E84DE /* unzip.c in Sources */,
-				91B4B8CA4128B879E56A7595 /* zip.c in Sources */,
+				7DF75ACE9545E232F9464218 /* Pods-Marguerite-SSZipArchive-dummy.m in Sources */,
+				56B3822BE2E584E558B38F0F /* SSZipArchive.m in Sources */,
+				4CDC8FAD119B75FA3A84DB5A /* ioapi.c in Sources */,
+				F68C7744B8F338C7B241D50D /* mztools.c in Sources */,
+				320F5829A3B1779763FD3392 /* unzip.c in Sources */,
+				0D66A093CB6B27C29A4E9060 /* zip.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C6A65606132AC73FE578BEDF /* Sources */ = {
+		8E066F673790FD3AC3CA0B89 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				870E35B4159F6A573158F8DE /* FMDatabase.m in Sources */,
-				D6DA7D71F2D375DB6EE846DC /* FMDatabaseAdditions.m in Sources */,
-				15E364B4C4EF152B230ADC12 /* FMDatabasePool.m in Sources */,
-				712D6B65DF7623ED1EF02061 /* FMDatabaseQueue.m in Sources */,
-				C380367356F9F87AD923E4C9 /* FMResultSet.m in Sources */,
-				6845CC7606AF4A3B0946DEDB /* Pods-Marguerite-FMDB-dummy.m in Sources */,
+				464D1317241064FD5668EA9E /* Pods-Marguerite-SwiftTryCatch-dummy.m in Sources */,
+				4C58A4A051750195C9E4DFCC /* SwiftTryCatch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD93A8EFC6D29214613DFE5F /* Sources */ = {
+		CA1C2E92AB7A5678B1AB4C1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDCB658393C401BCD159562A /* Pods-Marguerite-SwiftTryCatch-dummy.m in Sources */,
-				D3792BDB0EE155C76019C16D /* SwiftTryCatch.m in Sources */,
+				D3F160B1067199C3938CAEAA /* FMDatabase.m in Sources */,
+				193EE6B6EA878ABA04CBB5DE /* FMDatabaseAdditions.m in Sources */,
+				6D492FF160B24AA3A4BE45CA /* FMDatabasePool.m in Sources */,
+				A4B05A527B74422802EADE59 /* FMDatabaseQueue.m in Sources */,
+				986F092AD4309FD5E291EA0E /* FMResultSet.m in Sources */,
+				6B389D66561058BAA4F0D879 /* Pods-Marguerite-FMDB-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		18763E445F2C3AE47A7871D0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-Marguerite-FMDB";
-			target = 292378C40A8F0E0EF71F7457 /* Pods-Marguerite-FMDB */;
-			targetProxy = 0BCA4F84CCEAEAC008A5107B /* PBXContainerItemProxy */;
-		};
-		54989040352F97C6E85DE230 /* PBXTargetDependency */ = {
+		2869E025B5E6934B3B3911F9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Marguerite-SwiftTryCatch";
-			target = 5D26EE38F5C72065599077E1 /* Pods-Marguerite-SwiftTryCatch */;
-			targetProxy = 00D13E34A68CD34DC212C89E /* PBXContainerItemProxy */;
+			target = EA117E608740154C761F97B8 /* Pods-Marguerite-SwiftTryCatch */;
+			targetProxy = 94FC5591A728E8883FD2B7BD /* PBXContainerItemProxy */;
 		};
-		74C11709294F4858233F369F /* PBXTargetDependency */ = {
+		490093236EF431DE7BFFEE3B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Marguerite-SSZipArchive";
-			target = 2F81F4DC3256AF1AD771A464 /* Pods-Marguerite-SSZipArchive */;
-			targetProxy = A32906DBD657A717CE9EF5E6 /* PBXContainerItemProxy */;
+			target = 6819B7EE1B3EFDD7549EBA28 /* Pods-Marguerite-SSZipArchive */;
+			targetProxy = DDD286D44786A29046D7A210 /* PBXContainerItemProxy */;
+		};
+		EB4155E862555EB8F06F4C8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Marguerite-FMDB";
+			target = 4842730A432B78D76784ED3A /* Pods-Marguerite-FMDB */;
+			targetProxy = 1659F22002730F6A16B689D3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		107B2C3F7E1A0E7F2C5F120C /* Debug */ = {
+		107951BE104C65CA30BE3F1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BFF7FE0DF7C50A0AED8D2DE /* Pods-Marguerite-FMDB-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Marguerite-FMDB/Pods-Marguerite-FMDB-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1C252D75780DD7CA5937B59F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB833DFA61C77F749D96BEA7 /* Pods-Marguerite-SSZipArchive-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Marguerite-SSZipArchive/Pods-Marguerite-SSZipArchive-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		412AB5E7524C9574DDB751F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -561,9 +593,25 @@
 			};
 			name = Debug;
 		};
-		484F4DAA524F11B71A349471 /* Debug */ = {
+		7459C9F2281E65B5CE102172 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5FB7C2643619647E2F73BB73 /* Pods-Marguerite-FMDB-Private.xcconfig */;
+			baseConfigurationReference = 4A6A5CDDDE650170F0BC6B29 /* Pods-Marguerite-SwiftTryCatch-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Marguerite-SwiftTryCatch/Pods-Marguerite-SwiftTryCatch-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9AAE926826C73225183B57A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BFF7FE0DF7C50A0AED8D2DE /* Pods-Marguerite-FMDB-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-Marguerite-FMDB/Pods-Marguerite-FMDB-prefix.pch";
@@ -577,9 +625,9 @@
 			};
 			name = Debug;
 		};
-		542F37BE12FCAB741DFCD1AA /* Release */ = {
+		B5C1C4F5DAB91EF3218C513A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E868D8F9857794D5AAF6CEE4 /* Pods-Marguerite.release.xcconfig */;
+			baseConfigurationReference = 373BA016AEF21EA489B10645 /* Pods-Marguerite.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -593,12 +641,12 @@
 			};
 			name = Release;
 		};
-		79AB93467FA87B7E2DCADC31 /* Debug */ = {
+		CF25745BD0A86BF027CF5405 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C02E0BE9ED574FEC0C65A6C /* Pods-Marguerite-SSZipArchive-Private.xcconfig */;
+			baseConfigurationReference = 4A6A5CDDDE650170F0BC6B29 /* Pods-Marguerite-SwiftTryCatch-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Marguerite-SSZipArchive/Pods-Marguerite-SSZipArchive-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Marguerite-SwiftTryCatch/Pods-Marguerite-SwiftTryCatch-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
@@ -609,9 +657,9 @@
 			};
 			name = Debug;
 		};
-		858F64A70B0AA83B98E6759F /* Debug */ = {
+		D4C438986CBF689CF416386F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 622ED1C82993E9882C1D7760 /* Pods-Marguerite.debug.xcconfig */;
+			baseConfigurationReference = 4805A505F944E8A3A66A4265 /* Pods-Marguerite.debug.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -625,23 +673,7 @@
 			};
 			name = Debug;
 		};
-		880FBE8B4466D68198626A68 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5FB7C2643619647E2F73BB73 /* Pods-Marguerite-FMDB-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Marguerite-FMDB/Pods-Marguerite-FMDB-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		88DD25F41E9D701CD2557892 /* Release */ = {
+		DB5C542ADF587F405C41D3B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -675,12 +707,12 @@
 			};
 			name = Release;
 		};
-		96183B881A72ED7EFEFDC7D3 /* Debug */ = {
+		DBD25CA361017A774F32D936 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 824E3FC391867BFB6FB652C6 /* Pods-Marguerite-SwiftTryCatch-Private.xcconfig */;
+			baseConfigurationReference = BB833DFA61C77F749D96BEA7 /* Pods-Marguerite-SSZipArchive-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Marguerite-SwiftTryCatch/Pods-Marguerite-SwiftTryCatch-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Marguerite-SSZipArchive/Pods-Marguerite-SSZipArchive-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
@@ -691,87 +723,55 @@
 			};
 			name = Debug;
 		};
-		A09B70C68AE56DC8CDD4D28F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 824E3FC391867BFB6FB652C6 /* Pods-Marguerite-SwiftTryCatch-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Marguerite-SwiftTryCatch/Pods-Marguerite-SwiftTryCatch-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		E73CDBA27B18D5BA5638FB6C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C02E0BE9ED574FEC0C65A6C /* Pods-Marguerite-SSZipArchive-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Marguerite-SSZipArchive/Pods-Marguerite-SSZipArchive-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3D2C17ECDF914A133154930E /* Build configuration list for PBXNativeTarget "Pods-Marguerite-FMDB" */ = {
+		025B01FD231A167466164713 /* Build configuration list for PBXNativeTarget "Pods-Marguerite" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				484F4DAA524F11B71A349471 /* Debug */,
-				880FBE8B4466D68198626A68 /* Release */,
+				D4C438986CBF689CF416386F /* Debug */,
+				B5C1C4F5DAB91EF3218C513A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		82EAFAB9FB0AD460310D7AD7 /* Build configuration list for PBXNativeTarget "Pods-Marguerite" */ = {
+		4C8D2DBFB37EFB0FF7CAEC25 /* Build configuration list for PBXNativeTarget "Pods-Marguerite-FMDB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				858F64A70B0AA83B98E6759F /* Debug */,
-				542F37BE12FCAB741DFCD1AA /* Release */,
+				9AAE926826C73225183B57A1 /* Debug */,
+				107951BE104C65CA30BE3F1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8B89D963FBA9FCD0C30E6BDC /* Build configuration list for PBXNativeTarget "Pods-Marguerite-SwiftTryCatch" */ = {
+		712472A59F46E7AF8FC97097 /* Build configuration list for PBXNativeTarget "Pods-Marguerite-SSZipArchive" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				96183B881A72ED7EFEFDC7D3 /* Debug */,
-				A09B70C68AE56DC8CDD4D28F /* Release */,
+				DBD25CA361017A774F32D936 /* Debug */,
+				1C252D75780DD7CA5937B59F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		97191981BA1EF9FFC3E94FDC /* Build configuration list for PBXNativeTarget "Pods-Marguerite-SSZipArchive" */ = {
+		AEE766635CD7C3BD94D4D9B2 /* Build configuration list for PBXNativeTarget "Pods-Marguerite-SwiftTryCatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				79AB93467FA87B7E2DCADC31 /* Debug */,
-				E73CDBA27B18D5BA5638FB6C /* Release */,
+				CF25745BD0A86BF027CF5405 /* Debug */,
+				7459C9F2281E65B5CE102172 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C142B9AA642E20AEBAEBB79F /* Build configuration list for PBXProject "Pods" */ = {
+		B3FB1B0B2412429B097E7870 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				107B2C3F7E1A0E7F2C5F120C /* Debug */,
-				88DD25F41E9D701CD2557892 /* Release */,
+				412AB5E7524C9574DDB751F0 /* Debug */,
+				DB5C542ADF587F405C41D3B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0ED0B0E8DD61F6D2E72E7D00 /* Project object */;
+	rootObject = 2DE05E09A193385A581FEEAB /* Project object */;
 }

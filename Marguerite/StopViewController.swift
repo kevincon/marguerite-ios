@@ -56,8 +56,8 @@ class StopViewController: UIViewController, UITableViewDelegate, UITableViewData
                         let bus = StopTime()
                         bus.routeLongName = departureTimesRS.objectForColumnName("route_long_name") as? String
                         bus.tripId = departureTimesRS.objectForColumnName("trip_id") as? String
-                        bus.routeColor = Utility.colorFromHexString(departureTimesRS.objectForColumnName("route_color") as String)
-                        bus.routeTextColor = Utility.colorFromHexString(departureTimesRS.objectForColumnName("route_text_color") as String)
+                        bus.routeColor = UIColor.colorFromHexString(departureTimesRS.objectForColumnName("route_color") as String)
+                        bus.routeTextColor = UIColor.colorFromHexString(departureTimesRS.objectForColumnName("route_text_color") as String)
                         var departureTime = departureTimesRS.objectForColumnName("departure_time") as String
                         
                         // Some departure times have 24 as the hour, so we need to change that to 00

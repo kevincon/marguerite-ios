@@ -36,6 +36,8 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
     override func viewWillAppear(animated: Bool) {
         showHUDWithMessage("Loading buses...", withActivity: true)
         timerShouldRepeat = true
+        noBusesRunning = false
+        busLoadError = false
         refreshBuses()
     }
     
@@ -118,16 +120,18 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
     }
     
     func busUpdateFailure(error: NSError) {
-        println(error)
-        if !busLoadError {
-            self.showHUDWithMessage("Could not connect to bus server.", withActivity: false)
-        }
-        noBusesRunning = false
-        busLoadError = true
-        if self.timerShouldRepeat {
-            self.timer = NSTimer(timeInterval: self.busRefreshInterval, target: self, selector: Selector("refreshBuses"), userInfo: nil, repeats: false)
-            NSRunLoop.mainRunLoop().addTimer(self.timer, forMode: NSRunLoopCommonModes)
-        }
+        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+            println(error)
+            if !self.busLoadError {
+                self.showHUDWithMessage("Could not connect to bus server.", withActivity: false)
+            }
+            self.noBusesRunning = false
+            self.busLoadError = true
+            if self.timerShouldRepeat {
+                self.timer = NSTimer(timeInterval: self.busRefreshInterval, target: self, selector: Selector("refreshBuses"), userInfo: nil, repeats: false)
+                NSRunLoop.mainRunLoop().addTimer(self.timer, forMode: NSRunLoopCommonModes)
+            }
+        })
     }
 
     // MARK: - Map zooming

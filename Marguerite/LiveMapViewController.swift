@@ -97,7 +97,7 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
 
     // MARK: - Stop Drawing
 
-    // Convenience "typedef"
+    // Convenience "typedef" for stop annotations
     class StopAnnotation: MKPointAnnotation {}
 
     func loadStops() {
@@ -138,13 +138,28 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
     }
 
     func mapView(mapView: MKMapView!, didAddAnnotationViews views: [AnyObject]!) {
-        // Move all bus views to be above stop views and the user's location
-        for view in views {
-            if let busView = view as? RealtimeBusAnnotationView {
-                liveMapView.bringSubviewToFront(busView)
-            } else if let stopView = view as? MKAnnotationView {
-                liveMapView.sendSubviewToBack(stopView)
+        // Move all stop annotation views below everything else
+        for v in views {
+            if let annotationView = v as? MKAnnotationView {
+                if let stopAnnotation = annotationView.annotation as? StopAnnotation {
+                    annotationView.layer.zPosition = -1
+                }
             }
+        }
+    }
+
+    func mapView(mapView: MKMapView!, didSelectAnnotationView view: MKAnnotationView!) {
+        // Move stop annotation views up when selected so callout doesn't appear
+        // below other annotation views
+        if let stopAnnotation = view.annotation as? StopAnnotation {
+            view.layer.zPosition = 0
+        }
+    }
+
+    func mapView(mapView: MKMapView!, didDeselectAnnotationView view: MKAnnotationView!) {
+        // Move stop annotation views below everything when callout is deselected
+        if let stopAnnotation = view.annotation as? StopAnnotation {
+            view.layer.zPosition = -1
         }
     }
 

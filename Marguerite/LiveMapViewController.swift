@@ -22,7 +22,11 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
     
     // MARK: - Outlets
     
-    @IBOutlet weak var liveMapView: LiveMapView!
+    @IBOutlet weak var liveMapView: LiveMapView! {
+        didSet {
+            HUD = GCDiscreetNotificationView(text: "", showActivity: false, inPresentationMode: GCDiscreetNotificationViewPresentationModeTop, inView: liveMapView)
+        }
+    }
 
     // MARK: - View Controller Lifecycle
     
@@ -99,9 +103,21 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
     func busUpdateSuccess(buses: [RealtimeBus]) {
         dispatch_async(dispatch_get_main_queue(), { () -> Void in
             if buses.count > 0 {
+                // Add/update bus markers using result list
                 for bus in buses {
                     self.updateMarkerWithBus(bus)
                 }
+
+                // Remove existing bus markers that are no longer in the result list
+                for vehicleId in self.busMarkers.keys {
+                    if buses.filter({(bus: RealtimeBus) -> Bool in
+                        return bus.vehicleId == vehicleId
+                    }).count == 0 {
+                        self.liveMapView.removeAnnotation(self.busMarkers[vehicleId])
+                        self.busMarkers[vehicleId] = nil
+                    }
+                }
+
                 self.hideHUD()
                 self.noBusesRunning = false
                 self.busLoadError = false
@@ -135,30 +151,22 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
     }
 
     // MARK: - Map zooming
-    
-    let STANFORD_LATITUDE = 37.432233
-    let STANFORD_LONGITUDE = -122.171183
-    let STANFORD_LATITUDE_LONGITUDE_SPAN = 0.03
+
+    let stanfordRegion = MKCoordinateRegionMake(CLLocationCoordinate2DMake(37.432233, -122.171183), MKCoordinateSpanMake(0.03, 0.03))
     
     @IBAction func zoomToUserLocation() {
         liveMapView.setCenterCoordinate(liveMapView.userLocation.coordinate, animated: true)
     }
     
     @IBAction func zoomToStanford() {
-        let stanfordCenter = CLLocationCoordinate2DMake(STANFORD_LATITUDE, STANFORD_LONGITUDE)
-        let stanfordSpan = MKCoordinateSpanMake(STANFORD_LATITUDE_LONGITUDE_SPAN, STANFORD_LATITUDE_LONGITUDE_SPAN)
-        let stanfordRegion = MKCoordinateRegionMake(stanfordCenter, stanfordSpan)
         liveMapView.setRegion(stanfordRegion, animated: true)
     }
 
     // MARK: - HUD
+
     private var HUD: GCDiscreetNotificationView!
 
     private func showHUDWithMessage(message: String, withActivity: Bool) {
-        if HUD == nil {
-            HUD = GCDiscreetNotificationView(text: message, showActivity: withActivity, inPresentationMode: GCDiscreetNotificationViewPresentationModeTop, inView: self.liveMapView)
-        }
-
         HUD.textLabel = message
         HUD.showActivity = withActivity
         HUD.show(true)

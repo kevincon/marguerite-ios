@@ -265,6 +265,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="QpU-PX-Nhr" kind="show" identifier="MargueriteGitHub" id="hv1-ar-AJq"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -711,7 +714,7 @@
         <image name="time" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="x06-fE-ocK"/>
+        <segue reference="hv1-ar-AJq"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.54901960780000003" green="0.08235294118" blue="0.08235294118" alpha="1" colorSpace="calibratedRGB"/>
 </document>

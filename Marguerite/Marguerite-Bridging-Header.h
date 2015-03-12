@@ -12,6 +12,7 @@
 #import <FMDB.h>
 #import <SwiftTryCatch.h>
 #import <GCDiscreetNotificationView.h>
+#import <Instabug.h>
 #import "GTFSImporter.h"
 
 #endif

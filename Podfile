@@ -5,6 +5,7 @@ target 'Marguerite' do
     pod 'FMDB'
     pod 'SwiftTryCatch'
     pod 'GCDiscreetNotificationView', :inhibit_warnings => true
+    pod 'SSZipArchive', :inhibit_warnings => true
     pod 'Instabug'
 end
 

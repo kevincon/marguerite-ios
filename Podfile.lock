@@ -6,18 +6,21 @@ PODS:
     - FMDB/common
   - GCDiscreetNotificationView (1.0.2)
   - Instabug (4.1)
+  - SSZipArchive (0.3.2)
   - SwiftTryCatch (0.0.1)
 
 DEPENDENCIES:
   - FMDB
   - GCDiscreetNotificationView
   - Instabug
+  - SSZipArchive
   - SwiftTryCatch
 
 SPEC CHECKSUMS:
   FMDB: 0efa188cf0dd1ce82c27a478cd5f5fa245308677
   GCDiscreetNotificationView: e74f7fe64167edab50b00641e054929315d59af5
   Instabug: 2f7d096820c8d2f6a17c54ccf78ca9ecd595fb1e
+  SSZipArchive: 11299a4e89821bd4085b12f25edaa85853e0051c
   SwiftTryCatch: a1559b217e467cb107650a5852cdf15638b0f5e0
 
 COCOAPODS: 0.36.0

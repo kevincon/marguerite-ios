@@ -24,6 +24,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         UITabBar.appearance().tintColor = UIColor.whiteColor()
 
+        Instabug.startWithToken("26715dd86148c8e180f75e4cec931d12", captureSource: IBGCaptureSourceUIKit, invocationEvent: IBGInvocationEventNone)
+        Instabug.setWillShowEmailField(true)
+        Instabug.setWillShowFeedbackSentAlert(true)
+        Instabug.setEmailIsRequired(true)
+        Instabug.setCommentIsRequired(true)
+        Instabug.setColorTheme(IBGColorThemeRed)
+        Instabug.setHeaderColor(UIColor.colorFromHexString("8C1515"))
+
         return true
     }
 

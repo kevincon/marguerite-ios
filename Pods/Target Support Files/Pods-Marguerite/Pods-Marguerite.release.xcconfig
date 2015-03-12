@@ -1,6 +1,9 @@
+CLANG_CXX_LANGUAGE_STANDARD = c++11
+CLANG_CXX_LIBRARY = libc++
+FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/Instabug/"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/FMDB" "${PODS_ROOT}/Headers/Public/GCDiscreetNotificationView" "${PODS_ROOT}/Headers/Public/SSZipArchive" "${PODS_ROOT}/Headers/Public/SwiftTryCatch"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/FMDB" -isystem "${PODS_ROOT}/Headers/Public/GCDiscreetNotificationView" -isystem "${PODS_ROOT}/Headers/Public/SSZipArchive" -isystem "${PODS_ROOT}/Headers/Public/SwiftTryCatch"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-Marguerite-FMDB" -l"Pods-Marguerite-GCDiscreetNotificationView" -l"Pods-Marguerite-SSZipArchive" -l"Pods-Marguerite-SwiftTryCatch" -l"sqlite3" -l"z" -framework "UIKit"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/FMDB" "${PODS_ROOT}/Headers/Public/GCDiscreetNotificationView" "${PODS_ROOT}/Headers/Public/Instabug" "${PODS_ROOT}/Headers/Public/SwiftTryCatch"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/FMDB" -isystem "${PODS_ROOT}/Headers/Public/GCDiscreetNotificationView" -isystem "${PODS_ROOT}/Headers/Public/Instabug" -isystem "${PODS_ROOT}/Headers/Public/SwiftTryCatch"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-Marguerite-FMDB" -l"Pods-Marguerite-GCDiscreetNotificationView" -l"Pods-Marguerite-Instabug" -l"Pods-Marguerite-SwiftTryCatch" -l"c++" -l"sqlite3" -framework "AudioToolbox" -framework "CoreGraphics" -framework "CoreMotion" -framework "CoreTelephony" -framework "Foundation" -framework "GLKit" -framework "Instabug" -framework "MessageUI" -framework "OpenGLES" -framework "QuartzCore" -framework "SystemConfiguration" -framework "UIKit"
 OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
 PODS_ROOT = ${SRCROOT}/Pods

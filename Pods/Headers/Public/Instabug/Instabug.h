@@ -1,0 +1,1 @@
+../../../Instabug/Instabug.framework/Versions/A/Headers/Instabug.h

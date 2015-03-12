@@ -30,11 +30,11 @@
 #define COCOAPODS_VERSION_MINOR_GCDiscreetNotificationView 0
 #define COCOAPODS_VERSION_PATCH_GCDiscreetNotificationView 2
 
-// SSZipArchive
-#define COCOAPODS_POD_AVAILABLE_SSZipArchive
-#define COCOAPODS_VERSION_MAJOR_SSZipArchive 0
-#define COCOAPODS_VERSION_MINOR_SSZipArchive 3
-#define COCOAPODS_VERSION_PATCH_SSZipArchive 2
+// Instabug
+#define COCOAPODS_POD_AVAILABLE_Instabug
+#define COCOAPODS_VERSION_MAJOR_Instabug 4
+#define COCOAPODS_VERSION_MINOR_Instabug 1
+#define COCOAPODS_VERSION_PATCH_Instabug 0
 
 // SwiftTryCatch
 #define COCOAPODS_POD_AVAILABLE_SwiftTryCatch

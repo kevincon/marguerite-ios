@@ -1,6 +1,6 @@
 #include "Pods-Marguerite-SwiftTryCatch.xcconfig"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/SwiftTryCatch" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/FMDB" "${PODS_ROOT}/Headers/Public/GCDiscreetNotificationView" "${PODS_ROOT}/Headers/Public/SSZipArchive" "${PODS_ROOT}/Headers/Public/SwiftTryCatch"
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/SwiftTryCatch" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/FMDB" "${PODS_ROOT}/Headers/Public/GCDiscreetNotificationView" "${PODS_ROOT}/Headers/Public/Instabug" "${PODS_ROOT}/Headers/Public/SwiftTryCatch"
 OTHER_LDFLAGS = -ObjC
 PODS_ROOT = ${SRCROOT}
 SKIP_INSTALL = YES

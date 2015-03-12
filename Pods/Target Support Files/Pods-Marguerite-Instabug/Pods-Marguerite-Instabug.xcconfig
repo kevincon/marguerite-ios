@@ -1,0 +1,4 @@
+PODS_MARGUERITE_INSTABUG_CLANG_CXX_LANGUAGE_STANDARD = c++11
+PODS_MARGUERITE_INSTABUG_CLANG_CXX_LIBRARY = libc++
+PODS_MARGUERITE_INSTABUG_FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/Instabug/"
+PODS_MARGUERITE_INSTABUG_OTHER_LDFLAGS = -l"c++" -framework "AudioToolbox" -framework "CoreGraphics" -framework "CoreMotion" -framework "CoreTelephony" -framework "Foundation" -framework "GLKit" -framework "Instabug" -framework "MessageUI" -framework "OpenGLES" -framework "QuartzCore" -framework "SystemConfiguration" -framework "UIKit"

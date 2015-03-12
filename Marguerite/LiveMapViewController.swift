@@ -73,7 +73,7 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
             marker.subtitle = bus.route.routeLongName
             marker.heading = bus.heading
             marker.color = bus.route.routeColor
-            
+
             marker.coordinate = bus.location
             
             self.liveMapView.addAnnotation(marker)

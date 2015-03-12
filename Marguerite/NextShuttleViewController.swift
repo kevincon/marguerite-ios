@@ -64,10 +64,6 @@ class NextShuttleViewController: UIViewController, UITableViewDelegate, UITableV
         refreshControl.addTarget(self, action: "refreshNearbyStops:", forControlEvents: UIControlEvents.ValueChanged)
 
         allStops = Stop.getAllStops()
-
-        tabBarController?.tabBar.tintColor = UIColor.whiteColor()
-        
-        navigationController?.navigationBar.tintColor = UIColor.whiteColor()
     }
     
     override func viewWillAppear(animated: Bool) {

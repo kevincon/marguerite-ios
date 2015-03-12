@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Lqu-JE-MI9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Lqu-JE-MI9">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,6 +18,7 @@
                     <connections>
                         <segue destination="Cds-oW-yai" kind="relationship" relationship="viewControllers" id="Y1x-1w-sC0"/>
                         <segue destination="3Yg-ay-cC8" kind="relationship" relationship="viewControllers" id="eA1-fb-2aj"/>
+                        <segue destination="yZ9-Pk-YAy" kind="relationship" relationship="viewControllers" id="CTx-aV-XxB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZK1-eh-hqA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -37,47 +38,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FkU-c2-fT4" customClass="LiveMapView" customModule="Marguerite" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="487"/>
                                 <connections>
                                     <outlet property="delegate" destination="3Yg-ay-cC8" id="JLo-we-DLG"/>
                                 </connections>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEP-ym-Rhs">
-                                <rect key="frame" x="554" y="513" width="30" height="30"/>
-                                <state key="normal" title="Me">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="zoomToUserLocation" destination="3Yg-ay-cC8" eventType="touchUpInside" id="nzc-tq-aRU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYA-JA-91b">
-                                <rect key="frame" x="487" y="513" width="59" height="30"/>
-                                <state key="normal" title="Stanford">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="zoomToStanford" destination="3Yg-ay-cC8" eventType="touchUpInside" id="UgW-9h-d1u"/>
-                                </connections>
-                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T67-nX-fOL">
+                                <rect key="frame" x="0.0" y="507" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem image="stanford_logo" id="4LG-1d-uuh">
+                                        <connections>
+                                            <action selector="zoomToStanford" destination="3Yg-ay-cC8" id="lc8-vh-qDy"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="37S-tQ-xrA"/>
+                                    <barButtonItem image="pointer" id="JQj-vz-HFX">
+                                        <connections>
+                                            <action selector="zoomToUserLocation" destination="3Yg-ay-cC8" id="VCx-LB-17Y"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="0.54901960780000003" green="0.08235294118" blue="0.08235294118" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="tjv-FX-xM4" firstAttribute="top" secondItem="fEP-ym-Rhs" secondAttribute="bottom" constant="8" id="2dd-zf-Tmq"/>
-                            <constraint firstItem="fEP-ym-Rhs" firstAttribute="leading" secondItem="sYA-JA-91b" secondAttribute="trailing" constant="8" id="Kpy-zk-lcU"/>
+                            <constraint firstItem="tjv-FX-xM4" firstAttribute="top" secondItem="T67-nX-fOL" secondAttribute="bottom" id="2mt-v4-dwX"/>
+                            <constraint firstItem="T67-nX-fOL" firstAttribute="top" secondItem="FkU-c2-fT4" secondAttribute="bottom" id="5RP-gi-Cnh"/>
                             <constraint firstAttribute="trailing" secondItem="FkU-c2-fT4" secondAttribute="trailing" id="L59-XT-JCG"/>
+                            <constraint firstItem="T67-nX-fOL" firstAttribute="leading" secondItem="kfw-Va-ffM" secondAttribute="leadingMargin" constant="-16" id="Lmg-uT-gOl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="T67-nX-fOL" secondAttribute="trailing" constant="-16" id="ZAq-RW-RrW"/>
                             <constraint firstItem="FkU-c2-fT4" firstAttribute="leading" secondItem="kfw-Va-ffM" secondAttribute="leading" id="bGv-e7-WGD"/>
-                            <constraint firstItem="tjv-FX-xM4" firstAttribute="top" secondItem="sYA-JA-91b" secondAttribute="bottom" constant="8" id="f9E-h9-OTN"/>
-                            <constraint firstItem="tjv-FX-xM4" firstAttribute="top" secondItem="sYA-JA-91b" secondAttribute="bottom" constant="8" id="tV4-VO-zeR"/>
                             <constraint firstItem="FkU-c2-fT4" firstAttribute="top" secondItem="pPV-i5-hCn" secondAttribute="bottom" id="tfv-6Z-MHn"/>
                             <constraint firstItem="FkU-c2-fT4" firstAttribute="bottom" secondItem="tjv-FX-xM4" secondAttribute="top" id="unO-mi-Rcj"/>
-                            <constraint firstItem="sYA-JA-91b" firstAttribute="trailing" secondItem="kfw-Va-ffM" secondAttribute="trailingMargin" id="vaM-2z-fz5"/>
-                            <constraint firstItem="fEP-ym-Rhs" firstAttribute="trailing" secondItem="kfw-Va-ffM" secondAttribute="trailingMargin" id="zE5-Al-j6e"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="tV4-VO-zeR"/>
-                                <exclude reference="vaM-2z-fz5"/>
+                                <exclude reference="unO-mi-Rcj"/>
                             </mask>
                         </variation>
                     </view>
@@ -88,7 +84,292 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qJT-iF-4f4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="782" y="756"/>
+            <point key="canvasLocation" x="782" y="560"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="FIY-tC-5IA">
+            <objects>
+                <tableViewController id="W0p-Hn-QfR" customClass="AboutTableViewController" customModule="Marguerite" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="RaJ-jY-0hi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Stanford Marguerite" footerTitle="This app is developed and maintained by members of the Stanford community, indepedent of the Stanford Marguerite department." id="Quh-dl-3fu">
+                                <cells/>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Contact Marguerite" id="jbE-ZA-mLo">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="xdR-Xe-r4U" detailTextLabel="8nB-dk-jE1" style="IBUITableViewCellStyleValue1" id="h8c-rZ-eIN">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h8c-rZ-eIN" id="PKg-rv-nAf">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Call Marguerite Office" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xdR-Xe-r4U">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="(650) 724-9339" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="4" id="8nB-dk-jE1">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="ddA-Pd-HTL" detailTextLabel="YKr-vW-8yf" style="IBUITableViewCellStyleValue1" id="SUY-9R-t0M">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SUY-9R-t0M" id="Qgv-0r-FBx">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Call Marguerite Lost and Found" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ddA-Pd-HTL">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="(650) 724-4309" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="4" id="YKr-vW-8yf">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="cSo-56-39J" detailTextLabel="JRl-Xh-9PD" style="IBUITableViewCellStyleValue1" id="hgN-tt-kX9">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hgN-tt-kX9" id="GzI-IP-wbL">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Email Marguerite Office" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cSo-56-39J">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="marguerite@stanford.edu" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="4" id="JRl-Xh-9PD">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="F6z-JS-70U" style="IBUITableViewCellStyleDefault" id="SzZ-nS-HTb">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SzZ-nS-HTb" id="ISF-Fk-9Ce">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Visit Marguerite website" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="F6z-JS-70U">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="QpU-PX-Nhr" kind="show" identifier="MargueriteWebsite" id="x06-fE-ocK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Marguerite Service Feedback" footerTitle="The Marguerite office values your feedback about its bus service." id="hPQ-Sg-YDP">
+                                <cells/>
+                            </tableViewSection>
+                            <tableViewSection id="u63-zA-0Zr">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="gcg-uJ-8dD" style="IBUITableViewCellStyleDefault" id="9F7-py-spM">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9F7-py-spM" id="ghF-dx-uJR">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Submit service-related feedback to Marguerite Office" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" id="gcg-uJ-8dD">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="QpU-PX-Nhr" kind="show" identifier="MargueriteFeedback" id="zbI-V8-1sv"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="App Feedback" footerTitle="The developers of this app value your feedback specifically related to this app." id="3oO-Ox-Uhe">
+                                <cells/>
+                            </tableViewSection>
+                            <tableViewSection id="Rf3-PK-qJB">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="U4e-SE-1yy" detailTextLabel="CG7-Tf-ksB" style="IBUITableViewCellStyleValue1" id="TVL-Ww-ktP">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TVL-Ww-ktP" id="UXu-HL-EzQ">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Check app status on Twitter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="U4e-SE-1yy">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="@MargueriteApp" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="4" id="CG7-Tf-ksB">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="QpU-PX-Nhr" kind="show" identifier="MargueriteTwitter" id="VQh-bt-F9i"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Xy5-TJ-hOC" style="IBUITableViewCellStyleDefault" id="hi0-5u-Lh2">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hi0-5u-Lh2" id="C5H-hm-Ngu">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Submit app-related feedback to developers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xy5-TJ-hOC">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Open-source" footerTitle="This app is open-source. All of the code is available on GitHub, and anyone can contribute to improving the app." id="AbW-xK-HYB">
+                                <cells/>
+                            </tableViewSection>
+                            <tableViewSection id="sYf-S4-QMi">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="pyA-et-CDR" style="IBUITableViewCellStyleDefault" id="KSH-e8-bj2">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KSH-e8-bj2" id="BmX-uf-pyB">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Marguerite on GitHub" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pyA-et-CDR">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="W0p-Hn-QfR" id="oRQ-rj-h7I"/>
+                            <outlet property="delegate" destination="W0p-Hn-QfR" id="cEc-BK-gv9"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="About" id="kaQ-lK-aSG"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yzp-WZ-1mr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1560" y="1230"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="XB5-UT-Yvo">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="QpU-PX-Nhr" customClass="WebViewController" customModule="Marguerite" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9rE-YP-P1h"/>
+                        <viewControllerLayoutGuide type="bottom" id="exp-x8-Dnk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZMO-F0-K3F">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="51j-wj-I4r">
+                                <rect key="frame" x="0.0" y="64" width="600" height="443"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aG4-tg-wjf">
+                                <rect key="frame" x="0.0" y="507" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem enabled="NO" image="back_arrow" id="1NA-Rz-EzU">
+                                        <connections>
+                                            <action selector="goBack:" destination="QpU-PX-Nhr" id="a3b-qE-dgb"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="fR1-DE-bLi"/>
+                                    <barButtonItem enabled="NO" image="forward_arrow" id="gXy-Or-KFQ">
+                                        <connections>
+                                            <action selector="goForward:" destination="QpU-PX-Nhr" id="wks-vx-Nvt"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="51j-wj-I4r" firstAttribute="leading" secondItem="ZMO-F0-K3F" secondAttribute="leading" id="0yQ-yX-WSJ"/>
+                            <constraint firstItem="51j-wj-I4r" firstAttribute="leading" secondItem="ZMO-F0-K3F" secondAttribute="leadingMargin" constant="-16" id="14p-SY-wDe"/>
+                            <constraint firstItem="aG4-tg-wjf" firstAttribute="top" secondItem="51j-wj-I4r" secondAttribute="bottom" id="4eM-zb-Rr3"/>
+                            <constraint firstItem="51j-wj-I4r" firstAttribute="top" secondItem="9rE-YP-P1h" secondAttribute="bottom" constant="-44" id="5Lo-Yc-Jrt"/>
+                            <constraint firstItem="51j-wj-I4r" firstAttribute="top" secondItem="9rE-YP-P1h" secondAttribute="bottom" id="61z-vN-XQd"/>
+                            <constraint firstItem="51j-wj-I4r" firstAttribute="leading" secondItem="ZMO-F0-K3F" secondAttribute="leadingMargin" id="6O4-P2-4nk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="51j-wj-I4r" secondAttribute="trailing" id="BBV-WI-svW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aG4-tg-wjf" secondAttribute="trailing" constant="-16" id="Mox-Pt-kAo"/>
+                            <constraint firstItem="exp-x8-Dnk" firstAttribute="top" secondItem="51j-wj-I4r" secondAttribute="bottom" id="WJ9-6B-80B"/>
+                            <constraint firstItem="51j-wj-I4r" firstAttribute="leading" secondItem="ZMO-F0-K3F" secondAttribute="leading" id="ZB3-Uu-Ezp"/>
+                            <constraint firstItem="aG4-tg-wjf" firstAttribute="leading" secondItem="51j-wj-I4r" secondAttribute="leading" id="bJ9-do-uJe"/>
+                            <constraint firstItem="aG4-tg-wjf" firstAttribute="leading" secondItem="ZMO-F0-K3F" secondAttribute="leadingMargin" constant="-16" id="i6P-mt-TQX"/>
+                            <constraint firstAttribute="centerY" secondItem="51j-wj-I4r" secondAttribute="centerY" constant="-32" id="jjj-0b-Eek"/>
+                            <constraint firstItem="51j-wj-I4r" firstAttribute="top" secondItem="9rE-YP-P1h" secondAttribute="bottom" id="kXU-OS-M5R"/>
+                            <constraint firstItem="51j-wj-I4r" firstAttribute="top" secondItem="9rE-YP-P1h" secondAttribute="bottom" id="oIi-l4-vOo"/>
+                            <constraint firstItem="51j-wj-I4r" firstAttribute="leading" secondItem="ZMO-F0-K3F" secondAttribute="leadingMargin" id="qie-5e-4q0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="51j-wj-I4r" secondAttribute="trailing" constant="-16" id="rjr-Nd-yBt"/>
+                            <constraint firstItem="exp-x8-Dnk" firstAttribute="top" secondItem="aG4-tg-wjf" secondAttribute="bottom" id="rpt-ym-WFe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="51j-wj-I4r" secondAttribute="trailing" constant="-16" id="sGr-N3-XN8"/>
+                            <constraint firstItem="aG4-tg-wjf" firstAttribute="top" secondItem="51j-wj-I4r" secondAttribute="bottom" id="xUa-h6-gnk"/>
+                            <constraint firstItem="51j-wj-I4r" firstAttribute="top" secondItem="9rE-YP-P1h" secondAttribute="bottom" id="ycW-AY-P0e"/>
+                            <constraint firstItem="aG4-tg-wjf" firstAttribute="trailing" secondItem="51j-wj-I4r" secondAttribute="trailing" id="zZr-vA-5Wz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="51j-wj-I4r" secondAttribute="trailing" id="zoh-12-1V3"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0yQ-yX-WSJ"/>
+                                <exclude reference="5Lo-Yc-Jrt"/>
+                                <exclude reference="61z-vN-XQd"/>
+                                <exclude reference="6O4-P2-4nk"/>
+                                <exclude reference="BBV-WI-svW"/>
+                                <exclude reference="ZB3-Uu-Ezp"/>
+                                <exclude reference="jjj-0b-Eek"/>
+                                <exclude reference="kXU-OS-M5R"/>
+                                <exclude reference="qie-5e-4q0"/>
+                                <exclude reference="rjr-Nd-yBt"/>
+                                <exclude reference="ycW-AY-P0e"/>
+                                <exclude reference="zoh-12-1V3"/>
+                                <exclude reference="4eM-zb-Rr3"/>
+                                <exclude reference="bJ9-do-uJe"/>
+                                <exclude reference="zZr-vA-5Wz"/>
+                                <exclude reference="WJ9-6B-80B"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="1NA-Rz-EzU" id="A7w-am-0dt"/>
+                        <outlet property="forwardButton" destination="gXy-Or-KFQ" id="SfK-RE-pn3"/>
+                        <outlet property="webView" destination="51j-wj-I4r" id="mmY-xm-cNz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="abR-zW-fZA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2373" y="1230"/>
         </scene>
         <!--Next Shuttle Split View Controller-->
         <scene sceneID="tWV-rY-J8f">
@@ -400,10 +681,37 @@
             </objects>
             <point key="canvasLocation" x="1532" y="-59"/>
         </scene>
+        <!--About-->
+        <scene sceneID="Nbv-zL-dcH">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tJA-Ly-Aia" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yZ9-Pk-YAy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="About" image="info" id="DVm-Aa-3gL"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="twl-as-nO5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="W0p-Hn-QfR" kind="relationship" relationship="rootViewController" id="Bby-SZ-AIO"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="782" y="1230"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="back_arrow" width="32" height="32"/>
+        <image name="forward_arrow" width="32" height="32"/>
+        <image name="info" width="32" height="32"/>
         <image name="location" width="32" height="32"/>
+        <image name="pointer" width="32" height="32"/>
+        <image name="stanford_logo" width="32" height="32"/>
         <image name="time" width="32" height="32"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="x06-fE-ocK"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.54901960780000003" green="0.08235294118" blue="0.08235294118" alpha="1" colorSpace="calibratedRGB"/>
 </document>

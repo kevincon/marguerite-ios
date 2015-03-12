@@ -109,7 +109,6 @@
 		F4F61E211AA41498009377CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4F61E231AA41498009377CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F4F61E261AA41498009377CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		F4F61E3E1AA41834009377CE /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		F4F61E401AA41A61009377CE /* Marguerite-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Marguerite-Bridging-Header.h"; sourceTree = "<group>"; };
 		F4F61E431AA41C21009377CE /* NextShuttleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextShuttleViewController.swift; sourceTree = "<group>"; };
 		F4F61E471AA420C9009377CE /* Stop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
@@ -263,7 +262,6 @@
 			isa = PBXGroup;
 			children = (
 				F4F61E401AA41A61009377CE /* Marguerite-Bridging-Header.h */,
-				F4F61E3E1AA41834009377CE /* Config.xcconfig */,
 				F4F61E231AA41498009377CE /* Images.xcassets */,
 				F4F61E251AA41498009377CE /* LaunchScreen.xib */,
 				F4F61E1B1AA41498009377CE /* Marguerite.xcdatamodeld */,
@@ -462,7 +460,6 @@
 /* Begin XCBuildConfiguration section */
 		F4F61E341AA41499009377CE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4F61E3E1AA41834009377CE /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -509,7 +506,6 @@
 		};
 		F4F61E351AA41499009377CE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4F61E3E1AA41834009377CE /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";

@@ -1,5 +1,5 @@
 //
-//  Util.swift
+//  UIColor+Extras.swift
 //  Marguerite
 //
 //  Created by Kevin Conley on 3/4/15.
@@ -9,6 +9,10 @@
 import UIKit
 
 extension UIColor {
+    class func stanfordRedColor() -> UIColor {
+        return colorFromHexString("8C1515")
+    }
+
     class func colorFromHexString(hexString: String) -> UIColor {
         var rgbValue: UInt32 = 0
         let scanner = NSScanner(string: hexString)

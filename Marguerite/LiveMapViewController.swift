@@ -10,10 +10,17 @@ import UIKit
 import MapKit
 
 class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesDelegate {
-    
-    var realtimeBuses = RealtimeBuses(urlString: "http://lbre-apps.stanford.edu/transportation/stanford_ivl/locations.cfm")
+
+    // MARK: - Public API
+
+    var stopToZoomTo: Stop?
+
+    // MARK: - Private API
+
+    private var realtimeBuses = RealtimeBuses(urlString: "http://lbre-apps.stanford.edu/transportation/stanford_ivl/locations.cfm")
     
     private var busMarkers = [String: RealtimeBusAnnotation]()
+    private var stopMarkers = [String: StopAnnotation]()
     private var timer = NSTimer()
     private let busRefreshInterval = 3.0
     private var timerShouldRepeat = true
@@ -33,8 +40,10 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        zoomToStanford()
         realtimeBuses.delegate = self
+
+        loadStops()
+        zoomToStanford()
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -85,7 +94,26 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
             self.liveMapView.addAnnotation(marker)
         }
     }
-    
+
+    // MARK: - Stop Drawing
+
+    // Convenience "typedef"
+    class StopAnnotation: MKPointAnnotation {}
+
+    func loadStops() {
+        let allStops = Stop.getAllStops()
+        for stop in allStops {
+            let marker = StopAnnotation()
+            marker.title = stop.stopName
+            marker.subtitle = "Tap here to view next shuttles."
+            marker.coordinate = stop.location!.coordinate
+            stopMarkers[stop.stopId!] = marker
+            liveMapView.addAnnotation(marker)
+        }
+    }
+
+    // MARK: - MKMapViewDelegate
+
     func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
         if let busAnnotation = annotation as? RealtimeBusAnnotation {
             var busView = mapView.dequeueReusableAnnotationViewWithIdentifier(busAnnotation.identifer) as? RealtimeBusAnnotationView
@@ -94,10 +122,32 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
             }
             busView!.annotation = annotation
             return busView!
+        } else if let stopAnnotation = annotation as? StopAnnotation {
+            var stopView = mapView.dequeueReusableAnnotationViewWithIdentifier("StopAnnotationView")
+            if stopView == nil {
+                stopView = MKAnnotationView(annotation: stopAnnotation, reuseIdentifier: "StopAnnotationView")
+                let circleRadius: CGFloat = 2.0
+                let circleImage = UIImage.circleWithRadius(circleRadius, color: UIColor.stanfordRedColor())
+                stopView?.image = circleImage
+                stopView?.canShowCallout = true
+            }
+            stopView!.annotation = annotation
+            return stopView!
         }
         return nil
     }
-    
+
+    func mapView(mapView: MKMapView!, didAddAnnotationViews views: [AnyObject]!) {
+        // Move all bus views to be above stop views and the user's location
+        for view in views {
+            if let busView = view as? RealtimeBusAnnotationView {
+                liveMapView.bringSubviewToFront(busView)
+            } else if let stopView = view as? MKAnnotationView {
+                liveMapView.sendSubviewToBack(stopView)
+            }
+        }
+    }
+
     // MARK: - RealtimeBusesDelegate
     
     func busUpdateSuccess(buses: [RealtimeBus]) {
@@ -132,6 +182,12 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
                 self.timer = NSTimer(timeInterval: self.busRefreshInterval, target: self, selector: Selector("refreshBuses"), userInfo: nil, repeats: false)
                 NSRunLoop.mainRunLoop().addTimer(self.timer, forMode: NSRunLoopCommonModes)
             }
+
+            // Wait to zoom to a stop until after we've loaded buses
+            if self.stopToZoomTo != nil {
+                self.zoomToStop(self.stopToZoomTo!)
+                self.stopToZoomTo = nil
+            }
         })
     }
     
@@ -147,6 +203,11 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
                 self.timer = NSTimer(timeInterval: self.busRefreshInterval, target: self, selector: Selector("refreshBuses"), userInfo: nil, repeats: false)
                 NSRunLoop.mainRunLoop().addTimer(self.timer, forMode: NSRunLoopCommonModes)
             }
+            // Wait to zoom to a stop until after we've tried to load buses
+            if self.stopToZoomTo != nil {
+                self.zoomToStop(self.stopToZoomTo!)
+                self.stopToZoomTo = nil
+            }
         })
     }
 
@@ -160,6 +221,13 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
     
     @IBAction func zoomToStanford() {
         liveMapView.setRegion(stanfordRegion, animated: true)
+    }
+
+    func zoomToStop(stop: Stop) {
+        if let marker = stopMarkers[stop.stopId!] {
+            liveMapView.setCenterCoordinate(marker.coordinate, animated: true)
+            liveMapView.selectAnnotation(marker, animated: true)
+        }
     }
 
     // MARK: - HUD

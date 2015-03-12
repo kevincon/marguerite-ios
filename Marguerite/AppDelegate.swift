@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        UINavigationBar.appearance().barTintColor = UIColor.colorFromHexString("8C1515")
+        UINavigationBar.appearance().barTintColor = UIColor.stanfordRedColor()
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
 
@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Instabug.setEmailIsRequired(true)
         Instabug.setCommentIsRequired(true)
         Instabug.setColorTheme(IBGColorThemeRed)
-        Instabug.setHeaderColor(UIColor.colorFromHexString("8C1515"))
+        Instabug.setHeaderColor(UIColor.stanfordRedColor())
 
         return true
     }

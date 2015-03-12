@@ -222,9 +222,17 @@ class StopViewController: UIViewController, UITableViewDelegate, UITableViewData
             } else {
                 addStopToFavorites()
             }
-            tableView.cellForRowAtIndexPath(indexPath)!.selected = false
+        case viewOnMapSection:
+            if let controllers = tabBarController?.viewControllers {
+                if let controller = controllers[1] as? LiveMapViewController {
+                    tabBarController?.selectedIndex = 1
+                    controller.stopToZoomTo = stop
+                    controller.zoomToStop(stop!)
+                }
+            }
         default:
             break
         }
+        tableView.cellForRowAtIndexPath(indexPath)!.selected = false
     }
 }

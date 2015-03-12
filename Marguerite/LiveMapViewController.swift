@@ -159,14 +159,15 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
                 }
 
                 // Remove existing bus markers that are no longer in the result list
-                for vehicleId in self.busMarkers.keys {
-                    if buses.filter({(bus: RealtimeBus) -> Bool in
-                        return bus.vehicleId == vehicleId
-                    }).count == 0 {
-                        self.liveMapView.removeAnnotation(self.busMarkers[vehicleId])
-                        self.busMarkers[vehicleId] = nil
-                    }
-                }
+                // TODO this doesn't work
+//                for vehicleId in self.busMarkers.keys {
+//                    if buses.filter({(bus: RealtimeBus) -> Bool in
+//                        return bus.vehicleId == vehicleId
+//                    }).count == 0 {
+//                        self.liveMapView.removeAnnotation(self.busMarkers[vehicleId])
+//                        self.busMarkers[vehicleId] = nil
+//                    }
+//                }
 
                 self.hideHUD()
                 self.noBusesRunning = false

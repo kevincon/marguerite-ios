@@ -12,10 +12,11 @@ import CoreLocation
 protocol CoreLocationControllerDelegate: class {
     func locationUpdate(location: CLLocation)
     func locationError(error: NSError)
+    func locationAuthorizationStatusChanged(nowEnabled: Bool)
 }
 
 class CoreLocationController: NSObject, CLLocationManagerDelegate {
-    let locationManager = CLLocationManager()
+    private let locationManager = CLLocationManager()
     
     weak var delegate: CoreLocationControllerDelegate?
     
@@ -36,6 +37,10 @@ class CoreLocationController: NSObject, CLLocationManagerDelegate {
             locationManager.startUpdatingLocation()
         }
     }
+
+    func locationEnabled() -> Bool {
+        return CLLocationManager.authorizationStatus() == .AuthorizedWhenInUse
+    }
     
     func locationManager(manager: CLLocationManager!, didUpdateToLocation newLocation: CLLocation!, fromLocation oldLocation: CLLocation!) {
         delegate?.locationUpdate(newLocation)
@@ -50,7 +55,9 @@ class CoreLocationController: NSObject, CLLocationManagerDelegate {
     func locationManager(manager: CLLocationManager!,
         didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         if status == .AuthorizedWhenInUse {
-            locationManager.startUpdatingLocation()
+            delegate?.locationAuthorizationStatusChanged(true)
+        } else {
+            delegate?.locationAuthorizationStatusChanged(false)
         }
     }
 }

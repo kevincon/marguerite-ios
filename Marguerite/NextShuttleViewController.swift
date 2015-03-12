@@ -59,13 +59,12 @@ class NextShuttleViewController: UIViewController, UITableViewDelegate, UITableV
         if favoriteStops.count > 0 {
             specialTableSections.addObject(favoriteStopsSection)
         }
-        
-        allStops = Stop.getAllStops()
-        
+
         refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh nearby stops.")
         refreshControl.addTarget(self, action: "refreshNearbyStops:", forControlEvents: UIControlEvents.ValueChanged)
-        tableView.addSubview(refreshControl)
-        
+
+        allStops = Stop.getAllStops()
+
         tabBarController?.tabBar.tintColor = UIColor.whiteColor()
         
         navigationController?.navigationBar.tintColor = UIColor.whiteColor()
@@ -226,7 +225,7 @@ class NextShuttleViewController: UIViewController, UITableViewDelegate, UITableV
 
         }
     }
-    
+
     // MARK: - Searching
     
     func searchDisplayController(controller: UISearchDisplayController!, shouldReloadTableForSearchString searchString: String!) -> Bool {
@@ -248,26 +247,45 @@ class NextShuttleViewController: UIViewController, UITableViewDelegate, UITableV
     // MARK: - GPS Location
     
     let locationController = CoreLocationController()
-    
+
+    func locationAuthorizationStatusChanged(nowEnabled: Bool) {
+        if nowEnabled {
+            locationController.refreshLocation()
+        } else {
+            // Remove the refresh control and nearby stops section since
+            // location is now disabled
+            if refreshControl.superview != nil {
+                if refreshControl.refreshing {
+                    refreshControl.endRefreshing()
+                }
+                refreshControl.removeFromSuperview()
+            }
+        }
+    }
+
     func locationUpdate(location: CLLocation) {
         closestStops = Stop.getClosestStops(3, location: location)
         if closestStops.count > 0 {
             specialTableSections.insertObject(nearbyStopsSection, atIndex: 0)
+
+            if refreshControl.superview == nil {
+                tableView.addSubview(refreshControl)
+            }
         }
         if !self.searchDisplayController!.active {
             tableView.reloadData()
         }
         if refreshControl.refreshing {
-            self.refreshControl.endRefreshing()
+            refreshControl.endRefreshing()
         }
     }
     
     func locationError(error: NSError) {
         // TODO better handling of location error
         println("GPS location error: \(error)")
-        
+
         if refreshControl.refreshing {
-            self.refreshControl.endRefreshing()
+            refreshControl.endRefreshing()
         }
     }
     

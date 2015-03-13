@@ -74,8 +74,10 @@ class WebViewController: UIViewController, UIWebViewDelegate {
 
     func webViewDidFinishLoad(webView: UIWebView) {
         activityIndicatorView.stopAnimating()
-        backButton.enabled = webView.canGoBack
-        forwardButton.enabled = webView.canGoForward
+        if !hideToolbar {
+            backButton.enabled = webView.canGoBack
+            forwardButton.enabled = webView.canGoForward
+        }
         hideErrorLabel()
     }
 

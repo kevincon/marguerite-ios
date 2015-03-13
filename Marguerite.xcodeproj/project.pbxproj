@@ -49,7 +49,7 @@
 		F4F61E481AA420C9009377CE /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E471AA420C9009377CE /* Stop.swift */; };
 		F4F61E4A1AA42CA0009377CE /* GTFSDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E491AA42CA0009377CE /* GTFSDatabase.swift */; };
 		F4F61E5D1AA515D7009377CE /* CoreLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E5C1AA515D7009377CE /* CoreLocationController.swift */; };
-		F4F61E5F1AA53FDB009377CE /* NextShuttleSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E5E1AA53FDB009377CE /* NextShuttleSplitViewController.swift */; };
+		F4F61E5F1AA53FDB009377CE /* ExpandedSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E5E1AA53FDB009377CE /* ExpandedSplitViewController.swift */; };
 		F4F61E611AA6E615009377CE /* LiveMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E601AA6E615009377CE /* LiveMapViewController.swift */; };
 		F4F61E631AA6E768009377CE /* LiveMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E621AA6E768009377CE /* LiveMapView.swift */; };
 		F4F61E671AA6F89A009377CE /* StopTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E661AA6F89A009377CE /* StopTime.swift */; };
@@ -118,7 +118,7 @@
 		F4F61E471AA420C9009377CE /* Stop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
 		F4F61E491AA42CA0009377CE /* GTFSDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTFSDatabase.swift; sourceTree = "<group>"; };
 		F4F61E5C1AA515D7009377CE /* CoreLocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreLocationController.swift; sourceTree = "<group>"; };
-		F4F61E5E1AA53FDB009377CE /* NextShuttleSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextShuttleSplitViewController.swift; sourceTree = "<group>"; };
+		F4F61E5E1AA53FDB009377CE /* ExpandedSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandedSplitViewController.swift; sourceTree = "<group>"; };
 		F4F61E601AA6E615009377CE /* LiveMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveMapViewController.swift; sourceTree = "<group>"; };
 		F4F61E621AA6E768009377CE /* LiveMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveMapView.swift; sourceTree = "<group>"; };
 		F4F61E641AA6F501009377CE /* StopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopViewController.swift; sourceTree = "<group>"; };
@@ -236,7 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				F4F61E681AA6FA4A009377CE /* TableSection.swift */,
-				F4F61E5E1AA53FDB009377CE /* NextShuttleSplitViewController.swift */,
+				F4F61E5E1AA53FDB009377CE /* ExpandedSplitViewController.swift */,
 				F4F61E431AA41C21009377CE /* NextShuttleViewController.swift */,
 				F4F61E5C1AA515D7009377CE /* CoreLocationController.swift */,
 				F4F61E641AA6F501009377CE /* StopViewController.swift */,
@@ -435,7 +435,7 @@
 				F42FD99C1AB00DFF0027DAEE /* RealtimeBusAnnotationView.swift in Sources */,
 				F47608AB1AB2EBAA00ED3659 /* RouteTableViewCell.swift in Sources */,
 				F41C7FC11AA8273A009B2A23 /* GTFSTrip.m in Sources */,
-				F4F61E5F1AA53FDB009377CE /* NextShuttleSplitViewController.swift in Sources */,
+				F4F61E5F1AA53FDB009377CE /* ExpandedSplitViewController.swift in Sources */,
 				F4F61E5D1AA515D7009377CE /* CoreLocationController.swift in Sources */,
 				F4F61E1A1AA41498009377CE /* AppDelegate.swift in Sources */,
 				F41C7FC01AA8273A009B2A23 /* GTFSStopTime.m in Sources */,

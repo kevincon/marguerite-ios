@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NextShuttleSplitViewController: UISplitViewController, UISplitViewControllerDelegate {
+class ExpandedSplitViewController: UISplitViewController, UISplitViewControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()

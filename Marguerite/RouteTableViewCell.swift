@@ -15,6 +15,7 @@ class RouteTableViewCell: UITableViewCell {
     var route: Route? {
         didSet {
             routeLabel?.text = " \(route!.displayName) "
+            routeLabel?.textAlignment = .Left
             routeLabel?.textColor = route!.routeTextColor
             routeLabel?.backgroundColor = route!.routeColor
             routeLabel?.sizeToFit()

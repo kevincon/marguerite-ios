@@ -59,6 +59,11 @@ class Route {
         }
     }
 
+    /**
+    Get a list of all routes from the GTFS data.
+
+    :returns: All of the routes from the GTFS.
+    */
     class func getAllRoutes() -> [Route] {
         var allRoutes = [Route]()
         if let db = GTFSDatabase.open() {

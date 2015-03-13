@@ -32,6 +32,7 @@ class RoutesViewController: UIViewController, UITableViewDataSource, UITableView
 
     private struct Storyboard {
         static let routeTableViewCellIdentifier = "RouteTableCell"
+        static let webViewControllerIdentifier = "WebViewController"
     }
 
     // MARK: - UITableViewDataSource
@@ -48,16 +49,19 @@ class RoutesViewController: UIViewController, UITableViewDataSource, UITableView
         return cell
     }
 
-    // MARK: - Segues
+    // MARK: - UITableViewDelegate
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let wvc = segue.destinationViewController as? WebViewController {
-            if let indexPath = tableView.indexPathForSelectedRow() {
-                let route = routes[indexPath.row]
-                wvc.urlToLoad = getURLForRoute(route)
-                wvc.hideToolbar = true
-            }
-        }
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let wvc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier(Storyboard.webViewControllerIdentifier) as WebViewController
+
+        let route = routes[indexPath.row]
+        wvc.urlToLoad = getURLForRoute(route)
+        wvc.hideToolbar = true
+        wvc.title = route.displayName
+
+        let nc = UINavigationController(rootViewController: wvc)
+        nc.extendedLayoutIncludesOpaqueBars = true
+        showDetailViewController(nc, sender: self)
     }
 
     // MARK: - Route Maps

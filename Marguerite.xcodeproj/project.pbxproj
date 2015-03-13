@@ -43,7 +43,6 @@
 		F4F61E1D1AA41498009377CE /* Marguerite.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E1B1AA41498009377CE /* Marguerite.xcdatamodeld */; };
 		F4F61E221AA41498009377CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F61E201AA41498009377CE /* Main.storyboard */; };
 		F4F61E241AA41498009377CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4F61E231AA41498009377CE /* Images.xcassets */; };
-		F4F61E271AA41498009377CE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4F61E251AA41498009377CE /* LaunchScreen.xib */; };
 		F4F61E441AA41C21009377CE /* NextShuttleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E431AA41C21009377CE /* NextShuttleViewController.swift */; };
 		F4F61E481AA420C9009377CE /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E471AA420C9009377CE /* Stop.swift */; };
 		F4F61E4A1AA42CA0009377CE /* GTFSDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F61E491AA42CA0009377CE /* GTFSDatabase.swift */; };
@@ -110,7 +109,6 @@
 		F4F61E1C1AA41498009377CE /* Marguerite.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Marguerite.xcdatamodel; sourceTree = "<group>"; };
 		F4F61E211AA41498009377CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4F61E231AA41498009377CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F4F61E261AA41498009377CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F4F61E401AA41A61009377CE /* Marguerite-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Marguerite-Bridging-Header.h"; sourceTree = "<group>"; };
 		F4F61E431AA41C21009377CE /* NextShuttleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextShuttleViewController.swift; sourceTree = "<group>"; };
 		F4F61E471AA420C9009377CE /* Stop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
@@ -266,7 +264,6 @@
 			children = (
 				F4F61E401AA41A61009377CE /* Marguerite-Bridging-Header.h */,
 				F4F61E231AA41498009377CE /* Images.xcassets */,
-				F4F61E251AA41498009377CE /* LaunchScreen.xib */,
 				F4F61E1B1AA41498009377CE /* Marguerite.xcdatamodeld */,
 				F4F61E191AA41498009377CE /* AppDelegate.swift */,
 				F4F61E181AA41498009377CE /* Info.plist */,
@@ -354,7 +351,6 @@
 				F4CF5A0D1AA8413200F92BE2 /* trips.txt in Resources */,
 				F4CF5A091AA8413200F92BE2 /* routes.txt in Resources */,
 				F4CF5A0B1AA8413200F92BE2 /* stop_times.txt in Resources */,
-				F4F61E271AA41498009377CE /* LaunchScreen.xib in Resources */,
 				F4F61E241AA41498009377CE /* Images.xcassets in Resources */,
 				F4CF5A0A1AA8413200F92BE2 /* shapes.txt in Resources */,
 				F4CF5A071AA8413200F92BE2 /* agency.txt in Resources */,
@@ -451,14 +447,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		F4F61E251AA41498009377CE /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F4F61E261AA41498009377CE /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -552,6 +540,7 @@
 			baseConfigurationReference = DA9CE9FDC8DA518A8547B179 /* Pods-Marguerite.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Marguerite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -563,6 +552,7 @@
 			baseConfigurationReference = 8B5D0249E03FE918B9CB0026 /* Pods-Marguerite.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Marguerite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

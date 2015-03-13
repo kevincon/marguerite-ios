@@ -360,6 +360,7 @@
                             <constraint firstItem="51j-wj-I4r" firstAttribute="leading" secondItem="ZMO-F0-K3F" secondAttribute="leading" id="ZB3-Uu-Ezp"/>
                             <constraint firstItem="aG4-tg-wjf" firstAttribute="leading" secondItem="51j-wj-I4r" secondAttribute="leading" id="bJ9-do-uJe"/>
                             <constraint firstAttribute="trailing" secondItem="51j-wj-I4r" secondAttribute="trailing" constant="20" symbolic="YES" id="cwf-sT-qdv"/>
+                            <constraint firstAttribute="centerX" secondItem="RS5-Wk-1hJ" secondAttribute="centerX" constant="-0.5" id="egr-QC-ERG"/>
                             <constraint firstItem="aG4-tg-wjf" firstAttribute="width" secondItem="ZMO-F0-K3F" secondAttribute="width" id="fyj-e9-bgV"/>
                             <constraint firstItem="aG4-tg-wjf" firstAttribute="leading" secondItem="ZMO-F0-K3F" secondAttribute="leadingMargin" constant="-16" id="i6P-mt-TQX"/>
                             <constraint firstItem="51j-wj-I4r" firstAttribute="trailing" secondItem="aG4-tg-wjf" secondAttribute="trailing" id="j1z-K4-khu"/>
@@ -400,6 +401,7 @@
                                 <exclude reference="x6I-rX-pn1"/>
                                 <exclude reference="ycW-AY-P0e"/>
                                 <exclude reference="zoh-12-1V3"/>
+                                <exclude reference="l0R-Fh-ohs"/>
                                 <exclude reference="4eM-zb-Rr3"/>
                                 <exclude reference="AOn-z0-WoX"/>
                                 <exclude reference="Mox-Pt-kAo"/>

@@ -49,6 +49,16 @@ class Route {
         self.routeTextColor = routeTextColor
     }
 
+    /// The text to display for a route (some routes are missing the long name
+    /// field or short name field)
+    var displayName: String {
+        if self.routeLongName.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()) != "" {
+            return self.routeLongName
+        } else {
+            return self.routeShortName
+        }
+    }
+
     class func getAllRoutes() -> [Route] {
         var allRoutes = [Route]()
         if let db = GTFSDatabase.open() {

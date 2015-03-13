@@ -48,7 +48,7 @@ class StopViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             if let routesString = stop?.routesString {
                 if let stopId = stop?.stopId {
-                    let departureTimesQuery = String(format: "SELECT stop_times.departure_time, routes.route_long_name, routes.route_color, routes.route_text_color, trips.trip_id FROM routes, trips, calendar_dates, stop_times WHERE trips.service_id=calendar_dates.service_id AND calendar_dates.date=? AND stop_times.pickup_type=0 AND stop_times.trip_id=trips.trip_id AND routes.route_id=trips.route_id AND stop_times.stop_id=? AND trips.route_id IN (%@) AND time(stop_times.departure_time) > time(\'%@\') GROUP BY stop_times.departure_time, routes.route_long_name ORDER BY time(stop_times.departure_time)", arguments: [routesString, timeString])
+                    let departureTimesQuery = String(format: "SELECT stop_times.departure_time, routes.route_long_name, routes.route_short_name, routes.route_color, routes.route_text_color, trips.trip_id FROM routes, trips, calendar_dates, stop_times WHERE trips.service_id=calendar_dates.service_id AND calendar_dates.date=? AND stop_times.pickup_type=0 AND stop_times.trip_id=trips.trip_id AND routes.route_id=trips.route_id AND stop_times.stop_id=? AND trips.route_id IN (%@) AND time(stop_times.departure_time) > time(\'%@\') GROUP BY stop_times.departure_time, routes.route_long_name ORDER BY time(stop_times.departure_time)", arguments: [routesString, timeString])
                     
                     let departureTimesRS = db.executeQuery(departureTimesQuery, withArgumentsInArray: [todaysDate, stopId])
                     
@@ -57,6 +57,7 @@ class StopViewController: UIViewController, UITableViewDelegate, UITableViewData
                     while departureTimesRS.next() {
                         let bus = StopTime()
                         bus.routeLongName = departureTimesRS.objectForColumnName("route_long_name") as? String
+                        bus.routeShortName = departureTimesRS.objectForColumnName("route_short_name") as? String
                         bus.tripId = departureTimesRS.objectForColumnName("trip_id") as? String
                         bus.routeColor = UIColor.colorFromHexString(departureTimesRS.objectForColumnName("route_color") as String)
                         bus.routeTextColor = UIColor.colorFromHexString(departureTimesRS.objectForColumnName("route_text_color") as String)
@@ -207,7 +208,7 @@ class StopViewController: UIViewController, UITableViewDelegate, UITableViewData
             let stopTime = nextBuses[indexPath.row]
             
             busCell.departureTimeLabel?.text = twelveHourFormat.stringFromDate(stopTime.departureTime!)
-            busCell.routeLabel?.text = stopTime.routeLongName
+            busCell.routeLabel?.text = stopTime.displayName
             busCell.routeLabel?.textColor = stopTime.routeColor
         default:
             break

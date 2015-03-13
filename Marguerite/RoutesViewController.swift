@@ -23,7 +23,9 @@ class RoutesViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        routes = Route.getAllRoutes()
+        // Get all routes, sorting them alphabetically (case-insensitive)
+        routes = Route.getAllRoutes().sorted {
+            $0.displayName.lowercaseString < $1.displayName.lowercaseString }
     }
 
     // MARK: - Storyboard Constants
@@ -41,11 +43,7 @@ class RoutesViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(Storyboard.routeTableViewCellIdentifier, forIndexPath: indexPath) as UITableViewCell
         let route = routes[indexPath.row]
-        if route.routeLongName.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()) != "" {
-            cell.textLabel?.text = route.routeLongName
-        } else {
-            cell.textLabel?.text = route.routeShortName
-        }
+        cell.textLabel?.text = route.displayName
         cell.textLabel?.textColor = route.routeTextColor
         cell.backgroundColor = route.routeColor
 
@@ -66,7 +64,13 @@ class RoutesViewController: UIViewController, UITableViewDataSource, UITableView
 
     // MARK: - Route Maps
 
-    // Some of the routes have bogus URLs, so handle those cases with this function
+    /**
+    Some of the routes have bogus URLs, so handle those cases with this function.
+
+    :param: route The route.
+
+    :returns: The URL for the map of the given route.
+    */
     private func getURLForRoute(route: Route) -> NSURL? {
         switch route.routeShortName {
         case "RMH":

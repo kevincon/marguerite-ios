@@ -11,7 +11,18 @@ import UIKit
 class StopTime: NSObject {
     var departureTime: NSDate?
     var routeLongName: String?
+    var routeShortName: String?
     var routeColor: UIColor?
     var routeTextColor: UIColor?
     var tripId: String?
+
+    /// The text to display for a route (some routes are missing the long name
+    /// field or short name field)
+    var displayName: String {
+        if self.routeLongName!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()) != "" {
+            return self.routeLongName!
+        } else {
+            return self.routeShortName!
+        }
+    }
 }

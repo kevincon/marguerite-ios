@@ -1,6 +1,6 @@
 //
 //  StopTimeTableViewCell.swift
-//  Marguerite
+//  A UITableViewCell for viewing a shuttle departure time.
 //
 //  Created by Kevin Conley on 3/5/15.
 //  Copyright (c) 2015 Kevin Conley. All rights reserved.
@@ -30,6 +30,6 @@ class StopTimeTableViewCell: UITableViewCell {
 
     // MARK: - Outlets
 
-    @IBOutlet weak var routeLabel: UILabel!
-    @IBOutlet weak var departureTimeLabel: UILabel!
+    @IBOutlet private weak var routeLabel: UILabel!
+    @IBOutlet private weak var departureTimeLabel: UILabel!
 }

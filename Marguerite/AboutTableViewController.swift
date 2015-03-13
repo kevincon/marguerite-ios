@@ -1,6 +1,6 @@
 //
 //  AboutTableViewController.swift
-//  Marguerite
+//  A UITableViewController for displaying information about the app.
 //
 //  Created by Kevin Conley on 3/11/15.
 //  Copyright (c) 2015 Kevin Conley. All rights reserved.
@@ -10,6 +10,8 @@ import UIKit
 
 class AboutTableViewController: UITableViewController {
 
+    // MARK: - Links
+
     private let margueriteOfficePhoneNumber = "650-724-9339"
     private let margueriteLostAndFoundPhoneNumber = "650-724-4309"
     private let margueriteEmail = "marguerite@stanford.edu"
@@ -18,6 +20,8 @@ class AboutTableViewController: UITableViewController {
                                                "MargueriteFeedback": "http://transportation.stanford.edu/margueritecomments/",
                                                "MargueriteTwitter": "https://twitter.com/MargueriteApp",
                                                "MargueriteGitHub": "https://github.com/cardinaldevs/marguerite-ios"]
+
+    // MARK: - Table sections/indices
 
     private struct TableLinks {
         static let ContactMargueriteSectionIndex = 1
@@ -58,11 +62,11 @@ class AboutTableViewController: UITableViewController {
 
     // MARK: - URL Convenience Methods
 
-    func createEmail(emailAddress: String) {
+    private func createEmail(emailAddress: String) {
         openURL("mailto:\(emailAddress)")
     }
 
-    func callPhoneNumber(telephoneUrl: String) {
+    private func callPhoneNumber(telephoneUrl: String) {
         openURL("tel://\(telephoneUrl)")
     }
 
@@ -77,6 +81,10 @@ class AboutTableViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let wvc = segue.destinationViewController as? WebViewController {
             wvc.urlToLoad = NSURL(string: segueIdToWebsiteLookupTable[segue.identifier!]!)
+            // We don't have to deal with issues related to split view controller
+            // embedding here (like we do when segueing to WebViewController from
+            // the RoutesViewController), so don't extend the layout below 
+            // opaque bars
             wvc.extendedLayoutIncludesOpaqueBars = false
         }
     }

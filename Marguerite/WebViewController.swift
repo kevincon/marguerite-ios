@@ -1,6 +1,6 @@
 //
 //  WebViewController.swift
-//  Marguerite
+//  A UIViewController for displaying webpages in a UIWebView.
 //
 //  Created by Kevin Conley on 3/11/15.
 //  Copyright (c) 2015 Kevin Conley. All rights reserved.
@@ -17,13 +17,13 @@ class WebViewController: UIViewController, UIWebViewDelegate {
 
     // MARK: - Private API
     
-    let activityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.White)
+    private let activityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.White)
 
     // MARK: - Outlets
 
-    @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet private weak var errorLabel: UILabel!
 
-    @IBOutlet weak var toolbar: UIToolbar! {
+    @IBOutlet private weak var toolbar: UIToolbar! {
         didSet {
             if hideToolbar {
                 toolbar.removeFromSuperview()
@@ -31,11 +31,11 @@ class WebViewController: UIViewController, UIWebViewDelegate {
         }
     }
 
-    @IBOutlet weak var backButton: UIBarButtonItem!
+    @IBOutlet private weak var backButton: UIBarButtonItem!
 
-    @IBOutlet weak var forwardButton: UIBarButtonItem!
+    @IBOutlet private weak var forwardButton: UIBarButtonItem!
 
-    @IBOutlet weak var webView: UIWebView! {
+    @IBOutlet private weak var webView: UIWebView! {
         didSet {
             webView.delegate = self
             if urlToLoad != nil {
@@ -58,11 +58,11 @@ class WebViewController: UIViewController, UIWebViewDelegate {
 
     // MARK: - Actions
 
-    @IBAction func goBack(sender: UIBarButtonItem) {
+    @IBAction private func goBack(sender: UIBarButtonItem) {
         webView.goBack()
     }
     
-    @IBAction func goForward(sender: UIBarButtonItem) {
+    @IBAction private func goForward(sender: UIBarButtonItem) {
         webView.goForward()
     }
 
@@ -86,14 +86,14 @@ class WebViewController: UIViewController, UIWebViewDelegate {
         showErrorLabel()
     }
 
-    // MARK: - Error label
+    // MARK: - Error label showing/hiding
 
-    func showErrorLabel() {
+    private func showErrorLabel() {
         errorLabel.hidden = false
         errorLabel.superview?.bringSubviewToFront(self.errorLabel)
     }
 
-    func hideErrorLabel() {
+    private func hideErrorLabel() {
         errorLabel.hidden = true
     }
 }

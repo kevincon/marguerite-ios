@@ -1,6 +1,6 @@
 //
 //  RouteTableViewCell.swift
-//  Marguerite
+//  A UITableViewCell for viewing a route.
 //
 //  Created by Kevin Conley on 3/13/15.
 //  Copyright (c) 2015 Kevin Conley. All rights reserved.
@@ -26,5 +26,5 @@ class RouteTableViewCell: UITableViewCell {
 
     // MARK: - Outlets
 
-    @IBOutlet weak var routeLabel: UILabel!
+    @IBOutlet private weak var routeLabel: UILabel!
 }

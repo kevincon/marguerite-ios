@@ -1,6 +1,11 @@
 //
 //  RealtimeBuses.swift
-//  Marguerite
+//  A convenience class for getting information about real-time locations of
+//  Marguerite shuttle buses.
+//
+//  A lot of the details of this implementation were reverse-engineered from
+//  the Marguerite web-based live shuttle map (javascript):
+//  http://lbre-apps.stanford.edu/transportation/stanford_ivl/
 //
 //  Created by Kevin Conley on 3/8/15.
 //  Copyright (c) 2015 Kevin Conley. All rights reserved.
@@ -10,11 +15,23 @@ import UIKit
 import CoreLocation
 
 extension NSError {
+    /**
+    Convenience function for creating an NSError object with a certain error
+    message.
+
+    :param: message The error message to use.
+
+    :returns: The resulting NSError object.
+    */
     class func errorWithString(message: String) -> NSError {
         return NSError(domain: "world", code: 200, userInfo: [NSLocalizedDescriptionKey: message])
     }
 }
 
+/**
+*  A class can implement this delegate protocol to receive success/failure
+*  updates when the real-time buses are refreshed.
+*/
 protocol RealtimeBusesDelegate: class {
     func busUpdateSuccess(buses: [RealtimeBus])
     func busUpdateFailure(error: NSError)
@@ -26,13 +43,7 @@ class RealtimeBuses: NSObject, NSXMLParserDelegate {
     
     var urlString: String
     weak var delegate: RealtimeBusesDelegate?
-    
-    // MARK: - Initializer
-    
-    init(urlString: String) {
-        self.urlString = urlString
-    }
-    
+
     /**
     Refresh the buses by downloading the XML feed, asynchronously.
     */
@@ -41,13 +52,19 @@ class RealtimeBuses: NSObject, NSXMLParserDelegate {
             dispatch_async(dispatch_get_global_queue(Int(QOS_CLASS_UTILITY.value), 0)) { () -> Void in
                 if let parser = NSXMLParser(contentsOfURL: url) {
                     parser.delegate = self
-                
+
                     if !parser.parse() {
                         self.delegate?.busUpdateFailure(NSError.errorWithString("Parsing XML failed."))
                     }
                 }
             }
         }
+    }
+
+    // MARK: - Initializer
+    
+    init(urlString: String) {
+        self.urlString = urlString
     }
     
     // MARK: - NSXMLParserDelegate
@@ -153,7 +170,14 @@ class RealtimeBuses: NSObject, NSXMLParserDelegate {
             }
         })
     }
-    
+
+    /**
+    Create a string of comma-separated vehicleIds from a list of bus XML dictionaries.
+
+    :param: busDictionaries The list of bus dictionaries constructed from XML.
+
+    :returns: The comma-separated string of vehicleIds.
+    */
     private func extractVehicleIdsFromBusDictionaries(busDictionaries: [[String:String]]) -> String {
         var vehicleIds = [String]()
         
@@ -206,11 +230,11 @@ class RealtimeBuses: NSObject, NSXMLParserDelegate {
     }
     
     /**
-    The XML feed identifies buses using a (mostly) 4-digit ID in the name
+    The XML feed identifies buses using a numeric ID in the name
     element, called a vehicle ID.
     
     The vehicle ID is translated to a farebox ID using the POST request in
-    "updateFareboxIds".
+    "parserDidEndDocument()".
     
     This function translates a farebox ID into the corresponding GTFS route ID.
     
@@ -303,8 +327,8 @@ class RealtimeBuses: NSObject, NSXMLParserDelegate {
                 //Medical Center Limited
                 return "47"
             case 50:
-                //EB ???
-                return nil;
+                //EB
+                return "55";
             case 51:
                 //Electric 1050A
                 return "28"

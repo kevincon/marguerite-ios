@@ -1,6 +1,6 @@
 //
 //  StopViewControllerTableViewController.swift
-//  Marguerite
+//  A UIViewController for listing the next departure times for a stop.
 //
 //  Created by Kevin Conley on 3/4/15.
 //  Copyright (c) 2015 Kevin Conley. All rights reserved.
@@ -8,15 +8,59 @@
 
 import UIKit
 
+/**
+*  This delegate protocol allows a stop view controller to refresh the favorite
+*  stops being displayed in the NextShuttleViewController as soon as they are
+*  modified.
+*/
 protocol NextShuttleTableViewRefreshDelegate: class {
     func refreshFavoriteStops()
 }
 
 class StopViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+
+    // MARK: - Public API
+
+    var stop: Stop? {
+        didSet {
+            if stop != nil {
+                self.title = stop!.stopName
+                isFavoriteStop = stop!.isFavoriteStop
+                nextBuses = getNextBuses()
+            }
+        }
+    }
+
+    // MARK: - Private API
+
+    private var isFavoriteStop: Bool = false {
+        didSet {
+            if isFavoriteStop {
+                toggleFavoriteStopText = "Remove Favorite Stop"
+            } else {
+                toggleFavoriteStopText = "Add Favorite Stop"
+            }
+        }
+    }
+
+    private var toggleFavoriteStopText = "Add Favorite Stop"
+
+    private var nextBuses = [StopTime]()
+
+    // MARK: - Table Sections
+
+    private var tableSections = [TableSection]()
+    private let toggleFavoriteStopSection = TableSection()
+    private let viewOnMapSection = TableSection()
+    private let busesSection = TableSection(header: "Next Shuttles", indexHeader: nil)
+
+    // MARK: - Delegates
+
     weak var refreshDelegate: NextShuttleTableViewRefreshDelegate?
-    
-    @IBOutlet weak var tableView: UITableView!
+
+    // MARK: - Outlets
+
+    @IBOutlet private weak var tableView: UITableView!
     
     // MARK: - View Controller Lifecycle
     
@@ -32,7 +76,7 @@ class StopViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     // MARK: - Querying next shuttles
     
-    func getNextBuses() -> [StopTime] {
+    private func getNextBuses() -> [StopTime] {
         if let db = GTFSDatabase.open() {
             let currentDate = NSDate()
             
@@ -87,50 +131,23 @@ class StopViewController: UIViewController, UITableViewDelegate, UITableViewData
                 }
             }
         }
-
         return []
     }
     
-    // MARK: - Model
+    // MARK: - Storyboard constants
     
-    struct Storyboard {
+    private struct Storyboard {
         static let toggleFavoriteStopCellIdentifier = "ToggleFavoriteStopCell"
         static let viewOnMapCellIdentifier = "ViewOnMapCell"
         static let busCellIdentifier = "BusCell"
-    }
-    
-    let toggleFavoriteStopSection = TableSection()
-    let viewOnMapSection = TableSection()
-    let busesSection = TableSection(header: "Next Shuttles", indexHeader: nil)
 
-    var tableSections = [TableSection]()
-    
-    var stop: Stop? {
-        didSet {
-            if stop != nil {
-                self.title = stop!.stopName
-                isFavoriteStop = stop!.isFavoriteStop
-                nextBuses = getNextBuses()
-            }
-        }
+        static let viewOnMapText = "View on Map"
+        static let serviceCompleteText = "Today's service complete."
     }
-    var isFavoriteStop: Bool = false {
-        didSet {
-            if isFavoriteStop {
-                toggleFavoriteStopText = "Remove Favorite Stop"
-            } else {
-                toggleFavoriteStopText = "Add Favorite Stop"
-            }
-        }
-    }
-    
-    var toggleFavoriteStopText = "Add Favorite Stop"
-    
-    var nextBuses = [StopTime]()
     
     // MARK: - Toggling favorite stop
     
-    func addStopToFavorites() {
+    private func addStopToFavorites() {
         var favoriteStops = Stop.favoriteStops
         favoriteStops.append(stop!)
         Stop.favoriteStops = favoriteStops
@@ -139,7 +156,7 @@ class StopViewController: UIViewController, UITableViewDelegate, UITableViewData
         refreshDelegate?.refreshFavoriteStops()
     }
         
-    func removeStopFromFavorites() {
+    private func removeStopFromFavorites() {
         let newFavoriteStops = Stop.favoriteStops.filter({(stop: Stop) -> Bool in
             return stop.stopId != self.stop?.stopId
         })
@@ -149,7 +166,7 @@ class StopViewController: UIViewController, UITableViewDelegate, UITableViewData
         refreshDelegate?.refreshFavoriteStops()
     }
     
-    // MARK: - Table view data source
+    // MARK: - UITableViewDataSource
 
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return tableSections.count
@@ -177,7 +194,7 @@ class StopViewController: UIViewController, UITableViewDelegate, UITableViewData
         switch tableSections[section] {
         case busesSection:
             if nextBuses.count == 0 {
-                return "Today's service complete."
+                return Storyboard.serviceCompleteText
             }
         default:
             break
@@ -197,7 +214,7 @@ class StopViewController: UIViewController, UITableViewDelegate, UITableViewData
             cell.textLabel?.text = toggleFavoriteStopText
         case viewOnMapSection:
             cell = tableView.dequeueReusableCellWithIdentifier(Storyboard.viewOnMapCellIdentifier, forIndexPath: indexPath) as UITableViewCell
-            cell.textLabel?.text = "View on Map"
+            cell.textLabel?.text = Storyboard.viewOnMapText
         case busesSection:
             cell = tableView.dequeueReusableCellWithIdentifier(Storyboard.busCellIdentifier, forIndexPath: indexPath) as UITableViewCell
             let busCell = cell as StopTimeTableViewCell
@@ -209,6 +226,8 @@ class StopViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         return cell
     }
+
+    // MARK: - UITableViewDelegate
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         switch tableSections[indexPath.section] {
@@ -223,9 +242,8 @@ class StopViewController: UIViewController, UITableViewDelegate, UITableViewData
                 if let navController = controllers[1] as? UINavigationController {
                     navController.popToRootViewControllerAnimated(true)
                     if let mapController = navController.viewControllers.first as? LiveMapViewController {
-                        tabBarController?.selectedIndex = 1
                         mapController.stopToZoomTo = stop
-                        mapController.zoomToStop(stop!)
+                        tabBarController?.selectedIndex = 1
                     }
                 }
             }

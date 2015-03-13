@@ -1,6 +1,6 @@
 //
 //  Stop.swift
-//  Marguerite
+//  A GTFS stop.
 //
 //  Created by Kevin Conley on 3/1/15.
 //  Copyright (c) 2015 Kevin Conley. All rights reserved.
@@ -10,7 +10,9 @@ import UIKit
 import CoreLocation
 
 class Stop: NSObject, NSCoding {
-    
+
+    // MARK: - Constants
+
     struct Conversions {
         static let METERS_IN_A_MILE = 0.000621371
     }
@@ -24,7 +26,8 @@ class Stop: NSObject, NSCoding {
     }
     
     // MARK: - Static Functions
-    
+
+    /// A list of the user's favorite stops, persisted in NSUserDefaults.
     class var favoriteStops: [Stop] {
         get {
             if let data = NSUserDefaults.standardUserDefaults().objectForKey(UserDefaults.favoriteStopsKey) as? NSData {
@@ -41,6 +44,11 @@ class Stop: NSObject, NSCoding {
         }
     }
 
+    /**
+    Get a list of all of the stops from the GTFS data.
+
+    :returns: All of the stops in the GTFS data.
+    */
     class func getAllStops() -> [Stop] {
         var stops = [Stop]()
         if let db = GTFSDatabase.open() {
@@ -66,7 +74,17 @@ class Stop: NSObject, NSCoding {
         }
         return stops
     }
-    
+
+    /**
+    Get a list of a certain number of closest stops to a location, or the
+    number of stops, whichever is smaller. Calling this function also sets
+    the "milesAway" variable for all of the stops returned.
+
+    :param: numStops The number of closest stops to get.
+    :param: location The location to find closest stops near.
+
+    :returns: The list of closest stops to the provided location.
+    */
     class func getClosestStops(numStops: Int, location: CLLocation) -> [Stop] {
         let allStops = Stop.getAllStops()
         
@@ -100,6 +118,12 @@ class Stop: NSObject, NSCoding {
         super.init()
     }
 
+    /**
+    We store favorite stops in NSUserDefaults as a list of stop IDs, so this
+    function helps us turn those IDs into real Stop objects.
+
+    :param: sId The stop ID to use to populate this Stop object.
+    */
     private func setFieldsUsingStopId(sId: String) {
         if let db = GTFSDatabase.open() {
             let query = "select stop_id, stop_name, stop_lat, stop_lon, routes FROM stops WHERE stop_id=?"

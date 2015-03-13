@@ -1,6 +1,6 @@
 //
 //  Route.swift
-//  Marguerite
+//  A GTFS route.
 //
 //  Created by Kevin Conley on 3/8/15.
 //  Copyright (c) 2015 Kevin Conley. All rights reserved.
@@ -15,7 +15,19 @@ class Route {
     var routeUrl: NSURL
     var routeColor = UIColor()
     var routeTextColor = UIColor()
-    
+
+    /// The text to display for a route (some routes are missing the long name
+    /// field or short name field)
+    var displayName: String {
+        if self.routeLongName.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()) != "" {
+            return self.routeLongName
+        } else {
+            return self.routeShortName
+        }
+    }
+
+    // MARK: - Initializers
+
     init?(routeId: String) {
         self.routeId = ""
         self.routeShortName = ""
@@ -49,15 +61,7 @@ class Route {
         self.routeTextColor = routeTextColor
     }
 
-    /// The text to display for a route (some routes are missing the long name
-    /// field or short name field)
-    var displayName: String {
-        if self.routeLongName.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()) != "" {
-            return self.routeLongName
-        } else {
-            return self.routeShortName
-        }
-    }
+    // MARK: - Class Functions
 
     /**
     Get a list of all routes from the GTFS data.

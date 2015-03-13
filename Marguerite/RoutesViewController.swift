@@ -1,6 +1,6 @@
 //
 //  RoutesViewController.swift
-//  Marguerite
+//  A UIViewController for viewing all of the routes in a table.
 //
 //  Created by Kevin Conley on 3/12/15.
 //  Copyright (c) 2015 Kevin Conley. All rights reserved.
@@ -12,11 +12,11 @@ class RoutesViewController: UIViewController, UITableViewDataSource, UITableView
 
     // MARK: - Model
 
-    var routes = [Route]()
+    private var routes = [Route]()
 
     // MARK: - Outlets
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet private weak var tableView: UITableView!
 
     // MARK: - View Controller Lifecycle
 
@@ -60,6 +60,9 @@ class RoutesViewController: UIViewController, UITableViewDataSource, UITableView
         wvc.title = route.displayName
 
         let nc = UINavigationController(rootViewController: wvc)
+        // Extend the layout below opaque bars since we're segueing from a
+        // split view controller embedded in a tab bar controller, so this
+        // will help avoid the autolayout glitches associated with that
         nc.extendedLayoutIncludesOpaqueBars = true
         showDetailViewController(nc, sender: self)
     }

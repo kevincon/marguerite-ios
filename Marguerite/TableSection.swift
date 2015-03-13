@@ -1,6 +1,6 @@
 //
 //  TableSection.swift
-//  Marguerite
+//  A convenience class for representing sections of a UITableView.
 //
 //  Created by Kevin Conley on 3/4/15.
 //  Copyright (c) 2015 Kevin Conley. All rights reserved.
@@ -21,5 +21,4 @@ class TableSection: NSObject {
     override init() {
         super.init()
     }
-    
 }

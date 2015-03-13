@@ -1,6 +1,7 @@
 //
 //  LiveMapViewController.swift
-//  Marguerite
+//  A UIViewController for displaying real-time shuttle buses and stops on
+//  an MKMapView.
 //
 //  Created by Kevin Conley on 3/3/15.
 //  Copyright (c) 2015 Kevin Conley. All rights reserved.
@@ -26,10 +27,21 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
     private var timerShouldRepeat = true
     private var noBusesRunning = false
     private var busLoadError = false
-    
+
+    // MARK: - Storyboard constants
+
+    private struct Storyboard {
+        static let stopSegue = "ShowStopFromMapSegue"
+        static let loadingBusesText = "Loading buses..."
+        static let stopSubtitleText = "Tap here to view next shuttle times."
+        static let noBusesText = "No buses are reporting locations."
+        static let busServerErrorText = "Could not connect to bus server."
+        static let stopAnnotationViewIdentifier = "StopAnnotationView"
+    }
+
     // MARK: - Outlets
     
-    @IBOutlet weak var liveMapView: LiveMapView! {
+    @IBOutlet private weak var liveMapView: MKMapView! {
         didSet {
             HUD = GCDiscreetNotificationView(text: "", showActivity: false, inPresentationMode: GCDiscreetNotificationViewPresentationModeTop, inView: liveMapView)
         }
@@ -48,10 +60,17 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
     
     override func viewWillAppear(animated: Bool) {
         navigationController?.navigationBarHidden = true
-        showHUDWithMessage("Loading buses...", withActivity: true)
+        showHUDWithMessage(Storyboard.loadingBusesText, withActivity: true)
         timerShouldRepeat = true
         noBusesRunning = false
         busLoadError = false
+
+        // Zoom to a stop, if necessary
+        if stopToZoomTo != nil {
+            zoomToStop(stopToZoomTo!)
+            stopToZoomTo = nil
+        }
+
         refreshBuses()
     }
     
@@ -61,13 +80,21 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
         timerShouldRepeat = false
     }
     
-    // MARK: - Realtime Bus Drawing
-    
+    // MARK: - Real-time Bus Drawing
+
+    /**
+    Refresh the buses on the map.
+    */
     func refreshBuses() {
         realtimeBuses.update()
     }
-    
-    func updateMarkerWithBus(bus: RealtimeBus) {
+
+    /**
+    Update annotations on the map with new bus information.
+
+    :param: bus The new bus information.
+    */
+    private func updateMarkerWithBus(bus: RealtimeBus) {
         if let existingMarker = self.busMarkers[bus.vehicleId] {
             existingMarker.title = bus.route.routeShortName
             existingMarker.subtitle = bus.route.routeLongName
@@ -100,16 +127,23 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
 
     // MARK: - Stop Drawing
 
-    class StopAnnotation: MKPointAnnotation {
+    /**
+    *  An MKPointAnnotation for a stop on the live map.
+    *  (only used in this class and too small for a separate file)
+    */
+    private class StopAnnotation: MKPointAnnotation {
         var stop: Stop?
     }
 
-    func loadStops() {
+    /**
+    Load all of the stops from the GTFS data on the live map.
+    */
+    private func loadStops() {
         let allStops = Stop.getAllStops()
         for stop in allStops {
             let marker = StopAnnotation()
             marker.title = stop.stopName
-            marker.subtitle = "Tap here to view next shuttle times."
+            marker.subtitle = Storyboard.stopSubtitleText
             marker.coordinate = stop.location!.coordinate
             marker.stop = stop
             stopMarkers[stop.stopId!] = marker
@@ -118,10 +152,6 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
     }
 
     // MARK: - MKMapViewDelegate
-
-    struct Storyboard {
-        static let stopSegue = "ShowStopFromMapSegue"
-    }
 
     func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
         if let busAnnotation = annotation as? RealtimeBusAnnotation {
@@ -132,10 +162,10 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
             busView!.annotation = annotation
             return busView!
         } else if let stopAnnotation = annotation as? StopAnnotation {
-            var stopView = mapView.dequeueReusableAnnotationViewWithIdentifier("StopAnnotationView")
+            var stopView = mapView.dequeueReusableAnnotationViewWithIdentifier(Storyboard.stopAnnotationViewIdentifier)
             if stopView == nil {
-                stopView = MKAnnotationView(annotation: stopAnnotation, reuseIdentifier: "StopAnnotationView")
-                let circleRadius: CGFloat = 2.0
+                stopView = MKAnnotationView(annotation: stopAnnotation, reuseIdentifier: Storyboard.stopAnnotationViewIdentifier)
+                let circleRadius: CGFloat = 3.0
                 let circleImage = UIImage.circleWithRadius(circleRadius, color: UIColor.stanfordRedColor())
                 stopView?.image = circleImage
                 stopView?.canShowCallout = true
@@ -199,23 +229,12 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
                     self.updateMarkerWithBus(bus)
                 }
 
-                // Remove existing bus markers that are no longer in the result list
-                // TODO this doesn't work
-//                for vehicleId in self.busMarkers.keys {
-//                    if buses.filter({(bus: RealtimeBus) -> Bool in
-//                        return bus.vehicleId == vehicleId
-//                    }).count == 0 {
-//                        self.liveMapView.removeAnnotation(self.busMarkers[vehicleId])
-//                        self.busMarkers[vehicleId] = nil
-//                    }
-//                }
-
                 self.hideHUD()
                 self.noBusesRunning = false
                 self.busLoadError = false
             } else {
                 if !self.noBusesRunning {
-                    self.showHUDWithMessage("No buses are reporting locations.", withActivity: false)
+                    self.showHUDWithMessage(Storyboard.noBusesText, withActivity: false)
                 }
                 self.noBusesRunning = true;
                 self.busLoadError = false
@@ -224,12 +243,6 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
                 self.timer = NSTimer(timeInterval: self.busRefreshInterval, target: self, selector: Selector("refreshBuses"), userInfo: nil, repeats: false)
                 NSRunLoop.mainRunLoop().addTimer(self.timer, forMode: NSRunLoopCommonModes)
             }
-
-            // Wait to zoom to a stop until after we've loaded buses
-            if self.stopToZoomTo != nil {
-                self.zoomToStop(self.stopToZoomTo!)
-                self.stopToZoomTo = nil
-            }
         })
     }
     
@@ -237,7 +250,7 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
         dispatch_async(dispatch_get_main_queue(), { () -> Void in
             println(error)
             if !self.busLoadError {
-                self.showHUDWithMessage("Could not connect to bus server.", withActivity: false)
+                self.showHUDWithMessage(Storyboard.busServerErrorText, withActivity: false)
             }
             self.noBusesRunning = false
             self.busLoadError = true
@@ -245,17 +258,12 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
                 self.timer = NSTimer(timeInterval: self.busRefreshInterval, target: self, selector: Selector("refreshBuses"), userInfo: nil, repeats: false)
                 NSRunLoop.mainRunLoop().addTimer(self.timer, forMode: NSRunLoopCommonModes)
             }
-            // Wait to zoom to a stop until after we've tried to load buses
-            if self.stopToZoomTo != nil {
-                self.zoomToStop(self.stopToZoomTo!)
-                self.stopToZoomTo = nil
-            }
         })
     }
 
     // MARK: - Map zooming
 
-    let stanfordRegion = MKCoordinateRegionMake(CLLocationCoordinate2DMake(37.432233, -122.171183), MKCoordinateSpanMake(0.03, 0.03))
+    private let stanfordRegion = MKCoordinateRegionMake(CLLocationCoordinate2DMake(37.432233, -122.171183), MKCoordinateSpanMake(0.03, 0.03))
     
     @IBAction func zoomToUserLocation() {
         liveMapView.setCenterCoordinate(liveMapView.userLocation.coordinate, animated: true)
@@ -265,7 +273,7 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
         liveMapView.setRegion(stanfordRegion, animated: true)
     }
 
-    func zoomToStop(stop: Stop) {
+    private func zoomToStop(stop: Stop) {
         if let marker = stopMarkers[stop.stopId!] {
             liveMapView.setCenterCoordinate(marker.coordinate, animated: true)
             liveMapView.selectAnnotation(marker, animated: true)
@@ -285,5 +293,4 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
     private func hideHUD() {
         HUD.hide(true)
     }
-
 }

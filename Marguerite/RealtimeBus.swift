@@ -1,6 +1,6 @@
 //
 //  RealtimeBus.swift
-//  Marguerite
+//  A real-time Marguerite shuttle bus.
 //
 //  Created by Kevin Conley on 3/8/15.
 //  Copyright (c) 2015 Kevin Conley. All rights reserved.

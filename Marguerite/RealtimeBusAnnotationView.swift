@@ -1,6 +1,10 @@
 //
 //  RealtimeBusAnnotationView.swift
-//  Marguerite
+//  An MKAnnotationView for a real-time Marguerite shuttle bus, represented
+//  as an arrow below the route short name text.
+//
+//  Some ideas for this annotation view were borrowed from:
+//  https://github.com/iMinichrispy/GT-Buses/blob/master/GT-Buses%2FGBBusAnnotationView.m
 //
 //  Created by Kevin Conley on 3/10/15.
 //  Copyright (c) 2015 Kevin Conley. All rights reserved.
@@ -11,9 +15,13 @@ import MapKit
 
 class RealtimeBusAnnotationView: MKAnnotationView {
 
+    // MARK: - UI Components
+
     let arrowImageView: UIImageView?
     let identiferLabel: UILabel?
-    
+
+    // MARK: - Initializers
+
     override init!(annotation: MKAnnotation!, reuseIdentifier: String!) {
         super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
         if !(annotation is RealtimeBusAnnotation) {
@@ -32,6 +40,8 @@ class RealtimeBusAnnotationView: MKAnnotationView {
         
         identiferLabel = UILabel()
         identiferLabel?.textColor = busAnnotation.textColor
+        // Use "Menlo-Bold" since it's monospaced and so it will better align
+        // the text in the label
         identiferLabel?.font = UIFont(name: "Menlo-Bold", size: 12.0)
         identiferLabel?.text = " \(busAnnotation.title) "
         identiferLabel?.textAlignment = NSTextAlignment.Left
@@ -39,14 +49,27 @@ class RealtimeBusAnnotationView: MKAnnotationView {
         identiferLabel?.layer.cornerRadius = 4
         identiferLabel?.layer.masksToBounds = true
         addSubview(identiferLabel!)
-        
+
+        // Programmatically set autolayout constraints to position the
+        // identifier label relative to the arrow
+
         identiferLabel?.setTranslatesAutoresizingMaskIntoConstraints(false)
         var constraints = [NSLayoutConstraint]()
         constraints.append(NSLayoutConstraint(item: identiferLabel!, attribute: .CenterX, relatedBy: .Equal, toItem: arrowImageView, attribute: .CenterX, multiplier: 1.0, constant: 0.0))
         constraints.append(NSLayoutConstraint(item: identiferLabel!, attribute: .CenterY, relatedBy: .Equal, toItem: arrowImageView, attribute: .Top, multiplier: 1.0, constant: -6.0))
         addConstraints(constraints)
     }
-    
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+
+    // MARK: - Arrow rotation
+
     func DEGREES_TO_RADIANS(angle: Double) -> CGFloat {
         return CGFloat((angle) / 180.0 * M_PI)
     }
@@ -54,13 +77,5 @@ class RealtimeBusAnnotationView: MKAnnotationView {
     func updateArrowImageRotation() {
         let busAnnotation = self.annotation as RealtimeBusAnnotation
         arrowImageView?.transform = CGAffineTransformMakeRotation(DEGREES_TO_RADIANS(busAnnotation.heading));
-    }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
-    
-    required init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
     }
 }

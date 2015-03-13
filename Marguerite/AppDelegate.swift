@@ -16,14 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+
+        // Customize app-wide appearance of navigation bar and tab bar
         UINavigationBar.appearance().barTintColor = UIColor.stanfordRedColor()
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
-
         UIBarButtonItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.whiteColor()], forState: UIControlState.Normal)
-
         UITabBar.appearance().tintColor = UIColor.whiteColor()
 
+        // Configure Instabug user feedback library
         Instabug.startWithToken("26715dd86148c8e180f75e4cec931d12", captureSource: IBGCaptureSourceUIKit, invocationEvent: IBGInvocationEventNone)
         Instabug.setWillShowEmailField(true)
         Instabug.setWillShowFeedbackSentAlert(true)
@@ -32,6 +33,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Instabug.setColorTheme(IBGColorThemeRed)
         Instabug.setHeaderColor(UIColor.stanfordRedColor())
 
+        // Setup NSURLCache with some disk capacity so route map PDFs will be
+        // cached for offline viewing
         let URLCache = NSURLCache(memoryCapacity: 4 * 1024 * 1024, diskCapacity: 20 * 1024 * 1024, diskPath: "urlcache.db")
         NSURLCache.setSharedURLCache(URLCache)
 

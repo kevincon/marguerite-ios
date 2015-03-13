@@ -1,6 +1,6 @@
 //
 //  GTFSDatabase.swift
-//  Marguerite
+//  A convenience class for accessing the GTFS sqlite3 database.
 //
 //  Created by Kevin Conley on 3/1/15.
 //  Copyright (c) 2015 Kevin Conley. All rights reserved.

@@ -76,7 +76,7 @@ class AboutTableViewController: UITableViewController {
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let wvc = segue.destinationViewController as? WebViewController {
-            wvc.urlStringToLoad = segueIdToWebsiteLookupTable[segue.identifier!]
+            wvc.urlToLoad = NSURL(string: segueIdToWebsiteLookupTable[segue.identifier!]!)
         }
     }
 }

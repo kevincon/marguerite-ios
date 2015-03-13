@@ -51,4 +51,33 @@ class RoutesViewController: UIViewController, UITableViewDataSource, UITableView
 
         return cell
     }
+
+    // MARK: - Segues
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let wvc = segue.destinationViewController as? WebViewController {
+            if let indexPath = tableView.indexPathForSelectedRow() {
+                let route = routes[indexPath.row]
+                wvc.urlToLoad = getURLForRoute(route)
+                wvc.hideToolbar = true
+            }
+        }
+    }
+
+    // MARK: - Route Maps
+
+    // Some of the routes have bogus URLs, so handle those cases with this function
+    private func getURLForRoute(route: Route) -> NSURL? {
+        switch route.routeShortName {
+        case "RMH":
+            // This route doesn't actually seem to exist on the Marguerite website...
+            return nil
+        case "W":
+            return NSURL(string: "http://transportation.stanford.edu/marguerite/w/map.pdf")
+        case "MC-Hol":
+            return NSURL(string: "http://transportation.stanford.edu/marguerite/mch/map.pdf")
+        default:
+            return NSURL(string: "\(route.routeUrl.absoluteString!)/map.pdf")
+        }
+    }
 }

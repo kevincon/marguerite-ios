@@ -12,12 +12,24 @@ class WebViewController: UIViewController, UIWebViewDelegate {
 
     // MARK: - Public API
 
-    var urlStringToLoad: String?
+    var urlToLoad: NSURL?
+    var hideToolbar = false
 
     // MARK: - Private API
+    
     let activityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.White)
 
     // MARK: - Outlets
+
+    @IBOutlet weak var errorLabel: UILabel!
+
+    @IBOutlet weak var toolbar: UIToolbar! {
+        didSet {
+            if hideToolbar {
+                toolbar.removeFromSuperview()
+            }
+        }
+    }
 
     @IBOutlet weak var backButton: UIBarButtonItem!
 
@@ -26,9 +38,12 @@ class WebViewController: UIViewController, UIWebViewDelegate {
     @IBOutlet weak var webView: UIWebView! {
         didSet {
             webView.delegate = self
-            if let url = NSURL(string: urlStringToLoad!) {
-                let urlRequest = NSURLRequest(URL: url)
+            if urlToLoad != nil {
+                let urlRequest = NSURLRequest(URL: urlToLoad!)
                 webView.loadRequest(urlRequest)
+            } else {
+                activityIndicatorView.stopAnimating()
+                showErrorLabel()
             }
         }
     }
@@ -61,5 +76,22 @@ class WebViewController: UIViewController, UIWebViewDelegate {
         activityIndicatorView.stopAnimating()
         backButton.enabled = webView.canGoBack
         forwardButton.enabled = webView.canGoForward
+        hideErrorLabel()
+    }
+
+    func webView(webView: UIWebView, didFailLoadWithError error: NSError) {
+        activityIndicatorView.stopAnimating()
+        showErrorLabel()
+    }
+
+    // MARK: - Error label
+
+    func showErrorLabel() {
+        errorLabel.hidden = false
+        errorLabel.superview?.bringSubviewToFront(self.errorLabel)
+    }
+
+    func hideErrorLabel() {
+        errorLabel.hidden = true
     }
 }

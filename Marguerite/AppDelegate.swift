@@ -32,6 +32,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Instabug.setColorTheme(IBGColorThemeRed)
         Instabug.setHeaderColor(UIColor.stanfordRedColor())
 
+        let URLCache = NSURLCache(memoryCapacity: 4 * 1024 * 1024, diskCapacity: 20 * 1024 * 1024, diskPath: "urlcache.db")
+        NSURLCache.setSharedURLCache(URLCache)
+
+        // There seems to be a bug with DiskImageCache, so just disable it since
+        // we don't really need it for this app
+        // https://stackoverflow.com/questions/16525065/disable-uiwebview-diskimagecache
+        // https://stackoverflow.com/questions/28763838/uiwebview-diskimagecache-not-working-correctly-in-ios8
+        NSUserDefaults.standardUserDefaults().setBool(false, forKey: "WebKitDiskImageCacheEnabled")
+
         return true
     }
 

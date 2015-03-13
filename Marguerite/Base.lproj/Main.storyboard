@@ -518,6 +518,7 @@
                     <connections>
                         <outlet property="searchDisplayController" destination="E8E-0Z-XTI" id="WWP-b1-rrK"/>
                         <outlet property="tableView" destination="M3A-Kj-BaX" id="MPC-DA-NMr"/>
+                        <segue destination="Kg6-ec-oXh" kind="show" identifier="StopSegue" id="LSO-8J-3le"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="peW-bj-vSb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -559,7 +560,7 @@
         <!--Stop View Controller-->
         <scene sceneID="6NA-Fv-qIE">
             <objects>
-                <viewController storyboardIdentifier="StopViewController" extendedLayoutIncludesOpaqueBars="YES" id="Kg6-ec-oXh" customClass="StopViewController" customModule="Marguerite" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StopViewController" extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" id="Kg6-ec-oXh" customClass="StopViewController" customModule="Marguerite" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VrV-vt-Kwy"/>
                         <viewControllerLayoutGuide type="bottom" id="2v6-dM-85S"/>
@@ -569,7 +570,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="cHd-o7-Whe">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToggleFavoriteStopCell" textLabel="ZsC-rv-Qui" style="IBUITableViewCellStyleDefault" id="X14-lI-Q5z">
@@ -658,6 +659,7 @@
                             <constraint firstItem="cHd-o7-Whe" firstAttribute="top" secondItem="VrV-vt-Kwy" secondAttribute="bottom" id="6wk-Qc-3HX"/>
                             <constraint firstItem="cHd-o7-Whe" firstAttribute="leading" secondItem="eXx-ue-ah3" secondAttribute="leading" id="F1f-1m-9zY"/>
                             <constraint firstItem="cHd-o7-Whe" firstAttribute="top" secondItem="VrV-vt-Kwy" secondAttribute="bottom" id="HRK-By-poW"/>
+                            <constraint firstItem="cHd-o7-Whe" firstAttribute="top" secondItem="VrV-vt-Kwy" secondAttribute="bottom" id="W4p-cw-e8E"/>
                             <constraint firstItem="cHd-o7-Whe" firstAttribute="top" secondItem="VrV-vt-Kwy" secondAttribute="bottom" id="ZM2-v3-3Kq"/>
                             <constraint firstItem="cHd-o7-Whe" firstAttribute="bottom" secondItem="2v6-dM-85S" secondAttribute="top" id="h2e-M6-hhs"/>
                             <constraint firstItem="2v6-dM-85S" firstAttribute="top" secondItem="cHd-o7-Whe" secondAttribute="bottom" id="ncS-Vc-dYD"/>
@@ -670,6 +672,7 @@
                                 <exclude reference="HRK-By-poW"/>
                                 <exclude reference="ZM2-v3-3Kq"/>
                                 <exclude reference="h2e-M6-hhs"/>
+                                <exclude reference="oSW-za-9HZ"/>
                                 <exclude reference="1xu-Vr-BTa"/>
                             </mask>
                         </variation>
@@ -748,24 +751,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4yM-5g-47q">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4yM-5g-47q">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RouteTableCell" textLabel="6ql-Vn-7PQ" style="IBUITableViewCellStyleDefault" id="cok-R0-uQd">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RouteTableCell" id="cok-R0-uQd" customClass="RouteTableViewCell" customModule="Marguerite" customModuleProvider="target">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cok-R0-uQd" id="JMm-vO-Lwl">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6ql-Vn-7PQ">
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Route Display Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzs-xI-QxY">
+                                                    <rect key="frame" x="8" y="11" width="157" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bzs-xI-QxY" firstAttribute="leading" secondItem="JMm-vO-Lwl" secondAttribute="leadingMargin" id="i9I-wF-gFN"/>
+                                                <constraint firstAttribute="centerY" secondItem="bzs-xI-QxY" secondAttribute="centerY" id="mLn-kX-VZi"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="routeLabel" destination="bzs-xI-QxY" id="xiU-gT-PEG"/>
                                             <segue destination="QpU-PX-Nhr" kind="show" identifier="RouteMapSegue" id="VEg-fR-DMI"/>
                                         </connections>
                                     </tableViewCell>

@@ -41,11 +41,9 @@ class RoutesViewController: UIViewController, UITableViewDataSource, UITableView
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(Storyboard.routeTableViewCellIdentifier, forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(Storyboard.routeTableViewCellIdentifier, forIndexPath: indexPath) as RouteTableViewCell
         let route = routes[indexPath.row]
-        cell.textLabel?.text = route.displayName
-        cell.textLabel?.textColor = route.routeTextColor
-        cell.backgroundColor = route.routeColor
+        cell.route = route
 
         return cell
     }

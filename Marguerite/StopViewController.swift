@@ -201,22 +201,15 @@ class StopViewController: UIViewController, UITableViewDelegate, UITableViewData
         case busesSection:
             cell = tableView.dequeueReusableCellWithIdentifier(Storyboard.busCellIdentifier, forIndexPath: indexPath) as UITableViewCell
             let busCell = cell as StopTimeTableViewCell
-            
-            let twelveHourFormat = NSDateFormatter()
-            twelveHourFormat.dateFormat = "h:mm a"
-            
             let stopTime = nextBuses[indexPath.row]
-            
-            busCell.departureTimeLabel?.text = twelveHourFormat.stringFromDate(stopTime.departureTime!)
-            busCell.routeLabel?.text = stopTime.displayName
-            busCell.routeLabel?.textColor = stopTime.routeColor
+            busCell.stopTime = stopTime
         default:
             break
         }
         
         return cell
     }
-    
+
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         switch tableSections[indexPath.section] {
         case toggleFavoriteStopSection:

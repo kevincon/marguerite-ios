@@ -30,6 +30,7 @@
 		F42FD99A1AAD77F50027DAEE /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42FD9991AAD77F50027DAEE /* Route.swift */; };
 		F42FD99C1AB00DFF0027DAEE /* RealtimeBusAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42FD99B1AB00DFF0027DAEE /* RealtimeBusAnnotationView.swift */; };
 		F42FD99E1AB00F0E0027DAEE /* RealtimeBusAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42FD99D1AB00F0E0027DAEE /* RealtimeBusAnnotation.swift */; };
+		F47608AB1AB2EBAA00ED3659 /* RouteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47608AA1AB2EBAA00ED3659 /* RouteTableViewCell.swift */; };
 		F48A7B4C1AA77C85001623EF /* UIColor+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A7B4B1AA77C85001623EF /* UIColor+Extras.swift */; };
 		F4CF5A071AA8413200F92BE2 /* agency.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4CF5A001AA8413200F92BE2 /* agency.txt */; };
 		F4CF5A081AA8413200F92BE2 /* calendar_dates.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4CF5A011AA8413200F92BE2 /* calendar_dates.txt */; };
@@ -95,6 +96,7 @@
 		F42FD9991AAD77F50027DAEE /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		F42FD99B1AB00DFF0027DAEE /* RealtimeBusAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealtimeBusAnnotationView.swift; sourceTree = "<group>"; };
 		F42FD99D1AB00F0E0027DAEE /* RealtimeBusAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealtimeBusAnnotation.swift; sourceTree = "<group>"; };
+		F47608AA1AB2EBAA00ED3659 /* RouteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteTableViewCell.swift; sourceTree = "<group>"; };
 		F48A7B4B1AA77C85001623EF /* UIColor+Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extras.swift"; sourceTree = "<group>"; };
 		F4CF5A001AA8413200F92BE2 /* agency.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = agency.txt; path = gtfs/agency.txt; sourceTree = SOURCE_ROOT; };
 		F4CF5A011AA8413200F92BE2 /* calendar_dates.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = calendar_dates.txt; path = gtfs/calendar_dates.txt; sourceTree = SOURCE_ROOT; };
@@ -249,6 +251,7 @@
 				F42FD9971AAD77C20027DAEE /* RealtimeBus.swift */,
 				F42FD9991AAD77F50027DAEE /* Route.swift */,
 				F42CE9C51AB2A28E00D23186 /* RoutesViewController.swift */,
+				F47608AA1AB2EBAA00ED3659 /* RouteTableViewCell.swift */,
 				F42CE9BB1AB14D8800D23186 /* AboutTableViewController.swift */,
 				F42CE9B91AB14D6200D23186 /* WebViewController.swift */,
 				F4F61E491AA42CA0009377CE /* GTFSDatabase.swift */,
@@ -430,6 +433,7 @@
 				F4F61E611AA6E615009377CE /* LiveMapViewController.swift in Sources */,
 				F41C7FBB1AA8273A009B2A23 /* GTFSFareAttributes.m in Sources */,
 				F42FD99C1AB00DFF0027DAEE /* RealtimeBusAnnotationView.swift in Sources */,
+				F47608AB1AB2EBAA00ED3659 /* RouteTableViewCell.swift in Sources */,
 				F41C7FC11AA8273A009B2A23 /* GTFSTrip.m in Sources */,
 				F4F61E5F1AA53FDB009377CE /* NextShuttleSplitViewController.swift in Sources */,
 				F4F61E5D1AA515D7009377CE /* CoreLocationController.swift in Sources */,

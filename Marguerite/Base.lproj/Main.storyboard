@@ -769,6 +769,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="bzs-xI-QxY" firstAttribute="leading" secondItem="JMm-vO-Lwl" secondAttribute="leadingMargin" id="i9I-wF-gFN"/>
+                                                <constraint firstItem="bzs-xI-QxY" firstAttribute="top" secondItem="JMm-vO-Lwl" secondAttribute="topMargin" constant="3" id="kdh-NT-7If"/>
                                                 <constraint firstAttribute="centerY" secondItem="bzs-xI-QxY" secondAttribute="centerY" id="mLn-kX-VZi"/>
                                             </constraints>
                                         </tableViewCellContentView>

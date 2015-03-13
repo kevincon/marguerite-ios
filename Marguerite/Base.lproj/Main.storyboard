@@ -201,7 +201,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Marguerite Service Feedback" footerTitle="The Marguerite office values your feedback about its bus service." id="hPQ-Sg-YDP">
+                            <tableViewSection headerTitle="Marguerite Service Feedback" footerTitle="The Marguerite Office values your feedback about its bus service." id="hPQ-Sg-YDP">
                                 <cells/>
                             </tableViewSection>
                             <tableViewSection id="u63-zA-0Zr">

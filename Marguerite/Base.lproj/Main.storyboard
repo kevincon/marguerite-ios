@@ -87,6 +87,7 @@
                     <navigationItem key="navigationItem" id="FLM-YS-Qay"/>
                     <connections>
                         <outlet property="liveMapView" destination="FkU-c2-fT4" id="9Kt-sO-T2J"/>
+                        <segue destination="Kg6-ec-oXh" kind="show" identifier="ShowStopFromMapSegue" id="BdI-cC-21b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qJT-iF-4f4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -514,7 +515,6 @@
                     <connections>
                         <outlet property="searchDisplayController" destination="E8E-0Z-XTI" id="WWP-b1-rrK"/>
                         <outlet property="tableView" destination="M3A-Kj-BaX" id="MPC-DA-NMr"/>
-                        <segue destination="Kg6-ec-oXh" kind="show" identifier="StopSegue" id="LSO-8J-3le"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="peW-bj-vSb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -556,17 +556,17 @@
         <!--Stop View Controller-->
         <scene sceneID="6NA-Fv-qIE">
             <objects>
-                <viewController storyboardIdentifier="StopViewController" extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" id="Kg6-ec-oXh" customClass="StopViewController" customModule="Marguerite" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StopViewController" automaticallyAdjustsScrollViewInsets="NO" id="Kg6-ec-oXh" customClass="StopViewController" customModule="Marguerite" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VrV-vt-Kwy"/>
                         <viewControllerLayoutGuide type="bottom" id="2v6-dM-85S"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eXx-ue-ah3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="cHd-o7-Whe">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToggleFavoriteStopCell" textLabel="ZsC-rv-Qui" style="IBUITableViewCellStyleDefault" id="X14-lI-Q5z">
@@ -658,9 +658,11 @@
                             <constraint firstItem="cHd-o7-Whe" firstAttribute="top" secondItem="VrV-vt-Kwy" secondAttribute="bottom" id="W4p-cw-e8E"/>
                             <constraint firstItem="cHd-o7-Whe" firstAttribute="top" secondItem="VrV-vt-Kwy" secondAttribute="bottom" id="ZM2-v3-3Kq"/>
                             <constraint firstItem="cHd-o7-Whe" firstAttribute="bottom" secondItem="2v6-dM-85S" secondAttribute="top" id="h2e-M6-hhs"/>
+                            <constraint firstItem="2v6-dM-85S" firstAttribute="top" secondItem="cHd-o7-Whe" secondAttribute="bottom" id="nYI-Px-fTQ"/>
                             <constraint firstItem="2v6-dM-85S" firstAttribute="top" secondItem="cHd-o7-Whe" secondAttribute="bottom" id="ncS-Vc-dYD"/>
                             <constraint firstItem="cHd-o7-Whe" firstAttribute="top" secondItem="eXx-ue-ah3" secondAttribute="top" id="oSW-za-9HZ"/>
                             <constraint firstAttribute="trailing" secondItem="cHd-o7-Whe" secondAttribute="trailing" id="sBq-Qw-n1W"/>
+                            <constraint firstAttribute="bottom" secondItem="cHd-o7-Whe" secondAttribute="bottom" id="yLt-8F-3tQ"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -670,6 +672,8 @@
                                 <exclude reference="h2e-M6-hhs"/>
                                 <exclude reference="oSW-za-9HZ"/>
                                 <exclude reference="1xu-Vr-BTa"/>
+                                <exclude reference="nYI-Px-fTQ"/>
+                                <exclude reference="ncS-Vc-dYD"/>
                             </mask>
                         </variation>
                     </view>
@@ -852,7 +856,7 @@
         <!--Live Map-->
         <scene sceneID="7dM-sr-mjr">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="nRv-vS-vKx" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="nRv-vS-vKx" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Live Map" image="location" id="Zfu-d7-CZo"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Wb-jd-SLD">

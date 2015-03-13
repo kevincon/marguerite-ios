@@ -220,6 +220,7 @@ class NextShuttleViewController: UIViewController, UITableViewDelegate, UITableV
             
             // This is crucial so that a gray bar does not appear at the bottom
             nc.extendedLayoutIncludesOpaqueBars = true
+            svc.extendedLayoutIncludesOpaqueBars = true
             
             showDetailViewController(nc, sender: self)
 

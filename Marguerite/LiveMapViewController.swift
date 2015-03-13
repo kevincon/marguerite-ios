@@ -120,7 +120,7 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
     // MARK: - MKMapViewDelegate
 
     struct Storyboard {
-        static let stopViewControllerIdentifier = "StopViewController"
+        static let stopSegue = "ShowStopFromMapSegue"
     }
 
     func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
@@ -148,13 +148,7 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
     }
 
     func mapView(mapView: MKMapView!, annotationView view: MKAnnotationView!, calloutAccessoryControlTapped control: UIControl!) {
-        if let stopAnnotation = view.annotation as? StopAnnotation {
-            if let stop = stopAnnotation.stop {
-                let svc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier(Storyboard.stopViewControllerIdentifier) as StopViewController
-                svc.stop = stop
-                navigationController?.pushViewController(svc, animated: true)
-            }
-        }
+        performSegueWithIdentifier(Storyboard.stopSegue, sender: self)
     }
 
     func mapView(mapView: MKMapView!, didAddAnnotationViews views: [AnyObject]!) {
@@ -180,6 +174,18 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
         // Move stop annotation views below everything when callout is deselected
         if let stopAnnotation = view.annotation as? StopAnnotation {
             view.layer.zPosition = -1
+        }
+    }
+
+    // MARK: - Segues
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let svc = segue.destinationViewController as? StopViewController {
+            if let selectedAnnotation = liveMapView.selectedAnnotations.first as? StopAnnotation {
+                if let stop = selectedAnnotation.stop {
+                    svc.stop = stop
+                }
+            }
         }
     }
 

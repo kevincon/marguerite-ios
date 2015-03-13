@@ -47,6 +47,7 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
     }
     
     override func viewWillAppear(animated: Bool) {
+        navigationController?.navigationBarHidden = true
         showHUDWithMessage("Loading buses...", withActivity: true)
         timerShouldRepeat = true
         noBusesRunning = false
@@ -97,22 +98,27 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
 
     // MARK: - Stop Drawing
 
-    // Convenience "typedef" for stop annotations
-    class StopAnnotation: MKPointAnnotation {}
+    class StopAnnotation: MKPointAnnotation {
+        var stop: Stop?
+    }
 
     func loadStops() {
         let allStops = Stop.getAllStops()
         for stop in allStops {
             let marker = StopAnnotation()
             marker.title = stop.stopName
-            marker.subtitle = "Tap here to view next shuttles."
             marker.coordinate = stop.location!.coordinate
+            marker.stop = stop
             stopMarkers[stop.stopId!] = marker
             liveMapView.addAnnotation(marker)
         }
     }
 
     // MARK: - MKMapViewDelegate
+
+    struct Storyboard {
+        static let stopViewControllerIdentifier = "StopViewController"
+    }
 
     func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
         if let busAnnotation = annotation as? RealtimeBusAnnotation {
@@ -130,11 +136,22 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
                 let circleImage = UIImage.circleWithRadius(circleRadius, color: UIColor.stanfordRedColor())
                 stopView?.image = circleImage
                 stopView?.canShowCallout = true
+                stopView?.rightCalloutAccessoryView = UIButton.buttonWithType(UIButtonType.InfoLight) as UIView
             }
             stopView!.annotation = annotation
             return stopView!
         }
         return nil
+    }
+
+    func mapView(mapView: MKMapView!, annotationView view: MKAnnotationView!, calloutAccessoryControlTapped control: UIControl!) {
+        if let stopAnnotation = view.annotation as? StopAnnotation {
+            if let stop = stopAnnotation.stop {
+                let svc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier(Storyboard.stopViewControllerIdentifier) as StopViewController
+                svc.stop = stop
+                navigationController?.pushViewController(svc, animated: true)
+            }
+        }
     }
 
     func mapView(mapView: MKMapView!, didAddAnnotationViews views: [AnyObject]!) {

@@ -26,6 +26,8 @@ class StopViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableSections.append(toggleFavoriteStopSection)
         tableSections.append(viewOnMapSection)
         tableSections.append(busesSection)
+
+        navigationController?.navigationBarHidden = false
     }
 
     // MARK: - Querying next shuttles
@@ -225,6 +227,7 @@ class StopViewController: UIViewController, UITableViewDelegate, UITableViewData
         case viewOnMapSection:
             if let controllers = tabBarController?.viewControllers {
                 if let navController = controllers[1] as? UINavigationController {
+                    navController.popToRootViewControllerAnimated(true)
                     if let mapController = navController.viewControllers.first as? LiveMapViewController {
                         tabBarController?.selectedIndex = 1
                         mapController.stopToZoomTo = stop

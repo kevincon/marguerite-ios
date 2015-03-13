@@ -68,6 +68,10 @@ class NextShuttleViewController: UIViewController, UITableViewDelegate, UITableV
     
     override func viewWillAppear(animated: Bool) {
         refreshNearbyStops(self)
+
+        // Refresh favorites just in case they were modified in the live
+        // map tab
+        refreshFavoriteStops()
     }
 
     // MARK: - Table view data source

@@ -31,16 +31,19 @@ class RealtimeBusAnnotationView: MKAnnotationView {
         self.frame = arrowImageView!.bounds
         
         identiferLabel = UILabel()
-        identiferLabel?.textColor = busAnnotation.color
-        identiferLabel?.font = UIFont.boldSystemFontOfSize(12)
-        identiferLabel?.text = busAnnotation.title
-        identiferLabel?.backgroundColor = UIColor.clearColor()
+        identiferLabel?.textColor = busAnnotation.textColor
+        identiferLabel?.font = UIFont(name: "Menlo-Bold", size: 12.0)
+        identiferLabel?.text = " \(busAnnotation.title) "
+        identiferLabel?.textAlignment = NSTextAlignment.Left
+        identiferLabel?.backgroundColor = busAnnotation.color
+        identiferLabel?.layer.cornerRadius = 4
+        identiferLabel?.layer.masksToBounds = true
         addSubview(identiferLabel!)
         
         identiferLabel?.setTranslatesAutoresizingMaskIntoConstraints(false)
         var constraints = [NSLayoutConstraint]()
         constraints.append(NSLayoutConstraint(item: identiferLabel!, attribute: .CenterX, relatedBy: .Equal, toItem: arrowImageView, attribute: .CenterX, multiplier: 1.0, constant: 0.0))
-        constraints.append(NSLayoutConstraint(item: identiferLabel!, attribute: .CenterY, relatedBy: .Equal, toItem: arrowImageView, attribute: .Top, multiplier: 1.0, constant: -8.0))
+        constraints.append(NSLayoutConstraint(item: identiferLabel!, attribute: .CenterY, relatedBy: .Equal, toItem: arrowImageView, attribute: .Top, multiplier: 1.0, constant: -6.0))
         addConstraints(constraints)
     }
     

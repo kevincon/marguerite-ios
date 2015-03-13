@@ -73,6 +73,7 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
             existingMarker.subtitle = bus.route.routeLongName
             existingMarker.heading = bus.heading
             existingMarker.color = bus.route.routeColor
+            existingMarker.textColor = bus.route.routeTextColor
             
             let markerView = liveMapView.viewForAnnotation(existingMarker)
             if let busView = markerView as? RealtimeBusAnnotationView {
@@ -89,6 +90,7 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
             marker.subtitle = bus.route.routeLongName
             marker.heading = bus.heading
             marker.color = bus.route.routeColor
+            marker.textColor = bus.route.routeTextColor
 
             marker.coordinate = bus.location
             

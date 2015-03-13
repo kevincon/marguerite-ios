@@ -10,7 +10,8 @@ import UIKit
 import MapKit
 
 class RealtimeBusAnnotation: MKPointAnnotation {
-    var color = UIColor()
+    var color: UIColor!
+    var textColor: UIColor!
     var heading: Double = 0.0
     var identifer: String
     

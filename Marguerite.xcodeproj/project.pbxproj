@@ -8,19 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DAFA4465FC1F6A7992D43A03 /* libPods-Marguerite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D8696DDAE08EDF584D86EC /* libPods-Marguerite.a */; };
-		F41C7FB11AA8273A009B2A23 /* GTFSImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C7F8A1AA8273A009B2A23 /* GTFSImporter.m */; };
-		F41C7FB21AA8273A009B2A23 /* CSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C7F8E1AA8273A009B2A23 /* CSVParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F41C7FB81AA8273A009B2A23 /* GTFSAgency.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C7F9C1AA8273A009B2A23 /* GTFSAgency.m */; };
-		F41C7FB91AA8273A009B2A23 /* GTFSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C7F9E1AA8273A009B2A23 /* GTFSCalendar.m */; };
-		F41C7FBA1AA8273A009B2A23 /* GTFSCalendarDate.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C7FA01AA8273A009B2A23 /* GTFSCalendarDate.m */; };
-		F41C7FBB1AA8273A009B2A23 /* GTFSFareAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C7FA21AA8273A009B2A23 /* GTFSFareAttributes.m */; };
-		F41C7FBC1AA8273A009B2A23 /* GTFSFareRules.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C7FA41AA8273A009B2A23 /* GTFSFareRules.m */; };
-		F41C7FBD1AA8273A009B2A23 /* GTFSRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C7FA61AA8273A009B2A23 /* GTFSRoute.m */; };
-		F41C7FBE1AA8273A009B2A23 /* GTFSShape.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C7FA81AA8273A009B2A23 /* GTFSShape.m */; };
-		F41C7FBF1AA8273A009B2A23 /* GTFSStop.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C7FAA1AA8273A009B2A23 /* GTFSStop.m */; };
-		F41C7FC01AA8273A009B2A23 /* GTFSStopTime.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C7FAC1AA8273A009B2A23 /* GTFSStopTime.m */; };
-		F41C7FC11AA8273A009B2A23 /* GTFSTrip.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C7FAE1AA8273A009B2A23 /* GTFSTrip.m */; };
-		F41C7FC51AA82C19009B2A23 /* GTFSUnarchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C7FC41AA82C19009B2A23 /* GTFSUnarchiver.m */; };
 		F42CE9BA1AB14D6200D23186 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42CE9B91AB14D6200D23186 /* WebViewController.swift */; };
 		F42CE9BC1AB14D8800D23186 /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42CE9BB1AB14D8800D23186 /* AboutTableViewController.swift */; };
 		F42CE9C21AB17FE700D23186 /* UIImage+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42CE9C11AB17FE700D23186 /* UIImage+Extras.swift */; };
@@ -59,32 +46,6 @@
 		8B5D0249E03FE918B9CB0026 /* Pods-Marguerite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marguerite.release.xcconfig"; path = "Pods/Target Support Files/Pods-Marguerite/Pods-Marguerite.release.xcconfig"; sourceTree = "<group>"; };
 		C6D8696DDAE08EDF584D86EC /* libPods-Marguerite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Marguerite.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9CE9FDC8DA518A8547B179 /* Pods-Marguerite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marguerite.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Marguerite/Pods-Marguerite.debug.xcconfig"; sourceTree = "<group>"; };
-		F41C7F891AA8273A009B2A23 /* GTFSImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTFSImporter.h; sourceTree = "<group>"; };
-		F41C7F8A1AA8273A009B2A23 /* GTFSImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTFSImporter.m; sourceTree = "<group>"; };
-		F41C7F8D1AA8273A009B2A23 /* CSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVParser.h; sourceTree = "<group>"; };
-		F41C7F8E1AA8273A009B2A23 /* CSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVParser.m; sourceTree = "<group>"; };
-		F41C7F9B1AA8273A009B2A23 /* GTFSAgency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTFSAgency.h; sourceTree = "<group>"; };
-		F41C7F9C1AA8273A009B2A23 /* GTFSAgency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTFSAgency.m; sourceTree = "<group>"; };
-		F41C7F9D1AA8273A009B2A23 /* GTFSCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTFSCalendar.h; sourceTree = "<group>"; };
-		F41C7F9E1AA8273A009B2A23 /* GTFSCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTFSCalendar.m; sourceTree = "<group>"; };
-		F41C7F9F1AA8273A009B2A23 /* GTFSCalendarDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTFSCalendarDate.h; sourceTree = "<group>"; };
-		F41C7FA01AA8273A009B2A23 /* GTFSCalendarDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTFSCalendarDate.m; sourceTree = "<group>"; };
-		F41C7FA11AA8273A009B2A23 /* GTFSFareAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTFSFareAttributes.h; sourceTree = "<group>"; };
-		F41C7FA21AA8273A009B2A23 /* GTFSFareAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTFSFareAttributes.m; sourceTree = "<group>"; };
-		F41C7FA31AA8273A009B2A23 /* GTFSFareRules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTFSFareRules.h; sourceTree = "<group>"; };
-		F41C7FA41AA8273A009B2A23 /* GTFSFareRules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTFSFareRules.m; sourceTree = "<group>"; };
-		F41C7FA51AA8273A009B2A23 /* GTFSRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTFSRoute.h; sourceTree = "<group>"; };
-		F41C7FA61AA8273A009B2A23 /* GTFSRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTFSRoute.m; sourceTree = "<group>"; };
-		F41C7FA71AA8273A009B2A23 /* GTFSShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTFSShape.h; sourceTree = "<group>"; };
-		F41C7FA81AA8273A009B2A23 /* GTFSShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTFSShape.m; sourceTree = "<group>"; };
-		F41C7FA91AA8273A009B2A23 /* GTFSStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTFSStop.h; sourceTree = "<group>"; };
-		F41C7FAA1AA8273A009B2A23 /* GTFSStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTFSStop.m; sourceTree = "<group>"; };
-		F41C7FAB1AA8273A009B2A23 /* GTFSStopTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTFSStopTime.h; sourceTree = "<group>"; };
-		F41C7FAC1AA8273A009B2A23 /* GTFSStopTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTFSStopTime.m; sourceTree = "<group>"; };
-		F41C7FAD1AA8273A009B2A23 /* GTFSTrip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTFSTrip.h; sourceTree = "<group>"; };
-		F41C7FAE1AA8273A009B2A23 /* GTFSTrip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTFSTrip.m; sourceTree = "<group>"; };
-		F41C7FC31AA82C19009B2A23 /* GTFSUnarchiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTFSUnarchiver.h; sourceTree = "<group>"; };
-		F41C7FC41AA82C19009B2A23 /* GTFSUnarchiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTFSUnarchiver.m; sourceTree = "<group>"; };
 		F42CE9B91AB14D6200D23186 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		F42CE9BB1AB14D8800D23186 /* AboutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
 		F42CE9C11AB17FE700D23186 /* UIImage+Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extras.swift"; sourceTree = "<group>"; };
@@ -149,65 +110,6 @@
 				C6D8696DDAE08EDF584D86EC /* libPods-Marguerite.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F41C7F871AA8273A009B2A23 /* libraries */ = {
-			isa = PBXGroup;
-			children = (
-				F41C7F881AA8273A009B2A23 /* GTFSImporter */,
-			);
-			name = libraries;
-			path = ../libraries;
-			sourceTree = "<group>";
-		};
-		F41C7F881AA8273A009B2A23 /* GTFSImporter */ = {
-			isa = PBXGroup;
-			children = (
-				F41C7FC31AA82C19009B2A23 /* GTFSUnarchiver.h */,
-				F41C7FC41AA82C19009B2A23 /* GTFSUnarchiver.m */,
-				F41C7F891AA8273A009B2A23 /* GTFSImporter.h */,
-				F41C7F8A1AA8273A009B2A23 /* GTFSImporter.m */,
-				F41C7F8C1AA8273A009B2A23 /* CSVParser */,
-				F41C7F9A1AA8273A009B2A23 /* Model */,
-			);
-			path = GTFSImporter;
-			sourceTree = "<group>";
-		};
-		F41C7F8C1AA8273A009B2A23 /* CSVParser */ = {
-			isa = PBXGroup;
-			children = (
-				F41C7F8D1AA8273A009B2A23 /* CSVParser.h */,
-				F41C7F8E1AA8273A009B2A23 /* CSVParser.m */,
-			);
-			name = CSVParser;
-			path = Libraries/CSVParser;
-			sourceTree = "<group>";
-		};
-		F41C7F9A1AA8273A009B2A23 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				F41C7F9B1AA8273A009B2A23 /* GTFSAgency.h */,
-				F41C7F9C1AA8273A009B2A23 /* GTFSAgency.m */,
-				F41C7F9D1AA8273A009B2A23 /* GTFSCalendar.h */,
-				F41C7F9E1AA8273A009B2A23 /* GTFSCalendar.m */,
-				F41C7F9F1AA8273A009B2A23 /* GTFSCalendarDate.h */,
-				F41C7FA01AA8273A009B2A23 /* GTFSCalendarDate.m */,
-				F41C7FA11AA8273A009B2A23 /* GTFSFareAttributes.h */,
-				F41C7FA21AA8273A009B2A23 /* GTFSFareAttributes.m */,
-				F41C7FA31AA8273A009B2A23 /* GTFSFareRules.h */,
-				F41C7FA41AA8273A009B2A23 /* GTFSFareRules.m */,
-				F41C7FA51AA8273A009B2A23 /* GTFSRoute.h */,
-				F41C7FA61AA8273A009B2A23 /* GTFSRoute.m */,
-				F41C7FA71AA8273A009B2A23 /* GTFSShape.h */,
-				F41C7FA81AA8273A009B2A23 /* GTFSShape.m */,
-				F41C7FA91AA8273A009B2A23 /* GTFSStop.h */,
-				F41C7FAA1AA8273A009B2A23 /* GTFSStop.m */,
-				F41C7FAB1AA8273A009B2A23 /* GTFSStopTime.h */,
-				F41C7FAC1AA8273A009B2A23 /* GTFSStopTime.m */,
-				F41C7FAD1AA8273A009B2A23 /* GTFSTrip.h */,
-				F41C7FAE1AA8273A009B2A23 /* GTFSTrip.m */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		F47608AC1AB37DFE00ED3659 /* View Controllers */ = {
@@ -294,7 +196,6 @@
 				F47608AE1AB37F4700ED3659 /* Extensions */,
 				F4F61E201AA41498009377CE /* Main.storyboard */,
 				F4F61E4B1AA44C1C009377CE /* gtfs */,
-				F41C7F871AA8273A009B2A23 /* libraries */,
 				F4F61E171AA41498009377CE /* Supporting Files */,
 			);
 			path = Marguerite;
@@ -440,39 +341,26 @@
 			files = (
 				F42CE9BA1AB14D6200D23186 /* WebViewController.swift in Sources */,
 				F4F61E691AA6FA4A009377CE /* TableSection.swift in Sources */,
-				F41C7FB11AA8273A009B2A23 /* GTFSImporter.m in Sources */,
 				F42FD99A1AAD77F50027DAEE /* Route.swift in Sources */,
 				F42FD9961AAD771B0027DAEE /* RealtimeBuses.swift in Sources */,
-				F41C7FC51AA82C19009B2A23 /* GTFSUnarchiver.m in Sources */,
 				F42FD9981AAD77C20027DAEE /* RealtimeBus.swift in Sources */,
-				F41C7FBC1AA8273A009B2A23 /* GTFSFareRules.m in Sources */,
 				F42CE9C21AB17FE700D23186 /* UIImage+Extras.swift in Sources */,
 				F42CE9C61AB2A28E00D23186 /* RoutesViewController.swift in Sources */,
-				F41C7FBA1AA8273A009B2A23 /* GTFSCalendarDate.m in Sources */,
 				F4F61E441AA41C21009377CE /* NextShuttleViewController.swift in Sources */,
 				F42CE9BC1AB14D8800D23186 /* AboutTableViewController.swift in Sources */,
-				F41C7FBD1AA8273A009B2A23 /* GTFSRoute.m in Sources */,
-				F41C7FB91AA8273A009B2A23 /* GTFSCalendar.m in Sources */,
 				F4F61E4A1AA42CA0009377CE /* GTFSDatabase.swift in Sources */,
 				F42FD99E1AB00F0E0027DAEE /* RealtimeBusAnnotation.swift in Sources */,
 				F4F61E6A1AA76F86009377CE /* StopViewController.swift in Sources */,
-				F41C7FB21AA8273A009B2A23 /* CSVParser.m in Sources */,
-				F41C7FB81AA8273A009B2A23 /* GTFSAgency.m in Sources */,
-				F41C7FBE1AA8273A009B2A23 /* GTFSShape.m in Sources */,
 				F4F61E671AA6F89A009377CE /* StopTime.swift in Sources */,
 				F48A7B4C1AA77C85001623EF /* UIColor+Extras.swift in Sources */,
 				F4CF5A141AA8ECA700F92BE2 /* StopTimeTableViewCell.swift in Sources */,
 				F4F61E611AA6E615009377CE /* LiveMapViewController.swift in Sources */,
-				F41C7FBB1AA8273A009B2A23 /* GTFSFareAttributes.m in Sources */,
 				F42FD99C1AB00DFF0027DAEE /* RealtimeBusAnnotationView.swift in Sources */,
 				F47608AB1AB2EBAA00ED3659 /* RouteTableViewCell.swift in Sources */,
-				F41C7FC11AA8273A009B2A23 /* GTFSTrip.m in Sources */,
 				F4F61E5F1AA53FDB009377CE /* ExpandedSplitViewController.swift in Sources */,
 				F4F61E5D1AA515D7009377CE /* CoreLocationController.swift in Sources */,
 				F4F61E1A1AA41498009377CE /* AppDelegate.swift in Sources */,
-				F41C7FC01AA8273A009B2A23 /* GTFSStopTime.m in Sources */,
 				F4F61E481AA420C9009377CE /* Stop.swift in Sources */,
-				F41C7FBF1AA8273A009B2A23 /* GTFSStop.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

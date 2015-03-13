@@ -7,624 +7,406 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03209932A3E33280F6007D80 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6D05ECD43785FD31D75F1C /* UIKit.framework */; };
-		0345D373AD78B44BE762DF90 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DE8E0BA18BDFA75B422E34 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		035A99364B87D3744978C394 /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = C2575B24721FEF5EF100BF8C /* FMDB.h */; };
-		08568FBD58D00975304AB7A5 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 90F9AB06A9DB0694B1012183 /* FMResultSet.h */; };
-		0FEF265DAB93E7CEA5C42DC6 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 53183C9FDDC7B2348642110C /* zip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		11DF1FBC50AB2FDC5B7D58EF /* GCDiscreetNotificationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 49FCC4860A0BC0C295DB7330 /* GCDiscreetNotificationView.h */; };
-		14330AEC1A1E9BF010A6EE62 /* SwiftTryCatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE8FB44EFE47D5CAE57BDE /* SwiftTryCatch.m */; };
-		163E3E544A87BF68F0B87900 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1883E264908741B639765389 /* Foundation.framework */; };
-		1F1243D258D8E66A38EF4DE0 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A840257486034EDF6EB691 /* MessageUI.framework */; };
-		1F5523952E8716D38FDEE636 /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F50FA42B329BB656FC98C3F /* SSZipArchive.h */; };
-		26E47DC7C8E5DAED73BD7DDB /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F6B42378F053014C6A579D /* GLKit.framework */; };
-		3C556E7F3F1FB57BF03D7D57 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C23BEFCAAE7CFE1A41464F /* CoreGraphics.framework */; };
-		3E2DAF9D9852ABF917DEA684 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1883E264908741B639765389 /* Foundation.framework */; };
-		4009B536A7B396FCF2701330 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1883E264908741B639765389 /* Foundation.framework */; };
-		4E815CEE7C870729BCA40E74 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 876FDC4BE5CCA527E8E03ADA /* SSZipArchive.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		549E18C9BDD13821BFB9D901 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1883E264908741B639765389 /* Foundation.framework */; };
-		5ED2D836F6E08F5462B12827 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 9476EAED06D5E5DC0551B9FD /* unzip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		60CF650E53A10EC26F141AC0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC115B5EEA240AFFA73079AF /* SystemConfiguration.framework */; };
-		66C5DE91D639856EA9CAD2EC /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 1793DAF6060F5151C1FE10FB /* ioapi.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		67BB8283978810618211862F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1883E264908741B639765389 /* Foundation.framework */; };
-		684927C03206D64BCCC15B6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1883E264908741B639765389 /* Foundation.framework */; };
-		68AA1391DA764D172543BB12 /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B1535F472548F3D658BDA3 /* Instabug.framework */; };
-		6A18E0BB024D2B8EB0E7F2E7 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = CA0B61E2E07BFD3D41D5701D /* ioapi.h */; };
-		6ADFF6DC8C03D22D9519F58E /* Pods-Marguerite-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EECC8FE48B67DEC539E0549F /* Pods-Marguerite-dummy.m */; };
-		6B1CFD653EDF837AFF057113 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DADDD6D8966DE6F21F0DF40 /* CoreMotion.framework */; };
-		7B6AD64D6BE492B4E0D5DAC8 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EDEF95C16F1ECBB6734EEC9 /* zip.h */; };
-		809B916199A91B07EB35B627 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = CDB7A58B9F380B6DD266457F /* crypt.h */; };
-		84C17043A197D587440A48D3 /* GCDiscreetNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = E223E01BE7354F0B0FEBB402 /* GCDiscreetNotificationView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		89D23249071155991E384240 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = E0226FCAA20D6EFE65CB14A6 /* mztools.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		90BC5483CFADDFEE78B21358 /* SwiftTryCatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 7196F453527A08D677BD4A52 /* SwiftTryCatch.h */; };
-		9C962EB1D422F7053C2EA0D0 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = DB8A3E2454AAE9CBC9C0D239 /* FMDatabaseAdditions.h */; };
-		A39505DCB6AC6AA33D08DC73 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD74165697A705B7FB318815 /* QuartzCore.framework */; };
-		A3A23754D368405B2742C254 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 696A6CF5D81E6E742330B8BF /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		ABD5AA1A273096073E4A4FF1 /* Pods-Marguerite-FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81303F9A62AE28D4F5EEBF48 /* Pods-Marguerite-FMDB-dummy.m */; };
-		AFF49DBC57C75155C55A92A5 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 002543816C54BD052A585AAF /* unzip.h */; };
-		B02BE3BBEE09EC2321242CB5 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F97AA4535DDD23C29BF2DBFB /* OpenGLES.framework */; };
-		B203A1E56DC03B18FF9C3E4B /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 518633078AD87D91C3334395 /* FMDatabase.h */; };
-		B861E63F3E1867363AB0CB79 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0437B84F48B2708E77F6C537 /* AudioToolbox.framework */; };
-		BA8E95E66B3F55DF25C49B29 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = F2C59A068FF1EA00890D1CF2 /* FMDatabaseQueue.h */; };
-		BDD8BD3993A6DEB187AFC04C /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = B6518928EBFADE74E5DDB897 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C09627947759FA27E94CDE73 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C6D144573FF67BC6B9B3A2 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C8CF9ECB4FE5F54035D057AE /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = B58125B4E49EEAE18891BEA6 /* FMDatabasePool.h */; };
-		CC26943FE5A14E2467E454D8 /* Instabug.h in Headers */ = {isa = PBXBuildFile; fileRef = 26FB754F0277C53889EDBDF2 /* Instabug.h */; };
-		E0CD30CAC680671D20D6250A /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = CC835C203F0F605CEBF8DF40 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		E54CDEA5476CF30F9D94AC07 /* Pods-Marguerite-Instabug-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B304455F3F186DEBE86E89 /* Pods-Marguerite-Instabug-dummy.m */; };
-		E6C71B4AAFEF53D4FCF92900 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F64FFC3D3F02407D9A15E8 /* CoreTelephony.framework */; };
-		EC1B2C2C4FD004B628188F79 /* Pods-Marguerite-SwiftTryCatch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 584D72EE31DFF7CF80D266B2 /* Pods-Marguerite-SwiftTryCatch-dummy.m */; };
-		EC82F97B2230F3CC118820F9 /* Pods-Marguerite-SSZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B55160E6BE6E88141D8AF2 /* Pods-Marguerite-SSZipArchive-dummy.m */; };
-		F9B89719F76455F40FC567ED /* Pods-Marguerite-GCDiscreetNotificationView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B07C1E9FD8A75EA61D60380 /* Pods-Marguerite-GCDiscreetNotificationView-dummy.m */; };
-		FA8BED7C11CA0FB2E7E2F6A4 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = F0EF72847238A755A1B67E04 /* mztools.h */; };
-		FAAD93805B76352D85FF1B6F /* IBGEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = B88F7AE9B6C0BE45C2F25FD0 /* IBGEnums.h */; };
-		FE0151A36E940C04D2657F24 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6D05ECD43785FD31D75F1C /* UIKit.framework */; };
+		0FCD83B8E326052E0D886A80 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 313D3CBB1688A1BB01C5BCE1 /* OpenGLES.framework */; };
+		12CC660804E29BD1D57CCC25 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C225EE3861CC74BDAF1072 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		18C6C44A2F1F1F1CCE27F2C9 /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 72CA88CDFC108441A2CC64AB /* FMDB.h */; };
+		19083380BCC0297EFEB3AAF9 /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5B43050A6AFBF6262C433E /* Instabug.framework */; };
+		1B098AF5C367D709D30A4FD6 /* IBGEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = EC2FC675DF8DCD38E5670DDD /* IBGEnums.h */; };
+		1BCE86BCBA7A9AF9876EA871 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EEECAF46111B51C42676C6 /* FMResultSet.h */; };
+		22BC2A8A338160E6AF153698 /* GCDiscreetNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF957E87B1869F0BEC5A6BF /* GCDiscreetNotificationView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		237298D7EF4E435DB6AFB1B4 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3230051613951F3D4C57299E /* CoreTelephony.framework */; };
+		3066F07A5D61E2FC4366A1C4 /* Instabug.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C371C455B67C586DCCD51F2 /* Instabug.h */; };
+		44E1B734B3A84F476E1D028D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACBD93FD82CF1D062682F6D /* UIKit.framework */; };
+		45BE5F136C9E9D67FA512E42 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E19FC35D3650AE92CAB8501 /* FMDatabaseAdditions.h */; };
+		4FB64EDF4D86902D1FE893C9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4CDA2E2F49F091E452794A8 /* QuartzCore.framework */; };
+		5A516BFED59F8D0EE1C3151E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F179B8C1C456EF1DE2B4A3 /* Foundation.framework */; };
+		5F6F1E580CBF06B22D15387D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34138CA21DAA27EF7598E5B /* SystemConfiguration.framework */; };
+		5FDAA074EE41610ADB499707 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923006FE31910614B6F330CB /* AudioToolbox.framework */; };
+		62221CE09F1E55B920F92140 /* Pods-Marguerite-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B84150BF5D16CDD1C364E14 /* Pods-Marguerite-dummy.m */; };
+		6F258EE750533F71CF50516C /* Pods-Marguerite-FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED96AE9C983E64F56810E3A3 /* Pods-Marguerite-FMDB-dummy.m */; };
+		76BF043CC700965CAA192018 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BE4A0A7066FAFA0059A3C1 /* CoreGraphics.framework */; };
+		81FEBC4E5BA720AC3EC45A77 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 751C4A8A6B64B44986969BCD /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		831FEA8218AFCED9C948DD5E /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = B37BBFC6266C99A78DEEDD3D /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		84B0B1D86DEC3517B7EF2592 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F179B8C1C456EF1DE2B4A3 /* Foundation.framework */; };
+		8E5BBF0AF71141E5BD1DA6BA /* Pods-Marguerite-Instabug-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 022A95365D0B49F93ACFDF58 /* Pods-Marguerite-Instabug-dummy.m */; };
+		96528F584C2D9BA1B492C410 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3922ACE2BC388EB1FE8BC1A3 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		982123AC3A630FDB42E836BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F179B8C1C456EF1DE2B4A3 /* Foundation.framework */; };
+		98B9808F92742AAD0CBBB2D6 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = FC48A7C85248AAB095623DF9 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A34C6BCF0ED8878BF0C8AF68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F179B8C1C456EF1DE2B4A3 /* Foundation.framework */; };
+		B1C0005B172ADE00B6E2014E /* GCDiscreetNotificationView.h in Headers */ = {isa = PBXBuildFile; fileRef = AF6DE46B71E53BE6C0FEFDA5 /* GCDiscreetNotificationView.h */; };
+		B6F152181543D73C15EBC0B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACBD93FD82CF1D062682F6D /* UIKit.framework */; };
+		B716CBA438D31BE6BA0F5975 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = F299C34546436C2A0F081F84 /* FMDatabaseQueue.h */; };
+		D1E083300D6C7C22D2E1B5AA /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C186F3BA8C520AEFF78EC0B /* CoreMotion.framework */; };
+		D5915053602DC5DC97664612 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40EB496E8EE13A59691DA0E /* MessageUI.framework */; };
+		E27ECF378042DA7E0531AA26 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037BE99E8510048EB6EE4137 /* GLKit.framework */; };
+		E54697C86A73903625089B2C /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B8107109253DED419C1A1AC /* FMDatabasePool.h */; };
+		F718267F4F3F8060E6D1D404 /* Pods-Marguerite-GCDiscreetNotificationView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC515867AC84AEA2EB501139 /* Pods-Marguerite-GCDiscreetNotificationView-dummy.m */; };
+		FA17AB49D1BF37C972118AB9 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E07673B74BA8350D958977 /* FMDatabase.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		75FC559D176C53577C5CE6FE /* PBXContainerItemProxy */ = {
+		4F93BA4890012C6C4A785260 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9E51B41D8B1319F8E1739BD1 /* Project object */;
+			containerPortal = 6C314DFA49644AA3E634198B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2CEC3EBF051172BDF0B8BF90;
+			remoteGlobalIDString = F0E6EFFEE3A6C9F51D052384;
 			remoteInfo = "Pods-Marguerite-Instabug";
 		};
-		81F9B2ACD10713DF8C66FD81 /* PBXContainerItemProxy */ = {
+		561C38AFF6F2348C6CD82B26 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9E51B41D8B1319F8E1739BD1 /* Project object */;
+			containerPortal = 6C314DFA49644AA3E634198B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 48E7DDFE8E6B52378944EA62;
+			remoteGlobalIDString = DC58481822A771C762603B2E;
 			remoteInfo = "Pods-Marguerite-FMDB";
 		};
-		83C858FACD934FEE65B66FE0 /* PBXContainerItemProxy */ = {
+		B06DFA36FEC000A3776A43F9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9E51B41D8B1319F8E1739BD1 /* Project object */;
+			containerPortal = 6C314DFA49644AA3E634198B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4A74777AD0340281B7CA4542;
-			remoteInfo = "Pods-Marguerite-SSZipArchive";
-		};
-		871E16C373B39FB082A0DF9E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9E51B41D8B1319F8E1739BD1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DEF63AD31A7D0557BF6E4197;
+			remoteGlobalIDString = 81B141B4081A5CE57C2A8E22;
 			remoteInfo = "Pods-Marguerite-GCDiscreetNotificationView";
-		};
-		F225C0C668A29B9722DC257A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9E51B41D8B1319F8E1739BD1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3716153257C898553230D597;
-			remoteInfo = "Pods-Marguerite-SwiftTryCatch";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		002543816C54BD052A585AAF /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = SSZipArchive/minizip/unzip.h; sourceTree = "<group>"; };
-		029BB7EC276B0EFD817835D8 /* Pods-Marguerite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite.release.xcconfig"; sourceTree = "<group>"; };
-		0437B84F48B2708E77F6C537 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
-		0BF920218E8E9FE7F7D6B945 /* Pods-Marguerite-SwiftTryCatch.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite-SwiftTryCatch.xcconfig"; sourceTree = "<group>"; };
-		0F388EAABBBBE35891EEA004 /* Pods-Marguerite-GCDiscreetNotificationView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite-GCDiscreetNotificationView-Private.xcconfig"; sourceTree = "<group>"; };
-		1793DAF6060F5151C1FE10FB /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = SSZipArchive/minizip/ioapi.c; sourceTree = "<group>"; };
-		1883E264908741B639765389 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		1FB34390236498940F69E3E2 /* libPods-Marguerite-SSZipArchive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Marguerite-SSZipArchive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		202D473A2737C2FA61750B23 /* libPods-Marguerite-Instabug.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Marguerite-Instabug.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		23C6D144573FF67BC6B9B3A2 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		24F64FFC3D3F02407D9A15E8 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
-		26FB754F0277C53889EDBDF2 /* Instabug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Instabug.h; path = Instabug.framework/Versions/A/Headers/Instabug.h; sourceTree = "<group>"; };
-		2936203D7B603771D18F2248 /* Pods-Marguerite-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Marguerite-acknowledgements.plist"; sourceTree = "<group>"; };
-		2EDEF95C16F1ECBB6734EEC9 /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = SSZipArchive/minizip/zip.h; sourceTree = "<group>"; };
-		3DADDD6D8966DE6F21F0DF40 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
-		3F50FA42B329BB656FC98C3F /* SSZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipArchive.h; path = SSZipArchive/SSZipArchive.h; sourceTree = "<group>"; };
-		43A0ADC74D599AEB973A7473 /* Pods-Marguerite-SSZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Marguerite-SSZipArchive-prefix.pch"; sourceTree = "<group>"; };
-		4831669547BACD025CCF8EF2 /* Pods-Marguerite-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Marguerite-acknowledgements.markdown"; sourceTree = "<group>"; };
-		49FCC4860A0BC0C295DB7330 /* GCDiscreetNotificationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDiscreetNotificationView.h; path = GCDiscreetNotificationView/GCDiscreetNotificationView.h; sourceTree = "<group>"; };
-		4B3A700955729E8FCDEA95CD /* Pods-Marguerite-Instabug-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite-Instabug-Private.xcconfig"; sourceTree = "<group>"; };
-		4F479CCDACE1E0A221B697CD /* Pods-Marguerite-GCDiscreetNotificationView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite-GCDiscreetNotificationView.xcconfig"; sourceTree = "<group>"; };
-		518633078AD87D91C3334395 /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
-		53183C9FDDC7B2348642110C /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = zip.c; path = SSZipArchive/minizip/zip.c; sourceTree = "<group>"; };
-		53C962865C366B631A34B686 /* Pods-Marguerite-SSZipArchive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite-SSZipArchive.xcconfig"; sourceTree = "<group>"; };
-		56F6B42378F053014C6A579D /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/GLKit.framework; sourceTree = DEVELOPER_DIR; };
-		584D72EE31DFF7CF80D266B2 /* Pods-Marguerite-SwiftTryCatch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Marguerite-SwiftTryCatch-dummy.m"; sourceTree = "<group>"; };
-		5B07C1E9FD8A75EA61D60380 /* Pods-Marguerite-GCDiscreetNotificationView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Marguerite-GCDiscreetNotificationView-dummy.m"; sourceTree = "<group>"; };
-		61CE0F28F09D9B59CB6F062D /* Pods-Marguerite-FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Marguerite-FMDB-prefix.pch"; sourceTree = "<group>"; };
-		61FE7462EC221553D1EBABAE /* Pods-Marguerite-Instabug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite-Instabug.xcconfig"; sourceTree = "<group>"; };
-		66B304455F3F186DEBE86E89 /* Pods-Marguerite-Instabug-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Marguerite-Instabug-dummy.m"; sourceTree = "<group>"; };
-		66DE8E0BA18BDFA75B422E34 /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
-		696A6CF5D81E6E742330B8BF /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
-		6AD0C5798AB6B8DBD673D053 /* libPods-Marguerite-GCDiscreetNotificationView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Marguerite-GCDiscreetNotificationView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D6D05ECD43785FD31D75F1C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		6FDC2946D12D9112C1398DAA /* Pods-Marguerite-Instabug-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Marguerite-Instabug-prefix.pch"; sourceTree = "<group>"; };
-		7196F453527A08D677BD4A52 /* SwiftTryCatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SwiftTryCatch.h; sourceTree = "<group>"; };
-		79A840257486034EDF6EB691 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
-		7D071DAEC80FD6F424702DF3 /* Pods-Marguerite-FMDB-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite-FMDB-Private.xcconfig"; sourceTree = "<group>"; };
-		7EF89219A3B74ADD7D17C3D6 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		81303F9A62AE28D4F5EEBF48 /* Pods-Marguerite-FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Marguerite-FMDB-dummy.m"; sourceTree = "<group>"; };
-		876FDC4BE5CCA527E8E03ADA /* SSZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSZipArchive.m; path = SSZipArchive/SSZipArchive.m; sourceTree = "<group>"; };
-		88BE8FB44EFE47D5CAE57BDE /* SwiftTryCatch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SwiftTryCatch.m; sourceTree = "<group>"; };
-		90F9AB06A9DB0694B1012183 /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
-		9476EAED06D5E5DC0551B9FD /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = unzip.c; path = SSZipArchive/minizip/unzip.c; sourceTree = "<group>"; };
-		9679CB3DF1298E61D4E51996 /* Pods-Marguerite-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Marguerite-resources.sh"; sourceTree = "<group>"; };
-		9CD45858B77B46BDAFFE44FB /* Pods-Marguerite-SwiftTryCatch-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite-SwiftTryCatch-Private.xcconfig"; sourceTree = "<group>"; };
-		AC634E726227529903D51C0D /* Pods-Marguerite-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Marguerite-environment.h"; sourceTree = "<group>"; };
-		AE326873125DBA6267B12FFA /* libPods-Marguerite-SwiftTryCatch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Marguerite-SwiftTryCatch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2D7D06B657412E0BE2C2BFD /* libPods-Marguerite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Marguerite.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B58125B4E49EEAE18891BEA6 /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
-		B6518928EBFADE74E5DDB897 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
-		B88F7AE9B6C0BE45C2F25FD0 /* IBGEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBGEnums.h; path = Instabug.framework/Versions/A/Headers/IBGEnums.h; sourceTree = "<group>"; };
-		BD74165697A705B7FB318815 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		C2575B24721FEF5EF100BF8C /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
-		C4B1535F472548F3D658BDA3 /* Instabug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Instabug.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Instabug.framework; sourceTree = DEVELOPER_DIR; };
-		C9C23BEFCAAE7CFE1A41464F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		C9EB765BD1FEA05421B8FDE9 /* Pods-Marguerite-GCDiscreetNotificationView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Marguerite-GCDiscreetNotificationView-prefix.pch"; sourceTree = "<group>"; };
-		CA0B61E2E07BFD3D41D5701D /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = SSZipArchive/minizip/ioapi.h; sourceTree = "<group>"; };
-		CC835C203F0F605CEBF8DF40 /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
-		CDB7A58B9F380B6DD266457F /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = SSZipArchive/minizip/crypt.h; sourceTree = "<group>"; };
-		D1C468F6BAB51ECD7635821C /* Pods-Marguerite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite.debug.xcconfig"; sourceTree = "<group>"; };
-		D8E980437856440A1225BD89 /* libPods-Marguerite-FMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Marguerite-FMDB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB8A3E2454AAE9CBC9C0D239 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		DC115B5EEA240AFFA73079AF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		DD7B07ED52C5A732178454E6 /* Pods-Marguerite-SSZipArchive-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite-SSZipArchive-Private.xcconfig"; sourceTree = "<group>"; };
-		E0226FCAA20D6EFE65CB14A6 /* mztools.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mztools.c; path = SSZipArchive/minizip/mztools.c; sourceTree = "<group>"; };
-		E223E01BE7354F0B0FEBB402 /* GCDiscreetNotificationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDiscreetNotificationView.m; path = GCDiscreetNotificationView/GCDiscreetNotificationView.m; sourceTree = "<group>"; };
-		E4A02A5EEDCC065D1948CD23 /* Pods-Marguerite-SwiftTryCatch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Marguerite-SwiftTryCatch-prefix.pch"; sourceTree = "<group>"; };
-		EECC8FE48B67DEC539E0549F /* Pods-Marguerite-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Marguerite-dummy.m"; sourceTree = "<group>"; };
-		F0EF72847238A755A1B67E04 /* mztools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = SSZipArchive/minizip/mztools.h; sourceTree = "<group>"; };
-		F164E8C30BF278BA5FBB571D /* Instabug.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = Instabug.bundle; sourceTree = "<group>"; };
-		F1B55160E6BE6E88141D8AF2 /* Pods-Marguerite-SSZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Marguerite-SSZipArchive-dummy.m"; sourceTree = "<group>"; };
-		F204D85F7811BA655EB24B9B /* Pods-Marguerite-FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite-FMDB.xcconfig"; sourceTree = "<group>"; };
-		F2C59A068FF1EA00890D1CF2 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
-		F97AA4535DDD23C29BF2DBFB /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
+		022A95365D0B49F93ACFDF58 /* Pods-Marguerite-Instabug-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Marguerite-Instabug-dummy.m"; sourceTree = "<group>"; };
+		028DC544408ED8BD069D8417 /* Pods-Marguerite-FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Marguerite-FMDB-prefix.pch"; sourceTree = "<group>"; };
+		037BE99E8510048EB6EE4137 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/GLKit.framework; sourceTree = DEVELOPER_DIR; };
+		06F179B8C1C456EF1DE2B4A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		08CAFA0B02CC17FFB42C84CB /* Pods-Marguerite-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Marguerite-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1B8107109253DED419C1A1AC /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
+		1CD941AB54FD22B6A159EEA2 /* Pods-Marguerite-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Marguerite-resources.sh"; sourceTree = "<group>"; };
+		235EFF36DCF7D92F0E9D0D8D /* Pods-Marguerite-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Marguerite-acknowledgements.plist"; sourceTree = "<group>"; };
+		2942F9AFCC66B72D6B213FC5 /* Pods-Marguerite-FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite-FMDB.xcconfig"; sourceTree = "<group>"; };
+		2F8DB0F9A515017C523D1898 /* libPods-Marguerite-Instabug.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Marguerite-Instabug.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		313D3CBB1688A1BB01C5BCE1 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
+		3230051613951F3D4C57299E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		34D63B7322EA464D9DD742D0 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3922ACE2BC388EB1FE8BC1A3 /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
+		4DA835F577D2A4C2E5814EC0 /* libPods-Marguerite-FMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Marguerite-FMDB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54E07673B74BA8350D958977 /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
+		5C186F3BA8C520AEFF78EC0B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		6C371C455B67C586DCCD51F2 /* Instabug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Instabug.h; path = Instabug.framework/Versions/A/Headers/Instabug.h; sourceTree = "<group>"; };
+		72CA88CDFC108441A2CC64AB /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
+		751C4A8A6B64B44986969BCD /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
+		7E19FC35D3650AE92CAB8501 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		81BE4A0A7066FAFA0059A3C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		8626527DC05E976C0369D798 /* Pods-Marguerite-Instabug-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Marguerite-Instabug-prefix.pch"; sourceTree = "<group>"; };
+		90306A0B622EF0A138D129F9 /* Pods-Marguerite-GCDiscreetNotificationView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite-GCDiscreetNotificationView-Private.xcconfig"; sourceTree = "<group>"; };
+		923006FE31910614B6F330CB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		94C225EE3861CC74BDAF1072 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		954BC8AE28C10F291B691323 /* libPods-Marguerite-GCDiscreetNotificationView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Marguerite-GCDiscreetNotificationView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97DEDB6AC40CEE701A1256BD /* Pods-Marguerite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite.debug.xcconfig"; sourceTree = "<group>"; };
+		9B84150BF5D16CDD1C364E14 /* Pods-Marguerite-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Marguerite-dummy.m"; sourceTree = "<group>"; };
+		A534BA4CFB1F510D08FB1B6B /* Pods-Marguerite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite.release.xcconfig"; sourceTree = "<group>"; };
+		ACF957E87B1869F0BEC5A6BF /* GCDiscreetNotificationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDiscreetNotificationView.m; path = GCDiscreetNotificationView/GCDiscreetNotificationView.m; sourceTree = "<group>"; };
+		AF6DE46B71E53BE6C0FEFDA5 /* GCDiscreetNotificationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDiscreetNotificationView.h; path = GCDiscreetNotificationView/GCDiscreetNotificationView.h; sourceTree = "<group>"; };
+		B37BBFC6266C99A78DEEDD3D /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
+		B59C9C314725B3F52B3D681E /* Instabug.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = Instabug.bundle; sourceTree = "<group>"; };
+		B7EEECAF46111B51C42676C6 /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
+		BACBD93FD82CF1D062682F6D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		BE316CEDF4D20CFE939450AF /* Pods-Marguerite-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Marguerite-environment.h"; sourceTree = "<group>"; };
+		BEB7015323A8274F5426C182 /* Pods-Marguerite-Instabug-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite-Instabug-Private.xcconfig"; sourceTree = "<group>"; };
+		C109C3C312D16EE4A6632B14 /* libPods-Marguerite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Marguerite.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C10E50D5856D54404A68CB78 /* Pods-Marguerite-GCDiscreetNotificationView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Marguerite-GCDiscreetNotificationView-prefix.pch"; sourceTree = "<group>"; };
+		C2DDB1FE08EDEF538583A002 /* Pods-Marguerite-Instabug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite-Instabug.xcconfig"; sourceTree = "<group>"; };
+		CB5B43050A6AFBF6262C433E /* Instabug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Instabug.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Instabug.framework; sourceTree = DEVELOPER_DIR; };
+		D34138CA21DAA27EF7598E5B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		D40EB496E8EE13A59691DA0E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
+		EC2FC675DF8DCD38E5670DDD /* IBGEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBGEnums.h; path = Instabug.framework/Versions/A/Headers/IBGEnums.h; sourceTree = "<group>"; };
+		EC515867AC84AEA2EB501139 /* Pods-Marguerite-GCDiscreetNotificationView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Marguerite-GCDiscreetNotificationView-dummy.m"; sourceTree = "<group>"; };
+		ED96AE9C983E64F56810E3A3 /* Pods-Marguerite-FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Marguerite-FMDB-dummy.m"; sourceTree = "<group>"; };
+		F299C34546436C2A0F081F84 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		F4CDA2E2F49F091E452794A8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		FC48A7C85248AAB095623DF9 /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
+		FD83502DE3EF1687A9760959 /* Pods-Marguerite-FMDB-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite-FMDB-Private.xcconfig"; sourceTree = "<group>"; };
+		FEFBDFA7230C80A886A772A8 /* Pods-Marguerite-GCDiscreetNotificationView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marguerite-GCDiscreetNotificationView.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		243BA69AEBAD2AC9E2F8939C /* Frameworks */ = {
+		50EABEA9C1C7356C4270915B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B861E63F3E1867363AB0CB79 /* AudioToolbox.framework in Frameworks */,
-				3C556E7F3F1FB57BF03D7D57 /* CoreGraphics.framework in Frameworks */,
-				6B1CFD653EDF837AFF057113 /* CoreMotion.framework in Frameworks */,
-				E6C71B4AAFEF53D4FCF92900 /* CoreTelephony.framework in Frameworks */,
-				684927C03206D64BCCC15B6A /* Foundation.framework in Frameworks */,
-				26E47DC7C8E5DAED73BD7DDB /* GLKit.framework in Frameworks */,
-				68AA1391DA764D172543BB12 /* Instabug.framework in Frameworks */,
-				1F1243D258D8E66A38EF4DE0 /* MessageUI.framework in Frameworks */,
-				B02BE3BBEE09EC2321242CB5 /* OpenGLES.framework in Frameworks */,
-				A39505DCB6AC6AA33D08DC73 /* QuartzCore.framework in Frameworks */,
-				60CF650E53A10EC26F141AC0 /* SystemConfiguration.framework in Frameworks */,
-				FE0151A36E940C04D2657F24 /* UIKit.framework in Frameworks */,
+				5FDAA074EE41610ADB499707 /* AudioToolbox.framework in Frameworks */,
+				76BF043CC700965CAA192018 /* CoreGraphics.framework in Frameworks */,
+				D1E083300D6C7C22D2E1B5AA /* CoreMotion.framework in Frameworks */,
+				237298D7EF4E435DB6AFB1B4 /* CoreTelephony.framework in Frameworks */,
+				5A516BFED59F8D0EE1C3151E /* Foundation.framework in Frameworks */,
+				E27ECF378042DA7E0531AA26 /* GLKit.framework in Frameworks */,
+				19083380BCC0297EFEB3AAF9 /* Instabug.framework in Frameworks */,
+				D5915053602DC5DC97664612 /* MessageUI.framework in Frameworks */,
+				0FCD83B8E326052E0D886A80 /* OpenGLES.framework in Frameworks */,
+				4FB64EDF4D86902D1FE893C9 /* QuartzCore.framework in Frameworks */,
+				5F6F1E580CBF06B22D15387D /* SystemConfiguration.framework in Frameworks */,
+				44E1B734B3A84F476E1D028D /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6EE40AE34D6EFDC6545C9E87 /* Frameworks */ = {
+		A71B381F32AE380994B41693 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4009B536A7B396FCF2701330 /* Foundation.framework in Frameworks */,
+				982123AC3A630FDB42E836BD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		934EF5FD13BC3AE7BFF89A91 /* Frameworks */ = {
+		B754F609145C2A6D91B9AF6F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67BB8283978810618211862F /* Foundation.framework in Frameworks */,
+				84B0B1D86DEC3517B7EF2592 /* Foundation.framework in Frameworks */,
+				B6F152181543D73C15EBC0B2 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B59997C2A4CDBC57B4AB940C /* Frameworks */ = {
+		BE33C271B305CAC848787DE0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E2DAF9D9852ABF917DEA684 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D35D96DE1B54243CB04C5A1B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				549E18C9BDD13821BFB9D901 /* Foundation.framework in Frameworks */,
-				03209932A3E33280F6007D80 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E12B9423D41E7CF609FB4D0E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				163E3E544A87BF68F0B87900 /* Foundation.framework in Frameworks */,
+				A34C6BCF0ED8878BF0C8AF68 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0CE8410A26C17773BAAD2B47 /* Support Files */ = {
+		097207FB7D259151B67D7CCE /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				61FE7462EC221553D1EBABAE /* Pods-Marguerite-Instabug.xcconfig */,
-				4B3A700955729E8FCDEA95CD /* Pods-Marguerite-Instabug-Private.xcconfig */,
-				66B304455F3F186DEBE86E89 /* Pods-Marguerite-Instabug-dummy.m */,
-				6FDC2946D12D9112C1398DAA /* Pods-Marguerite-Instabug-prefix.pch */,
+				BE3242FBF778D21C0CFFA7DE /* Pods-Marguerite */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1307EF859BCCEC8208C56CDE /* Instabug */ = {
+			isa = PBXGroup;
+			children = (
+				EC2FC675DF8DCD38E5670DDD /* IBGEnums.h */,
+				6C371C455B67C586DCCD51F2 /* Instabug.h */,
+				1A318F6C1987C3DF37DDAC3A /* Resources */,
+				1F12FD36B71D6102C86300E9 /* Support Files */,
+			);
+			path = Instabug;
+			sourceTree = "<group>";
+		};
+		1A318F6C1987C3DF37DDAC3A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B59C9C314725B3F52B3D681E /* Instabug.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1F12FD36B71D6102C86300E9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2DDB1FE08EDEF538583A002 /* Pods-Marguerite-Instabug.xcconfig */,
+				BEB7015323A8274F5426C182 /* Pods-Marguerite-Instabug-Private.xcconfig */,
+				022A95365D0B49F93ACFDF58 /* Pods-Marguerite-Instabug-dummy.m */,
+				8626527DC05E976C0369D798 /* Pods-Marguerite-Instabug-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-Marguerite-Instabug";
 			sourceTree = "<group>";
 		};
-		1D5985F4322624D7A9CFD4E8 /* Products */ = {
+		3208630B88007AD2D2760FDE /* common */ = {
 			isa = PBXGroup;
 			children = (
-				B2D7D06B657412E0BE2C2BFD /* libPods-Marguerite.a */,
-				D8E980437856440A1225BD89 /* libPods-Marguerite-FMDB.a */,
-				6AD0C5798AB6B8DBD673D053 /* libPods-Marguerite-GCDiscreetNotificationView.a */,
-				202D473A2737C2FA61750B23 /* libPods-Marguerite-Instabug.a */,
-				1FB34390236498940F69E3E2 /* libPods-Marguerite-SSZipArchive.a */,
-				AE326873125DBA6267B12FFA /* libPods-Marguerite-SwiftTryCatch.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		1F35AB098CF1F66E999BE248 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0BF920218E8E9FE7F7D6B945 /* Pods-Marguerite-SwiftTryCatch.xcconfig */,
-				9CD45858B77B46BDAFFE44FB /* Pods-Marguerite-SwiftTryCatch-Private.xcconfig */,
-				584D72EE31DFF7CF80D266B2 /* Pods-Marguerite-SwiftTryCatch-dummy.m */,
-				E4A02A5EEDCC065D1948CD23 /* Pods-Marguerite-SwiftTryCatch-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-Marguerite-SwiftTryCatch";
-			sourceTree = "<group>";
-		};
-		33B12D43F1EADD3058C5CEA8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EF342E91E972A6F4D08D9815 /* FMDB */,
-				E55EB278206D52C869C16F1A /* GCDiscreetNotificationView */,
-				76BC0789BD3E4A2756D0121C /* Instabug */,
-				DB395A36F0DEF0276AB912EF /* SSZipArchive */,
-				CA4B7D1F2D7B10956CBA1D75 /* SwiftTryCatch */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		58989874F22CD059A2157590 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F2F727A1F79483D9B14197C1 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6416F3160C7A8212947CD9B2 /* common */ = {
-			isa = PBXGroup;
-			children = (
-				C2575B24721FEF5EF100BF8C /* FMDB.h */,
-				518633078AD87D91C3334395 /* FMDatabase.h */,
-				66DE8E0BA18BDFA75B422E34 /* FMDatabase.m */,
-				DB8A3E2454AAE9CBC9C0D239 /* FMDatabaseAdditions.h */,
-				23C6D144573FF67BC6B9B3A2 /* FMDatabaseAdditions.m */,
-				B58125B4E49EEAE18891BEA6 /* FMDatabasePool.h */,
-				CC835C203F0F605CEBF8DF40 /* FMDatabasePool.m */,
-				F2C59A068FF1EA00890D1CF2 /* FMDatabaseQueue.h */,
-				B6518928EBFADE74E5DDB897 /* FMDatabaseQueue.m */,
-				90F9AB06A9DB0694B1012183 /* FMResultSet.h */,
-				696A6CF5D81E6E742330B8BF /* FMResultSet.m */,
+				72CA88CDFC108441A2CC64AB /* FMDB.h */,
+				54E07673B74BA8350D958977 /* FMDatabase.h */,
+				FC48A7C85248AAB095623DF9 /* FMDatabase.m */,
+				7E19FC35D3650AE92CAB8501 /* FMDatabaseAdditions.h */,
+				94C225EE3861CC74BDAF1072 /* FMDatabaseAdditions.m */,
+				1B8107109253DED419C1A1AC /* FMDatabasePool.h */,
+				3922ACE2BC388EB1FE8BC1A3 /* FMDatabasePool.m */,
+				F299C34546436C2A0F081F84 /* FMDatabaseQueue.h */,
+				B37BBFC6266C99A78DEEDD3D /* FMDatabaseQueue.m */,
+				B7EEECAF46111B51C42676C6 /* FMResultSet.h */,
+				751C4A8A6B64B44986969BCD /* FMResultSet.m */,
 			);
 			name = common;
 			sourceTree = "<group>";
 		};
-		650C268421D3D2C23056A19B /* Targets Support Files */ = {
+		4A2CBAD4E750FF35DA47EB1E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8113CC60C6A2CD2A9655286B /* Pods-Marguerite */,
+				D52AFEBD79421FF1362A94B8 /* FMDB */,
+				C596DA2332900D11F0B5D567 /* GCDiscreetNotificationView */,
+				1307EF859BCCEC8208C56CDE /* Instabug */,
 			);
-			name = "Targets Support Files";
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		6C238D16F1C268CB3A7D8510 /* Support Files */ = {
+		9A0156843CADC6A6A619813A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				53C962865C366B631A34B686 /* Pods-Marguerite-SSZipArchive.xcconfig */,
-				DD7B07ED52C5A732178454E6 /* Pods-Marguerite-SSZipArchive-Private.xcconfig */,
-				F1B55160E6BE6E88141D8AF2 /* Pods-Marguerite-SSZipArchive-dummy.m */,
-				43A0ADC74D599AEB973A7473 /* Pods-Marguerite-SSZipArchive-prefix.pch */,
+				9B937AEA9A667AE94273CE4E /* iOS */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-Marguerite-SSZipArchive";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		76BC0789BD3E4A2756D0121C /* Instabug */ = {
+		9B937AEA9A667AE94273CE4E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				B88F7AE9B6C0BE45C2F25FD0 /* IBGEnums.h */,
-				26FB754F0277C53889EDBDF2 /* Instabug.h */,
-				F72CD54691CEDED96ADB8AE3 /* Resources */,
-				0CE8410A26C17773BAAD2B47 /* Support Files */,
+				923006FE31910614B6F330CB /* AudioToolbox.framework */,
+				81BE4A0A7066FAFA0059A3C1 /* CoreGraphics.framework */,
+				5C186F3BA8C520AEFF78EC0B /* CoreMotion.framework */,
+				3230051613951F3D4C57299E /* CoreTelephony.framework */,
+				06F179B8C1C456EF1DE2B4A3 /* Foundation.framework */,
+				037BE99E8510048EB6EE4137 /* GLKit.framework */,
+				CB5B43050A6AFBF6262C433E /* Instabug.framework */,
+				D40EB496E8EE13A59691DA0E /* MessageUI.framework */,
+				313D3CBB1688A1BB01C5BCE1 /* OpenGLES.framework */,
+				F4CDA2E2F49F091E452794A8 /* QuartzCore.framework */,
+				D34138CA21DAA27EF7598E5B /* SystemConfiguration.framework */,
+				BACBD93FD82CF1D062682F6D /* UIKit.framework */,
 			);
-			path = Instabug;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		8113CC60C6A2CD2A9655286B /* Pods-Marguerite */ = {
+		BE3242FBF778D21C0CFFA7DE /* Pods-Marguerite */ = {
 			isa = PBXGroup;
 			children = (
-				4831669547BACD025CCF8EF2 /* Pods-Marguerite-acknowledgements.markdown */,
-				2936203D7B603771D18F2248 /* Pods-Marguerite-acknowledgements.plist */,
-				EECC8FE48B67DEC539E0549F /* Pods-Marguerite-dummy.m */,
-				AC634E726227529903D51C0D /* Pods-Marguerite-environment.h */,
-				9679CB3DF1298E61D4E51996 /* Pods-Marguerite-resources.sh */,
-				D1C468F6BAB51ECD7635821C /* Pods-Marguerite.debug.xcconfig */,
-				029BB7EC276B0EFD817835D8 /* Pods-Marguerite.release.xcconfig */,
+				08CAFA0B02CC17FFB42C84CB /* Pods-Marguerite-acknowledgements.markdown */,
+				235EFF36DCF7D92F0E9D0D8D /* Pods-Marguerite-acknowledgements.plist */,
+				9B84150BF5D16CDD1C364E14 /* Pods-Marguerite-dummy.m */,
+				BE316CEDF4D20CFE939450AF /* Pods-Marguerite-environment.h */,
+				1CD941AB54FD22B6A159EEA2 /* Pods-Marguerite-resources.sh */,
+				97DEDB6AC40CEE701A1256BD /* Pods-Marguerite.debug.xcconfig */,
+				A534BA4CFB1F510D08FB1B6B /* Pods-Marguerite.release.xcconfig */,
 			);
 			name = "Pods-Marguerite";
 			path = "Target Support Files/Pods-Marguerite";
 			sourceTree = "<group>";
 		};
-		C9104649BBDE2C92CCF9CD87 /* Support Files */ = {
+		C596DA2332900D11F0B5D567 /* GCDiscreetNotificationView */ = {
 			isa = PBXGroup;
 			children = (
-				F204D85F7811BA655EB24B9B /* Pods-Marguerite-FMDB.xcconfig */,
-				7D071DAEC80FD6F424702DF3 /* Pods-Marguerite-FMDB-Private.xcconfig */,
-				81303F9A62AE28D4F5EEBF48 /* Pods-Marguerite-FMDB-dummy.m */,
-				61CE0F28F09D9B59CB6F062D /* Pods-Marguerite-FMDB-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-Marguerite-FMDB";
-			sourceTree = "<group>";
-		};
-		CA4B7D1F2D7B10956CBA1D75 /* SwiftTryCatch */ = {
-			isa = PBXGroup;
-			children = (
-				7196F453527A08D677BD4A52 /* SwiftTryCatch.h */,
-				88BE8FB44EFE47D5CAE57BDE /* SwiftTryCatch.m */,
-				1F35AB098CF1F66E999BE248 /* Support Files */,
-			);
-			path = SwiftTryCatch;
-			sourceTree = "<group>";
-		};
-		DB395A36F0DEF0276AB912EF /* SSZipArchive */ = {
-			isa = PBXGroup;
-			children = (
-				3F50FA42B329BB656FC98C3F /* SSZipArchive.h */,
-				876FDC4BE5CCA527E8E03ADA /* SSZipArchive.m */,
-				CDB7A58B9F380B6DD266457F /* crypt.h */,
-				1793DAF6060F5151C1FE10FB /* ioapi.c */,
-				CA0B61E2E07BFD3D41D5701D /* ioapi.h */,
-				E0226FCAA20D6EFE65CB14A6 /* mztools.c */,
-				F0EF72847238A755A1B67E04 /* mztools.h */,
-				9476EAED06D5E5DC0551B9FD /* unzip.c */,
-				002543816C54BD052A585AAF /* unzip.h */,
-				53183C9FDDC7B2348642110C /* zip.c */,
-				2EDEF95C16F1ECBB6734EEC9 /* zip.h */,
-				6C238D16F1C268CB3A7D8510 /* Support Files */,
-			);
-			path = SSZipArchive;
-			sourceTree = "<group>";
-		};
-		E55EB278206D52C869C16F1A /* GCDiscreetNotificationView */ = {
-			isa = PBXGroup;
-			children = (
-				49FCC4860A0BC0C295DB7330 /* GCDiscreetNotificationView.h */,
-				E223E01BE7354F0B0FEBB402 /* GCDiscreetNotificationView.m */,
-				E9444E694E7AB793FC067A63 /* Support Files */,
+				AF6DE46B71E53BE6C0FEFDA5 /* GCDiscreetNotificationView.h */,
+				ACF957E87B1869F0BEC5A6BF /* GCDiscreetNotificationView.m */,
+				DDAE3AA403EA6015D3973571 /* Support Files */,
 			);
 			path = GCDiscreetNotificationView;
 			sourceTree = "<group>";
 		};
-		E9444E694E7AB793FC067A63 /* Support Files */ = {
+		CAF047BCB00B792543D1558B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4F479CCDACE1E0A221B697CD /* Pods-Marguerite-GCDiscreetNotificationView.xcconfig */,
-				0F388EAABBBBE35891EEA004 /* Pods-Marguerite-GCDiscreetNotificationView-Private.xcconfig */,
-				5B07C1E9FD8A75EA61D60380 /* Pods-Marguerite-GCDiscreetNotificationView-dummy.m */,
-				C9EB765BD1FEA05421B8FDE9 /* Pods-Marguerite-GCDiscreetNotificationView-prefix.pch */,
+				C109C3C312D16EE4A6632B14 /* libPods-Marguerite.a */,
+				4DA835F577D2A4C2E5814EC0 /* libPods-Marguerite-FMDB.a */,
+				954BC8AE28C10F291B691323 /* libPods-Marguerite-GCDiscreetNotificationView.a */,
+				2F8DB0F9A515017C523D1898 /* libPods-Marguerite-Instabug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D52AFEBD79421FF1362A94B8 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				FA95ED37248A6E447A56AB4A /* Support Files */,
+				3208630B88007AD2D2760FDE /* common */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		DDAE3AA403EA6015D3973571 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEFBDFA7230C80A886A772A8 /* Pods-Marguerite-GCDiscreetNotificationView.xcconfig */,
+				90306A0B622EF0A138D129F9 /* Pods-Marguerite-GCDiscreetNotificationView-Private.xcconfig */,
+				EC515867AC84AEA2EB501139 /* Pods-Marguerite-GCDiscreetNotificationView-dummy.m */,
+				C10E50D5856D54404A68CB78 /* Pods-Marguerite-GCDiscreetNotificationView-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-Marguerite-GCDiscreetNotificationView";
 			sourceTree = "<group>";
 		};
-		EF342E91E972A6F4D08D9815 /* FMDB */ = {
+		E79388F630C368DE5D984D1A = {
 			isa = PBXGroup;
 			children = (
-				C9104649BBDE2C92CCF9CD87 /* Support Files */,
-				6416F3160C7A8212947CD9B2 /* common */,
-			);
-			path = FMDB;
-			sourceTree = "<group>";
-		};
-		F2F727A1F79483D9B14197C1 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				0437B84F48B2708E77F6C537 /* AudioToolbox.framework */,
-				C9C23BEFCAAE7CFE1A41464F /* CoreGraphics.framework */,
-				3DADDD6D8966DE6F21F0DF40 /* CoreMotion.framework */,
-				24F64FFC3D3F02407D9A15E8 /* CoreTelephony.framework */,
-				1883E264908741B639765389 /* Foundation.framework */,
-				56F6B42378F053014C6A579D /* GLKit.framework */,
-				C4B1535F472548F3D658BDA3 /* Instabug.framework */,
-				79A840257486034EDF6EB691 /* MessageUI.framework */,
-				F97AA4535DDD23C29BF2DBFB /* OpenGLES.framework */,
-				BD74165697A705B7FB318815 /* QuartzCore.framework */,
-				DC115B5EEA240AFFA73079AF /* SystemConfiguration.framework */,
-				6D6D05ECD43785FD31D75F1C /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		F326BF75C25C975E0494511A = {
-			isa = PBXGroup;
-			children = (
-				7EF89219A3B74ADD7D17C3D6 /* Podfile */,
-				58989874F22CD059A2157590 /* Frameworks */,
-				33B12D43F1EADD3058C5CEA8 /* Pods */,
-				1D5985F4322624D7A9CFD4E8 /* Products */,
-				650C268421D3D2C23056A19B /* Targets Support Files */,
+				34D63B7322EA464D9DD742D0 /* Podfile */,
+				9A0156843CADC6A6A619813A /* Frameworks */,
+				4A2CBAD4E750FF35DA47EB1E /* Pods */,
+				CAF047BCB00B792543D1558B /* Products */,
+				097207FB7D259151B67D7CCE /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		F72CD54691CEDED96ADB8AE3 /* Resources */ = {
+		FA95ED37248A6E447A56AB4A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F164E8C30BF278BA5FBB571D /* Instabug.bundle */,
+				2942F9AFCC66B72D6B213FC5 /* Pods-Marguerite-FMDB.xcconfig */,
+				FD83502DE3EF1687A9760959 /* Pods-Marguerite-FMDB-Private.xcconfig */,
+				ED96AE9C983E64F56810E3A3 /* Pods-Marguerite-FMDB-dummy.m */,
+				028DC544408ED8BD069D8417 /* Pods-Marguerite-FMDB-prefix.pch */,
 			);
-			name = Resources;
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Marguerite-FMDB";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0ADA781872518DE80D016576 /* Headers */ = {
+		0D9E1300FF8C4354927E7A6C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F5523952E8716D38FDEE636 /* SSZipArchive.h in Headers */,
-				809B916199A91B07EB35B627 /* crypt.h in Headers */,
-				6A18E0BB024D2B8EB0E7F2E7 /* ioapi.h in Headers */,
-				FA8BED7C11CA0FB2E7E2F6A4 /* mztools.h in Headers */,
-				AFF49DBC57C75155C55A92A5 /* unzip.h in Headers */,
-				7B6AD64D6BE492B4E0D5DAC8 /* zip.h in Headers */,
+				B1C0005B172ADE00B6E2014E /* GCDiscreetNotificationView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4F567C3BA2B055CBFC9F8C25 /* Headers */ = {
+		91159CF6BA222DE856EC3D1B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				035A99364B87D3744978C394 /* FMDB.h in Headers */,
-				B203A1E56DC03B18FF9C3E4B /* FMDatabase.h in Headers */,
-				9C962EB1D422F7053C2EA0D0 /* FMDatabaseAdditions.h in Headers */,
-				C8CF9ECB4FE5F54035D057AE /* FMDatabasePool.h in Headers */,
-				BA8E95E66B3F55DF25C49B29 /* FMDatabaseQueue.h in Headers */,
-				08568FBD58D00975304AB7A5 /* FMResultSet.h in Headers */,
+				1B098AF5C367D709D30A4FD6 /* IBGEnums.h in Headers */,
+				3066F07A5D61E2FC4366A1C4 /* Instabug.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		681A20AC0F40F376D4B6E896 /* Headers */ = {
+		AC8B90EC14E38E31344A4261 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90BC5483CFADDFEE78B21358 /* SwiftTryCatch.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8942473B6FB2E6B1A9CAE0C7 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAAD93805B76352D85FF1B6F /* IBGEnums.h in Headers */,
-				CC26943FE5A14E2467E454D8 /* Instabug.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EDDCC69BADAA9392E8082E85 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				11DF1FBC50AB2FDC5B7D58EF /* GCDiscreetNotificationView.h in Headers */,
+				18C6C44A2F1F1F1CCE27F2C9 /* FMDB.h in Headers */,
+				FA17AB49D1BF37C972118AB9 /* FMDatabase.h in Headers */,
+				45BE5F136C9E9D67FA512E42 /* FMDatabaseAdditions.h in Headers */,
+				E54697C86A73903625089B2C /* FMDatabasePool.h in Headers */,
+				B716CBA438D31BE6BA0F5975 /* FMDatabaseQueue.h in Headers */,
+				1BCE86BCBA7A9AF9876EA871 /* FMResultSet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2CEC3EBF051172BDF0B8BF90 /* Pods-Marguerite-Instabug */ = {
+		3413A47FA2FCE3BCCAA7372F /* Pods-Marguerite */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1C9636C9C6FD63F7C350A2D /* Build configuration list for PBXNativeTarget "Pods-Marguerite-Instabug" */;
+			buildConfigurationList = B9013D6C124E086E2C07D7C8 /* Build configuration list for PBXNativeTarget "Pods-Marguerite" */;
 			buildPhases = (
-				92E4070B23E6F3B3E0C95ACE /* Sources */,
-				243BA69AEBAD2AC9E2F8939C /* Frameworks */,
-				8942473B6FB2E6B1A9CAE0C7 /* Headers */,
+				A505D4135BCF9399A88AD4DF /* Sources */,
+				A71B381F32AE380994B41693 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = "Pods-Marguerite-Instabug";
-			productName = "Pods-Marguerite-Instabug";
-			productReference = 202D473A2737C2FA61750B23 /* libPods-Marguerite-Instabug.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		3716153257C898553230D597 /* Pods-Marguerite-SwiftTryCatch */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D0FA588025DB0C5F77EECE63 /* Build configuration list for PBXNativeTarget "Pods-Marguerite-SwiftTryCatch" */;
-			buildPhases = (
-				D171FDEDC708D30ED1FDBE61 /* Sources */,
-				B59997C2A4CDBC57B4AB940C /* Frameworks */,
-				681A20AC0F40F376D4B6E896 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-Marguerite-SwiftTryCatch";
-			productName = "Pods-Marguerite-SwiftTryCatch";
-			productReference = AE326873125DBA6267B12FFA /* libPods-Marguerite-SwiftTryCatch.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		48E7DDFE8E6B52378944EA62 /* Pods-Marguerite-FMDB */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0393B511A28146563CDA328D /* Build configuration list for PBXNativeTarget "Pods-Marguerite-FMDB" */;
-			buildPhases = (
-				E9761AFB55BA82870506B508 /* Sources */,
-				6EE40AE34D6EFDC6545C9E87 /* Frameworks */,
-				4F567C3BA2B055CBFC9F8C25 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-Marguerite-FMDB";
-			productName = "Pods-Marguerite-FMDB";
-			productReference = D8E980437856440A1225BD89 /* libPods-Marguerite-FMDB.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		4A74777AD0340281B7CA4542 /* Pods-Marguerite-SSZipArchive */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6B3E2769EF4CEA5BACBDD747 /* Build configuration list for PBXNativeTarget "Pods-Marguerite-SSZipArchive" */;
-			buildPhases = (
-				3B1832981917C649E8E597F1 /* Sources */,
-				E12B9423D41E7CF609FB4D0E /* Frameworks */,
-				0ADA781872518DE80D016576 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-Marguerite-SSZipArchive";
-			productName = "Pods-Marguerite-SSZipArchive";
-			productReference = 1FB34390236498940F69E3E2 /* libPods-Marguerite-SSZipArchive.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		DC81E374F97E61A9C0315D1C /* Pods-Marguerite */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5956A94D8EF1B6F2E05121B1 /* Build configuration list for PBXNativeTarget "Pods-Marguerite" */;
-			buildPhases = (
-				FEB0F03D57444B78D3995AAA /* Sources */,
-				934EF5FD13BC3AE7BFF89A91 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3931C08FAC743F8D5D9A81B9 /* PBXTargetDependency */,
-				CEEC1DF5775ADE060A69D9D7 /* PBXTargetDependency */,
-				4D31E50CFE851C023AE22A4B /* PBXTargetDependency */,
-				2B8FCA202C0F0F2C0CA39AA0 /* PBXTargetDependency */,
-				075ACE79B89451B3FEE57D46 /* PBXTargetDependency */,
+				F041101DD5F9581D91C03083 /* PBXTargetDependency */,
+				F99498C2D87E2D95322BB035 /* PBXTargetDependency */,
+				E187FE42FF2F0A1B049F46B2 /* PBXTargetDependency */,
 			);
 			name = "Pods-Marguerite";
 			productName = "Pods-Marguerite";
-			productReference = B2D7D06B657412E0BE2C2BFD /* libPods-Marguerite.a */;
+			productReference = C109C3C312D16EE4A6632B14 /* libPods-Marguerite.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		DEF63AD31A7D0557BF6E4197 /* Pods-Marguerite-GCDiscreetNotificationView */ = {
+		81B141B4081A5CE57C2A8E22 /* Pods-Marguerite-GCDiscreetNotificationView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E8D78729ED586D124AB3522 /* Build configuration list for PBXNativeTarget "Pods-Marguerite-GCDiscreetNotificationView" */;
+			buildConfigurationList = F07E206EBC820CDF15BFCD04 /* Build configuration list for PBXNativeTarget "Pods-Marguerite-GCDiscreetNotificationView" */;
 			buildPhases = (
-				3B387D20FBAACE9A927FC7E0 /* Sources */,
-				D35D96DE1B54243CB04C5A1B /* Frameworks */,
-				EDDCC69BADAA9392E8082E85 /* Headers */,
+				52D12B1F30DF29E8426BD07B /* Sources */,
+				B754F609145C2A6D91B9AF6F /* Frameworks */,
+				0D9E1300FF8C4354927E7A6C /* Headers */,
 			);
 			buildRules = (
 			);
@@ -632,139 +414,137 @@
 			);
 			name = "Pods-Marguerite-GCDiscreetNotificationView";
 			productName = "Pods-Marguerite-GCDiscreetNotificationView";
-			productReference = 6AD0C5798AB6B8DBD673D053 /* libPods-Marguerite-GCDiscreetNotificationView.a */;
+			productReference = 954BC8AE28C10F291B691323 /* libPods-Marguerite-GCDiscreetNotificationView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DC58481822A771C762603B2E /* Pods-Marguerite-FMDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5487214761E9989F283652A5 /* Build configuration list for PBXNativeTarget "Pods-Marguerite-FMDB" */;
+			buildPhases = (
+				C6B95C6EDB6E1A4985FA9AF7 /* Sources */,
+				BE33C271B305CAC848787DE0 /* Frameworks */,
+				AC8B90EC14E38E31344A4261 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Marguerite-FMDB";
+			productName = "Pods-Marguerite-FMDB";
+			productReference = 4DA835F577D2A4C2E5814EC0 /* libPods-Marguerite-FMDB.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F0E6EFFEE3A6C9F51D052384 /* Pods-Marguerite-Instabug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25F0583970F28F0FE209FA5C /* Build configuration list for PBXNativeTarget "Pods-Marguerite-Instabug" */;
+			buildPhases = (
+				0EBB316849AC40004BA99D1E /* Sources */,
+				50EABEA9C1C7356C4270915B /* Frameworks */,
+				91159CF6BA222DE856EC3D1B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Marguerite-Instabug";
+			productName = "Pods-Marguerite-Instabug";
+			productReference = 2F8DB0F9A515017C523D1898 /* libPods-Marguerite-Instabug.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9E51B41D8B1319F8E1739BD1 /* Project object */ = {
+		6C314DFA49644AA3E634198B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = FA9A0FE54E91555A1A7D6241 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 8789310521F5787DB3442453 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = F326BF75C25C975E0494511A;
-			productRefGroup = 1D5985F4322624D7A9CFD4E8 /* Products */;
+			mainGroup = E79388F630C368DE5D984D1A;
+			productRefGroup = CAF047BCB00B792543D1558B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DC81E374F97E61A9C0315D1C /* Pods-Marguerite */,
-				48E7DDFE8E6B52378944EA62 /* Pods-Marguerite-FMDB */,
-				DEF63AD31A7D0557BF6E4197 /* Pods-Marguerite-GCDiscreetNotificationView */,
-				2CEC3EBF051172BDF0B8BF90 /* Pods-Marguerite-Instabug */,
-				4A74777AD0340281B7CA4542 /* Pods-Marguerite-SSZipArchive */,
-				3716153257C898553230D597 /* Pods-Marguerite-SwiftTryCatch */,
+				3413A47FA2FCE3BCCAA7372F /* Pods-Marguerite */,
+				DC58481822A771C762603B2E /* Pods-Marguerite-FMDB */,
+				81B141B4081A5CE57C2A8E22 /* Pods-Marguerite-GCDiscreetNotificationView */,
+				F0E6EFFEE3A6C9F51D052384 /* Pods-Marguerite-Instabug */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3B1832981917C649E8E597F1 /* Sources */ = {
+		0EBB316849AC40004BA99D1E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC82F97B2230F3CC118820F9 /* Pods-Marguerite-SSZipArchive-dummy.m in Sources */,
-				4E815CEE7C870729BCA40E74 /* SSZipArchive.m in Sources */,
-				66C5DE91D639856EA9CAD2EC /* ioapi.c in Sources */,
-				89D23249071155991E384240 /* mztools.c in Sources */,
-				5ED2D836F6E08F5462B12827 /* unzip.c in Sources */,
-				0FEF265DAB93E7CEA5C42DC6 /* zip.c in Sources */,
+				8E5BBF0AF71141E5BD1DA6BA /* Pods-Marguerite-Instabug-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3B387D20FBAACE9A927FC7E0 /* Sources */ = {
+		52D12B1F30DF29E8426BD07B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84C17043A197D587440A48D3 /* GCDiscreetNotificationView.m in Sources */,
-				F9B89719F76455F40FC567ED /* Pods-Marguerite-GCDiscreetNotificationView-dummy.m in Sources */,
+				22BC2A8A338160E6AF153698 /* GCDiscreetNotificationView.m in Sources */,
+				F718267F4F3F8060E6D1D404 /* Pods-Marguerite-GCDiscreetNotificationView-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92E4070B23E6F3B3E0C95ACE /* Sources */ = {
+		A505D4135BCF9399A88AD4DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E54CDEA5476CF30F9D94AC07 /* Pods-Marguerite-Instabug-dummy.m in Sources */,
+				62221CE09F1E55B920F92140 /* Pods-Marguerite-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D171FDEDC708D30ED1FDBE61 /* Sources */ = {
+		C6B95C6EDB6E1A4985FA9AF7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC1B2C2C4FD004B628188F79 /* Pods-Marguerite-SwiftTryCatch-dummy.m in Sources */,
-				14330AEC1A1E9BF010A6EE62 /* SwiftTryCatch.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E9761AFB55BA82870506B508 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0345D373AD78B44BE762DF90 /* FMDatabase.m in Sources */,
-				C09627947759FA27E94CDE73 /* FMDatabaseAdditions.m in Sources */,
-				E0CD30CAC680671D20D6250A /* FMDatabasePool.m in Sources */,
-				BDD8BD3993A6DEB187AFC04C /* FMDatabaseQueue.m in Sources */,
-				A3A23754D368405B2742C254 /* FMResultSet.m in Sources */,
-				ABD5AA1A273096073E4A4FF1 /* Pods-Marguerite-FMDB-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FEB0F03D57444B78D3995AAA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6ADFF6DC8C03D22D9519F58E /* Pods-Marguerite-dummy.m in Sources */,
+				98B9808F92742AAD0CBBB2D6 /* FMDatabase.m in Sources */,
+				12CC660804E29BD1D57CCC25 /* FMDatabaseAdditions.m in Sources */,
+				96528F584C2D9BA1B492C410 /* FMDatabasePool.m in Sources */,
+				831FEA8218AFCED9C948DD5E /* FMDatabaseQueue.m in Sources */,
+				81FEBC4E5BA720AC3EC45A77 /* FMResultSet.m in Sources */,
+				6F258EE750533F71CF50516C /* Pods-Marguerite-FMDB-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		075ACE79B89451B3FEE57D46 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-Marguerite-SwiftTryCatch";
-			target = 3716153257C898553230D597 /* Pods-Marguerite-SwiftTryCatch */;
-			targetProxy = F225C0C668A29B9722DC257A /* PBXContainerItemProxy */;
-		};
-		2B8FCA202C0F0F2C0CA39AA0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-Marguerite-SSZipArchive";
-			target = 4A74777AD0340281B7CA4542 /* Pods-Marguerite-SSZipArchive */;
-			targetProxy = 83C858FACD934FEE65B66FE0 /* PBXContainerItemProxy */;
-		};
-		3931C08FAC743F8D5D9A81B9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-Marguerite-FMDB";
-			target = 48E7DDFE8E6B52378944EA62 /* Pods-Marguerite-FMDB */;
-			targetProxy = 81F9B2ACD10713DF8C66FD81 /* PBXContainerItemProxy */;
-		};
-		4D31E50CFE851C023AE22A4B /* PBXTargetDependency */ = {
+		E187FE42FF2F0A1B049F46B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Marguerite-Instabug";
-			target = 2CEC3EBF051172BDF0B8BF90 /* Pods-Marguerite-Instabug */;
-			targetProxy = 75FC559D176C53577C5CE6FE /* PBXContainerItemProxy */;
+			target = F0E6EFFEE3A6C9F51D052384 /* Pods-Marguerite-Instabug */;
+			targetProxy = 4F93BA4890012C6C4A785260 /* PBXContainerItemProxy */;
 		};
-		CEEC1DF5775ADE060A69D9D7 /* PBXTargetDependency */ = {
+		F041101DD5F9581D91C03083 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Marguerite-FMDB";
+			target = DC58481822A771C762603B2E /* Pods-Marguerite-FMDB */;
+			targetProxy = 561C38AFF6F2348C6CD82B26 /* PBXContainerItemProxy */;
+		};
+		F99498C2D87E2D95322BB035 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Marguerite-GCDiscreetNotificationView";
-			target = DEF63AD31A7D0557BF6E4197 /* Pods-Marguerite-GCDiscreetNotificationView */;
-			targetProxy = 871E16C373B39FB082A0DF9E /* PBXContainerItemProxy */;
+			target = 81B141B4081A5CE57C2A8E22 /* Pods-Marguerite-GCDiscreetNotificationView */;
+			targetProxy = B06DFA36FEC000A3776A43F9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2CCE525A05E21B37D328A903 /* Debug */ = {
+		07D9714F965804468EDA8E79 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1C468F6BAB51ECD7635821C /* Pods-Marguerite.debug.xcconfig */;
+			baseConfigurationReference = 97DEDB6AC40CEE701A1256BD /* Pods-Marguerite.debug.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -778,39 +558,7 @@
 			};
 			name = Debug;
 		};
-		3392FD2572D3170DCAEC079C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B3A700955729E8FCDEA95CD /* Pods-Marguerite-Instabug-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Marguerite-Instabug/Pods-Marguerite-Instabug-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		49F83C1A50EBD7E4D7DD0949 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 029BB7EC276B0EFD817835D8 /* Pods-Marguerite.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		51B25E1643FD9184B40225C5 /* Debug */ = {
+		0A3127B9AEA99881714AAC05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -849,25 +597,9 @@
 			};
 			name = Debug;
 		};
-		7B217D00D08EFB38E782B37D /* Debug */ = {
+		1D1FD3D69EE0310C89EA7B67 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9CD45858B77B46BDAFFE44FB /* Pods-Marguerite-SwiftTryCatch-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Marguerite-SwiftTryCatch/Pods-Marguerite-SwiftTryCatch-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		8AFFB93EFB932989B804491E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F388EAABBBBE35891EEA004 /* Pods-Marguerite-GCDiscreetNotificationView-Private.xcconfig */;
+			baseConfigurationReference = 90306A0B622EF0A138D129F9 /* Pods-Marguerite-GCDiscreetNotificationView-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-Marguerite-GCDiscreetNotificationView/Pods-Marguerite-GCDiscreetNotificationView-prefix.pch";
@@ -881,7 +613,87 @@
 			};
 			name = Debug;
 		};
-		9616D4D93E5286CA35F5E43E /* Release */ = {
+		3AC3D371DA58D7600BB2EC33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEB7015323A8274F5426C182 /* Pods-Marguerite-Instabug-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Marguerite-Instabug/Pods-Marguerite-Instabug-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6A3233536AB3E29ED187E55A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90306A0B622EF0A138D129F9 /* Pods-Marguerite-GCDiscreetNotificationView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Marguerite-GCDiscreetNotificationView/Pods-Marguerite-GCDiscreetNotificationView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		728E3A4D23D3A323CE9BF14A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A534BA4CFB1F510D08FB1B6B /* Pods-Marguerite.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8291C21DD223934791CA129E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEB7015323A8274F5426C182 /* Pods-Marguerite-Instabug-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Marguerite-Instabug/Pods-Marguerite-Instabug-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		90C32052B6550B21FBC5D14A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD83502DE3EF1687A9760959 /* Pods-Marguerite-FMDB-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Marguerite-FMDB/Pods-Marguerite-FMDB-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		95048A56019AB25899CF8CB5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -915,9 +727,9 @@
 			};
 			name = Release;
 		};
-		AAD2E96C8CDEB2F8F5B65DB5 /* Release */ = {
+		9628DF057F419570420C89B1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D071DAEC80FD6F424702DF3 /* Pods-Marguerite-FMDB-Private.xcconfig */;
+			baseConfigurationReference = FD83502DE3EF1687A9760959 /* Pods-Marguerite-FMDB-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-Marguerite-FMDB/Pods-Marguerite-FMDB-prefix.pch";
@@ -930,170 +742,56 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
-		};
-		B74C683B5C1E8939A972219A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9CD45858B77B46BDAFFE44FB /* Pods-Marguerite-SwiftTryCatch-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Marguerite-SwiftTryCatch/Pods-Marguerite-SwiftTryCatch-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		BD09D6BDFFE0F51947767867 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B3A700955729E8FCDEA95CD /* Pods-Marguerite-Instabug-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Marguerite-Instabug/Pods-Marguerite-Instabug-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		C7AF12326D02F85579296695 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD7B07ED52C5A732178454E6 /* Pods-Marguerite-SSZipArchive-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Marguerite-SSZipArchive/Pods-Marguerite-SSZipArchive-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		CE928A93D673682A1A68DA51 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F388EAABBBBE35891EEA004 /* Pods-Marguerite-GCDiscreetNotificationView-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Marguerite-GCDiscreetNotificationView/Pods-Marguerite-GCDiscreetNotificationView-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		E0996225706B20F77C56EFC6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D071DAEC80FD6F424702DF3 /* Pods-Marguerite-FMDB-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Marguerite-FMDB/Pods-Marguerite-FMDB-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		FBE2C6E5C7840161566FD8CC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD7B07ED52C5A732178454E6 /* Pods-Marguerite-SSZipArchive-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Marguerite-SSZipArchive/Pods-Marguerite-SSZipArchive-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0393B511A28146563CDA328D /* Build configuration list for PBXNativeTarget "Pods-Marguerite-FMDB" */ = {
+		25F0583970F28F0FE209FA5C /* Build configuration list for PBXNativeTarget "Pods-Marguerite-Instabug" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E0996225706B20F77C56EFC6 /* Debug */,
-				AAD2E96C8CDEB2F8F5B65DB5 /* Release */,
+				3AC3D371DA58D7600BB2EC33 /* Debug */,
+				8291C21DD223934791CA129E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E8D78729ED586D124AB3522 /* Build configuration list for PBXNativeTarget "Pods-Marguerite-GCDiscreetNotificationView" */ = {
+		5487214761E9989F283652A5 /* Build configuration list for PBXNativeTarget "Pods-Marguerite-FMDB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8AFFB93EFB932989B804491E /* Debug */,
-				CE928A93D673682A1A68DA51 /* Release */,
+				90C32052B6550B21FBC5D14A /* Debug */,
+				9628DF057F419570420C89B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5956A94D8EF1B6F2E05121B1 /* Build configuration list for PBXNativeTarget "Pods-Marguerite" */ = {
+		8789310521F5787DB3442453 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2CCE525A05E21B37D328A903 /* Debug */,
-				49F83C1A50EBD7E4D7DD0949 /* Release */,
+				0A3127B9AEA99881714AAC05 /* Debug */,
+				95048A56019AB25899CF8CB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6B3E2769EF4CEA5BACBDD747 /* Build configuration list for PBXNativeTarget "Pods-Marguerite-SSZipArchive" */ = {
+		B9013D6C124E086E2C07D7C8 /* Build configuration list for PBXNativeTarget "Pods-Marguerite" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FBE2C6E5C7840161566FD8CC /* Debug */,
-				C7AF12326D02F85579296695 /* Release */,
+				07D9714F965804468EDA8E79 /* Debug */,
+				728E3A4D23D3A323CE9BF14A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A1C9636C9C6FD63F7C350A2D /* Build configuration list for PBXNativeTarget "Pods-Marguerite-Instabug" */ = {
+		F07E206EBC820CDF15BFCD04 /* Build configuration list for PBXNativeTarget "Pods-Marguerite-GCDiscreetNotificationView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3392FD2572D3170DCAEC079C /* Debug */,
-				BD09D6BDFFE0F51947767867 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D0FA588025DB0C5F77EECE63 /* Build configuration list for PBXNativeTarget "Pods-Marguerite-SwiftTryCatch" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7B217D00D08EFB38E782B37D /* Debug */,
-				B74C683B5C1E8939A972219A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FA9A0FE54E91555A1A7D6241 /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				51B25E1643FD9184B40225C5 /* Debug */,
-				9616D4D93E5286CA35F5E43E /* Release */,
+				1D1FD3D69EE0310C89EA7B67 /* Debug */,
+				6A3233536AB3E29ED187E55A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9E51B41D8B1319F8E1739BD1 /* Project object */;
+	rootObject = 6C314DFA49644AA3E634198B /* Project object */;
 }

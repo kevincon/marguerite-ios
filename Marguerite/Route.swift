@@ -48,4 +48,23 @@ class Route {
         self.routeColor = routeColor
         self.routeTextColor = routeTextColor
     }
+
+    class func getAllRoutes() -> [Route] {
+        var allRoutes = [Route]()
+        if let db = GTFSDatabase.open() {
+            let allRoutesQuery = "select route_id FROM routes"
+            let resultSet = db.executeQuery(allRoutesQuery, withArgumentsInArray: [])
+
+            while resultSet.next() {
+                if let routeId = resultSet.objectForColumnName("route_id") as? String {
+                    if let route = Route(routeId: routeId) {
+                        allRoutes.append(route)
+                    }
+                }
+            }
+            resultSet.close()
+            db.close()
+        }
+        return allRoutes
+    }
 }

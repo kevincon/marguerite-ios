@@ -107,6 +107,7 @@ class LiveMapViewController: UIViewController, MKMapViewDelegate, RealtimeBusesD
         for stop in allStops {
             let marker = StopAnnotation()
             marker.title = stop.stopName
+            marker.subtitle = "Tap here to view next shuttle times."
             marker.coordinate = stop.location!.coordinate
             marker.stop = stop
             stopMarkers[stop.stopId!] = marker

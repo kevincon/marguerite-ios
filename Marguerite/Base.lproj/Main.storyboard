@@ -17,7 +17,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="Cds-oW-yai" kind="relationship" relationship="viewControllers" id="Y1x-1w-sC0"/>
-                        <segue destination="3Yg-ay-cC8" kind="relationship" relationship="viewControllers" id="eA1-fb-2aj"/>
+                        <segue destination="nRv-vS-vKx" kind="relationship" relationship="viewControllers" id="eA1-fb-2aj"/>
                         <segue destination="yZ9-Pk-YAy" kind="relationship" relationship="viewControllers" id="CTx-aV-XxB"/>
                     </connections>
                 </tabBarController>
@@ -25,7 +25,7 @@
             </objects>
             <point key="canvasLocation" x="60" y="164"/>
         </scene>
-        <!--Live Map-->
+        <!--Live Map View Controller-->
         <scene sceneID="khT-Sy-mF0">
             <objects>
                 <viewController id="3Yg-ay-cC8" customClass="LiveMapViewController" customModule="Marguerite" customModuleProvider="target" sceneMemberID="viewController">
@@ -66,6 +66,7 @@
                             <constraint firstItem="T67-nX-fOL" firstAttribute="top" secondItem="FkU-c2-fT4" secondAttribute="bottom" id="5RP-gi-Cnh"/>
                             <constraint firstAttribute="trailing" secondItem="FkU-c2-fT4" secondAttribute="trailing" id="L59-XT-JCG"/>
                             <constraint firstItem="T67-nX-fOL" firstAttribute="leading" secondItem="kfw-Va-ffM" secondAttribute="leadingMargin" constant="-16" id="Lmg-uT-gOl"/>
+                            <constraint firstItem="FkU-c2-fT4" firstAttribute="top" secondItem="pPV-i5-hCn" secondAttribute="bottom" id="ToV-2q-YRr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="T67-nX-fOL" secondAttribute="trailing" constant="-16" id="ZAq-RW-RrW"/>
                             <constraint firstItem="FkU-c2-fT4" firstAttribute="leading" secondItem="kfw-Va-ffM" secondAttribute="leading" id="bGv-e7-WGD"/>
                             <constraint firstItem="FkU-c2-fT4" firstAttribute="top" secondItem="pPV-i5-hCn" secondAttribute="bottom" id="tfv-6Z-MHn"/>
@@ -73,18 +74,19 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="tfv-6Z-MHn"/>
                                 <exclude reference="unO-mi-Rcj"/>
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Live Map" image="location" id="Zfu-d7-CZo"/>
+                    <navigationItem key="navigationItem" id="FLM-YS-Qay"/>
                     <connections>
                         <outlet property="liveMapView" destination="FkU-c2-fT4" id="9Kt-sO-T2J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qJT-iF-4f4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="782" y="560"/>
+            <point key="canvasLocation" x="1594" y="560"/>
         </scene>
         <!--About-->
         <scene sceneID="FIY-tC-5IA">
@@ -629,7 +631,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rln-cR-vbl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3048" y="-59"/>
+            <point key="canvasLocation" x="3860" y="-59"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ysC-pS-cT6">
@@ -660,7 +662,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4qi-EE-dwV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2344" y="-59"/>
+            <point key="canvasLocation" x="3156" y="-59"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lUb-GF-21L">
@@ -682,7 +684,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ep-hq-Ipz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1532" y="-59"/>
+            <point key="canvasLocation" x="2344" y="-59"/>
         </scene>
         <!--About-->
         <scene sceneID="Nbv-zL-dcH">
@@ -702,6 +704,25 @@
                 </navigationController>
             </objects>
             <point key="canvasLocation" x="782" y="1230"/>
+        </scene>
+        <!--Live Map-->
+        <scene sceneID="7dM-sr-mjr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="nRv-vS-vKx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Live Map" image="location" id="Zfu-d7-CZo"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Wb-jd-SLD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3Yg-ay-cC8" kind="relationship" relationship="rootViewController" id="Hmj-lq-QY7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iB3-Xe-djf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="782" y="560"/>
         </scene>
     </scenes>
     <resources>

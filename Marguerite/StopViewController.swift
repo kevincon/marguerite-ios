@@ -224,10 +224,12 @@ class StopViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
         case viewOnMapSection:
             if let controllers = tabBarController?.viewControllers {
-                if let controller = controllers[1] as? LiveMapViewController {
-                    tabBarController?.selectedIndex = 1
-                    controller.stopToZoomTo = stop
-                    controller.zoomToStop(stop!)
+                if let navController = controllers[1] as? UINavigationController {
+                    if let mapController = navController.viewControllers.first as? LiveMapViewController {
+                        tabBarController?.selectedIndex = 1
+                        mapController.stopToZoomTo = stop
+                        mapController.zoomToStop(stop!)
+                    }
                 }
             }
         default:

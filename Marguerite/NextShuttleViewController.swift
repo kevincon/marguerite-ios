@@ -328,7 +328,7 @@ class NextShuttleViewController: UIViewController, UITableViewDelegate, UITableV
 
     :param: sender The sender.
     */
-    private func refreshNearbyStops(sender: AnyObject) {
+    func refreshNearbyStops(sender: AnyObject) {
         locationController.refreshLocation()
     }
     

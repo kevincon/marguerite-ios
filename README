@@ -4,7 +4,13 @@ user:kcon (Conley, Kevin)
 # Instructions to run project #
 ###############################
 
-1. Open Marguerite.xcworkspace.
+Note: My setup is Xcode 6.2 on OSX 10.10.2 targeting iOS 8.2. Please email
+me at kcon@stanford.edu if you have any questions or run into any issues
+while testing my project.
+
+1. Open Marguerite.xcworkspace. I used CocoaPods, but all of the Pod files
+   are included in my submission, so everything should be ready to go when you
+   open the workspace file.
 2. Build and run the project.
 3. Make sure to allow location services to test out the "nearby stops" feature
    and to see your location on the live map.
@@ -43,12 +49,40 @@ user:kcon (Conley, Kevin)
 8. Tapping the "About" tab switches to a table view with several links for
    contacting the Marguerite department, submitting feedback, etc. The links
    that go to websites will open in a web view within the app (instead of going
-   to Safari).
+   to Safari). Note that the links that call phone numbers or open the mail app
+   will only work on a physical iOS device.
+9. In all of the aforementioned views, rotating your device should rotate
+   the view as well, with a relatively aesthetic result.
 
 #############################
 # List of iOS features used #
 #############################
 
-// TODO
-
-You don't have to explain in detail how you used an iOS API in this list, just list it.  For example, just say "UITableView with deletable cells" not "In the third tab, when you go into the navigation controller and click on show data and then navigate to the third section and click on this you will bring up a table that has three sections, the first of which has rows that can be deleted if you swipe left".  The first, much shorter, description was sufficient.  We'll be looking at every single line of code in your application and running it per your instructions in item 1 above, so we'll find it.
+Custom app icon and launch image (all sizes).
+Customized apperance using appearance proxies for UINavigationBar, UIBarButtonItem, and UITabBar.
+Storyboard structured with split view, tab bar, and navigation controllers.
+UITabBarController with 4 custom icons and set selectedIndex.
+2 uses of UIToolBar in UIViewControllers with both flexible and fixed-width spacing.
+2 Show and 2 Show Detail segues.
+Custom split view controller that uses UISplitViewControllerDelegate to never collapse.
+3 dynamic UITableViews, 1 static UITableView.
+2 custom UITableViewCells with programmatic drawing.
+UISearchDisplayController/Bar utilizing NSPredicate for searching.
+HEAVY Section index titles for UITableView, utilizing UILocalizedIndexedCollation for creating titles.
+UIRefreshControl used to refresh UITableView.
+CLLocationManager and CLLocationManagerDelegate for authorizing/accessing user location.
+NSDateFormatter for formatting dates as strings.
+NSMutableOrderedSet for organizing table view sections.
+NSCoding used to encode objects to be stored using NSUserDefaults.
+NSTimer used to schedule tasks, invalidate used to cancel tasks.
+MKMapView with MKMapViewDelegate, setRegion, setCenterCoordinate, and selectAnnotation.
+UIView animation of MKAnnotationViews.
+HEAVY Custom MKPointAnnotations and MKPointAnnotationViews (with callouts) with programmatic layout/drawing.
+UIApplication sharedApplication used for openURL.
+UIActivityIndicatorView programmatically added to UINavigationItem.
+UIWebView with UIWebViewDelegate for didStart/FinishLoad, goBack, goForward.
+NSXMLParser with NSXMLParserDelegate methods.
+NSURLConnection sendAsynchronousRequest with NSJSONSerialization to parse response.
+Extensions for UIColor, UIImage, and NSError.
+NSURLCache configuration.
+HEAVY Integration and ObjC bridging with FMDB, GCDiscreetNotificationView, and Instabug 3rd party libraries.

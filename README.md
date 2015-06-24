@@ -1,8 +1,8 @@
+## NOTE: This app is no longer available in the iOS App Store and this repository is no longer being maintained. Visit the [Marguerite department website](http://transportation.stanford.edu/marguerite/) to learn about other Marguerite mobile apps you can use.
+
 # Marguerite for iOS [![Build Status](https://travis-ci.org/cardinaldevs/marguerite-ios.png?branch=develop)](https://travis-ci.org/cardinaldevs/marguerite-ios)
 
 Marguerite is an iPhone app that makes it easier for riders to use the free [Stanford Marguerite shuttle bus system](http://transportation.stanford.edu/marguerite/).
-
-This app is maintained by [Kevin Conley](https://github.com/kevincon), independent of the Stanford Parking & Transportation Services department. If you have any non-app-related issues or feedback regarding the Marguerite shuttle buses, please contact the [Marguerite department](http://transportation.stanford.edu/marguerite/).
 
 ### Features
 * See what buses are arriving next at the Marguerite stop closest to your current location.*
@@ -14,7 +14,6 @@ This app is maintained by [Kevin Conley](https://github.com/kevincon), independe
 ![Next Shuttle](https://raw.github.com/cardinaldevs/marguerite-ios/develop/images/github/nextshuttle.png) ![Stop](https://raw.github.com/cardinaldevs/marguerite-ios/develop/images/github/stop.png) ![Live Map](https://raw.github.com/cardinaldevs/marguerite-ios/develop/images/github/livemap.png)
 
 # Contributing
-All pull requests and feedback are welcome! Report bugs and feature requests using the [Github issues system](https://github.com/cardinaldevs/marguerite-ios/issues).
 
 ### Getting started
 
@@ -37,17 +36,6 @@ Then, before the app will fully function, you must complete the "secrets.h" file
 * MARGUERITE_REALTIME_XML_FEED: This is the URL of the real-time Marguerite shuttle bus location XML feed. Email Kevin Conley at kcon AT stanford DOT edu to ask for this value.
 * MARGUERITE_VEHICLE_IDS_URL: This is the URL that the app sends POST requests to in order to query the mappings between Marguerite "vehicle IDs" (the numbers on the sides of the buses) and the "farebox IDs" that help identify which route a particular bus is driving on. Email Kevin Conley at kcon AT stanford DOT edu to ask for this value.
 * GOOGLE_MAPS_API_KEY: This is the API key for the Google Maps iPhone SDK. Follow the instructions here ([https://developers.google.com/maps/documentation/ios/start#obtaining_an_api_key](https://developers.google.com/maps/documentation/ios/start#obtaining_an_api_key)) for "Obtaining an API Key" and then update this value.
-
-### Best practices
-These are the practicies we currently follow, but feel free to propose better methodologies!
-
-#### Git branching
-We follow the methodology for creating/pushing branches as described here: 
-[http://nvie.com/posts/a-successful-git-branching-model/](http://nvie.com/posts/a-successful-git-branching-model/)
-
-#### Objective C style
-We follow the style guide that Adium uses, as described here: 
-[https://trac.adium.im/wiki/CodingStyle](https://trac.adium.im/wiki/CodingStyle)
 
 # Attributions
 This app would not have been possible without the following open-source libraries:

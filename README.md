@@ -1,4 +1,4 @@
-## NOTE: This app is no longer available in the iOS App Store and this repository is no longer being maintained. Visit the [Marguerite department website](http://transportation.stanford.edu/marguerite/) to learn about other Marguerite mobile apps you can use.
+## NOTE: This version of the app is no longer available in the iOS App Store, and this repository is no longer being maintained. The source code of the new version of the app can be found at [https://github.com/Marguerite-iOS/Marguerite](https://github.com/Marguerite-iOS/Marguerite)
 
 # Marguerite for iOS [![Build Status](https://travis-ci.org/cardinaldevs/marguerite-ios.png?branch=develop)](https://travis-ci.org/cardinaldevs/marguerite-ios)
 

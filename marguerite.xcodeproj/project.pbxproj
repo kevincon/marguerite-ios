@@ -1052,8 +1052,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"/Users/kcon/Desktop/marguerite-ios",
-					"/Users/kcon/Desktop/marguerite-ios/libraries",
 					"$(SRCROOT)/libraries",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1082,8 +1080,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"/Users/kcon/Desktop/marguerite-ios",
-					"/Users/kcon/Desktop/marguerite-ios/libraries",
 					"$(SRCROOT)/libraries",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
